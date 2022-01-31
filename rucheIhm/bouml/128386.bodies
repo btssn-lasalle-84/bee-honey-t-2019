@@ -1,0 +1,69 @@
+class Communication
+!!!129666.cpp!!!	Communication(inout parent : QObject = 0)
+    qDebug() << Q_FUNC_INFO;
+    // Initialisation de la connexion au serveur The Things Networkclient
+    client = new QMqttClient();
+    client->setHostname(TTN_SERVEUR);
+    client->setPort(TTN_PORT);
+    client->setUsername(TTN_USERNAME);
+    client->setPassword(TTN_PASSWORD);
+    client->connectToHost();
+
+    connect(client, SIGNAL(stateChanged(ClientState)), this, SLOT(changementEtatTTN()));
+    connect(client, SIGNAL(errorChanged(ClientError)), this, SLOT(erreurClientTTN()));
+    connect(client, SIGNAL(connected()), this, SLOT(connecteTTN()));
+    connect(client, SIGNAL(disconnected()), this, SLOT(deconnecteTTN()));
+    connect(client, SIGNAL(messageReceived(const QByteArray &, const QMqttTopicName &)), this, SLOT(receptionner(const QByteArray &, const QMqttTopicName &)));
+    connect(client, SIGNAL(pingResponseReceived()), this, SLOT(reponsePingTTN()));
+!!!129794.cpp!!!	~Communication()
+    deconnecteTTN();
+    delete abonnement;
+    delete client;
+    qDebug() << Q_FUNC_INFO;
+!!!129922.cpp!!!	connecteTTN() : void
+    qDebug() << Q_FUNC_INFO;
+    // Le client est maintenant connecté
+    emit etatClientConnexion(false); // pour l'IHM
+    // Souscription à un topic
+    abonnement = client->subscribe(nomTopic);
+    if (!abonnement)
+    {
+        qDebug() << Q_FUNC_INFO << "Impossible de s'abonner au broker TTN !";
+        QMessageBox::critical(0, QString::fromUtf8(APP_TITRE), QString::fromUtf8("Impossible de s'abonner au broker The Things Network!"));
+    }
+!!!130050.cpp!!!	deconnecteTTN() : void
+    qDebug()<< Q_FUNC_INFO;
+    // Le client est maintenant déconnecté
+    emit etatClientConnexion(false); // pour l'IHM
+!!!130178.cpp!!!	receptionner(in message : QByteArray, in topic : QMqttTopicName) : void
+    emit messageRecu(message, topic);
+!!!130306.cpp!!!	reponsePingTTN() : void
+    // Pour les tests (requestPing())
+    qDebug()<< Q_FUNC_INFO;
+!!!130434.cpp!!!	changementEtatTTN() : void
+    // Pour le debug
+    QString message;
+    switch(client->state())
+    {
+        case 0: message = "Déconnecté"; break;
+        case 1: message = "En cours de connexion"; break;
+        case 2: message = "Connecté"; break;
+    }
+    qDebug()<< Q_FUNC_INFO << "client MQTT" << message << "state=" << client->state();
+!!!130562.cpp!!!	erreurClientTTN() : void
+
+        /*QMqttClient::NoError                0	No error occurred.
+        QMqttClient::InvalidProtocolVersion	1	The broker does not accept a connection using the specified protocol version.
+        QMqttClient::IdRejected             2	The client ID is malformed. This might be related to its length.
+        QMqttClient::ServerUnavailable      3	The network connection has been established, but the service is unavailable on the broker side.
+        QMqttClient::BadUsernameOrPassword	4	The data in the username or password is malformed.
+        QMqttClient::NotAuthorized          5	The client is not authorized to connect.
+        QMqttClient::TransportInvalid       256	The underlying transport caused an error. For example, the connection might have been interrupted unexpectedly.
+        QMqttClient::ProtocolViolation      257	The client encountered a protocol violation, and therefore closed the connection.
+        QMqttClient::UnknownError           258	An unknown error occurred.
+        QMqttClient::Mqtt5SpecificError     259	The error is related to MQTT protocol level 5. A reason code might provide more details.*/
+
+    /**
+     * \todo Faire une boîte de dialogue d'information sur l'erreur rencontrée
+     */
+    qDebug()<< Q_FUNC_INFO << "code erreur" << client->error();

@@ -1,0 +1,59 @@
+\hypertarget{mimepart__p_8h_source}{}\subsection{mimepart\+\_\+p.\+h}
+\label{mimepart__p_8h_source}\index{mimepart\+\_\+p.\+h@{mimepart\+\_\+p.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00003 \textcolor{comment}{ *}
+00004 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}
+00005 \textcolor{comment}{ * modify it under the terms of the GNU Library General Public}
+00006 \textcolor{comment}{ * License as published by the Free Software Foundation; either}
+00007 \textcolor{comment}{ * version 2 of the License, or (at your option) any later version.}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This library is distributed in the hope that it will be useful,}
+00010 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00011 \textcolor{comment}{ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU}
+00012 \textcolor{comment}{ * Library General Public License for more details.}
+00013 \textcolor{comment}{ *}
+00014 \textcolor{comment}{ * You should have received a copy of the GNU Library General Public License}
+00015 \textcolor{comment}{ * along with this library; see the file COPYING.LIB. If not, write to}
+00016 \textcolor{comment}{ * the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,}
+00017 \textcolor{comment}{ * Boston, MA 02110-1301, USA.}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef MIMEPART\_P\_H}
+00021 \textcolor{preprocessor}{#define MIMEPART\_P\_H}
+00022 
+00023 \textcolor{preprocessor}{#include "\hyperlink{mimepart_8h}{mimepart.h}"}
+00024 
+00025 \textcolor{keyword}{class }QFile;
+00026 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00027 
+\Hypertarget{mimepart__p_8h_source_l00028}\hyperlink{class_simple_mail_1_1_mime_part_private}{00028} \textcolor{keyword}{class }\hyperlink{class_simple_mail_1_1_mime_part_private}{MimePartPrivate} : \textcolor{keyword}{public} \hyperlink{class_q_shared_data}{QSharedData}
+00029 \{
+00030 \textcolor{keyword}{public}:
+00031     \textcolor{keyword}{virtual} \hyperlink{class_simple_mail_1_1_mime_part_private_ad2003c3ac13e03f8abc76392cbba9e1d}{~MimePartPrivate}();
+00032 
+00033     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_mime_part_private_a5409a7f49d4e02b3587ee7b679e62c35}{writeRaw}(QIODevice *input, QIODevice *out);
+00034     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_mime_part_private_ab3c8a3c921311eabdb608c6396d535a6}{writeBase64}(QIODevice *input, QIODevice *out);
+00035     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_mime_part_private_a075937d19cf60c10f765154aa30fa4b6}{writeQuotedPrintable}(QIODevice *input, QIODevice *out);
+00036 
+\Hypertarget{mimepart__p_8h_source_l00037}\hyperlink{class_simple_mail_1_1_mime_part_private_a5308879f21bcc7dbb90c2138156f1aa6}{00037}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_a5308879f21bcc7dbb90c2138156f1aa6}{header};
+\Hypertarget{mimepart__p_8h_source_l00038}\hyperlink{class_simple_mail_1_1_mime_part_private_a713cdb28a4dff7bdca3148b7815f4fb0}{00038}     QIODevice *\hyperlink{class_simple_mail_1_1_mime_part_private_a713cdb28a4dff7bdca3148b7815f4fb0}{contentDevice} = \textcolor{keyword}{nullptr};
+00039 
+\Hypertarget{mimepart__p_8h_source_l00040}\hyperlink{class_simple_mail_1_1_mime_part_private_a812caf7bf9cb864c79ece5bd8b5fd9aa}{00040}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_a812caf7bf9cb864c79ece5bd8b5fd9aa}{contentId};
+\Hypertarget{mimepart__p_8h_source_l00041}\hyperlink{class_simple_mail_1_1_mime_part_private_ae1ca103dbbf1b688c05f1ab40b6606f6}{00041}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_ae1ca103dbbf1b688c05f1ab40b6606f6}{contentName};
+\Hypertarget{mimepart__p_8h_source_l00042}\hyperlink{class_simple_mail_1_1_mime_part_private_afa20c6a7b4de31598affbc3e8fae207a}{00042}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_afa20c6a7b4de31598affbc3e8fae207a}{contentType};
+\Hypertarget{mimepart__p_8h_source_l00043}\hyperlink{class_simple_mail_1_1_mime_part_private_a93c4dba106b4ce82df90cff3e5967cc3}{00043}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_a93c4dba106b4ce82df90cff3e5967cc3}{contentCharset};
+\Hypertarget{mimepart__p_8h_source_l00044}\hyperlink{class_simple_mail_1_1_mime_part_private_a28343d468126cf7373115bedc7a1edf7}{00044}     QByteArray \hyperlink{class_simple_mail_1_1_mime_part_private_a28343d468126cf7373115bedc7a1edf7}{contentBoundary};
+00045 
+\Hypertarget{mimepart__p_8h_source_l00046}\hyperlink{class_simple_mail_1_1_mime_part_private_a0a630f148c8e8070c73b60c75e9777a4}{00046}     \hyperlink{class_simple_mail_1_1_mime_content_formatter}{MimeContentFormatter} \hyperlink{class_simple_mail_1_1_mime_part_private_a0a630f148c8e8070c73b60c75e9777a4}{formatter};
+\Hypertarget{mimepart__p_8h_source_l00047}\hyperlink{class_simple_mail_1_1_mime_part_private_a3c7e92b71828d0ffead39309000a5092}{00047}     \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{MimePart::Encoding} \hyperlink{class_simple_mail_1_1_mime_part_private_a3c7e92b71828d0ffead39309000a5092}{contentEncoding} = 
+      \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9a93d518d86036ce6f149ffa646b52235a}{MimePart::\_7Bit};
+00048 \};
+00049 
+00050 \}
+00051 
+00052 \textcolor{preprocessor}{#endif // MIMEPART\_P\_H}
+00053 
+\end{DoxyCode}

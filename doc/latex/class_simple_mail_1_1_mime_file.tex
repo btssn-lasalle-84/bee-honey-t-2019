@@ -1,0 +1,93 @@
+\hypertarget{class_simple_mail_1_1_mime_file}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Mime\+File}
+\label{class_simple_mail_1_1_mime_file}\index{Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}}
+
+
+{\ttfamily \#include $<$mimefile.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Mime\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_simple_mail_1_1_mime_file__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}{Mime\+File} (const Q\+Byte\+Array \&stream, const Q\+String \&file\+Name)
+\item 
+\hyperlink{class_simple_mail_1_1_mime_file_a4bf2724afb5a33a7dcdd8a4c9b250c7c}{Mime\+File} (Q\+File $\ast$f)
+\item 
+\hyperlink{class_simple_mail_1_1_mime_file_ac431f1ff557b1620611256cf05c9058d}{$\sim$\+Mime\+File} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Membres hérités additionnels}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}\label{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}} 
+\index{Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}!Mime\+File@{Mime\+File}}
+\index{Mime\+File@{Mime\+File}!Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}}
+\paragraph{\texorpdfstring{Mime\+File()}{MimeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mime\+File\+::\+Mime\+File (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{stream,  }\item[{const Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9ae644dc14ba856889814d2da9c995b91a}{Simple\+Mail\+::\+Mime\+Part\+::\+Base64}, et \hyperlink{class_simple_mail_1_1_mime_part_a16791412c7235c04bf16a57120a45b84}{Simple\+Mail\+::\+Mime\+Part\+::set\+Content()}.
+
+
+\begin{DoxyCode}
+00045 \{
+00046     Q\_D(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart});
+00047     d->contentEncoding = \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9ae644dc14ba856889814d2da9c995b91a}{Base64};
+00048     d->contentName = fileName.toLatin1();
+00049     d->contentType = QByteArrayLiteral(\textcolor{stringliteral}{"application/octet-stream"});
+00050     \hyperlink{class_simple_mail_1_1_mime_part_a16791412c7235c04bf16a57120a45b84}{setContent}(stream);
+00051 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_file_a4bf2724afb5a33a7dcdd8a4c9b250c7c}\label{class_simple_mail_1_1_mime_file_a4bf2724afb5a33a7dcdd8a4c9b250c7c}} 
+\index{Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}!Mime\+File@{Mime\+File}}
+\index{Mime\+File@{Mime\+File}!Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}}
+\paragraph{\texorpdfstring{Mime\+File()}{MimeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mime\+File\+::\+Mime\+File (\begin{DoxyParamCaption}\item[{Q\+File $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9ae644dc14ba856889814d2da9c995b91a}{Simple\+Mail\+::\+Mime\+Part\+::\+Base64}.
+
+
+\begin{DoxyCode}
+00028 \{
+00029     Q\_D(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart});
+00030     d->contentEncoding = \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9ae644dc14ba856889814d2da9c995b91a}{Base64};
+00031     d->contentDevice = file;
+00032 
+00033     \textcolor{keyword}{const} QString filename = QFileInfo(*file).fileName();
+00034     d->contentName = filename.toLatin1();
+00035 
+00036     QMimeDatabase db;
+00037     QMimeType mime = db.mimeTypeForFile(file->fileName());
+00038     d->contentType = mime.name().toLatin1();
+00039     \textcolor{keywordflow}{if} (d->contentType.isEmpty()) \{
+00040         d->contentType = QByteArrayLiteral(\textcolor{stringliteral}{"application/octet-stream"});
+00041     \}
+00042 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_file_ac431f1ff557b1620611256cf05c9058d}\label{class_simple_mail_1_1_mime_file_ac431f1ff557b1620611256cf05c9058d}} 
+\index{Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}!````~Mime\+File@{$\sim$\+Mime\+File}}
+\index{````~Mime\+File@{$\sim$\+Mime\+File}!Simple\+Mail\+::\+Mime\+File@{Simple\+Mail\+::\+Mime\+File}}
+\paragraph{\texorpdfstring{$\sim$\+Mime\+File()}{~MimeFile()}}
+{\footnotesize\ttfamily Mime\+File\+::$\sim$\+Mime\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00054 \{
+00055 \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mimefile_8h}{mimefile.\+h}\item 
+\hyperlink{mimefile_8cpp}{mimefile.\+cpp}\end{DoxyCompactItemize}

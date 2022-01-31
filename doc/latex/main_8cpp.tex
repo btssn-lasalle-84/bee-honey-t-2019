@@ -1,0 +1,64 @@
+\hypertarget{main_8cpp}{}\subsection{Référence du fichier main.\+cpp}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+Programme principal.  
+
+
+{\ttfamily \#include \char`\"{}ruche\+Ihm.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Q\+Application$>$}\newline
+{\ttfamily \#include $<$Q\+String$>$}\newline
+{\ttfamily \#include $<$Q\+Translator$>$}\newline
+{\ttfamily \#include $<$Q\+Locale$>$}\newline
+{\ttfamily \#include $<$Q\+Library\+Info$>$}\newline
+{\ttfamily \#include $<$base\+De\+Donnees.\+h$>$}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae0665038b72011f5c680c660fcb59459}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Crée et affiche la fenêtre principale de l\textquotesingle{}application
+
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8cpp_ae0665038b72011f5c680c660fcb59459}\label{main_8cpp_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\paragraph{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & \\
+\hline
+{\em argv\mbox{[}$\,$\mbox{]}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00029 \{
+00030     QApplication a(argc, argv);
+00031     QString locale = QLocale::system().name().section(\textcolor{charliteral}{'\_'}, 0, 0);
+00032     QTranslator translator;
+00033     translator.load(QString(\textcolor{stringliteral}{"qt\_"}) + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+00034     a.installTranslator(&translator);
+00035 
+00036     \hyperlink{class_ruche_ihm}{RucheIhm} w;
+00037     w.show();
+00038 
+00039     \textcolor{keywordflow}{return} a.exec();
+00040 \}
+\end{DoxyCode}

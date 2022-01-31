@@ -1,0 +1,101 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity}\index{fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity@{fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a30d970c7028be9de18778dbb19e65196}{on\+Map\+Ready} (Google\+Map google\+Map)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a6e10bf7de1bf581b5118fa6de2ac465e}{on\+Create} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Google\+Map \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{m\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a6e10bf7de1bf581b5118fa6de2ac465e}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a6e10bf7de1bf581b5118fa6de2ac465e}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}}
+\paragraph{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}
+00033                                                        \{
+00034         super.onCreate(savedInstanceState);
+00035         setContentView(R.layout.activity\_carte);
+00036 
+00037 
+00038         \textcolor{comment}{// Obtain the SupportMapFragment and get notified when the map is ready to be used.}
+00039         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+00040                 .findFragmentById(R.id.map);
+00041         mapFragment.getMapAsync(\textcolor{keyword}{this});
+00042     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a30d970c7028be9de18778dbb19e65196}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a30d970c7028be9de18778dbb19e65196}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}!on\+Map\+Ready@{on\+Map\+Ready}}
+\index{on\+Map\+Ready@{on\+Map\+Ready}!fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}}
+\paragraph{\texorpdfstring{on\+Map\+Ready()}{onMapReady()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity.\+on\+Map\+Ready (\begin{DoxyParamCaption}\item[{Google\+Map}]{google\+Map }\end{DoxyParamCaption})}
+
+Manipulates the map once available. This callback is triggered when the map is ready to be used. This is where we can add markers or lines, add listeners or move the camera. In this case, we just add a marker near Sydney, Australia. If Google Play services is not installed on the device, the user will be prompted to install it inside the Support\+Map\+Fragment. This method will only be triggered once the user has installed Google Play services and returned to the app. 
+\begin{DoxyCode}
+00055                                                 \{
+00056         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap} = googleMap;
+00057 
+00058         Intent intent = getIntent();
+00059 
+00060         \textcolor{keywordtype}{double} latitude = 0.0;
+00061         \textcolor{keywordflow}{if} (intent.hasExtra(\textcolor{stringliteral}{"latitude"}))\{ \textcolor{comment}{// vérifie qu'une valeur est associée à la clé “edittext”}
+00062             latitude = Double.parseDouble(intent.getStringExtra(\textcolor{stringliteral}{"latitude"}).replaceAll(\textcolor{stringliteral}{"°"}, \textcolor{stringliteral}{""})); \textcolor{comment}{// on
+       récupère la valeur associée à la clé}
+00063             Log.v(\textcolor{stringliteral}{"Map"}, \textcolor{stringliteral}{"Latitude :"} + valueOf(latitude));
+00064         \}
+00065 
+00066         \textcolor{keywordtype}{double} longitude = 0.0;
+00067         \textcolor{keywordflow}{if} (intent.hasExtra(\textcolor{stringliteral}{"longitude"}))\{ \textcolor{comment}{// vérifie qu'une valeur est associée à la clé “edittext”}
+00068             longitude = Double.parseDouble(intent.getStringExtra(\textcolor{stringliteral}{"longitude"}).replaceAll(\textcolor{stringliteral}{"°"}, \textcolor{stringliteral}{""})); \textcolor{comment}{// on
+       récupère la valeur associée à la clé}
+00069             Log.v(\textcolor{stringliteral}{"Map"}, \textcolor{stringliteral}{"Longitude"} + valueOf(longitude));
+00070         \}
+00071 
+00072         \textcolor{comment}{// Add a marker in Sydney and move the camera}
+00073         LatLng sydney = \textcolor{keyword}{new} LatLng(latitude, longitude);
+00074         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap}.addMarker(\textcolor{keyword}{new} MarkerOptions().position(sydney).title(\textcolor{stringliteral}{"Ruche"}));
+00075         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap}.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+00076         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap}.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15));
+00077         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap}.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+00078         Circle circle = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}{mMap}.addCircle(\textcolor{keyword}{new} CircleOptions()
+00079                 .center(\textcolor{keyword}{new} LatLng(latitude, longitude))
+00080                 .radius(10000)
+00081                 .strokeColor(Color.RED));
+00082     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity_a101cebc8274b075aa3fee06ce55bf2fd}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}!m\+Map@{m\+Map}}
+\index{m\+Map@{m\+Map}!fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Carte\+Activity}}
+\paragraph{\texorpdfstring{m\+Map}{mMap}}
+{\footnotesize\ttfamily Google\+Map fr.\+campus.\+laurainc.\+honeybee.\+Carte\+Activity.\+m\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_carte_activity_8java}{Carte\+Activity.\+java}\end{DoxyCompactItemize}

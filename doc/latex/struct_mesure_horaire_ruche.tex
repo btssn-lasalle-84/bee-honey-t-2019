@@ -1,0 +1,148 @@
+\hypertarget{struct_mesure_horaire_ruche}{}\subsection{Référence de la structure Mesure\+Horaire\+Ruche}
+\label{struct_mesure_horaire_ruche}\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+
+
+structure de données pour les mesures horaires  
+
+
+
+
+{\ttfamily \#include $<$ruche.\+h$>$}
+
+
+
+Graphe de collaboration de Mesure\+Horaire\+Ruche\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{struct_mesure_horaire_ruche__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_mesure_horaire_ruche_ab679cc7168deb6c3d2458c99b94e0611}{heure}
+\item 
+bool \hyperlink{struct_mesure_horaire_ruche_ade9984cb0f2c62b3ba1369f77249bb4a}{temperatures\+Recues} = false
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_ac240bf701116e1a09f2bf33911bf57ef}{temperature\+Interieur\+Moyenne}
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_a51c45378a78c733704df79b38d61afcc}{temperature\+Interieur\+Minimum}
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_a746c391a70735bfff63bf7271ab28ab8}{temperature\+Interieur\+Maximum}
+\item 
+bool \hyperlink{struct_mesure_horaire_ruche_a4f825f05bf4e61db7b18a08dee759b7a}{humidites\+Recues} = false
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_a46f517d342e230b4e3d0b84a96b79aac}{humidite\+Interieur\+Moyenne}
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_adf0cbf1a3451cced1ba6fb9573654236}{humidite\+Interieur\+Minimum}
+\item 
+double \hyperlink{struct_mesure_horaire_ruche_ac8733bd08c235de27dd3eea85749c3f6}{humidite\+Interieur\+Maximum}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_ab679cc7168deb6c3d2458c99b94e0611}\label{struct_mesure_horaire_ruche_ab679cc7168deb6c3d2458c99b94e0611}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!heure@{heure}}
+\index{heure@{heure}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{heure}{heure}}
+{\footnotesize\ttfamily int Mesure\+Horaire\+Ruche\+::heure}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, \hyperlink{class_ruche_a6d4c59f2850f803a0ed1946e737b4262}{Ruche\+::recevoir\+Traitement\+Humidite\+Interieur()}, et \hyperlink{class_ruche_a2d2a681916140b977d45423d0d5d7b34}{Ruche\+::recevoir\+Traitement\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_ac8733bd08c235de27dd3eea85749c3f6}\label{struct_mesure_horaire_ruche_ac8733bd08c235de27dd3eea85749c3f6}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!humidite\+Interieur\+Maximum@{humidite\+Interieur\+Maximum}}
+\index{humidite\+Interieur\+Maximum@{humidite\+Interieur\+Maximum}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{humidite\+Interieur\+Maximum}{humiditeInterieurMaximum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::humidite\+Interieur\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a6d4c59f2850f803a0ed1946e737b4262}{Ruche\+::recevoir\+Traitement\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_adf0cbf1a3451cced1ba6fb9573654236}\label{struct_mesure_horaire_ruche_adf0cbf1a3451cced1ba6fb9573654236}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!humidite\+Interieur\+Minimum@{humidite\+Interieur\+Minimum}}
+\index{humidite\+Interieur\+Minimum@{humidite\+Interieur\+Minimum}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{humidite\+Interieur\+Minimum}{humiditeInterieurMinimum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::humidite\+Interieur\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a6d4c59f2850f803a0ed1946e737b4262}{Ruche\+::recevoir\+Traitement\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_a46f517d342e230b4e3d0b84a96b79aac}\label{struct_mesure_horaire_ruche_a46f517d342e230b4e3d0b84a96b79aac}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!humidite\+Interieur\+Moyenne@{humidite\+Interieur\+Moyenne}}
+\index{humidite\+Interieur\+Moyenne@{humidite\+Interieur\+Moyenne}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{humidite\+Interieur\+Moyenne}{humiditeInterieurMoyenne}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::humidite\+Interieur\+Moyenne}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a6d4c59f2850f803a0ed1946e737b4262}{Ruche\+::recevoir\+Traitement\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_a4f825f05bf4e61db7b18a08dee759b7a}\label{struct_mesure_horaire_ruche_a4f825f05bf4e61db7b18a08dee759b7a}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!humidites\+Recues@{humidites\+Recues}}
+\index{humidites\+Recues@{humidites\+Recues}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{humidites\+Recues}{humiditesRecues}}
+{\footnotesize\ttfamily bool Mesure\+Horaire\+Ruche\+::humidites\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a6d4c59f2850f803a0ed1946e737b4262}{Ruche\+::recevoir\+Traitement\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_a746c391a70735bfff63bf7271ab28ab8}\label{struct_mesure_horaire_ruche_a746c391a70735bfff63bf7271ab28ab8}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!temperature\+Interieur\+Maximum@{temperature\+Interieur\+Maximum}}
+\index{temperature\+Interieur\+Maximum@{temperature\+Interieur\+Maximum}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{temperature\+Interieur\+Maximum}{temperatureInterieurMaximum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::temperature\+Interieur\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a2d2a681916140b977d45423d0d5d7b34}{Ruche\+::recevoir\+Traitement\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_a51c45378a78c733704df79b38d61afcc}\label{struct_mesure_horaire_ruche_a51c45378a78c733704df79b38d61afcc}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!temperature\+Interieur\+Minimum@{temperature\+Interieur\+Minimum}}
+\index{temperature\+Interieur\+Minimum@{temperature\+Interieur\+Minimum}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{temperature\+Interieur\+Minimum}{temperatureInterieurMinimum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::temperature\+Interieur\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a2d2a681916140b977d45423d0d5d7b34}{Ruche\+::recevoir\+Traitement\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_ac240bf701116e1a09f2bf33911bf57ef}\label{struct_mesure_horaire_ruche_ac240bf701116e1a09f2bf33911bf57ef}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!temperature\+Interieur\+Moyenne@{temperature\+Interieur\+Moyenne}}
+\index{temperature\+Interieur\+Moyenne@{temperature\+Interieur\+Moyenne}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{temperature\+Interieur\+Moyenne}{temperatureInterieurMoyenne}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Ruche\+::temperature\+Interieur\+Moyenne}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a2d2a681916140b977d45423d0d5d7b34}{Ruche\+::recevoir\+Traitement\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_ruche_ade9984cb0f2c62b3ba1369f77249bb4a}\label{struct_mesure_horaire_ruche_ade9984cb0f2c62b3ba1369f77249bb4a}} 
+\index{Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}!temperatures\+Recues@{temperatures\+Recues}}
+\index{temperatures\+Recues@{temperatures\+Recues}!Mesure\+Horaire\+Ruche@{Mesure\+Horaire\+Ruche}}
+\paragraph{\texorpdfstring{temperatures\+Recues}{temperaturesRecues}}
+{\footnotesize\ttfamily bool Mesure\+Horaire\+Ruche\+::temperatures\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_a3a093c088d9c97f347394c8a681f7302}{Ruche\+::inserer\+Mesure\+Horaire\+Ruche()}, et \hyperlink{class_ruche_a2d2a681916140b977d45423d0d5d7b34}{Ruche\+::recevoir\+Traitement\+Temperature\+Interieur()}.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ruche_8h}{ruche.\+h}\end{DoxyCompactItemize}

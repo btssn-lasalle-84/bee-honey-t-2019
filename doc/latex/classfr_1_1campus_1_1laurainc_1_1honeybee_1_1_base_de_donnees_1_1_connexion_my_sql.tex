@@ -1,0 +1,146 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql}\index{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql@{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql}}
+
+
+Classe permettant de se connecter à My\+S\+QL en arrière-\/plan.  
+
+
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+Boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a752c9f0f9a0879fceeeabd48c5fcb058}{do\+In\+Background} (Void... unused)
+\begin{DoxyCompactList}\small\item\em Méthode de connexion qui s’exécute dans un autre thread. \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_ab9c34193cf45af727a5f5de4b27b1a46}{on\+Progress\+Update} (Integer... progress)
+\begin{DoxyCompactList}\small\item\em Méthode permettant d\textquotesingle{}indiquer la progression de la tâche d\textquotesingle{}arrière plan (s’exécute dans le thread UI) \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_acea6398eed8fc31f2a847f1e4452046c}{on\+Post\+Execute} (Boolean result)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}{message\+Connexion} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a752c9f0f9a0879fceeeabd48c5fcb058}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a752c9f0f9a0879fceeeabd48c5fcb058}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}!do\+In\+Background@{do\+In\+Background}}
+\index{do\+In\+Background@{do\+In\+Background}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}}
+\paragraph{\texorpdfstring{do\+In\+Background()}{doInBackground()}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql.\+do\+In\+Background (\begin{DoxyParamCaption}\item[{Void...}]{unused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+est\+Connecte()}.
+
+
+\begin{DoxyCode}
+00300         \{
+00301             \textcolor{keywordflow}{try}
+00302             \{
+00303                 \textcolor{comment}{// chargement du pilote JDBC MySQL}
+00304                 publishProgress(1);
+00305                 Class.forName(\textcolor{stringliteral}{"com.mysql.jdbc.Driver"}).newInstance();
+00306             \}
+00307             \textcolor{keywordflow}{catch} (Exception e)
+00308             \{
+00309                 e.printStackTrace();
+00310                 Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"doInBackground -> exception : "} + e.toString());
+00311                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}{messageConnexion} = \textcolor{stringliteral}{"Erreur connexion MySQL !"};
+00312             \}
+00313             \textcolor{keywordflow}{try}
+00314             \{
+00315                 publishProgress(50);
+00316                 \textcolor{keywordflow}{if} (!\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{estConnecte}())
+00317                 \{
+00318                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion} = DriverManager.getConnection(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password});
+00319                 \}
+00320                 publishProgress(75);
+00321                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"doInBackground -> connecte : "} + !\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed());
+00322                 \textcolor{keywordflow}{if}(!\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed())
+00323                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}{messageConnexion} = \textcolor{stringliteral}{"Connexion MySQL réussie !"};
+00324                 publishProgress(100);
+00325                 \textcolor{keywordflow}{return} !\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed();
+00326             \}
+00327             \textcolor{keywordflow}{catch} (SQLException e)
+00328             \{
+00329                 e.printStackTrace();
+00330                 Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"doInBackground -> SQLException : "} + e.getMessage());
+00331                 Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"doInBackground -> SQLState : "} + e.getSQLState());
+00332                 Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"doInBackground -> VendorError : "} + e.getErrorCode());
+00333                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}{messageConnexion} = \textcolor{stringliteral}{"Erreur connexion MySQL !"};
+00334                 publishProgress(100);
+00335                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00336             \}
+00337         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_acea6398eed8fc31f2a847f1e4452046c}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_acea6398eed8fc31f2a847f1e4452046c}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}!on\+Post\+Execute@{on\+Post\+Execute}}
+\index{on\+Post\+Execute@{on\+Post\+Execute}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}}
+\paragraph{\texorpdfstring{on\+Post\+Execute()}{onPostExecute()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql.\+on\+Post\+Execute (\begin{DoxyParamCaption}\item[{Boolean}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}
+00362         \{
+00363             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"onPostExecute -> result : "} + result);
+00364             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"onPostExecute -> message : "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}{messageConnexion});
+00365             \textcolor{keywordflow}{if}(result)
+00366             \{
+00367                 \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} != null)
+00368                 \{
+00369                     \textcolor{comment}{// Ici on peut accéder à la partie UI d'une activité}
+00370                     \textcolor{comment}{// et/ou appeler une méthode d'une activité}
+00371                 \}
+00372             \}
+00373             \textcolor{keywordflow}{else}
+00374             \{
+00375                 \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} != null)
+00376                 \{
+00377                     \textcolor{comment}{// Ici on peut accéder à la partie UI d'une activité}
+00378                     \textcolor{comment}{// et/ou appeler une méthode d'une activité}
+00379                 \}
+00380             \}
+00381         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_ab9c34193cf45af727a5f5de4b27b1a46}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_ab9c34193cf45af727a5f5de4b27b1a46}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}!on\+Progress\+Update@{on\+Progress\+Update}}
+\index{on\+Progress\+Update@{on\+Progress\+Update}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}}
+\paragraph{\texorpdfstring{on\+Progress\+Update()}{onProgressUpdate()}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql.\+on\+Progress\+Update (\begin{DoxyParamCaption}\item[{Integer...}]{progress }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+do\+In\+Background peut appeler publish\+Progress() pour indiquer l\textquotesingle{}avancement du traitement ce qui aura pour effet d\textquotesingle{}appeler automatiquement \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_ab9c34193cf45af727a5f5de4b27b1a46}{on\+Progress\+Update()} 
+\begin{DoxyCode}
+00346         \{
+00347             Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"onProgressUpdate -> progression : "} + progress[0]);
+00348             \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} != null)
+00349             \{
+00350                 \textcolor{comment}{// Ici on peut accéder à la partie UI d'une activité}
+00351                 \textcolor{comment}{// et/ou appeler une méthode d'une activité}
+00352                 \textcolor{comment}{//((MainActivity)activite).afficherProgression(progress[0]);}
+00353             \}
+00354         \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a8db83810efa310195fdd72bcbac2843f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}!message\+Connexion@{message\+Connexion}}
+\index{message\+Connexion@{message\+Connexion}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees\+::\+Connexion\+My\+Sql}}
+\paragraph{\texorpdfstring{message\+Connexion}{messageConnexion}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql.\+message\+Connexion = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_base_de_donnees_8java}{Base\+De\+Donnees.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{alertes_8h_source}{}\subsection{alertes.\+h}
+\label{alertes_8h_source}\index{alertes.\+h@{alertes.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ALERTES\_H}
+00002 \textcolor{preprocessor}{#define ALERTES\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QObject>}
+00005 \textcolor{preprocessor}{#include "\hyperlink{parametres_8h}{parametres.h}"}
+00006 
+00019 \textcolor{keyword}{class }\hyperlink{class_infos_humidite}{InfosHumidite};
+00020 \textcolor{keyword}{class }\hyperlink{class_infos_temperature}{InfosTemperature};
+00021 \textcolor{keyword}{class }\hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique};
+00022 \textcolor{keyword}{class }\hyperlink{class_infos_batterie}{InfosBatterie};
+00023 \textcolor{keyword}{class }\hyperlink{class_infos_poids}{InfosPoids};
+00024 \textcolor{keyword}{class }\hyperlink{class_infos_ensoleillement}{InfosEnsoleillement};
+00025 \textcolor{keyword}{class }\hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm};
+00026 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00027 \textcolor{keyword}{class }\hyperlink{class_ruche}{Ruche};
+00028 
+\Hypertarget{alertes_8h_source_l00040}\hyperlink{class_alertes}{00040} \textcolor{keyword}{class }\hyperlink{class_alertes}{Alertes} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00041 \{
+00042     Q\_OBJECT
+00043 
+00044     private :
+\Hypertarget{alertes_8h_source_l00045}\hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{00045}         QString \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{idRuche};
+\Hypertarget{alertes_8h_source_l00046}\hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{00046}         QString \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche};
+\Hypertarget{alertes_8h_source_l00047}\hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{00047}         \hyperlink{class_infos_temperature}{InfosTemperature} *\hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infosTemperature};
+\Hypertarget{alertes_8h_source_l00048}\hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{00048}         \hyperlink{class_infos_humidite}{InfosHumidite} *\hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infosHumidite};
+\Hypertarget{alertes_8h_source_l00049}\hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{00049}         \hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique} *
+      \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infosPressionAtmospherique};
+\Hypertarget{alertes_8h_source_l00050}\hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{00050}         \hyperlink{class_infos_ensoleillement}{InfosEnsoleillement} *\hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infosEnsoleillement};
+\Hypertarget{alertes_8h_source_l00051}\hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{00051}         \hyperlink{class_infos_batterie}{InfosBatterie} *\hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infosBatterie};
+\Hypertarget{alertes_8h_source_l00052}\hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{00052}         \hyperlink{class_infos_poids}{InfosPoids} *\hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infosPoids};
+\Hypertarget{alertes_8h_source_l00053}\hyperlink{class_alertes_adedb6924af18a7f7a14b11ffa33db6ba}{00053}         \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} \hyperlink{class_alertes_adedb6924af18a7f7a14b11ffa33db6ba}{seuilsAlertes};        
+\Hypertarget{alertes_8h_source_l00054}\hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{00054}         \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}; 
+00055 
+00056         \textcolor{comment}{// Seuils}
+\Hypertarget{alertes_8h_source_l00057}\hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{00057}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin};
+\Hypertarget{alertes_8h_source_l00058}\hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{00058}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuilTemperatureInterieurMax};
+\Hypertarget{alertes_8h_source_l00059}\hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{00059}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin};
+\Hypertarget{alertes_8h_source_l00060}\hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{00060}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax};
+\Hypertarget{alertes_8h_source_l00061}\hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{00061}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin};
+\Hypertarget{alertes_8h_source_l00062}\hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{00062}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuilTemperatureExterieurMax};
+\Hypertarget{alertes_8h_source_l00063}\hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{00063}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuilHumiditeExterieurMin};
+\Hypertarget{alertes_8h_source_l00064}\hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{00064}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax};
+\Hypertarget{alertes_8h_source_l00065}\hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{00065}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuilPoidsMin};
+\Hypertarget{alertes_8h_source_l00066}\hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{00066}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax};
+\Hypertarget{alertes_8h_source_l00067}\hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{00067}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuilEnsoleillement};
+\Hypertarget{alertes_8h_source_l00068}\hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{00068}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuilPressionAtmospherique};
+\Hypertarget{alertes_8h_source_l00069}\hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{00069}         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuilBatterie};
+00070 
+00071     \textcolor{keyword}{public}:
+00072         \textcolor{keyword}{explicit} \hyperlink{class_alertes_ad2e4e3907f97bdd06840dfeee0a87ddb}{Alertes}(QString idRuche, QString nomRuche, \hyperlink{class_q_object}{QObject} *parent = 0);
+00073         \hyperlink{class_alertes_a730b10861d04de9944b30b11c6b3c3af}{~Alertes}();
+00074         QString \hyperlink{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}{getIdRuche}();
+00075         \textcolor{keywordtype}{double} \hyperlink{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}{getSeuilTemperatureInterieurMin}();
+00076         \textcolor{keywordtype}{double} \hyperlink{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}{getSeuilTemperatureInterieurMax}();
+00077         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a40d47b65952035b78cac05b915ad57b8}{getSeuilHumiditeInterieurMin}();
+00078         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}{getSeuilHumiditeInterieurMax}();
+00079         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a4451c6b077256d838e584a073444d83d}{getSeuilTemperatureExterieurMin}();
+00080         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}{getSeuilTemperatureExterieurMax}();
+00081         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a68e467e042b615f56347a0953d6e64f1}{getSeuilHumiditeExterieurMin}();
+00082         \textcolor{keywordtype}{double} \hyperlink{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}{getSeuilHumiditeExterieurMax}();
+00083         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a228829e2826ee20cc014b2eb54addf14}{getSeuilPoidsMin}();
+00084         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}{getSeuilPoidsMax}();
+00085         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a502fa36037246fb6eaad1db859bc1971}{getSeuilPressionAtmospherique}();
+00086         \textcolor{keywordtype}{double} \hyperlink{class_alertes_a54900058557979664d25137399ae2512}{getSeuilEnsoleillement}();
+00087         \textcolor{keywordtype}{double} \hyperlink{class_alertes_adcf9f9fb707944ae17f2355819eb58d1}{getSeuilBatterie}();
+00088 
+00089         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a091a0fabca5b06302bc19de31aecafff}{setInfosTemperature}(\hyperlink{class_infos_temperature}{InfosTemperature} *infosTemperature);
+00090         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a05734ac9e97a9001de4ce9ef96235c87}{setInfosHumidite}(\hyperlink{class_infos_humidite}{InfosHumidite} *infosHumidite);
+00091         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a771133f26d4ab8c90d1bdf50e1d23d87}{setInfosPressionAtmospherique}(
+      \hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique} *infosPressionAtmospherique);
+00092         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a100bad47769994abc976419a355c4a26}{setInfosPoids}(\hyperlink{class_infos_poids}{InfosPoids} *infosPoids);
+00093         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a8bbe30ddc4893f943781749917b23463}{setInfosBatterie}(\hyperlink{class_infos_batterie}{InfosBatterie} *infosBatterie);
+00094         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a5379fc65522a77dc2cc110e489e1469d}{setInfosEnsoleillement}(\hyperlink{class_infos_ensoleillement}{InfosEnsoleillement} *
+      infosEnsoleillement);
+00095 
+00096         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertesTemperatureInterieur}();
+00097         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertesTemperatureExterieur}();
+00098         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertesHumiditeInterieur}();
+00099         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertesHumiditeExterieur}();
+00100         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertesPressionAtmospherique}();
+00101         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertesPoids}();
+00102         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertesEnsoleillement}();
+00103         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertesBatterie}();
+00104         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appelerLesAlertes}(\hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737b}{TypeAlertes} typeAlertes);
+00105         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(QString email, QString objet, QString message);
+00106 
+00107     signals :
+00108         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoiAlertesTemperatureInterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00109         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoiAlertesTemperatureExterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00110         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoiAlertesHumiditeInterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00111         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoiAlertesHumiditeExterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00112         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a3e81bcca9d4c91c69f575546681590bc}{envoiAlertesPressionAtmospherique}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00113         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoiAlertesPoids}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00114         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}{envoiAlertesEnsoleillement}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double});
+00115         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}{envoiAlertesBatterie}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double});
+00116 
+00117     \textcolor{keyword}{public} slots:
+00118         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a0e5e5177eed435d74bcbdc2a36911e52}{recevoirSeuilTemperatureInterieurMin}(QString seuil);
+00119         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a06b136f1e86ca97978187305a11be0ff}{recevoirSeuilTemperatureInterieurMax}(QString seuil);
+00120         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a4444f527a708f8e1963d2dc1c95bad96}{recevoirSeuilHumiditeInterieurMin}(QString seuil);
+00121         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a7554e8b6752b0e0a5cfefeecfbc3ba56}{recevoirSeuilHumiditeInterieurMax}(QString seuil);
+00122         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ad88c760d06e1d438a57027857d50a77f}{recevoirSeuilTemperatureExterieurMin}(QString seuil);
+00123         \textcolor{keywordtype}{void} \hyperlink{class_alertes_af896e03da2f2ec319d410fb8dcc89e0e}{recevoirSeuilTemperatureExterieurMax}(QString seuil);
+00124         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a021d167be6c98d9b0718bb9c7209b47e}{recevoirSeuilHumiditeExterieurMin}(QString seuil);
+00125         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a8c8500d99314034be3c01a871f209fb8}{recevoirSeuilHumiditeExterieurMax}(QString seuil);
+00126         \textcolor{keywordtype}{void} \hyperlink{class_alertes_ab6a15b0c8387a2cdf47dacce92c60383}{recevoirSeuilPoidsMin}(QString seuil);
+00127         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a77b71a5bc047ced8d09f59a521f58616}{recevoirSeuilPoidsMax}(QString seuil);
+00128         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a4496c251e1cde3e8c6beee64bad53fe3}{recevoirSeuilPressionAtmospherique}(QString seuil);
+00129         \textcolor{keywordtype}{void} \hyperlink{class_alertes_abf6b9934820f50024c50dc9691f4ddee}{recevoirSeuilEnsoleillement}(QString seuil);
+00130         \textcolor{keywordtype}{void} \hyperlink{class_alertes_a61e1f4a105bd64ac829959726ae6ebb8}{recevoirSeuilBatterie}(QString seuil);
+00131 \};
+00132 
+00133 \textcolor{preprocessor}{#endif // ALERTES\_H}
+\end{DoxyCode}

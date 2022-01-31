@@ -1,0 +1,357 @@
+\hypertarget{class_infos_pression_atmospherique}{}\subsection{Référence de la classe Infos\+Pression\+Atmospherique}
+\label{class_infos_pression_atmospherique}\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+
+
+La classe \hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Pression\+Atmospherique.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Pression\+Atmospherique\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_infos_pression_atmospherique__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique} (Q\+String pression\+Atmospherique\+String, Q\+String \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatage\+Pression\+Atmospherique})
+\begin{DoxyCompactList}\small\item\em slot qui traite la pression atmospherique \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}{pression\+Atmospherique\+Envoye} (double \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique}, Q\+String horodatage)
+\item 
+void \hyperlink{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}{traitement\+Pression\+Atmospherique\+Envoye} (const double pression\+Atmospherique\+Moyenne, const double pression\+Atmospherique\+Minimum, const double pression\+Atmospherique\+Maximum, int heure)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_pression_atmospherique_aade2e8de08264974305962bea890bf68}{Infos\+Pression\+Atmospherique} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\item 
+\hyperlink{class_infos_pression_atmospherique_a3f4d667523391ceb3c2342c70a3ee41f}{$\sim$\+Infos\+Pression\+Atmospherique} ()
+\begin{DoxyCompactList}\small\item\em destructeur de la classe \hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique} \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}{get\+Pression\+Atmospherique} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut pression\+Atmospherique \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_pression_atmospherique_ab598771e222fbca604ac6dba5d2aacb9}{set\+Pression\+Atmospherique} (double \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut pression\+Atmospherique \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_pression_atmospherique_a6836dfc16f1be4287354ea26a080b436}{get\+Horodatage\+Pression\+Atmospherique} () const
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut horodatage\+Pression\+Atmospherique \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_pression_atmospherique_a5d8ba94db66bb7bcdf5a70dd6f21de23}{set\+Horodatage\+Pression\+Atmospherique} (const Q\+String \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatage\+Pression\+Atmospherique})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut horodatage\+Pression\+Atmospherique \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique}
+\begin{DoxyCompactList}\small\item\em la pression atmospherique (unité ?) \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatage\+Pression\+Atmospherique}
+\begin{DoxyCompactList}\small\item\em horodatage de la pression atmospherique \end{DoxyCompactList}\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pression\+Atmospheriques}
+\item 
+int \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heure\+Courante\+Pression\+Atmospherique}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_aade2e8de08264974305962bea890bf68}\label{class_infos_pression_atmospherique_aade2e8de08264974305962bea890bf68}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{Infos\+Pression\+Atmospherique()}{InfosPressionAtmospherique()}}
+{\footnotesize\ttfamily Infos\+Pression\+Atmospherique\+::\+Infos\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00026                                                                      : \hyperlink{class_q_object}{QObject}(parent), 
+      \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique}(0), \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique}
+      (\textcolor{stringliteral}{""}),\hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique}(-1)
+00027 \{
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a3f4d667523391ceb3c2342c70a3ee41f}\label{class_infos_pression_atmospherique_a3f4d667523391ceb3c2342c70a3ee41f}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!````~Infos\+Pression\+Atmospherique@{$\sim$\+Infos\+Pression\+Atmospherique}}
+\index{````~Infos\+Pression\+Atmospherique@{$\sim$\+Infos\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{$\sim$\+Infos\+Pression\+Atmospherique()}{~InfosPressionAtmospherique()}}
+{\footnotesize\ttfamily Infos\+Pression\+Atmospherique\+::$\sim$\+Infos\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00034 \{
+00035 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}\label{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!calculer\+Moyenne\+Horaire\+Pression\+Atmospherique@{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique}}
+\index{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique@{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique()}{calculerMoyenneHorairePressionAtmospherique()}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::calculer\+Moyenne\+Horaire\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heure\+Courante\+Pression\+Atmospherique}, \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pression\+Atmospheriques}, et \hyperlink{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}{traitement\+Pression\+Atmospherique\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique()}.
+
+
+\begin{DoxyCode}
+00105 \{
+00106     \textcolor{keywordtype}{double} sommePressionAtmospherique= 0;
+00107     \textcolor{keywordtype}{double} pressionAtmospheriqueMoyenne = 0;
+00108     \textcolor{keywordtype}{double} pressionAtmospheriqueMinimum = 1200;
+00109     \textcolor{keywordtype}{double} pressionAtmospheriqueMaximum = -999;
+00110 
+00111     \textcolor{comment}{// au moins 2 mesures}
+00112     \textcolor{keywordflow}{if}(\hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}.size() >= 2)
+00113     \{
+00114         pressionAtmospheriqueMinimum = \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[0];
+00115         pressionAtmospheriqueMaximum = \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[0];
+00116         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}.size(); i++)
+00117         \{
+00118             sommePressionAtmospherique += \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[i];
+00119 
+00120             \textcolor{keywordflow}{if}(pressionAtmospheriqueMinimum > \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[i])
+00121             \{
+00122                 pressionAtmospheriqueMinimum = \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[i];
+00123             \}
+00124 
+00125             \textcolor{keywordflow}{if}(pressionAtmospheriqueMaximum < \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[i])
+00126             \{
+00127                 pressionAtmospheriqueMaximum = \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}[i];
+00128             \}
+00129         \}
+00130     \}
+00131     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques};
+00132     pressionAtmospheriqueMoyenne = sommePressionAtmospherique/ double(pressionAtmospheriques.size());
+00133     emit \hyperlink{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}{traitementPressionAtmospheriqueEnvoye}(
+      pressionAtmospheriqueMoyenne, pressionAtmospheriqueMinimum ,pressionAtmospheriqueMaximum, 
+      \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique});
+00134     pressionAtmospheriques.clear();
+00135 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a6836dfc16f1be4287354ea26a080b436}\label{class_infos_pression_atmospherique_a6836dfc16f1be4287354ea26a080b436}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!get\+Horodatage\+Pression\+Atmospherique@{get\+Horodatage\+Pression\+Atmospherique}}
+\index{get\+Horodatage\+Pression\+Atmospherique@{get\+Horodatage\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Pression\+Atmospherique()}{getHorodatagePressionAtmospherique()}}
+{\footnotesize\ttfamily Q\+String Infos\+Pression\+Atmospherique\+::get\+Horodatage\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape Q\+String} horodatage\+Pression\+Atmospherique 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatage\+Pression\+Atmospherique}.
+
+
+\begin{DoxyCode}
+00071 \{
+00072     \textcolor{keywordflow}{return} \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique};
+00073 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}\label{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!get\+Pression\+Atmospherique@{get\+Pression\+Atmospherique}}
+\index{get\+Pression\+Atmospherique@{get\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{get\+Pression\+Atmospherique()}{getPressionAtmospherique()}}
+{\footnotesize\ttfamily double Infos\+Pression\+Atmospherique\+::get\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape double} pression\+Atmospherique 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique}.
+
+
+
+Référencé par \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{Alertes\+::alertes\+Pression\+Atmospherique()}.
+
+
+\begin{DoxyCode}
+00043 \{
+00044     \textcolor{keywordflow}{return} \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique};
+00045 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}\label{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!pression\+Atmospherique\+Envoye@{pression\+Atmospherique\+Envoye}}
+\index{pression\+Atmospherique\+Envoye@{pression\+Atmospherique\+Envoye}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{pression\+Atmospherique\+Envoye}{pressionAtmospheriqueEnvoye}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::pression\+Atmospherique\+Envoye (\begin{DoxyParamCaption}\item[{double}]{pression\+Atmospherique,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a5d8ba94db66bb7bcdf5a70dd6f21de23}\label{class_infos_pression_atmospherique_a5d8ba94db66bb7bcdf5a70dd6f21de23}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!set\+Horodatage\+Pression\+Atmospherique@{set\+Horodatage\+Pression\+Atmospherique}}
+\index{set\+Horodatage\+Pression\+Atmospherique@{set\+Horodatage\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Pression\+Atmospherique()}{setHorodatagePressionAtmospherique()}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::set\+Horodatage\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Pression\+Atmospherique }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Pression\+Atmospherique} & corespondant a la horodatage\+Pression\+Atmospherique \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatage\+Pression\+Atmospherique}.
+
+
+\begin{DoxyCode}
+00062 \{
+00063     this->\hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique} = 
+      \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique};
+00064 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_ab598771e222fbca604ac6dba5d2aacb9}\label{class_infos_pression_atmospherique_ab598771e222fbca604ac6dba5d2aacb9}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!set\+Pression\+Atmospherique@{set\+Pression\+Atmospherique}}
+\index{set\+Pression\+Atmospherique@{set\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{set\+Pression\+Atmospherique()}{setPressionAtmospherique()}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::set\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{double}]{pression\+Atmospherique }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pression\+Atmospherique} & corespondant a la pression atmospherique \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique}.
+
+
+\begin{DoxyCode}
+00053 \{
+00054     this->\hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique} = \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique};
+00055 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}\label{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!traitement\+Pression\+Atmospherique\+Envoye@{traitement\+Pression\+Atmospherique\+Envoye}}
+\index{traitement\+Pression\+Atmospherique\+Envoye@{traitement\+Pression\+Atmospherique\+Envoye}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{traitement\+Pression\+Atmospherique\+Envoye}{traitementPressionAtmospheriqueEnvoye}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::traitement\+Pression\+Atmospherique\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{pression\+Atmospherique\+Moyenne,  }\item[{const double}]{pression\+Atmospherique\+Minimum,  }\item[{const double}]{pression\+Atmospherique\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}\label{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!traiter\+Nouvelle\+Pression\+Atmospherique@{traiter\+Nouvelle\+Pression\+Atmospherique}}
+\index{traiter\+Nouvelle\+Pression\+Atmospherique@{traiter\+Nouvelle\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Pression\+Atmospherique}{traiterNouvellePressionAtmospherique}}
+{\footnotesize\ttfamily void Infos\+Pression\+Atmospherique\+::traiter\+Nouvelle\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{Q\+String}]{pression\+Atmospherique\+String,  }\item[{Q\+String}]{horodatage\+Pression\+Atmospherique }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pression\+Atmospherique\+String} & qui corespond a la pression atmospherique envoyé par la \hyperlink{class_ruche}{Ruche} \\
+\hline
+{\em horodatage\+Pression\+Atmospherique} & correspond a l\textquotesingle{}horodatage de la mesure de la pression atmospherique \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique()}, \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heure\+Courante\+Pression\+Atmospherique}, \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pression\+Atmospherique}, \hyperlink{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}{pression\+Atmospherique\+Envoye()}, et \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pression\+Atmospheriques}.
+
+
+\begin{DoxyCode}
+00082 \{
+00083     \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique} = pressionAtmospheriqueString.toDouble();
+00084     emit \hyperlink{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}{pressionAtmospheriqueEnvoye}(
+      \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique},\hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique});
+00085 
+00086     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00087     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCourantePressionAtmospherique"} << 
+      \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique} << dateTimeHorodatage.time().hour();
+00088     \textcolor{keywordflow}{if}(\hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique} == -1)
+00089     \{
+00090         \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique} = dateTimeHorodatage.time().
+      hour();
+00091     \}
+00092     \textcolor{keywordflow}{if}(\hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique} == dateTimeHorodatage.time().
+      hour())
+00093     \{
+00094         \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}.append(
+      \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique});
+00095     \}
+00096     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique}+1)%24 == 
+      dateTimeHorodatage.time().hour())
+00097     \{
+00098         \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculerMoyenneHorairePressionAtmospherique}();
+00099         \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique} = dateTimeHorodatage.time().
+      hour();
+00100         \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques}.append(
+      \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique});
+00101     \}
+00102 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}\label{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!heure\+Courante\+Pression\+Atmospherique@{heure\+Courante\+Pression\+Atmospherique}}
+\index{heure\+Courante\+Pression\+Atmospherique@{heure\+Courante\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{heure\+Courante\+Pression\+Atmospherique}{heureCourantePressionAtmospherique}}
+{\footnotesize\ttfamily int Infos\+Pression\+Atmospherique\+::heure\+Courante\+Pression\+Atmospherique\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique()}, et \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}\label{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!horodatage\+Pression\+Atmospherique@{horodatage\+Pression\+Atmospherique}}
+\index{horodatage\+Pression\+Atmospherique@{horodatage\+Pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{horodatage\+Pression\+Atmospherique}{horodatagePressionAtmospherique}}
+{\footnotesize\ttfamily Q\+String Infos\+Pression\+Atmospherique\+::horodatage\+Pression\+Atmospherique\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_a6836dfc16f1be4287354ea26a080b436}{get\+Horodatage\+Pression\+Atmospherique()}, et \hyperlink{class_infos_pression_atmospherique_a5d8ba94db66bb7bcdf5a70dd6f21de23}{set\+Horodatage\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}\label{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!pression\+Atmospherique@{pression\+Atmospherique}}
+\index{pression\+Atmospherique@{pression\+Atmospherique}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{pression\+Atmospherique}{pressionAtmospherique}}
+{\footnotesize\ttfamily double Infos\+Pression\+Atmospherique\+::pression\+Atmospherique\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}{get\+Pression\+Atmospherique()}, \hyperlink{class_infos_pression_atmospherique_ab598771e222fbca604ac6dba5d2aacb9}{set\+Pression\+Atmospherique()}, et \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}\label{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}} 
+\index{Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}!pression\+Atmospheriques@{pression\+Atmospheriques}}
+\index{pression\+Atmospheriques@{pression\+Atmospheriques}!Infos\+Pression\+Atmospherique@{Infos\+Pression\+Atmospherique}}
+\paragraph{\texorpdfstring{pression\+Atmospheriques}{pressionAtmospheriques}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Pression\+Atmospherique\+::pression\+Atmospheriques\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculer\+Moyenne\+Horaire\+Pression\+Atmospherique()}, et \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiter\+Nouvelle\+Pression\+Atmospherique()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_pression_atmospherique_8h}{infos\+Pression\+Atmospherique.\+h}\item 
+\hyperlink{infos_pression_atmospherique_8cpp}{infos\+Pression\+Atmospherique.\+cpp}\end{DoxyCompactItemize}

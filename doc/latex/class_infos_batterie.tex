@@ -1,0 +1,347 @@
+\hypertarget{class_infos_batterie}{}\subsection{Référence de la classe Infos\+Batterie}
+\label{class_infos_batterie}\index{Infos\+Batterie@{Infos\+Batterie}}
+
+
+Déclaration de la classe \hyperlink{class_infos_batterie}{Infos\+Batterie}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Batterie.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Batterie\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_infos_batterie__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}{traiter\+Nouvelle\+Mesure\+Courant} (Q\+String nouveau\+Courant, Q\+String horodatage)
+\item 
+void \hyperlink{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}{traiter\+Nouvelle\+Mesure\+Charge} (Q\+String nouvelle\+Charge, Q\+String horodatage)
+\item 
+void \hyperlink{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}{traiter\+Nouvelle\+Mesure\+Tension} (Q\+String nouvelle\+Tension, Q\+String horodatage)
+\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tension\+Envoye} (const double \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}, Q\+String)
+\item 
+void \hyperlink{class_infos_batterie_a3b648bf48c796c64d90db29741889eb1}{courant\+Envoye} (const double \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}, Q\+String)
+\item 
+void \hyperlink{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}{charge\+Envoye} (const double \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}, Q\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_batterie_a8dea33c2515f2c30ea3a525e17c03fa2}{Infos\+Batterie} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\item 
+\hyperlink{class_infos_batterie_a5c59c1d607d25b46fb7c3768a01f4ec5}{$\sim$\+Infos\+Batterie} ()
+\item 
+double \hyperlink{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}{get\+Mesure\+Batterie\+Charge} ()
+\item 
+double \hyperlink{class_infos_batterie_a17a55f19c132026091217c243bf402c0}{get\+Mesure\+Batterie\+Courant} ()
+\item 
+double \hyperlink{class_infos_batterie_a470b96c2fe1fab6a187c6d0997bd76a8}{get\+Mesure\+Batterie\+Tension} ()
+\item 
+Q\+String \hyperlink{class_infos_batterie_aeac9a7bcd953444f4f2302d7949c74ef}{get\+Horodatage\+Batterie} ()
+\item 
+void \hyperlink{class_infos_batterie_a1d98a79696389d0264959d0c8a64bbcd}{set\+Horodatage\+Batterie} (Q\+String \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie})
+\item 
+void \hyperlink{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}{set\+Mesures\+Batterie} (double \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}, double \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}, double \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge})
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}
+\item 
+double \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}
+\item 
+double \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}
+\item 
+Q\+String \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_batterie_a8dea33c2515f2c30ea3a525e17c03fa2}\label{class_infos_batterie_a8dea33c2515f2c30ea3a525e17c03fa2}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\index{Infos\+Batterie@{Infos\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{Infos\+Batterie()}{InfosBatterie()}}
+{\footnotesize\ttfamily Infos\+Batterie\+::\+Infos\+Batterie (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00016                                             : \hyperlink{class_q_object}{QObject}(parent), \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}(0), 
+      \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}(0), \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}(0), \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie}(\textcolor{stringliteral}{""})
+00017 \{ 
+00018 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a5c59c1d607d25b46fb7c3768a01f4ec5}\label{class_infos_batterie_a5c59c1d607d25b46fb7c3768a01f4ec5}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!````~Infos\+Batterie@{$\sim$\+Infos\+Batterie}}
+\index{````~Infos\+Batterie@{$\sim$\+Infos\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{$\sim$\+Infos\+Batterie()}{~InfosBatterie()}}
+{\footnotesize\ttfamily Infos\+Batterie\+::$\sim$\+Infos\+Batterie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00021 \{
+00022 
+00023 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}\label{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!charge\+Envoye@{charge\+Envoye}}
+\index{charge\+Envoye@{charge\+Envoye}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{charge\+Envoye}{chargeEnvoye}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::charge\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{charge,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}{traiter\+Nouvelle\+Mesure\+Charge()}.
+
+\mbox{\Hypertarget{class_infos_batterie_a3b648bf48c796c64d90db29741889eb1}\label{class_infos_batterie_a3b648bf48c796c64d90db29741889eb1}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!courant\+Envoye@{courant\+Envoye}}
+\index{courant\+Envoye@{courant\+Envoye}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{courant\+Envoye}{courantEnvoye}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::courant\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{courant,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_infos_batterie_aeac9a7bcd953444f4f2302d7949c74ef}\label{class_infos_batterie_aeac9a7bcd953444f4f2302d7949c74ef}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!get\+Horodatage\+Batterie@{get\+Horodatage\+Batterie}}
+\index{get\+Horodatage\+Batterie@{get\+Horodatage\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Batterie()}{getHorodatageBatterie()}}
+{\footnotesize\ttfamily Q\+String Infos\+Batterie\+::get\+Horodatage\+Batterie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}.
+
+
+
+Référencé par \hyperlink{class_ruche_a509367d6b2bcb7e6431fc1cc5ff606b5}{Ruche\+::inserer\+Donnees\+Port\+Batterie()}.
+
+
+\begin{DoxyCode}
+00041 \{
+00042     \textcolor{keywordflow}{return} \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie};
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}\label{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!get\+Mesure\+Batterie\+Charge@{get\+Mesure\+Batterie\+Charge}}
+\index{get\+Mesure\+Batterie\+Charge@{get\+Mesure\+Batterie\+Charge}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{get\+Mesure\+Batterie\+Charge()}{getMesureBatterieCharge()}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::get\+Mesure\+Batterie\+Charge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{Alertes\+::alertes\+Batterie()}.
+
+
+\begin{DoxyCode}
+00026 \{
+00027     \textcolor{keywordflow}{return} \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge};
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a17a55f19c132026091217c243bf402c0}\label{class_infos_batterie_a17a55f19c132026091217c243bf402c0}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!get\+Mesure\+Batterie\+Courant@{get\+Mesure\+Batterie\+Courant}}
+\index{get\+Mesure\+Batterie\+Courant@{get\+Mesure\+Batterie\+Courant}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{get\+Mesure\+Batterie\+Courant()}{getMesureBatterieCourant()}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::get\+Mesure\+Batterie\+Courant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}.
+
+
+\begin{DoxyCode}
+00031 \{
+00032     \textcolor{keywordflow}{return} \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant};
+00033 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a470b96c2fe1fab6a187c6d0997bd76a8}\label{class_infos_batterie_a470b96c2fe1fab6a187c6d0997bd76a8}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!get\+Mesure\+Batterie\+Tension@{get\+Mesure\+Batterie\+Tension}}
+\index{get\+Mesure\+Batterie\+Tension@{get\+Mesure\+Batterie\+Tension}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{get\+Mesure\+Batterie\+Tension()}{getMesureBatterieTension()}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::get\+Mesure\+Batterie\+Tension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}.
+
+
+\begin{DoxyCode}
+00036 \{
+00037     \textcolor{keywordflow}{return} \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension};
+00038 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a1d98a79696389d0264959d0c8a64bbcd}\label{class_infos_batterie_a1d98a79696389d0264959d0c8a64bbcd}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!set\+Horodatage\+Batterie@{set\+Horodatage\+Batterie}}
+\index{set\+Horodatage\+Batterie@{set\+Horodatage\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Batterie()}{setHorodatageBatterie()}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::set\+Horodatage\+Batterie (\begin{DoxyParamCaption}\item[{Q\+String}]{horodatage\+Batterie }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}.
+
+
+\begin{DoxyCode}
+00046 \{
+00047     this->\hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie} = \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie};
+00048 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}\label{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!set\+Mesures\+Batterie@{set\+Mesures\+Batterie}}
+\index{set\+Mesures\+Batterie@{set\+Mesures\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{set\+Mesures\+Batterie()}{setMesuresBatterie()}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::set\+Mesures\+Batterie (\begin{DoxyParamCaption}\item[{double}]{tension,  }\item[{double}]{courant,  }\item[{double}]{charge }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}, \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}, et \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}.
+
+
+\begin{DoxyCode}
+00051 \{
+00052     this->\hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension} = \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension};
+00053     this->\hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant} = \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant};
+00054     this->\hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge} = \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge};
+00055 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}\label{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!tension\+Envoye@{tension\+Envoye}}
+\index{tension\+Envoye@{tension\+Envoye}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{tension\+Envoye}{tensionEnvoye}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::tension\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{tension,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}{traiter\+Nouvelle\+Mesure\+Courant()}, et \hyperlink{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}{traiter\+Nouvelle\+Mesure\+Tension()}.
+
+\mbox{\Hypertarget{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}\label{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!traiter\+Nouvelle\+Mesure\+Charge@{traiter\+Nouvelle\+Mesure\+Charge}}
+\index{traiter\+Nouvelle\+Mesure\+Charge@{traiter\+Nouvelle\+Mesure\+Charge}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Mesure\+Charge}{traiterNouvelleMesureCharge}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::traiter\+Nouvelle\+Mesure\+Charge (\begin{DoxyParamCaption}\item[{Q\+String}]{nouvelle\+Charge,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge}, \hyperlink{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}{charge\+Envoye()}, et \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}.
+
+
+\begin{DoxyCode}
+00067 \{
+00068     \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge} = nouvelleCharge.toDouble();
+00069     \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie} = horodatage;
+00070     emit \hyperlink{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}{chargeEnvoye}(\hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge},horodatage);
+00071     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"charge = "} << \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge};
+00072 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}\label{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!traiter\+Nouvelle\+Mesure\+Courant@{traiter\+Nouvelle\+Mesure\+Courant}}
+\index{traiter\+Nouvelle\+Mesure\+Courant@{traiter\+Nouvelle\+Mesure\+Courant}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Mesure\+Courant}{traiterNouvelleMesureCourant}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::traiter\+Nouvelle\+Mesure\+Courant (\begin{DoxyParamCaption}\item[{Q\+String}]{nouveau\+Courant,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant}, \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}, et \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tension\+Envoye()}.
+
+
+\begin{DoxyCode}
+00058 \{
+00059     \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant} = nouveauCourant.toDouble();
+00060     \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie} = horodatage;
+00061     emit \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tensionEnvoye}(\hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant},horodatage);
+00062     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"courant = "} << \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant};
+00063 
+00064 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}\label{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!traiter\+Nouvelle\+Mesure\+Tension@{traiter\+Nouvelle\+Mesure\+Tension}}
+\index{traiter\+Nouvelle\+Mesure\+Tension@{traiter\+Nouvelle\+Mesure\+Tension}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Mesure\+Tension}{traiterNouvelleMesureTension}}
+{\footnotesize\ttfamily void Infos\+Batterie\+::traiter\+Nouvelle\+Mesure\+Tension (\begin{DoxyParamCaption}\item[{Q\+String}]{nouvelle\+Tension,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatage\+Batterie}, \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension}, et \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tension\+Envoye()}.
+
+
+\begin{DoxyCode}
+00075 \{
+00076     \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension} = nouvelleTension.toDouble();
+00077     \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie} = horodatage;
+00078     emit \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tensionEnvoye}(\hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension},horodatage);
+00079     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"tension = "} << \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension};
+00080 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}\label{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!charge@{charge}}
+\index{charge@{charge}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{charge}{charge}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::charge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}{get\+Mesure\+Batterie\+Charge()}, \hyperlink{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}{set\+Mesures\+Batterie()}, et \hyperlink{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}{traiter\+Nouvelle\+Mesure\+Charge()}.
+
+\mbox{\Hypertarget{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}\label{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!courant@{courant}}
+\index{courant@{courant}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{courant}{courant}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::courant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_a17a55f19c132026091217c243bf402c0}{get\+Mesure\+Batterie\+Courant()}, \hyperlink{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}{set\+Mesures\+Batterie()}, et \hyperlink{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}{traiter\+Nouvelle\+Mesure\+Courant()}.
+
+\mbox{\Hypertarget{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}\label{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!horodatage\+Batterie@{horodatage\+Batterie}}
+\index{horodatage\+Batterie@{horodatage\+Batterie}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{horodatage\+Batterie}{horodatageBatterie}}
+{\footnotesize\ttfamily Q\+String Infos\+Batterie\+::horodatage\+Batterie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_aeac9a7bcd953444f4f2302d7949c74ef}{get\+Horodatage\+Batterie()}, \hyperlink{class_infos_batterie_a1d98a79696389d0264959d0c8a64bbcd}{set\+Horodatage\+Batterie()}, \hyperlink{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}{traiter\+Nouvelle\+Mesure\+Charge()}, \hyperlink{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}{traiter\+Nouvelle\+Mesure\+Courant()}, et \hyperlink{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}{traiter\+Nouvelle\+Mesure\+Tension()}.
+
+\mbox{\Hypertarget{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}\label{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}} 
+\index{Infos\+Batterie@{Infos\+Batterie}!tension@{tension}}
+\index{tension@{tension}!Infos\+Batterie@{Infos\+Batterie}}
+\paragraph{\texorpdfstring{tension}{tension}}
+{\footnotesize\ttfamily double Infos\+Batterie\+::tension\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_batterie_a470b96c2fe1fab6a187c6d0997bd76a8}{get\+Mesure\+Batterie\+Tension()}, \hyperlink{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}{set\+Mesures\+Batterie()}, et \hyperlink{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}{traiter\+Nouvelle\+Mesure\+Tension()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_batterie_8h}{infos\+Batterie.\+h}\item 
+\hyperlink{infos_batterie_8cpp}{infos\+Batterie.\+cpp}\end{DoxyCompactItemize}

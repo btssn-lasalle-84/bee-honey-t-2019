@@ -1,0 +1,81 @@
+\hypertarget{sender__p_8h_source}{}\subsection{sender\+\_\+p.\+h}
+\label{sender__p_8h_source}\index{sender\+\_\+p.\+h@{sender\+\_\+p.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00003 \textcolor{comment}{ *}
+00004 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}
+00005 \textcolor{comment}{ * modify it under the terms of the GNU Library General Public}
+00006 \textcolor{comment}{ * License as published by the Free Software Foundation; either}
+00007 \textcolor{comment}{ * version 2 of the License, or (at your option) any later version.}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This library is distributed in the hope that it will be useful,}
+00010 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00011 \textcolor{comment}{ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU}
+00012 \textcolor{comment}{ * Library General Public License for more details.}
+00013 \textcolor{comment}{ *}
+00014 \textcolor{comment}{ * You should have received a copy of the GNU Library General Public License}
+00015 \textcolor{comment}{ * along with this library; see the file COPYING.LIB. If not, write to}
+00016 \textcolor{comment}{ * the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,}
+00017 \textcolor{comment}{ * Boston, MA 02110-1301, USA.}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#ifndef SENDER\_P\_H}
+00021 \textcolor{preprocessor}{#define SENDER\_P\_H}
+00022 
+00023 \textcolor{preprocessor}{#include "\hyperlink{sender_8h}{sender.h}"}
+00024 
+00025 \textcolor{preprocessor}{#include <QtNetwork/QHostInfo>}
+00026 
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00028 
+\Hypertarget{sender__p_8h_source_l00029}\hyperlink{class_simple_mail_1_1_sender_private}{00029} \textcolor{keyword}{class }\hyperlink{class_simple_mail_1_1_sender_private}{SenderPrivate}
+00030 \{
+00031     Q\_DECLARE\_PUBLIC(\hyperlink{class_simple_mail_1_1_sender}{Sender})
+00032 \textcolor{keyword}{public}:
+\Hypertarget{sender__p_8h_source_l00033}\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{00033}     \textcolor{keyword}{enum} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{State} \{
+\Hypertarget{sender__p_8h_source_l00034}\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{00034}         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{Error},
+\Hypertarget{sender__p_8h_source_l00035}\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{00035}         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{Disconnected},
+\Hypertarget{sender__p_8h_source_l00036}\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{00036}         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{Connected},
+\Hypertarget{sender__p_8h_source_l00037}\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{00037}         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{Ready}
+00038     \};
+00039     \hyperlink{class_simple_mail_1_1_sender_private_a97a8f31b0268f9cab7ee4552e251a2c8}{SenderPrivate}(\hyperlink{class_simple_mail_1_1_sender}{Sender} *parent);
+00040 
+00041     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{sendMail}(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage} &email);
+00042     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{keyword}{const} QByteArray &data);
+00043     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connectToHost}();
+00044     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login}();
+00045     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(\textcolor{keywordtype}{int} expectedCode);
+00046     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{processState}();
+00047     \textcolor{keywordtype}{void} \hyperlink{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}{setPeerVerificationType}(\textcolor{keyword}{const} 
+      \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender::PeerVerificationType} &type);
+00048 
+\Hypertarget{sender__p_8h_source_l00049}\hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{00049}     \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{State} \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = State::Disconnected;
+\Hypertarget{sender__p_8h_source_l00050}\hyperlink{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}{00050}     \hyperlink{class_simple_mail_1_1_sender}{Sender} *\hyperlink{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}{q\_ptr};
+\Hypertarget{sender__p_8h_source_l00051}\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{00051}     QTcpSocket *\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket} = \textcolor{keyword}{nullptr};
+\Hypertarget{sender__p_8h_source_l00052}\hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{00052}     QString \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError};
+00053 
+\Hypertarget{sender__p_8h_source_l00054}\hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{00054}     QString \hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host} = QLatin1String(\textcolor{stringliteral}{"localhost"});
+\Hypertarget{sender__p_8h_source_l00055}\hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{00055}     \textcolor{keywordtype}{int} \hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{port} = 25;
+\Hypertarget{sender__p_8h_source_l00056}\hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{00056}     \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Sender::ConnectionType} \hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connectionType};
+\Hypertarget{sender__p_8h_source_l00057}\hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{00057}     QString \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name} = QHostInfo::localHostName();
+\Hypertarget{sender__p_8h_source_l00058}\hyperlink{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}{00058}     \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender::PeerVerificationType} 
+      \hyperlink{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}{peerVerificationType} = \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Sender::VerifyPeer};
+00059 
+\Hypertarget{sender__p_8h_source_l00060}\hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{00060}     QString \hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user};
+\Hypertarget{sender__p_8h_source_l00061}\hyperlink{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}{00061}     QString \hyperlink{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}{password};
+\Hypertarget{sender__p_8h_source_l00062}\hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{00062}     \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Sender::AuthMethod} \hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{authMethod} = \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Sender::AuthNone};
+00063 
+\Hypertarget{sender__p_8h_source_l00064}\hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{00064}     \textcolor{keywordtype}{int} \hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{connectionTimeout} = 5000;
+\Hypertarget{sender__p_8h_source_l00065}\hyperlink{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}{00065}     \textcolor{keywordtype}{int} \hyperlink{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}{responseTimeout} = 5000;
+\Hypertarget{sender__p_8h_source_l00066}\hyperlink{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}{00066}     \textcolor{keywordtype}{int} \hyperlink{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}{sendMessageTimeout} = 60000;
+00067 
+\Hypertarget{sender__p_8h_source_l00068}\hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{00068}     QByteArray \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText};
+\Hypertarget{sender__p_8h_source_l00069}\hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{00069}     \textcolor{keywordtype}{int} \hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{responseCode};
+00070 \};
+00071 
+00072 \}
+00073 
+00074 \textcolor{preprocessor}{#endif // SENDER\_P\_H}
+\end{DoxyCode}

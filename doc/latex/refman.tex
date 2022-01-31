@@ -1,0 +1,263 @@
+\documentclass[twoside]{article}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage[a4paper]{geometry}
+\geometry{vmargin=2cm,hmargin=2cm,lmargin=1.2cm,rmargin=1.2cm}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{\bfseries\scriptsize bee'honey't}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize BTS SN-IR LaSalle Avigon 2019 }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{\bfseries\scriptsize bee'honey't}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\LARGE Projet Bee-\/\+Honey\textquotesingle{}t \\[1ex]\large 1.\+1 }\\
+\vspace*{1cm}
+{\large MELLAH Florentin}\\
+{\large ROSSI Enzo}\\
+{\large LAURAIN Clément}\\
+\end{center}
+\end{titlepage}
+\pagenumbering{roman}
+\tableofcontents
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\section{Bee-\/\+Honey\textquotesingle{}t}
+\label{index}\hypertarget{index}{}\input{index}
+\section{Changelog}
+\label{page_changelog}
+\Hypertarget{page_changelog}
+\input{page_changelog}
+\section{Installation}
+\label{page_install}
+\Hypertarget{page_install}
+\input{page_install}
+\section{R\+E\+A\+D\+ME}
+\label{page__r_e_a_d_m_e}
+\Hypertarget{page__r_e_a_d_m_e}
+\input{page__r_e_a_d_m_e}
+\section{A propos}
+\label{page_about}
+\Hypertarget{page_about}
+\input{page_about}
+\section{Licence G\+PL}
+\label{page_licence}
+\Hypertarget{page_licence}
+\input{page_licence}
+\section{Liste des choses à faire}
+\label{todo}
+\Hypertarget{todo}
+\input{todo}
+\section{Documentation des espaces de nommage}
+\input{namespacefr}
+\input{namespacefr_1_1campus}
+\input{namespacefr_1_1campus_1_1laurainc}
+\input{namespacefr_1_1campus_1_1laurainc_1_1honeybee}
+\input{namespace_ui}
+\section{Documentation des classes}
+\input{class_alertes}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1alertes_activity}
+\input{class_base_de_donnees}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_carte_activity}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t}
+\input{class_communication}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_details_ruche_activity}
+\input{struct_donnees_batterie}
+\input{struct_donnees_ruche}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_unit_test}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_graph_activity}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee}
+\input{class_infos_batterie}
+\input{class_infos_ensoleillement}
+\input{class_infos_humidite}
+\input{class_infos_poids}
+\input{class_infos_pression_atmospherique}
+\input{class_infos_temperature}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity}
+\input{struct_mesure_horaire_environement}
+\input{struct_mesure_horaire_ruche}
+\input{struct_mesures_horaire_ensoleillement}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_nouvelle_ruche_activity}
+\input{class_nouvelle_ruche_ihm}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_parametres_honey_bee_activity}
+\input{class_q_dialog}
+\input{class_q_object}
+\input{class_q_widget}
+\input{class_reglages_alertes_ihm}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche}
+\input{class_ruche}
+\input{class_ruche_ihm}
+\input{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter}
+\section{Documentation des fichiers}
+\input{alertes_8cpp}
+\input{alertes_8h}
+\input{alertes_activity_8java}
+\input{base_de_donnees_8cpp}
+\input{base_de_donnees_8h}
+\input{_base_de_donnees_8java}
+\input{_carte_activity_8java}
+\input{_changelog_8md}
+\input{_client_m_q_t_t_8java}
+\input{communication_8cpp}
+\input{communication_8h}
+\input{_dashboard_activity_8java}
+\input{_details_ruche_activity_8java}
+\input{_example_instrumented_test_8java}
+\input{_example_unit_test_8java}
+\input{_graph_activity_8java}
+\input{home_activity_8java}
+\input{_honey_bee_8java}
+\input{infos_batterie_8cpp}
+\input{infos_batterie_8h}
+\input{infos_ensoleillement_8cpp}
+\input{infos_ensoleillement_8h}
+\input{infos_humidite_8cpp}
+\input{infos_humidite_8h}
+\input{infos_poids_8cpp}
+\input{infos_poids_8h}
+\input{infos_pression_atmospherique_8cpp}
+\input{infos_pression_atmospherique_8h}
+\input{infos_temperature_8cpp}
+\input{infos_temperature_8h}
+\input{_i_n_s_t_a_l_l_8md}
+\input{main_8cpp}
+\input{_main_activity_8java}
+\input{_nouvelle_ruche_activity_8java}
+\input{nouvelle_ruche_ihm_8cpp}
+\input{nouvelle_ruche_ihm_8h}
+\input{parametres_8h}
+\input{_parametres_honey_bee_activity_8java}
+\input{_r_e_a_d_m_e_8md}
+\input{reglages_alertes_ihm_8cpp}
+\input{reglages_alertes_ihm_8h}
+\input{ruche_8cpp}
+\input{ruche_8h}
+\input{_ruche_8java}
+\input{ruche_ihm_8cpp}
+\input{ruche_ihm_8h}
+\input{_time_as_x_axis_label_formatter_8java}
+%--- End generated contents ---
+
+% Index
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}

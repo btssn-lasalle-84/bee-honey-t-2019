@@ -1,0 +1,62 @@
+\hypertarget{mimemultipart_8h_source}{}\subsection{mimemultipart.\+h}
+\label{mimemultipart_8h_source}\index{mimemultipart.\+h@{mimemultipart.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{  Copyright (c) 2011-2012 - Tőkés Attila}
+00003 \textcolor{comment}{  Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00004 \textcolor{comment}{}
+00005 \textcolor{comment}{  This library is free software; you can redistribute it and/or}
+00006 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}
+00007 \textcolor{comment}{  License as published by the Free Software Foundation; either}
+00008 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}
+00009 \textcolor{comment}{}
+00010 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}
+00011 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00012 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}
+00013 \textcolor{comment}{  Lesser General Public License for more details.}
+00014 \textcolor{comment}{}
+00015 \textcolor{comment}{  See the LICENSE file for more details.}
+00016 \textcolor{comment}{*/}
+00017 
+00018 \textcolor{preprocessor}{#ifndef MIMEMULTIPART\_H}
+00019 \textcolor{preprocessor}{#define MIMEMULTIPART\_H}
+00020 
+00021 \textcolor{preprocessor}{#include <QtCore/QList>}
+00022 
+00023 \textcolor{preprocessor}{#include "\hyperlink{mimepart_8h}{mimepart.h}"}
+00024 
+00025 \textcolor{preprocessor}{#include "\hyperlink{smtpexports_8h}{smtpexports.h}"}
+00026 
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00028 
+\Hypertarget{mimemultipart_8h_source_l00029}\hyperlink{class_simple_mail_1_1_mime_multi_part}{00029} \textcolor{keyword}{class }\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{SMTP\_EXPORT} \hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart} : \textcolor{keyword}{public} \hyperlink{class_simple_mail_1_1_mime_part}{MimePart}
+00030 \{
+00031 \textcolor{keyword}{public}:
+\Hypertarget{mimemultipart_8h_source_l00032}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53}{00032}     \textcolor{keyword}{enum} \hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53}{MultiPartType} \{
+\Hypertarget{mimemultipart_8h_source_l00033}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed}{00033}         Mixed           = 0,            \textcolor{comment}{// RFC 2046, section 5.1.3}
+\Hypertarget{mimemultipart_8h_source_l00034}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010}{00034}         Digest          = 1,            \textcolor{comment}{// RFC 2046, section 5.1.5}
+\Hypertarget{mimemultipart_8h_source_l00035}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888}{00035}         Alternative     = 2,            \textcolor{comment}{// RFC 2046, section 5.1.4}
+\Hypertarget{mimemultipart_8h_source_l00036}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921}{00036}         Related         = 3,            \textcolor{comment}{// RFC 2387}
+\Hypertarget{mimemultipart_8h_source_l00037}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938}{00037}         Report          = 4,            \textcolor{comment}{// RFC 6522}
+\Hypertarget{mimemultipart_8h_source_l00038}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a}{00038}         Signed          = 5,            \textcolor{comment}{// RFC 1847, section 2.1}
+\Hypertarget{mimemultipart_8h_source_l00039}\hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc}{00039}         Encrypted       = 6             \textcolor{comment}{// RFC 1847, section 2.2}
+00040     \};
+00041 
+00042     \hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart}(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53}{MultiPartType} type = Related);
+00043     \textcolor{keyword}{virtual} ~\hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart}();
+00044 
+00045     \textcolor{keywordtype}{void} setMimeType(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53}{MultiPartType} type);
+00046     \hyperlink{class_simple_mail_1_1_mime_multi_part_a6bef6836f893f87c64c4ff0cb9a93e53}{MultiPartType} mimeType() \textcolor{keyword}{const};
+00047 
+00048     QList<MimePart *> parts() \textcolor{keyword}{const};
+00049     \textcolor{keywordtype}{void} addPart(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart} *part);
+00050 
+00051 \textcolor{keyword}{protected}:
+00052     \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} writeData(QIODevice *device) Q\_DECL\_FINAL;
+00053 \};
+00054 
+00055 \}
+00056 
+00057 \textcolor{preprocessor}{#endif // MIMEMULTIPART\_H}
+\end{DoxyCode}

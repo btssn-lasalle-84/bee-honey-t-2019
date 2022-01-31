@@ -1,0 +1,12 @@
+class NouvelleRucheIhm
+!!!135554.cpp!!!	NouvelleRucheIhm(inout parent : QWidget = 0)
+    ui->setupUi(this);
+    setWindowTitle("Création d'une ruche");
+
+    connect(ui->boutonOk,SIGNAL(clicked(bool)),this,SLOT(accept()));
+    connect(ui->boutonOk,SIGNAL(clicked(bool)),this,SLOT(recevoirDonneeAjoutRuche()));
+    connect(ui->boutonAnnuler,SIGNAL(clicked(bool)),this,SLOT(reject()));
+    connect(ui->boutonAnnuler,SIGNAL(clicked(bool)),this,SLOT(annulerDonneesNouvelleRuche()));
+
+!!!135682.cpp!!!	~NouvelleRucheIhm()
+    delete ui;

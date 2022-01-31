@@ -1,0 +1,112 @@
+\hypertarget{ruche_ihm_8h_source}{}\subsection{ruche\+Ihm.\+h}
+\label{ruche_ihm_8h_source}\index{ruche\+Ihm.\+h@{ruche\+Ihm.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef RUCHEIHM\_H}
+00002 \textcolor{preprocessor}{#define RUCHEIHM\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QtWidgets>}
+00017 \textcolor{preprocessor}{#include <QVector>}
+00018 \textcolor{preprocessor}{#include <qwt\_plot\_marker.h>}
+00019 \textcolor{preprocessor}{#include "\hyperlink{alertes_8h}{alertes.h}"}
+00020 
+00021 \textcolor{keyword}{class }\hyperlink{class_ruche}{Ruche};
+00022 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00023 \textcolor{keyword}{class }\hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm};
+00024 \textcolor{keyword}{class }\hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm};
+00025 \textcolor{keyword}{class }QwtPlotCurve;
+00026 
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_ui}{Ui} \{
+00028 \textcolor{keyword}{class }\hyperlink{class_ruche_ihm}{RucheIhm};
+00029 \}
+00030 
+\Hypertarget{ruche_ihm_8h_source_l00043}\hyperlink{class_ruche_ihm}{00043} \textcolor{keyword}{class }\hyperlink{class_ruche_ihm}{RucheIhm} : \textcolor{keyword}{public} \hyperlink{class_q_widget}{QWidget}
+00044 \{
+00045     Q\_OBJECT
+00046 
+00047 \textcolor{keyword}{public}:
+00048     \textcolor{keyword}{explicit} \hyperlink{class_ruche_ihm}{RucheIhm}(\hyperlink{class_q_widget}{QWidget} *parent = 0);
+00049     ~\hyperlink{class_ruche_ihm}{RucheIhm}();
+00050 
+00051     \textcolor{keywordtype}{void} insererMesuresEnsoleillementTableau(QVector<QStringList> mesuresJournalieresEnsoleillement);
+00052 
+00053 \textcolor{keyword}{private}:
+\Hypertarget{ruche_ihm_8h_source_l00054}\hyperlink{class_ruche_ihm_a64786058bd7f88ca2f1e9743bb27c25b}{00054}     Ui::RucheIhm *\hyperlink{class_ruche_ihm_a64786058bd7f88ca2f1e9743bb27c25b}{ui}; 
+\Hypertarget{ruche_ihm_8h_source_l00055}\hyperlink{class_ruche_ihm_a43a6b1fa31f4fba58d919daae3707b38}{00055}     \hyperlink{class_ruche}{Ruche} *\hyperlink{class_ruche_ihm_a43a6b1fa31f4fba58d919daae3707b38}{maRuche}; 
+\Hypertarget{ruche_ihm_8h_source_l00056}\hyperlink{class_ruche_ihm_a0851936fe212e8d40538264f09749153}{00056}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_ruche_ihm_a0851936fe212e8d40538264f09749153}{bdd}; 
+\Hypertarget{ruche_ihm_8h_source_l00057}\hyperlink{class_ruche_ihm_a3a27b7af842244c6db3623f5f256bed5}{00057}     \hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm} *\hyperlink{class_ruche_ihm_a3a27b7af842244c6db3623f5f256bed5}{nouvelleRuche};  
+\Hypertarget{ruche_ihm_8h_source_l00058}\hyperlink{class_ruche_ihm_a04068fbec978c2443f3baf08d4945929}{00058}     \hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm} *\hyperlink{class_ruche_ihm_a04068fbec978c2443f3baf08d4945929}{reglagesAlertesIhm};  
+\Hypertarget{ruche_ihm_8h_source_l00059}\hyperlink{class_ruche_ihm_ab7741fa67b19cbb2da7eb12c58cf83c1}{00059}     QVector<QStringList> \hyperlink{class_ruche_ihm_ab7741fa67b19cbb2da7eb12c58cf83c1}{mesRuches};  
+\Hypertarget{ruche_ihm_8h_source_l00060}\hyperlink{class_ruche_ihm_a6ce372c8df13bb78c09705432dcfcf58}{00060}     QwtPlotCurve *\hyperlink{class_ruche_ihm_a6ce372c8df13bb78c09705432dcfcf58}{courbeTemperatureInterieur};
+\Hypertarget{ruche_ihm_8h_source_l00061}\hyperlink{class_ruche_ihm_a68e72873a859840d3c91b147b8559118}{00061}     QwtPlotCurve *\hyperlink{class_ruche_ihm_a68e72873a859840d3c91b147b8559118}{courbeTemperatureExterieur};
+\Hypertarget{ruche_ihm_8h_source_l00062}\hyperlink{class_ruche_ihm_a19a58f5841dc91eb7f84acd419f35678}{00062}     QwtPlotCurve *\hyperlink{class_ruche_ihm_a19a58f5841dc91eb7f84acd419f35678}{courbeHumiditeInterieur};
+\Hypertarget{ruche_ihm_8h_source_l00063}\hyperlink{class_ruche_ihm_a0c9d769a392e3c1332f8908cd9d558eb}{00063}     QwtPlotCurve *\hyperlink{class_ruche_ihm_a0c9d769a392e3c1332f8908cd9d558eb}{courbeHumiditeExterieur};
+\Hypertarget{ruche_ihm_8h_source_l00064}\hyperlink{class_ruche_ihm_aa6685f1fc20aa4459eab3b0bb3c4d1ef}{00064}     QwtPlotCurve *\hyperlink{class_ruche_ihm_aa6685f1fc20aa4459eab3b0bb3c4d1ef}{courbePressionAtmospherique};
+\Hypertarget{ruche_ihm_8h_source_l00065}\hyperlink{class_ruche_ihm_af160181f408b3a9519b97e67c810a0fd}{00065}     QwtPlotCurve *\hyperlink{class_ruche_ihm_af160181f408b3a9519b97e67c810a0fd}{courbeEnsoleillement};
+00066 
+00067     \textcolor{keywordtype}{void} initialiserThermometre() \textcolor{keyword}{const};
+00068     \textcolor{keywordtype}{void} initialiserWidgets();
+00069     \textcolor{keywordtype}{void} inititialiserCourbes();
+00070     \textcolor{keywordtype}{void} reinititialiserCourbes();
+00071     \textcolor{keywordtype}{void} initialiserTemperatureInterieurCourbe();
+00072     \textcolor{keywordtype}{void} initialiserTemperatureExterieurCourbe();
+00073     \textcolor{keywordtype}{void} initialiserHumiditeInterieurCourbe();
+00074     \textcolor{keywordtype}{void} initialiserHumiditeExterieurCourbe();
+00075     \textcolor{keywordtype}{void} initialiserPressionAtmospheriqueCourbe();
+00076     \textcolor{keywordtype}{void} initialiserEnsoleillementCourbe();
+00077     \textcolor{keywordtype}{void} InitialiserMarqueurAlerteTemperatureInterieur();
+00078     \textcolor{keywordtype}{void} initialiserMarqueurAlerteHumiditeInterieur();
+00079     \textcolor{keywordtype}{void} initialiserMarqueurAlerteTemperatureExterieur();
+00080     \textcolor{keywordtype}{void} initialiserMarqueurAlerteHumiditeExterieur();
+00081     \textcolor{keywordtype}{void} initialiserMarqueurAlertePression();
+00082     \textcolor{keywordtype}{void} initialiserMarqueurAlerteEnsoleillement();
+00083     \textcolor{keywordtype}{void} renitialiserMarqueurs();
+00084     \textcolor{keywordtype}{void} insererMesuresRucheTableau(QVector<QStringList> mesuresJournalieresRuche);
+00085     \textcolor{keywordtype}{void} insererMesuresEnvironementTableau(QVector<QStringList> mesuresJournalieresEnvironement);
+00086     \textcolor{keywordtype}{void} effacerTableau();
+00087     \textcolor{keywordtype}{void} deconnecterSignaux();
+00088 
+00089 \textcolor{keyword}{public} slots:
+00090     \textcolor{keywordtype}{void} recevoirEtatClientConnexion(\textcolor{keywordtype}{bool} etat);
+00091     \textcolor{comment}{/**********************************SLOT AFFICHAGE*********************************/}
+00092     \textcolor{keywordtype}{void} afficherTemperatureInterieur(\textcolor{keywordtype}{double} temperatureInterieur, QString horodatage);
+00093     \textcolor{keywordtype}{void} afficherTemperatureExterieur(\textcolor{keywordtype}{double} temperatureExterieur, QString horodatage);
+00094     \textcolor{keywordtype}{void} afficherHumiditeInterieur(\textcolor{keywordtype}{double} humiditeInterieur, QString horodatage);
+00095     \textcolor{keywordtype}{void} afficherHumiditeExterieur(\textcolor{keywordtype}{double} humiditeExterieur, QString horodatage);
+00096     \textcolor{keywordtype}{void} afficherPressionAtmospherique(\textcolor{keywordtype}{double} pressionAtmospherique,QString horodatage);
+00097     \textcolor{keywordtype}{void} afficherEnsoleillement(\textcolor{keywordtype}{double} ensoleillement,QString horodatage);
+00098     \textcolor{keywordtype}{void} afficherBatterie(\textcolor{keywordtype}{double} charge, QString horodatage);
+00099     \textcolor{keywordtype}{void} afficherPoids(\textcolor{keywordtype}{double} poids, QString horodatage);
+00100 
+00101     \textcolor{keywordtype}{void} afficherAlertesTemperatureInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00102     \textcolor{keywordtype}{void} afficherAlertesTemperatureExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00103     \textcolor{keywordtype}{void} afficherAlertesHumiditeInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00104     \textcolor{keywordtype}{void} afficherAlertesHumiditeExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00105     \textcolor{keywordtype}{void} afficherAlertesPressionAtmospherique(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00106     \textcolor{keywordtype}{void} afficherAlertesPoids(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte);
+00107     \textcolor{keywordtype}{void} afficherAlertesEnsoleillement(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte, \textcolor{keywordtype}{double} mesure);
+00108     \textcolor{keywordtype}{void} afficherAlertesBatterie(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} typeAlerte, \textcolor{keywordtype}{double} mesure);
+00109     \textcolor{comment}{/**********************************SLOT Courbes*********************************/}
+00110     \textcolor{keywordtype}{void} afficherMesuresJournalieresRuche();
+00111     \textcolor{keywordtype}{void} afficherMesuresJournalieresEnvironement();
+00112     \textcolor{keywordtype}{void} afficherMesuresJournalieresEnsoleillement();
+00113     \textcolor{comment}{/**********************************SLOT TABLEAU********************************/}
+00114     \textcolor{keywordtype}{void} afficherMesuresJournalieresSelectionnee();
+00115 
+00116     \textcolor{keywordtype}{void} afficherLocalisationPasserelle(QString longitude, QString latitude);
+00117 
+00118     \textcolor{keywordtype}{void} quitter();
+00119 
+00120 signals:
+00121     \textcolor{keywordtype}{void} nouvelleDonnesRuche(QString nom, QString prenom, QString email, QString nomTopic);
+00122 
+00123 \textcolor{keyword}{private} slots:
+00124     \textcolor{keywordtype}{void} selectionnerRuche(\textcolor{keywordtype}{int} numeroRuche);
+00125     \textcolor{keywordtype}{void} creerNouvelleRuche();
+00126     \textcolor{keywordtype}{void} ouvrirReglagesAlertes();
+00127     \textcolor{keywordtype}{void} mettreAjourListeRuches();
+00128     \textcolor{keywordtype}{void} supprimerRuche();
+00129 \};
+00130 
+00131 \textcolor{preprocessor}{#endif // RUCHEIHM\_H}
+\end{DoxyCode}

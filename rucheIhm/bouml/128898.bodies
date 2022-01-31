@@ -1,0 +1,23 @@
+class InfosTemperature
+!!!134146.cpp!!!	getTemperatureInterieur() : double
+    return temperatureInterieur;
+!!!134274.cpp!!!	setTemperatureInterieur(in temperatureInterieur : double) : void
+    this->temperatureInterieur = temperatureInterieur;
+!!!134402.cpp!!!	getHorodatageTemperatureInterieur() : QString
+    return horodatageTemperatureInterieur;
+!!!134530.cpp!!!	setHorodatageTemperatureInterieur(in horodatageTemperatureInterieur : QString) : void
+    this->horodatageTemperatureInterieur = horodatageTemperatureInterieur;
+!!!134658.cpp!!!	getTemperatureExterieur() : double
+    return temperatureExterieur;
+!!!134786.cpp!!!	setTemperatureExterieur(in temperatureExterieur : double) : void
+    this->temperatureExterieur = temperatureExterieur;
+!!!134914.cpp!!!	getHorodatageTemperatureExterieur() : QString
+    return horodatageTemperatureExterieur;
+!!!135042.cpp!!!	setHorodatageTemperatureExterieur(in horodatageTemperatureExterieur : QString) : void
+    this->horodatageTemperatureExterieur = horodatageTemperatureExterieur;
+!!!135170.cpp!!!	traiterNouvelleTemperatureInterieur(in temperatureInterieurString : QString) : void
+    qDebug() << Q_FUNC_INFO << "temperatureInterieurString=" << temperatureInterieurString;
+    temperatureInterieur = temperatureInterieurString.toDouble();
+    emit temperatureInterieurEnvoye(temperatureInterieur);
+!!!135298.cpp!!!	traiterNouvelleTemperatureExterieur(in temperatureExterieurString : QString) : void
+    temperatureExterieur = temperatureExterieurString.toDouble();

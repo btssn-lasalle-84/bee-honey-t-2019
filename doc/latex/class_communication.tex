@@ -1,0 +1,426 @@
+\hypertarget{class_communication}{}\subsection{Référence de la classe Communication}
+\label{class_communication}\index{Communication@{Communication}}
+
+
+La classe \hyperlink{class_communication}{Communication}.  
+
+
+
+
+{\ttfamily \#include $<$communication.\+h$>$}
+
+
+
+Graphe de collaboration de Communication\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_communication__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+TN} ()
+\begin{DoxyCompactList}\small\item\em slot permetant la connection au serveur ttn \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}{deconnecte\+T\+TN} ()
+\begin{DoxyCompactList}\small\item\em slot permetant la deconnection au serveur ttn \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}{receptionner} (const Q\+Byte\+Array \&message, const Q\+Mqtt\+Topic\+Name \&topic)
+\begin{DoxyCompactList}\small\item\em slot permetant la reception des donnée grace au protocole mqtt \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}{reponse\+Ping\+T\+TN} ()
+\begin{DoxyCompactList}\small\item\em slot permetant d\textquotesingle{}effectuer un ping vers le serveur ttn \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_af249c498d61b4288b9e7d388baf81fc2}{changement\+Etat\+T\+TN} ()
+\begin{DoxyCompactList}\small\item\em slot permetant de recevoir l\textquotesingle{}etat du serveur ttn \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}{erreur\+Client\+T\+TN} ()
+\begin{DoxyCompactList}\small\item\em slot permetant de recevoir les erreur rencontré lors de la connection au serveur ttn \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etat\+Client\+Connexion} (bool connexion)
+\item 
+void \hyperlink{class_communication_a83865ed4092e263f42669dff0582b7e1}{message\+Recu} (const Q\+Byte\+Array \&message, const Q\+Mqtt\+Topic\+Name \&topic)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication} (Q\+String\+List \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donnees\+Ruche\+T\+TN}, \hyperlink{class_q_object}{Q\+Object} $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_communication}{Communication}. \end{DoxyCompactList}\item 
+\hyperlink{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}{$\sim$\+Communication} ()
+\begin{DoxyCompactList}\small\item\em destructeur de la classse \hyperlink{class_communication}{Communication} \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecter\+T\+TN} ()
+\item 
+void \hyperlink{class_communication_a8d0cc5c992a2b218a64f57429eea001b}{deconnecter\+T\+TN} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Mqtt\+Client $\ast$ \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}
+\item 
+Q\+Mqtt\+Subscription $\ast$ \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement}
+\item 
+Q\+String\+List \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donnees\+Ruche\+T\+TN}
+\item 
+Q\+String \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nom\+Topic}
+\item 
+\hyperlink{parametres_8h_a0fe68caa1e9147addc96657cc822b937}{Ports\+T\+TN} \hyperlink{class_communication_aba7a5df723bc632b957b4358bef8605e}{ports\+T\+Tn}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}\label{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}} 
+\index{Communication@{Communication}!Communication@{Communication}}
+\index{Communication@{Communication}!Communication@{Communication}}
+\paragraph{\texorpdfstring{Communication()}{Communication()}}
+{\footnotesize\ttfamily Communication\+::\+Communication (\begin{DoxyParamCaption}\item[{Q\+String\+List}]{donnees\+Ruche\+T\+TN,  }\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent (0 = fenêtre principale)\\
+\hline
+\end{DoxyParams}
+Définition des attributs client , abonement et nom\+Topic a 0 (=null) 
+
+Références \hyperlink{class_communication_af249c498d61b4288b9e7d388baf81fc2}{changement\+Etat\+T\+T\+N()}, \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecter\+T\+T\+N()}, \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+T\+N()}, \hyperlink{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}{deconnecte\+T\+T\+N()}, \hyperlink{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}{erreur\+Client\+T\+T\+N()}, \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nom\+Topic}, \hyperlink{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}{receptionner()}, et \hyperlink{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}{reponse\+Ping\+T\+T\+N()}.
+
+
+\begin{DoxyCode}
+00027                                                                          : 
+      \hyperlink{class_q_object}{QObject}(parent), \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}(0), \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement}(0), 
+      \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}(\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN})
+00028 \{
+00029     \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nomTopic} = \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(6) + \textcolor{stringliteral}{"/devices/"} + 
+      \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(2) + \textcolor{stringliteral}{"/up"};
+00030     qDebug()<< Q\_FUNC\_INFO << \textcolor{stringliteral}{"donneesRucheTTN"} << \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}  << \textcolor{stringliteral}{"nomTopic"} << 
+      \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nomTopic};
+00031     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client} = \textcolor{keyword}{new} QMqttClient();    
+00032     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(stateChanged(ClientState)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_communication_af249c498d61b4288b9e7d388baf81fc2}{changementEtatTTN}()));
+00033     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(errorChanged(ClientError)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}{erreurClientTTN}()));
+00034     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(connected()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecteTTN}()));
+00035     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(disconnected()), \textcolor{keyword}{this}, SLOT(\hyperlink{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}{deconnecteTTN}()));
+00036     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(messageReceived(\textcolor{keyword}{const} QByteArray &, \textcolor{keyword}{const} QMqttTopicName &)), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}{receptionner}(\textcolor{keyword}{const} QByteArray &, \textcolor{keyword}{const} QMqttTopicName &)));
+00037     connect(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, SIGNAL(pingResponseReceived()), \textcolor{keyword}{this}, SLOT(
+      \hyperlink{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}{reponsePingTTN}()));
+00038     \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecterTTN}();
+00039 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}\label{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}} 
+\index{Communication@{Communication}!````~Communication@{$\sim$\+Communication}}
+\index{````~Communication@{$\sim$\+Communication}!Communication@{Communication}}
+\paragraph{\texorpdfstring{$\sim$\+Communication()}{~Communication()}}
+{\footnotesize\ttfamily Communication\+::$\sim$\+Communication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement}, \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, et \hyperlink{class_communication_a8d0cc5c992a2b218a64f57429eea001b}{deconnecter\+T\+T\+N()}.
+
+
+\begin{DoxyCode}
+00045 \{
+00046     \hyperlink{class_communication_a8d0cc5c992a2b218a64f57429eea001b}{deconnecterTTN}();
+00047     \textcolor{keyword}{delete} \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement};
+00048     \textcolor{keyword}{delete} \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client};
+00049     qDebug() << Q\_FUNC\_INFO;
+00050 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_communication_af249c498d61b4288b9e7d388baf81fc2}\label{class_communication_af249c498d61b4288b9e7d388baf81fc2}} 
+\index{Communication@{Communication}!changement\+Etat\+T\+TN@{changement\+Etat\+T\+TN}}
+\index{changement\+Etat\+T\+TN@{changement\+Etat\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{changement\+Etat\+T\+TN}{changementEtatTTN}}
+{\footnotesize\ttfamily void Communication\+::changement\+Etat\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00126 \{
+00127     \textcolor{comment}{// Pour le debug}
+00128     QString message;
+00129     \textcolor{keywordflow}{switch}(\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->state())
+00130     \{
+00131         \textcolor{keywordflow}{case} 0: message = \textcolor{stringliteral}{"Déconnecté"}; \textcolor{keywordflow}{break};
+00132         \textcolor{keywordflow}{case} 1: message = \textcolor{stringliteral}{"En cours de connexion"}; \textcolor{keywordflow}{break};
+00133         \textcolor{keywordflow}{case} 2: message = \textcolor{stringliteral}{"Connecté"}; \textcolor{keywordflow}{break};
+00134     \}
+00135     qDebug()<< Q\_FUNC\_INFO << \textcolor{stringliteral}{"client MQTT"} << message << \textcolor{stringliteral}{"state="} << \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->state();
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_aadec726c44e719fa587bd385533eb559}\label{class_communication_aadec726c44e719fa587bd385533eb559}} 
+\index{Communication@{Communication}!connecter\+T\+TN@{connecter\+T\+TN}}
+\index{connecter\+T\+TN@{connecter\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{connecter\+T\+T\+N()}{connecterTTN()}}
+{\footnotesize\ttfamily void Communication\+::connecter\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, et \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donnees\+Ruche\+T\+TN}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00053 \{
+00054     qDebug()<< Q\_FUNC\_INFO << \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(4) << 
+      \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(5).toInt()  << \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(6) << 
+      \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(7);
+00055     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->setHostname(\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(4));
+00056     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->setPort(\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(5).toInt());
+00057     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->setUsername(\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(6));
+00058     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->setPassword(\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}.at(7));
+00059     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->connectToHost();
+00060 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_af71587fb1ee9b7460345b7c12372a1eb}\label{class_communication_af71587fb1ee9b7460345b7c12372a1eb}} 
+\index{Communication@{Communication}!connecte\+T\+TN@{connecte\+T\+TN}}
+\index{connecte\+T\+TN@{connecte\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{connecte\+T\+TN}{connecteTTN}}
+{\footnotesize\ttfamily void Communication\+::connecte\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement}, \hyperlink{parametres_8h_ace364d1ce44aa9f79bcff6e3752c4a5f}{A\+P\+P\+\_\+\+T\+I\+T\+RE}, \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}, \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etat\+Client\+Connexion()}, et \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nom\+Topic}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00072 \{
+00073     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nomTopic};
+00074     \textcolor{comment}{// Le client est maintenant connecté}
+00075     emit \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etatClientConnexion}(\textcolor{keyword}{true}); \textcolor{comment}{// pour l'IHM}
+00076     \textcolor{comment}{// Souscription à un topic :}
+00077     \hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement} = \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->subscribe(nomTopic);
+00078     \textcolor{keywordflow}{if} (!\hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement})
+00079     \{
+00080         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Impossible de s'abonner au broker TTN !"};
+00081         QMessageBox::critical(0, QString::fromUtf8(\hyperlink{parametres_8h_ace364d1ce44aa9f79bcff6e3752c4a5f}{APP\_TITRE}), QString::fromUtf8(\textcolor{stringliteral}{"Impossible de
+       s'abonner au broker The Things Network!"}));
+00082     \}
+00083 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_a8d0cc5c992a2b218a64f57429eea001b}\label{class_communication_a8d0cc5c992a2b218a64f57429eea001b}} 
+\index{Communication@{Communication}!deconnecter\+T\+TN@{deconnecter\+T\+TN}}
+\index{deconnecter\+T\+TN@{deconnecter\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{deconnecter\+T\+T\+N()}{deconnecterTTN()}}
+{\footnotesize\ttfamily void Communication\+::deconnecter\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}.
+
+
+
+Référencé par \hyperlink{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}{$\sim$\+Communication()}.
+
+
+\begin{DoxyCode}
+00063 \{
+00064     \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->disconnectFromHost();
+00065 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}\label{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}} 
+\index{Communication@{Communication}!deconnecte\+T\+TN@{deconnecte\+T\+TN}}
+\index{deconnecte\+T\+TN@{deconnecte\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{deconnecte\+T\+TN}{deconnecteTTN}}
+{\footnotesize\ttfamily void Communication\+::deconnecte\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etat\+Client\+Connexion()}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00090 \{
+00091     qDebug()<< Q\_FUNC\_INFO;
+00092     \textcolor{comment}{// Le client est maintenant déconnecté}
+00093     emit \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etatClientConnexion}(\textcolor{keyword}{false}); \textcolor{comment}{// pour l'IHM}
+00094 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}\label{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}} 
+\index{Communication@{Communication}!erreur\+Client\+T\+TN@{erreur\+Client\+T\+TN}}
+\index{erreur\+Client\+T\+TN@{erreur\+Client\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{erreur\+Client\+T\+TN}{erreurClientTTN}}
+{\footnotesize\ttfamily void Communication\+::erreur\+Client\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000005}{A faire}]Faire une boîte de dialogue d\textquotesingle{}information sur l\textquotesingle{}erreur rencontrée \end{DoxyRefDesc}
+
+
+Références \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00144 \{
+00145 
+00146         \textcolor{comment}{/*QMqttClient::NoError                0 No error occurred.}
+00147 \textcolor{comment}{        QMqttClient::InvalidProtocolVersion 1   The broker does not accept a connection using the specified
+       protocol version.}
+00148 \textcolor{comment}{        QMqttClient::IdRejected             2   The client ID is malformed. This might be related to its
+       length.}
+00149 \textcolor{comment}{        QMqttClient::ServerUnavailable      3   The network connection has been established, but the
+       service is unavailable on the broker side.}
+00150 \textcolor{comment}{        QMqttClient::BadUsernameOrPassword  4   The data in the username or password is malformed.}
+00151 \textcolor{comment}{        QMqttClient::NotAuthorized          5   The client is not authorized to connect.}
+00152 \textcolor{comment}{        QMqttClient::TransportInvalid       256 The underlying transport caused an error. For example, the
+       connection might have been interrupted unexpectedly.}
+00153 \textcolor{comment}{        QMqttClient::ProtocolViolation      257 The client encountered a protocol violation, and therefore
+       closed the connection.}
+00154 \textcolor{comment}{        QMqttClient::UnknownError           258 An unknown error occurred.}
+00155 \textcolor{comment}{        QMqttClient::Mqtt5SpecificError     259 The error is related to MQTT protocol level 5. A reason
+       code might provide more details.*/}
+00156 
+00160     qDebug()<< Q\_FUNC\_INFO << \textcolor{stringliteral}{"code erreur"} << \hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client}->error();
+00161 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_aa6100d6b2addece57f3e74c1140a3179}\label{class_communication_aa6100d6b2addece57f3e74c1140a3179}} 
+\index{Communication@{Communication}!etat\+Client\+Connexion@{etat\+Client\+Connexion}}
+\index{etat\+Client\+Connexion@{etat\+Client\+Connexion}!Communication@{Communication}}
+\paragraph{\texorpdfstring{etat\+Client\+Connexion}{etatClientConnexion}}
+{\footnotesize\ttfamily void Communication\+::etat\+Client\+Connexion (\begin{DoxyParamCaption}\item[{bool}]{connexion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+T\+N()}, et \hyperlink{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}{deconnecte\+T\+T\+N()}.
+
+\mbox{\Hypertarget{class_communication_a83865ed4092e263f42669dff0582b7e1}\label{class_communication_a83865ed4092e263f42669dff0582b7e1}} 
+\index{Communication@{Communication}!message\+Recu@{message\+Recu}}
+\index{message\+Recu@{message\+Recu}!Communication@{Communication}}
+\paragraph{\texorpdfstring{message\+Recu}{messageRecu}}
+{\footnotesize\ttfamily void Communication\+::message\+Recu (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{message,  }\item[{const Q\+Mqtt\+Topic\+Name \&}]{topic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}{receptionner()}.
+
+\mbox{\Hypertarget{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}\label{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}} 
+\index{Communication@{Communication}!receptionner@{receptionner}}
+\index{receptionner@{receptionner}!Communication@{Communication}}
+\paragraph{\texorpdfstring{receptionner}{receptionner}}
+{\footnotesize\ttfamily void Communication\+::receptionner (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{message,  }\item[{const Q\+Mqtt\+Topic\+Name \&}]{topic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em message} & correspondant au données recu \\
+\hline
+{\em topic} & correspondant au nom de topic \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_communication_a83865ed4092e263f42669dff0582b7e1}{message\+Recu()}.
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00104 \{
+00105     \textcolor{comment}{//qDebug() << Q\_FUNC\_INFO << topic;}
+00106     emit \hyperlink{class_communication_a83865ed4092e263f42669dff0582b7e1}{messageRecu}(message, topic);
+00107 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}\label{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}} 
+\index{Communication@{Communication}!reponse\+Ping\+T\+TN@{reponse\+Ping\+T\+TN}}
+\index{reponse\+Ping\+T\+TN@{reponse\+Ping\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{reponse\+Ping\+T\+TN}{reponsePingTTN}}
+{\footnotesize\ttfamily void Communication\+::reponse\+Ping\+T\+TN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}.
+
+
+\begin{DoxyCode}
+00115 \{
+00116     \textcolor{comment}{// Pour les tests (requestPing())}
+00117     qDebug()<< Q\_FUNC\_INFO;
+00118 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_communication_af29011664fbb15b9fb41ce37b70a694f}\label{class_communication_af29011664fbb15b9fb41ce37b70a694f}} 
+\index{Communication@{Communication}!abonnement@{abonnement}}
+\index{abonnement@{abonnement}!Communication@{Communication}}
+\paragraph{\texorpdfstring{abonnement}{abonnement}}
+{\footnotesize\ttfamily Q\+Mqtt\+Subscription$\ast$ Communication\+::abonnement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+T\+N()}, et \hyperlink{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}{$\sim$\+Communication()}.
+
+\mbox{\Hypertarget{class_communication_a59ae01a54d6c3fde6242c46d802b954b}\label{class_communication_a59ae01a54d6c3fde6242c46d802b954b}} 
+\index{Communication@{Communication}!client@{client}}
+\index{client@{client}!Communication@{Communication}}
+\paragraph{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily Q\+Mqtt\+Client$\ast$ Communication\+::client\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_af249c498d61b4288b9e7d388baf81fc2}{changement\+Etat\+T\+T\+N()}, \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}, \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecter\+T\+T\+N()}, \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+T\+N()}, \hyperlink{class_communication_a8d0cc5c992a2b218a64f57429eea001b}{deconnecter\+T\+T\+N()}, \hyperlink{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}{erreur\+Client\+T\+T\+N()}, et \hyperlink{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}{$\sim$\+Communication()}.
+
+\mbox{\Hypertarget{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}\label{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}} 
+\index{Communication@{Communication}!donnees\+Ruche\+T\+TN@{donnees\+Ruche\+T\+TN}}
+\index{donnees\+Ruche\+T\+TN@{donnees\+Ruche\+T\+TN}!Communication@{Communication}}
+\paragraph{\texorpdfstring{donnees\+Ruche\+T\+TN}{donneesRucheTTN}}
+{\footnotesize\ttfamily Q\+String\+List Communication\+::donnees\+Ruche\+T\+TN\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecter\+T\+T\+N()}.
+
+\mbox{\Hypertarget{class_communication_a7d536b64ee7a5373047c292477d391d5}\label{class_communication_a7d536b64ee7a5373047c292477d391d5}} 
+\index{Communication@{Communication}!nom\+Topic@{nom\+Topic}}
+\index{nom\+Topic@{nom\+Topic}!Communication@{Communication}}
+\paragraph{\texorpdfstring{nom\+Topic}{nomTopic}}
+{\footnotesize\ttfamily Q\+String Communication\+::nom\+Topic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication()}, et \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecte\+T\+T\+N()}.
+
+\mbox{\Hypertarget{class_communication_aba7a5df723bc632b957b4358bef8605e}\label{class_communication_aba7a5df723bc632b957b4358bef8605e}} 
+\index{Communication@{Communication}!ports\+T\+Tn@{ports\+T\+Tn}}
+\index{ports\+T\+Tn@{ports\+T\+Tn}!Communication@{Communication}}
+\paragraph{\texorpdfstring{ports\+T\+Tn}{portsTTn}}
+{\footnotesize\ttfamily \hyperlink{parametres_8h_a0fe68caa1e9147addc96657cc822b937}{Ports\+T\+TN} Communication\+::ports\+T\+Tn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{communication_8h}{communication.\+h}\item 
+\hyperlink{communication_8cpp}{communication.\+cpp}\end{DoxyCompactItemize}

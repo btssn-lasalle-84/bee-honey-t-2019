@@ -1,0 +1,38 @@
+\hypertarget{nouvelle_ruche_ihm_8h_source}{}\subsection{nouvelle\+Ruche\+Ihm.\+h}
+\label{nouvelle_ruche_ihm_8h_source}\index{nouvelle\+Ruche\+Ihm.\+h@{nouvelle\+Ruche\+Ihm.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef NOUVELLERUCHEIHM\_H}
+00002 \textcolor{preprocessor}{#define NOUVELLERUCHEIHM\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QDialog>}
+00017 
+00018 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00019 
+\Hypertarget{nouvelle_ruche_ihm_8h_source_l00020}\hyperlink{namespace_ui}{00020} \textcolor{keyword}{namespace }\hyperlink{namespace_ui}{Ui} \{
+00021 \textcolor{keyword}{class }\hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm};
+00022 \}
+00023 
+\Hypertarget{nouvelle_ruche_ihm_8h_source_l00035}\hyperlink{class_nouvelle_ruche_ihm}{00035} \textcolor{keyword}{class }\hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm} : \textcolor{keyword}{public} \hyperlink{class_q_dialog}{QDialog}
+00036 \{
+00037     Q\_OBJECT
+00038 
+00039 \textcolor{keyword}{public}:
+00040     \textcolor{keyword}{explicit} \hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm}(\hyperlink{class_q_widget}{QWidget} *parent = 0);
+00041     ~\hyperlink{class_nouvelle_ruche_ihm}{NouvelleRucheIhm}();
+00042 
+00043 \textcolor{keyword}{private}:
+\Hypertarget{nouvelle_ruche_ihm_8h_source_l00044}\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{00044}     Ui::NouvelleRucheIhm *\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui};
+\Hypertarget{nouvelle_ruche_ihm_8h_source_l00045}\hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{00045}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}; 
+\Hypertarget{nouvelle_ruche_ihm_8h_source_l00046}\hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{00046}     QVector<QStringList> \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN};
+00047     \textcolor{keywordtype}{void} nettoyerZoneDeTexte();
+00048 
+00049 \textcolor{keyword}{private} slots:
+00050     \textcolor{keywordtype}{void} recevoirDonneeAjoutRuche();
+00051     \textcolor{keywordtype}{void} annulerDonneesNouvelleRuche();
+00052 
+00053 signals:
+00054 \};
+00055 
+00056 \textcolor{preprocessor}{#endif // NOUVELLERUCHEIHM\_H}
+\end{DoxyCode}

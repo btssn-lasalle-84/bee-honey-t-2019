@@ -1,0 +1,202 @@
+\hypertarget{quotedprintable_8cpp}{}\subsection{Référence du fichier quotedprintable.\+cpp}
+\label{quotedprintable_8cpp}\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+{\ttfamily \#include \char`\"{}quotedprintable.\+h\char`\"{}}\newline
+\subsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape} (unsigned char input, bool rfc2047)
+\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a127cfae5b5d0a4fe93dd03b1aa97c2f3}{Min\+Printable\+Range} = 0x20
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a234bea714ae19affc23d4f327e0be8a4}{Max\+Printable\+Range} = 0x7e
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a2c3ded061f81bce584a529835d0af806}{Horizontal\+Tab} = 0x09
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a250d4a1230d55635d691a879044abd68}{Form\+Feed} = 0x0c
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a6abc6a9cca67f453bf1d81f0e3bcacdf}{Space} = 0x20
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_ad0f7dc0ae6869e4803ab6467e5c3a582}{Equals} = 0x3d
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a6ce006632170232439e486d67f8d9220}{Exclamation\+Mark} = 0x21
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a25342427a33ec7183c59d2d384c6599e}{Asterisk} = 0x2a
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a4cd6ee5a5391a2ee129a7cb17735ca9f}{Plus} = 0x2b
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a93b9db026697342fa5cba3f439d70608}{Minus} = 0x2d
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_a97ec01bdd33cf9ba8c9cc898462342ae}{Slash} = 0x2f
+\item 
+const unsigned char \hyperlink{quotedprintable_8cpp_ad79e7fc99d67b2c62373a22ba91ae78a}{Underscore} = 0x5f
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions}
+\mbox{\Hypertarget{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}\label{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!requires\+Escape@{requires\+Escape}}
+\index{requires\+Escape@{requires\+Escape}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{requires\+Escape()}{requiresEscape()}}
+{\footnotesize\ttfamily static bool requires\+Escape (\begin{DoxyParamCaption}\item[{unsigned char}]{input,  }\item[{bool}]{rfc2047 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{quotedprintable_8cpp_a25342427a33ec7183c59d2d384c6599e}{Asterisk}, \hyperlink{quotedprintable_8cpp_ad0f7dc0ae6869e4803ab6467e5c3a582}{Equals}, \hyperlink{quotedprintable_8cpp_a6ce006632170232439e486d67f8d9220}{Exclamation\+Mark}, \hyperlink{quotedprintable_8cpp_a250d4a1230d55635d691a879044abd68}{Form\+Feed}, \hyperlink{quotedprintable_8cpp_a2c3ded061f81bce584a529835d0af806}{Horizontal\+Tab}, \hyperlink{quotedprintable_8cpp_a234bea714ae19affc23d4f327e0be8a4}{Max\+Printable\+Range}, \hyperlink{quotedprintable_8cpp_a127cfae5b5d0a4fe93dd03b1aa97c2f3}{Min\+Printable\+Range}, \hyperlink{quotedprintable_8cpp_a93b9db026697342fa5cba3f439d70608}{Minus}, \hyperlink{quotedprintable_8cpp_a4cd6ee5a5391a2ee129a7cb17735ca9f}{Plus}, \hyperlink{quotedprintable_8cpp_a97ec01bdd33cf9ba8c9cc898462342ae}{Slash}, \hyperlink{quotedprintable_8cpp_a6abc6a9cca67f453bf1d81f0e3bcacdf}{Space}, et \hyperlink{quotedprintable_8cpp_ad79e7fc99d67b2c62373a22ba91ae78a}{Underscore}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_quoted_printable_a8426b74cafe1c93232ac60d3f077c9e8}{Simple\+Mail\+::\+Quoted\+Printable\+::encode()}.
+
+
+\begin{DoxyCode}
+00039 \{
+00040     \textcolor{comment}{// For both, we need to escape '=' and anything unprintable}
+00041     \textcolor{keywordtype}{bool} escape = ((input > \hyperlink{quotedprintable_8cpp_a234bea714ae19affc23d4f327e0be8a4}{MaxPrintableRange}) ||
+00042                    ((input < \hyperlink{quotedprintable_8cpp_a127cfae5b5d0a4fe93dd03b1aa97c2f3}{MinPrintableRange}) && (input != 
+      \hyperlink{quotedprintable_8cpp_a2c3ded061f81bce584a529835d0af806}{HorizontalTab}) && (input != \hyperlink{quotedprintable_8cpp_a250d4a1230d55635d691a879044abd68}{FormFeed})) ||
+00043                    (input == \hyperlink{quotedprintable_8cpp_ad0f7dc0ae6869e4803ab6467e5c3a582}{Equals}));
+00044 
+00045     \textcolor{comment}{// For RFC 2047, we need to escape '?', '\_', ' ' & '\(\backslash\)t'}
+00046     \textcolor{comment}{// In fact, since the output may be used in a header field 'word', then the only characters}
+00047     \textcolor{comment}{// that can be used un-escaped are: alphanumerics, '!', '*', '+' '-', '/' and '\_'}
+00048     \textcolor{keywordflow}{if} (!escape && rfc2047)
+00049     \{
+00050         \textcolor{comment}{// We can also ignore space, since it will become an underscore}
+00051         \textcolor{keywordflow}{if} ((input != \hyperlink{quotedprintable_8cpp_a6ce006632170232439e486d67f8d9220}{ExclamationMark}) && (input != \hyperlink{quotedprintable_8cpp_a25342427a33ec7183c59d2d384c6599e}{Asterisk}) && (input != 
+      \hyperlink{quotedprintable_8cpp_a4cd6ee5a5391a2ee129a7cb17735ca9f}{Plus}) &&
+00052                 (input != \hyperlink{quotedprintable_8cpp_a93b9db026697342fa5cba3f439d70608}{Minus}) && (input != \hyperlink{quotedprintable_8cpp_a97ec01bdd33cf9ba8c9cc898462342ae}{Slash}) && (input != 
+      \hyperlink{quotedprintable_8cpp_ad79e7fc99d67b2c62373a22ba91ae78a}{Underscore}) && (input != \hyperlink{quotedprintable_8cpp_a6abc6a9cca67f453bf1d81f0e3bcacdf}{Space}))
+00053         \{
+00054             escape = !isalnum(input);
+00055         \}
+00056     \}
+00057 
+00058     \textcolor{keywordflow}{return} escape;
+00059 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des variables}
+\mbox{\Hypertarget{quotedprintable_8cpp_a25342427a33ec7183c59d2d384c6599e}\label{quotedprintable_8cpp_a25342427a33ec7183c59d2d384c6599e}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Asterisk@{Asterisk}}
+\index{Asterisk@{Asterisk}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Asterisk}{Asterisk}}
+{\footnotesize\ttfamily const unsigned char Asterisk = 0x2a}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_ad0f7dc0ae6869e4803ab6467e5c3a582}\label{quotedprintable_8cpp_ad0f7dc0ae6869e4803ab6467e5c3a582}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Equals@{Equals}}
+\index{Equals@{Equals}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Equals}{Equals}}
+{\footnotesize\ttfamily const unsigned char Equals = 0x3d}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a6ce006632170232439e486d67f8d9220}\label{quotedprintable_8cpp_a6ce006632170232439e486d67f8d9220}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Exclamation\+Mark@{Exclamation\+Mark}}
+\index{Exclamation\+Mark@{Exclamation\+Mark}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Exclamation\+Mark}{ExclamationMark}}
+{\footnotesize\ttfamily const unsigned char Exclamation\+Mark = 0x21}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a250d4a1230d55635d691a879044abd68}\label{quotedprintable_8cpp_a250d4a1230d55635d691a879044abd68}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Form\+Feed@{Form\+Feed}}
+\index{Form\+Feed@{Form\+Feed}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Form\+Feed}{FormFeed}}
+{\footnotesize\ttfamily const unsigned char Form\+Feed = 0x0c}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a2c3ded061f81bce584a529835d0af806}\label{quotedprintable_8cpp_a2c3ded061f81bce584a529835d0af806}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Horizontal\+Tab@{Horizontal\+Tab}}
+\index{Horizontal\+Tab@{Horizontal\+Tab}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Horizontal\+Tab}{HorizontalTab}}
+{\footnotesize\ttfamily const unsigned char Horizontal\+Tab = 0x09}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a234bea714ae19affc23d4f327e0be8a4}\label{quotedprintable_8cpp_a234bea714ae19affc23d4f327e0be8a4}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Max\+Printable\+Range@{Max\+Printable\+Range}}
+\index{Max\+Printable\+Range@{Max\+Printable\+Range}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Max\+Printable\+Range}{MaxPrintableRange}}
+{\footnotesize\ttfamily const unsigned char Max\+Printable\+Range = 0x7e}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a127cfae5b5d0a4fe93dd03b1aa97c2f3}\label{quotedprintable_8cpp_a127cfae5b5d0a4fe93dd03b1aa97c2f3}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Min\+Printable\+Range@{Min\+Printable\+Range}}
+\index{Min\+Printable\+Range@{Min\+Printable\+Range}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Min\+Printable\+Range}{MinPrintableRange}}
+{\footnotesize\ttfamily const unsigned char Min\+Printable\+Range = 0x20}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a93b9db026697342fa5cba3f439d70608}\label{quotedprintable_8cpp_a93b9db026697342fa5cba3f439d70608}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Minus@{Minus}}
+\index{Minus@{Minus}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Minus}{Minus}}
+{\footnotesize\ttfamily const unsigned char Minus = 0x2d}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a4cd6ee5a5391a2ee129a7cb17735ca9f}\label{quotedprintable_8cpp_a4cd6ee5a5391a2ee129a7cb17735ca9f}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Plus@{Plus}}
+\index{Plus@{Plus}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Plus}{Plus}}
+{\footnotesize\ttfamily const unsigned char Plus = 0x2b}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a97ec01bdd33cf9ba8c9cc898462342ae}\label{quotedprintable_8cpp_a97ec01bdd33cf9ba8c9cc898462342ae}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Slash@{Slash}}
+\index{Slash@{Slash}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Slash}{Slash}}
+{\footnotesize\ttfamily const unsigned char Slash = 0x2f}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_a6abc6a9cca67f453bf1d81f0e3bcacdf}\label{quotedprintable_8cpp_a6abc6a9cca67f453bf1d81f0e3bcacdf}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Space@{Space}}
+\index{Space@{Space}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Space}{Space}}
+{\footnotesize\ttfamily const unsigned char Space = 0x20}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+\mbox{\Hypertarget{quotedprintable_8cpp_ad79e7fc99d67b2c62373a22ba91ae78a}\label{quotedprintable_8cpp_ad79e7fc99d67b2c62373a22ba91ae78a}} 
+\index{quotedprintable.\+cpp@{quotedprintable.\+cpp}!Underscore@{Underscore}}
+\index{Underscore@{Underscore}!quotedprintable.\+cpp@{quotedprintable.\+cpp}}
+\paragraph{\texorpdfstring{Underscore}{Underscore}}
+{\footnotesize\ttfamily const unsigned char Underscore = 0x5f}
+
+
+
+Référencé par \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+

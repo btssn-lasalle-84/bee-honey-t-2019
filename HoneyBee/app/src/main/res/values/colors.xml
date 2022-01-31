@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="Jaune">#fdcb6e</color>
+    <color name="BleuSelection">#e58e26</color>
+    <color name="BleuFond">#f6b93b</color>
+    <color name="GrisConsole">#ffffff</color>
+    <color name="btndispo">#fdcb6e</color>
+    <color name="btnindispo">#535c68</color>
+</resources>

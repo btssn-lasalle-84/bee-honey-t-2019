@@ -1,0 +1,73 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter}\index{fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter@{fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_acbd836cc0a90b8328a397db78a9cb082}{Time\+As\+X\+Axis\+Label\+Formatter} (String format)
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_a2f5c7f8b098eb1bc82f7a47e39088820}{format\+Label} (double value, boolean is\+ValueX)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_ab6093f1dff2db01144543e00bb1b2700}{m\+Format}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_acbd836cc0a90b8328a397db78a9cb082}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_acbd836cc0a90b8328a397db78a9cb082}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}!Time\+As\+X\+Axis\+Label\+Formatter@{Time\+As\+X\+Axis\+Label\+Formatter}}
+\index{Time\+As\+X\+Axis\+Label\+Formatter@{Time\+As\+X\+Axis\+Label\+Formatter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}}
+\paragraph{\texorpdfstring{Time\+As\+X\+Axis\+Label\+Formatter()}{TimeAsXAxisLabelFormatter()}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter.\+Time\+As\+X\+Axis\+Label\+Formatter (\begin{DoxyParamCaption}\item[{String}]{format }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00016                                                     \{
+00017         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_ab6093f1dff2db01144543e00bb1b2700}{mFormat} = format;
+00018     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_a2f5c7f8b098eb1bc82f7a47e39088820}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_a2f5c7f8b098eb1bc82f7a47e39088820}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}!format\+Label@{format\+Label}}
+\index{format\+Label@{format\+Label}!fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}}
+\paragraph{\texorpdfstring{format\+Label()}{formatLabel()}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter.\+format\+Label (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{boolean}]{is\+ValueX }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00021                                                               \{
+00022         \textcolor{keywordflow}{if} (isValueX) \{
+00023             Date d = \textcolor{keyword}{new} Date(0, 0, 0, (\textcolor{keywordtype}{int})value, 0);
+00024             SimpleDateFormat dateFormat = \textcolor{keyword}{new} SimpleDateFormat(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_ab6093f1dff2db01144543e00bb1b2700}{mFormat});
+00025             \textcolor{keywordflow}{return} dateFormat.format(d);
+00026         \} \textcolor{keywordflow}{else} \{
+00027             \textcolor{keywordflow}{return} super.formatLabel(value, isValueX);
+00028         \}
+00029     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_ab6093f1dff2db01144543e00bb1b2700}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_time_as_x_axis_label_formatter_ab6093f1dff2db01144543e00bb1b2700}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}!m\+Format@{m\+Format}}
+\index{m\+Format@{m\+Format}!fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter@{fr\+::campus\+::laurainc\+::honeybee\+::\+Time\+As\+X\+Axis\+Label\+Formatter}}
+\paragraph{\texorpdfstring{m\+Format}{mFormat}}
+{\footnotesize\ttfamily final String fr.\+campus.\+laurainc.\+honeybee.\+Time\+As\+X\+Axis\+Label\+Formatter.\+m\+Format\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_time_as_x_axis_label_formatter_8java}{Time\+As\+X\+Axis\+Label\+Formatter.\+java}\end{DoxyCompactItemize}

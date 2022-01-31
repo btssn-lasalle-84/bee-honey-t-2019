@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".DebugActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:layout_width="600dp"
+        android:layout_height="800dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:background="#636e72"
+        android:fadeScrollbars="false"
+        android:padding="5dp"
+        android:scrollbarThumbVertical="@drawable/scroolbar">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_trameTTN"
+                android:layout_width="600dp"
+                android:layout_height="800dp"
+                android:background="#2f3542"
+                android:fadeScrollbars="false"
+                android:text="En attente de reception de données depuis le serveur TTN ..."
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

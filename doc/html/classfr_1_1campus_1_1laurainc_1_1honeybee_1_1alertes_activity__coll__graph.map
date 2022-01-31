@@ -1,0 +1,4 @@
+<map id="fr.campus.laurainc.honeybee.alertesActivity" name="fr.campus.laurainc.honeybee.alertesActivity">
+<area shape="rect" id="node2" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche.html" title="{fr.campus.laurainc.honeybee.\lRuche\n|&#45; idRuche\l&#45; nom\l&#45; description\l&#45; deviceID\l&#45; temperatureInt\l&#45; humiditeInt\l&#45; temperatureExt\l&#45; humiditeExt\l&#45; pression\l&#45; ensoleillement\let 39 de plus...\l&#45; TAG\l|+ Ruche()\l+ Ruche()\l+ Ruche()\l+ Ruche()\l+ getNom()\l+ getTemperatureInt()\l+ setTemperatureInt()\l+ getPoids()\l+ setHorodatage()\l+ setPoids()\let 58 de plus...\l}" alt="" coords="25,483,218,883"/>
+<area shape="rect" id="node3" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees.html" title="Gestion d&#39;une base de données MySQL (Singleton) " alt="" coords="25,5,218,420"/>
+</map>

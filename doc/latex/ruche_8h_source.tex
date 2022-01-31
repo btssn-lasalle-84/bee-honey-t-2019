@@ -1,0 +1,232 @@
+\hypertarget{ruche_8h_source}{}\subsection{ruche.\+h}
+\label{ruche_8h_source}\index{ruche.\+h@{ruche.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef RUCHE\_H}
+00002 \textcolor{preprocessor}{#define RUCHE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtMqtt/QtMqtt>}
+00018 \textcolor{preprocessor}{#include <QtMqtt/QMqttClient>}
+00019 \textcolor{preprocessor}{#include "\hyperlink{parametres_8h}{parametres.h}"}
+00020 
+00021 \textcolor{keyword}{class }\hyperlink{class_infos_ensoleillement}{InfosEnsoleillement};
+00022 \textcolor{keyword}{class }\hyperlink{class_infos_humidite}{InfosHumidite};
+00023 \textcolor{keyword}{class }\hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique};
+00024 \textcolor{keyword}{class }\hyperlink{class_infos_temperature}{InfosTemperature};
+00025 \textcolor{keyword}{class }\hyperlink{class_infos_batterie}{InfosBatterie};
+00026 \textcolor{keyword}{class }\hyperlink{class_infos_poids}{InfosPoids};
+00027 \textcolor{keyword}{class }\hyperlink{class_communication}{Communication};
+00028 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00029 \textcolor{keyword}{class }\hyperlink{class_alertes}{Alertes};
+00030 
+00031 \textcolor{comment}{// Les structures de données pour les mesures}
+\Hypertarget{ruche_8h_source_l00043}\hyperlink{struct_donnees_batterie}{00043} \textcolor{comment}{}\textcolor{keyword}{struct }\hyperlink{struct_donnees_batterie}{DonneesBatterie}
+00044 \{
+\Hypertarget{ruche_8h_source_l00045}\hyperlink{struct_donnees_batterie_a1394510ba159a846820452e9e333f38b}{00045}     QString \hyperlink{struct_donnees_batterie_a1394510ba159a846820452e9e333f38b}{tension};
+\Hypertarget{ruche_8h_source_l00046}\hyperlink{struct_donnees_batterie_ac19dd5bb96d677e228ddd22159076d26}{00046}     QString \hyperlink{struct_donnees_batterie_ac19dd5bb96d677e228ddd22159076d26}{horodatagetension};
+\Hypertarget{ruche_8h_source_l00047}\hyperlink{struct_donnees_batterie_a7a996ea5eacd6839a8a34dbbe48eb59a}{00047}     QString \hyperlink{struct_donnees_batterie_a7a996ea5eacd6839a8a34dbbe48eb59a}{courant};
+\Hypertarget{ruche_8h_source_l00048}\hyperlink{struct_donnees_batterie_a1318c296d4e6926304851a7cef0ad957}{00048}     QString \hyperlink{struct_donnees_batterie_a1318c296d4e6926304851a7cef0ad957}{horodatagecourant};
+\Hypertarget{ruche_8h_source_l00049}\hyperlink{struct_donnees_batterie_a4d3cf76cf1722835a6449bc4a29e761b}{00049}     QString \hyperlink{struct_donnees_batterie_a4d3cf76cf1722835a6449bc4a29e761b}{charge};
+\Hypertarget{ruche_8h_source_l00050}\hyperlink{struct_donnees_batterie_a98859495d938a84f1c6aa818e0d31e82}{00050}     QString \hyperlink{struct_donnees_batterie_a98859495d938a84f1c6aa818e0d31e82}{horodatagecharge};
+00051 \};
+00052 
+00053 \textcolor{comment}{// La structure de données pour les mesures horodatées}
+\Hypertarget{ruche_8h_source_l00065}\hyperlink{struct_donnees_ruche}{00065} \textcolor{comment}{}\textcolor{keyword}{struct }\hyperlink{struct_donnees_ruche}{DonneesRuche}
+00066 \{
+\Hypertarget{ruche_8h_source_l00067}\hyperlink{struct_donnees_ruche_a67dc57b9568529e595a5a31e93eef703}{00067}     \hyperlink{struct_donnees_batterie}{DonneesBatterie} \hyperlink{struct_donnees_ruche_a67dc57b9568529e595a5a31e93eef703}{donneesBatterie};
+\Hypertarget{ruche_8h_source_l00068}\hyperlink{struct_donnees_ruche_af825ee2a3638e519d531c62311592d20}{00068}     QString \hyperlink{struct_donnees_ruche_af825ee2a3638e519d531c62311592d20}{poids};
+\Hypertarget{ruche_8h_source_l00069}\hyperlink{struct_donnees_ruche_a8f96978c53a79f3c4b450240c67a306d}{00069}     QString \hyperlink{struct_donnees_ruche_a8f96978c53a79f3c4b450240c67a306d}{horodatagePoids};
+\Hypertarget{ruche_8h_source_l00070}\hyperlink{struct_donnees_ruche_ad6cbda133d2c8abc23fb688d6e565ab2}{00070}     QString \hyperlink{struct_donnees_ruche_ad6cbda133d2c8abc23fb688d6e565ab2}{temperatureInterieur};
+\Hypertarget{ruche_8h_source_l00071}\hyperlink{struct_donnees_ruche_a004c7a2447bbcdd2ba212ba2f9866dcd}{00071}     QString \hyperlink{struct_donnees_ruche_a004c7a2447bbcdd2ba212ba2f9866dcd}{horodatageTemperatureInterieur};
+\Hypertarget{ruche_8h_source_l00072}\hyperlink{struct_donnees_ruche_a2541ee93816a11da7367b36d4bedc77b}{00072}     QString \hyperlink{struct_donnees_ruche_a2541ee93816a11da7367b36d4bedc77b}{humiditeInterieur};
+\Hypertarget{ruche_8h_source_l00073}\hyperlink{struct_donnees_ruche_a15ebda778958380edd4acff5d6eef5b8}{00073}     QString \hyperlink{struct_donnees_ruche_a15ebda778958380edd4acff5d6eef5b8}{horodatageHumiditeInterieur};
+\Hypertarget{ruche_8h_source_l00074}\hyperlink{struct_donnees_ruche_aebc52e7707ccf6ae31d2150533cfb0ba}{00074}     QString \hyperlink{struct_donnees_ruche_aebc52e7707ccf6ae31d2150533cfb0ba}{temperatureExterieur};
+\Hypertarget{ruche_8h_source_l00075}\hyperlink{struct_donnees_ruche_a91fb0ab596625f4c63fed764dc649dfb}{00075}     QString \hyperlink{struct_donnees_ruche_a91fb0ab596625f4c63fed764dc649dfb}{horodatageTemperatureExterieur};
+\Hypertarget{ruche_8h_source_l00076}\hyperlink{struct_donnees_ruche_ad97156720e4e08cd7aa545cdb8f3822f}{00076}     QString \hyperlink{struct_donnees_ruche_ad97156720e4e08cd7aa545cdb8f3822f}{humiditeExterieur};
+\Hypertarget{ruche_8h_source_l00077}\hyperlink{struct_donnees_ruche_af38a9a06e2f620850ba2d152f189f67b}{00077}     QString \hyperlink{struct_donnees_ruche_af38a9a06e2f620850ba2d152f189f67b}{horodatageHumiditeExterieur};
+\Hypertarget{ruche_8h_source_l00078}\hyperlink{struct_donnees_ruche_ad34347d2201eeae5834fd5dc4d0ed512}{00078}     QString \hyperlink{struct_donnees_ruche_ad34347d2201eeae5834fd5dc4d0ed512}{pressionAtmospherique};
+\Hypertarget{ruche_8h_source_l00079}\hyperlink{struct_donnees_ruche_a21b7eeed18bc28b9c0f19f1ed5da7916}{00079}     QString \hyperlink{struct_donnees_ruche_a21b7eeed18bc28b9c0f19f1ed5da7916}{horodatagePressionAtmospherique};
+\Hypertarget{ruche_8h_source_l00080}\hyperlink{struct_donnees_ruche_adfa6aee15b2a96b968e558ac14e0f2de}{00080}     QString \hyperlink{struct_donnees_ruche_adfa6aee15b2a96b968e558ac14e0f2de}{ensoleillement};
+\Hypertarget{ruche_8h_source_l00081}\hyperlink{struct_donnees_ruche_ae1b5a2502017455f8fbd95bdab935fd1}{00081}     QString \hyperlink{struct_donnees_ruche_ae1b5a2502017455f8fbd95bdab935fd1}{horodatageEnsoleillement};
+00082 \};
+00083 
+\Hypertarget{ruche_8h_source_l00095}\hyperlink{struct_mesure_horaire_ruche}{00095} \textcolor{keyword}{struct }\hyperlink{struct_mesure_horaire_ruche}{MesureHoraireRuche}
+00096 \{
+\Hypertarget{ruche_8h_source_l00097}\hyperlink{struct_mesure_horaire_ruche_ab679cc7168deb6c3d2458c99b94e0611}{00097}     \textcolor{keywordtype}{int} \hyperlink{struct_mesure_horaire_ruche_ab679cc7168deb6c3d2458c99b94e0611}{heure};
+\Hypertarget{ruche_8h_source_l00098}\hyperlink{struct_mesure_horaire_ruche_ade9984cb0f2c62b3ba1369f77249bb4a}{00098}     \textcolor{keywordtype}{bool} temperaturesRecues = \textcolor{keyword}{false};
+\Hypertarget{ruche_8h_source_l00099}\hyperlink{struct_mesure_horaire_ruche_ac240bf701116e1a09f2bf33911bf57ef}{00099}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_ac240bf701116e1a09f2bf33911bf57ef}{temperatureInterieurMoyenne};
+\Hypertarget{ruche_8h_source_l00100}\hyperlink{struct_mesure_horaire_ruche_a51c45378a78c733704df79b38d61afcc}{00100}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_a51c45378a78c733704df79b38d61afcc}{temperatureInterieurMinimum};
+\Hypertarget{ruche_8h_source_l00101}\hyperlink{struct_mesure_horaire_ruche_a746c391a70735bfff63bf7271ab28ab8}{00101}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_a746c391a70735bfff63bf7271ab28ab8}{temperatureInterieurMaximum};
+\Hypertarget{ruche_8h_source_l00102}\hyperlink{struct_mesure_horaire_ruche_a4f825f05bf4e61db7b18a08dee759b7a}{00102}     \textcolor{keywordtype}{bool} humiditesRecues = \textcolor{keyword}{false};
+\Hypertarget{ruche_8h_source_l00103}\hyperlink{struct_mesure_horaire_ruche_a46f517d342e230b4e3d0b84a96b79aac}{00103}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_a46f517d342e230b4e3d0b84a96b79aac}{humiditeInterieurMoyenne};
+\Hypertarget{ruche_8h_source_l00104}\hyperlink{struct_mesure_horaire_ruche_adf0cbf1a3451cced1ba6fb9573654236}{00104}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_adf0cbf1a3451cced1ba6fb9573654236}{humiditeInterieurMinimum};
+\Hypertarget{ruche_8h_source_l00105}\hyperlink{struct_mesure_horaire_ruche_ac8733bd08c235de27dd3eea85749c3f6}{00105}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_ruche_ac8733bd08c235de27dd3eea85749c3f6}{humiditeInterieurMaximum};
+00106 \};
+00107 
+\Hypertarget{ruche_8h_source_l00119}\hyperlink{struct_mesure_horaire_environement}{00119} \textcolor{keyword}{struct }\hyperlink{struct_mesure_horaire_environement}{MesureHoraireEnvironement}
+00120 \{
+\Hypertarget{ruche_8h_source_l00121}\hyperlink{struct_mesure_horaire_environement_a83295c95940d9edae2d082a94f49e1c9}{00121}     \textcolor{keywordtype}{int} \hyperlink{struct_mesure_horaire_environement_a83295c95940d9edae2d082a94f49e1c9}{heure};
+\Hypertarget{ruche_8h_source_l00122}\hyperlink{struct_mesure_horaire_environement_a3444440b836c4893e8d61c3eb5c3e42d}{00122}     \textcolor{keywordtype}{bool} temperaturesRecues = \textcolor{keyword}{false};
+\Hypertarget{ruche_8h_source_l00123}\hyperlink{struct_mesure_horaire_environement_a40be086e9b2454c0e70066a523a1b066}{00123}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a40be086e9b2454c0e70066a523a1b066}{temperatureExterieurMoyenne};
+\Hypertarget{ruche_8h_source_l00124}\hyperlink{struct_mesure_horaire_environement_ae9737a62128ecf2614901ebe0b118548}{00124}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_ae9737a62128ecf2614901ebe0b118548}{temperatureExterieurMinimum};
+\Hypertarget{ruche_8h_source_l00125}\hyperlink{struct_mesure_horaire_environement_aaf73ec5bb5a7c8235c56dc4ea3c4d89c}{00125}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_aaf73ec5bb5a7c8235c56dc4ea3c4d89c}{temperatureExterieurMaximum};
+\Hypertarget{ruche_8h_source_l00126}\hyperlink{struct_mesure_horaire_environement_a4348771984d70b9ea7867dba511db336}{00126}     \textcolor{keywordtype}{bool} humiditesRecues = \textcolor{keyword}{false};
+\Hypertarget{ruche_8h_source_l00127}\hyperlink{struct_mesure_horaire_environement_a25909e0885ee3588c637b738ced303d7}{00127}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a25909e0885ee3588c637b738ced303d7}{humiditeExterieurMoyenne};
+\Hypertarget{ruche_8h_source_l00128}\hyperlink{struct_mesure_horaire_environement_a1621bd692dc352708d1931a48df9a596}{00128}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a1621bd692dc352708d1931a48df9a596}{humiditeExterieurMinimum};
+\Hypertarget{ruche_8h_source_l00129}\hyperlink{struct_mesure_horaire_environement_abb2c00c4262837d9e1122573283d86ec}{00129}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_abb2c00c4262837d9e1122573283d86ec}{humiditeExterieurMaximum};
+\Hypertarget{ruche_8h_source_l00130}\hyperlink{struct_mesure_horaire_environement_a6ae12cb9b6ac6a46f7c08e60049c7b72}{00130}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a6ae12cb9b6ac6a46f7c08e60049c7b72}{pressionAtmospheriqueMoyenne};
+\Hypertarget{ruche_8h_source_l00131}\hyperlink{struct_mesure_horaire_environement_a3d42b48772717461f7395cdae5ff925f}{00131}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a3d42b48772717461f7395cdae5ff925f}{pressionAtmospheriqueMinimum};
+\Hypertarget{ruche_8h_source_l00132}\hyperlink{struct_mesure_horaire_environement_a9b82da49ea52c6f118f25433a16e22d4}{00132}     \textcolor{keywordtype}{double} \hyperlink{struct_mesure_horaire_environement_a9b82da49ea52c6f118f25433a16e22d4}{pressionAtmospheriqueMaximum};
+\Hypertarget{ruche_8h_source_l00133}\hyperlink{struct_mesure_horaire_environement_a5db5e56af7d297b500912489126f7305}{00133}     \textcolor{keywordtype}{bool} pressionAtmospheriqueRecues = \textcolor{keyword}{false};
+00134 \};
+00135 
+\Hypertarget{ruche_8h_source_l00147}\hyperlink{struct_mesures_horaire_ensoleillement}{00147} \textcolor{keyword}{struct }\hyperlink{struct_mesures_horaire_ensoleillement}{MesuresHoraireEnsoleillement}
+00148 \{
+\Hypertarget{ruche_8h_source_l00149}\hyperlink{struct_mesures_horaire_ensoleillement_a478cf936fa746f384445cf5077206454}{00149}     \textcolor{keywordtype}{int} \hyperlink{struct_mesures_horaire_ensoleillement_a478cf936fa746f384445cf5077206454}{heure};
+\Hypertarget{ruche_8h_source_l00150}\hyperlink{struct_mesures_horaire_ensoleillement_a41c11dd16f5e42cf8b4882f98b9cee49}{00150}     \textcolor{keywordtype}{double} \hyperlink{struct_mesures_horaire_ensoleillement_a41c11dd16f5e42cf8b4882f98b9cee49}{ensoleillementsMoyen};
+\Hypertarget{ruche_8h_source_l00151}\hyperlink{struct_mesures_horaire_ensoleillement_a5d1165f40806663a3fd40ee4408c78f1}{00151}     \textcolor{keywordtype}{double} \hyperlink{struct_mesures_horaire_ensoleillement_a5d1165f40806663a3fd40ee4408c78f1}{ensoleillementsMinimum};
+\Hypertarget{ruche_8h_source_l00152}\hyperlink{struct_mesures_horaire_ensoleillement_adc848a942c5dcb0984b4c346f07e6f09}{00152}     \textcolor{keywordtype}{double} \hyperlink{struct_mesures_horaire_ensoleillement_adc848a942c5dcb0984b4c346f07e6f09}{ensoleillementsMaximum};
+\Hypertarget{ruche_8h_source_l00153}\hyperlink{struct_mesures_horaire_ensoleillement_a78d40966edb1ace93776ba33edfc5151}{00153}     \textcolor{keywordtype}{bool} ensoleillementsRecues = \textcolor{keyword}{false};
+00154 \};
+00155 
+\Hypertarget{ruche_8h_source_l00168}\hyperlink{class_ruche}{00168} \textcolor{keyword}{class }\hyperlink{class_ruche}{Ruche} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00169 \{
+00170     Q\_OBJECT
+00171 
+00172     \textcolor{keyword}{public}:
+00173         \hyperlink{class_ruche}{Ruche}(QStringList donneesRucheTTN, \hyperlink{class_q_object}{QObject} *parent = 0);
+00174         ~\hyperlink{class_ruche}{Ruche}();
+00175 
+00176         \hyperlink{class_alertes}{Alertes}* getAlertes();
+00177         QString getIdRuche();
+00178 
+00179     \textcolor{keyword}{private}:
+\Hypertarget{ruche_8h_source_l00180}\hyperlink{class_ruche_a197003ecff4f029885c7d38569a68d49}{00180}         \hyperlink{class_infos_ensoleillement}{InfosEnsoleillement} *\hyperlink{class_ruche_a197003ecff4f029885c7d38569a68d49}{ensoleillementRuche};
+\Hypertarget{ruche_8h_source_l00181}\hyperlink{class_ruche_acb380928928e693a1933c4cf607ddf80}{00181}         \hyperlink{class_infos_humidite}{InfosHumidite} *\hyperlink{class_ruche_acb380928928e693a1933c4cf607ddf80}{humiditeRuche};
+\Hypertarget{ruche_8h_source_l00182}\hyperlink{class_ruche_a06efa82900dc7e31ed67c826d3157ae0}{00182}         \hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique} *
+      \hyperlink{class_ruche_a06efa82900dc7e31ed67c826d3157ae0}{pressionAtmospheriqueRuche};
+\Hypertarget{ruche_8h_source_l00183}\hyperlink{class_ruche_af721fb92f801a9b1f3ef3aa9867cf3de}{00183}         \hyperlink{class_infos_temperature}{InfosTemperature} *\hyperlink{class_ruche_af721fb92f801a9b1f3ef3aa9867cf3de}{temperatureRuche};
+\Hypertarget{ruche_8h_source_l00184}\hyperlink{class_ruche_af34340e456aff54c8d1ec433fdbe0740}{00184}         \hyperlink{class_infos_batterie}{InfosBatterie} *\hyperlink{class_ruche_af34340e456aff54c8d1ec433fdbe0740}{infosBatterie};
+\Hypertarget{ruche_8h_source_l00185}\hyperlink{class_ruche_af3d02b62dd3d986b73b38851bb88ec77}{00185}         \hyperlink{class_infos_poids}{InfosPoids} *\hyperlink{class_ruche_af3d02b62dd3d986b73b38851bb88ec77}{infosPoids};
+\Hypertarget{ruche_8h_source_l00186}\hyperlink{class_ruche_a6211b7b8f43abf5eecf8a1fc2d0f037e}{00186}         \hyperlink{class_communication}{Communication} *\hyperlink{class_ruche_a6211b7b8f43abf5eecf8a1fc2d0f037e}{communicationRuche};
+\Hypertarget{ruche_8h_source_l00187}\hyperlink{class_ruche_a8577fdedabdecd98652e338e83bb3b65}{00187}         \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_ruche_a8577fdedabdecd98652e338e83bb3b65}{bdd}; 
+\Hypertarget{ruche_8h_source_l00188}\hyperlink{class_ruche_af07644ddce44cb5ed4286475dc0f9d46}{00188}         \hyperlink{class_alertes}{Alertes} *\hyperlink{class_ruche_af07644ddce44cb5ed4286475dc0f9d46}{alertes};
+\Hypertarget{ruche_8h_source_l00189}\hyperlink{class_ruche_a4556832042641c08a6ef2ab9d80d771e}{00189}         QStringList \hyperlink{class_ruche_a4556832042641c08a6ef2ab9d80d771e}{donneesRucheTTN};
+\Hypertarget{ruche_8h_source_l00190}\hyperlink{class_ruche_a1526bfa78f03e0710ad16f880a40c15f}{00190}         \hyperlink{struct_donnees_ruche}{DonneesRuche} \hyperlink{class_ruche_a1526bfa78f03e0710ad16f880a40c15f}{donneesRuche};
+\Hypertarget{ruche_8h_source_l00191}\hyperlink{class_ruche_a9a68d3b7eb272e139f1532fdcbca2da3}{00191}         \hyperlink{struct_mesure_horaire_ruche}{MesureHoraireRuche} \hyperlink{class_ruche_a9a68d3b7eb272e139f1532fdcbca2da3}{mesureHoraireRuche};
+\Hypertarget{ruche_8h_source_l00192}\hyperlink{class_ruche_a73a826506110c10d9221065670985e52}{00192}         \hyperlink{struct_mesure_horaire_environement}{MesureHoraireEnvironement} 
+      \hyperlink{class_ruche_a73a826506110c10d9221065670985e52}{mesureHoraireEnvironement};
+\Hypertarget{ruche_8h_source_l00193}\hyperlink{class_ruche_a5e57df1ce7805b1ab0f6d8ef37504582}{00193}         \hyperlink{struct_mesures_horaire_ensoleillement}{MesuresHoraireEnsoleillement} 
+      \hyperlink{class_ruche_a5e57df1ce7805b1ab0f6d8ef37504582}{mesuresHorraireEnsoleillement};
+00194 
+00195         \textcolor{keywordtype}{void} connecterGestionMessageTraite();
+00196         \textcolor{keywordtype}{void} connecterGestionMessageBrut();
+00197         QString extraireDonneesBrutes(\textcolor{keyword}{const} QByteArray &message);
+00198         QString extrairePoids(\textcolor{keyword}{const} QString &donneesBrutes);
+00199         \hyperlink{parametres_8h_a0fe68caa1e9147addc96657cc822b937}{PortsTTN} recupererNumeroDePort(QByteArray message);
+00200         \textcolor{keywordtype}{void} extraireDonnees(\hyperlink{parametres_8h_a0fe68caa1e9147addc96657cc822b937}{PortsTTN} port, QByteArray message);
+00201         QString recupererDonnees(QByteArray message, QString objetJson, QString sousObjetJson);
+00202         QString recupererHorodatage(QByteArray message, QString objetJson, QString sousObjetJson);
+00203         \textcolor{keywordtype}{void} gererAlertes();
+00204         \textcolor{keywordtype}{void} insererDonneesPortMesureRuche();
+00205         \textcolor{keywordtype}{void} insererDonneesPortMesureEnvironnement();
+00206         \textcolor{keywordtype}{void} insererDonneesPortEnsoleillement();
+00207         \textcolor{keywordtype}{void} insererDonneesPortPoids();
+00208         \textcolor{keywordtype}{void} insererDonneesPortBatterie();
+00209         \textcolor{keywordtype}{void} insererMesureHoraireRuche();
+00210         \textcolor{keywordtype}{void} insererMesureHoraireEnvironnement();
+00211         \textcolor{keywordtype}{void} insererMesureHoraireEnsoleillement();
+00212         \textcolor{keywordtype}{void} insererMesureHorairePoids();
+00213         \textcolor{keywordtype}{void} insererMesureHoraireBatterie();
+00214         \textcolor{keywordtype}{void} recupererLocalisationPasserelle(QByteArray message);
+00215 
+00216     \textcolor{keyword}{public} slots:        
+00217         \textcolor{keywordtype}{void} recevoirMessage(\textcolor{keyword}{const} QByteArray &message, \textcolor{keyword}{const} QMqttTopicName &topic);
+00218         \textcolor{keywordtype}{void} recevoirEtatClientConnexion(\textcolor{keywordtype}{bool});
+00219         \textcolor{comment}{/********************Slots Mesure****************************/}
+00220         \textcolor{keywordtype}{void} recevoirTemperatureInterieurTraite(\textcolor{keywordtype}{double} temperatureInterieur,QString horodatage);
+00221         \textcolor{keywordtype}{void} recevoirMesureHumiditeInterieurTraite(\textcolor{keywordtype}{double} humiditeInterieurTraite,QString horodatage);
+00222         \textcolor{keywordtype}{void} recevoirTemperatureExterieurTraite(\textcolor{keywordtype}{double} temperatureExterieur, QString horodatage);
+00223         \textcolor{keywordtype}{void} recevoirMesureHumiditeExterieurTraite(\textcolor{keywordtype}{double} humiditeExterieurTraite, QString horodatage);
+00224         \textcolor{keywordtype}{void} recevoirEnsoleillementTraite(\textcolor{keywordtype}{double} ensoleillement,QString horodatage);
+00225         \textcolor{keywordtype}{void} recevoirPressionAtmospheriqueTraite(\textcolor{keywordtype}{double} pressionAtmospherique,QString horodatage);
+00226         \textcolor{keywordtype}{void} recevoirMesureTensionTraite(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a1394510ba159a846820452e9e333f38b}{tension}, QString);
+00227         \textcolor{keywordtype}{void} recevoirMesureCourantTraite(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a7a996ea5eacd6839a8a34dbbe48eb59a}{courant}, QString);
+00228         \textcolor{keywordtype}{void} recevoirMesureChargeTraite(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a4d3cf76cf1722835a6449bc4a29e761b}{charge}, QString);
+00229         \textcolor{keywordtype}{void} recevoirMesurePoidsTraite(\textcolor{keywordtype}{double} poids, QString);
+00230 
+00231         \textcolor{comment}{/********************Slots calcul Moyenne****************************/}
+00232         \textcolor{keywordtype}{void} recevoirTraitementTemperatureInterieur(\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMoyenne , \textcolor{keyword}{const} \textcolor{keywordtype}{double}
+       temperatureInterieurMinimum , \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMaximum, \textcolor{keywordtype}{int} heure);
+00233         \textcolor{keywordtype}{void} recevoirTraitementTemperatureExterieur(\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMoyenne ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureExterieurMinimum ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMaximum, \textcolor{keywordtype}{int} heure);
+00234         \textcolor{keywordtype}{void} recevoirTraitementHumiditeInterieur(\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMoyenne ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureInterieurMinimum ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMaximum, \textcolor{keywordtype}{int} heure);
+00235         \textcolor{keywordtype}{void} recevoirTraitementHumiditeExterieur(\textcolor{keyword}{const} \textcolor{keywordtype}{double} humiditeExterieursMoyenne , \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      humiditeExterieursMinimum , \textcolor{keyword}{const} \textcolor{keywordtype}{double} humiditeExterieursMaximum, \textcolor{keywordtype}{int} heure);
+00236         \textcolor{keywordtype}{void} recevoirTraitementPressionAtmospherique(\textcolor{keyword}{const} \textcolor{keywordtype}{double} pressionAtmospheriqueMoyenne, \textcolor{keyword}{const} \textcolor{keywordtype}{
+      double} pressionAtmospheriqueMinimum, \textcolor{keyword}{const} \textcolor{keywordtype}{double} pressionAtmospheriqueMaximum, \textcolor{keywordtype}{int} heure);
+00237         \textcolor{keywordtype}{void} recevoirTraitementEnsoleillement(\textcolor{keyword}{const} \textcolor{keywordtype}{double} ensoleillementsMoyen , \textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      ensoleillementsMinimum , \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMaximum, \textcolor{keywordtype}{int} heure);
+00238         \textcolor{comment}{/*void recevoirTraitementCharge();}
+00239 \textcolor{comment}{        void recevoirTraitementPoids();*/}
+00240 
+00241         \textcolor{comment}{/********************Slots Alertes****************************/}
+00242         \textcolor{keywordtype}{void} recevoirAlertesTemperatureInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} seuilsAlertes);
+00243         \textcolor{keywordtype}{void} recevoirAlertesTemperatureExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} seuilsAlertes);
+00244         \textcolor{keywordtype}{void} recevoirAlertesHumiditeInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} seuilsAlertes);
+00245         \textcolor{keywordtype}{void} recevoirAlertesHumiditeExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} seuilsAlertes);
+00246         \textcolor{keywordtype}{void} recevoirAlertesPressionAtmospherique(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes} seuilsAlertes);
+00247         \textcolor{keywordtype}{void} recevoirAlertesPoids(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00248         \textcolor{keywordtype}{void} recevoirAlertesEnsoleillement(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double} niveauEnsoleillement);
+00249         \textcolor{keywordtype}{void} recevoirAlertesBatterie(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double});
+00250 
+00251     signals:
+00252         \textcolor{comment}{/********************SIGNAUX VERS CLASSE INFOS****************************/}
+00253         \textcolor{keywordtype}{void} nouvelleMesurePoids(QString poids , QString horodatagePoids); 
+00254         \textcolor{keywordtype}{void} nouvelleTemperatureInterieur(QString temperatureInterieur,QString horodatage); 
+00255         \textcolor{keywordtype}{void} nouvelleHumiditeInterieur(QString humiditeInterieur,QString horodatage); 
+00256         \textcolor{keywordtype}{void} nouvelleTemperatureExterieur(QString temperatureExterieur,QString horodatage); 
+00257         \textcolor{keywordtype}{void} nouvelleHumiditeExterieur(QString humiditeExterieur,QString horodatage); 
+00258         \textcolor{keywordtype}{void} nouvellePressionAtmospherique(QString pressionAtmospherique,QString horodatage); 
+00259         \textcolor{keywordtype}{void} nouvelleMesureEnsoleillement(QString ensoleillement,QString horodatage); 
+00260         \textcolor{keywordtype}{void} nouvelleMesureCharge(QString \hyperlink{struct_donnees_batterie_a4d3cf76cf1722835a6449bc4a29e761b}{charge}, QString horodatage);
+00261         \textcolor{keywordtype}{void} nouvelleMesureCourant(QString \hyperlink{struct_donnees_batterie_a7a996ea5eacd6839a8a34dbbe48eb59a}{courant}, QString horodatage);
+00262         \textcolor{keywordtype}{void} nouvelleMesureTension(QString \hyperlink{struct_donnees_batterie_a1394510ba159a846820452e9e333f38b}{tension}, QString horodatage);
+00263 
+00264         \textcolor{comment}{/********************** SIGNAUX VERS IHM **********************************/}
+00265         \textcolor{keywordtype}{void} nouvelleMesureTemperatureInterieurTraite(\textcolor{keywordtype}{double} temperatureInterieurTraite ,QString horodatage
+      ); 
+00266         \textcolor{keywordtype}{void} nouvelleMesureHumiditeInterieurTraite(\textcolor{keywordtype}{double} humiditeInterieurTraite ,QString horodatage); 
+00267         \textcolor{keywordtype}{void} nouvelleMesureTemperatureExterieurTraite(\textcolor{keywordtype}{double} temperatureExterieur, QString horodatage);
+00268         \textcolor{keywordtype}{void} nouvelleMesureHumiditeExterieurTraite(\textcolor{keywordtype}{double} humiditeExterieurTraite, QString horodatage);
+00269         \textcolor{keywordtype}{void} nouvelleMesureEnsoleillementTraite(\textcolor{keywordtype}{double} ensoleillement, QString horodatage);
+00270         \textcolor{keywordtype}{void} nouvellePressionAtmospheriqueTraite(\textcolor{keywordtype}{double} pressionAtmospherique, QString horodatage);
+00271         \textcolor{keywordtype}{void} nouvelleMesureTension(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a1394510ba159a846820452e9e333f38b}{tension}, QString horodatage);
+00272         \textcolor{keywordtype}{void} nouvelleMesureCourant(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a7a996ea5eacd6839a8a34dbbe48eb59a}{courant}, QString horodatage);
+00273         \textcolor{keywordtype}{void} nouvelleMesureCharge(\textcolor{keywordtype}{double} \hyperlink{struct_donnees_batterie_a4d3cf76cf1722835a6449bc4a29e761b}{charge}, QString horodatage);
+00274         \textcolor{keywordtype}{void} nouvelleMesurePoids(\textcolor{keywordtype}{double} poids,  QString horodatage);
+00275         \textcolor{keywordtype}{void} nouvelleMesureTemperatureInterieurTraiteParHeure();
+00276         \textcolor{keywordtype}{void} nouvelleMesureTemperatureExterieurTraiteParHeure();
+00277         \textcolor{keywordtype}{void} nouvelleMesureHumiditeInterieurTraiteParHeure();
+00278         \textcolor{keywordtype}{void} nouvelleMesureHumiditeExterieurTraiteParHeure();
+00279         \textcolor{keywordtype}{void} nouvelleMesurePressionAtmospheriqueTraiteParHeure();
+00280         \textcolor{keywordtype}{void} nouvelleMesureEnsoleillementTraiteParHeure();
+00281 
+00282         \textcolor{keywordtype}{void} envoiAlertesTemperatureInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00283         \textcolor{keywordtype}{void} envoiAlertesTemperatureExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00284         \textcolor{keywordtype}{void} envoiAlertesHumiditeInterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00285         \textcolor{keywordtype}{void} envoiAlertesHumiditeExterieur(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00286         \textcolor{keywordtype}{void} envoiAlertesPressionAtmospherique(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00287         \textcolor{keywordtype}{void} envoiAlertesPoids(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes});
+00288         \textcolor{keywordtype}{void} envoiAlertesEnsoleillement(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double});
+00289         \textcolor{keywordtype}{void} envoiAlertesBatterie(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{SeuilsAlertes}, \textcolor{keywordtype}{double});
+00290         \textcolor{keywordtype}{void} etatClientConnexion(\textcolor{keywordtype}{bool} connexion);
+00291 
+00292         \textcolor{keywordtype}{void} envoiLocalisationPasserelle(QString longitude, QString latitude);
+00293 \};
+00294 
+00295 \textcolor{preprocessor}{#endif // RUCHE\_H}
+00296 
+\end{DoxyCode}

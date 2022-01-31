@@ -1,0 +1,46 @@
+\hypertarget{infos_pression_atmospherique_8h_source}{}\subsection{infos\+Pression\+Atmospherique.\+h}
+\label{infos_pression_atmospherique_8h_source}\index{infos\+Pression\+Atmospherique.\+h@{infos\+Pression\+Atmospherique.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSPRESSIONATMOSPHERIQUE\_H}
+00002 \textcolor{preprocessor}{#define INFOSPRESSIONATMOSPHERIQUE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 \textcolor{preprocessor}{#include <QVector>}
+00019 
+\Hypertarget{infos_pression_atmospherique_8h_source_l00032}\hyperlink{class_infos_pression_atmospherique}{00032} \textcolor{keyword}{class }\hyperlink{class_infos_pression_atmospherique}{InfosPressionAtmospherique}: \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00033 \{
+00034     Q\_OBJECT
+00035 
+00036     \textcolor{keyword}{private}:
+\Hypertarget{infos_pression_atmospherique_8h_source_l00037}\hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{00037}         \textcolor{keywordtype}{double} \hyperlink{class_infos_pression_atmospherique_a69f31dc0d0ef59f8ced23e4663ee1ab8}{pressionAtmospherique}; 
+\Hypertarget{infos_pression_atmospherique_8h_source_l00038}\hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{00038}         QString \hyperlink{class_infos_pression_atmospherique_aba207458a51a9290e4f2e0795983a44e}{horodatagePressionAtmospherique}; 
+\Hypertarget{infos_pression_atmospherique_8h_source_l00039}\hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{00039}         QVector <double> \hyperlink{class_infos_pression_atmospherique_a38218b11dc9fb22aca7525f93155a26c}{pressionAtmospheriques};
+\Hypertarget{infos_pression_atmospherique_8h_source_l00040}\hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{00040}         \textcolor{keywordtype}{int} \hyperlink{class_infos_pression_atmospherique_ab3fa5c89841cf03f371ef7848b8bc958}{heureCourantePressionAtmospherique};
+00041         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_a287f1f24726218868c8531365c1a22ec}{calculerMoyenneHorairePressionAtmospherique}();
+00042 
+00043     \textcolor{keyword}{public}:
+00044         \hyperlink{class_infos_pression_atmospherique_aade2e8de08264974305962bea890bf68}{InfosPressionAtmospherique}(\hyperlink{class_q_object}{QObject} *parent);
+00045         \hyperlink{class_infos_pression_atmospherique_a3f4d667523391ceb3c2342c70a3ee41f}{~InfosPressionAtmospherique}();
+00046         \textcolor{keywordtype}{double} \hyperlink{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}{getPressionAtmospherique}();
+00047         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_ab598771e222fbca604ac6dba5d2aacb9}{setPressionAtmospherique}(\textcolor{keywordtype}{double} pressionAtmospherique);
+00048         QString \hyperlink{class_infos_pression_atmospherique_a6836dfc16f1be4287354ea26a080b436}{getHorodatagePressionAtmospherique}()\textcolor{keyword}{const};
+00049         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_a5d8ba94db66bb7bcdf5a70dd6f21de23}{setHorodatagePressionAtmospherique}(\textcolor{keyword}{const} QString 
+      horodatagePressionAtmospherique);
+00050 
+00051     \textcolor{keyword}{public} slots:
+00052         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_ab280f47f2a1376222a45fde8638489d2}{traiterNouvellePressionAtmospherique}(QString 
+      pressionAtmospheriqueString , QString horodatagePressionAtmospherique);
+00053 
+00054     signals:
+00055         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_ad5342b25c87fd5e41a89ad74b5f69c86}{pressionAtmospheriqueEnvoye}(\textcolor{keywordtype}{double} pressionAtmospherique,QString 
+      horodatage);
+00056         \textcolor{keywordtype}{void} \hyperlink{class_infos_pression_atmospherique_af759842c05a1e59b56d433e823bee341}{traitementPressionAtmospheriqueEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      pressionAtmospheriqueMoyenne, \textcolor{keyword}{const} \textcolor{keywordtype}{double} pressionAtmospheriqueMinimum, \textcolor{keyword}{const} \textcolor{keywordtype}{double} pressionAtmospheriqueMaximum
+      , \textcolor{keywordtype}{int} heure);
+00057 \};
+00058 
+00059 \textcolor{preprocessor}{#endif // INFOSPRESSIONATMOSPHERIQUE\_H}
+00060 
+\end{DoxyCode}

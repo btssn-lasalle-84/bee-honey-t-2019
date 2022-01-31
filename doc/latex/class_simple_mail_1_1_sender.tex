@@ -1,0 +1,903 @@
+\hypertarget{class_simple_mail_1_1_sender}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Sender}
+\label{class_simple_mail_1_1_sender}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+
+
+{\ttfamily \#include $<$sender.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Sender\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_simple_mail_1_1_sender__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Auth\+Method} \{ \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Auth\+None}, 
+\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Auth\+Plain}, 
+\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}{Auth\+Login}
+ \}
+\item 
+enum \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{Smtp\+Error} \{ \newline
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{Connection\+Timeout\+Error}, 
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{Response\+Timeout\+Error}, 
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{Send\+Data\+Timeout\+Error}, 
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Authentication\+Failed\+Error}, 
+\newline
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Server\+Error}, 
+\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}{Client\+Error}
+ \}
+\item 
+enum \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type} \{ \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{Tcp\+Connection}, 
+\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Ssl\+Connection}, 
+\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Tls\+Connection}
+ \}
+\item 
+enum \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Peer\+Verification\+Type} \{ \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{Verify\+None}, 
+\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Verify\+Peer}
+ \}
+\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_aa5805003921ffc7bb9d5643aedd84c6a}{smtp\+Error} (\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{Smtp\+Error} e)
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a8b87c2e54a9dcd225495536cebc4fb27}{ssl\+Errors} (const Q\+List$<$ Q\+Ssl\+Error $>$ \&ssl\+Error\+List)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_sender_afbe94a9a42b0101deb08204393ec9669}{Sender} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent=0)
+\item 
+\hyperlink{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}{Sender} (const Q\+String \&\hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host}, int \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type} ct, \hyperlink{class_q_object}{Q\+Object} $\ast$parent=0)
+\item 
+virtual \hyperlink{class_simple_mail_1_1_sender_a99dd9c6aa7d546320d619aca9067fdc6}{$\sim$\+Sender} ()
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a18c47159817fafe9dd3f75855028f70a}{set\+Host} (const Q\+String \&\hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host})
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a42eacd78ed9bef0f77215bce72cafe2d}{set\+Port} (int \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port})
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}{name} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a02d30b604180e3502d6c773751a6c1e6}{set\+Name} (const Q\+String \&\hyperlink{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}{name})
+\item 
+\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type} \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connection\+Type} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type} (\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type} ct)
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}{user} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a20251be6b7b4064cd5f20ea224333c4c}{set\+User} (const Q\+String \&\hyperlink{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}{user})
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}{password} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_ae71f3d10ecc970e5c56ac01b1f05ff9b}{set\+Password} (const Q\+String \&\hyperlink{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}{password})
+\item 
+\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Auth\+Method} \hyperlink{class_simple_mail_1_1_sender_a94ae37e550e1afdadc351a0dcd4167c8}{auth\+Method} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a60d13238dce6927d851273379d462fdd}{set\+Auth\+Method} (\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Auth\+Method} method)
+\item 
+Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_sender_aefd7b3516fa828a73070fb73d1101d9d}{response\+Text} () const
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_a5b5d8322553aa84e0166e3fecd43e4be}{response\+Code} () const
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_a7d849aadcddaf812c9d1c4411c134381}{connection\+Timeout} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_aadabf1b2661b85a9b9865e5bd5d9b578}{set\+Connection\+Timeout} (int msec)
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_a8a1e00cc48a9ac1106460f4bd856781d}{response\+Timeout} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_ae2463b653e04e3c9321517a2cb3342bf}{set\+Response\+Timeout} (int msec)
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_a6e1308f5587c9c40c4609cccfb904423}{send\+Message\+Timeout} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a6fa0ad623c4821205ab75bcfa6735998}{set\+Send\+Message\+Timeout} (int msec)
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}{ignore\+Ssl\+Errors} ()
+\begin{DoxyCompactList}\small\item\em ignore\+Ssl\+Errors tells the socket to ignore all pending ssl errors if S\+SL encryption is active. Must be called in a direct connected slot/functor \end{DoxyCompactList}\item 
+void \hyperlink{class_simple_mail_1_1_sender_a05f1d8b1df8d4b3493858d4bd3991cf8}{ignore\+Ssl\+Errors} (const Q\+List$<$ Q\+Ssl\+Error $>$ \&errors)
+\begin{DoxyCompactList}\small\item\em ignore\+Ssl\+Errors tells the socket to ignore the given ssl errors if S\+SL encryption is active. Must be called in a direct connected slot/functor \end{DoxyCompactList}\item 
+void \hyperlink{class_simple_mail_1_1_sender_a5ca6eefacae85517e6ff45bfcd9fd0ba}{set\+Peer\+Verification\+Type} (\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Peer\+Verification\+Type} type)
+\begin{DoxyCompactList}\small\item\em set\+Peer\+Verification\+Type Defines how the mail-\/server\textquotesingle{}s S\+SL certificate should be examined \end{DoxyCompactList}\item 
+\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Peer\+Verification\+Type} \hyperlink{class_simple_mail_1_1_sender_ab0ae5815669d32f46dfd1758c3a34590}{peer\+Verification\+Type} ()
+\begin{DoxyCompactList}\small\item\em peer\+Verification\+Type Returns the type of verification done for the mail-\/server\textquotesingle{}s S\+SL certificate \end{DoxyCompactList}\item 
+bool \hyperlink{class_simple_mail_1_1_sender_a808b076c07f6e97e28fca75d0a069260}{send\+Mail} (\hyperlink{class_simple_mail_1_1_mime_message}{Mime\+Message} \&email)
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_a490af129ea3af3a17f36ffd508a56bc1}{last\+Error} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a9e60ec56a562bc41a58688a4566f6ff1}{quit} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs protégés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a40254c3f25402c5f9f813924a4770cd6}{socket\+State\+Changed} (Q\+Abstract\+Socket\+::\+Socket\+State state)
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a90dce16e10ea98518297b03eacb06812}{socket\+Error} (Q\+Abstract\+Socket\+::\+Socket\+Error error)
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_a10913c23ccdb416865aa82a9139c6a08}{socket\+Ready\+Read} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_sender_private}{Sender\+Private} $\ast$ \hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}\label{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Auth\+Method@{Auth\+Method}}
+\index{Auth\+Method@{Auth\+Method}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Auth\+Method}{AuthMethod}}
+{\footnotesize\ttfamily enum \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Simple\+Mail\+::\+Sender\+::\+Auth\+Method}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Auth\+None@{Auth\+None}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Auth\+None@{Auth\+None}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}\label{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}} 
+Auth\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Auth\+Plain@{Auth\+Plain}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Auth\+Plain@{Auth\+Plain}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}\label{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}} 
+Auth\+Plain&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Auth\+Login@{Auth\+Login}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Auth\+Login@{Auth\+Login}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}\label{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}} 
+Auth\+Login&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00036     \{
+00037         \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{AuthNone},
+00038         \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{AuthPlain},
+00039         \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}{AuthLogin}
+00040     \};
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}\label{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Connection\+Type@{Connection\+Type}}
+\index{Connection\+Type@{Connection\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Connection\+Type}{ConnectionType}}
+{\footnotesize\ttfamily enum \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Simple\+Mail\+::\+Sender\+::\+Connection\+Type}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tcp\+Connection@{Tcp\+Connection}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Tcp\+Connection@{Tcp\+Connection}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}\label{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}} 
+Tcp\+Connection&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ssl\+Connection@{Ssl\+Connection}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Ssl\+Connection@{Ssl\+Connection}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}\label{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}} 
+Ssl\+Connection&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tls\+Connection@{Tls\+Connection}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Tls\+Connection@{Tls\+Connection}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}\label{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}} 
+Tls\+Connection&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00055     \{
+00056         \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{TcpConnection},
+00057         \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{SslConnection},
+00058         \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{TlsConnection}       \textcolor{comment}{// STARTTLS}
+00059     \};
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}\label{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Peer\+Verification\+Type@{Peer\+Verification\+Type}}
+\index{Peer\+Verification\+Type@{Peer\+Verification\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Peer\+Verification\+Type}{PeerVerificationType}}
+{\footnotesize\ttfamily enum \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Simple\+Mail\+::\+Sender\+::\+Peer\+Verification\+Type}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Verify\+None@{Verify\+None}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Verify\+None@{Verify\+None}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}\label{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}} 
+Verify\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Verify\+Peer@{Verify\+Peer}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Verify\+Peer@{Verify\+Peer}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}\label{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}} 
+Verify\+Peer&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00063     \{
+00064         \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{VerifyNone},
+00065         \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{VerifyPeer}
+00066     \};
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Smtp\+Error@{Smtp\+Error}}
+\index{Smtp\+Error@{Smtp\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Smtp\+Error}{SmtpError}}
+{\footnotesize\ttfamily enum \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{Simple\+Mail\+::\+Sender\+::\+Smtp\+Error}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Connection\+Timeout\+Error@{Connection\+Timeout\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Connection\+Timeout\+Error@{Connection\+Timeout\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}} 
+Connection\+Timeout\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Response\+Timeout\+Error@{Response\+Timeout\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Response\+Timeout\+Error@{Response\+Timeout\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}} 
+Response\+Timeout\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Send\+Data\+Timeout\+Error@{Send\+Data\+Timeout\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Send\+Data\+Timeout\+Error@{Send\+Data\+Timeout\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}} 
+Send\+Data\+Timeout\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Authentication\+Failed\+Error@{Authentication\+Failed\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Authentication\+Failed\+Error@{Authentication\+Failed\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}} 
+Authentication\+Failed\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Server\+Error@{Server\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Server\+Error@{Server\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}} 
+Server\+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Client\+Error@{Client\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Client\+Error@{Client\+Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}\label{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}} 
+Client\+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00044     \{
+00045         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{ConnectionTimeoutError},
+00046         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{ResponseTimeoutError},
+00047         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{SendDataTimeoutError},
+00048         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{AuthenticationFailedError},
+00049         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{ServerError},    \textcolor{comment}{// 4xx smtp error}
+00050         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}{ClientError}     \textcolor{comment}{// 5xx smtp error}
+00051     \};
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_afbe94a9a42b0101deb08204393ec9669}\label{class_simple_mail_1_1_sender_afbe94a9a42b0101deb08204393ec9669}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Sender@{Sender}}
+\index{Sender@{Sender}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Sender()}{Sender()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sender\+::\+Sender (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}
+00026                               : \hyperlink{class_q_object}{QObject}(parent)
+00027   , \hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\_ptr}(\textcolor{keyword}{new} \hyperlink{class_simple_mail_1_1_sender_private}{SenderPrivate}(\textcolor{keyword}{this}))
+00028 \{
+00029     \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{setConnectionType}(\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{TcpConnection});
+00030 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}\label{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!Sender@{Sender}}
+\index{Sender@{Sender}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{Sender()}{Sender()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sender\+::\+Sender (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{host,  }\item[{int}]{port,  }\item[{\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type}}]{ct,  }\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host()}, \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port()}, et \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+
+\begin{DoxyCode}
+00032                                                                                             : 
+      \hyperlink{class_q_object}{QObject}(parent)
+00033   , \hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\_ptr}(\textcolor{keyword}{new} \hyperlink{class_simple_mail_1_1_sender_private}{SenderPrivate}(\textcolor{keyword}{this}))
+00034 \{
+00035     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00036 
+00037     \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{setConnectionType}(\hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType});
+00038 
+00039     d->host = \hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host};
+00040     d->port = \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port};
+00041 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a99dd9c6aa7d546320d619aca9067fdc6}\label{class_simple_mail_1_1_sender_a99dd9c6aa7d546320d619aca9067fdc6}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!````~Sender@{$\sim$\+Sender}}
+\index{````~Sender@{$\sim$\+Sender}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{$\sim$\+Sender()}{~Sender()}}
+{\footnotesize\ttfamily Sender\+::$\sim$\+Sender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\+\_\+ptr}.
+
+
+\begin{DoxyCode}
+00044 \{
+00045     \textcolor{keyword}{delete} \hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\_ptr};
+00046 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a94ae37e550e1afdadc351a0dcd4167c8}\label{class_simple_mail_1_1_sender_a94ae37e550e1afdadc351a0dcd4167c8}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!auth\+Method@{auth\+Method}}
+\index{auth\+Method@{auth\+Method}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{auth\+Method()}{authMethod()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Sender\+::\+Auth\+Method} Sender\+::auth\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the authenticaion method of the S\+M\+TP server 
+\begin{DoxyCode}
+00079 \{
+00080     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00081     \textcolor{keywordflow}{return} d->authMethod;
+00082 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a7d849aadcddaf812c9d1c4411c134381}\label{class_simple_mail_1_1_sender_a7d849aadcddaf812c9d1c4411c134381}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!connection\+Timeout@{connection\+Timeout}}
+\index{connection\+Timeout@{connection\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{connection\+Timeout()}{connectionTimeout()}}
+{\footnotesize\ttfamily int Sender\+::connection\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the connection timeout when connecting to the S\+M\+TP server 
+\begin{DoxyCode}
+00169 \{
+00170     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00171     \textcolor{keywordflow}{return} d->connectionTimeout;
+00172 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}\label{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!connection\+Type@{connection\+Type}}
+\index{connection\+Type@{connection\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{connection\+Type()}{connectionType()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Sender\+::\+Connection\+Type} Sender\+::connection\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the connection type of the S\+M\+TP server 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}{ignore\+Ssl\+Errors()}, et \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+
+\begin{DoxyCode}
+00121 \{
+00122     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00123     \textcolor{keywordflow}{return} d->connectionType;
+00124 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}\label{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!host@{host}}
+\index{host@{host}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily Q\+String Sender\+::host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the hostname of the S\+M\+TP server 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}{Sender()}, et \hyperlink{class_simple_mail_1_1_sender_a18c47159817fafe9dd3f75855028f70a}{set\+Host()}.
+
+
+\begin{DoxyCode}
+00049 \{
+00050     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00051     \textcolor{keywordflow}{return} d->host;
+00052 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}\label{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!ignore\+Ssl\+Errors@{ignore\+Ssl\+Errors}}
+\index{ignore\+Ssl\+Errors@{ignore\+Ssl\+Errors}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{ignore\+Ssl\+Errors()}{ignoreSslErrors()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sender\+::ignore\+Ssl\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connection\+Type()}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Ssl\+Connection}, et \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Tls\+Connection}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a05f1d8b1df8d4b3493858d4bd3991cf8}{ignore\+Ssl\+Errors()}.
+
+
+\begin{DoxyCode}
+00203 \{
+00204     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00205     \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType}() == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{SslConnection} || 
+      \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType}() == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{TlsConnection})
+00206     \{
+00207         \textcolor{keyword}{static\_cast<}QSslSocket*\textcolor{keyword}{>}(d->socket)->\hyperlink{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}{ignoreSslErrors}();
+00208     \}
+00209 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a05f1d8b1df8d4b3493858d4bd3991cf8}\label{class_simple_mail_1_1_sender_a05f1d8b1df8d4b3493858d4bd3991cf8}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!ignore\+Ssl\+Errors@{ignore\+Ssl\+Errors}}
+\index{ignore\+Ssl\+Errors@{ignore\+Ssl\+Errors}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{ignore\+Ssl\+Errors()}{ignoreSslErrors()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sender\+::ignore\+Ssl\+Errors (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+Ssl\+Error $>$ \&}]{errors }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em errors} & defines the errors to ignore \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connection\+Type()}, \hyperlink{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}{ignore\+Ssl\+Errors()}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Ssl\+Connection}, et \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Tls\+Connection}.
+
+
+\begin{DoxyCode}
+00212 \{
+00213     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00214     \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType}() == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{SslConnection} || 
+      \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType}() == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{TlsConnection})
+00215     \{
+00216         \textcolor{keyword}{static\_cast<}QSslSocket*\textcolor{keyword}{>}(d->socket)->\hyperlink{class_simple_mail_1_1_sender_a198c2a1fef662cd2323d05c1f5fa6adb}{ignoreSslErrors}(errors);
+00217     \}
+00218 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a490af129ea3af3a17f36ffd508a56bc1}\label{class_simple_mail_1_1_sender_a490af129ea3af3a17f36ffd508a56bc1}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{last\+Error()}{lastError()}}
+{\footnotesize\ttfamily Q\+String Sender\+::last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00239 \{
+00240     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00241     \textcolor{keywordflow}{return} d->lastError;
+00242 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}\label{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!name@{name}}
+\index{name@{name}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily Q\+String Sender\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Defines the client\textquotesingle{}s name. This name is sent by the E\+H\+LO command. Defaults to the local host name 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a02d30b604180e3502d6c773751a6c1e6}{set\+Name()}.
+
+
+\begin{DoxyCode}
+00109 \{
+00110     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00111     \textcolor{keywordflow}{return} d->name;
+00112 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}\label{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!password@{password}}
+\index{password@{password}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{password()}{password()}}
+{\footnotesize\ttfamily Q\+String Sender\+::password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the password that will authenticate on the S\+M\+TP server 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_ae71f3d10ecc970e5c56ac01b1f05ff9b}{set\+Password()}.
+
+
+\begin{DoxyCode}
+00064 \{
+00065     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00066     \textcolor{keywordflow}{return} d->password;
+00067 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_ab0ae5815669d32f46dfd1758c3a34590}\label{class_simple_mail_1_1_sender_ab0ae5815669d32f46dfd1758c3a34590}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!peer\+Verification\+Type@{peer\+Verification\+Type}}
+\index{peer\+Verification\+Type@{peer\+Verification\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{peer\+Verification\+Type()}{peerVerificationType()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type} Sender\+::peer\+Verification\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Peer\+Verification\+Type as Verify\+None or Verify\+Peer 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+00227 \{
+00228     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00229     \textcolor{keywordflow}{return} d->peerVerificationType;
+00230 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}\label{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!port@{port}}
+\index{port@{port}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily int Sender\+::port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the port of the S\+M\+TP server 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}{Sender()}, et \hyperlink{class_simple_mail_1_1_sender_a42eacd78ed9bef0f77215bce72cafe2d}{set\+Port()}.
+
+
+\begin{DoxyCode}
+00097 \{
+00098     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00099     \textcolor{keywordflow}{return} d->port;
+00100 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a9e60ec56a562bc41a58688a4566f6ff1}\label{class_simple_mail_1_1_sender_a9e60ec56a562bc41a58688a4566f6ff1}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!quit@{quit}}
+\index{quit@{quit}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Sender\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00245 \{
+00246     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00247     d->sendMessage(QByteArrayLiteral(\textcolor{stringliteral}{"QUIT"}));
+00248 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a5b5d8322553aa84e0166e3fecd43e4be}\label{class_simple_mail_1_1_sender_a5b5d8322553aa84e0166e3fecd43e4be}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!response\+Code@{response\+Code}}
+\index{response\+Code@{response\+Code}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{response\+Code()}{responseCode()}}
+{\footnotesize\ttfamily int Sender\+::response\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the response code the S\+M\+TP server last returned 
+\begin{DoxyCode}
+00163 \{
+00164     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00165     \textcolor{keywordflow}{return} d->responseCode;
+00166 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_aefd7b3516fa828a73070fb73d1101d9d}\label{class_simple_mail_1_1_sender_aefd7b3516fa828a73070fb73d1101d9d}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!response\+Text@{response\+Text}}
+\index{response\+Text@{response\+Text}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{response\+Text()}{responseText()}}
+{\footnotesize\ttfamily Q\+Byte\+Array Sender\+::response\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the response text the S\+M\+TP server last returned 
+\begin{DoxyCode}
+00157 \{
+00158     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00159     \textcolor{keywordflow}{return} d->responseText;
+00160 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a8a1e00cc48a9ac1106460f4bd856781d}\label{class_simple_mail_1_1_sender_a8a1e00cc48a9ac1106460f4bd856781d}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!response\+Timeout@{response\+Timeout}}
+\index{response\+Timeout@{response\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{response\+Timeout()}{responseTimeout()}}
+{\footnotesize\ttfamily int Sender\+::response\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the response timeout when waiting for a message to be processed by the S\+M\+TP server 
+\begin{DoxyCode}
+00181 \{
+00182     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00183     \textcolor{keywordflow}{return} d->responseTimeout;
+00184 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a808b076c07f6e97e28fca75d0a069260}\label{class_simple_mail_1_1_sender_a808b076c07f6e97e28fca75d0a069260}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!send\+Mail@{send\+Mail}}
+\index{send\+Mail@{send\+Mail}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{send\+Mail()}{sendMail()}}
+{\footnotesize\ttfamily bool Sender\+::send\+Mail (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_mime_message}{Mime\+Message} \&}]{email }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00233 \{
+00234     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00235     \textcolor{keywordflow}{return} d->sendMail(email);
+00236 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a6e1308f5587c9c40c4609cccfb904423}\label{class_simple_mail_1_1_sender_a6e1308f5587c9c40c4609cccfb904423}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!send\+Message\+Timeout@{send\+Message\+Timeout}}
+\index{send\+Message\+Timeout@{send\+Message\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{send\+Message\+Timeout()}{sendMessageTimeout()}}
+{\footnotesize\ttfamily int Sender\+::send\+Message\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the timeout when waiting for a message data to be sent to the S\+M\+TP server 
+\begin{DoxyCode}
+00192 \{
+00193     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00194     \textcolor{keywordflow}{return} d->sendMessageTimeout;
+00195 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a60d13238dce6927d851273379d462fdd}\label{class_simple_mail_1_1_sender_a60d13238dce6927d851273379d462fdd}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Auth\+Method@{set\+Auth\+Method}}
+\index{set\+Auth\+Method@{set\+Auth\+Method}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Auth\+Method()}{setAuthMethod()}}
+{\footnotesize\ttfamily void Sender\+::set\+Auth\+Method (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Auth\+Method}}]{method }\end{DoxyParamCaption})}
+
+Defines the authenticaion method of the S\+M\+TP server 
+\begin{DoxyCode}
+00085 \{
+00086     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00087     d->authMethod = method;
+00088 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_aadabf1b2661b85a9b9865e5bd5d9b578}\label{class_simple_mail_1_1_sender_aadabf1b2661b85a9b9865e5bd5d9b578}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Connection\+Timeout@{set\+Connection\+Timeout}}
+\index{set\+Connection\+Timeout@{set\+Connection\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Connection\+Timeout()}{setConnectionTimeout()}}
+{\footnotesize\ttfamily void Sender\+::set\+Connection\+Timeout (\begin{DoxyParamCaption}\item[{int}]{msec }\end{DoxyParamCaption})}
+
+Defines the connection timeout when connecting to the S\+M\+TP server 
+\begin{DoxyCode}
+00175 \{
+00176     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00177     d->connectionTimeout = msec;
+00178 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}\label{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Connection\+Type@{set\+Connection\+Type}}
+\index{set\+Connection\+Type@{set\+Connection\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Connection\+Type()}{setConnectionType()}}
+{\footnotesize\ttfamily void Sender\+::set\+Connection\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Connection\+Type}}]{ct }\end{DoxyParamCaption})}
+
+Defines the connection type of the S\+M\+TP server 
+
+Références \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connection\+Type()}, \hyperlink{class_simple_mail_1_1_sender_a90dce16e10ea98518297b03eacb06812}{socket\+Error()}, \hyperlink{class_simple_mail_1_1_sender_a10913c23ccdb416865aa82a9139c6a08}{socket\+Ready\+Read()}, \hyperlink{class_simple_mail_1_1_sender_a40254c3f25402c5f9f813924a4770cd6}{socket\+State\+Changed()}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Ssl\+Connection}, \hyperlink{class_simple_mail_1_1_sender_a8b87c2e54a9dcd225495536cebc4fb27}{ssl\+Errors()}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{Tcp\+Connection}, et \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Tls\+Connection}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a120ee6620d9f22b5c008b27743d03a6d}{Sender()}.
+
+
+\begin{DoxyCode}
+00127 \{
+00128     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00129 
+00130     d->connectionType = \hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType};
+00131 
+00132     \textcolor{keyword}{delete} d->socket;
+00133 
+00134     \textcolor{keywordflow}{switch} (\hyperlink{class_simple_mail_1_1_sender_a044468efe3bafa577a3039b997a4ae23}{connectionType}) \{
+00135     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{TcpConnection}:
+00136         d->socket = \textcolor{keyword}{new} QTcpSocket(\textcolor{keyword}{this});
+00137         \textcolor{keywordflow}{break};
+00138     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{SslConnection}:
+00139     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{TlsConnection}:
+00140         d->socket = \textcolor{keyword}{new} QSslSocket(\textcolor{keyword}{this});
+00141         d->setPeerVerificationType(d->peerVerificationType);
+00142         connect(static\_cast<QSslSocket*>(d->socket), static\_cast<\textcolor{keywordtype}{void}(QSslSocket::*)(\textcolor{keyword}{const} QList<QSslError>
+       &)>(&QSslSocket::sslErrors),\textcolor{keyword}{this}, &\hyperlink{class_simple_mail_1_1_sender_a8b87c2e54a9dcd225495536cebc4fb27}{Sender::sslErrors}, Qt::DirectConnection);
+00143     \}
+00144     connect(d->socket, &QTcpSocket::stateChanged, \textcolor{keyword}{this}, &
+      \hyperlink{class_simple_mail_1_1_sender_a40254c3f25402c5f9f813924a4770cd6}{Sender::socketStateChanged});
+00145     connect(d->socket, static\_cast<\textcolor{keywordtype}{void}(QTcpSocket::*)(QTcpSocket::SocketError)>(&QTcpSocket::error),
+00146             \textcolor{keyword}{this}, &\hyperlink{class_simple_mail_1_1_sender_a90dce16e10ea98518297b03eacb06812}{Sender::socketError});
+00147     connect(d->socket, &QTcpSocket::readyRead, \textcolor{keyword}{this}, &\hyperlink{class_simple_mail_1_1_sender_a10913c23ccdb416865aa82a9139c6a08}{Sender::socketReadyRead});
+00148 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a18c47159817fafe9dd3f75855028f70a}\label{class_simple_mail_1_1_sender_a18c47159817fafe9dd3f75855028f70a}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Host@{set\+Host}}
+\index{set\+Host@{set\+Host}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Host()}{setHost()}}
+{\footnotesize\ttfamily void Sender\+::set\+Host (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{host }\end{DoxyParamCaption})}
+
+Defines the hostname of the S\+M\+TP server 
+
+Références \hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host()}.
+
+
+\begin{DoxyCode}
+00091 \{
+00092     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00093     d->host = \hyperlink{class_simple_mail_1_1_sender_a688b0cf38532aa73fa943fa4a8d9f797}{host};
+00094 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a02d30b604180e3502d6c773751a6c1e6}\label{class_simple_mail_1_1_sender_a02d30b604180e3502d6c773751a6c1e6}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Sender\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+Defines the client\textquotesingle{}s name. This name is sent by the E\+H\+LO command. Defaults to the local host name 
+
+Références \hyperlink{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}{name()}.
+
+
+\begin{DoxyCode}
+00115 \{
+00116     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00117     d->name = \hyperlink{class_simple_mail_1_1_sender_ab329650eae52416579e4ed1bb90d49e4}{name};
+00118 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_ae71f3d10ecc970e5c56ac01b1f05ff9b}\label{class_simple_mail_1_1_sender_ae71f3d10ecc970e5c56ac01b1f05ff9b}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void Sender\+::set\+Password (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{password }\end{DoxyParamCaption})}
+
+Defines the password that will authenticate on the S\+M\+TP server 
+
+Références \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Auth\+None}, \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Auth\+Plain}, et \hyperlink{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}{password()}.
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00070 \{
+00071     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00072     \textcolor{keywordflow}{if} (d->authMethod == \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Sender::AuthNone}) \{
+00073         d->authMethod = \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Sender::AuthPlain};
+00074     \}
+00075     d->password = \hyperlink{class_simple_mail_1_1_sender_adc225693c32f66e746fec828a4da2bb6}{password};
+00076 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a5ca6eefacae85517e6ff45bfcd9fd0ba}\label{class_simple_mail_1_1_sender_a5ca6eefacae85517e6ff45bfcd9fd0ba}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Peer\+Verification\+Type@{set\+Peer\+Verification\+Type}}
+\index{set\+Peer\+Verification\+Type@{set\+Peer\+Verification\+Type}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Peer\+Verification\+Type()}{setPeerVerificationType()}}
+{\footnotesize\ttfamily void Sender\+::set\+Peer\+Verification\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type}}]{type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type} & Verify\+None does not try to verify the identity, Verify\+Peer does check on server identity \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+00221 \{
+00222     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00223     d->setPeerVerificationType(type);
+00224 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a42eacd78ed9bef0f77215bce72cafe2d}\label{class_simple_mail_1_1_sender_a42eacd78ed9bef0f77215bce72cafe2d}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Port@{set\+Port}}
+\index{set\+Port@{set\+Port}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Port()}{setPort()}}
+{\footnotesize\ttfamily void Sender\+::set\+Port (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})}
+
+Defines the port of the S\+M\+TP server 
+
+Références \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port()}.
+
+
+\begin{DoxyCode}
+00103 \{
+00104     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00105     d->port = \hyperlink{class_simple_mail_1_1_sender_a9c30e23e4b14333276af1a8b265ccb3c}{port};
+00106 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_ae2463b653e04e3c9321517a2cb3342bf}\label{class_simple_mail_1_1_sender_ae2463b653e04e3c9321517a2cb3342bf}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Response\+Timeout@{set\+Response\+Timeout}}
+\index{set\+Response\+Timeout@{set\+Response\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Response\+Timeout()}{setResponseTimeout()}}
+{\footnotesize\ttfamily void Sender\+::set\+Response\+Timeout (\begin{DoxyParamCaption}\item[{int}]{msec }\end{DoxyParamCaption})}
+
+Defines the response timeout when waiting for a message to be processed by the S\+M\+TP server 
+\begin{DoxyCode}
+00187 \{
+00188     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00189     d->responseTimeout = msec;
+00190 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a6fa0ad623c4821205ab75bcfa6735998}\label{class_simple_mail_1_1_sender_a6fa0ad623c4821205ab75bcfa6735998}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+Send\+Message\+Timeout@{set\+Send\+Message\+Timeout}}
+\index{set\+Send\+Message\+Timeout@{set\+Send\+Message\+Timeout}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+Send\+Message\+Timeout()}{setSendMessageTimeout()}}
+{\footnotesize\ttfamily void Sender\+::set\+Send\+Message\+Timeout (\begin{DoxyParamCaption}\item[{int}]{msec }\end{DoxyParamCaption})}
+
+Defines the timeout when waiting for a message data to be sent to the S\+M\+TP server 
+\begin{DoxyCode}
+00197 \{
+00198     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00199     d->sendMessageTimeout = msec;
+00200 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a20251be6b7b4064cd5f20ea224333c4c}\label{class_simple_mail_1_1_sender_a20251be6b7b4064cd5f20ea224333c4c}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!set\+User@{set\+User}}
+\index{set\+User@{set\+User}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{set\+User()}{setUser()}}
+{\footnotesize\ttfamily void Sender\+::set\+User (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{user }\end{DoxyParamCaption})}
+
+Defines the username that will authenticate on the S\+M\+TP server 
+
+Références \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Auth\+None}, \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Auth\+Plain}, et \hyperlink{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}{user()}.
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     Q\_D(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00057     \textcolor{keywordflow}{if} (d->authMethod == \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Sender::AuthNone}) \{
+00058         d->authMethod = \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Sender::AuthPlain};
+00059     \}
+00060     d->user = \hyperlink{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}{user};
+00061 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_aa5805003921ffc7bb9d5643aedd84c6a}\label{class_simple_mail_1_1_sender_aa5805003921ffc7bb9d5643aedd84c6a}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!smtp\+Error@{smtp\+Error}}
+\index{smtp\+Error@{smtp\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{smtp\+Error}{smtpError}}
+{\footnotesize\ttfamily void Simple\+Mail\+::\+Sender\+::smtp\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{Smtp\+Error}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a90dce16e10ea98518297b03eacb06812}\label{class_simple_mail_1_1_sender_a90dce16e10ea98518297b03eacb06812}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!socket\+Error@{socket\+Error}}
+\index{socket\+Error@{socket\+Error}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{socket\+Error}{socketError}}
+{\footnotesize\ttfamily void Sender\+::socket\+Error (\begin{DoxyParamCaption}\item[{Q\+Abstract\+Socket\+::\+Socket\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+
+\begin{DoxyCode}
+00255 \{
+00256 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a10913c23ccdb416865aa82a9139c6a08}\label{class_simple_mail_1_1_sender_a10913c23ccdb416865aa82a9139c6a08}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!socket\+Ready\+Read@{socket\+Ready\+Read}}
+\index{socket\+Ready\+Read@{socket\+Ready\+Read}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{socket\+Ready\+Read}{socketReadyRead}}
+{\footnotesize\ttfamily void Sender\+::socket\+Ready\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+
+\begin{DoxyCode}
+00259 \{
+00260 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a40254c3f25402c5f9f813924a4770cd6}\label{class_simple_mail_1_1_sender_a40254c3f25402c5f9f813924a4770cd6}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!socket\+State\+Changed@{socket\+State\+Changed}}
+\index{socket\+State\+Changed@{socket\+State\+Changed}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{socket\+State\+Changed}{socketStateChanged}}
+{\footnotesize\ttfamily void Sender\+::socket\+State\+Changed (\begin{DoxyParamCaption}\item[{Q\+Abstract\+Socket\+::\+Socket\+State}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+
+\begin{DoxyCode}
+00251 \{
+00252 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a8b87c2e54a9dcd225495536cebc4fb27}\label{class_simple_mail_1_1_sender_a8b87c2e54a9dcd225495536cebc4fb27}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!ssl\+Errors@{ssl\+Errors}}
+\index{ssl\+Errors@{ssl\+Errors}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{ssl\+Errors}{sslErrors}}
+{\footnotesize\ttfamily void Simple\+Mail\+::\+Sender\+::ssl\+Errors (\begin{DoxyParamCaption}\item[{const Q\+List$<$ Q\+Ssl\+Error $>$ \&}]{ssl\+Error\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a879bee44b1e7afed564c82b81261a9b1}{set\+Connection\+Type()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}\label{class_simple_mail_1_1_sender_a70ce2ab650d894c40be88d82bd327c3b}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!user@{user}}
+\index{user@{user}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily Q\+String Sender\+::user (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the username that will authenticate on the S\+M\+TP server 
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a20251be6b7b4064cd5f20ea224333c4c}{set\+User()}.
+
+
+\begin{DoxyCode}
+00151 \{
+00152     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_sender}{Sender});
+00153     \textcolor{keywordflow}{return} d->user;
+00154 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}\label{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}} 
+\index{Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}!d\+\_\+ptr@{d\+\_\+ptr}}
+\index{d\+\_\+ptr@{d\+\_\+ptr}!Simple\+Mail\+::\+Sender@{Simple\+Mail\+::\+Sender}}
+\paragraph{\texorpdfstring{d\+\_\+ptr}{d\_ptr}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_private}{Sender\+Private}$\ast$ Simple\+Mail\+::\+Sender\+::d\+\_\+ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_a99dd9c6aa7d546320d619aca9067fdc6}{$\sim$\+Sender()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sender_8h}{sender.\+h}\item 
+\hyperlink{sender_8cpp}{sender.\+cpp}\end{DoxyCompactItemize}

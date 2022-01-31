@@ -1,0 +1,162 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity}\index{fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity@{fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a2fbd2e53b0138742f01d58ee454fb502}{on\+Create} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_add46240b2690229c03b49cffa3ba76bb}{layout\+\_\+tableau\+De\+Bord}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_acb650487a892f3446ae3f58ef01733b7}{layout\+\_\+graphs}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a12f9873ae11f7d8e187600d58406c4da}{layout\+\_\+map}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aee95283002ad6087e895fa0fa51c5030}{layout\+\_\+alertes}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a6502d793c6b5c6df0c3b051b2bacab9b}{layout\+\_\+gestion\+Alertes}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aea8efb6a37f29b1a122844dcd3e26c0b}{layout\+\_\+gestion\+Ruches}
+\item 
+Linear\+Layout \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a513adcf5f7471faf27a0e7a2798caf56}{layout\+\_\+debug}
+\item 
+Image\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_ae29a1e0dd983c9e9f5554d37d6fc763e}{img\+\_\+disconnect}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a2fbd2e53b0138742f01d58ee454fb502}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a2fbd2e53b0138742f01d58ee454fb502}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyCode}
+00022                                                        \{
+00023         super.onCreate(savedInstanceState);
+00024         setContentView(R.layout.activity\_home);
+00025 
+00026         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_add46240b2690229c03b49cffa3ba76bb}{layout\_tableauDeBord} = findViewById(R.id.layout\_tableauDeBord);
+00027         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_acb650487a892f3446ae3f58ef01733b7}{layout\_graphs} = findViewById(R.id.layout\_graphs);
+00028         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aee95283002ad6087e895fa0fa51c5030}{layout\_alertes} = findViewById(R.id.layout\_alertes);
+00029         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a6502d793c6b5c6df0c3b051b2bacab9b}{layout\_gestionAlertes} = findViewById(R.id.layout\_gestionAlertes);
+00030         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aea8efb6a37f29b1a122844dcd3e26c0b}{layout\_gestionRuches} = findViewById(R.id.layout\_gestionRuche);
+00031         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a513adcf5f7471faf27a0e7a2798caf56}{layout\_debug} = findViewById(R.id.layout\_debug);
+00032         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_ae29a1e0dd983c9e9f5554d37d6fc763e}{img\_disconnect} = findViewById(R.id.img\_disconnect);
+00033 
+00034 
+00035         \textcolor{keyword}{final} Intent tableauDeBord = \textcolor{keyword}{new} Intent(homeActivity.this, DashboardActivity.class);
+00036         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_add46240b2690229c03b49cffa3ba76bb}{layout\_tableauDeBord}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00037             @Override
+00038             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v)
+00039             \{
+00040                 startActivity(tableauDeBord);
+00041             \}
+00042         \});
+00043 
+00044         \textcolor{keyword}{final} Intent graphique = \textcolor{keyword}{new} Intent(homeActivity.this, GraphActivity.class);
+00045         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_acb650487a892f3446ae3f58ef01733b7}{layout\_graphs}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00046             @Override
+00047             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v)
+00048             \{
+00049                 startActivity(graphique);
+00050             \}
+00051         \});
+00052 
+00053 
+00054         \textcolor{keyword}{final} Intent gestionRuche = \textcolor{keyword}{new} Intent(homeActivity.this, NouvelleRucheActivity.class);
+00055         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aea8efb6a37f29b1a122844dcd3e26c0b}{layout\_gestionRuches}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00056             @Override
+00057             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v)
+00058             \{
+00059                 startActivity(gestionRuche);
+00060             \}
+00061         \});
+00062         \textcolor{keyword}{final} Intent disconnect = \textcolor{keyword}{new} Intent(homeActivity.this, MainActivity.class);
+00063         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_ae29a1e0dd983c9e9f5554d37d6fc763e}{img\_disconnect}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00064             @Override
+00065             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v)
+00066             \{
+00067                 startActivity(disconnect);
+00068             \}
+00069         \});
+00070 
+00071         \textcolor{keyword}{final} Intent alertes = \textcolor{keyword}{new} Intent(homeActivity.this, alertesActivity.class);
+00072         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aee95283002ad6087e895fa0fa51c5030}{layout\_alertes}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00073             @Override
+00074             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v)
+00075             \{
+00076                 startActivity(alertes);
+00077             \}
+00078         \});
+00079 
+00080     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_ae29a1e0dd983c9e9f5554d37d6fc763e}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_ae29a1e0dd983c9e9f5554d37d6fc763e}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!img\+\_\+disconnect@{img\+\_\+disconnect}}
+\index{img\+\_\+disconnect@{img\+\_\+disconnect}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{img\+\_\+disconnect}{img\_disconnect}}
+{\footnotesize\ttfamily Image\+View fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+img\+\_\+disconnect\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aee95283002ad6087e895fa0fa51c5030}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aee95283002ad6087e895fa0fa51c5030}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+alertes@{layout\+\_\+alertes}}
+\index{layout\+\_\+alertes@{layout\+\_\+alertes}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+alertes}{layout\_alertes}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+alertes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a513adcf5f7471faf27a0e7a2798caf56}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a513adcf5f7471faf27a0e7a2798caf56}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+debug@{layout\+\_\+debug}}
+\index{layout\+\_\+debug@{layout\+\_\+debug}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+debug}{layout\_debug}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+debug\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a6502d793c6b5c6df0c3b051b2bacab9b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a6502d793c6b5c6df0c3b051b2bacab9b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+gestion\+Alertes@{layout\+\_\+gestion\+Alertes}}
+\index{layout\+\_\+gestion\+Alertes@{layout\+\_\+gestion\+Alertes}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+gestion\+Alertes}{layout\_gestionAlertes}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+gestion\+Alertes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aea8efb6a37f29b1a122844dcd3e26c0b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_aea8efb6a37f29b1a122844dcd3e26c0b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+gestion\+Ruches@{layout\+\_\+gestion\+Ruches}}
+\index{layout\+\_\+gestion\+Ruches@{layout\+\_\+gestion\+Ruches}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+gestion\+Ruches}{layout\_gestionRuches}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+gestion\+Ruches\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_acb650487a892f3446ae3f58ef01733b7}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_acb650487a892f3446ae3f58ef01733b7}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+graphs@{layout\+\_\+graphs}}
+\index{layout\+\_\+graphs@{layout\+\_\+graphs}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+graphs}{layout\_graphs}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+graphs\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a12f9873ae11f7d8e187600d58406c4da}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_a12f9873ae11f7d8e187600d58406c4da}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+map@{layout\+\_\+map}}
+\index{layout\+\_\+map@{layout\+\_\+map}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+map}{layout\_map}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_add46240b2690229c03b49cffa3ba76bb}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity_add46240b2690229c03b49cffa3ba76bb}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}!layout\+\_\+tableau\+De\+Bord@{layout\+\_\+tableau\+De\+Bord}}
+\index{layout\+\_\+tableau\+De\+Bord@{layout\+\_\+tableau\+De\+Bord}!fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::home\+Activity}}
+\paragraph{\texorpdfstring{layout\+\_\+tableau\+De\+Bord}{layout\_tableauDeBord}}
+{\footnotesize\ttfamily Linear\+Layout fr.\+campus.\+laurainc.\+honeybee.\+home\+Activity.\+layout\+\_\+tableau\+De\+Bord\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{home_activity_8java}{home\+Activity.\+java}\end{DoxyCompactItemize}

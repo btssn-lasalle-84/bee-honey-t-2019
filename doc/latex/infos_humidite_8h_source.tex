@@ -1,0 +1,63 @@
+\hypertarget{infos_humidite_8h_source}{}\subsection{infos\+Humidite.\+h}
+\label{infos_humidite_8h_source}\index{infos\+Humidite.\+h@{infos\+Humidite.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSHUMIDITE\_H}
+00002 \textcolor{preprocessor}{#define INFOSHUMIDITE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 \textcolor{preprocessor}{#include <QVector>}
+00019 
+\Hypertarget{infos_humidite_8h_source_l00032}\hyperlink{class_infos_humidite}{00032} \textcolor{keyword}{class }\hyperlink{class_infos_humidite}{InfosHumidite} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00033 \{
+00034     Q\_OBJECT
+00035 
+00036     \textcolor{keyword}{private}:
+\Hypertarget{infos_humidite_8h_source_l00037}\hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{00037}         \textcolor{keywordtype}{double} \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur}; 
+\Hypertarget{infos_humidite_8h_source_l00038}\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{00038}         \textcolor{keywordtype}{double} \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur}; 
+\Hypertarget{infos_humidite_8h_source_l00039}\hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{00039}         QString \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur}; 
+\Hypertarget{infos_humidite_8h_source_l00040}\hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{00040}         QString \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur}; 
+\Hypertarget{infos_humidite_8h_source_l00041}\hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{00041}         QVector <double> \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs};
+\Hypertarget{infos_humidite_8h_source_l00042}\hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{00042}         QVector <double> \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs};
+\Hypertarget{infos_humidite_8h_source_l00043}\hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{00043}         \textcolor{keywordtype}{int} \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur};
+\Hypertarget{infos_humidite_8h_source_l00044}\hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{00044}         \textcolor{keywordtype}{int} \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur};
+00045         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculerMoyenneHoraireHumiditeInterieur}();
+00046         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculerMoyenneHoraireHumiditeExterieur}();
+00047 
+00048     \textcolor{keyword}{public}:
+00049         \hyperlink{class_infos_humidite_a3c87ffa0e896fd5af90b1d9f15a47a57}{InfosHumidite}(\hyperlink{class_q_object}{QObject} * parent);
+00050         \textcolor{keywordtype}{double} \hyperlink{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}{getHumiditeInterieur}();
+00051         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a238c8b3bd6b09c4f770058a05468baa8}{setHumiditeInterieur}(\textcolor{keywordtype}{double} humiditeInterieur);
+00052         QString \hyperlink{class_infos_humidite_a841d2583f206a9097fa3871adc8be568}{getHorodatageHumiditeInterieur}() \textcolor{keyword}{const};
+00053         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a8054d13ab8f57504392756351c376534}{setHorodatageHumiditeInterieur}(\textcolor{keyword}{const} QString 
+      horodatageHumiditeInterieur);
+00054         \textcolor{keywordtype}{double} \hyperlink{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}{getHumiditeExterieur}();
+00055         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a8228ff1f1d0466df228ed3f2e2d269ac}{setHumiditeExterieur}(\textcolor{keywordtype}{double} humiditeExterieur);
+00056         QString \hyperlink{class_infos_humidite_a04abb2841492704e125874464052bb4f}{getHorodatageHumiditeExterieur}() \textcolor{keyword}{const};
+00057         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_acc6231789bd923840dadf4f17310ce69}{setHorodatageHumiditeExterieur}(\textcolor{keyword}{const} QString 
+      horodatageHumiditeExterieur);
+00058 
+00059     \textcolor{keyword}{public} slots:
+00060         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiterNouvelleHumiditeInterieur}(QString 
+      humiditeInterieurstring, QString horodatageHumiditeInterieur);
+00061         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiterNouvelleHumiditeExterieur}(QString 
+      humiditeExterieurstring, QString horodatageHumiditeExterieur);
+00062 
+00063     signals:
+00064         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}{humiditeInterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} humiditeInterieur,QString 
+      horodatage); 
+00065         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}{humiditeExterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} humiditeExterieur,QString 
+      horodatage);
+00066         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}{traitementHumiditeInterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureInterieurMoyenne ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMinimum ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMaximum, \textcolor{keywordtype}{int} heure
+      );
+00067         \textcolor{keywordtype}{void} \hyperlink{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}{traitementHumiditeExterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureExterieurMoyenne ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMinimum ,\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMaximum, \textcolor{keywordtype}{int} heure
+      );
+00068 
+00069 \};
+00070 
+00071 \textcolor{preprocessor}{#endif // INFOSHUMIDITE\_H}
+00072 
+\end{DoxyCode}

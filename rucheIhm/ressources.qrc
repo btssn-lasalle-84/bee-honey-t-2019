@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/poidsAlerte.png</file>
+        <file>images/temperatureBasseAlerte.png</file>
+        <file>images/humiditeNormal.png</file>
+        <file>images/humidityHaute.png</file>
+        <file>images/temperature(1).png</file>
+        <file>images/temperatureNormal.png</file>
+        <file>images/temperatureHaute.png</file>
+        <file>images/batteryChargeBonne.png</file>
+        <file>images/batteryChargeMax.png</file>
+        <file>images/batteryChargeMoitie.png</file>
+        <file>images/batteryChargeMin.png</file>
+        <file>images/poidsnormal.png</file>
+        <file>images/soleil.png</file>
+        <file>images/pressionNormal.png</file>
+        <file>images/pressionAlerte.png</file>
+        <file>images/nuageux.png</file>
+        <file>images/alerteEnsoleillement.png</file>
+        <file>images/soleilCouvert.png</file>
+        <file>images/moon.png</file>
+    </qresource>
+</RCC>

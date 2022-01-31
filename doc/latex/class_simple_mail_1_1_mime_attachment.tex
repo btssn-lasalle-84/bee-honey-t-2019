@@ -1,0 +1,76 @@
+\hypertarget{class_simple_mail_1_1_mime_attachment}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Mime\+Attachment}
+\label{class_simple_mail_1_1_mime_attachment}\index{Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}}
+
+
+{\ttfamily \#include $<$mimeattachment.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Mime\+Attachment\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_simple_mail_1_1_mime_attachment__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_attachment_a6ee416630dfc09de9fd116a14eeca168}{Mime\+Attachment} (Q\+File $\ast$file)
+\item 
+\hyperlink{class_simple_mail_1_1_mime_attachment_a70681801131cf35515daaf4dd2d35cba}{Mime\+Attachment} (const Q\+Byte\+Array \&stream, const Q\+String \&file\+Name)
+\item 
+virtual \hyperlink{class_simple_mail_1_1_mime_attachment_aac25990be48662219fdf34013fd9871d}{$\sim$\+Mime\+Attachment} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Membres hérités additionnels}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_attachment_a6ee416630dfc09de9fd116a14eeca168}\label{class_simple_mail_1_1_mime_attachment_a6ee416630dfc09de9fd116a14eeca168}} 
+\index{Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}!Mime\+Attachment@{Mime\+Attachment}}
+\index{Mime\+Attachment@{Mime\+Attachment}!Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}}
+\paragraph{\texorpdfstring{Mime\+Attachment()}{MimeAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Mime\+Attachment\+::\+Mime\+Attachment (\begin{DoxyParamCaption}\item[{Q\+File $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00025                                           : \hyperlink{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}{MimeFile}(file)
+00026 \{
+00027     Q\_D(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart});
+00028     \textcolor{keyword}{const} QString filename = QFileInfo(*file).fileName();
+00029     d->header.append(\textcolor{stringliteral}{"Content-Disposition: attachment; filename=\(\backslash\)""} + filename.toLatin1() + \textcolor{stringliteral}{"\(\backslash\)"\(\backslash\)r\(\backslash\)n"});
+00030 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_attachment_a70681801131cf35515daaf4dd2d35cba}\label{class_simple_mail_1_1_mime_attachment_a70681801131cf35515daaf4dd2d35cba}} 
+\index{Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}!Mime\+Attachment@{Mime\+Attachment}}
+\index{Mime\+Attachment@{Mime\+Attachment}!Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}}
+\paragraph{\texorpdfstring{Mime\+Attachment()}{MimeAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Mime\+Attachment\+::\+Mime\+Attachment (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{stream,  }\item[{const Q\+String \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00032                                                                                : 
+      \hyperlink{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}{MimeFile}(stream, fileName)
+00033 \{
+00034     Q\_D(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart});
+00035     d->header.append(\textcolor{stringliteral}{"Content-Disposition: attachment; filename=\(\backslash\)""} + fileName.toLatin1() + \textcolor{stringliteral}{"\(\backslash\)"\(\backslash\)r\(\backslash\)n"});
+00036 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_attachment_aac25990be48662219fdf34013fd9871d}\label{class_simple_mail_1_1_mime_attachment_aac25990be48662219fdf34013fd9871d}} 
+\index{Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}!````~Mime\+Attachment@{$\sim$\+Mime\+Attachment}}
+\index{````~Mime\+Attachment@{$\sim$\+Mime\+Attachment}!Simple\+Mail\+::\+Mime\+Attachment@{Simple\+Mail\+::\+Mime\+Attachment}}
+\paragraph{\texorpdfstring{$\sim$\+Mime\+Attachment()}{~MimeAttachment()}}
+{\footnotesize\ttfamily Mime\+Attachment\+::$\sim$\+Mime\+Attachment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}
+00039 \{
+00040 
+00041 \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mimeattachment_8h}{mimeattachment.\+h}\item 
+\hyperlink{mimeattachment_8cpp}{mimeattachment.\+cpp}\end{DoxyCompactItemize}

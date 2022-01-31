@@ -1,0 +1,101 @@
+format 221
+
+classcanvas 128002 class_ref 130050 // RucheIhm
+  classdiagramsettings member_max_width 0 end
+  xyz 429 10 2000
+end
+classcanvas 128130 class_ref 129922 // Ruche
+  classdiagramsettings member_max_width 0 end
+  xyz 470 188 3005
+end
+classcanvas 128386 class_ref 128386 // Communication
+  classdiagramsettings member_max_width 0 end
+  xyz 82 273 3011
+end
+classcanvas 128642 class_ref 128514 // InfosEnsoleillement
+  classdiagramsettings member_max_width 0 end
+  xyz 770 97 3011
+end
+classcanvas 128898 class_ref 128642 // InfosHumidite
+  classdiagramsettings member_max_width 0 end
+  xyz 759 207 3011
+end
+classcanvas 129154 class_ref 128770 // InfosPressionAtmospherique
+  classdiagramsettings member_max_width 0 end
+  xyz 676 365 3011
+end
+classcanvas 129410 class_ref 128898 // InfosTemperature
+  classdiagramsettings member_max_width 0 end
+  xyz 473 479 3011
+end
+classcanvas 129666 class_ref 128002 // BaseDeDonnees
+  classdiagramsettings member_max_width 0 end
+  xyz 126 86 3016
+end
+classcanvas 130434 class_ref 129026 // NouvelleRucheIhm
+  classdiagramsettings member_max_width 0 end
+  xyz 800 10 3005
+end
+classcanvas 131202 class_ref 128258 // PortsTTN
+  classdiagramsettings member_max_width 0 end
+  xyz 67 434 3017
+end
+relationcanvas 128258 relation_ref 130434 // <unidirectional association>
+  from ref 128002 z 3006 to ref 128130
+  role_a_pos 506 158 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 130050 // <unidirectional association>
+  from ref 128130 z 3012 to ref 128386
+  role_a_pos 330 244 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 129538 // <unidirectional association>
+  from ref 128130 z 3012 to ref 128642
+  role_a_pos 623 130 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 129666 // <unidirectional association>
+  from ref 128130 z 3012 to ref 128898
+  role_a_pos 650 222 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 129794 // <unidirectional association>
+  from ref 128130 z 3012 to ref 129154
+  role_a_pos 556 340 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 129922 // <unidirectional association>
+  from ref 128130 z 3012 to ref 129410
+  role_a_pos 604 449 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129794 relation_ref 128130 // <unidirectional association>
+  decenter_begin 240
+  from ref 129666 z 3017 to point 67 115
+  line 129922 z 3017 to point 67 149
+  line 130050 z 3017 to ref 129666
+  role_a_pos 6 122 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130178 relation_ref 130178 // <unidirectional association>
+  from ref 128130 z 3017 to ref 129666
+  role_a_pos 284 137 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130306 relation_ref 130562 // <unidirectional association>
+  from ref 128002 z 3017 to ref 129666
+  role_a_pos 284 89 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130562 relation_ref 130690 // <unidirectional association>
+  from ref 128002 z 3006 to ref 130434
+  role_a_pos 692 11 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131330 relation_ref 128386 // <directional composition>
+  from ref 128386 z 3018 to ref 131202
+  role_a_pos 211 404 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

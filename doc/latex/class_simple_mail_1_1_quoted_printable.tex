@@ -1,0 +1,115 @@
+\hypertarget{class_simple_mail_1_1_quoted_printable}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Quoted\+Printable}
+\label{class_simple_mail_1_1_quoted_printable}\index{Simple\+Mail\+::\+Quoted\+Printable@{Simple\+Mail\+::\+Quoted\+Printable}}
+
+
+{\ttfamily \#include $<$quotedprintable.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Quoted\+Printable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_simple_mail_1_1_quoted_printable__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_quoted_printable_a8426b74cafe1c93232ac60d3f077c9e8}{encode} (const Q\+Byte\+Array \&input, bool rfc2047, int $\ast$printable=0, int $\ast$encoded=0)
+\item 
+static Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_quoted_printable_a0d2348902e414c30afbcd970e9270eea}{decode} (const Q\+Byte\+Array \&input)
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_quoted_printable_a0d2348902e414c30afbcd970e9270eea}\label{class_simple_mail_1_1_quoted_printable_a0d2348902e414c30afbcd970e9270eea}} 
+\index{Simple\+Mail\+::\+Quoted\+Printable@{Simple\+Mail\+::\+Quoted\+Printable}!decode@{decode}}
+\index{decode@{decode}!Simple\+Mail\+::\+Quoted\+Printable@{Simple\+Mail\+::\+Quoted\+Printable}}
+\paragraph{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily Q\+Byte\+Array Quoted\+Printable\+::decode (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_mime_part_ab6260fc481df5162673f1ac93ec92dac}{Simple\+Mail\+::\+Mime\+Part\+::data()}.
+
+
+\begin{DoxyCode}
+00090 \{
+00091     \textcolor{comment}{//                           0  1  2  3  4  5  6  7  8  9  :  ;  <  =  >  ?  @  A   B   C   D   E   F}
+00092     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{int} hexVal[] = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 10, 11, 12, 13, 14, 15\}
+      ;
+00093 
+00094     QByteArray output;
+00095 
+00096     \textcolor{keywordtype}{int} len = input.length();
+00097     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < len-2; ++i) \{
+00098         \textcolor{keywordflow}{if} (input.at(i) == \textcolor{charliteral}{'='}) \{
+00099             \textcolor{keywordtype}{int} x = input.at(i+1) - \textcolor{charliteral}{'0'};
+00100             \textcolor{keywordtype}{int} y = input.at(i+2) - \textcolor{charliteral}{'0'};
+00101             \textcolor{keywordflow}{if} (x >= 0 && y >= 0 && x < 23 && y < 23) \{
+00102                 output.append(\textcolor{keywordtype}{char}((hexVal[x] << 4) + hexVal[y]));
+00103             \}
+00104             \textcolor{keywordflow}{else} \{
+00105                 output.append(\textcolor{charliteral}{'='}).append(\textcolor{keywordtype}{char}(x + \textcolor{charliteral}{'0'})).append(\textcolor{keywordtype}{char}(y + \textcolor{charliteral}{'0'}));
+00106             \}
+00107 
+00108             i += 2;
+00109         \} \textcolor{keywordflow}{else} \{
+00110             output.append(input.at(i));
+00111         \}
+00112     \}
+00113 
+00114     \textcolor{keywordflow}{return} output;
+00115 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_quoted_printable_a8426b74cafe1c93232ac60d3f077c9e8}\label{class_simple_mail_1_1_quoted_printable_a8426b74cafe1c93232ac60d3f077c9e8}} 
+\index{Simple\+Mail\+::\+Quoted\+Printable@{Simple\+Mail\+::\+Quoted\+Printable}!encode@{encode}}
+\index{encode@{encode}!Simple\+Mail\+::\+Quoted\+Printable@{Simple\+Mail\+::\+Quoted\+Printable}}
+\paragraph{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily Q\+Byte\+Array Quoted\+Printable\+::encode (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{input,  }\item[{bool}]{rfc2047,  }\item[{int $\ast$}]{printable = {\ttfamily 0},  }\item[{int $\ast$}]{encoded = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requires\+Escape()}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_mime_message_private_ae036b2417205ef25181091bebd15c0f6}{Simple\+Mail\+::\+Mime\+Message\+Private\+::encode\+Data()}, et \hyperlink{class_simple_mail_1_1_mime_part_private_a075937d19cf60c10f765154aa30fa4b6}{Simple\+Mail\+::\+Mime\+Part\+Private\+::write\+Quoted\+Printable()}.
+
+
+\begin{DoxyCode}
+00062 \{
+00063     QByteArray output;
+00064 
+00065     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} byte;
+00066     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{char} hex[] = \{\textcolor{charliteral}{'0'}, \textcolor{charliteral}{'1'}, \textcolor{charliteral}{'2'}, \textcolor{charliteral}{'3'}, \textcolor{charliteral}{'4'}, \textcolor{charliteral}{'5'}, \textcolor{charliteral}{'6'}, \textcolor{charliteral}{'7'}, \textcolor{charliteral}{'8'}, \textcolor{charliteral}{'9'}, \textcolor{charliteral}{'A'}, \textcolor{charliteral}{'B'}, \textcolor{charliteral}{'C'}, \textcolor{charliteral}{'D'}, \textcolor{charliteral}{'E'}, \textcolor{charliteral}{
+      'F'}\};
+00067 
+00068     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < input.length() ; ++i) \{
+00069         byte = input[i];
+00070 
+00071         \textcolor{keywordflow}{if} (\hyperlink{quotedprintable_8cpp_a499595d3c37138682b9419204804a7f7}{requiresEscape}(byte, rfc2047)) \{
+00072             output.append(\textcolor{charliteral}{'='});
+00073             output.append(hex[((byte >> 4) & 0x0F)]);
+00074             output.append(hex[(byte & 0x0F)]);
+00075             \textcolor{keywordflow}{if} (encoded) \{
+00076                 ++(*encoded);
+00077             \}
+00078         \} \textcolor{keywordflow}{else} \{
+00079             output.append(byte);
+00080             \textcolor{keywordflow}{if} (printable) \{
+00081                 ++(*printable);
+00082             \}
+00083         \}
+00084     \}
+00085 
+00086     \textcolor{keywordflow}{return} output;
+00087 \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{quotedprintable_8h}{quotedprintable.\+h}\item 
+\hyperlink{quotedprintable_8cpp}{quotedprintable.\+cpp}\end{DoxyCompactItemize}

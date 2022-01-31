@@ -1,0 +1,100 @@
+\hypertarget{struct_mesures_horaire_ensoleillement}{}\subsection{Référence de la structure Mesures\+Horaire\+Ensoleillement}
+\label{struct_mesures_horaire_ensoleillement}\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+
+
+structure de données pour les mesures horaires  
+
+
+
+
+{\ttfamily \#include $<$ruche.\+h$>$}
+
+
+
+Graphe de collaboration de Mesures\+Horaire\+Ensoleillement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{struct_mesures_horaire_ensoleillement__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_mesures_horaire_ensoleillement_a478cf936fa746f384445cf5077206454}{heure}
+\item 
+double \hyperlink{struct_mesures_horaire_ensoleillement_a41c11dd16f5e42cf8b4882f98b9cee49}{ensoleillements\+Moyen}
+\item 
+double \hyperlink{struct_mesures_horaire_ensoleillement_a5d1165f40806663a3fd40ee4408c78f1}{ensoleillements\+Minimum}
+\item 
+double \hyperlink{struct_mesures_horaire_ensoleillement_adc848a942c5dcb0984b4c346f07e6f09}{ensoleillements\+Maximum}
+\item 
+bool \hyperlink{struct_mesures_horaire_ensoleillement_a78d40966edb1ace93776ba33edfc5151}{ensoleillements\+Recues} = false
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{struct_mesures_horaire_ensoleillement_adc848a942c5dcb0984b4c346f07e6f09}\label{struct_mesures_horaire_ensoleillement_adc848a942c5dcb0984b4c346f07e6f09}} 
+\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}!ensoleillements\+Maximum@{ensoleillements\+Maximum}}
+\index{ensoleillements\+Maximum@{ensoleillements\+Maximum}!Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillements\+Maximum}{ensoleillementsMaximum}}
+{\footnotesize\ttfamily double Mesures\+Horaire\+Ensoleillement\+::ensoleillements\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_a658234b9d96541d204b95b74556742b6}{Ruche\+::inserer\+Mesure\+Horaire\+Ensoleillement()}, et \hyperlink{class_ruche_a2ac5766ce8652084f034c498691488ea}{Ruche\+::recevoir\+Traitement\+Ensoleillement()}.
+
+\mbox{\Hypertarget{struct_mesures_horaire_ensoleillement_a5d1165f40806663a3fd40ee4408c78f1}\label{struct_mesures_horaire_ensoleillement_a5d1165f40806663a3fd40ee4408c78f1}} 
+\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}!ensoleillements\+Minimum@{ensoleillements\+Minimum}}
+\index{ensoleillements\+Minimum@{ensoleillements\+Minimum}!Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillements\+Minimum}{ensoleillementsMinimum}}
+{\footnotesize\ttfamily double Mesures\+Horaire\+Ensoleillement\+::ensoleillements\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_a658234b9d96541d204b95b74556742b6}{Ruche\+::inserer\+Mesure\+Horaire\+Ensoleillement()}, et \hyperlink{class_ruche_a2ac5766ce8652084f034c498691488ea}{Ruche\+::recevoir\+Traitement\+Ensoleillement()}.
+
+\mbox{\Hypertarget{struct_mesures_horaire_ensoleillement_a41c11dd16f5e42cf8b4882f98b9cee49}\label{struct_mesures_horaire_ensoleillement_a41c11dd16f5e42cf8b4882f98b9cee49}} 
+\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}!ensoleillements\+Moyen@{ensoleillements\+Moyen}}
+\index{ensoleillements\+Moyen@{ensoleillements\+Moyen}!Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillements\+Moyen}{ensoleillementsMoyen}}
+{\footnotesize\ttfamily double Mesures\+Horaire\+Ensoleillement\+::ensoleillements\+Moyen}
+
+
+
+Référencé par \hyperlink{class_ruche_a658234b9d96541d204b95b74556742b6}{Ruche\+::inserer\+Mesure\+Horaire\+Ensoleillement()}, et \hyperlink{class_ruche_a2ac5766ce8652084f034c498691488ea}{Ruche\+::recevoir\+Traitement\+Ensoleillement()}.
+
+\mbox{\Hypertarget{struct_mesures_horaire_ensoleillement_a78d40966edb1ace93776ba33edfc5151}\label{struct_mesures_horaire_ensoleillement_a78d40966edb1ace93776ba33edfc5151}} 
+\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}!ensoleillements\+Recues@{ensoleillements\+Recues}}
+\index{ensoleillements\+Recues@{ensoleillements\+Recues}!Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillements\+Recues}{ensoleillementsRecues}}
+{\footnotesize\ttfamily bool Mesures\+Horaire\+Ensoleillement\+::ensoleillements\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_a658234b9d96541d204b95b74556742b6}{Ruche\+::inserer\+Mesure\+Horaire\+Ensoleillement()}, et \hyperlink{class_ruche_a2ac5766ce8652084f034c498691488ea}{Ruche\+::recevoir\+Traitement\+Ensoleillement()}.
+
+\mbox{\Hypertarget{struct_mesures_horaire_ensoleillement_a478cf936fa746f384445cf5077206454}\label{struct_mesures_horaire_ensoleillement_a478cf936fa746f384445cf5077206454}} 
+\index{Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}!heure@{heure}}
+\index{heure@{heure}!Mesures\+Horaire\+Ensoleillement@{Mesures\+Horaire\+Ensoleillement}}
+\paragraph{\texorpdfstring{heure}{heure}}
+{\footnotesize\ttfamily int Mesures\+Horaire\+Ensoleillement\+::heure}
+
+
+
+Référencé par \hyperlink{class_ruche_a658234b9d96541d204b95b74556742b6}{Ruche\+::inserer\+Mesure\+Horaire\+Ensoleillement()}, et \hyperlink{class_ruche_a2ac5766ce8652084f034c498691488ea}{Ruche\+::recevoir\+Traitement\+Ensoleillement()}.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ruche_8h}{ruche.\+h}\end{DoxyCompactItemize}

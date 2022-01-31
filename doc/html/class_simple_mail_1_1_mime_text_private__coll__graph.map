@@ -1,0 +1,5 @@
+<map id="SimpleMail::MimeTextPrivate" name="SimpleMail::MimeTextPrivate">
+<area shape="rect" id="node2" href="$class_simple_mail_1_1_mime_part_private.html" title="{SimpleMail::MimePartPrivate\n|+ header\l+ contentDevice\l+ contentId\l+ contentName\l+ contentType\l+ contentCharset\l+ contentBoundary\l+ contentEncoding\l|+ ~MimePartPrivate()\l+ writeRaw()\l+ writeBase64()\l+ writeQuotedPrintable()\l}" alt="" coords="55,204,246,428"/>
+<area shape="rect" id="node3" href="$class_q_shared_data.html" title="{QSharedData\n||}" alt="" coords="5,35,107,112"/>
+<area shape="rect" id="node4" href="$class_simple_mail_1_1_mime_content_formatter.html" title="{SimpleMail::MimeContentFormatter\n|# max_length\l|+ MimeContentFormatter()\l+ setMaxLength()\l+ maxLength()\l+ format()\l+ formatQuotedPrintable()\l}" alt="" coords="131,5,359,141"/>
+</map>

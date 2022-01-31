@@ -1,0 +1,243 @@
+\hypertarget{class_simple_mail_1_1_email_address}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Email\+Address}
+\label{class_simple_mail_1_1_email_address}\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+
+
+{\ttfamily \#include $<$emailaddress.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Email\+Address\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_simple_mail_1_1_email_address__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_email_address_a6d295effd1195009a2c744c67ff270e9}{Email\+Address} ()
+\item 
+\hyperlink{class_simple_mail_1_1_email_address_a937f1030d9894fbf8dad50ca57833b7c}{Email\+Address} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&other)
+\item 
+\hyperlink{class_simple_mail_1_1_email_address_a8bfbbe6dbdc1f420a7e6c7e52468bd54}{Email\+Address} (const Q\+String \&\hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address}, const Q\+String \&\hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name}=Q\+String())
+\item 
+virtual \hyperlink{class_simple_mail_1_1_email_address_a360542a2ad94a7f484f85557f0b53321}{$\sim$\+Email\+Address} ()
+\item 
+\hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \& \hyperlink{class_simple_mail_1_1_email_address_a833afb6d4b354bddffa26fd71c70fc2e}{operator=} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&other)
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_email_address_a09d30bfa2caf56202f78bbc5f7ed543e}{set\+Name} (const Q\+String \&\hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name})
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_email_address_aab4a5642e2779dce05aafd267d5729ae}{set\+Address} (const Q\+String \&\hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address})
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Shared\+Data\+Pointer$<$ \hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private} $>$ \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\+\_\+ptr}
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private} $\ast$ \hyperlink{class_simple_mail_1_1_email_address_aa1ad0e3e3ff067e2c41ed350edc23a03}{d\+\_\+func} ()
+\item 
+const \hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private} $\ast$ \hyperlink{class_simple_mail_1_1_email_address_a70c5d2b0aabacfdfa692710f43cf0b5e}{d\+\_\+func} () const
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a6d295effd1195009a2c744c67ff270e9}\label{class_simple_mail_1_1_email_address_a6d295effd1195009a2c744c67ff270e9}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!Email\+Address@{Email\+Address}}
+\index{Email\+Address@{Email\+Address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{Email\+Address()}{EmailAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Email\+Address\+::\+Email\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00022                            : \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr}(\textcolor{keyword}{new} \hyperlink{class_simple_mail_1_1_email_address_private}{EmailAddressPrivate})
+00023 \{
+00024 
+00025 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a937f1030d9894fbf8dad50ca57833b7c}\label{class_simple_mail_1_1_email_address_a937f1030d9894fbf8dad50ca57833b7c}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!Email\+Address@{Email\+Address}}
+\index{Email\+Address@{Email\+Address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{Email\+Address()}{EmailAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Email\+Address\+::\+Email\+Address (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{other }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00027                                                     : \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr}(other.\hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr})
+00028 \{
+00029 
+00030 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a8bfbbe6dbdc1f420a7e6c7e52468bd54}\label{class_simple_mail_1_1_email_address_a8bfbbe6dbdc1f420a7e6c7e52468bd54}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!Email\+Address@{Email\+Address}}
+\index{Email\+Address@{Email\+Address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{Email\+Address()}{EmailAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Email\+Address\+::\+Email\+Address (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{address,  }\item[{const Q\+String \&}]{name = {\ttfamily QString()} }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address()}, et \hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name()}.
+
+
+\begin{DoxyCode}
+00032                                                                       : \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr}(\textcolor{keyword}{new} 
+      \hyperlink{class_simple_mail_1_1_email_address_private}{EmailAddressPrivate})
+00033 \{
+00034     Q\_D(\hyperlink{class_simple_mail_1_1_email_address}{EmailAddress});
+00035     d->address = \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address};
+00036     d->name = \hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name};
+00037 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a360542a2ad94a7f484f85557f0b53321}\label{class_simple_mail_1_1_email_address_a360542a2ad94a7f484f85557f0b53321}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!````~Email\+Address@{$\sim$\+Email\+Address}}
+\index{````~Email\+Address@{$\sim$\+Email\+Address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{$\sim$\+Email\+Address()}{~EmailAddress()}}
+{\footnotesize\ttfamily Email\+Address\+::$\sim$\+Email\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}
+00040 \{
+00041 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}\label{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!address@{address}}
+\index{address@{address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{address()}{address()}}
+{\footnotesize\ttfamily Q\+String Email\+Address\+::address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_email_address_a8bfbbe6dbdc1f420a7e6c7e52468bd54}{Email\+Address()}, \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}, et \hyperlink{class_simple_mail_1_1_email_address_aab4a5642e2779dce05aafd267d5729ae}{set\+Address()}.
+
+
+\begin{DoxyCode}
+00072 \{
+00073     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress});
+00074     \textcolor{keywordflow}{return} d->address;
+00075 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_aa1ad0e3e3ff067e2c41ed350edc23a03}\label{class_simple_mail_1_1_email_address_aa1ad0e3e3ff067e2c41ed350edc23a03}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!d\+\_\+func@{d\+\_\+func}}
+\index{d\+\_\+func@{d\+\_\+func}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{d\+\_\+func()}{d\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private} $\ast$ Email\+Address\+::d\+\_\+func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\+\_\+ptr}.
+
+
+\begin{DoxyCode}
+00061 \{
+00062     \textcolor{keywordflow}{return} \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr}.data();
+00063 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a70c5d2b0aabacfdfa692710f43cf0b5e}\label{class_simple_mail_1_1_email_address_a70c5d2b0aabacfdfa692710f43cf0b5e}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!d\+\_\+func@{d\+\_\+func}}
+\index{d\+\_\+func@{d\+\_\+func}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{d\+\_\+func()}{d\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private}$\ast$ Simple\+Mail\+::\+Email\+Address\+::d\+\_\+func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00052     \{
+00053         \textcolor{keywordflow}{return} \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr}.constData();
+00054     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}\label{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!name@{name}}
+\index{name@{name}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily Q\+String Email\+Address\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_email_address_a8bfbbe6dbdc1f420a7e6c7e52468bd54}{Email\+Address()}, et \hyperlink{class_simple_mail_1_1_email_address_a09d30bfa2caf56202f78bbc5f7ed543e}{set\+Name()}.
+
+
+\begin{DoxyCode}
+00066 \{
+00067     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress});
+00068     \textcolor{keywordflow}{return} d->name;
+00069 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a833afb6d4b354bddffa26fd71c70fc2e}\label{class_simple_mail_1_1_email_address_a833afb6d4b354bddffa26fd71c70fc2e}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!operator=@{operator=}}
+\index{operator=@{operator=}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \& Email\+Address\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\+\_\+ptr}.
+
+
+\begin{DoxyCode}
+00044 \{
+00045     \hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr} = other.\hyperlink{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}{d\_ptr};
+00046     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+00047 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_aab4a5642e2779dce05aafd267d5729ae}\label{class_simple_mail_1_1_email_address_aab4a5642e2779dce05aafd267d5729ae}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!set\+Address@{set\+Address}}
+\index{set\+Address@{set\+Address}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{set\+Address()}{setAddress()}}
+{\footnotesize\ttfamily void Email\+Address\+::set\+Address (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{address }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address()}.
+
+
+\begin{DoxyCode}
+00055 \{
+00056     Q\_D(\hyperlink{class_simple_mail_1_1_email_address}{EmailAddress});
+00057     d->address = \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address};
+00058 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a09d30bfa2caf56202f78bbc5f7ed543e}\label{class_simple_mail_1_1_email_address_a09d30bfa2caf56202f78bbc5f7ed543e}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void Email\+Address\+::set\+Name (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name()}.
+
+
+\begin{DoxyCode}
+00050 \{
+00051     Q\_D(\hyperlink{class_simple_mail_1_1_email_address}{EmailAddress});
+00052     d->name = \hyperlink{class_simple_mail_1_1_email_address_a311fdcf9bc548a3db4a985b396ab5355}{name};
+00053 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}\label{class_simple_mail_1_1_email_address_a27188c75c77a942e79cac0420788f214}} 
+\index{Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}!d\+\_\+ptr@{d\+\_\+ptr}}
+\index{d\+\_\+ptr@{d\+\_\+ptr}!Simple\+Mail\+::\+Email\+Address@{Simple\+Mail\+::\+Email\+Address}}
+\paragraph{\texorpdfstring{d\+\_\+ptr}{d\_ptr}}
+{\footnotesize\ttfamily Q\+Shared\+Data\+Pointer$<$\hyperlink{class_simple_mail_1_1_email_address_private}{Email\+Address\+Private}$>$ Simple\+Mail\+::\+Email\+Address\+::d\+\_\+ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_email_address_aa1ad0e3e3ff067e2c41ed350edc23a03}{d\+\_\+func()}, et \hyperlink{class_simple_mail_1_1_email_address_a833afb6d4b354bddffa26fd71c70fc2e}{operator=()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{emailaddress_8h}{emailaddress.\+h}\item 
+\hyperlink{emailaddress_8cpp}{emailaddress.\+cpp}\end{DoxyCompactItemize}

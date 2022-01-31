@@ -1,0 +1,730 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}\index{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees@{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees}}
+
+
+Gestion d\textquotesingle{}une base de données My\+S\+QL (Singleton)  
+
+
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql}{Connexion\+My\+Sql}
+\begin{DoxyCompactList}\small\item\em Classe permettant de se connecter à My\+S\+QL en arrière-\/plan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Object \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a356a61d32b2d1fdac4e35c04f969fa00}{read\+Resolve} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}objet dans un flux (cf. Singleton) \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}{set\+Parametres} (String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password})
+\begin{DoxyCompactList}\small\item\em Modifie les paramètres de connexion à la base de donnees et se reconnecte. \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a4d5b875376c84e702c60bb54cee58c3f}{set\+Activite} (Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite})
+\begin{DoxyCompactList}\small\item\em Fixe l\textquotesingle{}activité appelante associée à l\textquotesingle{}instance de Base de données. \end{DoxyCompactList}\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{connecter} ()
+\begin{DoxyCompactList}\small\item\em Connexion à la base de données My\+S\+QL si pas déjà connecté \end{DoxyCompactList}\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a89357a1cc8a3648400df37a8bfe95958}{reconnecter} ()
+\begin{DoxyCompactList}\small\item\em Reconnexion à la base de données My\+S\+QL. \end{DoxyCompactList}\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae022ff0b4923d637f8d392cb908aa252}{deconnecter} ()
+\begin{DoxyCompactList}\small\item\em Déconnexion de la base de données My\+S\+QL. \end{DoxyCompactList}\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{est\+Connecte} ()
+\begin{DoxyCompactList}\small\item\em Retourne vrai si on est connecté à la base de données My\+S\+QL. \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a421bffe6f14c01bee64695e7b6a9745d}{executer\+Requete} (final String requete)
+\begin{DoxyCompactList}\small\item\em Méthode qui exécute une requête U\+P\+D\+A\+TE, I\+N\+S\+E\+RT ou D\+E\+L\+E\+TE en arrière-\/plan. \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}{supprimer\+Ruche} (final int id\+Ruche)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Retourne l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}. \end{DoxyCompactList}\item 
+static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a1946bd458844214e84a5bc1327bbd174}{get\+Instance} (Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite})
+\item 
+static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aca2ad0b53f5c21c6a16a7956646c195b}{get\+Instance} (String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password})
+\item 
+static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a8dd37561ed70a74841590d9206248d9b}{get\+Instance} (Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password})
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static Connection \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion} = null
+\begin{DoxyCompactList}\small\item\em objet de connexion à My\+S\+QL (null par défaut) \end{DoxyCompactList}\item 
+static final Lock \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}{mutex} = new Reentrant\+Lock(true)
+\begin{DoxyCompactList}\small\item\em mutex pour l\textquotesingle{}exécution concurrente de requêtes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{Base\+De\+Donnees} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}. \end{DoxyCompactList}\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a3023d75b636efcfbb2c6b6ac5c702c42}{Base\+De\+Donnees} (Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite})
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}{Base\+De\+Donnees} (String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password})
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ab3a19c26fc4ddbddc1d9166e88bb4db7}{Base\+De\+Donnees} (Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password})
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Activity \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} = null
+\begin{DoxyCompactList}\small\item\em objet sur l\textquotesingle{}activite ayant créé l\textquotesingle{}objet \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} (si besoin pour UI) \end{DoxyCompactList}\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \end{DoxyCompactList}\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}
+\begin{DoxyCompactList}\small\item\em le nom du compte utilisateur (root par défaut) \end{DoxyCompactList}\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password}
+\begin{DoxyCompactList}\small\item\em le mot de passe du compte utilisateur (password par défaut) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{T\+AG} = \char`\"{}Base\+De\+Donnees\char`\"{}
+\begin{DoxyCompactList}\small\item\em le T\+AG de la classe pour les logs \end{DoxyCompactList}\item 
+static \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} = null
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}instance unique de \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} (Singleton) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Thierry Vaira 
+\end{DoxyAuthor}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{Base\+De\+Donnees()}{BaseDeDonnees()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+Base\+De\+Donnees (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructeur de la classe \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em activite} & Activity l\textquotesingle{}activité appelante\\
+\hline
+{\em url} & String l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \\
+\hline
+{\em username} & String le nom d\textquotesingle{}utilisateur \\
+\hline
+{\em password} & String le mot de passe de l\textquotesingle{}utilisateur\\
+\hline
+{\em activite} & Activity l\textquotesingle{}activité appelante \\
+\hline
+{\em url} & String l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \\
+\hline
+{\em username} & String le nom d\textquotesingle{}utilisateur \\
+\hline
+{\em password} & String le mot de passe de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance()}.
+
+
+\begin{DoxyCode}
+00107     \{
+00108     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a3023d75b636efcfbb2c6b6ac5c702c42}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a3023d75b636efcfbb2c6b6ac5c702c42}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{Base\+De\+Donnees()}{BaseDeDonnees()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees (\begin{DoxyParamCaption}\item[{Activity}]{activite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+activite}.
+
+
+\begin{DoxyCode}
+00116     \{
+00117         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite};
+00118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{Base\+De\+Donnees()}{BaseDeDonnees()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+connecter()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+password}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+url}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+username}.
+
+
+\begin{DoxyCode}
+00128     \{
+00129         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"url="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url});
+00130         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"username="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username});
+00131         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"password="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password});
+00132         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url};
+00133         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username};
+00134         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password};
+00135         \textcolor{comment}{// on peut se connecter}
+00136         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{connecter}();
+00137     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ab3a19c26fc4ddbddc1d9166e88bb4db7}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ab3a19c26fc4ddbddc1d9166e88bb4db7}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!Base\+De\+Donnees@{Base\+De\+Donnees}}
+\index{Base\+De\+Donnees@{Base\+De\+Donnees}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{Base\+De\+Donnees()}{BaseDeDonnees()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees (\begin{DoxyParamCaption}\item[{Activity}]{activite,  }\item[{String}]{url,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+activite}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+connecter()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+password}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+url}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+username}.
+
+
+\begin{DoxyCode}
+00148     \{
+00149         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"url="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url});
+00150         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"username="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username});
+00151         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"password="} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password});
+00152         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite};
+00153         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url};
+00154         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username};
+00155         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password};
+00156         \textcolor{comment}{// on peut se connecter}
+00157         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{connecter}();
+00158     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!connecter@{connecter}}
+\index{connecter@{connecter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{connecter()}{connecter()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+connecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+boolean vrai si la connexion a réussi sinon faux 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+est\+Connecte()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity_aba2e570bbba3bf1be8487068d9c6c2da}{fr.\+campus.\+laurainc.\+honeybee.\+Main\+Activity.\+on\+Create()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_nouvelle_ruche_activity_ae97fec78fb0a2e1cc4610182bc71ea0d}{fr.\+campus.\+laurainc.\+honeybee.\+Nouvelle\+Ruche\+Activity.\+on\+Create()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a89357a1cc8a3648400df37a8bfe95958}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+reconnecter()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a56ec53516e4f94b4f5e42f083fa345db}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+Ruche()}.
+
+
+\begin{DoxyCode}
+00192     \{
+00193         \textcolor{keywordflow}{if}(!HoneyBee.BDD)
+00194             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00195 
+00196         \textcolor{keywordflow}{try}
+00197         \{
+00198             \textcolor{keywordflow}{if} (!\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{estConnecte}())
+00199             \{
+00200                 ConnexionMySql connexionMySql = \textcolor{keyword}{new} ConnexionMySql();
+00201                 connexionMySql.execute();
+00202                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"connecter -> retour : "} + connexionMySql.get());
+00203                 \textcolor{keywordflow}{return} connexionMySql.get();
+00204             \}
+00205             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00206         \}
+00207         \textcolor{keywordflow}{catch} (InterruptedException e)
+00208         \{
+00209             e.printStackTrace();
+00210             Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"connecter -> InterruptedException : "} + e.toString());
+00211             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00212         \}
+00213         \textcolor{keywordflow}{catch} (ExecutionException e)
+00214         \{
+00215             e.printStackTrace();
+00216             Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"connecter -> ExecutionException : "} + e.toString());
+00217             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00218         \}
+00219     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae022ff0b4923d637f8d392cb908aa252}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae022ff0b4923d637f8d392cb908aa252}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!deconnecter@{deconnecter}}
+\index{deconnecter@{deconnecter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{deconnecter()}{deconnecter()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+deconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+boolean vrai si la déconnexion a réussi sinon faux 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a89357a1cc8a3648400df37a8bfe95958}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+reconnecter()}.
+
+
+\begin{DoxyCode}
+00240     \{
+00241         \textcolor{keywordflow}{if} (!HoneyBee.BDD)
+00242             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00243 
+00244         \textcolor{keywordflow}{try}
+00245         \{
+00246             \textcolor{keywordflow}{if} (\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion} != null)
+00247             \{
+00248                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.close();
+00249                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"deconnecter -> retour : "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed());
+00250                 \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed();
+00251             \}
+00252             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00253         \}
+00254         \textcolor{keywordflow}{catch} (SQLException e)
+00255         \{
+00256             e.printStackTrace();
+00257             Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"deconnecter -> ExecutionException : "} + e.toString());
+00258             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00259         \}
+00260     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!est\+Connecte@{est\+Connecte}}
+\index{est\+Connecte@{est\+Connecte}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{est\+Connecte()}{estConnecte()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+est\+Connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+boolean vrai si on est connecté à la base de données My\+S\+QL sinon faux 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+connecter()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_1_1_connexion_my_sql_a752c9f0f9a0879fceeeabd48c5fcb058}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Connexion\+My\+Sql.\+do\+In\+Background()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a421bffe6f14c01bee64695e7b6a9745d}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+executer\+Requete()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7a99d3c585f2c507eb2c6c265a5bb1fe}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ade5d681bd0a29d84e0d069169b10a38b}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Choix\+Ch\+App\+I\+D()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ace10a52a470257f2b8f161fc3c7b9f15}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Historique\+Alertes()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1113f3b4a527a801fdf50350667fd212}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Id\+T\+T\+N()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aba0591cda391b907da41a0afeba4d59d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Liste\+Ruches()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a84de3c3af21b1cbeae2075e480acaabc}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Mesures\+Journalieres\+Ruche()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a94f815b44f0d5d8682833d6b6e783713}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Moyennes()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+supprimer\+Ruche()}.
+
+
+\begin{DoxyCode}
+00268     \{
+00269         \textcolor{keywordflow}{if}(!HoneyBee.BDD)
+00270             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00271 
+00272         \textcolor{keywordflow}{try}
+00273         \{
+00274             \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion} != null)
+00275                 \textcolor{keywordflow}{return} !\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.isClosed();
+00276             \textcolor{keywordflow}{else}
+00277                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00278         \}
+00279         \textcolor{keywordflow}{catch} (SQLException e)
+00280         \{
+00281             e.printStackTrace();
+00282             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00283         \}
+00284     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a421bffe6f14c01bee64695e7b6a9745d}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a421bffe6f14c01bee64695e7b6a9745d}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!executer\+Requete@{executer\+Requete}}
+\index{executer\+Requete@{executer\+Requete}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{executer\+Requete()}{executerRequete()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+executer\+Requete (\begin{DoxyParamCaption}\item[{final String}]{requete }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+est\+Connecte()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_nouvelle_ruche_activity_ae97fec78fb0a2e1cc4610182bc71ea0d}{fr.\+campus.\+laurainc.\+honeybee.\+Nouvelle\+Ruche\+Activity.\+on\+Create()}.
+
+
+\begin{DoxyCode}
+00390     \{
+00391         \textcolor{keywordflow}{if}(!HoneyBee.BDD)
+00392             \textcolor{keywordflow}{return};
+00393 
+00394         \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{estConnecte}())
+00395         \{
+00396             \textcolor{comment}{// Seulement pour les requêtes UPDATE, INSERT ou DELETE}
+00397             \textcolor{keywordflow}{if}(!requete.contains(\textcolor{stringliteral}{"UPDATE"}) && !requete.contains(\textcolor{stringliteral}{"INSERT"}) && !requete.contains(\textcolor{stringliteral}{"DELETE"}))
+00398                 \textcolor{keywordflow}{return};
+00399 
+00400             \textcolor{comment}{// Exécute la requête dans un thread}
+00401             Thread requeteBDD = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} Runnable()
+00402             \{
+00403                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} run()
+00404                 \{
+00405                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}{mutex}.lock();
+00406                     \textcolor{keywordflow}{try}
+00407                     \{
+00408                         Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"executerRequete -> requete : "} + requete);
+00409                         Statement statement = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.createStatement();
+00410                         statement.executeUpdate(requete);
+00411                     \}
+00412                     \textcolor{keywordflow}{catch} (Exception e)
+00413                     \{
+00414                         e.printStackTrace();
+00415                         Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"executerRequete -> exception : "} + e.toString());
+00416                     \}
+00417                     \textcolor{keywordflow}{finally}
+00418                     \{
+00419                         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}{mutex}.unlock();
+00420                     \}
+00421                 \}
+00422             \});
+00423 
+00424             \textcolor{comment}{// Démarrage de l'exécution de la requête}
+00425             Log.v(\textcolor{stringliteral}{"BDD"}, \textcolor{stringliteral}{"Requete OK = "} + requete);
+00426             requeteBDD.start();
+00427         \}
+00428         \textcolor{keywordflow}{else}
+00429         \{
+00430             Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"Pas de connexion MySQL !"});
+00431         \}
+00432     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em activite} & Activity l\textquotesingle{}activité appelante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & String l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \\
+\hline
+{\em username} & String le nom d\textquotesingle{}utilisateur \\
+\hline
+{\em password} & String le mot de passe de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em activite} & Activity l\textquotesingle{}activité appelante \\
+\hline
+{\em url} & String l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \\
+\hline
+{\em username} & String le nom d\textquotesingle{}utilisateur \\
+\hline
+{\em password} & String le mot de passe de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+bdd}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity_aba2e570bbba3bf1be8487068d9c6c2da}{fr.\+campus.\+laurainc.\+honeybee.\+Main\+Activity.\+on\+Create()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_nouvelle_ruche_activity_ae97fec78fb0a2e1cc4610182bc71ea0d}{fr.\+campus.\+laurainc.\+honeybee.\+Nouvelle\+Ruche\+Activity.\+on\+Create()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a356a61d32b2d1fdac4e35c04f969fa00}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+read\+Resolve()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a56ec53516e4f94b4f5e42f083fa345db}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ae77451bd85101ed42644c2421cd2234f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+supprimer\+Ruche()}.
+
+
+\begin{DoxyCode}
+00042     \{
+00043         \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} == null)
+00044             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} = \textcolor{keyword}{new} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{BaseDeDonnees}();
+00045         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd};
+00046     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a1946bd458844214e84a5bc1327bbd174}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a1946bd458844214e84a5bc1327bbd174}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance (\begin{DoxyParamCaption}\item[{Activity}]{activite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+bdd}.
+
+
+\begin{DoxyCode}
+00055     \{
+00056         \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} == null)
+00057             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} = \textcolor{keyword}{new} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{BaseDeDonnees}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite});
+00058         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd};
+00059     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aca2ad0b53f5c21c6a16a7956646c195b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aca2ad0b53f5c21c6a16a7956646c195b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+bdd}.
+
+
+\begin{DoxyCode}
+00070     \{
+00071         \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} == null)
+00072             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} = \textcolor{keyword}{new} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{BaseDeDonnees}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password});
+00073         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd};
+00074     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a8dd37561ed70a74841590d9206248d9b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a8dd37561ed70a74841590d9206248d9b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{get\+Instance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static synchronized \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance (\begin{DoxyParamCaption}\item[{Activity}]{activite,  }\item[{String}]{url,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+bdd}.
+
+
+\begin{DoxyCode}
+00086     \{
+00087         \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} == null)
+00088             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd} = \textcolor{keyword}{new} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ac4d0c514f439b3a19dc35c159955373a}{BaseDeDonnees}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url}, 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password});
+00089         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}{bdd};
+00090     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a356a61d32b2d1fdac4e35c04f969fa00}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a356a61d32b2d1fdac4e35c04f969fa00}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!read\+Resolve@{read\+Resolve}}
+\index{read\+Resolve@{read\+Resolve}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{read\+Resolve()}{readResolve()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+read\+Resolve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} l\textquotesingle{}instance \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance()}.
+
+
+\begin{DoxyCode}
+00098     \{
+00099         \textcolor{keywordflow}{return} \hyperlink{class_base_de_donnees}{BaseDeDonnees}.\hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{getInstance}();
+00100     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a89357a1cc8a3648400df37a8bfe95958}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a89357a1cc8a3648400df37a8bfe95958}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!reconnecter@{reconnecter}}
+\index{reconnecter@{reconnecter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{reconnecter()}{reconnecter()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+reconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+boolean vrai si la connexion a réussi sinon faux 
+\end{DoxyReturn}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+connecter()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae022ff0b4923d637f8d392cb908aa252}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+deconnecter()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity_ae751b46f1881bda6b3b0e08025a9c044}{fr.\+campus.\+laurainc.\+honeybee.\+Main\+Activity.\+on\+Activity\+Result()}.
+
+
+\begin{DoxyCode}
+00227     \{
+00228         \textcolor{keywordflow}{if}(!HoneyBee.BDD)
+00229             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00230         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae022ff0b4923d637f8d392cb908aa252}{deconnecter}();
+00231         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a08564ea7dccde161d6eac4b8879401bb}{connecter}();
+00232     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a4d5b875376c84e702c60bb54cee58c3f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a4d5b875376c84e702c60bb54cee58c3f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!set\+Activite@{set\+Activite}}
+\index{set\+Activite@{set\+Activite}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{set\+Activite()}{setActivite()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+set\+Activite (\begin{DoxyParamCaption}\item[{Activity}]{activite }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em activite} & Activity l\textquotesingle{}activité appelante \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+activite}.
+
+
+\begin{DoxyCode}
+00182     \{
+00183         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}{activite};
+00184     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!set\+Parametres@{set\+Parametres}}
+\index{set\+Parametres@{set\+Parametres}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{set\+Parametres()}{setParametres()}}
+{\footnotesize\ttfamily Base\+De\+Donnees.\+set\+Parametres (\begin{DoxyParamCaption}\item[{String}]{url,  }\item[{String}]{username,  }\item[{String}]{password }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & String l\textquotesingle{}U\+RL pointant sur la base de données d\textquotesingle{}un serveur My\+S\+QL \\
+\hline
+{\em username} & String le nom d\textquotesingle{}utilisateur \\
+\hline
+{\em password} & String le mot de passe de l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+password}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+url}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+username}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity_ae751b46f1881bda6b3b0e08025a9c044}{fr.\+campus.\+laurainc.\+honeybee.\+Main\+Activity.\+on\+Activity\+Result()}.
+
+
+\begin{DoxyCode}
+00168     \{
+00169         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}{url};
+00170         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}{username};
+00171         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}{password};
+00172         \textcolor{comment}{// reconnexion}
+00173         \textcolor{comment}{//reconnecter();}
+00174     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!supprimer\+Ruche@{supprimer\+Ruche}}
+\index{supprimer\+Ruche@{supprimer\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{supprimer\+Ruche()}{supprimerRuche()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+supprimer\+Ruche (\begin{DoxyParamCaption}\item[{final int}]{id\+Ruche }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_honey_bee_abfb4f6cc1c8bb793c37ccb8408abc51c}{fr.\+campus.\+laurainc.\+honeybee.\+Honey\+Bee.\+B\+DD}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+est\+Connecte()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ae77451bd85101ed42644c2421cd2234f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+supprimer\+Ruche()}.
+
+
+\begin{DoxyCode}
+00434                                                   \{
+00435         \textcolor{keywordflow}{if} (!HoneyBee.BDD)
+00436             \textcolor{keywordflow}{return};
+00437 
+00438         \textcolor{keyword}{final} String requete = \textcolor{stringliteral}{"DELETE FROM Ruche WHERE idRuche='"} + idRuche + \textcolor{stringliteral}{"';"};
+00439         \textcolor{keywordflow}{if} (\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a735f54c2c183a595c9a9a5ba947491f5}{estConnecte}()) \{
+00440             Thread requeteBDD = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} Runnable() \{
+00441                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+00442 
+00443                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}{mutex}.lock();
+00444                     \textcolor{keywordflow}{try} \{
+00445                         Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"executerRequete -> requete : "} + requete);
+00446                         Statement statement = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}{connexion}.createStatement();
+00447                         statement.executeUpdate(requete);
+00448                     \} \textcolor{keywordflow}{catch} (Exception e) \{
+00449                         e.printStackTrace();
+00450                         Log.e(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"executerRequete -> exception : "} + e.toString());
+00451                     \} \textcolor{keywordflow}{finally} \{
+00452                         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}{mutex}.unlock();
+00453                     \}
+00454                 \}
+00455             \});
+00456 
+00457             Log.v(\textcolor{stringliteral}{"BDD"}, \textcolor{stringliteral}{"Requete OK = "} + requete);
+00458             requeteBDD.start();
+00459         \} \textcolor{keywordflow}{else} \{
+00460             Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}{TAG}, \textcolor{stringliteral}{"Pas de connexion MySQL !"});
+00461         \}
+00462     \}\}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_aad4fd29f29916bc4277fa16262d19431}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!activite@{activite}}
+\index{activite@{activite}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{activite}{activite}}
+{\footnotesize\ttfamily Activity fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+activite = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a3023d75b636efcfbb2c6b6ac5c702c42}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a4d5b875376c84e702c60bb54cee58c3f}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+set\+Activite()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a6afcd3f4c69f15afa0c675a848bf97a7}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!bdd@{bdd}}
+\index{bdd@{bdd}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+bdd = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a358899633f17b8cd00dd2c4cfdd40abe}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!connexion@{connexion}}
+\index{connexion@{connexion}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{connexion}{connexion}}
+{\footnotesize\ttfamily Connection fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+connexion = null\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7a99d3c585f2c507eb2c6c265a5bb1fe}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ade5d681bd0a29d84e0d069169b10a38b}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Choix\+Ch\+App\+I\+D()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ace10a52a470257f2b8f161fc3c7b9f15}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Historique\+Alertes()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1113f3b4a527a801fdf50350667fd212}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Id\+T\+T\+N()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aba0591cda391b907da41a0afeba4d59d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Liste\+Ruches()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a84de3c3af21b1cbeae2075e480acaabc}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Mesures\+Journalieres\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a94f815b44f0d5d8682833d6b6e783713}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Moyennes()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0dd6f285a11459c086adea6080bed282}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!mutex@{mutex}}
+\index{mutex@{mutex}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily final Lock fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+mutex = new Reentrant\+Lock(true)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7a99d3c585f2c507eb2c6c265a5bb1fe}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ade5d681bd0a29d84e0d069169b10a38b}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Choix\+Ch\+App\+I\+D()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ace10a52a470257f2b8f161fc3c7b9f15}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Historique\+Alertes()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1113f3b4a527a801fdf50350667fd212}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Id\+T\+T\+N()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aba0591cda391b907da41a0afeba4d59d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Liste\+Ruches()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a84de3c3af21b1cbeae2075e480acaabc}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Mesures\+Journalieres\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a94f815b44f0d5d8682833d6b6e783713}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Moyennes()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_af1bb604a666a7eee9edd93b6cafaf064}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!password@{password}}
+\index{password@{password}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+set\+Parametres()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ae800d867b3e423dd139e982736ab5587}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!T\+AG@{T\+AG}}
+\index{T\+AG@{T\+AG}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{T\+AG}{TAG}}
+{\footnotesize\ttfamily final String fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+T\+AG = \char`\"{}Base\+De\+Donnees\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_ad1d04b4da375002e91d8370b9d19918e}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!url@{url}}
+\index{url@{url}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+url\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+set\+Parametres()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7d1662e10f11f740155774b625ed1a87}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}!username@{username}}
+\index{username@{username}!fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees@{fr\+::campus\+::laurainc\+::honeybee\+::\+Base\+De\+Donnees}}
+\paragraph{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a2f6274017a47cc8f331c582f9a7ad6d1}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+Base\+De\+Donnees()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a0960cb9d71647e80e195a580f90cd0d6}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+set\+Parametres()}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_base_de_donnees_8java}{Base\+De\+Donnees.\+java}\end{DoxyCompactItemize}

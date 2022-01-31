@@ -1,0 +1,4 @@
+<map id="SimpleMail::MimeMessagePrivate" name="SimpleMail::MimeMessagePrivate">
+<area shape="rect" id="node2" href="$class_simple_mail_1_1_mime_part.html" title="{SimpleMail::MimePart\n|# d_ptr\l|+ MimePart()\l+ MimePart()\l+ ~MimePart()\l+ operator=()\l+ header()\l+ content()\l+ setContent()\l+ setHeader()\l+ addHeaderLine()\l+ setContentId()\let 13 de plus...\l# MimePart()\l# writeData()\l# d_func()\l# d_func()\l}" alt="" coords="5,5,156,288"/>
+<area shape="rect" id="node3" href="$class_simple_mail_1_1_email_address.html" title="{SimpleMail::EmailAddress\n|# d_ptr\l|+ EmailAddress()\l+ EmailAddress()\l+ EmailAddress()\l+ ~EmailAddress()\l+ operator=()\l+ name()\l+ setName()\l+ address()\l+ setAddress()\l&#45; d_func()\l&#45; d_func()\l}" alt="" coords="180,35,355,259"/>
+</map>

@@ -1,0 +1,9 @@
+class InfosEnsoleillement
+!!!131074.cpp!!!	getEnsoleillement() : double
+    return ensoleillement;
+!!!131202.cpp!!!	setEnsoleillement(in ensoleillement : double) : void
+    this->ensoleillement = ensoleillement;
+!!!131330.cpp!!!	getHorodatageEnsoleillement() : QString
+    return horodatageEnsoleillement;
+!!!131458.cpp!!!	setHorodatageEnsoleillement(in horodatageEnsoleillement : QString) : void
+    this->horodatageEnsoleillement = horodatageEnsoleillement;

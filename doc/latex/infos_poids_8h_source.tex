@@ -1,0 +1,36 @@
+\hypertarget{infos_poids_8h_source}{}\subsection{infos\+Poids.\+h}
+\label{infos_poids_8h_source}\index{infos\+Poids.\+h@{infos\+Poids.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSPOIDS\_H}
+00002 \textcolor{preprocessor}{#define INFOSPOIDS\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 
+\Hypertarget{infos_poids_8h_source_l00031}\hyperlink{class_infos_poids}{00031} \textcolor{keyword}{class }\hyperlink{class_infos_poids}{InfosPoids} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00032 \{
+00033     Q\_OBJECT
+00034 
+00035 private :
+\Hypertarget{infos_poids_8h_source_l00036}\hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{00036}     \textcolor{keywordtype}{double} \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids};
+\Hypertarget{infos_poids_8h_source_l00037}\hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{00037}     QString \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids};
+00038 
+00039 \textcolor{keyword}{public}:
+00040      \hyperlink{class_infos_poids_a25a9086e75ce6c7e8391c3908c9324c0}{InfosPoids}(\hyperlink{class_q_object}{QObject} *parent);
+00041      \hyperlink{class_infos_poids_a14038b5639c79ff6558c91aec12013d1}{~InfosPoids}();
+00042 
+00043      \textcolor{keywordtype}{double} \hyperlink{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}{getPoids}();
+00044      \textcolor{keywordtype}{void} \hyperlink{class_infos_poids_a23bb9c5939d0ee5cab0ecf821cdc6779}{setPoids}(\textcolor{keywordtype}{double} poids);
+00045      QString \hyperlink{class_infos_poids_a9bd9ffa1a5fcd75a8d75bd7330727620}{getHorodatagePoids}();
+00046      \textcolor{keywordtype}{void} \hyperlink{class_infos_poids_add0957f341ade104a4521ead7562dff8}{setHorodatagePoids}(QString horodatagePoids);
+00047 
+00048 signals:
+00049     \textcolor{keywordtype}{void} \hyperlink{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}{poidsEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} poids,QString);
+00050 
+00051 \textcolor{keyword}{public} slots:
+00052     \textcolor{keywordtype}{void} \hyperlink{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}{traiterNouveauPoids}(QString nouveauPoids, QString horodatagePoids);
+00053 \};
+00054 
+00055 \textcolor{preprocessor}{#endif // INFOSPOIDS\_H}
+\end{DoxyCode}

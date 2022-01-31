@@ -1,0 +1,58 @@
+\hypertarget{class_simple_mail_1_1_mime_inline_file}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Mime\+Inline\+File}
+\label{class_simple_mail_1_1_mime_inline_file}\index{Simple\+Mail\+::\+Mime\+Inline\+File@{Simple\+Mail\+::\+Mime\+Inline\+File}}
+
+
+{\ttfamily \#include $<$mimeinlinefile.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Mime\+Inline\+File\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_simple_mail_1_1_mime_inline_file__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_inline_file_a83ce5e16e7572383274dc1ec3ec47859}{Mime\+Inline\+File} (Q\+File $\ast$f)
+\item 
+\hyperlink{class_simple_mail_1_1_mime_inline_file_afe834d7017f7e60da5e69d4d108d15c1}{$\sim$\+Mime\+Inline\+File} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Membres hérités additionnels}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_inline_file_a83ce5e16e7572383274dc1ec3ec47859}\label{class_simple_mail_1_1_mime_inline_file_a83ce5e16e7572383274dc1ec3ec47859}} 
+\index{Simple\+Mail\+::\+Mime\+Inline\+File@{Simple\+Mail\+::\+Mime\+Inline\+File}!Mime\+Inline\+File@{Mime\+Inline\+File}}
+\index{Mime\+Inline\+File@{Mime\+Inline\+File}!Simple\+Mail\+::\+Mime\+Inline\+File@{Simple\+Mail\+::\+Mime\+Inline\+File}}
+\paragraph{\texorpdfstring{Mime\+Inline\+File()}{MimeInlineFile()}}
+{\footnotesize\ttfamily Mime\+Inline\+File\+::\+Mime\+Inline\+File (\begin{DoxyParamCaption}\item[{Q\+File $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00023                                        : \hyperlink{class_simple_mail_1_1_mime_file_a813f54f8423832b33fac1a85820bdb4a}{MimeFile}(f)
+00024 \{
+00025     Q\_D(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart});
+00026     d->header.append(QByteArrayLiteral(\textcolor{stringliteral}{"Content-Disposition: inline\(\backslash\)r\(\backslash\)n"}));
+00027 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_inline_file_afe834d7017f7e60da5e69d4d108d15c1}\label{class_simple_mail_1_1_mime_inline_file_afe834d7017f7e60da5e69d4d108d15c1}} 
+\index{Simple\+Mail\+::\+Mime\+Inline\+File@{Simple\+Mail\+::\+Mime\+Inline\+File}!````~Mime\+Inline\+File@{$\sim$\+Mime\+Inline\+File}}
+\index{````~Mime\+Inline\+File@{$\sim$\+Mime\+Inline\+File}!Simple\+Mail\+::\+Mime\+Inline\+File@{Simple\+Mail\+::\+Mime\+Inline\+File}}
+\paragraph{\texorpdfstring{$\sim$\+Mime\+Inline\+File()}{~MimeInlineFile()}}
+{\footnotesize\ttfamily Mime\+Inline\+File\+::$\sim$\+Mime\+Inline\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00030 \{
+00031 
+00032 \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mimeinlinefile_8h}{mimeinlinefile.\+h}\item 
+\hyperlink{mimeinlinefile_8cpp}{mimeinlinefile.\+cpp}\end{DoxyCompactItemize}

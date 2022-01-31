@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t: Référence de la classe Communication</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Connecteurs publics</a> &#124;
+<a href="#signals">Signaux</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="class_communication-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Communication</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>La classe <a class="el" href="class_communication.html" title="La classe Communication. ">Communication</a>.  
+ <a href="class_communication.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="communication_8h_source.html">communication.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Communication:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_communication__coll__graph.png" border="0" usemap="#_communication_coll__map" alt="Collaboration graph"/></div>
+<map name="_communication_coll__map" id="_communication_coll__map">
+<area shape="rect" id="node2" href="class_q_object.html" title="{QObject\n||}" alt="" coords="51,5,122,83"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Connecteurs publics</h2></td></tr>
+<tr class="memitem:af71587fb1ee9b7460345b7c12372a1eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN</a> ()</td></tr>
+<tr class="memdesc:af71587fb1ee9b7460345b7c12372a1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant la connection au serveur ttn  <a href="#af71587fb1ee9b7460345b7c12372a1eb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af71587fb1ee9b7460345b7c12372a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f5a47c2fc7dbca198bfab2c0ac65bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#ab0f5a47c2fc7dbca198bfab2c0ac65bb">deconnecteTTN</a> ()</td></tr>
+<tr class="memdesc:ab0f5a47c2fc7dbca198bfab2c0ac65bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant la deconnection au serveur ttn  <a href="#ab0f5a47c2fc7dbca198bfab2c0ac65bb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab0f5a47c2fc7dbca198bfab2c0ac65bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0c0ce96c86cbb3e59529b2334819f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a9a0c0ce96c86cbb3e59529b2334819f3">receptionner</a> (const QByteArray &amp;message, const QMqttTopicName &amp;topic)</td></tr>
+<tr class="memdesc:a9a0c0ce96c86cbb3e59529b2334819f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant la reception des donnée grace au protocole mqtt  <a href="#a9a0c0ce96c86cbb3e59529b2334819f3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9a0c0ce96c86cbb3e59529b2334819f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2921a3a80cdcb10f7f63c3bd779d7129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a2921a3a80cdcb10f7f63c3bd779d7129">reponsePingTTN</a> ()</td></tr>
+<tr class="memdesc:a2921a3a80cdcb10f7f63c3bd779d7129"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant d'effectuer un ping vers le serveur ttn  <a href="#a2921a3a80cdcb10f7f63c3bd779d7129">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2921a3a80cdcb10f7f63c3bd779d7129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af249c498d61b4288b9e7d388baf81fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#af249c498d61b4288b9e7d388baf81fc2">changementEtatTTN</a> ()</td></tr>
+<tr class="memdesc:af249c498d61b4288b9e7d388baf81fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant de recevoir l'etat du serveur ttn  <a href="#af249c498d61b4288b9e7d388baf81fc2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af249c498d61b4288b9e7d388baf81fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a84ffd9317d0e4e27a6633cef43b64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#ae1a84ffd9317d0e4e27a6633cef43b64">erreurClientTTN</a> ()</td></tr>
+<tr class="memdesc:ae1a84ffd9317d0e4e27a6633cef43b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">slot permetant de recevoir les erreur rencontré lors de la connection au serveur ttn  <a href="#ae1a84ffd9317d0e4e27a6633cef43b64">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae1a84ffd9317d0e4e27a6633cef43b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signaux</h2></td></tr>
+<tr class="memitem:aa6100d6b2addece57f3e74c1140a3179"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">etatClientConnexion</a> (bool connexion)</td></tr>
+<tr class="separator:aa6100d6b2addece57f3e74c1140a3179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83865ed4092e263f42669dff0582b7e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a83865ed4092e263f42669dff0582b7e1">messageRecu</a> (const QByteArray &amp;message, const QMqttTopicName &amp;topic)</td></tr>
+<tr class="separator:a83865ed4092e263f42669dff0582b7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a7376830f5598b7e3c0eb4434a8a8766e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication</a> (QStringList <a class="el" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>, <a class="el" href="class_q_object.html">QObject</a> *parent=0)</td></tr>
+<tr class="memdesc:a7376830f5598b7e3c0eb4434a8a8766e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="class_communication.html" title="La classe Communication. ">Communication</a>.  <a href="#a7376830f5598b7e3c0eb4434a8a8766e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7376830f5598b7e3c0eb4434a8a8766e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ba08ce908d45251e28e4c1db94e6f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a75ba08ce908d45251e28e4c1db94e6f4">~Communication</a> ()</td></tr>
+<tr class="memdesc:a75ba08ce908d45251e28e4c1db94e6f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructeur de la classse <a class="el" href="class_communication.html" title="La classe Communication. ">Communication</a>  <a href="#a75ba08ce908d45251e28e4c1db94e6f4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a75ba08ce908d45251e28e4c1db94e6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadec726c44e719fa587bd385533eb559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#aadec726c44e719fa587bd385533eb559">connecterTTN</a> ()</td></tr>
+<tr class="separator:aadec726c44e719fa587bd385533eb559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0cc5c992a2b218a64f57429eea001b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a8d0cc5c992a2b218a64f57429eea001b">deconnecterTTN</a> ()</td></tr>
+<tr class="separator:a8d0cc5c992a2b218a64f57429eea001b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:a59ae01a54d6c3fde6242c46d802b954b"><td class="memItemLeft" align="right" valign="top">QMqttClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a></td></tr>
+<tr class="separator:a59ae01a54d6c3fde6242c46d802b954b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29011664fbb15b9fb41ce37b70a694f"><td class="memItemLeft" align="right" valign="top">QMqttSubscription *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a></td></tr>
+<tr class="separator:af29011664fbb15b9fb41ce37b70a694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7ff98c422c16085e7dc422f2ae51c5"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a></td></tr>
+<tr class="separator:a5b7ff98c422c16085e7dc422f2ae51c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d536b64ee7a5373047c292477d391d5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a></td></tr>
+<tr class="separator:a7d536b64ee7a5373047c292477d391d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7a5df723bc632b957b4358bef8605e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="parametres_8h.html#a0fe68caa1e9147addc96657cc822b937">PortsTTN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communication.html#aba7a5df723bc632b957b4358bef8605e">portsTTn</a></td></tr>
+<tr class="separator:aba7a5df723bc632b957b4358bef8605e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>Florentin Mellah, Enzo Rossi</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a7376830f5598b7e3c0eb4434a8a8766e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7376830f5598b7e3c0eb4434a8a8766e">&#9670;&nbsp;</a></span>Communication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Communication::Communication </td>
+          <td>(</td>
+          <td class="paramtype">QStringList&#160;</td>
+          <td class="paramname"><em>donneesRucheTTN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_q_object.html">QObject</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td><a class="el" href="class_q_object.html">QObject</a> Adresse de l'objet Qt parent (0 = fenêtre principale)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Définition des attributs client , abonement et nomTopic a 0 (=null) </p>
+
+<p class="reference">Références <a class="el" href="class_communication.html#af249c498d61b4288b9e7d388baf81fc2">changementEtatTTN()</a>, <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, <a class="el" href="class_communication.html#aadec726c44e719fa587bd385533eb559">connecterTTN()</a>, <a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN()</a>, <a class="el" href="class_communication.html#ab0f5a47c2fc7dbca198bfab2c0ac65bb">deconnecteTTN()</a>, <a class="el" href="class_communication.html#ae1a84ffd9317d0e4e27a6633cef43b64">erreurClientTTN()</a>, <a class="el" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a>, <a class="el" href="class_communication.html#a9a0c0ce96c86cbb3e59529b2334819f3">receptionner()</a>, et <a class="el" href="class_communication.html#a2921a3a80cdcb10f7f63c3bd779d7129">reponsePingTTN()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                         : <a class="code" href="class_q_object.html">QObject</a>(parent), <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>(0), <a class="code" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a>(0), <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>(<a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a> = <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(6) + <span class="stringliteral">&quot;/devices/&quot;</span> + <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(2) + <span class="stringliteral">&quot;/up&quot;</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;donneesRucheTTN&quot;</span> &lt;&lt; <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>  &lt;&lt; <span class="stringliteral">&quot;nomTopic&quot;</span> &lt;&lt; <a class="code" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a> = <span class="keyword">new</span> QMqttClient();    </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(stateChanged(ClientState)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#af249c498d61b4288b9e7d388baf81fc2">changementEtatTTN</a>()));</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(errorChanged(ClientError)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#ae1a84ffd9317d0e4e27a6633cef43b64">erreurClientTTN</a>()));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(connected()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN</a>()));</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(disconnected()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#ab0f5a47c2fc7dbca198bfab2c0ac65bb">deconnecteTTN</a>()));</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(messageReceived(<span class="keyword">const</span> QByteArray &amp;, <span class="keyword">const</span> QMqttTopicName &amp;)), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#a9a0c0ce96c86cbb3e59529b2334819f3">receptionner</a>(<span class="keyword">const</span> QByteArray &amp;, <span class="keyword">const</span> QMqttTopicName &amp;)));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    connect(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, SIGNAL(pingResponseReceived()), <span class="keyword">this</span>, SLOT(<a class="code" href="class_communication.html#a2921a3a80cdcb10f7f63c3bd779d7129">reponsePingTTN</a>()));</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_communication.html#aadec726c44e719fa587bd385533eb559">connecterTTN</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="ttc" id="class_communication_html_af249c498d61b4288b9e7d388baf81fc2"><div class="ttname"><a href="class_communication.html#af249c498d61b4288b9e7d388baf81fc2">Communication::changementEtatTTN</a></div><div class="ttdeci">void changementEtatTTN()</div><div class="ttdoc">slot permetant de recevoir l&amp;#39;etat du serveur ttn </div><div class="ttdef"><b>Definition:</b> communication.cpp:125</div></div>
+<div class="ttc" id="class_communication_html_a9a0c0ce96c86cbb3e59529b2334819f3"><div class="ttname"><a href="class_communication.html#a9a0c0ce96c86cbb3e59529b2334819f3">Communication::receptionner</a></div><div class="ttdeci">void receptionner(const QByteArray &amp;message, const QMqttTopicName &amp;topic)</div><div class="ttdoc">slot permetant la reception des donnée grace au protocole mqtt </div><div class="ttdef"><b>Definition:</b> communication.cpp:103</div></div>
+<div class="ttc" id="class_communication_html_af71587fb1ee9b7460345b7c12372a1eb"><div class="ttname"><a href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">Communication::connecteTTN</a></div><div class="ttdeci">void connecteTTN()</div><div class="ttdoc">slot permetant la connection au serveur ttn </div><div class="ttdef"><b>Definition:</b> communication.cpp:71</div></div>
+<div class="ttc" id="class_communication_html_ab0f5a47c2fc7dbca198bfab2c0ac65bb"><div class="ttname"><a href="class_communication.html#ab0f5a47c2fc7dbca198bfab2c0ac65bb">Communication::deconnecteTTN</a></div><div class="ttdeci">void deconnecteTTN()</div><div class="ttdoc">slot permetant la deconnection au serveur ttn </div><div class="ttdef"><b>Definition:</b> communication.cpp:89</div></div>
+<div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+<div class="ttc" id="class_communication_html_aadec726c44e719fa587bd385533eb559"><div class="ttname"><a href="class_communication.html#aadec726c44e719fa587bd385533eb559">Communication::connecterTTN</a></div><div class="ttdeci">void connecterTTN()</div><div class="ttdef"><b>Definition:</b> communication.cpp:52</div></div>
+<div class="ttc" id="class_communication_html_a2921a3a80cdcb10f7f63c3bd779d7129"><div class="ttname"><a href="class_communication.html#a2921a3a80cdcb10f7f63c3bd779d7129">Communication::reponsePingTTN</a></div><div class="ttdeci">void reponsePingTTN()</div><div class="ttdoc">slot permetant d&amp;#39;effectuer un ping vers le serveur ttn </div><div class="ttdef"><b>Definition:</b> communication.cpp:114</div></div>
+<div class="ttc" id="class_communication_html_af29011664fbb15b9fb41ce37b70a694f"><div class="ttname"><a href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">Communication::abonnement</a></div><div class="ttdeci">QMqttSubscription * abonnement</div><div class="ttdef"><b>Definition:</b> communication.h:45</div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_communication_html_a5b7ff98c422c16085e7dc422f2ae51c5"><div class="ttname"><a href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">Communication::donneesRucheTTN</a></div><div class="ttdeci">QStringList donneesRucheTTN</div><div class="ttdef"><b>Definition:</b> communication.h:46</div></div>
+<div class="ttc" id="class_communication_html_ae1a84ffd9317d0e4e27a6633cef43b64"><div class="ttname"><a href="class_communication.html#ae1a84ffd9317d0e4e27a6633cef43b64">Communication::erreurClientTTN</a></div><div class="ttdeci">void erreurClientTTN()</div><div class="ttdoc">slot permetant de recevoir les erreur rencontré lors de la connection au serveur ttn ...</div><div class="ttdef"><b>Definition:</b> communication.cpp:143</div></div>
+<div class="ttc" id="class_communication_html_a7d536b64ee7a5373047c292477d391d5"><div class="ttname"><a href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">Communication::nomTopic</a></div><div class="ttdeci">QString nomTopic</div><div class="ttdef"><b>Definition:</b> communication.h:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a75ba08ce908d45251e28e4c1db94e6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ba08ce908d45251e28e4c1db94e6f4">&#9670;&nbsp;</a></span>~Communication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Communication::~Communication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a>, <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, et <a class="el" href="class_communication.html#a8d0cc5c992a2b218a64f57429eea001b">deconnecterTTN()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_communication.html#a8d0cc5c992a2b218a64f57429eea001b">deconnecterTTN</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div><div class="ttc" id="class_communication_html_a8d0cc5c992a2b218a64f57429eea001b"><div class="ttname"><a href="class_communication.html#a8d0cc5c992a2b218a64f57429eea001b">Communication::deconnecterTTN</a></div><div class="ttdeci">void deconnecterTTN()</div><div class="ttdef"><b>Definition:</b> communication.cpp:62</div></div>
+<div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+<div class="ttc" id="class_communication_html_af29011664fbb15b9fb41ce37b70a694f"><div class="ttname"><a href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">Communication::abonnement</a></div><div class="ttdeci">QMqttSubscription * abonnement</div><div class="ttdef"><b>Definition:</b> communication.h:45</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="af249c498d61b4288b9e7d388baf81fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af249c498d61b4288b9e7d388baf81fc2">&#9670;&nbsp;</a></span>changementEtatTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::changementEtatTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Pour le debug</span></div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    QString message;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">switch</span>(<a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;state())</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">case</span> 0: message = <span class="stringliteral">&quot;Déconnecté&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">case</span> 1: message = <span class="stringliteral">&quot;En cours de connexion&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">case</span> 2: message = <span class="stringliteral">&quot;Connecté&quot;</span>; <span class="keywordflow">break</span>;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;client MQTT&quot;</span> &lt;&lt; message &lt;&lt; <span class="stringliteral">&quot;state=&quot;</span> &lt;&lt; <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;state();</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div><div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aadec726c44e719fa587bd385533eb559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadec726c44e719fa587bd385533eb559">&#9670;&nbsp;</a></span>connecterTTN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::connecterTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, et <a class="el" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(4) &lt;&lt; <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(5).toInt()  &lt;&lt; <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(6) &lt;&lt; <a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(7);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;setHostname(<a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(4));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;setPort(<a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(5).toInt());</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;setUsername(<a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(6));</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;setPassword(<a class="code" href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">donneesRucheTTN</a>.at(7));</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;connectToHost();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+<div class="ttc" id="class_communication_html_a5b7ff98c422c16085e7dc422f2ae51c5"><div class="ttname"><a href="class_communication.html#a5b7ff98c422c16085e7dc422f2ae51c5">Communication::donneesRucheTTN</a></div><div class="ttdeci">QStringList donneesRucheTTN</div><div class="ttdef"><b>Definition:</b> communication.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af71587fb1ee9b7460345b7c12372a1eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71587fb1ee9b7460345b7c12372a1eb">&#9670;&nbsp;</a></span>connecteTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::connecteTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a>, <a class="el" href="parametres_8h.html#ace364d1ce44aa9f79bcff6e3752c4a5f">APP_TITRE</a>, <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>, <a class="el" href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">etatClientConnexion()</a>, et <a class="el" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <a class="code" href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">nomTopic</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Le client est maintenant connecté</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    emit <a class="code" href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">etatClientConnexion</a>(<span class="keyword">true</span>); <span class="comment">// pour l&#39;IHM</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Souscription à un topic :</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a> = <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;subscribe(nomTopic);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">abonnement</a>)</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;Impossible de s&#39;abonner au broker TTN !&quot;</span>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        QMessageBox::critical(0, QString::fromUtf8(<a class="code" href="parametres_8h.html#ace364d1ce44aa9f79bcff6e3752c4a5f">APP_TITRE</a>), QString::fromUtf8(<span class="stringliteral">&quot;Impossible de s&#39;abonner au broker The Things Network!&quot;</span>));</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div><div class="ttc" id="parametres_8h_html_ace364d1ce44aa9f79bcff6e3752c4a5f"><div class="ttname"><a href="parametres_8h.html#ace364d1ce44aa9f79bcff6e3752c4a5f">APP_TITRE</a></div><div class="ttdeci">#define APP_TITRE</div><div class="ttdef"><b>Definition:</b> parametres.h:17</div></div>
+<div class="ttc" id="class_communication_html_aa6100d6b2addece57f3e74c1140a3179"><div class="ttname"><a href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">Communication::etatClientConnexion</a></div><div class="ttdeci">void etatClientConnexion(bool connexion)</div></div>
+<div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+<div class="ttc" id="class_communication_html_af29011664fbb15b9fb41ce37b70a694f"><div class="ttname"><a href="class_communication.html#af29011664fbb15b9fb41ce37b70a694f">Communication::abonnement</a></div><div class="ttdeci">QMqttSubscription * abonnement</div><div class="ttdef"><b>Definition:</b> communication.h:45</div></div>
+<div class="ttc" id="class_communication_html_a7d536b64ee7a5373047c292477d391d5"><div class="ttname"><a href="class_communication.html#a7d536b64ee7a5373047c292477d391d5">Communication::nomTopic</a></div><div class="ttdeci">QString nomTopic</div><div class="ttdef"><b>Definition:</b> communication.h:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8d0cc5c992a2b218a64f57429eea001b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d0cc5c992a2b218a64f57429eea001b">&#9670;&nbsp;</a></span>deconnecterTTN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::deconnecterTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a75ba08ce908d45251e28e4c1db94e6f4">~Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;disconnectFromHost();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab0f5a47c2fc7dbca198bfab2c0ac65bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f5a47c2fc7dbca198bfab2c0ac65bb">&#9670;&nbsp;</a></span>deconnecteTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::deconnecteTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">etatClientConnexion()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Le client est maintenant déconnecté</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    emit <a class="code" href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">etatClientConnexion</a>(<span class="keyword">false</span>); <span class="comment">// pour l&#39;IHM</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div><div class="ttc" id="class_communication_html_aa6100d6b2addece57f3e74c1140a3179"><div class="ttname"><a href="class_communication.html#aa6100d6b2addece57f3e74c1140a3179">Communication::etatClientConnexion</a></div><div class="ttdeci">void etatClientConnexion(bool connexion)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae1a84ffd9317d0e4e27a6633cef43b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a84ffd9317d0e4e27a6633cef43b64">&#9670;&nbsp;</a></span>erreurClientTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::erreurClientTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">A faire:</a></b></dt><dd>Faire une boîte de dialogue d'information sur l'erreur rencontrée </dd></dl>
+
+<p class="reference">Références <a class="el" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="comment">/*QMqttClient::NoError                0 No error occurred.</span></div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">        QMqttClient::InvalidProtocolVersion 1   The broker does not accept a connection using the specified protocol version.</span></div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">        QMqttClient::IdRejected             2   The client ID is malformed. This might be related to its length.</span></div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">        QMqttClient::ServerUnavailable      3   The network connection has been established, but the service is unavailable on the broker side.</span></div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">        QMqttClient::BadUsernameOrPassword  4   The data in the username or password is malformed.</span></div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">        QMqttClient::NotAuthorized          5   The client is not authorized to connect.</span></div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">        QMqttClient::TransportInvalid       256 The underlying transport caused an error. For example, the connection might have been interrupted unexpectedly.</span></div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">        QMqttClient::ProtocolViolation      257 The client encountered a protocol violation, and therefore closed the connection.</span></div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">        QMqttClient::UnknownError           258 An unknown error occurred.</span></div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">        QMqttClient::Mqtt5SpecificError     259 The error is related to MQTT protocol level 5. A reason code might provide more details.*/</span></div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO &lt;&lt; <span class="stringliteral">&quot;code erreur&quot;</span> &lt;&lt; <a class="code" href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">client</a>-&gt;error();</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div><div class="ttc" id="class_communication_html_a59ae01a54d6c3fde6242c46d802b954b"><div class="ttname"><a href="class_communication.html#a59ae01a54d6c3fde6242c46d802b954b">Communication::client</a></div><div class="ttdeci">QMqttClient * client</div><div class="ttdef"><b>Definition:</b> communication.h:44</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa6100d6b2addece57f3e74c1140a3179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6100d6b2addece57f3e74c1140a3179">&#9670;&nbsp;</a></span>etatClientConnexion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::etatClientConnexion </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>connexion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN()</a>, et <a class="el" href="class_communication.html#ab0f5a47c2fc7dbca198bfab2c0ac65bb">deconnecteTTN()</a>.</p>
+
+</div>
+</div>
+<a id="a83865ed4092e263f42669dff0582b7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83865ed4092e263f42669dff0582b7e1">&#9670;&nbsp;</a></span>messageRecu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::messageRecu </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QMqttTopicName &amp;&#160;</td>
+          <td class="paramname"><em>topic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a9a0c0ce96c86cbb3e59529b2334819f3">receptionner()</a>.</p>
+
+</div>
+</div>
+<a id="a9a0c0ce96c86cbb3e59529b2334819f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a0c0ce96c86cbb3e59529b2334819f3">&#9670;&nbsp;</a></span>receptionner</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::receptionner </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QMqttTopicName &amp;&#160;</td>
+          <td class="paramname"><em>topic</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>correspondant au données recu </td></tr>
+    <tr><td class="paramname">topic</td><td>correspondant au nom de topic </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Références <a class="el" href="class_communication.html#a83865ed4092e263f42669dff0582b7e1">messageRecu()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//qDebug() &lt;&lt; Q_FUNC_INFO &lt;&lt; topic;</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    emit <a class="code" href="class_communication.html#a83865ed4092e263f42669dff0582b7e1">messageRecu</a>(message, topic);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div><div class="ttc" id="class_communication_html_a83865ed4092e263f42669dff0582b7e1"><div class="ttname"><a href="class_communication.html#a83865ed4092e263f42669dff0582b7e1">Communication::messageRecu</a></div><div class="ttdeci">void messageRecu(const QByteArray &amp;message, const QMqttTopicName &amp;topic)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2921a3a80cdcb10f7f63c3bd779d7129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2921a3a80cdcb10f7f63c3bd779d7129">&#9670;&nbsp;</a></span>reponsePingTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communication::reponsePingTTN </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// Pour les tests (requestPing())</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    qDebug()&lt;&lt; Q_FUNC_INFO;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="af29011664fbb15b9fb41ce37b70a694f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29011664fbb15b9fb41ce37b70a694f">&#9670;&nbsp;</a></span>abonnement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMqttSubscription* Communication::abonnement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN()</a>, et <a class="el" href="class_communication.html#a75ba08ce908d45251e28e4c1db94e6f4">~Communication()</a>.</p>
+
+</div>
+</div>
+<a id="a59ae01a54d6c3fde6242c46d802b954b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ae01a54d6c3fde6242c46d802b954b">&#9670;&nbsp;</a></span>client</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMqttClient* Communication::client</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#af249c498d61b4288b9e7d388baf81fc2">changementEtatTTN()</a>, <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>, <a class="el" href="class_communication.html#aadec726c44e719fa587bd385533eb559">connecterTTN()</a>, <a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN()</a>, <a class="el" href="class_communication.html#a8d0cc5c992a2b218a64f57429eea001b">deconnecterTTN()</a>, <a class="el" href="class_communication.html#ae1a84ffd9317d0e4e27a6633cef43b64">erreurClientTTN()</a>, et <a class="el" href="class_communication.html#a75ba08ce908d45251e28e4c1db94e6f4">~Communication()</a>.</p>
+
+</div>
+</div>
+<a id="a5b7ff98c422c16085e7dc422f2ae51c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7ff98c422c16085e7dc422f2ae51c5">&#9670;&nbsp;</a></span>donneesRucheTTN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList Communication::donneesRucheTTN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#aadec726c44e719fa587bd385533eb559">connecterTTN()</a>.</p>
+
+</div>
+</div>
+<a id="a7d536b64ee7a5373047c292477d391d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d536b64ee7a5373047c292477d391d5">&#9670;&nbsp;</a></span>nomTopic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Communication::nomTopic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_communication.html#a7376830f5598b7e3c0eb4434a8a8766e">Communication()</a>, et <a class="el" href="class_communication.html#af71587fb1ee9b7460345b7c12372a1eb">connecteTTN()</a>.</p>
+
+</div>
+</div>
+<a id="aba7a5df723bc632b957b4358bef8605e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7a5df723bc632b957b4358bef8605e">&#9670;&nbsp;</a></span>portsTTn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="parametres_8h.html#a0fe68caa1e9147addc96657cc822b937">PortsTTN</a> Communication::portsTTn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="communication_8h_source.html">communication.h</a></li>
+<li><a class="el" href="communication_8cpp.html">communication.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 18:57:00 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

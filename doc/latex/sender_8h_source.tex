@@ -1,0 +1,152 @@
+\hypertarget{sender_8h_source}{}\subsection{sender.\+h}
+\label{sender_8h_source}\index{sender.\+h@{sender.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{  Copyright (c) 2011-2012 - Tőkés Attila}
+00003 \textcolor{comment}{  Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00004 \textcolor{comment}{}
+00005 \textcolor{comment}{  This library is free software; you can redistribute it and/or}
+00006 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}
+00007 \textcolor{comment}{  License as published by the Free Software Foundation; either}
+00008 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}
+00009 \textcolor{comment}{}
+00010 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}
+00011 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00012 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}
+00013 \textcolor{comment}{  Lesser General Public License for more details.}
+00014 \textcolor{comment}{}
+00015 \textcolor{comment}{  See the LICENSE file for more details.}
+00016 \textcolor{comment}{*/}
+00017 
+00018 \textcolor{preprocessor}{#ifndef SIMPLEMAIL\_SENDER\_H}
+00019 \textcolor{preprocessor}{#define SIMPLEMAIL\_SENDER\_H}
+00020 
+00021 \textcolor{preprocessor}{#include <QObject>}
+00022 \textcolor{preprocessor}{#include <QtNetwork/QSslSocket>}
+00023 
+00024 \textcolor{preprocessor}{#include "\hyperlink{mimemessage_8h}{mimemessage.h}"}
+00025 \textcolor{preprocessor}{#include "\hyperlink{smtpexports_8h}{smtpexports.h}"}
+00026 
+00027 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00028 
+00029 \textcolor{keyword}{class }SenderPrivate;
+\Hypertarget{sender_8h_source_l00030}\hyperlink{class_simple_mail_1_1_sender}{00030} \textcolor{keyword}{class }\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{SMTP\_EXPORT} \hyperlink{class_simple_mail_1_1_sender}{Sender} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00031 \{
+00032     Q\_OBJECT
+00033     Q\_DECLARE\_PRIVATE(\hyperlink{class_simple_mail_1_1_sender}{Sender})
+00034 \textcolor{keyword}{public}:
+\Hypertarget{sender_8h_source_l00035}\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{00035}     \textcolor{keyword}{enum} \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{AuthMethod}
+00036     \{
+\Hypertarget{sender_8h_source_l00037}\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{00037}         \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{AuthNone},
+\Hypertarget{sender_8h_source_l00038}\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{00038}         \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{AuthPlain},
+\Hypertarget{sender_8h_source_l00039}\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}{00039}         AuthLogin
+00040     \};
+00041     Q\_ENUM(\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{AuthMethod})
+00042 
+\Hypertarget{sender_8h_source_l00043}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{00043}     enum \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{SmtpError}
+00044     \{
+\Hypertarget{sender_8h_source_l00045}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{00045}         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{ConnectionTimeoutError},
+\Hypertarget{sender_8h_source_l00046}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{00046}         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{ResponseTimeoutError},
+\Hypertarget{sender_8h_source_l00047}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{00047}         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{SendDataTimeoutError},
+\Hypertarget{sender_8h_source_l00048}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{00048}         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{AuthenticationFailedError},
+\Hypertarget{sender_8h_source_l00049}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{00049}         \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{ServerError},    \textcolor{comment}{// 4xx smtp error}
+\Hypertarget{sender_8h_source_l00050}\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}{00050}         ClientError     \textcolor{comment}{// 5xx smtp error}
+00051     \};
+00052     Q\_ENUM(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{SmtpError})
+00053 
+\Hypertarget{sender_8h_source_l00054}\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{00054}     enum \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{ConnectionType}
+00055     \{
+\Hypertarget{sender_8h_source_l00056}\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{00056}         \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{TcpConnection},
+\Hypertarget{sender_8h_source_l00057}\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{00057}         \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{SslConnection},
+\Hypertarget{sender_8h_source_l00058}\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{00058}         TlsConnection       \textcolor{comment}{// STARTTLS}
+00059     \};
+00060     Q\_ENUM(\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{ConnectionType})
+00061 
+\Hypertarget{sender_8h_source_l00062}\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{00062}     enum \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{PeerVerificationType}
+00063     \{
+\Hypertarget{sender_8h_source_l00064}\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{00064}         \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{VerifyNone},
+\Hypertarget{sender_8h_source_l00065}\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{00065}         VerifyPeer
+00066     \};
+00067     Q\_ENUM(\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{PeerVerificationType})
+00068 
+00069     \textcolor{keyword}{explicit} \hyperlink{class_simple_mail_1_1_sender}{Sender}(\hyperlink{class_q_object}{QObject} *parent = 0);
+00070     \hyperlink{class_simple_mail_1_1_sender}{Sender}(\textcolor{keyword}{const} QString &host, \textcolor{keywordtype}{int} port, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{ConnectionType} ct, 
+      \hyperlink{class_q_object}{QObject} *parent = 0);
+00071     \textcolor{keyword}{virtual} ~\hyperlink{class_simple_mail_1_1_sender}{Sender}();
+00072 
+00076     QString host() \textcolor{keyword}{const};
+00077 
+00081     \textcolor{keywordtype}{void} setHost(\textcolor{keyword}{const} QString &host);
+00082 
+00086     \textcolor{keywordtype}{int} port() \textcolor{keyword}{const};
+00087 
+00091     \textcolor{keywordtype}{void} setPort(\textcolor{keywordtype}{int} port);
+00092 
+00097     QString name() \textcolor{keyword}{const};
+00098 
+00103     \textcolor{keywordtype}{void} setName(\textcolor{keyword}{const} QString &name);
+00104 
+00108     \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{ConnectionType} connectionType() \textcolor{keyword}{const};
+00109 
+00113     \textcolor{keywordtype}{void} setConnectionType(\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{ConnectionType} ct);
+00114 
+00118     QString user() \textcolor{keyword}{const};
+00119 
+00123     \textcolor{keywordtype}{void} setUser(\textcolor{keyword}{const} QString &user);
+00124 
+00128     QString password() \textcolor{keyword}{const};
+00129 
+00133     \textcolor{keywordtype}{void} setPassword(\textcolor{keyword}{const} QString &password);
+00134 
+00138     \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{AuthMethod} authMethod() \textcolor{keyword}{const};
+00139 
+00143     \textcolor{keywordtype}{void} setAuthMethod(\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{AuthMethod} method);
+00144 
+00148     QByteArray responseText() \textcolor{keyword}{const};
+00149 
+00153     \textcolor{keywordtype}{int} responseCode() \textcolor{keyword}{const};
+00154 
+00158     \textcolor{keywordtype}{int} connectionTimeout() \textcolor{keyword}{const};
+00159 
+00163     \textcolor{keywordtype}{void} setConnectionTimeout(\textcolor{keywordtype}{int} msec);
+00164 
+00168     \textcolor{keywordtype}{int} responseTimeout() \textcolor{keyword}{const};
+00169 
+00173     \textcolor{keywordtype}{void} setResponseTimeout(\textcolor{keywordtype}{int} msec);
+00174     
+00178     \textcolor{keywordtype}{int} sendMessageTimeout() \textcolor{keyword}{const};
+00179 
+00183     \textcolor{keywordtype}{void} setSendMessageTimeout(\textcolor{keywordtype}{int} msec);
+00184 
+00189     \textcolor{keywordtype}{void} ignoreSslErrors();
+00190 
+00196     \textcolor{keywordtype}{void} ignoreSslErrors(\textcolor{keyword}{const} QList<QSslError> &errors);
+00197 
+00202     \textcolor{keywordtype}{void} setPeerVerificationType(\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{PeerVerificationType} type);
+00203 
+00208     \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{PeerVerificationType} peerVerificationType();
+00209 
+00210     \textcolor{keywordtype}{bool} sendMail(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage} &email);
+00211 
+00212     QString lastError() \textcolor{keyword}{const};
+00213 
+00214     \textcolor{keywordtype}{void} quit();
+00215 
+00216 \textcolor{keyword}{protected} Q\_SLOTS:
+00217     \textcolor{keywordtype}{void} socketStateChanged(QAbstractSocket::SocketState state);
+00218     \textcolor{keywordtype}{void} socketError(QAbstractSocket::SocketError error);
+00219     \textcolor{keywordtype}{void} socketReadyRead();
+00220 
+00221 Q\_SIGNALS:
+00222     \textcolor{keywordtype}{void} smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49}{SmtpError} e);
+00223     \textcolor{keywordtype}{void} sslErrors(\textcolor{keyword}{const} QList<QSslError> &sslErrorList);
+00224 
+00225 \textcolor{keyword}{protected}:
+\Hypertarget{sender_8h_source_l00226}\hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{00226}     \hyperlink{class_simple_mail_1_1_sender_private}{SenderPrivate} *\hyperlink{class_simple_mail_1_1_sender_a0616c34e23dc61b19e5f50f43000669b}{d\_ptr};
+00227 \};
+00228 
+00229 \}
+00230 
+00231 \textcolor{preprocessor}{#endif // SIMPLEMAIL\_SENDER\_H}
+\end{DoxyCode}

@@ -1,0 +1,15 @@
+\hypertarget{smtpexports_8h_source}{}\subsection{smtpexports.\+h}
+\label{smtpexports_8h_source}\index{smtpexports.\+h@{smtpexports.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef SMTPEXPORTS\_H}
+00002 \textcolor{preprocessor}{#define SMTPEXPORTS\_H}
+00003 
+00004 \textcolor{preprocessor}{#ifdef SMTP\_BUILD}
+00005 \textcolor{preprocessor}{#define SMTP\_EXPORT Q\_DECL\_EXPORT}
+00006 \textcolor{preprocessor}{#else}
+\Hypertarget{smtpexports_8h_source_l00007}\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{00007} \textcolor{preprocessor}{#define SMTP\_EXPORT Q\_DECL\_IMPORT}
+00008 \textcolor{preprocessor}{#endif}
+00009 
+00010 \textcolor{preprocessor}{#endif // SMTPEXPORTS\_H}
+\end{DoxyCode}

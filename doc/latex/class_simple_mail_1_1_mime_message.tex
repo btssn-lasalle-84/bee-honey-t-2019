@@ -1,0 +1,481 @@
+\hypertarget{class_simple_mail_1_1_mime_message}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Mime\+Message}
+\label{class_simple_mail_1_1_mime_message}\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+
+
+{\ttfamily \#include $<$mimemessage.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Mime\+Message\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_simple_mail_1_1_mime_message__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_message_a3ab61502fa784f8aebdacbec4a86ce49}{Mime\+Message} (bool create\+Auto\+Mime\+Conent=true)
+\item 
+virtual \hyperlink{class_simple_mail_1_1_mime_message_ae5005458f2bf64ad5255b8d12e0a324c}{$\sim$\+Mime\+Message} ()
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_ab3bd73dba6b0a49443bcdd6d9e603319}{set\+Sender} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&\hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{sender})
+\item 
+\hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{sender} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_ac1f8b71260b9f2ac07505526b3c516b2}{set\+To\+Recipients} (const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&to\+List)
+\item 
+Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \hyperlink{class_simple_mail_1_1_mime_message_a1e3c4cf44d48b95f8436d251d19ffcb2}{to\+Recipients} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_ae49bed2a8717ed6cacdb66f2570c2740}{add\+To} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&rcpt)
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_afc2867c3922e5d3766ff46168799285f}{set\+Cc\+Recipients} (const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&cc\+List)
+\item 
+Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \hyperlink{class_simple_mail_1_1_mime_message_a69cf7d797c2405f31f50c6959c00a12f}{cc\+Recipients} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_a3fe778b09344f89f9b83b6d95ed5ce83}{add\+Cc} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&rcpt)
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_a7d0c5bf41385cfc09619f61391f0ddb8}{set\+Bcc\+Recipients} (const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&bcc\+List)
+\item 
+Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \hyperlink{class_simple_mail_1_1_mime_message_a160a1f92f2dd26e2154514fa51303db5}{bcc\+Recipients} () const
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_a53d3717ede759eed8244470093e6290a}{add\+Bcc} (const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&rcpt)
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_a525c33895b322e06c35c0d831cfe9b02}{set\+Subject} (const Q\+String \&\hyperlink{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}{subject})
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_ae4591e5e94961bd10dfabfd1a89d9fbd}{add\+Part} (\hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$part)
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_af00bcfef5a681b823002e4efb09d0cdc}{set\+Header\+Encoding} (\hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{Mime\+Part\+::\+Encoding})
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}{subject} () const
+\item 
+Q\+List$<$ \hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$ $>$ \hyperlink{class_simple_mail_1_1_mime_message_a3159d513eb978ea8b764d5defcde12dd}{parts} () const
+\item 
+\hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} \& \hyperlink{class_simple_mail_1_1_mime_message_ab5708266287367c6741e6f2e479a90fb}{get\+Content} ()
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_message_a489178b096474e20dc068168df42ab15}{set\+Content} (\hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$content)
+\item 
+bool \hyperlink{class_simple_mail_1_1_mime_message_ae7fff977d1c558ddc6711416fe0ff723}{write} (Q\+I\+O\+Device $\ast$device)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_message_private}{Mime\+Message\+Private} $\ast$ \hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{d\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a3ab61502fa784f8aebdacbec4a86ce49}\label{class_simple_mail_1_1_mime_message_a3ab61502fa784f8aebdacbec4a86ce49}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!Mime\+Message@{Mime\+Message}}
+\index{Mime\+Message@{Mime\+Message}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{Mime\+Message()}{MimeMessage()}}
+{\footnotesize\ttfamily Mime\+Message\+::\+Mime\+Message (\begin{DoxyParamCaption}\item[{bool}]{create\+Auto\+Mime\+Conent = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00032                                                    :
+00033     \hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{d\_ptr}(\textcolor{keyword}{new} \hyperlink{class_simple_mail_1_1_mime_message_private}{MimeMessagePrivate})
+00034 \{
+00035     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00036     \textcolor{keywordflow}{if} (createAutoMimeContent) \{
+00037         d->content = \textcolor{keyword}{new} \hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart}();
+00038     \}
+00039 
+00040     d->autoMimeContentCreated = createAutoMimeContent;
+00041 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ae5005458f2bf64ad5255b8d12e0a324c}\label{class_simple_mail_1_1_mime_message_ae5005458f2bf64ad5255b8d12e0a324c}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!````~Mime\+Message@{$\sim$\+Mime\+Message}}
+\index{````~Mime\+Message@{$\sim$\+Mime\+Message}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{$\sim$\+Mime\+Message()}{~MimeMessage()}}
+{\footnotesize\ttfamily Mime\+Message\+::$\sim$\+Mime\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{d\+\_\+ptr}.
+
+
+\begin{DoxyCode}
+00044 \{
+00045     \textcolor{keyword}{delete} \hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{d\_ptr};
+00046 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a53d3717ede759eed8244470093e6290a}\label{class_simple_mail_1_1_mime_message_a53d3717ede759eed8244470093e6290a}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!add\+Bcc@{add\+Bcc}}
+\index{add\+Bcc@{add\+Bcc}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{add\+Bcc()}{addBcc()}}
+{\footnotesize\ttfamily void Mime\+Message\+::add\+Bcc (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{rcpt }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00163 \{
+00164     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00165     d->recipientsBcc.append(rcpt);
+00166 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a3fe778b09344f89f9b83b6d95ed5ce83}\label{class_simple_mail_1_1_mime_message_a3fe778b09344f89f9b83b6d95ed5ce83}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!add\+Cc@{add\+Cc}}
+\index{add\+Cc@{add\+Cc}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{add\+Cc()}{addCc()}}
+{\footnotesize\ttfamily void Mime\+Message\+::add\+Cc (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{rcpt }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00139 \{
+00140     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00141     d->recipientsCc.append(rcpt);
+00142 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ae4591e5e94961bd10dfabfd1a89d9fbd}\label{class_simple_mail_1_1_mime_message_ae4591e5e94961bd10dfabfd1a89d9fbd}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!add\+Part@{add\+Part}}
+\index{add\+Part@{add\+Part}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{add\+Part()}{addPart()}}
+{\footnotesize\ttfamily void Mime\+Message\+::add\+Part (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$}]{part }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00175 \{
+00176     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00177     \textcolor{keywordflow}{if} (\textcolor{keyword}{typeid}(*d->content) == \textcolor{keyword}{typeid}(\hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart})) \{
+00178         ((\hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart}*) d->content)->addPart(part);
+00179     \}
+00180 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ae49bed2a8717ed6cacdb66f2570c2740}\label{class_simple_mail_1_1_mime_message_ae49bed2a8717ed6cacdb66f2570c2740}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!add\+To@{add\+To}}
+\index{add\+To@{add\+To}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{add\+To()}{addTo()}}
+{\footnotesize\ttfamily void Mime\+Message\+::add\+To (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{rcpt }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00127 \{
+00128     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00129     d->recipientsTo.append(rcpt);
+00130 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a160a1f92f2dd26e2154514fa51303db5}\label{class_simple_mail_1_1_mime_message_a160a1f92f2dd26e2154514fa51303db5}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!bcc\+Recipients@{bcc\+Recipients}}
+\index{bcc\+Recipients@{bcc\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{bcc\+Recipients()}{bccRecipients()}}
+{\footnotesize\ttfamily Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ Mime\+Message\+::bcc\+Recipients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}.
+
+
+\begin{DoxyCode}
+00157 \{
+00158     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00159     \textcolor{keywordflow}{return} d->recipientsBcc;
+00160 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a69cf7d797c2405f31f50c6959c00a12f}\label{class_simple_mail_1_1_mime_message_a69cf7d797c2405f31f50c6959c00a12f}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!cc\+Recipients@{cc\+Recipients}}
+\index{cc\+Recipients@{cc\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{cc\+Recipients()}{ccRecipients()}}
+{\footnotesize\ttfamily Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ Mime\+Message\+::cc\+Recipients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}.
+
+
+\begin{DoxyCode}
+00145 \{
+00146     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00147     \textcolor{keywordflow}{return} d->recipientsCc;
+00148 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ab5708266287367c6741e6f2e479a90fb}\label{class_simple_mail_1_1_mime_message_ab5708266287367c6741e6f2e479a90fb}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{get\+Content()}{getContent()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} \& Mime\+Message\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00049 \{
+00050     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00051     \textcolor{keywordflow}{return} *d->content;
+00052 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a3159d513eb978ea8b764d5defcde12dd}\label{class_simple_mail_1_1_mime_message_a3159d513eb978ea8b764d5defcde12dd}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!parts@{parts}}
+\index{parts@{parts}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{parts()}{parts()}}
+{\footnotesize\ttfamily Q\+List$<$ \hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$ $>$ Mime\+Message\+::parts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}
+00201 \{
+00202     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00203 
+00204     QList<MimePart*> ret;
+00205     \textcolor{keywordflow}{if} (\textcolor{keyword}{typeid}(*d->content) == \textcolor{keyword}{typeid}(\hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart})) \{
+00206         ret = \textcolor{keyword}{static\_cast<}\hyperlink{class_simple_mail_1_1_mime_multi_part}{MimeMultiPart}*\textcolor{keyword}{>}(d->content)->\hyperlink{class_simple_mail_1_1_mime_message_a3159d513eb978ea8b764d5defcde12dd}{parts}();
+00207     \} \textcolor{keywordflow}{else} \{
+00208         ret.append(d->content);
+00209     \}
+00210 
+00211     \textcolor{keywordflow}{return} ret;
+00212 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}\label{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!sender@{sender}}
+\index{sender@{sender}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{sender()}{sender()}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} Mime\+Message\+::sender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}, et \hyperlink{class_simple_mail_1_1_mime_message_ab3bd73dba6b0a49443bcdd6d9e603319}{set\+Sender()}.
+
+
+\begin{DoxyCode}
+00189 \{
+00190     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00191     \textcolor{keywordflow}{return} d->sender;
+00192 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a7d0c5bf41385cfc09619f61391f0ddb8}\label{class_simple_mail_1_1_mime_message_a7d0c5bf41385cfc09619f61391f0ddb8}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Bcc\+Recipients@{set\+Bcc\+Recipients}}
+\index{set\+Bcc\+Recipients@{set\+Bcc\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Bcc\+Recipients()}{setBccRecipients()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Bcc\+Recipients (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&}]{bcc\+List }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00151 \{
+00152     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00153     d->recipientsBcc = bccList;
+00154 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_afc2867c3922e5d3766ff46168799285f}\label{class_simple_mail_1_1_mime_message_afc2867c3922e5d3766ff46168799285f}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Cc\+Recipients@{set\+Cc\+Recipients}}
+\index{set\+Cc\+Recipients@{set\+Cc\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Cc\+Recipients()}{setCcRecipients()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Cc\+Recipients (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&}]{cc\+List }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00133 \{
+00134     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00135     d->recipientsCc = ccList;
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a489178b096474e20dc068168df42ab15}\label{class_simple_mail_1_1_mime_message_a489178b096474e20dc068168df42ab15}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Content@{set\+Content}}
+\index{set\+Content@{set\+Content}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Content()}{setContent()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Content (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_mime_part}{Mime\+Part} $\ast$}]{content }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00055 \{
+00056     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00057     \textcolor{keywordflow}{if} (d->autoMimeContentCreated) \{
+00058       d->autoMimeContentCreated = \textcolor{keyword}{false};
+00059       \textcolor{keyword}{delete} d->content;
+00060     \}
+00061     d->content = content;
+00062 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_af00bcfef5a681b823002e4efb09d0cdc}\label{class_simple_mail_1_1_mime_message_af00bcfef5a681b823002e4efb09d0cdc}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Header\+Encoding@{set\+Header\+Encoding}}
+\index{set\+Header\+Encoding@{set\+Header\+Encoding}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Header\+Encoding()}{setHeaderEncoding()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Header\+Encoding (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{Mime\+Part\+::\+Encoding}}]{h\+Enc }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00183 \{
+00184     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00185     d->encoding = hEnc;
+00186 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ab3bd73dba6b0a49443bcdd6d9e603319}\label{class_simple_mail_1_1_mime_message_ab3bd73dba6b0a49443bcdd6d9e603319}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Sender@{set\+Sender}}
+\index{set\+Sender@{set\+Sender}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Sender()}{setSender()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Sender (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} \&}]{sender }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{sender()}.
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00109 \{
+00110     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00111     d->sender = \hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{sender};
+00112 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a525c33895b322e06c35c0d831cfe9b02}\label{class_simple_mail_1_1_mime_message_a525c33895b322e06c35c0d831cfe9b02}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+Subject@{set\+Subject}}
+\index{set\+Subject@{set\+Subject}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+Subject()}{setSubject()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+Subject (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{subject }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}{subject()}.
+
+
+
+Référencé par \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{Alertes\+::envoyer\+Mail\+Alerte()}.
+
+
+\begin{DoxyCode}
+00169 \{
+00170     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00171     d->subject = \hyperlink{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}{subject};
+00172 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ac1f8b71260b9f2ac07505526b3c516b2}\label{class_simple_mail_1_1_mime_message_ac1f8b71260b9f2ac07505526b3c516b2}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!set\+To\+Recipients@{set\+To\+Recipients}}
+\index{set\+To\+Recipients@{set\+To\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{set\+To\+Recipients()}{setToRecipients()}}
+{\footnotesize\ttfamily void Mime\+Message\+::set\+To\+Recipients (\begin{DoxyParamCaption}\item[{const Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ \&}]{to\+List }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00115 \{
+00116     Q\_D(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00117     d->recipientsTo = toList;
+00118 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}\label{class_simple_mail_1_1_mime_message_a54274861ea83b4b37dd9db80aca34e39}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!subject@{subject}}
+\index{subject@{subject}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{subject()}{subject()}}
+{\footnotesize\ttfamily Q\+String Mime\+Message\+::subject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_mime_message_a525c33895b322e06c35c0d831cfe9b02}{set\+Subject()}.
+
+
+\begin{DoxyCode}
+00195 \{
+00196     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00197     \textcolor{keywordflow}{return} d->subject;
+00198 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_a1e3c4cf44d48b95f8436d251d19ffcb2}\label{class_simple_mail_1_1_mime_message_a1e3c4cf44d48b95f8436d251d19ffcb2}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!to\+Recipients@{to\+Recipients}}
+\index{to\+Recipients@{to\+Recipients}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{to\+Recipients()}{toRecipients()}}
+{\footnotesize\ttfamily Q\+List$<$ \hyperlink{class_simple_mail_1_1_email_address}{Email\+Address} $>$ Mime\+Message\+::to\+Recipients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}.
+
+
+\begin{DoxyCode}
+00121 \{
+00122     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00123     \textcolor{keywordflow}{return} d->recipientsTo;
+00124 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_ae7fff977d1c558ddc6711416fe0ff723}\label{class_simple_mail_1_1_mime_message_ae7fff977d1c558ddc6711416fe0ff723}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!write@{write}}
+\index{write@{write}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily bool Mime\+Message\+::write (\begin{DoxyParamCaption}\item[{Q\+I\+O\+Device $\ast$}]{device }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_message_private_a44bd454950e1fd6b48a29d2a7b11ca33}{Simple\+Mail\+::\+Mime\+Message\+Private\+::encode()}, et \hyperlink{class_simple_mail_1_1_mime_message_private_ae036b2417205ef25181091bebd15c0f6}{Simple\+Mail\+::\+Mime\+Message\+Private\+::encode\+Data()}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{Simple\+Mail\+::\+Sender\+Private\+::send\+Mail()}.
+
+
+\begin{DoxyCode}
+00065 \{
+00066     Q\_D(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage});
+00067 
+00068     \textcolor{comment}{// Headers}
+00069     QByteArray data;
+00070 
+00071     data = \hyperlink{class_simple_mail_1_1_mime_message_private_a44bd454950e1fd6b48a29d2a7b11ca33}{MimeMessagePrivate::encode}(QByteArrayLiteral(\textcolor{stringliteral}{"From: "}), 
+      QList<EmailAddress>() << d->sender, d->encoding);
+00072     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00073         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00074     \}
+00075 
+00076     data = \hyperlink{class_simple_mail_1_1_mime_message_private_a44bd454950e1fd6b48a29d2a7b11ca33}{MimeMessagePrivate::encode}(QByteArrayLiteral(\textcolor{stringliteral}{"To: "}), d->recipientsTo,
+       d->encoding);
+00077     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00078         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00079     \}
+00080 
+00081     data = \hyperlink{class_simple_mail_1_1_mime_message_private_a44bd454950e1fd6b48a29d2a7b11ca33}{MimeMessagePrivate::encode}(QByteArrayLiteral(\textcolor{stringliteral}{"Cc: "}), d->recipientsCc,
+       d->encoding);
+00082     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00083         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00084     \}
+00085 
+00086     data = QByteArrayLiteral(\textcolor{stringliteral}{"Date: "}) + QDateTime::currentDateTime().toString(Qt::RFC2822Date).toLatin1() 
+      + QByteArrayLiteral(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"});
+00087     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00088         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00089     \}
+00090 
+00091     data = QByteArrayLiteral(\textcolor{stringliteral}{"Subject: "}) + \hyperlink{class_simple_mail_1_1_mime_message_private_ae036b2417205ef25181091bebd15c0f6}{MimeMessagePrivate::encodeData}(d
+      ->encoding, d->subject, \textcolor{keyword}{true});
+00092     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00093         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00094     \}
+00095 
+00096     data = QByteArrayLiteral(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)nMIME-Version: 1.0\(\backslash\)r\(\backslash\)n"});
+00097     \textcolor{keywordflow}{if} (device->write(data) != data.size()) \{
+00098         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00099     \}
+00100 
+00101     \textcolor{keywordflow}{if} (!d->content->write(device)) \{
+00102         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00103     \}
+00104 
+00105     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00106 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}\label{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}} 
+\index{Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}!d\+\_\+ptr@{d\+\_\+ptr}}
+\index{d\+\_\+ptr@{d\+\_\+ptr}!Simple\+Mail\+::\+Mime\+Message@{Simple\+Mail\+::\+Mime\+Message}}
+\paragraph{\texorpdfstring{d\+\_\+ptr}{d\_ptr}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_mime_message_private}{Mime\+Message\+Private}$\ast$ Simple\+Mail\+::\+Mime\+Message\+::d\+\_\+ptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_mime_message_ae5005458f2bf64ad5255b8d12e0a324c}{$\sim$\+Mime\+Message()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mimemessage_8h}{mimemessage.\+h}\item 
+\hyperlink{mimemessage_8cpp}{mimemessage.\+cpp}\end{DoxyCompactItemize}

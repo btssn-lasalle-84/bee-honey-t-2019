@@ -1,0 +1,43 @@
+\hypertarget{infos_ensoleillement_8h_source}{}\subsection{infos\+Ensoleillement.\+h}
+\label{infos_ensoleillement_8h_source}\index{infos\+Ensoleillement.\+h@{infos\+Ensoleillement.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSENSOLEILLEMENT\_H}
+00002 \textcolor{preprocessor}{#define INFOSENSOLEILLEMENT\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 \textcolor{preprocessor}{#include <QVector>}
+00019 
+\Hypertarget{infos_ensoleillement_8h_source_l00032}\hyperlink{class_infos_ensoleillement}{00032} \textcolor{keyword}{class }\hyperlink{class_infos_ensoleillement}{InfosEnsoleillement} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00033 \{
+00034     Q\_OBJECT
+00035     \textcolor{keyword}{private}:
+\Hypertarget{infos_ensoleillement_8h_source_l00036}\hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{00036}         \textcolor{keywordtype}{double} \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}; 
+\Hypertarget{infos_ensoleillement_8h_source_l00037}\hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{00037}         QString \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement}; 
+\Hypertarget{infos_ensoleillement_8h_source_l00038}\hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{00038}         QVector <double> \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements};
+\Hypertarget{infos_ensoleillement_8h_source_l00039}\hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{00039}         \textcolor{keywordtype}{int} \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement};
+00040         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculerMoyenneHoraireEnsoleillement}();
+00041 
+00042 
+00043     \textcolor{keyword}{public}:
+00044         \hyperlink{class_infos_ensoleillement_a5037621d40a4e62f01182f6742388fcd}{InfosEnsoleillement}(\hyperlink{class_q_object}{QObject} *parent);
+00045         \textcolor{keywordtype}{double} \hyperlink{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}{getEnsoleillement}();
+00046         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_a27c6d3d6e063e2f09fbe23a04cd89dfc}{setEnsoleillement}(\textcolor{keywordtype}{double} ensoleillement);
+00047         QString \hyperlink{class_infos_ensoleillement_a0bd39540c8b4a242ea378c91bbc58b89}{getHorodatageEnsoleillement}()\textcolor{keyword}{const};
+00048         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_a35cd0359b8bcf5bd572cbef2195fa8d1}{setHorodatageEnsoleillement}(\textcolor{keyword}{const} QString horodatageEnsoleillement)
+      ;
+00049 
+00050     \textcolor{keyword}{public} slots:
+00051         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiterNouvelleEnsoleillement}(QString ensoleillementString, 
+      QString horodatageEnsoleillement);
+00052 
+00053     signals:
+00054         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}{ensoleillementEnvoye}(\textcolor{keywordtype}{double} ensoleillement ,QString horodatage);
+00055         \textcolor{keywordtype}{void} \hyperlink{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}{traitementEnsoleillementEnvoye}(\textcolor{keywordtype}{double} ensoleillementMoyen, \textcolor{keywordtype}{
+      double} ensoleillementMinimum, \textcolor{keywordtype}{double} ensoleillementMaximum, \textcolor{keywordtype}{int} heure);
+00056 \};
+00057 
+00058 \textcolor{preprocessor}{#endif // INFOSENSOLEILLEMENT\_H}
+00059 
+\end{DoxyCode}

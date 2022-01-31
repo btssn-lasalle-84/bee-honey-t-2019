@@ -1,0 +1,665 @@
+\hypertarget{class_infos_temperature}{}\subsection{Référence de la classe Infos\+Temperature}
+\label{class_infos_temperature}\index{Infos\+Temperature@{Infos\+Temperature}}
+
+
+La classe \hyperlink{class_infos_temperature}{Infos\+Temperature}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Temperature.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Temperature\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_infos_temperature__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiter\+Nouvelle\+Temperature\+Interieur} (Q\+String \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}, Q\+String \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur})
+\item 
+void \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur} (Q\+String temperature\+Exterieur\+String, Q\+String \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur})
+\begin{DoxyCompactList}\small\item\em slot qui traite la temperature exterieur venant de la classe \hyperlink{class_ruche}{Ruche} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}{temperature\+Interieur\+Envoye} (const double \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}, Q\+String horodatage)
+\begin{DoxyCompactList}\small\item\em signal vers la classe \hyperlink{class_ruche}{Ruche} \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}{temperature\+Exterieur\+Envoye} (const double \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur}, Q\+String horodatage)
+\begin{DoxyCompactList}\small\item\em signal vers la classe \hyperlink{class_ruche}{Ruche} \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}{traitement\+Temperature\+Interieur\+Envoye} (const double temperature\+Interieur\+Moyenne, const double temperature\+Interieur\+Minimum, const double temperature\+Interieur\+Maximum, int heure)
+\item 
+void \hyperlink{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}{traitement\+Temperature\+Exterieur\+Envoye} (const double temperature\+Exterieur\+Moyenne, const double temperature\+Exterieur\+Minimum, const double temperature\+Exterieur\+Maximum, int heure)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_temperature_ac628607fe2ff9ca9e2d6bad741ae231a}{Infos\+Temperature} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique}. \end{DoxyCompactList}\item 
+\hyperlink{class_infos_temperature_a86503a69e48f1919edbb02a434d2b124}{$\sim$\+Infos\+Temperature} ()
+\item 
+double \hyperlink{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}{get\+Temperature\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut temperature\+Interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_ac11ec6b1860f43dc989a02a7967497e7}{set\+Temperature\+Interieur} (double \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur})
+\item 
+Q\+String \hyperlink{class_infos_temperature_aca40f109786cf22d78402f8b7f3fe408}{get\+Horodatage\+Temperature\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut horodatagetemperature\+Interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a4d846391dfd204515e68c3f005b7be3c}{set\+Horodatage\+Temperature\+Interieur} (const Q\+String \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur})
+\item 
+double \hyperlink{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}{get\+Temperature\+Exterieur} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut temperature\+Exterieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a40f22fbc27ed768e8269cdbf3df708c6}{set\+Temperature\+Exterieur} (double \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut temperature\+Exterieur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_temperature_a76b07dc0790718e134e306fe760e6cbf}{get\+Horodatage\+Temperature\+Exterieur} ()
+\item 
+void \hyperlink{class_infos_temperature_a85118414b65a715d07a92df3059c6fea}{set\+Horodatage\+Temperature\+Exterieur} (const Q\+String \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut horodatage\+Temperature\+Exterieur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculer\+Moyenne\+Horaire\+Temperature\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em methode permettant de calculer la moyenne des temperatures interieurs sur une heure \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur} ()
+\begin{DoxyCompactList}\small\item\em methode permettant de calculer la moyenne des temperatures exterieurs sur une heure \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur} (Q\+String \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur})
+\begin{DoxyCompactList}\small\item\em slot qui traite la temperature interieur venant de la classe \hyperlink{class_ruche}{Ruche} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}
+\begin{DoxyCompactList}\small\item\em temperature interieur en degrée Celsius \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur}
+\begin{DoxyCompactList}\small\item\em temperature exterieuren degrée Celsius \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur}
+\begin{DoxyCompactList}\small\item\em horodatage de la temperature interieur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur}
+\begin{DoxyCompactList}\small\item\em horodatage de la temperature exterieur \end{DoxyCompactList}\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperatures\+Interieurs}
+\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperatures\+Exterieurs}
+\item 
+int \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heure\+Courante\+Temperature\+Interieur}
+\item 
+int \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heure\+Courante\+Temperature\+Exterieur}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_temperature_ac628607fe2ff9ca9e2d6bad741ae231a}\label{class_infos_temperature_ac628607fe2ff9ca9e2d6bad741ae231a}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!Infos\+Temperature@{Infos\+Temperature}}
+\index{Infos\+Temperature@{Infos\+Temperature}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{Infos\+Temperature()}{InfosTemperature()}}
+{\footnotesize\ttfamily Infos\+Temperature\+::\+Infos\+Temperature (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+Constructeur de la classe \hyperlink{class_infos_temperature}{Infos\+Temperature}.
+
+Définition des attributs pression\+Atmospherique à 0 et l\textquotesingle{}attribut horodatage\+Pression\+Atmospherique à \char`\"{}\char`\"{}
+
+Définition des attributs temperature\+Interieur, temperature\+Exterieur à 0 et les attributs temperature\+Exterieur horodatage\+Temperature\+Exterieur à \char`\"{}\char`\"{}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+00026                                                  :\hyperlink{class_q_object}{QObject}(parent),
+      \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur}(0),\hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur}(0),
+      \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur}(\textcolor{stringliteral}{""}),
+      \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur}(\textcolor{stringliteral}{""}),
+      \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur}(-1),
+      \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur}(-1)
+00027 \{
+00028 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a86503a69e48f1919edbb02a434d2b124}\label{class_infos_temperature_a86503a69e48f1919edbb02a434d2b124}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!````~Infos\+Temperature@{$\sim$\+Infos\+Temperature}}
+\index{````~Infos\+Temperature@{$\sim$\+Infos\+Temperature}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{$\sim$\+Infos\+Temperature()}{~InfosTemperature()}}
+{\footnotesize\ttfamily Infos\+Temperature\+::$\sim$\+Infos\+Temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00031 \{
+00032 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_temperature_a437325028225d765780b884614c47077}\label{class_infos_temperature_a437325028225d765780b884614c47077}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!calculer\+Moyenne\+Horaire\+Temperature\+Exterieur@{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur}}
+\index{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur@{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur()}{calculerMoyenneHoraireTemperatureExterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::calculer\+Moyenne\+Horaire\+Temperature\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heure\+Courante\+Temperature\+Exterieur}, \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperatures\+Exterieurs}, et \hyperlink{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}{traitement\+Temperature\+Exterieur\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+
+\begin{DoxyCode}
+00232 \{
+00233     \textcolor{keywordtype}{double} sommeTemperatureExterieur = 0;
+00234     \textcolor{keywordtype}{double} temperatureExterieurMoyenne = 0;
+00235     \textcolor{keywordtype}{double} temperatureExterieurMinimum = 999;
+00236     \textcolor{keywordtype}{double} temperatureExterieurMaximum = -999;
+00237 
+00238     \textcolor{comment}{// au moins 2 mesures}
+00239     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}.size() >= 2)
+00240     \{
+00241         temperatureExterieurMinimum = \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[0];
+00242         temperatureExterieurMaximum = \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[0];
+00243         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}.size(); i++)
+00244         \{
+00245             sommeTemperatureExterieur += \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[i];
+00246 
+00247             \textcolor{keywordflow}{if}(temperatureExterieurMinimum > \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[i])
+00248             \{
+00249                 temperatureExterieurMinimum = \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[i];
+00250             \}
+00251 
+00252             \textcolor{keywordflow}{if}(temperatureExterieurMaximum < \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[i])
+00253             \{
+00254                 temperatureExterieurMaximum = \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}[i];
+00255             \}
+00256         \}
+00257     \}
+00258     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs};
+00259     temperatureExterieurMoyenne = sommeTemperatureExterieur / double(temperaturesExterieurs.size());
+00260     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"temperatureExterieurMoyenne="} << temperatureExterieurMoyenne << \textcolor{stringliteral}{"
+      temperatureExterieurMinimum="} << temperatureExterieurMinimum << \textcolor{stringliteral}{"temperatureExterieurMaximum="} << 
+      temperatureExterieurMaximum;
+00261     emit \hyperlink{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}{traitementTemperatureExterieurEnvoye}(
+      temperatureExterieurMoyenne, temperatureExterieurMinimum, temperatureExterieurMaximum, 
+      \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur});
+00262     temperaturesExterieurs.clear();
+00263 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}\label{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!calculer\+Moyenne\+Horaire\+Temperature\+Interieur@{calculer\+Moyenne\+Horaire\+Temperature\+Interieur}}
+\index{calculer\+Moyenne\+Horaire\+Temperature\+Interieur@{calculer\+Moyenne\+Horaire\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Temperature\+Interieur()}{calculerMoyenneHoraireTemperatureInterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::calculer\+Moyenne\+Horaire\+Temperature\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heure\+Courante\+Temperature\+Interieur}, \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperatures\+Interieurs}, et \hyperlink{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}{traitement\+Temperature\+Interieur\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}.
+
+
+\begin{DoxyCode}
+00193 \{
+00194     \textcolor{keywordtype}{double} sommeTemperatureInterieur = 0;
+00195     \textcolor{keywordtype}{double} temperatureInterieurMoyenne = 0;
+00196     \textcolor{keywordtype}{double} temperatureInterieurMinimum = 999;
+00197     \textcolor{keywordtype}{double} temperatureInterieurMaximum = -999;
+00198 
+00199     \textcolor{comment}{// au moins 2 mesures}
+00200     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}.size() >= 2)
+00201     \{
+00202         temperatureInterieurMinimum = \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[0];
+00203         temperatureInterieurMaximum = \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[0];
+00204         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}.size(); i++)
+00205         \{
+00206             sommeTemperatureInterieur += \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[i];
+00207 
+00208             \textcolor{keywordflow}{if}(temperatureInterieurMinimum > \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[i])
+00209             \{
+00210                 temperatureInterieurMinimum = \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[i];
+00211             \}
+00212 
+00213             \textcolor{keywordflow}{if}(temperatureInterieurMaximum < \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[i])
+00214             \{
+00215                 temperatureInterieurMaximum = \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}[i];
+00216             \}
+00217         \}
+00218     \}
+00219     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs};
+00220     temperatureInterieurMoyenne = sommeTemperatureInterieur / double(temperaturesInterieurs.size());
+00221     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"temperatureInterieurMoyenne="} << temperatureInterieurMoyenne << \textcolor{stringliteral}{"
+      temperatureInterieurMinimum="} << temperatureInterieurMinimum << \textcolor{stringliteral}{"temperatureInterieurMaximum="} << 
+      temperatureInterieurMaximum;
+00222     emit \hyperlink{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}{traitementTemperatureInterieurEnvoye}(
+      temperatureInterieurMoyenne, temperatureInterieurMinimum , temperatureInterieurMaximum, 
+      \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur});
+00223     temperaturesInterieurs.clear();
+00224 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a76b07dc0790718e134e306fe760e6cbf}\label{class_infos_temperature_a76b07dc0790718e134e306fe760e6cbf}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!get\+Horodatage\+Temperature\+Exterieur@{get\+Horodatage\+Temperature\+Exterieur}}
+\index{get\+Horodatage\+Temperature\+Exterieur@{get\+Horodatage\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Temperature\+Exterieur()}{getHorodatageTemperatureExterieur()}}
+{\footnotesize\ttfamily Q\+String Infos\+Temperature\+::get\+Horodatage\+Temperature\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur}.
+
+
+
+Référencé par \hyperlink{class_ruche_a46c0f440f40a5125f2d579b481660457}{Ruche\+::inserer\+Donnees\+Port\+Mesure\+Environnement()}.
+
+
+\begin{DoxyCode}
+00107 \{
+00108     \textcolor{keywordflow}{return} \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur};
+00109 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_aca40f109786cf22d78402f8b7f3fe408}\label{class_infos_temperature_aca40f109786cf22d78402f8b7f3fe408}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!get\+Horodatage\+Temperature\+Interieur@{get\+Horodatage\+Temperature\+Interieur}}
+\index{get\+Horodatage\+Temperature\+Interieur@{get\+Horodatage\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Temperature\+Interieur()}{getHorodatageTemperatureInterieur()}}
+{\footnotesize\ttfamily Q\+String Infos\+Temperature\+::get\+Horodatage\+Temperature\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape Q\+String} correspondant a l\textquotesingle{}horodatage temperature intérieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur}.
+
+
+
+Référencé par \hyperlink{class_ruche_aa61f6dd8b15e5242ef3a3bdd87cca4a3}{Ruche\+::inserer\+Donnees\+Port\+Mesure\+Ruche()}.
+
+
+\begin{DoxyCode}
+00063 \{
+00064     \textcolor{keywordflow}{return} \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur};
+00065 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}\label{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!get\+Temperature\+Exterieur@{get\+Temperature\+Exterieur}}
+\index{get\+Temperature\+Exterieur@{get\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{get\+Temperature\+Exterieur()}{getTemperatureExterieur()}}
+{\footnotesize\ttfamily double Infos\+Temperature\+::get\+Temperature\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape double} correspondant a la temperature exterieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur}.
+
+
+
+Référencé par \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{Alertes\+::alertes\+Temperature\+Exterieur()}.
+
+
+\begin{DoxyCode}
+00085 \{
+00086     \textcolor{keywordflow}{return} \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur};
+00087 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}\label{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!get\+Temperature\+Interieur@{get\+Temperature\+Interieur}}
+\index{get\+Temperature\+Interieur@{get\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{get\+Temperature\+Interieur()}{getTemperatureInterieur()}}
+{\footnotesize\ttfamily double Infos\+Temperature\+::get\+Temperature\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+Un {\itshape double} correspondant a la temperature intérieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}.
+
+
+
+Référencé par \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{Alertes\+::alertes\+Temperature\+Interieur()}, et \hyperlink{class_ruche_aa61f6dd8b15e5242ef3a3bdd87cca4a3}{Ruche\+::inserer\+Donnees\+Port\+Mesure\+Ruche()}.
+
+
+\begin{DoxyCode}
+00041 \{
+00042     \textcolor{keywordflow}{return} \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur};
+00043 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a85118414b65a715d07a92df3059c6fea}\label{class_infos_temperature_a85118414b65a715d07a92df3059c6fea}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!set\+Horodatage\+Temperature\+Exterieur@{set\+Horodatage\+Temperature\+Exterieur}}
+\index{set\+Horodatage\+Temperature\+Exterieur@{set\+Horodatage\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Temperature\+Exterieur()}{setHorodatageTemperatureExterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::set\+Horodatage\+Temperature\+Exterieur (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Temperature\+Exterieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Temperature\+Exterieur} & correspondant l\textquotesingle{}attribut horodatage\+Temperature\+Exterieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur}.
+
+
+\begin{DoxyCode}
+00118 \{
+00119     this->\hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur} = 
+      \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur};
+00120 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a4d846391dfd204515e68c3f005b7be3c}\label{class_infos_temperature_a4d846391dfd204515e68c3f005b7be3c}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!set\+Horodatage\+Temperature\+Interieur@{set\+Horodatage\+Temperature\+Interieur}}
+\index{set\+Horodatage\+Temperature\+Interieur@{set\+Horodatage\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Temperature\+Interieur()}{setHorodatageTemperatureInterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::set\+Horodatage\+Temperature\+Interieur (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Temperature\+Interieur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur}.
+
+
+\begin{DoxyCode}
+00074 \{
+00075     this->\hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur} = 
+      \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur};
+00076 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a40f22fbc27ed768e8269cdbf3df708c6}\label{class_infos_temperature_a40f22fbc27ed768e8269cdbf3df708c6}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!set\+Temperature\+Exterieur@{set\+Temperature\+Exterieur}}
+\index{set\+Temperature\+Exterieur@{set\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{set\+Temperature\+Exterieur()}{setTemperatureExterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::set\+Temperature\+Exterieur (\begin{DoxyParamCaption}\item[{double}]{temperature\+Exterieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em temperature\+Exterieur} & correspondant l\textquotesingle{}attribut Temperature\+Exterieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur}.
+
+
+\begin{DoxyCode}
+00096 \{
+00097     this->\hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur} = \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur};
+00098 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_ac11ec6b1860f43dc989a02a7967497e7}\label{class_infos_temperature_ac11ec6b1860f43dc989a02a7967497e7}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!set\+Temperature\+Interieur@{set\+Temperature\+Interieur}}
+\index{set\+Temperature\+Interieur@{set\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{set\+Temperature\+Interieur()}{setTemperatureInterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::set\+Temperature\+Interieur (\begin{DoxyParamCaption}\item[{double}]{temperature\+Interieur }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}.
+
+
+\begin{DoxyCode}
+00052 \{
+00053     this->\hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur} = \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur};
+00054 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}\label{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperature\+Exterieur\+Envoye@{temperature\+Exterieur\+Envoye}}
+\index{temperature\+Exterieur\+Envoye@{temperature\+Exterieur\+Envoye}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperature\+Exterieur\+Envoye}{temperatureExterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::temperature\+Exterieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Exterieur,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}\label{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperature\+Interieur\+Envoye@{temperature\+Interieur\+Envoye}}
+\index{temperature\+Interieur\+Envoye@{temperature\+Interieur\+Envoye}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperature\+Interieur\+Envoye}{temperatureInterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::temperature\+Interieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Interieur,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiter\+Nouvelle\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}\label{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!traitement\+Temperature\+Exterieur\+Envoye@{traitement\+Temperature\+Exterieur\+Envoye}}
+\index{traitement\+Temperature\+Exterieur\+Envoye@{traitement\+Temperature\+Exterieur\+Envoye}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{traitement\+Temperature\+Exterieur\+Envoye}{traitementTemperatureExterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::traitement\+Temperature\+Exterieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Exterieur\+Moyenne,  }\item[{const double}]{temperature\+Exterieur\+Minimum,  }\item[{const double}]{temperature\+Exterieur\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}\label{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!traitement\+Temperature\+Interieur\+Envoye@{traitement\+Temperature\+Interieur\+Envoye}}
+\index{traitement\+Temperature\+Interieur\+Envoye@{traitement\+Temperature\+Interieur\+Envoye}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{traitement\+Temperature\+Interieur\+Envoye}{traitementTemperatureInterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::traitement\+Temperature\+Interieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Interieur\+Moyenne,  }\item[{const double}]{temperature\+Interieur\+Minimum,  }\item[{const double}]{temperature\+Interieur\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculer\+Moyenne\+Horaire\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}\label{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!traiter\+Moyenne\+Horaire\+Temperature\+Interieur@{traiter\+Moyenne\+Horaire\+Temperature\+Interieur}}
+\index{traiter\+Moyenne\+Horaire\+Temperature\+Interieur@{traiter\+Moyenne\+Horaire\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}{traiterMoyenneHoraireTemperatureInterieur()}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::traiter\+Moyenne\+Horaire\+Temperature\+Interieur (\begin{DoxyParamCaption}\item[{Q\+String}]{horodatage\+Temperature\+Interieur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Temperature\+Interieur} & correspondant a l\textquotesingle{}horodatage de la mesure temperature interieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculer\+Moyenne\+Horaire\+Temperature\+Interieur()}, \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heure\+Courante\+Temperature\+Interieur}, \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}, et \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperatures\+Interieurs}.
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiter\+Nouvelle\+Temperature\+Interieur()}.
+
+
+\begin{DoxyCode}
+00128 \{
+00129     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00130     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCouranteTemperatureInterieur"} << 
+      \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur} << dateTimeHorodatage.time().hour();
+00131     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur} == -1)
+00132     \{
+00133         \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur} = dateTimeHorodatage.time().hour
+      ();
+00134     \}
+00135     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur} == dateTimeHorodatage.time().hour
+      ())
+00136     \{
+00137         \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}.append(\hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur});
+00138     \}
+00139     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur}+1)%24 == dateTimeHorodatage
+      .time().hour())
+00140     \{
+00141         \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculerMoyenneHoraireTemperatureInterieur}();
+00142         \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur} = dateTimeHorodatage.time().hour
+      ();
+00143         \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs}.append(\hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur});
+00144     \}
+00145 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}\label{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!traiter\+Nouvelle\+Temperature\+Exterieur@{traiter\+Nouvelle\+Temperature\+Exterieur}}
+\index{traiter\+Nouvelle\+Temperature\+Exterieur@{traiter\+Nouvelle\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Temperature\+Exterieur}{traiterNouvelleTemperatureExterieur}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::traiter\+Nouvelle\+Temperature\+Exterieur (\begin{DoxyParamCaption}\item[{Q\+String}]{temperature\+Exterieur\+String,  }\item[{Q\+String}]{horodatage\+Temperature\+Exterieur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em temperature\+Exterieur\+String} & correspondant à la mesure temperature exterieur \\
+\hline
+{\em horodatage\+Temperature\+Exterieur} & correspondant a l\textquotesingle{}horodatage de la mesure temperature exterieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur()}, \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heure\+Courante\+Temperature\+Exterieur}, \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatage\+Temperature\+Exterieur}, \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperature\+Exterieur}, \hyperlink{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}{temperature\+Exterieur\+Envoye()}, et \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperatures\+Exterieurs}.
+
+
+\begin{DoxyCode}
+00165 \{
+00166     \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur} = temperatureExterieurString.toDouble();
+00167     this->\hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur} = 
+      \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur};
+00168     emit \hyperlink{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}{temperatureExterieurEnvoye}(
+      \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur},\hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur});
+00169 
+00170     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00171     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCouranteTemperatureExterieur"} << 
+      \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur} << dateTimeHorodatage.time().hour();
+00172     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur} == -1)
+00173     \{
+00174         \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur} = dateTimeHorodatage.time().hour
+      ();
+00175     \}
+00176     \textcolor{keywordflow}{if}(\hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur} == dateTimeHorodatage.time().hour
+      ())
+00177     \{
+00178         \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}.append(\hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur});
+00179     \}
+00180     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur}+1)%24 == dateTimeHorodatage
+      .time().hour())
+00181     \{
+00182         \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculerMoyenneHoraireTemperatureExterieur}();
+00183         \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur} = dateTimeHorodatage.time().hour
+      ();
+00184         \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs}.append(\hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur});
+00185     \}
+00186 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}\label{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!traiter\+Nouvelle\+Temperature\+Interieur@{traiter\+Nouvelle\+Temperature\+Interieur}}
+\index{traiter\+Nouvelle\+Temperature\+Interieur@{traiter\+Nouvelle\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Temperature\+Interieur}{traiterNouvelleTemperatureInterieur}}
+{\footnotesize\ttfamily void Infos\+Temperature\+::traiter\+Nouvelle\+Temperature\+Interieur (\begin{DoxyParamCaption}\item[{Q\+String}]{temperature\+Interieur,  }\item[{Q\+String}]{horodatage\+Temperature\+Interieur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatage\+Temperature\+Interieur}, \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperature\+Interieur}, \hyperlink{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}{temperature\+Interieur\+Envoye()}, et \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}.
+
+
+\begin{DoxyCode}
+00148 \{
+00149     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"temperatureInterieurString"} << temperatureInterieurString << 
+      \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur};
+00150     this->horodatageTemperatureInterieur = \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur};
+00151     \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur} = temperatureInterieurString.toDouble();    
+00152     emit \hyperlink{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}{temperatureInterieurEnvoye}(
+      \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur},horodatageTemperatureInterieur);
+00153 
+00154     \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiterMoyenneHoraireTemperatureInterieur}(
+      horodatageTemperatureInterieur);
+00155 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_temperature_a44edcf244175896e28798f252900f774}\label{class_infos_temperature_a44edcf244175896e28798f252900f774}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!heure\+Courante\+Temperature\+Exterieur@{heure\+Courante\+Temperature\+Exterieur}}
+\index{heure\+Courante\+Temperature\+Exterieur@{heure\+Courante\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{heure\+Courante\+Temperature\+Exterieur}{heureCouranteTemperatureExterieur}}
+{\footnotesize\ttfamily int Infos\+Temperature\+::heure\+Courante\+Temperature\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur()}, et \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}\label{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!heure\+Courante\+Temperature\+Interieur@{heure\+Courante\+Temperature\+Interieur}}
+\index{heure\+Courante\+Temperature\+Interieur@{heure\+Courante\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{heure\+Courante\+Temperature\+Interieur}{heureCouranteTemperatureInterieur}}
+{\footnotesize\ttfamily int Infos\+Temperature\+::heure\+Courante\+Temperature\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculer\+Moyenne\+Horaire\+Temperature\+Interieur()}, et \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}\label{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!horodatage\+Temperature\+Exterieur@{horodatage\+Temperature\+Exterieur}}
+\index{horodatage\+Temperature\+Exterieur@{horodatage\+Temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{horodatage\+Temperature\+Exterieur}{horodatageTemperatureExterieur}}
+{\footnotesize\ttfamily Q\+String Infos\+Temperature\+::horodatage\+Temperature\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a76b07dc0790718e134e306fe760e6cbf}{get\+Horodatage\+Temperature\+Exterieur()}, \hyperlink{class_infos_temperature_a85118414b65a715d07a92df3059c6fea}{set\+Horodatage\+Temperature\+Exterieur()}, et \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}\label{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!horodatage\+Temperature\+Interieur@{horodatage\+Temperature\+Interieur}}
+\index{horodatage\+Temperature\+Interieur@{horodatage\+Temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{horodatage\+Temperature\+Interieur}{horodatageTemperatureInterieur}}
+{\footnotesize\ttfamily Q\+String Infos\+Temperature\+::horodatage\+Temperature\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_aca40f109786cf22d78402f8b7f3fe408}{get\+Horodatage\+Temperature\+Interieur()}, \hyperlink{class_infos_temperature_a4d846391dfd204515e68c3f005b7be3c}{set\+Horodatage\+Temperature\+Interieur()}, et \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiter\+Nouvelle\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}\label{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperature\+Exterieur@{temperature\+Exterieur}}
+\index{temperature\+Exterieur@{temperature\+Exterieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperature\+Exterieur}{temperatureExterieur}}
+{\footnotesize\ttfamily double Infos\+Temperature\+::temperature\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}{get\+Temperature\+Exterieur()}, \hyperlink{class_infos_temperature_a40f22fbc27ed768e8269cdbf3df708c6}{set\+Temperature\+Exterieur()}, et \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}\label{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperature\+Interieur@{temperature\+Interieur}}
+\index{temperature\+Interieur@{temperature\+Interieur}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperature\+Interieur}{temperatureInterieur}}
+{\footnotesize\ttfamily double Infos\+Temperature\+::temperature\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}{get\+Temperature\+Interieur()}, \hyperlink{class_infos_temperature_ac11ec6b1860f43dc989a02a7967497e7}{set\+Temperature\+Interieur()}, \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}, et \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiter\+Nouvelle\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}\label{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperatures\+Exterieurs@{temperatures\+Exterieurs}}
+\index{temperatures\+Exterieurs@{temperatures\+Exterieurs}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperatures\+Exterieurs}{temperaturesExterieurs}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Temperature\+::temperatures\+Exterieurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculer\+Moyenne\+Horaire\+Temperature\+Exterieur()}, et \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiter\+Nouvelle\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}\label{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}} 
+\index{Infos\+Temperature@{Infos\+Temperature}!temperatures\+Interieurs@{temperatures\+Interieurs}}
+\index{temperatures\+Interieurs@{temperatures\+Interieurs}!Infos\+Temperature@{Infos\+Temperature}}
+\paragraph{\texorpdfstring{temperatures\+Interieurs}{temperaturesInterieurs}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Temperature\+::temperatures\+Interieurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculer\+Moyenne\+Horaire\+Temperature\+Interieur()}, et \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiter\+Moyenne\+Horaire\+Temperature\+Interieur()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_temperature_8h}{infos\+Temperature.\+h}\item 
+\hyperlink{infos_humidite_8cpp}{infos\+Humidite.\+cpp}\item 
+\hyperlink{infos_pression_atmospherique_8cpp}{infos\+Pression\+Atmospherique.\+cpp}\item 
+\hyperlink{infos_temperature_8cpp}{infos\+Temperature.\+cpp}\end{DoxyCompactItemize}

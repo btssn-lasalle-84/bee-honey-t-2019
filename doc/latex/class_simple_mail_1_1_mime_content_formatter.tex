@@ -1,0 +1,168 @@
+\hypertarget{class_simple_mail_1_1_mime_content_formatter}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Mime\+Content\+Formatter}
+\label{class_simple_mail_1_1_mime_content_formatter}\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+
+
+{\ttfamily \#include $<$mimecontentformatter.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Mime\+Content\+Formatter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_simple_mail_1_1_mime_content_formatter__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_mime_content_formatter_a69caccbcd231c7e84160415ed16f639b}{Mime\+Content\+Formatter} (int \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}=76)
+\item 
+void \hyperlink{class_simple_mail_1_1_mime_content_formatter_af982d5e4c2fd25d72ef45a3b69f99593}{set\+Max\+Length} (int l)
+\item 
+int \hyperlink{class_simple_mail_1_1_mime_content_formatter_a47f6976ee76be112da5dd610c7862d4b}{max\+Length} () const
+\item 
+Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_mime_content_formatter_ac36a08fb6878efb0a6450170ebfc8766}{format} (const Q\+Byte\+Array \&content, int \&chars) const
+\item 
+Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_mime_content_formatter_ae1f9eff05be2538bf6b3210fbab4b75a}{format\+Quoted\+Printable} (const Q\+Byte\+Array \&content, int \&chars) const
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_a69caccbcd231c7e84160415ed16f639b}\label{class_simple_mail_1_1_mime_content_formatter_a69caccbcd231c7e84160415ed16f639b}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!Mime\+Content\+Formatter@{Mime\+Content\+Formatter}}
+\index{Mime\+Content\+Formatter@{Mime\+Content\+Formatter}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{Mime\+Content\+Formatter()}{MimeContentFormatter()}}
+{\footnotesize\ttfamily Mime\+Content\+Formatter\+::\+Mime\+Content\+Formatter (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+length = {\ttfamily 76} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyCode}
+00023                                                          :
+00024     \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length}(\hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length})
+00025 \{
+00026 
+00027 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_ac36a08fb6878efb0a6450170ebfc8766}\label{class_simple_mail_1_1_mime_content_formatter_ac36a08fb6878efb0a6450170ebfc8766}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!format@{format}}
+\index{format@{format}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily Q\+Byte\+Array Mime\+Content\+Formatter\+::format (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{content,  }\item[{int \&}]{chars }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     QByteArray out;
+00032 
+00033     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < content.length() ; ++i) \{
+00034         chars++;
+00035         \textcolor{keywordflow}{if} (chars > \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length}) \{
+00036             out.append(QByteArrayLiteral(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"}));
+00037             chars = 1;
+00038         \}
+00039 
+00040         out.append(content[i]);
+00041     \}
+00042 
+00043     \textcolor{keywordflow}{return} out;
+00044 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_ae1f9eff05be2538bf6b3210fbab4b75a}\label{class_simple_mail_1_1_mime_content_formatter_ae1f9eff05be2538bf6b3210fbab4b75a}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!format\+Quoted\+Printable@{format\+Quoted\+Printable}}
+\index{format\+Quoted\+Printable@{format\+Quoted\+Printable}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{format\+Quoted\+Printable()}{formatQuotedPrintable()}}
+{\footnotesize\ttfamily Q\+Byte\+Array Mime\+Content\+Formatter\+::format\+Quoted\+Printable (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{content,  }\item[{int \&}]{chars }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}.
+
+
+\begin{DoxyCode}
+00047 \{
+00048     QByteArray out;
+00049 
+00050     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < content.length() ; ++i) \{
+00051         chars++;
+00052 
+00053         \textcolor{keywordflow}{if} (content[i] == \textcolor{charliteral}{'\(\backslash\)n'}) \{       \textcolor{comment}{// new line}
+00054             out.append(content[i]);
+00055             chars = 0;
+00056             \textcolor{keywordflow}{continue};
+00057         \}
+00058 
+00059         \textcolor{keywordflow}{if} ((chars > \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length} - 1)
+00060                 || ((content[i] == \textcolor{charliteral}{'='}) && (chars > \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length} - 3) )) \{
+00061             out.append(QByteArrayLiteral(\textcolor{stringliteral}{"=\(\backslash\)r\(\backslash\)n"}));
+00062             chars = 1;
+00063         \}
+00064 
+00065         out.append(content[i]);
+00066     \}
+00067 
+00068     \textcolor{keywordflow}{return} out;
+00069 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_a47f6976ee76be112da5dd610c7862d4b}\label{class_simple_mail_1_1_mime_content_formatter_a47f6976ee76be112da5dd610c7862d4b}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!max\+Length@{max\+Length}}
+\index{max\+Length@{max\+Length}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{max\+Length()}{maxLength()}}
+{\footnotesize\ttfamily int Mime\+Content\+Formatter\+::max\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}.
+
+
+\begin{DoxyCode}
+00077 \{
+00078     \textcolor{keywordflow}{return} \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length};
+00079 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_af982d5e4c2fd25d72ef45a3b69f99593}\label{class_simple_mail_1_1_mime_content_formatter_af982d5e4c2fd25d72ef45a3b69f99593}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!set\+Max\+Length@{set\+Max\+Length}}
+\index{set\+Max\+Length@{set\+Max\+Length}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{set\+Max\+Length()}{setMaxLength()}}
+{\footnotesize\ttfamily void Mime\+Content\+Formatter\+::set\+Max\+Length (\begin{DoxyParamCaption}\item[{int}]{l }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\+\_\+length}.
+
+
+\begin{DoxyCode}
+00072 \{
+00073     \hyperlink{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}{max\_length} = l;
+00074 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}\label{class_simple_mail_1_1_mime_content_formatter_a5c7278fb3bd794bc4ff408169cfef6fd}} 
+\index{Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}!max\+\_\+length@{max\+\_\+length}}
+\index{max\+\_\+length@{max\+\_\+length}!Simple\+Mail\+::\+Mime\+Content\+Formatter@{Simple\+Mail\+::\+Mime\+Content\+Formatter}}
+\paragraph{\texorpdfstring{max\+\_\+length}{max\_length}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Mime\+Content\+Formatter\+::max\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_mime_content_formatter_ac36a08fb6878efb0a6450170ebfc8766}{format()}, \hyperlink{class_simple_mail_1_1_mime_content_formatter_ae1f9eff05be2538bf6b3210fbab4b75a}{format\+Quoted\+Printable()}, \hyperlink{class_simple_mail_1_1_mime_content_formatter_a47f6976ee76be112da5dd610c7862d4b}{max\+Length()}, et \hyperlink{class_simple_mail_1_1_mime_content_formatter_af982d5e4c2fd25d72ef45a3b69f99593}{set\+Max\+Length()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mimecontentformatter_8h}{mimecontentformatter.\+h}\item 
+\hyperlink{mimecontentformatter_8cpp}{mimecontentformatter.\+cpp}\end{DoxyCompactItemize}

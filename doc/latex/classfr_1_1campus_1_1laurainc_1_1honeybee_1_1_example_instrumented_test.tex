@@ -1,0 +1,47 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Example\+Instrumented\+Test}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test}\index{fr.\+campus.\+laurainc.\+honeybee.\+Example\+Instrumented\+Test@{fr.\+campus.\+laurainc.\+honeybee.\+Example\+Instrumented\+Test}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Example\+Instrumented\+Test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test_a9474da2c6615d495569abe302049f465}{use\+App\+Context} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+Instrumented test, which will execute on an Android device.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{http://d.android.com/tools/testing}{\tt Testing documentation} 
+\end{DoxySeeAlso}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test_a9474da2c6615d495569abe302049f465}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_example_instrumented_test_a9474da2c6615d495569abe302049f465}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Example\+Instrumented\+Test@{fr\+::campus\+::laurainc\+::honeybee\+::\+Example\+Instrumented\+Test}!use\+App\+Context@{use\+App\+Context}}
+\index{use\+App\+Context@{use\+App\+Context}!fr\+::campus\+::laurainc\+::honeybee\+::\+Example\+Instrumented\+Test@{fr\+::campus\+::laurainc\+::honeybee\+::\+Example\+Instrumented\+Test}}
+\paragraph{\texorpdfstring{use\+App\+Context()}{useAppContext()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Example\+Instrumented\+Test.\+use\+App\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00020                                 \{
+00021         \textcolor{comment}{// Context of the app under test.}
+00022         Context appContext = InstrumentationRegistry.getTargetContext();
+00023 
+00024         assertEquals(\textcolor{stringliteral}{"fr.campus.laurainc.honeybee"}, appContext.getPackageName());
+00025     \}
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_example_instrumented_test_8java}{Example\+Instrumented\+Test.\+java}\end{DoxyCompactItemize}

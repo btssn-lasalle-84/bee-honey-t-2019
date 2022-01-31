@@ -1,0 +1,853 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+TT}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t}\index{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+TT@{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+TT}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+TT\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a98cc7dce4cade9ffacfa462fe2f97088}{Client\+M\+Q\+TT} (String device\+ID, String topic, Context context)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace2e0a1f888cb34e2a5a5c241eb6b94a}{set\+Callback} (Mqtt\+Callback\+Extended callback)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}{deconnecter} ()
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a4c5ae1bb188b2f3c770ab6112b7d8590}{souscrire\+Topic} ()
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_aad5d88947bbdb3b83d4bf915985947e3}{desinscrire\+Topic} ()
+\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}{est\+Connecte} ()
+\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}{est\+Inscrit} ()
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}{set\+Subscription\+Topic} (String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscription\+Topic})
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}{extraire\+Humidite\+Interieure} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}{extraire\+Temperature\+Interieure} (Mqtt\+Message mqtt\+Message)
+\item 
+int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}{extraire\+Poids} (Mqtt\+Message mqtt\+Message)
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraire\+Horodatage} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}{extraire\+Temperature\+Exterieure} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}{extraire\+Humidite\+Exterieure} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}{extraire\+Pression} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}{extraire\+Ensoleillement} (Mqtt\+Message mqtt\+Message)
+\item 
+int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}{extraire\+Charge} (Mqtt\+Message mqtt\+Message)
+\item 
+double \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a00ce9a2b07615c9337e452b5a51fedbe}{arrondir} (double nombre, double nb\+Apres\+Virgule)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+Mqtt\+Android\+Client \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqtt\+Android\+Client}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a423539a05c306ae52e5b6dc6fa6addc8}{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE} = 1
+\item 
+static final int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3630b0b9b902fee6796995399bee1a6a}{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS} = 2
+\item 
+static final int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3f264a8d2f3c294241bbe5557aa66770}{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE} = 3
+\item 
+static final int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a85b9107442e2f5ef6fd6bef732336d8e}{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT} = 4
+\item 
+static final int \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a49b4a61b3c65f6b3a1786ef6eeeb15e2}{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT} = 5
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}{connecter} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{server\+Uri} = \char`\"{}tcp\+://eu.\+thethings.\+network\+:1883\char`\"{}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a18f8ff3e3e2ef132a4864b77bcfc009a}{client\+Id} = \char`\"{}mes\+\_\+ruches\char`\"{}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab0ba59ea8b9ae85d9436fbd2e96d2e8a}{username} = \char`\"{}mes\+\_\+ruches\char`\"{}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a68fea868dcd85de576fb728aadcceed7}{password} = \char`\"{}ttn-\/account-\/v2.\+vC-\/aq\+M\+Rn\+L\+Lz\+Gk\+Nj\+O\+D\+Wgy81k\+Lqzx\+B\+P\+A\+T8\+\_\+mE-\/L7\+U2\+C\+\_\+w\char`\"{}
+\item 
+String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscription\+Topic}
+\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte}
+\item 
+boolean \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{T\+AG} = \char`\"{}Client\+M\+Q\+TT\char`\"{}
+\begin{DoxyCompactList}\small\item\em le T\+AG de la classe pour les logs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a98cc7dce4cade9ffacfa462fe2f97088}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a98cc7dce4cade9ffacfa462fe2f97088}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!Client\+M\+Q\+TT@{Client\+M\+Q\+TT}}
+\index{Client\+M\+Q\+TT@{Client\+M\+Q\+TT}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{Client\+M\+Q\+T\+T()}{ClientMQTT()}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+Client\+M\+Q\+TT (\begin{DoxyParamCaption}\item[{String}]{device\+ID,  }\item[{String}]{topic,  }\item[{Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+connecter()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+set\+Subscription\+Topic()}.
+
+
+\begin{DoxyCode}
+00039     \{
+00040         Log.v(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"deviceID : "} + deviceID + \textcolor{stringliteral}{" topic : "} + topic);
+00041         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}{setSubscriptionTopic}(topic);
+00042         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte} = \textcolor{keyword}{false};
+00043         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit} = \textcolor{keyword}{false};
+00044         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient} = \textcolor{keyword}{new} MqttAndroidClient(context, 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a18f8ff3e3e2ef132a4864b77bcfc009a}{clientId});
+00045         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.setCallback(\textcolor{keyword}{new} MqttCallbackExtended()
+00046         \{
+00047             @Override
+00048             \textcolor{keyword}{public} \textcolor{keywordtype}{void} connectComplete(\textcolor{keywordtype}{boolean} b, String s) \{
+00049                 Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, s);
+00050             \}
+00051 
+00052             @Override
+00053             \textcolor{keyword}{public} \textcolor{keywordtype}{void} connectionLost(Throwable throwable) \{
+00054                 Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Connexion perdue avec le serveur"});
+00055                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte} = \textcolor{keyword}{false};
+00056             \}
+00057 
+00058             @Override
+00059             \textcolor{keyword}{public} \textcolor{keywordtype}{void} messageArrived(String topic, MqttMessage mqttMessage) \textcolor{keywordflow}{throws} Exception \{
+00060                 Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, mqttMessage.toString());
+00061             \}
+00062 
+00063             @Override
+00064             \textcolor{keyword}{public} \textcolor{keywordtype}{void} deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) \{Log.w(\textcolor{stringliteral}{"mqtt"}, \textcolor{stringliteral}{"Message
+       envoyé"});\}
+00065         \});
+00066 
+00067         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}{connecter}();
+00068     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a00ce9a2b07615c9337e452b5a51fedbe}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a00ce9a2b07615c9337e452b5a51fedbe}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!arrondir@{arrondir}}
+\index{arrondir@{arrondir}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{arrondir()}{arrondir()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+arrondir (\begin{DoxyParamCaption}\item[{double}]{nombre,  }\item[{double}]{nb\+Apres\+Virgule }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Poids()}.
+
+
+\begin{DoxyCode}
+00408     \{
+00409         \textcolor{keywordflow}{return}(\textcolor{keywordtype}{double})((int)(nombre * Math.pow(10,nbApresVirgule) + .5)) / Math.pow(10,nbApresVirgule);
+00410     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!connecter@{connecter}}
+\index{connecter@{connecter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{connecter()}{connecter()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+connecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a4c5ae1bb188b2f3c770ab6112b7d8590}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+souscrire\+Topic()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a98cc7dce4cade9ffacfa462fe2f97088}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+Client\+M\+Q\+T\+T()}.
+
+
+\begin{DoxyCode}
+00074                             \{
+00075         MqttConnectOptions mqttConnectOptions = \textcolor{keyword}{new} MqttConnectOptions();
+00076         mqttConnectOptions.setAutomaticReconnect(\textcolor{keyword}{true});
+00077         mqttConnectOptions.setCleanSession(\textcolor{keyword}{false});
+00078         mqttConnectOptions.setUserName(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab0ba59ea8b9ae85d9436fbd2e96d2e8a}{username});
+00079         mqttConnectOptions.setPassword(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a68fea868dcd85de576fb728aadcceed7}{password}.toCharArray());
+00080 
+00081         \textcolor{keywordflow}{try} \{
+00082             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Connexion au serveur : "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri});
+00083             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.connect(mqttConnectOptions, null, \textcolor{keyword}{new} IMqttActionListener() 
+      \{
+00084                 @Override
+00085                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onSuccess(IMqttToken asyncActionToken) \{
+00086                     DisconnectedBufferOptions disconnectedBufferOptions = \textcolor{keyword}{new} DisconnectedBufferOptions();
+00087                     disconnectedBufferOptions.setBufferEnabled(\textcolor{keyword}{true});
+00088                     disconnectedBufferOptions.setBufferSize(100);
+00089                     disconnectedBufferOptions.setPersistBuffer(\textcolor{keyword}{false});
+00090                     disconnectedBufferOptions.setDeleteOldestMessages(\textcolor{keyword}{false});
+00091                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.setBufferOpts(disconnectedBufferOptions);
+00092                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte} = \textcolor{keyword}{true};
+00093                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a4c5ae1bb188b2f3c770ab6112b7d8590}{souscrireTopic}();
+00094                     Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Connecté au serveur : "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri});
+00095                 \}
+00096 
+00097                 @Override
+00098                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onFailure(IMqttToken asyncActionToken, Throwable exception) \{
+00099                     Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Impossible de se connecter au serveur : "} + 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri} + exception.toString());
+00100                 \}
+00101             \});
+00102         \} \textcolor{keywordflow}{catch} (MqttException ex)\{
+00103             ex.printStackTrace();
+00104         \}
+00105     \} \textcolor{comment}{// Méthode permettant de se connecter}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!deconnecter@{deconnecter}}
+\index{deconnecter@{deconnecter}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{deconnecter()}{deconnecter()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+deconnecter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_aad5d88947bbdb3b83d4bf915985947e3}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+desinscrire\+Topic()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Inscrit()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Liste\+Ruches()}.
+
+
+\begin{DoxyCode}
+00107                               \{
+00108         \textcolor{keywordflow}{try} \{
+00109             \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}{estInscrit}())
+00110                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_aad5d88947bbdb3b83d4bf915985947e3}{desinscrireTopic}();
+00111 
+00112             IMqttToken disconToken = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.disconnect();
+00113             disconToken.setActionCallback(\textcolor{keyword}{new} IMqttActionListener() \{
+00114                 @Override
+00115                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onSuccess(IMqttToken asyncActionToken) \{
+00116                     Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Déconnecté du serveur : "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri});
+00117                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte} = \textcolor{keyword}{false};
+00118                 \}
+00119 
+00120                 @Override
+00121                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onFailure(IMqttToken asyncActionToken, Throwable exception) \{
+00122                     Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Impossible de se déconnecter du serveur : "} + 
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}{serverUri} + exception.toString());
+00123                 \}
+00124             \});
+00125         \} \textcolor{keywordflow}{catch} (MqttException e) \{
+00126             e.printStackTrace();
+00127         \}
+00128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_aad5d88947bbdb3b83d4bf915985947e3}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_aad5d88947bbdb3b83d4bf915985947e3}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!desinscrire\+Topic@{desinscrire\+Topic}}
+\index{desinscrire\+Topic@{desinscrire\+Topic}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{desinscrire\+Topic()}{desinscrireTopic()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+desinscrire\+Topic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+deconnecter()}.
+
+
+\begin{DoxyCode}
+00152                                    \{
+00153         \textcolor{keywordflow}{try} \{
+00154             IMqttToken unsubToken = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.unsubscribe(
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic});
+00155             unsubToken.setActionCallback(\textcolor{keyword}{new} IMqttActionListener() \{
+00156                 @Override
+00157                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onSuccess(IMqttToken asyncActionToken) \{
+00158                     Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG},\textcolor{stringliteral}{"Désabonné du topic "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic});
+00159                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit} = \textcolor{keyword}{false};
+00160                 \}
+00161 
+00162                 @Override
+00163                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onFailure(IMqttToken asyncActionToken, Throwable exception) \{
+00164                     Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Impossible de se désabonner du topic"});
+00165                 \}
+00166             \});
+00167         \} \textcolor{keywordflow}{catch} (MqttException e) \{
+00168             e.printStackTrace();
+00169         \}
+00170     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!est\+Connecte@{est\+Connecte}}
+\index{est\+Connecte@{est\+Connecte}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{est\+Connecte()}{estConnecte()}}
+{\footnotesize\ttfamily boolean fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Connecte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+connecte}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Liste\+Ruches()}.
+
+
+\begin{DoxyCode}
+00172                                  \{
+00173         Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG},\textcolor{stringliteral}{"isConnected "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.isConnected());
+00174         Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG},\textcolor{stringliteral}{"connecte "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte});
+00175         \textcolor{comment}{//return mqttAndroidClient.isConnected();}
+00176         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}{connecte};
+00177     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!est\+Inscrit@{est\+Inscrit}}
+\index{est\+Inscrit@{est\+Inscrit}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{est\+Inscrit()}{estInscrit()}}
+{\footnotesize\ttfamily boolean fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Inscrit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+inscrit}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+deconnecter()}.
+
+
+\begin{DoxyCode}
+00179                                 \{
+00180         Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG},\textcolor{stringliteral}{"inscrit "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit});
+00181         \textcolor{keywordflow}{return} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit};
+00182     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Charge@{extraire\+Charge}}
+\index{extraire\+Charge@{extraire\+Charge}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Charge()}{extraireCharge()}}
+{\footnotesize\ttfamily int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Charge (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00364     \{
+00365         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00366         \textcolor{keywordtype}{int} charge = 0;
+00367 
+00368         \textcolor{keywordflow}{try}
+00369         \{
+00370             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00371             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00372             charge = payloadFields.getInt(\textcolor{stringliteral}{"charge"});
+00373             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Charge : "} + charge + \textcolor{stringliteral}{" %"});
+00374 
+00375             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00376         \}
+00377         \textcolor{keywordflow}{catch} (JSONException e)
+00378         \{
+00379             e.printStackTrace();
+00380         \}
+00381 
+00382         \textcolor{keywordflow}{return}  charge;
+00383     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Ensoleillement@{extraire\+Ensoleillement}}
+\index{extraire\+Ensoleillement@{extraire\+Ensoleillement}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Ensoleillement()}{extraireEnsoleillement()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Ensoleillement (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00342     \{
+00343         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00344         \textcolor{keywordtype}{double} ensoleillement = 0.;
+00345 
+00346         \textcolor{keywordflow}{try}
+00347         \{
+00348             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00349             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00350             ensoleillement = payloadFields.getDouble(\textcolor{stringliteral}{"ensoleillement"});
+00351             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Ensoleillement : "} + ensoleillement + \textcolor{stringliteral}{" hPa"});
+00352 
+00353             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00354         \}
+00355         \textcolor{keywordflow}{catch} (JSONException e)
+00356         \{
+00357             e.printStackTrace();
+00358         \}
+00359 
+00360         \textcolor{keywordflow}{return}  ensoleillement;
+00361     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Horodatage@{extraire\+Horodatage}}
+\index{extraire\+Horodatage@{extraire\+Horodatage}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Horodatage()}{extraireHorodatage()}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Ensoleillement()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Exterieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Interieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Poids()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Pression()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Exterieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Interieure()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00255     \{
+00256         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00257         String date = \textcolor{stringliteral}{""};
+00258 
+00259         \textcolor{keywordflow}{try}
+00260         \{
+00261             JSONObject jsonObject = \textcolor{keyword}{new} JSONObject(message);
+00262             date = jsonObject.getJSONObject(\textcolor{stringliteral}{"metadata"}).getString(\textcolor{stringliteral}{"time"});
+00263             date = date.substring(0, 10) + \textcolor{stringliteral}{" "} + date.substring(11, 19);
+00264             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Horodatage : "} + date);
+00265 
+00266         \}
+00267         \textcolor{keywordflow}{catch} (JSONException e)
+00268         \{
+00269             e.printStackTrace();
+00270         \}
+00271 
+00272         \textcolor{keywordflow}{return}  date;
+00273     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Humidite\+Exterieure@{extraire\+Humidite\+Exterieure}}
+\index{extraire\+Humidite\+Exterieure@{extraire\+Humidite\+Exterieure}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Humidite\+Exterieure()}{extraireHumiditeExterieure()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Exterieure (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00298     \{
+00299         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00300         \textcolor{keywordtype}{double} humiditeExterieure = 0.;
+00301 
+00302         \textcolor{keywordflow}{try}
+00303         \{
+00304             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00305             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00306             humiditeExterieure = payloadFields.getDouble(\textcolor{stringliteral}{"humidite"});
+00307             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Humidité extérieure : "} + humiditeExterieure + \textcolor{stringliteral}{" %"});
+00308 
+00309             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00310         \}
+00311         \textcolor{keywordflow}{catch} (JSONException e)
+00312         \{
+00313             e.printStackTrace();
+00314         \}
+00315 
+00316         \textcolor{keywordflow}{return}  humiditeExterieure;
+00317     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Humidite\+Interieure@{extraire\+Humidite\+Interieure}}
+\index{extraire\+Humidite\+Interieure@{extraire\+Humidite\+Interieure}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Humidite\+Interieure()}{extraireHumiditeInterieure()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Interieure (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00189     \{
+00190         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00191         \textcolor{keywordtype}{double} humidite = 0.;
+00192 
+00193         \textcolor{keywordflow}{try}
+00194         \{
+00195             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00196             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00197             humidite = payloadFields.getDouble(\textcolor{stringliteral}{"humidite"});
+00198             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Humidite intérieure : "} + humidite + \textcolor{stringliteral}{" %"});
+00199 
+00200             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00201         \}
+00202         \textcolor{keywordflow}{catch} (JSONException e)
+00203         \{
+00204             e.printStackTrace();
+00205         \}
+00206 
+00207         \textcolor{keywordflow}{return} humidite;
+00208     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Poids@{extraire\+Poids}}
+\index{extraire\+Poids@{extraire\+Poids}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Poids()}{extrairePoids()}}
+{\footnotesize\ttfamily int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Poids (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00233     \{
+00234         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00235         \textcolor{keywordtype}{int} poids = 0;
+00236 
+00237         \textcolor{keywordflow}{try}
+00238         \{
+00239             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00240             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00241             poids = payloadFields.getInt(\textcolor{stringliteral}{"poids"});
+00242             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Poids : "} + poids + \textcolor{stringliteral}{" Kg"});
+00243 
+00244             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00245         \}
+00246         \textcolor{keywordflow}{catch} (JSONException e)
+00247         \{
+00248             e.printStackTrace();
+00249         \}
+00250 
+00251         \textcolor{keywordflow}{return} poids;
+00252     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Pression@{extraire\+Pression}}
+\index{extraire\+Pression@{extraire\+Pression}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Pression()}{extrairePression()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Pression (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00320     \{
+00321         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00322         \textcolor{keywordtype}{double} pression = 0.;
+00323 
+00324         \textcolor{keywordflow}{try}
+00325         \{
+00326             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00327             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00328             pression = payloadFields.getDouble(\textcolor{stringliteral}{"pression"});
+00329             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Pression : "} + pression + \textcolor{stringliteral}{" hPa"});
+00330 
+00331             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00332         \}
+00333         \textcolor{keywordflow}{catch} (JSONException e)
+00334         \{
+00335             e.printStackTrace();
+00336         \}
+00337 
+00338         \textcolor{keywordflow}{return}  pression;
+00339     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Temperature\+Exterieure@{extraire\+Temperature\+Exterieure}}
+\index{extraire\+Temperature\+Exterieure@{extraire\+Temperature\+Exterieure}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Temperature\+Exterieure()}{extraireTemperatureExterieure()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Exterieure (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00276     \{
+00277         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00278         \textcolor{keywordtype}{double} temperatureExterieure = 0.;
+00279 
+00280         \textcolor{keywordflow}{try}
+00281         \{
+00282             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00283             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00284             temperatureExterieure = payloadFields.getDouble(\textcolor{stringliteral}{"temperature"});
+00285             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Temperature extérieure : "} + temperatureExterieure + \textcolor{stringliteral}{" °C"});
+00286 
+00287             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00288         \}
+00289         \textcolor{keywordflow}{catch} (JSONException e)
+00290         \{
+00291             e.printStackTrace();
+00292         \}
+00293 
+00294         \textcolor{keywordflow}{return}  temperatureExterieure;
+00295     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!extraire\+Temperature\+Interieure@{extraire\+Temperature\+Interieure}}
+\index{extraire\+Temperature\+Interieure@{extraire\+Temperature\+Interieure}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{extraire\+Temperature\+Interieure()}{extraireTemperatureInterieure()}}
+{\footnotesize\ttfamily double fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Interieure (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00211     \{
+00212         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00213         \textcolor{keywordtype}{double} temperature = 0.;
+00214 
+00215         \textcolor{keywordflow}{try}
+00216         \{
+00217             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00218             JSONObject payloadFields = jsonObjet.getJSONObject(\textcolor{stringliteral}{"payload\_fields"});
+00219             temperature = payloadFields.getDouble(\textcolor{stringliteral}{"temperature"});
+00220             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Température : "} + temperature + \textcolor{stringliteral}{" °C"});
+00221 
+00222             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00223         \}
+00224         \textcolor{keywordflow}{catch} (JSONException e)
+00225         \{
+00226             e.printStackTrace();
+00227         \}
+00228 
+00229         \textcolor{keywordflow}{return} temperature;
+00230     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace2e0a1f888cb34e2a5a5c241eb6b94a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace2e0a1f888cb34e2a5a5c241eb6b94a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!set\+Callback@{set\+Callback}}
+\index{set\+Callback@{set\+Callback}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{set\+Callback()}{setCallback()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+set\+Callback (\begin{DoxyParamCaption}\item[{Mqtt\+Callback\+Extended}]{callback }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+communiquer\+T\+T\+N()}.
+
+
+\begin{DoxyCode}
+00070                                                            \{
+00071         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.setCallback(callback);
+00072     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!set\+Subscription\+Topic@{set\+Subscription\+Topic}}
+\index{set\+Subscription\+Topic@{set\+Subscription\+Topic}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{set\+Subscription\+Topic()}{setSubscriptionTopic()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+set\+Subscription\+Topic (\begin{DoxyParamCaption}\item[{String}]{subscription\+Topic }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+subscription\+Topic}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a98cc7dce4cade9ffacfa462fe2f97088}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+Client\+M\+Q\+T\+T()}.
+
+
+\begin{DoxyCode}
+00184                                                                \{
+00185         this.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic} = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic};
+00186     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a4c5ae1bb188b2f3c770ab6112b7d8590}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a4c5ae1bb188b2f3c770ab6112b7d8590}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!souscrire\+Topic@{souscrire\+Topic}}
+\index{souscrire\+Topic@{souscrire\+Topic}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{souscrire\+Topic()}{souscrireTopic()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+souscrire\+Topic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab514adf6ebb879734ee8f2b3b2fd106a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+connecter()}.
+
+
+\begin{DoxyCode}
+00130                                  \{
+00131         \textcolor{keywordflow}{try} \{
+00132             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}{mqttAndroidClient}.subscribe(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic}, 0, null, \textcolor{keyword}{new} 
+      IMqttActionListener() \{
+00133                 @Override
+00134                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onSuccess(IMqttToken asyncActionToken) \{
+00135                     Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG},\textcolor{stringliteral}{"Abonné au topic "} + \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}{subscriptionTopic});
+00136                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit} = \textcolor{keyword}{true};
+00137                 \}
+00138 
+00139                 @Override
+00140                 \textcolor{keyword}{public} \textcolor{keywordtype}{void} onFailure(IMqttToken asyncActionToken, Throwable exception) \{
+00141                     Log.w(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}{TAG}, \textcolor{stringliteral}{"Impossible de s'abonner du topic"});
+00142                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}{inscrit} = \textcolor{keyword}{false};
+00143                 \}
+00144             \});
+00145 
+00146         \} \textcolor{keywordflow}{catch} (MqttException ex) \{
+00147             System.err.println(\textcolor{stringliteral}{"Exceptionst subscribing"});
+00148             ex.printStackTrace();
+00149         \}
+00150     \} \textcolor{comment}{// Abonnement à un topic}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a18f8ff3e3e2ef132a4864b77bcfc009a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a18f8ff3e3e2ef132a4864b77bcfc009a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!client\+Id@{client\+Id}}
+\index{client\+Id@{client\+Id}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{client\+Id}{clientId}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+client\+Id = \char`\"{}mes\+\_\+ruches\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_abf92ba9ac98a707353748665a738c1c0}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!connecte@{connecte}}
+\index{connecte@{connecte}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{connecte}{connecte}}
+{\footnotesize\ttfamily boolean fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+connecte\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Connecte()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a774f2fd702c2a3581bf8dbfa341274fc}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!inscrit@{inscrit}}
+\index{inscrit@{inscrit}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{inscrit}{inscrit}}
+{\footnotesize\ttfamily boolean fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+inscrit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8ec5abba65d09f44e1c2c8f9ef652632}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Inscrit()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a587a9b6c785448cf3e37dc92bcac7961}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!mqtt\+Android\+Client@{mqtt\+Android\+Client}}
+\index{mqtt\+Android\+Client@{mqtt\+Android\+Client}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{mqtt\+Android\+Client}{mqttAndroidClient}}
+{\footnotesize\ttfamily Mqtt\+Android\+Client fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+mqtt\+Android\+Client}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a68fea868dcd85de576fb728aadcceed7}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a68fea868dcd85de576fb728aadcceed7}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!password@{password}}
+\index{password@{password}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+password = \char`\"{}ttn-\/account-\/v2.\+vC-\/aq\+M\+Rn\+L\+Lz\+Gk\+Nj\+O\+D\+Wgy81k\+Lqzx\+B\+P\+A\+T8\+\_\+mE-\/L7\+U2\+C\+\_\+w\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a423539a05c306ae52e5b6dc6fa6addc8}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a423539a05c306ae52e5b6dc6fa6addc8}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE}}
+\index{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE}{PORT\_MESURE\_ENERGIE}}
+{\footnotesize\ttfamily final int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a49b4a61b3c65f6b3a1786ef6eeeb15e2}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a49b4a61b3c65f6b3a1786ef6eeeb15e2}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT}}
+\index{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT}{PORT\_MESURE\_ENSOLEILLEMENT}}
+{\footnotesize\ttfamily final int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a85b9107442e2f5ef6fd6bef732336d8e}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a85b9107442e2f5ef6fd6bef732336d8e}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT}}
+\index{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT}{PORT\_MESURE\_ENVIRONEMENT}}
+{\footnotesize\ttfamily final int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3630b0b9b902fee6796995399bee1a6a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3630b0b9b902fee6796995399bee1a6a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS}}
+\index{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS}{PORT\_MESURE\_POIDS}}
+{\footnotesize\ttfamily final int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3f264a8d2f3c294241bbe5557aa66770}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3f264a8d2f3c294241bbe5557aa66770}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE}}
+\index{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE@{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE}{PORT\_MESURE\_RUCHE}}
+{\footnotesize\ttfamily final int fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_acc6543bf073de1b41fae396d8c0cf83d}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!server\+Uri@{server\+Uri}}
+\index{server\+Uri@{server\+Uri}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{server\+Uri}{serverUri}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+server\+Uri = \char`\"{}tcp\+://eu.\+thethings.\+network\+:1883\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a8771380740ea2e139b595f5b8fa7e0a5}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!subscription\+Topic@{subscription\+Topic}}
+\index{subscription\+Topic@{subscription\+Topic}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{subscription\+Topic}{subscriptionTopic}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+subscription\+Topic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af30038554905358c24a7226544822ff3}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+set\+Subscription\+Topic()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a378324f705f8d7870c5f7be0cea02890}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!T\+AG@{T\+AG}}
+\index{T\+AG@{T\+AG}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{T\+AG}{TAG}}
+{\footnotesize\ttfamily final String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+T\+AG = \char`\"{}Client\+M\+Q\+TT\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab0ba59ea8b9ae85d9436fbd2e96d2e8a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ab0ba59ea8b9ae85d9436fbd2e96d2e8a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}!username@{username}}
+\index{username@{username}!fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT@{fr\+::campus\+::laurainc\+::honeybee\+::\+Client\+M\+Q\+TT}}
+\paragraph{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily String fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+username = \char`\"{}mes\+\_\+ruches\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_client_m_q_t_t_8java}{Client\+M\+Q\+T\+T.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t: Référence de la classe SimpleMail::MimeMessage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_simple_mail.html">SimpleMail</a></li><li class="navelem"><a class="el" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-attribs">Attributs protégés</a> &#124;
+<a href="class_simple_mail_1_1_mime_message-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe SimpleMail::MimeMessage</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mimemessage_8h_source.html">mimemessage.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de SimpleMail::MimeMessage:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_simple_mail_1_1_mime_message__coll__graph.png" border="0" usemap="#_simple_mail_1_1_mime_message_coll__map" alt="Collaboration graph"/></div>
+<map name="_simple_mail_1_1_mime_message_coll__map" id="_simple_mail_1_1_mime_message_coll__map">
+<area shape="rect" id="node2" href="class_simple_mail_1_1_mime_message_private.html" title="{SimpleMail::MimeMessagePrivate\n|+ recipientsTo\l+ recipientsCc\l+ recipientsBcc\l+ subject\l+ encoding\l+ autoMimeContentCreated\l|+ ~MimeMessagePrivate()\l+ encode()\l+ encodeData()\l}" alt="" coords="64,351,284,531"/>
+<area shape="rect" id="node3" href="class_simple_mail_1_1_mime_part.html" title="{SimpleMail::MimePart\n|# d_ptr\l|+ MimePart()\l+ MimePart()\l+ ~MimePart()\l+ operator=()\l+ header()\l+ content()\l+ setContent()\l+ setHeader()\l+ addHeaderLine()\l+ setContentId()\let 13 de plus...\l# MimePart()\l# writeData()\l# d_func()\l# d_func()\l}" alt="" coords="5,5,156,288"/>
+<area shape="rect" id="node4" href="class_simple_mail_1_1_email_address.html" title="{SimpleMail::EmailAddress\n|# d_ptr\l|+ EmailAddress()\l+ EmailAddress()\l+ EmailAddress()\l+ ~EmailAddress()\l+ operator=()\l+ name()\l+ setName()\l+ address()\l+ setAddress()\l&#45; d_func()\l&#45; d_func()\l}" alt="" coords="180,35,355,259"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a3ab61502fa784f8aebdacbec4a86ce49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a3ab61502fa784f8aebdacbec4a86ce49">MimeMessage</a> (bool createAutoMimeConent=true)</td></tr>
+<tr class="separator:a3ab61502fa784f8aebdacbec4a86ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5005458f2bf64ad5255b8d12e0a324c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ae5005458f2bf64ad5255b8d12e0a324c">~MimeMessage</a> ()</td></tr>
+<tr class="separator:ae5005458f2bf64ad5255b8d12e0a324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bd73dba6b0a49443bcdd6d9e603319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ab3bd73dba6b0a49443bcdd6d9e603319">setSender</a> (const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;<a class="el" href="class_simple_mail_1_1_mime_message.html#a626953414e4eed9e57ea793eb60a2d6b">sender</a>)</td></tr>
+<tr class="separator:ab3bd73dba6b0a49443bcdd6d9e603319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626953414e4eed9e57ea793eb60a2d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a626953414e4eed9e57ea793eb60a2d6b">sender</a> () const</td></tr>
+<tr class="separator:a626953414e4eed9e57ea793eb60a2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f8b71260b9f2ac07505526b3c516b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ac1f8b71260b9f2ac07505526b3c516b2">setToRecipients</a> (const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;toList)</td></tr>
+<tr class="separator:ac1f8b71260b9f2ac07505526b3c516b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3c4cf44d48b95f8436d251d19ffcb2"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a1e3c4cf44d48b95f8436d251d19ffcb2">toRecipients</a> () const</td></tr>
+<tr class="separator:a1e3c4cf44d48b95f8436d251d19ffcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49bed2a8717ed6cacdb66f2570c2740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ae49bed2a8717ed6cacdb66f2570c2740">addTo</a> (const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;rcpt)</td></tr>
+<tr class="separator:ae49bed2a8717ed6cacdb66f2570c2740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2867c3922e5d3766ff46168799285f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#afc2867c3922e5d3766ff46168799285f">setCcRecipients</a> (const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;ccList)</td></tr>
+<tr class="separator:afc2867c3922e5d3766ff46168799285f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cf7d797c2405f31f50c6959c00a12f"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a69cf7d797c2405f31f50c6959c00a12f">ccRecipients</a> () const</td></tr>
+<tr class="separator:a69cf7d797c2405f31f50c6959c00a12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe778b09344f89f9b83b6d95ed5ce83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a3fe778b09344f89f9b83b6d95ed5ce83">addCc</a> (const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;rcpt)</td></tr>
+<tr class="separator:a3fe778b09344f89f9b83b6d95ed5ce83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0c5bf41385cfc09619f61391f0ddb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a7d0c5bf41385cfc09619f61391f0ddb8">setBccRecipients</a> (const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;bccList)</td></tr>
+<tr class="separator:a7d0c5bf41385cfc09619f61391f0ddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160a1f92f2dd26e2154514fa51303db5"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a160a1f92f2dd26e2154514fa51303db5">bccRecipients</a> () const</td></tr>
+<tr class="separator:a160a1f92f2dd26e2154514fa51303db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d3717ede759eed8244470093e6290a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a53d3717ede759eed8244470093e6290a">addBcc</a> (const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;rcpt)</td></tr>
+<tr class="separator:a53d3717ede759eed8244470093e6290a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525c33895b322e06c35c0d831cfe9b02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a525c33895b322e06c35c0d831cfe9b02">setSubject</a> (const QString &amp;<a class="el" href="class_simple_mail_1_1_mime_message.html#a54274861ea83b4b37dd9db80aca34e39">subject</a>)</td></tr>
+<tr class="separator:a525c33895b322e06c35c0d831cfe9b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4591e5e94961bd10dfabfd1a89d9fbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ae4591e5e94961bd10dfabfd1a89d9fbd">addPart</a> (<a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *part)</td></tr>
+<tr class="separator:ae4591e5e94961bd10dfabfd1a89d9fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00bcfef5a681b823002e4efb09d0cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#af00bcfef5a681b823002e4efb09d0cdc">setHeaderEncoding</a> (<a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9">MimePart::Encoding</a>)</td></tr>
+<tr class="separator:af00bcfef5a681b823002e4efb09d0cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54274861ea83b4b37dd9db80aca34e39"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a54274861ea83b4b37dd9db80aca34e39">subject</a> () const</td></tr>
+<tr class="separator:a54274861ea83b4b37dd9db80aca34e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3159d513eb978ea8b764d5defcde12dd"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a3159d513eb978ea8b764d5defcde12dd">parts</a> () const</td></tr>
+<tr class="separator:a3159d513eb978ea8b764d5defcde12dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5708266287367c6741e6f2e479a90fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ab5708266287367c6741e6f2e479a90fb">getContent</a> ()</td></tr>
+<tr class="separator:ab5708266287367c6741e6f2e479a90fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489178b096474e20dc068168df42ab15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#a489178b096474e20dc068168df42ab15">setContent</a> (<a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *content)</td></tr>
+<tr class="separator:a489178b096474e20dc068168df42ab15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fff977d1c558ddc6711416fe0ff723"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#ae7fff977d1c558ddc6711416fe0ff723">write</a> (QIODevice *device)</td></tr>
+<tr class="separator:ae7fff977d1c558ddc6711416fe0ff723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Attributs protégés</h2></td></tr>
+<tr class="memitem:abb70ca7430a820f75203dd6bd66cc47f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_message_private.html">MimeMessagePrivate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">d_ptr</a></td></tr>
+<tr class="separator:abb70ca7430a820f75203dd6bd66cc47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a3ab61502fa784f8aebdacbec4a86ce49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ab61502fa784f8aebdacbec4a86ce49">&#9670;&nbsp;</a></span>MimeMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MimeMessage::MimeMessage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>createAutoMimeConent</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                   :</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">d_ptr</a>(<span class="keyword">new</span> <a class="code" href="class_simple_mail_1_1_mime_message_private.html">MimeMessagePrivate</a>)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (createAutoMimeContent) {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        d-&gt;content = <span class="keyword">new</span> <a class="code" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    d-&gt;autoMimeContentCreated = createAutoMimeContent;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message_private.html">SimpleMail::MimeMessagePrivate</a></div><div class="ttdef"><b>Definition:</b> mimemessage_p.h:27</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html">SimpleMail::MimeMultiPart</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:29</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html_abb70ca7430a820f75203dd6bd66cc47f"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">SimpleMail::MimeMessage::d_ptr</a></div><div class="ttdeci">MimeMessagePrivate * d_ptr</div><div class="ttdef"><b>Definition:</b> mimemessage.h:67</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5005458f2bf64ad5255b8d12e0a324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5005458f2bf64ad5255b8d12e0a324c">&#9670;&nbsp;</a></span>~MimeMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MimeMessage::~MimeMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">d_ptr</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">d_ptr</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html_abb70ca7430a820f75203dd6bd66cc47f"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html#abb70ca7430a820f75203dd6bd66cc47f">SimpleMail::MimeMessage::d_ptr</a></div><div class="ttdeci">MimeMessagePrivate * d_ptr</div><div class="ttdef"><b>Definition:</b> mimemessage.h:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a53d3717ede759eed8244470093e6290a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d3717ede759eed8244470093e6290a">&#9670;&nbsp;</a></span>addBcc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::addBcc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rcpt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    d-&gt;recipientsBcc.append(rcpt);</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3fe778b09344f89f9b83b6d95ed5ce83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe778b09344f89f9b83b6d95ed5ce83">&#9670;&nbsp;</a></span>addCc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::addCc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rcpt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    d-&gt;recipientsCc.append(rcpt);</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4591e5e94961bd10dfabfd1a89d9fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4591e5e94961bd10dfabfd1a89d9fbd">&#9670;&nbsp;</a></span>addPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::addPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_alertes.html#a375783502a78109f3323dc1ed90cfdc9">Alertes::envoyerMailAlerte()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*d-&gt;content) == <span class="keyword">typeid</span>(<a class="code" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a>)) {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        ((<a class="code" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a>*) d-&gt;content)-&gt;addPart(part);</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html">SimpleMail::MimeMultiPart</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:29</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae49bed2a8717ed6cacdb66f2570c2740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49bed2a8717ed6cacdb66f2570c2740">&#9670;&nbsp;</a></span>addTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::addTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>rcpt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_alertes.html#a375783502a78109f3323dc1ed90cfdc9">Alertes::envoyerMailAlerte()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    d-&gt;recipientsTo.append(rcpt);</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a160a1f92f2dd26e2154514fa51303db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160a1f92f2dd26e2154514fa51303db5">&#9670;&nbsp;</a></span>bccRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; MimeMessage::bccRecipients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_sender_private.html#a2ede5284746e77ee37b8fe96f4bbb100">SimpleMail::SenderPrivate::sendMail()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> d-&gt;recipientsBcc;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a69cf7d797c2405f31f50c6959c00a12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cf7d797c2405f31f50c6959c00a12f">&#9670;&nbsp;</a></span>ccRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; MimeMessage::ccRecipients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_sender_private.html#a2ede5284746e77ee37b8fe96f4bbb100">SimpleMail::SenderPrivate::sendMail()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> d-&gt;recipientsCc;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5708266287367c6741e6f2e479a90fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5708266287367c6741e6f2e479a90fb">&#9670;&nbsp;</a></span>getContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> &amp; MimeMessage::getContent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> *d-&gt;content;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3159d513eb978ea8b764d5defcde12dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3159d513eb978ea8b764d5defcde12dd">&#9670;&nbsp;</a></span>parts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> * &gt; MimeMessage::parts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    QList&lt;MimePart*&gt; ret;</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">typeid</span>(*d-&gt;content) == <span class="keyword">typeid</span>(<a class="code" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a>)) {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        ret = <span class="keyword">static_cast&lt;</span><a class="code" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a>*<span class="keyword">&gt;</span>(d-&gt;content)-&gt;<a class="code" href="class_simple_mail_1_1_mime_message.html#a3159d513eb978ea8b764d5defcde12dd">parts</a>();</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        ret.append(d-&gt;content);</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> ret;</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html_a3159d513eb978ea8b764d5defcde12dd"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html#a3159d513eb978ea8b764d5defcde12dd">SimpleMail::MimeMessage::parts</a></div><div class="ttdeci">QList&lt; MimePart * &gt; parts() const</div><div class="ttdef"><b>Definition:</b> mimemessage.cpp:200</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html">SimpleMail::MimeMultiPart</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:29</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a626953414e4eed9e57ea793eb60a2d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626953414e4eed9e57ea793eb60a2d6b">&#9670;&nbsp;</a></span>sender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> MimeMessage::sender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_sender_private.html#a2ede5284746e77ee37b8fe96f4bbb100">SimpleMail::SenderPrivate::sendMail()</a>, et <a class="el" href="class_simple_mail_1_1_mime_message.html#ab3bd73dba6b0a49443bcdd6d9e603319">setSender()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;{</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> d-&gt;sender;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7d0c5bf41385cfc09619f61391f0ddb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0c5bf41385cfc09619f61391f0ddb8">&#9670;&nbsp;</a></span>setBccRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setBccRecipients </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>bccList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    d-&gt;recipientsBcc = bccList;</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afc2867c3922e5d3766ff46168799285f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2867c3922e5d3766ff46168799285f">&#9670;&nbsp;</a></span>setCcRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setCcRecipients </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ccList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    d-&gt;recipientsCc = ccList;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a489178b096474e20dc068168df42ab15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a489178b096474e20dc068168df42ab15">&#9670;&nbsp;</a></span>setContent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setContent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *&#160;</td>
+          <td class="paramname"><em>content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (d-&gt;autoMimeContentCreated) {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      d-&gt;autoMimeContentCreated = <span class="keyword">false</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">delete</span> d-&gt;content;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    d-&gt;content = content;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af00bcfef5a681b823002e4efb09d0cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00bcfef5a681b823002e4efb09d0cdc">&#9670;&nbsp;</a></span>setHeaderEncoding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setHeaderEncoding </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9">MimePart::Encoding</a>&#160;</td>
+          <td class="paramname"><em>hEnc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;{</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    d-&gt;encoding = hEnc;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab3bd73dba6b0a49443bcdd6d9e603319"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3bd73dba6b0a49443bcdd6d9e603319">&#9670;&nbsp;</a></span>setSender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setSender </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>sender</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_message.html#a626953414e4eed9e57ea793eb60a2d6b">sender()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_alertes.html#a375783502a78109f3323dc1ed90cfdc9">Alertes::envoyerMailAlerte()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    d-&gt;sender = <a class="code" href="class_simple_mail_1_1_mime_message.html#a626953414e4eed9e57ea793eb60a2d6b">sender</a>;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html_a626953414e4eed9e57ea793eb60a2d6b"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html#a626953414e4eed9e57ea793eb60a2d6b">SimpleMail::MimeMessage::sender</a></div><div class="ttdeci">EmailAddress sender() const</div><div class="ttdef"><b>Definition:</b> mimemessage.cpp:188</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a525c33895b322e06c35c0d831cfe9b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a525c33895b322e06c35c0d831cfe9b02">&#9670;&nbsp;</a></span>setSubject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setSubject </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_message.html#a54274861ea83b4b37dd9db80aca34e39">subject()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_alertes.html#a375783502a78109f3323dc1ed90cfdc9">Alertes::envoyerMailAlerte()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;{</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    d-&gt;subject = <a class="code" href="class_simple_mail_1_1_mime_message.html#a54274861ea83b4b37dd9db80aca34e39">subject</a>;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html_a54274861ea83b4b37dd9db80aca34e39"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html#a54274861ea83b4b37dd9db80aca34e39">SimpleMail::MimeMessage::subject</a></div><div class="ttdeci">QString subject() const</div><div class="ttdef"><b>Definition:</b> mimemessage.cpp:194</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac1f8b71260b9f2ac07505526b3c516b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f8b71260b9f2ac07505526b3c516b2">&#9670;&nbsp;</a></span>setToRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMessage::setToRecipients </td>
+          <td>(</td>
+          <td class="paramtype">const QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>toList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    d-&gt;recipientsTo = toList;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a54274861ea83b4b37dd9db80aca34e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54274861ea83b4b37dd9db80aca34e39">&#9670;&nbsp;</a></span>subject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MimeMessage::subject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_mime_message.html#a525c33895b322e06c35c0d831cfe9b02">setSubject()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> d-&gt;subject;</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e3c4cf44d48b95f8436d251d19ffcb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3c4cf44d48b95f8436d251d19ffcb2">&#9670;&nbsp;</a></span>toRecipients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_simple_mail_1_1_email_address.html">EmailAddress</a> &gt; MimeMessage::toRecipients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_sender_private.html#a2ede5284746e77ee37b8fe96f4bbb100">SimpleMail::SenderPrivate::sendMail()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> d-&gt;recipientsTo;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae7fff977d1c558ddc6711416fe0ff723"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fff977d1c558ddc6711416fe0ff723">&#9670;&nbsp;</a></span>write()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MimeMessage::write </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_message_private.html#a44bd454950e1fd6b48a29d2a7b11ca33">SimpleMail::MimeMessagePrivate::encode()</a>, et <a class="el" href="class_simple_mail_1_1_mime_message_private.html#ae036b2417205ef25181091bebd15c0f6">SimpleMail::MimeMessagePrivate::encodeData()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_sender_private.html#a2ede5284746e77ee37b8fe96f4bbb100">SimpleMail::SenderPrivate::sendMail()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_message.html">MimeMessage</a>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Headers</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QByteArray data;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    data = <a class="code" href="class_simple_mail_1_1_mime_message_private.html#a44bd454950e1fd6b48a29d2a7b11ca33">MimeMessagePrivate::encode</a>(QByteArrayLiteral(<span class="stringliteral">&quot;From: &quot;</span>), QList&lt;EmailAddress&gt;() &lt;&lt; d-&gt;sender, d-&gt;encoding);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    data = <a class="code" href="class_simple_mail_1_1_mime_message_private.html#a44bd454950e1fd6b48a29d2a7b11ca33">MimeMessagePrivate::encode</a>(QByteArrayLiteral(<span class="stringliteral">&quot;To: &quot;</span>), d-&gt;recipientsTo, d-&gt;encoding);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    data = <a class="code" href="class_simple_mail_1_1_mime_message_private.html#a44bd454950e1fd6b48a29d2a7b11ca33">MimeMessagePrivate::encode</a>(QByteArrayLiteral(<span class="stringliteral">&quot;Cc: &quot;</span>), d-&gt;recipientsCc, d-&gt;encoding);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    data = QByteArrayLiteral(<span class="stringliteral">&quot;Date: &quot;</span>) + QDateTime::currentDateTime().toString(Qt::RFC2822Date).toLatin1() + QByteArrayLiteral(<span class="stringliteral">&quot;\r\n&quot;</span>);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    data = QByteArrayLiteral(<span class="stringliteral">&quot;Subject: &quot;</span>) + <a class="code" href="class_simple_mail_1_1_mime_message_private.html#ae036b2417205ef25181091bebd15c0f6">MimeMessagePrivate::encodeData</a>(d-&gt;encoding, d-&gt;subject, <span class="keyword">true</span>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    data = QByteArrayLiteral(<span class="stringliteral">&quot;\r\nMIME-Version: 1.0\r\n&quot;</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (device-&gt;write(data) != data.size()) {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (!d-&gt;content-&gt;write(device)) {</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_message_private_html_a44bd454950e1fd6b48a29d2a7b11ca33"><div class="ttname"><a href="class_simple_mail_1_1_mime_message_private.html#a44bd454950e1fd6b48a29d2a7b11ca33">SimpleMail::MimeMessagePrivate::encode</a></div><div class="ttdeci">static QByteArray encode(const QByteArray &amp;addressKind, const QList&lt; EmailAddress &gt; &amp;emails, MimePart::Encoding codec)</div><div class="ttdef"><b>Definition:</b> mimemessage.cpp:219</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_private_html_ae036b2417205ef25181091bebd15c0f6"><div class="ttname"><a href="class_simple_mail_1_1_mime_message_private.html#ae036b2417205ef25181091bebd15c0f6">SimpleMail::MimeMessagePrivate::encodeData</a></div><div class="ttdeci">static QByteArray encodeData(MimePart::Encoding codec, const QString &amp;data, bool autoencoding)</div><div class="ttdef"><b>Definition:</b> mimemessage.cpp:247</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_message_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_message.html">SimpleMail::MimeMessage</a></div><div class="ttdef"><b>Definition:</b> mimemessage.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="abb70ca7430a820f75203dd6bd66cc47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb70ca7430a820f75203dd6bd66cc47f">&#9670;&nbsp;</a></span>d_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_simple_mail_1_1_mime_message_private.html">MimeMessagePrivate</a>* SimpleMail::MimeMessage::d_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_mime_message.html#ae5005458f2bf64ad5255b8d12e0a324c">~MimeMessage()</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="mimemessage_8h_source.html">mimemessage.h</a></li>
+<li><a class="el" href="mimemessage_8cpp.html">mimemessage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 06:43:03 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

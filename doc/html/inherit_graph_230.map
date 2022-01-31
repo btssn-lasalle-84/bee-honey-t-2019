@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity.html" title="fr.campus.laurainc.honeybee.\lDashboardActivity" alt="" coords="189,5,382,47"/>
+<area shape="rect" id="node3" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_details_activity.html" title="fr.campus.laurainc.honeybee.\lDetailsActivity" alt="" coords="189,71,382,112"/>
+<area shape="rect" id="node4" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity.html" title="Activité principale de l&#39;application (Thread UI) " alt="" coords="189,136,382,177"/>
+<area shape="rect" id="node5" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_parametres_honey_bee_activity.html" title="Activité de paramétrage de l&#39;application. " alt="" coords="188,201,383,243"/>
+</map>

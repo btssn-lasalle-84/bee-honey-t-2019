@@ -1,0 +1,47 @@
+\hypertarget{infos_batterie_8h_source}{}\subsection{infos\+Batterie.\+h}
+\label{infos_batterie_8h_source}\index{infos\+Batterie.\+h@{infos\+Batterie.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSBATTERIE\_H}
+00002 \textcolor{preprocessor}{#define INFOSBATTERIE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 
+\Hypertarget{infos_batterie_8h_source_l00031}\hyperlink{class_infos_batterie}{00031} \textcolor{keyword}{class }\hyperlink{class_infos_batterie}{InfosBatterie} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00032 \{
+00033     Q\_OBJECT
+00034 
+00035 private :
+\Hypertarget{infos_batterie_8h_source_l00036}\hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{00036}     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_a45d09805075337f7f2d4b84d02a2ee47}{tension};
+\Hypertarget{infos_batterie_8h_source_l00037}\hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{00037}     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_a417f025b2ccddea7d28f80df4413945a}{courant};
+\Hypertarget{infos_batterie_8h_source_l00038}\hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{00038}     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_af3ad72cdbbf13f2dec6d81f078a2c0d2}{charge};
+\Hypertarget{infos_batterie_8h_source_l00039}\hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{00039}     QString \hyperlink{class_infos_batterie_a261067aff87023bccd60e59961ef1ffc}{horodatageBatterie};
+00040 
+00041 \textcolor{keyword}{public}:
+00042     \hyperlink{class_infos_batterie_a8dea33c2515f2c30ea3a525e17c03fa2}{InfosBatterie}(\hyperlink{class_q_object}{QObject} *parent);
+00043     \hyperlink{class_infos_batterie_a5c59c1d607d25b46fb7c3768a01f4ec5}{~InfosBatterie}();
+00044 
+00045     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}{getMesureBatterieCharge}();
+00046     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_a17a55f19c132026091217c243bf402c0}{getMesureBatterieCourant}();
+00047     \textcolor{keywordtype}{double} \hyperlink{class_infos_batterie_a470b96c2fe1fab6a187c6d0997bd76a8}{getMesureBatterieTension}();
+00048     QString \hyperlink{class_infos_batterie_aeac9a7bcd953444f4f2302d7949c74ef}{getHorodatageBatterie}();
+00049     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a1d98a79696389d0264959d0c8a64bbcd}{setHorodatageBatterie}(QString horodatageBatterie);
+00050     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_ab1b2945b7d7c1a6207e29369690a27b9}{setMesuresBatterie}(\textcolor{keywordtype}{double} tension, \textcolor{keywordtype}{double} courant, \textcolor{keywordtype}{double} charge);
+00051 
+00052 signals:
+00053     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a932a48aafb94e5289d775bb3305fdb74}{tensionEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} tension,QString);
+00054     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a3b648bf48c796c64d90db29741889eb1}{courantEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} courant,QString);
+00055     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a75ef2e971d86ae3b66a787d53e3d5c63}{chargeEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} charge,QString);
+00056 
+00057 \textcolor{keyword}{public} slots:
+00058     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a7c127f1798ba279918b7b0783f9d23c4}{traiterNouvelleMesureCourant}(QString nouveauCourant, QString 
+      horodatage);
+00059     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a92c1afb1e022fe75cd7a0877d64e8d53}{traiterNouvelleMesureCharge}(QString nouvelleCharge, QString horodatage)
+      ;
+00060     \textcolor{keywordtype}{void} \hyperlink{class_infos_batterie_a8b1c1008d441b30f2cf38995fae3e0ca}{traiterNouvelleMesureTension}(QString nouvelleTension, QString 
+      horodatage);
+00061 \};
+00062 
+00063 \textcolor{preprocessor}{#endif // INFOSBATTERIE\_H}
+\end{DoxyCode}

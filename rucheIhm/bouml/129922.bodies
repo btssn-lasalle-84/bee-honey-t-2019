@@ -1,0 +1,138 @@
+class Ruche
+!!!135810.cpp!!!	Ruche(inout parent : QObject = 0)
+    qDebug()<< Q_FUNC_INFO;
+    bdd = BaseDeDonnees::getInstance();
+    bdd->connecter(BDD_NOMBASE, BDD_USERNAME, BDD_PASSWORD, BDD_SERVEUR);
+    ensoleillementRuche = new InfosEnsoleillement();
+    humiditeRuche = new InfosHumidite(this);
+    pressionAtmospheriqueRuche = new InfosPressionAtmospherique();
+    temperatureRuche = new InfosTemperature(this);
+    communicationRuche = new Communication();
+
+    connecterGestionMessageBrut();
+    connecterGestionMessageTraite();
+
+    connect(communicationRuche, SIGNAL(messageRecu(const QByteArray &, const QMqttTopicName &)), this, SLOT(recevoirMessage(const QByteArray &, const QMqttTopicName &)));
+!!!135938.cpp!!!	~Ruche()
+    delete ensoleillementRuche;
+    delete humiditeRuche;
+    delete pressionAtmospheriqueRuche;
+    delete temperatureRuche;
+    delete communicationRuche;
+    BaseDeDonnees::detruireInstance();
+    qDebug()<< Q_FUNC_INFO;
+!!!136066.cpp!!!	connecterGestionMessageTraite() : void
+    qDebug() << Q_FUNC_INFO;
+    /** @todo faire les connexions des differents messages traités */
+    connect(temperatureRuche,SIGNAL(temperatureInterieurEnvoye(double, QString)),this,SLOT(recevoirTemperatureInterieurTraite(double, QString)));
+    connect(temperatureRuche,SIGNAL(temperatureExterieurEnvoye(double,QString)),this,SLOT(recevoirTemperatureExterieurTraite(double,QString)));
+    connect(humiditeRuche,SIGNAL(humiditeInterieurEnvoye(double, QString)),this,SLOT(recevoirMesureHumiditeInterieurTraite(double, QString)));
+    connect(humiditeRuche,SIGNAL(humiditeExterieurEnvoye(double,QString)),this,SLOT(recevoirMesureHumiditeExterieurTraite(double,QString)));
+    connect(pressionAtmospheriqueRuche,SIGNAL(pressionAtmospheriqueEnvoye(double,QString)),this,SLOT(recevoirPressionAtmospheriqueTraite(double,QString)));
+    connect(ensoleillementRuche,SIGNAL(ensoleillementEnvoye(double,QString)),this,SLOT(recevoirEnsoleillementTraite(double,QString)));
+!!!136194.cpp!!!	connecterGestionMessageBrut() : void
+    /** @todo faire les connexions des differents messages à traiter */
+    qDebug() << Q_FUNC_INFO;
+    connect(this ,SIGNAL(nouvelleTemperatureInterieur(QString, QString)),temperatureRuche,SLOT(traiterNouvelleTemperatureInterieur(QString, QString)));
+    connect(this,SIGNAL(nouvelleTemperatureExterieur(QString,QString)),temperatureRuche,SLOT(traiterNouvelleTemperatureExterieur(QString,QString)));
+    connect(this,SIGNAL(nouvelleHumiditeInterieur(QString, QString)),humiditeRuche,SLOT(traiterNouvelleHumiditeInterieur(QString, QString)));
+    connect(this,SIGNAL(nouvelleHumiditeExterieur(QString,QString)),humiditeRuche,SLOT(traiterNouvelleHumiditeExterieur(QString,QString)));
+    connect(this,SIGNAL(nouvelleMesureEnsoleillement(QString,QString)),ensoleillementRuche,SLOT(traiterNouvelleEnsoleillement(QString,QString)));
+    connect(this,SIGNAL(nouvellePressionAtmospherique(QString,QString)),pressionAtmospheriqueRuche,SLOT(traiterNouvellePressionAtmospherique(QString,QString)));
+!!!136578.cpp!!!	extraireDonnees(in port : PortsTTN, in message : QByteArray) : void
+    qDebug() << Q_FUNC_INFO << "port=" << port << "message=" << message;
+    QJsonDocument documentJSON = QJsonDocument::fromJson(message);
+    QJsonObject objetJSON = documentJSON.object();
+
+    // attributs ?
+    DonneesRuche donneesRuche;    
+    HorodatageDonneesRuche horodatageDonneesRuche;
+    // ou :
+    //DonneesRucheHorodatees donneesRucheHorodatees;
+    QString donneesBrutes;
+
+    switch (port)
+    {
+        case portMesureEnergie :
+            donneesRuche.donneesBatterie.charge = objetJSON.value(QString("charge")).toString();
+            donneesRuche.donneesBatterie.courant = objetJSON.value(QString("courant")).toString();
+            donneesRuche.donneesBatterie.tension = objetJSON.value(QString("tension")).toString();
+            emit nouvelleMesureBatterie(donneesRuche.donneesBatterie);
+            break;
+        case portMesurePoids :
+            //donneesRuche.poids = objetJSON.value(QString("poids")).toString();
+            donneesBrutes = extraireDonneesBrutes(message);
+            donneesRuche.poids = extrairePoids(donneesBrutes);
+            qDebug() << Q_FUNC_INFO << "Mesure poids=" << donneesRuche.poids;
+            emit nouvelleMesurePoids(donneesRuche.poids);
+            break;
+        case portMesureRuche :        
+            //qDebug() << Q_FUNC_INFO << "payload_fields:{\"temperature\"}=" << objetJSON.value("payload_fields").toObject().value("temperature");
+            donneesRuche.temperatureInterieur = recupererDonnees(message, "payload_fields", "temperature");
+            qDebug() << Q_FUNC_INFO << "Mesure temperatureInterieur=" << donneesRuche.temperatureInterieur;
+
+            horodatageDonneesRuche.temperatureInterieur =  recupererHorodatage(message , "metadata", "time");
+            qDebug() << Q_FUNC_INFO << "Horodatage temperatureInterieur=" << horodatageDonneesRuche.temperatureInterieur;
+            emit nouvelleTemperatureInterieur(donneesRuche.temperatureInterieur, horodatageDonneesRuche.temperatureInterieur);
+
+            donneesRuche.humiditeInterieur = recupererDonnees(message, "payload_fields", "humidite");
+            horodatageDonneesRuche.humiditeInterieur = recupererHorodatage(message,"metadata","time");
+            emit nouvelleHumiditeInterieur(donneesRuche.humiditeInterieur, horodatageDonneesRuche.humiditeInterieur);
+            break;
+        case portMesureEnvironement :
+            donneesRuche.temperatureExterieur = recupererDonnees(message,"payload_fields", "temperature");
+            horodatageDonneesRuche.temperatureExterieur = recupererHorodatage(message,"metadata","time");
+            emit nouvelleTemperatureExterieur(donneesRuche.temperatureExterieur, horodatageDonneesRuche.temperatureExterieur);
+
+            donneesRuche.humiditeExterieur = recupererDonnees(message,"payload_fields", "humidite");
+            horodatageDonneesRuche.humiditeExterieur = recupererHorodatage(message,"metadata","time");
+            emit nouvelleHumiditeExterieur(donneesRuche.humiditeExterieur, horodatageDonneesRuche.humiditeExterieur);
+
+            donneesRuche.pressionAtmospherique = recupererDonnees(message,"payload_fields", "pression");
+            horodatageDonneesRuche.pressionAtmospherique = recupererHorodatage(message,"metadata","time");
+            emit nouvellePressionAtmospherique(donneesRuche.pressionAtmospherique, horodatageDonneesRuche.pressionAtmospherique );
+            break;
+        case portMesureEnsoleillement :
+            donneesRuche.ensoleillement = recupererDonnees(message,"payload_fields", "ensoleillement");
+            horodatageDonneesRuche.ensoleillement = recupererHorodatage(message,"metadata","time");
+            emit nouvelleMesureEnsoleillement(donneesRuche.ensoleillement, horodatageDonneesRuche.ensoleillement);
+            break;
+    }
+!!!136706.cpp!!!	recupererDonnees(in message : QByteArray, in objetJson : QString, in sousObjetJson : QString) : QString
+    /** @todo verifier que lue l'objet est bien present  avant d'extraire */
+    QString donnees;
+    QJsonDocument documentJSON = QJsonDocument::fromJson(message);
+    QJsonObject objetJSON = documentJSON.object();
+
+    donnees = QString::number(objetJSON.value(objetJson).toObject().value(sousObjetJson).toDouble());
+    return donnees;
+!!!136834.cpp!!!	recupererHorodatage(in message : QByteArray, in objetJson : QString, in sousObjetJson : QString) : QString
+    QString horodatageJSON;
+    QJsonDocument documentJSON = QJsonDocument::fromJson(message);
+    QJsonObject objetJSON = documentJSON.object();
+
+    horodatageJSON = (objetJSON.value(objetJson).toObject().value(sousObjetJson).toString());
+
+    // Formatage FR
+    //QDateTime dateTimeHorodatage = QDateTime::fromString(horodatageJSON.split(".").at(0), "yyyy-MM-ddTHH:mm:ss");
+    QDateTime dateTimeHorodatage = QDateTime::fromString(horodatageJSON, Qt::ISODate).toLocalTime();
+
+    return dateTimeHorodatage.toString("dd/MM/yyyy HH:mm:ss");
+!!!136962.cpp!!!	recevoirMessage(in message : QByteArray, in topic : QMqttTopicName) : void
+   
+    /**
+      * @todo gérer plusieurs ruches (cf. topic)
+      */
+    PortsTTN port = recupererNumeroDePort(message);
+    extraireDonnees(port,message);
+!!!137090.cpp!!!	recevoirTemperatureInterieurTraite(in temperatureInterieur : double) : void
+    /**
+      * @todo associer l'horodatage !
+      */
+    qDebug() << Q_FUNC_INFO << "temperatureInterieur=" << temperatureInterieur;
+    emit nouvelleMesureTemperatureInterieurTraite(temperatureInterieur);
+!!!137218.cpp!!!	recevoirMesureHumiditeInterieurTraite(in humiditeInterieurTraite : double) : void
+    /**
+      * @todo associer l'horodatage !
+      */
+    emit nouvelleMesureHumiditeInterieurTraite(humiditeInterieurTraite);

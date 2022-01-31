@@ -1,0 +1,1769 @@
+\hypertarget{class_alertes}{}\subsection{Référence de la classe Alertes}
+\label{class_alertes}\index{Alertes@{Alertes}}
+
+
+La classe des alertes.  
+
+
+
+
+{\ttfamily \#include $<$alertes.\+h$>$}
+
+
+
+Graphe de collaboration de Alertes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_alertes__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_alertes_a0e5e5177eed435d74bcbdc2a36911e52}{recevoir\+Seuil\+Temperature\+Interieur\+Min} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de temperature interieur minimum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a06b136f1e86ca97978187305a11be0ff}{recevoir\+Seuil\+Temperature\+Interieur\+Max} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de temperature interieur maxmum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a4444f527a708f8e1963d2dc1c95bad96}{recevoir\+Seuil\+Humidite\+Interieur\+Min} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de humidite interieur minimum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a7554e8b6752b0e0a5cfefeecfbc3ba56}{recevoir\+Seuil\+Humidite\+Interieur\+Max} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de humidite interieur maximum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ad88c760d06e1d438a57027857d50a77f}{recevoir\+Seuil\+Temperature\+Exterieur\+Min} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de temperature exterieur minimum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_af896e03da2f2ec319d410fb8dcc89e0e}{recevoir\+Seuil\+Temperature\+Exterieur\+Max} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de temperature exterieur maximum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a021d167be6c98d9b0718bb9c7209b47e}{recevoir\+Seuil\+Humidite\+Exterieur\+Min} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de humidite exterieur minimum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a8c8500d99314034be3c01a871f209fb8}{recevoir\+Seuil\+Humidite\+Exterieur\+Max} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de humidite exterieur maximum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ab6a15b0c8387a2cdf47dacce92c60383}{recevoir\+Seuil\+Poids\+Min} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de poids minimum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a77b71a5bc047ced8d09f59a521f58616}{recevoir\+Seuil\+Poids\+Max} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de poids maximum venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a4496c251e1cde3e8c6beee64bad53fe3}{recevoir\+Seuil\+Pression\+Atmospherique} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils de pression atmospherique venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_abf6b9934820f50024c50dc9691f4ddee}{recevoir\+Seuil\+Ensoleillement} (Q\+String seuil)
+\begin{DoxyCompactList}\small\item\em slot de reception des seuils d\textquotesingle{}ensoleillement venant de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm} \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a61e1f4a105bd64ac829959726ae6ebb8}{recevoir\+Seuil\+Batterie} (Q\+String seuil)
+\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoi\+Alertes\+Temperature\+Interieur} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoi\+Alertes\+Temperature\+Exterieur} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoi\+Alertes\+Humidite\+Interieur} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoi\+Alertes\+Humidite\+Exterieur} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a3e81bcca9d4c91c69f575546681590bc}{envoi\+Alertes\+Pression\+Atmospherique} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoi\+Alertes\+Poids} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes})
+\item 
+void \hyperlink{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}{envoi\+Alertes\+Ensoleillement} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}, double)
+\item 
+void \hyperlink{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}{envoi\+Alertes\+Batterie} (\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}, double)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_alertes_ad2e4e3907f97bdd06840dfeee0a87ddb}{Alertes} (Q\+String \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{id\+Ruche}, Q\+String \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_q_object}{Q\+Object} $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_alertes}{Alertes}. \end{DoxyCompactList}\item 
+\hyperlink{class_alertes_a730b10861d04de9944b30b11c6b3c3af}{$\sim$\+Alertes} ()
+\item 
+Q\+String \hyperlink{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}{get\+Id\+Ruche} ()
+\item 
+double \hyperlink{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}{get\+Seuil\+Temperature\+Interieur\+Min} ()
+\item 
+double \hyperlink{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}{get\+Seuil\+Temperature\+Interieur\+Max} ()
+\item 
+double \hyperlink{class_alertes_a40d47b65952035b78cac05b915ad57b8}{get\+Seuil\+Humidite\+Interieur\+Min} ()
+\item 
+double \hyperlink{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}{get\+Seuil\+Humidite\+Interieur\+Max} ()
+\item 
+double \hyperlink{class_alertes_a4451c6b077256d838e584a073444d83d}{get\+Seuil\+Temperature\+Exterieur\+Min} ()
+\item 
+double \hyperlink{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}{get\+Seuil\+Temperature\+Exterieur\+Max} ()
+\item 
+double \hyperlink{class_alertes_a68e467e042b615f56347a0953d6e64f1}{get\+Seuil\+Humidite\+Exterieur\+Min} ()
+\item 
+double \hyperlink{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}{get\+Seuil\+Humidite\+Exterieur\+Max} ()
+\item 
+double \hyperlink{class_alertes_a228829e2826ee20cc014b2eb54addf14}{get\+Seuil\+Poids\+Min} ()
+\item 
+double \hyperlink{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}{get\+Seuil\+Poids\+Max} ()
+\item 
+double \hyperlink{class_alertes_a502fa36037246fb6eaad1db859bc1971}{get\+Seuil\+Pression\+Atmospherique} ()
+\item 
+double \hyperlink{class_alertes_a54900058557979664d25137399ae2512}{get\+Seuil\+Ensoleillement} ()
+\item 
+double \hyperlink{class_alertes_adcf9f9fb707944ae17f2355819eb58d1}{get\+Seuil\+Batterie} ()
+\item 
+void \hyperlink{class_alertes_a091a0fabca5b06302bc19de31aecafff}{set\+Infos\+Temperature} (\hyperlink{class_infos_temperature}{Infos\+Temperature} $\ast$\hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infos\+Temperature})
+\item 
+void \hyperlink{class_alertes_a05734ac9e97a9001de4ce9ef96235c87}{set\+Infos\+Humidite} (\hyperlink{class_infos_humidite}{Infos\+Humidite} $\ast$\hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infos\+Humidite})
+\item 
+void \hyperlink{class_alertes_a771133f26d4ab8c90d1bdf50e1d23d87}{set\+Infos\+Pression\+Atmospherique} (\hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique} $\ast$\hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infos\+Pression\+Atmospherique})
+\item 
+void \hyperlink{class_alertes_a100bad47769994abc976419a355c4a26}{set\+Infos\+Poids} (\hyperlink{class_infos_poids}{Infos\+Poids} $\ast$\hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infos\+Poids})
+\item 
+void \hyperlink{class_alertes_a8bbe30ddc4893f943781749917b23463}{set\+Infos\+Batterie} (\hyperlink{class_infos_batterie}{Infos\+Batterie} $\ast$\hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infos\+Batterie})
+\item 
+void \hyperlink{class_alertes_a5379fc65522a77dc2cc110e489e1469d}{set\+Infos\+Ensoleillement} (\hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement} $\ast$\hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infos\+Ensoleillement})
+\item 
+void \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de la temperature interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de la temperature exterieur \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de l\textquotesingle{}humidite interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de l\textquotesingle{}humidite exterieur \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de pression atmospherique \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes de poids \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement} ()
+\begin{DoxyCompactList}\small\item\em defini les seuils d\textquotesingle{}alertes d\textquotesingle{}ensoleillement \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie} ()
+\item 
+void \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes} (\hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737b}{Type\+Alertes} type\+Alertes)
+\begin{DoxyCompactList}\small\item\em defini les différents appels des alertes \end{DoxyCompactList}\item 
+void \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte} (Q\+String email, Q\+String objet, Q\+String message)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Q\+String \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{id\+Ruche}
+\item 
+Q\+String \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}
+\item 
+\hyperlink{class_infos_temperature}{Infos\+Temperature} $\ast$ \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infos\+Temperature}
+\item 
+\hyperlink{class_infos_humidite}{Infos\+Humidite} $\ast$ \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infos\+Humidite}
+\item 
+\hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique} $\ast$ \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infos\+Pression\+Atmospherique}
+\item 
+\hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement} $\ast$ \hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infos\+Ensoleillement}
+\item 
+\hyperlink{class_infos_batterie}{Infos\+Batterie} $\ast$ \hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infos\+Batterie}
+\item 
+\hyperlink{class_infos_poids}{Infos\+Poids} $\ast$ \hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infos\+Poids}
+\item 
+\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes} \hyperlink{class_alertes_adedb6924af18a7f7a14b11ffa33db6ba}{seuils\+Alertes}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+double \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuil\+Temperature\+Interieur\+Min}
+\item 
+double \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuil\+Temperature\+Interieur\+Max}
+\item 
+double \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuil\+Humidite\+Interieur\+Min}
+\item 
+double \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuil\+Humidite\+Interieur\+Max}
+\item 
+double \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuil\+Temperature\+Exterieur\+Min}
+\item 
+double \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuil\+Temperature\+Exterieur\+Max}
+\item 
+double \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuil\+Humidite\+Exterieur\+Min}
+\item 
+double \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuil\+Humidite\+Exterieur\+Max}
+\item 
+double \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuil\+Poids\+Min}
+\item 
+double \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuil\+Poids\+Max}
+\item 
+double \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuil\+Ensoleillement}
+\item 
+double \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuil\+Pression\+Atmospherique}
+\item 
+double \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuil\+Batterie}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_alertes_ad2e4e3907f97bdd06840dfeee0a87ddb}\label{class_alertes_ad2e4e3907f97bdd06840dfeee0a87ddb}} 
+\index{Alertes@{Alertes}!Alertes@{Alertes}}
+\index{Alertes@{Alertes}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{Alertes()}{Alertes()}}
+{\footnotesize\ttfamily Alertes\+::\+Alertes (\begin{DoxyParamCaption}\item[{Q\+String}]{id\+Ruche,  }\item[{Q\+String}]{nom\+Ruche,  }\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Définition des attributs de la classe \hyperlink{class_alertes}{Alertes} 
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{B\+D\+D\+\_\+\+N\+O\+M\+B\+A\+SE}, \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{B\+D\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{B\+D\+D\+\_\+\+S\+E\+R\+V\+E\+UR}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{B\+D\+D\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, et \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}.
+
+
+\begin{DoxyCode}
+00038                                                                    : \hyperlink{class_q_object}{QObject}(parent), 
+      \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{idRuche}(\hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{idRuche}), \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche}(\hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche}), 
+      \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infosTemperature}(0), \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infosHumidite}(0), 
+      \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infosPressionAtmospherique}(0),
+00039     \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin}(
+      \hyperlink{parametres_8h_a1f78dd3105c514060033c23f7b40a899}{TEMPERATURE\_INTERIEUR\_SEUIL\_MIN}), 
+      \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuilTemperatureInterieurMax}(
+      \hyperlink{parametres_8h_a76f490066655530a774202e6204f2a92}{TEMPERATURE\_INTERIEUR\_SEUIL\_MAX}), 
+      \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin}(\hyperlink{parametres_8h_a123e6e1d82333f6e038d37ef506d5762}{HUMIDITE\_INTERIEUR\_SEUIL\_MIN}
+      ), \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax}(
+      \hyperlink{parametres_8h_afc1996946dfec64accdaa88f4e313058}{HUMIDITE\_INTERIEUR\_SEUIL\_MAX}), 
+      \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin}(
+      \hyperlink{parametres_8h_aeb90c8fd31e6aa6473edd143ce70e137}{TEMPERATURE\_EXTERIEUR\_SEUIL\_MIN}), 
+      \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuilTemperatureExterieurMax}(
+      \hyperlink{parametres_8h_a7630cd07e0f037b4057157febd9644fd}{TEMPERATURE\_EXTERIEUR\_SEUIL\_MAX}), 
+      \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuilHumiditeExterieurMin}(\hyperlink{parametres_8h_afc00f65688c19bd56711c244827c2c27}{HUMIDITE\_EXTERIEUR\_SEUIL\_MIN}
+      ), \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax}(
+      \hyperlink{parametres_8h_a25f8411ff3fd72788fdcd7487e7e8d28}{HUMIDITE\_EXTERIEUR\_SEUIL\_MAX}), \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuilPoidsMin}(
+      \hyperlink{parametres_8h_a289e59d08fbd111c6a5bd8a526a8098b}{POIDS\_SEUIL\_MIN}), \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax}(\hyperlink{parametres_8h_a41d2727214068bc11cea2e021fb6b237}{POIDS\_SEUIL\_MAX}), 
+      \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuilEnsoleillement}(\hyperlink{parametres_8h_a1174d9c2d3ff7e8a5e464d7e0a20e1a9}{ENSOLEILLEMENT\_SEUIL\_MIN}), 
+      \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuilPressionAtmospherique}(
+      \hyperlink{parametres_8h_a70a55fd4037201bf606fc9e9d54e61cb}{PRESSION\_ATMOSPHERIQUE\_SEUIL\_MIN})
+00040 
+00041 \{
+00042     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00043     \textcolor{keywordflow}{if}(!\hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00044         \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}(\hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{BDD\_NOMBASE}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{BDD\_USERNAME}, 
+      \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{BDD\_PASSWORD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{BDD\_SERVEUR});
+00045 
+00046     QStringList seuils;
+00047     QString requete = \textcolor{stringliteral}{"SELECT * FROM Seuils WHERE idRuche='"} + \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{idRuche} + \textcolor{stringliteral}{"'"};
+00048     qDebug()<< Q\_FUNC\_INFO << requete;
+00049     \textcolor{keywordtype}{bool} retour = \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, seuils);
+00050     \textcolor{keywordflow}{if}(retour)
+00051     \{
+00052         qDebug() << Q\_FUNC\_INFO << seuils;
+00053         \textcolor{comment}{/*seuilTemperatureInterieurMin = seuils.at(1).toDouble();}
+00054 \textcolor{comment}{        seuilTemperatureInterieurMax = ;}
+00055 \textcolor{comment}{        seuilHumiditeInterieurMin = ;}
+00056 \textcolor{comment}{        seuilHumiditeInterieurMax = ;}
+00057 \textcolor{comment}{        seuilTemperatureExterieurMin = ;}
+00058 \textcolor{comment}{        seuilTemperatureExterieurMax = ;}
+00059 \textcolor{comment}{        seuilHumiditeExterieurMin = ;}
+00060 \textcolor{comment}{        seuilHumiditeExterieurMax = ;}
+00061 \textcolor{comment}{        seuilPoidsMin = ;}
+00062 \textcolor{comment}{        seuilPoidsMax = ;}
+00063 \textcolor{comment}{        seuilEnsoleillement = ;}
+00064 \textcolor{comment}{        seuilPressionAtmospherique = ;*/}
+00065     \}
+00066 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a730b10861d04de9944b30b11c6b3c3af}\label{class_alertes_a730b10861d04de9944b30b11c6b3c3af}} 
+\index{Alertes@{Alertes}!````~Alertes@{$\sim$\+Alertes}}
+\index{````~Alertes@{$\sim$\+Alertes}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{$\sim$\+Alertes()}{~Alertes()}}
+{\footnotesize\ttfamily Alertes\+::$\sim$\+Alertes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}.
+
+
+\begin{DoxyCode}
+00069 \{
+00070     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00071 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}\label{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}} 
+\index{Alertes@{Alertes}!alertes\+Batterie@{alertes\+Batterie}}
+\index{alertes\+Batterie@{alertes\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Batterie()}{alertesBatterie()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Batterie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}{envoi\+Alertes\+Batterie()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}{Infos\+Batterie\+::get\+Mesure\+Batterie\+Charge()}, \hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infos\+Batterie}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuil\+Batterie}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00408 \{
+00409     \textcolor{keywordtype}{double} mesureBatterie = \hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infosBatterie}->\hyperlink{class_infos_batterie_a8c37174d0d36e4f5ada9d16dd5894803}{getMesureBatterieCharge}();
+00410     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00411     QString mailApiculteur;
+00412     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00413 
+00414     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureBatterie"} << mesureBatterie << \textcolor{stringliteral}{"seuilBatterie"} << 
+      \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuilBatterie};
+00415 
+00416     \textcolor{keywordflow}{if}(mesureBatterie < seuilBatterie)
+00417     \{
+00418         emit \hyperlink{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}{envoiAlertesBatterie}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas}, mesureBatterie);
+00419         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Batterie"}, \textcolor{stringliteral}{"Bonjour, une alerte a été
+       détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : niveau de batterie faible."});
+00420     \}
+00421     \textcolor{keywordflow}{else}
+00422     \{
+00423         emit \hyperlink{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}{envoiAlertesBatterie}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, mesureBatterie);
+00424     \}
+00425 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}\label{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}} 
+\index{Alertes@{Alertes}!alertes\+Ensoleillement@{alertes\+Ensoleillement}}
+\index{alertes\+Ensoleillement@{alertes\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Ensoleillement()}{alertesEnsoleillement()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Ensoleillement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}{envoi\+Alertes\+Ensoleillement()}, \hyperlink{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}{Infos\+Ensoleillement\+::get\+Ensoleillement()}, \hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infos\+Ensoleillement}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuil\+Ensoleillement}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00387 \{
+00388     \textcolor{keywordtype}{double} mesureEnsoleillement = \hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infosEnsoleillement}->
+      \hyperlink{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}{getEnsoleillement}();
+00389     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00390     QString mailApiculteur;
+00391     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00392 
+00393     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureEnsoleillement"} << mesureEnsoleillement << \textcolor{stringliteral}{"seuilEnsoleillement"} << 
+      \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuilEnsoleillement};
+00394 
+00395     \textcolor{keywordflow}{if} (mesureEnsoleillement < seuilEnsoleillement)
+00396     \{
+00397         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00398         emit \hyperlink{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}{envoiAlertesEnsoleillement}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas}, mesureEnsoleillement);
+00399     \}
+00400     \textcolor{keywordflow}{else}
+00401     \{
+00402         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00403         emit \hyperlink{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}{envoiAlertesEnsoleillement}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, mesureEnsoleillement);
+00404     \}
+00405 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}\label{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}} 
+\index{Alertes@{Alertes}!alertes\+Humidite\+Exterieur@{alertes\+Humidite\+Exterieur}}
+\index{alertes\+Humidite\+Exterieur@{alertes\+Humidite\+Exterieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Humidite\+Exterieur()}{alertesHumiditeExterieur()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Humidite\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoi\+Alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}{Infos\+Humidite\+::get\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infos\+Humidite}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuil\+Humidite\+Exterieur\+Max}, \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuil\+Humidite\+Exterieur\+Min}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{trop\+Haut}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00292 \{
+00293     \textcolor{keywordtype}{double} mesureHumiditeExterieur = \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infosHumidite}->
+      \hyperlink{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}{getHumiditeExterieur}();
+00294     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00295     QString mailApiculteur;
+00296     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00297 
+00298     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureHumiditeExterieur"} << mesureHumiditeExterieur << \textcolor{stringliteral}{"
+      seuilHumiditeExterieurMax"} << \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax} << \textcolor{stringliteral}{"seuilHumiditeExterieurMin"} << 
+      \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuilHumiditeExterieurMin};
+00299 
+00300     \textcolor{keywordflow}{if}(mesureHumiditeExterieur > \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax})
+00301     \{
+00302         emit \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoiAlertesHumiditeExterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{tropHaut});
+00303         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Extérieur Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{": humidité Extérieur élevée."});
+00304         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP HAUT"};
+00305     \}
+00306     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (mesureHumiditeExterieur < seuilHumiditeExterieurMin)
+00307     \{
+00308         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00309         emit \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoiAlertesHumiditeExterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00310         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Extérieur Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{": humidité Extérieur basse."});
+00311     \}
+00312     \textcolor{keywordflow}{else}
+00313     \{
+00314         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00315         emit \hyperlink{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}{envoiAlertesHumiditeExterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00316     \}
+00317 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}\label{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}} 
+\index{Alertes@{Alertes}!alertes\+Humidite\+Interieur@{alertes\+Humidite\+Interieur}}
+\index{alertes\+Humidite\+Interieur@{alertes\+Humidite\+Interieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Humidite\+Interieur()}{alertesHumiditeInterieur()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Humidite\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoi\+Alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}{Infos\+Humidite\+::get\+Humidite\+Interieur()}, \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infos\+Humidite}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuil\+Humidite\+Interieur\+Max}, \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuil\+Humidite\+Interieur\+Min}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{trop\+Haut}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00256 \{
+00257     \textcolor{keywordtype}{double} mesureHumiditeInterieur = \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infosHumidite}->
+      \hyperlink{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}{getHumiditeInterieur}();
+00258     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00259     QString mailApiculteur;
+00260     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00261 
+00262     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureHumiditeInterieur"} << mesureHumiditeInterieur << \textcolor{stringliteral}{"
+      seuilHumiditeInterieurMax"} << \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax} << \textcolor{stringliteral}{"mesureHumiditeInterieur"} << 
+      mesureHumiditeInterieur;
+00263 
+00264     \textcolor{keywordflow}{if}(mesureHumiditeInterieur > \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax})
+00265     \{
+00266         emit \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoiAlertesHumiditeInterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{tropHaut});
+00267         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Humidité Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "} + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} + \textcolor{stringliteral}{": humidité intérieur élevée."});
+00268         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP HAUT"};
+00269     \}
+00270     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (mesureHumiditeInterieur < \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin})
+00271     \{
+00272         emit \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoiAlertesHumiditeInterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00273         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Humidité Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{": humidité intérieur basse."});
+00274         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00275     \}
+00276     \textcolor{keywordflow}{else}
+00277     \{
+00278         emit \hyperlink{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}{envoiAlertesHumiditeInterieur}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00279         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00280     \}
+00281 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}\label{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}} 
+\index{Alertes@{Alertes}!alertes\+Poids@{alertes\+Poids}}
+\index{alertes\+Poids@{alertes\+Poids}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Poids()}{alertesPoids()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Poids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoi\+Alertes\+Poids()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}{Infos\+Poids\+::get\+Poids()}, \hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infos\+Poids}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuil\+Poids\+Max}, \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuil\+Poids\+Min}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{trop\+Haut}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00356 \{
+00357     \textcolor{keywordtype}{double} mesurePoids = \hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infosPoids}->\hyperlink{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}{getPoids}();
+00358     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00359     QString mailApiculteur;
+00360     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00361 
+00362     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesurePoids"} << mesurePoids << \textcolor{stringliteral}{"seuilPoidsMax"} << 
+      \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax} << \textcolor{stringliteral}{"seuilPoidsMin"} << \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuilPoidsMin};
+00363 
+00364     \textcolor{keywordflow}{if}(mesurePoids > \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax})
+00365     \{
+00366         emit \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoiAlertesPoids}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{tropHaut});
+00367         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Poids"}, \textcolor{stringliteral}{"Bonjour, une alerte a été
+       détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : poids élevé."});
+00368     \}
+00369     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (mesurePoids < seuilPoidsMin)
+00370     \{
+00371         qDebug() << Q\_FUNC\_INFO;
+00372         emit \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoiAlertesPoids}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00373         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Poids"}, \textcolor{stringliteral}{"Bonjour, une alerte a été
+       détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : poids faible."});
+00374     \}
+00375     \textcolor{keywordflow}{else}
+00376         emit \hyperlink{class_alertes_a60f823014dcce3504ee1d78ac50b5328}{envoiAlertesPoids}(\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00377 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}\label{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}} 
+\index{Alertes@{Alertes}!alertes\+Pression\+Atmospherique@{alertes\+Pression\+Atmospherique}}
+\index{alertes\+Pression\+Atmospherique@{alertes\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Pression\+Atmospherique()}{alertesPressionAtmospherique()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a3e81bcca9d4c91c69f575546681590bc}{envoi\+Alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}{Infos\+Pression\+Atmospherique\+::get\+Pression\+Atmospherique()}, \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infos\+Pression\+Atmospherique}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuil\+Pression\+Atmospherique}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00327 \{
+00328     \textcolor{keywordtype}{double} mesurePressionAtmospherique = \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infosPressionAtmospherique}->
+      \hyperlink{class_infos_pression_atmospherique_ace9906ecdd245d4d443554fcc77c76a5}{getPressionAtmospherique}();
+00329     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00330     QString mailApiculteur;
+00331     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00332 
+00333     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesurePressionAtmospherique"} << mesurePressionAtmospherique << \textcolor{stringliteral}{"
+      seuilPressionAtmospherique"} << \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuilPressionAtmospherique};
+00334 
+00335     \textcolor{keywordflow}{if} (mesurePressionAtmospherique < seuilPressionAtmospherique)
+00336     \{
+00337         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00338         emit \hyperlink{class_alertes_a3e81bcca9d4c91c69f575546681590bc}{envoiAlertesPressionAtmospherique}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00339         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Pression Atmosphérique"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : pression atmosphérique basse."});
+00340     \}
+00341     \textcolor{keywordflow}{else}
+00342     \{
+00343         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00344         emit \hyperlink{class_alertes_a3e81bcca9d4c91c69f575546681590bc}{envoiAlertesPressionAtmospherique}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00345     \}
+00346 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}\label{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}} 
+\index{Alertes@{Alertes}!alertes\+Temperature\+Exterieur@{alertes\+Temperature\+Exterieur}}
+\index{alertes\+Temperature\+Exterieur@{alertes\+Temperature\+Exterieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Temperature\+Exterieur()}{alertesTemperatureExterieur()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Temperature\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoi\+Alertes\+Temperature\+Exterieur()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}{Infos\+Temperature\+::get\+Temperature\+Exterieur()}, \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infos\+Temperature}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuil\+Temperature\+Exterieur\+Max}, \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuil\+Temperature\+Exterieur\+Min}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{trop\+Haut}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00220 \{
+00221     \textcolor{keywordtype}{double} mesureTemperatureExterieur = \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infosTemperature}->
+      \hyperlink{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}{getTemperatureExterieur}();
+00222     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00223     QString mailApiculteur;
+00224     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00225 
+00226     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureTemperatureExterieur"} << mesureTemperatureExterieur << \textcolor{stringliteral}{"
+      seuilTemperatureExterieurMin"} << \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin} << \textcolor{stringliteral}{"
+      seuilTemperatureExterieurMax"} << \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuilTemperatureExterieurMax};
+00227 
+00228     \textcolor{keywordflow}{if}(mesureTemperatureExterieur > seuilTemperatureExterieurMax)
+00229     \{
+00230         emit \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoiAlertesTemperatureExterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{tropHaut});
+00231         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Température Extérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : température extérieur élevée."});
+00232         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP HAUT"};
+00233     \}
+00234     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (mesureTemperatureExterieur < \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin})
+00235     \{
+00236         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00237         emit \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoiAlertesTemperatureExterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00238         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Température Extérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans la "}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} +  \textcolor{stringliteral}{" : température extérieur basse."});
+00239     \}
+00240     \textcolor{keywordflow}{else}
+00241     \{
+00242         emit \hyperlink{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}{envoiAlertesTemperatureExterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00243         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00244     \}
+00245 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}\label{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}} 
+\index{Alertes@{Alertes}!alertes\+Temperature\+Interieur@{alertes\+Temperature\+Interieur}}
+\index{alertes\+Temperature\+Interieur@{alertes\+Temperature\+Interieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{alertes\+Temperature\+Interieur()}{alertesTemperatureInterieur()}}
+{\footnotesize\ttfamily void Alertes\+::alertes\+Temperature\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape trop\+Haut} est definit dans le type enum Seuils\+Alertes et retourne 0 
+
+{\itshape trop\+Bas} est definit dans le type enum Seuils\+Alertes et retourne 1 
+
+{\itshape bon} est definit dans le type enum Seuils\+Alertes et retourne 2 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon}, \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoi\+Alertes\+Temperature\+Interieur()}, \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyer\+Mail\+Alerte()}, \hyperlink{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}{Infos\+Temperature\+::get\+Temperature\+Interieur()}, \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infos\+Temperature}, \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nom\+Ruche}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuil\+Temperature\+Interieur\+Max}, \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuil\+Temperature\+Interieur\+Min}, \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{trop\+Bas}, et \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{trop\+Haut}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}{appeler\+Les\+Alertes()}.
+
+
+\begin{DoxyCode}
+00182 \{
+00183     qDebug() << Q\_FUNC\_INFO;
+00184 
+00185     \textcolor{keywordtype}{double} mesureTemperatureInterieur = \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infosTemperature}->
+      \hyperlink{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}{getTemperatureInterieur}();
+00186     QString requete = \textcolor{stringliteral}{"SELECT Email FROM Apiculteur WHERE idApiculteur = '3'"};
+00187     QString mailApiculteur;
+00188     \hyperlink{class_alertes_a91e58b69d29922e8e984efb767ae5268}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, mailApiculteur);
+00189 
+00190     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"mesureTemperatureInterieur"} << mesureTemperatureInterieur << \textcolor{stringliteral}{"
+      seuilTemperatureInterieurMin"} << \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin} << \textcolor{stringliteral}{"
+      seuilTemperatureInterieurMax"} << \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuilTemperatureInterieurMax};
+00191 
+00192     \textcolor{keywordflow}{if}(mesureTemperatureInterieur > seuilTemperatureInterieurMax)
+00193     \{
+00194         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP HAUT"};
+00195         emit \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoiAlertesTemperatureInterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368dabc650d9700ae19f2696e6a6e3f9ab067}{tropHaut});
+00196         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Température Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans"}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} + \textcolor{stringliteral}{": température intérieur élevée."});
+00197     \}
+00198     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (mesureTemperatureInterieur < \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin})
+00199     \{
+00200         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"TROP BAS"};
+00201         emit \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoiAlertesTemperatureInterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da4257e2f8921856770c8266f55c937295}{tropBas});
+00202         \hyperlink{class_alertes_a375783502a78109f3323dc1ed90cfdc9}{envoyerMailAlerte}(mailApiculteur, \textcolor{stringliteral}{"Alerte Température Intérieur"}, \textcolor{stringliteral}{"Bonjour, une
+       alerte a été détectée dans"}  + \hyperlink{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}{nomRuche} + \textcolor{stringliteral}{": température intérieur basse."});
+00203     \}
+00204     \textcolor{keywordflow}{else}
+00205     \{
+00206         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"CORRECT"};
+00207         emit \hyperlink{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}{envoiAlertesTemperatureInterieur}(
+      \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368da5ac8ec3b54d90a07c6bb5a77ef971821}{bon});
+00208     \}
+00209 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}\label{class_alertes_ad04a02dcc6e6f14da0784c7054888b05}} 
+\index{Alertes@{Alertes}!appeler\+Les\+Alertes@{appeler\+Les\+Alertes}}
+\index{appeler\+Les\+Alertes@{appeler\+Les\+Alertes}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{appeler\+Les\+Alertes()}{appelerLesAlertes()}}
+{\footnotesize\ttfamily void Alertes\+::appeler\+Les\+Alertes (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737b}{Type\+Alertes}}]{type\+Alertes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type\+Alertes} & Type\+Alertes \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba11c71364df2afd149875ebfe0238ef7e}{alerte\+Batterie}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba256a82c8886c1902dc7a078868434f83}{alerte\+Ensoleillement}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737bacda66fabe33c8c197f8ff098a952fca3}{alerte\+Humidite\+Exterieur}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737bac0e80b2d9b7f04033abc44ebcf61883a}{alerte\+Humidite\+Interieur}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba130a82230092934eb515b95603d12956}{alerte\+Poids}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba3b3b9fe16ae965531aca47449d865ce1}{alerte\+Pression\+Atmospherique}, \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement()}, \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba300b33d38ff264e971908d263fbfd1bb}{alerte\+Temperature\+Exterieur}, \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba6d07a737b602e59b2350e913e4763724}{alerte\+Temperature\+Interieur}, et \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba673fe6d70f1b196ef95a63009d855e08}{toutes\+Les\+Alertes}.
+
+
+
+Référencé par \hyperlink{class_ruche_a581320fbd44c1752d10aa0e6e533863c}{Ruche\+::recevoir\+Ensoleillement\+Traite()}, \hyperlink{class_ruche_a4ad540139115b79cd52336ad1a11453c}{Ruche\+::recevoir\+Mesure\+Charge\+Traite()}, \hyperlink{class_ruche_a2d19d8438eae55c1d76691398087f079}{Ruche\+::recevoir\+Mesure\+Humidite\+Exterieur\+Traite()}, \hyperlink{class_ruche_aab8b4958b32aad9af790963903e4788e}{Ruche\+::recevoir\+Mesure\+Humidite\+Interieur\+Traite()}, \hyperlink{class_ruche_afd8b0d7512f325327704cd3e37091dc2}{Ruche\+::recevoir\+Mesure\+Poids\+Traite()}, \hyperlink{class_ruche_a3b43ce547e616ee0b14e3a0e0aa44a4d}{Ruche\+::recevoir\+Pression\+Atmospherique\+Traite()}, \hyperlink{class_ruche_a1d9b1d3aad20f206f27de4093b4a136f}{Ruche\+::recevoir\+Temperature\+Exterieur\+Traite()}, et \hyperlink{class_ruche_a3a5934e6da843c959f34aecef1217f92}{Ruche\+::recevoir\+Temperature\+Interieur\+Traite()}.
+
+
+\begin{DoxyCode}
+00433 \{
+00434     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"typeAlertes"} << typeAlertes;
+00435 
+00436     \textcolor{keywordflow}{switch}(typeAlertes)
+00437     \{
+00438         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba6d07a737b602e59b2350e913e4763724}{alerteTemperatureInterieur} :
+00439             \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertesTemperatureInterieur}();
+00440         \textcolor{keywordflow}{break};
+00441         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba300b33d38ff264e971908d263fbfd1bb}{alerteTemperatureExterieur} :
+00442             \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertesTemperatureExterieur}();
+00443         \textcolor{keywordflow}{break};
+00444         \textcolor{keywordflow}{case}  \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737bac0e80b2d9b7f04033abc44ebcf61883a}{alerteHumiditeInterieur} :
+00445             \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertesHumiditeInterieur}();
+00446         \textcolor{keywordflow}{break};
+00447         \textcolor{keywordflow}{case}  \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737bacda66fabe33c8c197f8ff098a952fca3}{alerteHumiditeExterieur} :
+00448             \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertesHumiditeExterieur}();
+00449         \textcolor{keywordflow}{break};
+00450         \textcolor{keywordflow}{case}  \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba3b3b9fe16ae965531aca47449d865ce1}{alertePressionAtmospherique} :
+00451             \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertesPressionAtmospherique}();
+00452         \textcolor{keywordflow}{break};
+00453         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba130a82230092934eb515b95603d12956}{alertePoids} :
+00454             \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertesPoids}();
+00455         \textcolor{keywordflow}{break};
+00456         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba256a82c8886c1902dc7a078868434f83}{alerteEnsoleillement} :
+00457             \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertesEnsoleillement}();
+00458         \textcolor{keywordflow}{break};
+00459         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba11c71364df2afd149875ebfe0238ef7e}{alerteBatterie} :
+00460             \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertesBatterie}();
+00461         \textcolor{keywordflow}{break};
+00462         \textcolor{keywordflow}{case} \hyperlink{parametres_8h_a83a725fd153179a2bd97afcc8307737ba673fe6d70f1b196ef95a63009d855e08}{toutesLesAlertes}:
+00463             \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertesHumiditeExterieur}();
+00464             \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertesHumiditeInterieur}();
+00465             \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertesPressionAtmospherique}();
+00466             \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertesTemperatureExterieur}();
+00467             \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertesTemperatureInterieur}();
+00468             \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertesEnsoleillement}();
+00469             \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertesPoids}();
+00470         \textcolor{keywordflow}{break};
+00471     \}
+00472 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}\label{class_alertes_a0e81d795f8e7559eab19fcb9be138f5f}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Batterie@{envoi\+Alertes\+Batterie}}
+\index{envoi\+Alertes\+Batterie@{envoi\+Alertes\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Batterie}{envoiAlertesBatterie}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Batterie (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}.
+
+\mbox{\Hypertarget{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}\label{class_alertes_a578aa70bc7ca4ec753aa7f97e90f7f02}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Ensoleillement@{envoi\+Alertes\+Ensoleillement}}
+\index{envoi\+Alertes\+Ensoleillement@{envoi\+Alertes\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Ensoleillement}{envoiAlertesEnsoleillement}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Ensoleillement (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{,  }\item[{double}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}\label{class_alertes_a9a4f2ada9fbf4cf505d6d94831d8e413}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Humidite\+Exterieur@{envoi\+Alertes\+Humidite\+Exterieur}}
+\index{envoi\+Alertes\+Humidite\+Exterieur@{envoi\+Alertes\+Humidite\+Exterieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Humidite\+Exterieur}{envoiAlertesHumiditeExterieur}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Humidite\+Exterieur (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}\label{class_alertes_a6d96d5a6e5a1e3c518c45e295a5b4ddf}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Humidite\+Interieur@{envoi\+Alertes\+Humidite\+Interieur}}
+\index{envoi\+Alertes\+Humidite\+Interieur@{envoi\+Alertes\+Humidite\+Interieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Humidite\+Interieur}{envoiAlertesHumiditeInterieur}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Humidite\+Interieur (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_alertes_a60f823014dcce3504ee1d78ac50b5328}\label{class_alertes_a60f823014dcce3504ee1d78ac50b5328}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Poids@{envoi\+Alertes\+Poids}}
+\index{envoi\+Alertes\+Poids@{envoi\+Alertes\+Poids}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Poids}{envoiAlertesPoids}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Poids (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}.
+
+\mbox{\Hypertarget{class_alertes_a3e81bcca9d4c91c69f575546681590bc}\label{class_alertes_a3e81bcca9d4c91c69f575546681590bc}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Pression\+Atmospherique@{envoi\+Alertes\+Pression\+Atmospherique}}
+\index{envoi\+Alertes\+Pression\+Atmospherique@{envoi\+Alertes\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Pression\+Atmospherique}{envoiAlertesPressionAtmospherique}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}\label{class_alertes_a7b257375a0d8ad5f41abaa572799aae4}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Temperature\+Exterieur@{envoi\+Alertes\+Temperature\+Exterieur}}
+\index{envoi\+Alertes\+Temperature\+Exterieur@{envoi\+Alertes\+Temperature\+Exterieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Temperature\+Exterieur}{envoiAlertesTemperatureExterieur}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Temperature\+Exterieur (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}\label{class_alertes_a7726d5049a1453b6c22fafb33693bfe9}} 
+\index{Alertes@{Alertes}!envoi\+Alertes\+Temperature\+Interieur@{envoi\+Alertes\+Temperature\+Interieur}}
+\index{envoi\+Alertes\+Temperature\+Interieur@{envoi\+Alertes\+Temperature\+Interieur}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoi\+Alertes\+Temperature\+Interieur}{envoiAlertesTemperatureInterieur}}
+{\footnotesize\ttfamily void Alertes\+::envoi\+Alertes\+Temperature\+Interieur (\begin{DoxyParamCaption}\item[{\hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_alertes_a375783502a78109f3323dc1ed90cfdc9}\label{class_alertes_a375783502a78109f3323dc1ed90cfdc9}} 
+\index{Alertes@{Alertes}!envoyer\+Mail\+Alerte@{envoyer\+Mail\+Alerte}}
+\index{envoyer\+Mail\+Alerte@{envoyer\+Mail\+Alerte}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{envoyer\+Mail\+Alerte()}{envoyerMailAlerte()}}
+{\footnotesize\ttfamily void Alertes\+::envoyer\+Mail\+Alerte (\begin{DoxyParamCaption}\item[{Q\+String}]{email,  }\item[{Q\+String}]{objet,  }\item[{Q\+String}]{message }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{parametres_8h_a29c7597b5c4dfd015628a777f545bcb2}{P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+G\+M\+A\+IL}, \hyperlink{parametres_8h_a45133c820662f13b719dcc1729242e61}{T\+T\+N\+\_\+\+E\+M\+A\+IL}, et \hyperlink{parametres_8h_a4a0b02d56c77af5d5aceb6c9f57cfb31}{U\+S\+E\+R\+\_\+\+G\+M\+A\+IL}.
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, et \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}.
+
+
+\begin{DoxyCode}
+00602 \{
+00603     Sender smtp(QLatin1String(\textcolor{stringliteral}{"smtp.gmail.com"}), 465, Sender::SslConnection);
+00604     smtp.setUser(\hyperlink{parametres_8h_a4a0b02d56c77af5d5aceb6c9f57cfb31}{USER\_GMAIL});
+00605     smtp.setPassword(\hyperlink{parametres_8h_a29c7597b5c4dfd015628a777f545bcb2}{PASSWORD\_GMAIL});
+00606 
+00607     MimeMessage message;
+00608     EmailAddress sender(QLatin1String(\hyperlink{parametres_8h_a45133c820662f13b719dcc1729242e61}{TTN\_EMAIL}), QLatin1String(\textcolor{stringliteral}{"APP\_TITRE"}));
+00609     message.setSender(sender);
+00610     EmailAddress to(email);
+00611     message.addTo(to);
+00612     message.setSubject(objet);
+00613     MimeText text;
+00614     text.setText(messageAlerte);
+00615     message.addPart(&text);
+00616 
+00617     \textcolor{keywordflow}{if} (!smtp.sendMail(message))
+00618     \{
+00619         qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"Erreur"} << smtp.lastError();
+00620         \textcolor{keywordflow}{return};
+00621     \}
+00622 
+00623     smtp.quit();
+00624 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}\label{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}} 
+\index{Alertes@{Alertes}!get\+Id\+Ruche@{get\+Id\+Ruche}}
+\index{get\+Id\+Ruche@{get\+Id\+Ruche}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Id\+Ruche()}{getIdRuche()}}
+{\footnotesize\ttfamily Q\+String Alertes\+::get\+Id\+Ruche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{id\+Ruche}.
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{Reglages\+Alertes\+Ihm\+::recevoir\+Reglages\+Alertes()}.
+
+
+\begin{DoxyCode}
+00074 \{
+00075     \textcolor{keywordflow}{return} \hyperlink{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}{idRuche};
+00076 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_adcf9f9fb707944ae17f2355819eb58d1}\label{class_alertes_adcf9f9fb707944ae17f2355819eb58d1}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Batterie@{get\+Seuil\+Batterie}}
+\index{get\+Seuil\+Batterie@{get\+Seuil\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Batterie()}{getSeuilBatterie()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Batterie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuil\+Batterie}.
+
+
+\begin{DoxyCode}
+00139 \{
+00140     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuilBatterie};
+00141 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a54900058557979664d25137399ae2512}\label{class_alertes_a54900058557979664d25137399ae2512}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Ensoleillement@{get\+Seuil\+Ensoleillement}}
+\index{get\+Seuil\+Ensoleillement@{get\+Seuil\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Ensoleillement()}{getSeuilEnsoleillement()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Ensoleillement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuil\+Ensoleillement}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a6d52dd904573d1bfc9551421ab53e8cc}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Ensoleillement()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00134 \{
+00135     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuilEnsoleillement};
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}\label{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Humidite\+Exterieur\+Max@{get\+Seuil\+Humidite\+Exterieur\+Max}}
+\index{get\+Seuil\+Humidite\+Exterieur\+Max@{get\+Seuil\+Humidite\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Humidite\+Exterieur\+Max()}{getSeuilHumiditeExterieurMax()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Humidite\+Exterieur\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuil\+Humidite\+Exterieur\+Max}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_ae572f3f2b76e8c9b14a699d3e29422ee}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Humidite\+Exterieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00114 \{
+00115     \textcolor{keywordflow}{return} \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax};
+00116 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a68e467e042b615f56347a0953d6e64f1}\label{class_alertes_a68e467e042b615f56347a0953d6e64f1}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Humidite\+Exterieur\+Min@{get\+Seuil\+Humidite\+Exterieur\+Min}}
+\index{get\+Seuil\+Humidite\+Exterieur\+Min@{get\+Seuil\+Humidite\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Humidite\+Exterieur\+Min()}{getSeuilHumiditeExterieurMin()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Humidite\+Exterieur\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuil\+Humidite\+Exterieur\+Min}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_ae572f3f2b76e8c9b14a699d3e29422ee}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Humidite\+Exterieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00109 \{
+00110     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuilHumiditeExterieurMin};
+00111 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}\label{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Humidite\+Interieur\+Max@{get\+Seuil\+Humidite\+Interieur\+Max}}
+\index{get\+Seuil\+Humidite\+Interieur\+Max@{get\+Seuil\+Humidite\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Humidite\+Interieur\+Max()}{getSeuilHumiditeInterieurMax()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Humidite\+Interieur\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuil\+Humidite\+Interieur\+Max}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a42785d6da8aca09d8becb6d500de8d9f}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Humidite\+Interieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00094 \{
+00095     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax};
+00096 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a40d47b65952035b78cac05b915ad57b8}\label{class_alertes_a40d47b65952035b78cac05b915ad57b8}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Humidite\+Interieur\+Min@{get\+Seuil\+Humidite\+Interieur\+Min}}
+\index{get\+Seuil\+Humidite\+Interieur\+Min@{get\+Seuil\+Humidite\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Humidite\+Interieur\+Min()}{getSeuilHumiditeInterieurMin()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Humidite\+Interieur\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuil\+Humidite\+Interieur\+Min}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a42785d6da8aca09d8becb6d500de8d9f}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Humidite\+Interieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00089 \{
+00090     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin};
+00091 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}\label{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Poids\+Max@{get\+Seuil\+Poids\+Max}}
+\index{get\+Seuil\+Poids\+Max@{get\+Seuil\+Poids\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Poids\+Max()}{getSeuilPoidsMax()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Poids\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuil\+Poids\+Max}.
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00124 \{
+00125     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax};
+00126 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a228829e2826ee20cc014b2eb54addf14}\label{class_alertes_a228829e2826ee20cc014b2eb54addf14}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Poids\+Min@{get\+Seuil\+Poids\+Min}}
+\index{get\+Seuil\+Poids\+Min@{get\+Seuil\+Poids\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Poids\+Min()}{getSeuilPoidsMin()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Poids\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuil\+Poids\+Min}.
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00119 \{
+00120     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuilPoidsMin};
+00121 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a502fa36037246fb6eaad1db859bc1971}\label{class_alertes_a502fa36037246fb6eaad1db859bc1971}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Pression\+Atmospherique@{get\+Seuil\+Pression\+Atmospherique}}
+\index{get\+Seuil\+Pression\+Atmospherique@{get\+Seuil\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Pression\+Atmospherique()}{getSeuilPressionAtmospherique()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Pression\+Atmospherique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuil\+Pression\+Atmospherique}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a87e4e8d783ea0f15d6304ed604c7ddaa}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Pression()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00129 \{
+00130     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuilPressionAtmospherique};
+00131 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}\label{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Temperature\+Exterieur\+Max@{get\+Seuil\+Temperature\+Exterieur\+Max}}
+\index{get\+Seuil\+Temperature\+Exterieur\+Max@{get\+Seuil\+Temperature\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Temperature\+Exterieur\+Max()}{getSeuilTemperatureExterieurMax()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Temperature\+Exterieur\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuil\+Temperature\+Exterieur\+Max}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a410bcf0b7ac3ea7134af65d479802c48}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Temperature\+Exterieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00104 \{
+00105     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuilTemperatureExterieurMax};
+00106 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a4451c6b077256d838e584a073444d83d}\label{class_alertes_a4451c6b077256d838e584a073444d83d}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Temperature\+Exterieur\+Min@{get\+Seuil\+Temperature\+Exterieur\+Min}}
+\index{get\+Seuil\+Temperature\+Exterieur\+Min@{get\+Seuil\+Temperature\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Temperature\+Exterieur\+Min()}{getSeuilTemperatureExterieurMin()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Temperature\+Exterieur\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuil\+Temperature\+Exterieur\+Min}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a410bcf0b7ac3ea7134af65d479802c48}{Ruche\+Ihm\+::initialiser\+Marqueur\+Alerte\+Temperature\+Exterieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00099 \{
+00100     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin};
+00101 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}\label{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Temperature\+Interieur\+Max@{get\+Seuil\+Temperature\+Interieur\+Max}}
+\index{get\+Seuil\+Temperature\+Interieur\+Max@{get\+Seuil\+Temperature\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Temperature\+Interieur\+Max()}{getSeuilTemperatureInterieurMax()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Temperature\+Interieur\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuil\+Temperature\+Interieur\+Max}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a0f44cb030202047fa9a364dfcbf9a13f}{Ruche\+Ihm\+::\+Initialiser\+Marqueur\+Alerte\+Temperature\+Interieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00084 \{
+00085     \textcolor{keywordflow}{return} \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuilTemperatureInterieurMax};
+00086 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}\label{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}} 
+\index{Alertes@{Alertes}!get\+Seuil\+Temperature\+Interieur\+Min@{get\+Seuil\+Temperature\+Interieur\+Min}}
+\index{get\+Seuil\+Temperature\+Interieur\+Min@{get\+Seuil\+Temperature\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{get\+Seuil\+Temperature\+Interieur\+Min()}{getSeuilTemperatureInterieurMin()}}
+{\footnotesize\ttfamily double Alertes\+::get\+Seuil\+Temperature\+Interieur\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuil\+Temperature\+Interieur\+Min}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a0f44cb030202047fa9a364dfcbf9a13f}{Ruche\+Ihm\+::\+Initialiser\+Marqueur\+Alerte\+Temperature\+Interieur()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{Reglages\+Alertes\+Ihm\+::show\+Event()}.
+
+
+\begin{DoxyCode}
+00079 \{
+00080     \textcolor{keywordflow}{return} \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin};
+00081 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a61e1f4a105bd64ac829959726ae6ebb8}\label{class_alertes_a61e1f4a105bd64ac829959726ae6ebb8}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Batterie@{recevoir\+Seuil\+Batterie}}
+\index{recevoir\+Seuil\+Batterie@{recevoir\+Seuil\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Batterie}{recevoirSeuilBatterie}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Batterie (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuil\+Batterie}.
+
+
+\begin{DoxyCode}
+00597 \{
+00598     \hyperlink{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}{seuilBatterie} = seuil.toDouble();
+00599 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_abf6b9934820f50024c50dc9691f4ddee}\label{class_alertes_abf6b9934820f50024c50dc9691f4ddee}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Ensoleillement@{recevoir\+Seuil\+Ensoleillement}}
+\index{recevoir\+Seuil\+Ensoleillement@{recevoir\+Seuil\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Ensoleillement}{recevoirSeuilEnsoleillement}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Ensoleillement (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuil\+Ensoleillement}.
+
+
+\begin{DoxyCode}
+00592 \{
+00593     \hyperlink{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}{seuilEnsoleillement} = seuil.toDouble();
+00594 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a8c8500d99314034be3c01a871f209fb8}\label{class_alertes_a8c8500d99314034be3c01a871f209fb8}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Humidite\+Exterieur\+Max@{recevoir\+Seuil\+Humidite\+Exterieur\+Max}}
+\index{recevoir\+Seuil\+Humidite\+Exterieur\+Max@{recevoir\+Seuil\+Humidite\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Humidite\+Exterieur\+Max}{recevoirSeuilHumiditeExterieurMax}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Humidite\+Exterieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuil\+Humidite\+Exterieur\+Max}.
+
+
+\begin{DoxyCode}
+00552 \{
+00553     \hyperlink{class_alertes_afa54793d1f47a97894faf91e76fb2a04}{seuilHumiditeExterieurMax} = seuil.toDouble();
+00554 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a021d167be6c98d9b0718bb9c7209b47e}\label{class_alertes_a021d167be6c98d9b0718bb9c7209b47e}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Humidite\+Exterieur\+Min@{recevoir\+Seuil\+Humidite\+Exterieur\+Min}}
+\index{recevoir\+Seuil\+Humidite\+Exterieur\+Min@{recevoir\+Seuil\+Humidite\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Humidite\+Exterieur\+Min}{recevoirSeuilHumiditeExterieurMin}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Humidite\+Exterieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuil\+Humidite\+Exterieur\+Min}.
+
+
+\begin{DoxyCode}
+00542 \{
+00543     \hyperlink{class_alertes_a18afbc02513a6e4fa8baa665092719c9}{seuilHumiditeExterieurMin} = seuil.toDouble();
+00544 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a7554e8b6752b0e0a5cfefeecfbc3ba56}\label{class_alertes_a7554e8b6752b0e0a5cfefeecfbc3ba56}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Humidite\+Interieur\+Max@{recevoir\+Seuil\+Humidite\+Interieur\+Max}}
+\index{recevoir\+Seuil\+Humidite\+Interieur\+Max@{recevoir\+Seuil\+Humidite\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Humidite\+Interieur\+Max}{recevoirSeuilHumiditeInterieurMax}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Humidite\+Interieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuil\+Humidite\+Interieur\+Max}.
+
+
+\begin{DoxyCode}
+00512 \{
+00513     \hyperlink{class_alertes_a795cd3721854335f6c91e6009b324c37}{seuilHumiditeInterieurMax} = seuil.toDouble();
+00514 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a4444f527a708f8e1963d2dc1c95bad96}\label{class_alertes_a4444f527a708f8e1963d2dc1c95bad96}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Humidite\+Interieur\+Min@{recevoir\+Seuil\+Humidite\+Interieur\+Min}}
+\index{recevoir\+Seuil\+Humidite\+Interieur\+Min@{recevoir\+Seuil\+Humidite\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Humidite\+Interieur\+Min}{recevoirSeuilHumiditeInterieurMin}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Humidite\+Interieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuil\+Humidite\+Interieur\+Min}.
+
+
+\begin{DoxyCode}
+00501 \{
+00502     \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin} = seuil.toDouble();
+00503     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}{seuilHumiditeInterieurMin};
+00504 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a77b71a5bc047ced8d09f59a521f58616}\label{class_alertes_a77b71a5bc047ced8d09f59a521f58616}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Poids\+Max@{recevoir\+Seuil\+Poids\+Max}}
+\index{recevoir\+Seuil\+Poids\+Max@{recevoir\+Seuil\+Poids\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Poids\+Max}{recevoirSeuilPoidsMax}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Poids\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuil\+Poids\+Max}.
+
+
+\begin{DoxyCode}
+00572 \{
+00573     \hyperlink{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}{seuilPoidsMax} = seuil.toDouble();
+00574 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ab6a15b0c8387a2cdf47dacce92c60383}\label{class_alertes_ab6a15b0c8387a2cdf47dacce92c60383}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Poids\+Min@{recevoir\+Seuil\+Poids\+Min}}
+\index{recevoir\+Seuil\+Poids\+Min@{recevoir\+Seuil\+Poids\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Poids\+Min}{recevoirSeuilPoidsMin}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Poids\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuil\+Poids\+Min}.
+
+
+\begin{DoxyCode}
+00562 \{
+00563     \hyperlink{class_alertes_a3f23bee8122888916e33559f4d0bf34b}{seuilPoidsMin} = seuil.toDouble();
+00564 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a4496c251e1cde3e8c6beee64bad53fe3}\label{class_alertes_a4496c251e1cde3e8c6beee64bad53fe3}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Pression\+Atmospherique@{recevoir\+Seuil\+Pression\+Atmospherique}}
+\index{recevoir\+Seuil\+Pression\+Atmospherique@{recevoir\+Seuil\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Pression\+Atmospherique}{recevoirSeuilPressionAtmospherique}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuil\+Pression\+Atmospherique}.
+
+
+\begin{DoxyCode}
+00582 \{
+00583     \hyperlink{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}{seuilPressionAtmospherique} = seuil.toDouble();
+00584 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_af896e03da2f2ec319d410fb8dcc89e0e}\label{class_alertes_af896e03da2f2ec319d410fb8dcc89e0e}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Temperature\+Exterieur\+Max@{recevoir\+Seuil\+Temperature\+Exterieur\+Max}}
+\index{recevoir\+Seuil\+Temperature\+Exterieur\+Max@{recevoir\+Seuil\+Temperature\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Temperature\+Exterieur\+Max}{recevoirSeuilTemperatureExterieurMax}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Temperature\+Exterieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuil\+Temperature\+Exterieur\+Max}.
+
+
+\begin{DoxyCode}
+00532 \{
+00533     \hyperlink{class_alertes_a207e0266c68ad378dae846382ba9f9dc}{seuilTemperatureExterieurMax} = seuil.toDouble();
+00534 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_ad88c760d06e1d438a57027857d50a77f}\label{class_alertes_ad88c760d06e1d438a57027857d50a77f}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Temperature\+Exterieur\+Min@{recevoir\+Seuil\+Temperature\+Exterieur\+Min}}
+\index{recevoir\+Seuil\+Temperature\+Exterieur\+Min@{recevoir\+Seuil\+Temperature\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Temperature\+Exterieur\+Min}{recevoirSeuilTemperatureExterieurMin}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Temperature\+Exterieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuil\+Temperature\+Exterieur\+Min}.
+
+
+\begin{DoxyCode}
+00522 \{
+00523     \hyperlink{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}{seuilTemperatureExterieurMin} = seuil.toDouble();
+00524 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a06b136f1e86ca97978187305a11be0ff}\label{class_alertes_a06b136f1e86ca97978187305a11be0ff}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Temperature\+Interieur\+Max@{recevoir\+Seuil\+Temperature\+Interieur\+Max}}
+\index{recevoir\+Seuil\+Temperature\+Interieur\+Max@{recevoir\+Seuil\+Temperature\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Temperature\+Interieur\+Max}{recevoirSeuilTemperatureInterieurMax}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Temperature\+Interieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuil\+Temperature\+Interieur\+Max}.
+
+
+\begin{DoxyCode}
+00491 \{
+00492     \hyperlink{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}{seuilTemperatureInterieurMax} = seuil.toDouble();
+00493 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a0e5e5177eed435d74bcbdc2a36911e52}\label{class_alertes_a0e5e5177eed435d74bcbdc2a36911e52}} 
+\index{Alertes@{Alertes}!recevoir\+Seuil\+Temperature\+Interieur\+Min@{recevoir\+Seuil\+Temperature\+Interieur\+Min}}
+\index{recevoir\+Seuil\+Temperature\+Interieur\+Min@{recevoir\+Seuil\+Temperature\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{recevoir\+Seuil\+Temperature\+Interieur\+Min}{recevoirSeuilTemperatureInterieurMin}}
+{\footnotesize\ttfamily void Alertes\+::recevoir\+Seuil\+Temperature\+Interieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em seuil} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuil\+Temperature\+Interieur\+Min}.
+
+
+\begin{DoxyCode}
+00480 \{
+00481     \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin} = seuil.toDouble();
+00482     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_alertes_a1c970252300a177bef641ca5399d3783}{seuilTemperatureInterieurMin};
+00483 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a8bbe30ddc4893f943781749917b23463}\label{class_alertes_a8bbe30ddc4893f943781749917b23463}} 
+\index{Alertes@{Alertes}!set\+Infos\+Batterie@{set\+Infos\+Batterie}}
+\index{set\+Infos\+Batterie@{set\+Infos\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Batterie()}{setInfosBatterie()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Batterie (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_batterie}{Infos\+Batterie} $\ast$}]{infos\+Batterie }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infos\+Batterie}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00169 \{
+00170     this->infosBatterie = \hyperlink{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}{infosBatterie};
+00171 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a5379fc65522a77dc2cc110e489e1469d}\label{class_alertes_a5379fc65522a77dc2cc110e489e1469d}} 
+\index{Alertes@{Alertes}!set\+Infos\+Ensoleillement@{set\+Infos\+Ensoleillement}}
+\index{set\+Infos\+Ensoleillement@{set\+Infos\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Ensoleillement()}{setInfosEnsoleillement()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Ensoleillement (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement} $\ast$}]{infos\+Ensoleillement }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infos\+Ensoleillement}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00164 \{
+00165     this->infosEnsoleillement = \hyperlink{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}{infosEnsoleillement};
+00166 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a05734ac9e97a9001de4ce9ef96235c87}\label{class_alertes_a05734ac9e97a9001de4ce9ef96235c87}} 
+\index{Alertes@{Alertes}!set\+Infos\+Humidite@{set\+Infos\+Humidite}}
+\index{set\+Infos\+Humidite@{set\+Infos\+Humidite}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Humidite()}{setInfosHumidite()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Humidite (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_humidite}{Infos\+Humidite} $\ast$}]{infos\+Humidite }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infos\+Humidite}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00149 \{
+00150     this->infosHumidite = \hyperlink{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}{infosHumidite};
+00151 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a100bad47769994abc976419a355c4a26}\label{class_alertes_a100bad47769994abc976419a355c4a26}} 
+\index{Alertes@{Alertes}!set\+Infos\+Poids@{set\+Infos\+Poids}}
+\index{set\+Infos\+Poids@{set\+Infos\+Poids}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Poids()}{setInfosPoids()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Poids (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_poids}{Infos\+Poids} $\ast$}]{infos\+Poids }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infos\+Poids}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00159 \{
+00160     this->infosPoids = \hyperlink{class_alertes_add699ea1cebadb371f86b4c47ebe381d}{infosPoids};
+00161 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a771133f26d4ab8c90d1bdf50e1d23d87}\label{class_alertes_a771133f26d4ab8c90d1bdf50e1d23d87}} 
+\index{Alertes@{Alertes}!set\+Infos\+Pression\+Atmospherique@{set\+Infos\+Pression\+Atmospherique}}
+\index{set\+Infos\+Pression\+Atmospherique@{set\+Infos\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Pression\+Atmospherique()}{setInfosPressionAtmospherique()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Pression\+Atmospherique (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique} $\ast$}]{infos\+Pression\+Atmospherique }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infos\+Pression\+Atmospherique}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00154 \{
+00155     this->infosPressionAtmospherique = \hyperlink{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}{infosPressionAtmospherique};
+00156 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_alertes_a091a0fabca5b06302bc19de31aecafff}\label{class_alertes_a091a0fabca5b06302bc19de31aecafff}} 
+\index{Alertes@{Alertes}!set\+Infos\+Temperature@{set\+Infos\+Temperature}}
+\index{set\+Infos\+Temperature@{set\+Infos\+Temperature}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{set\+Infos\+Temperature()}{setInfosTemperature()}}
+{\footnotesize\ttfamily void Alertes\+::set\+Infos\+Temperature (\begin{DoxyParamCaption}\item[{\hyperlink{class_infos_temperature}{Infos\+Temperature} $\ast$}]{infos\+Temperature }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infos\+Temperature}.
+
+
+
+Référencé par \hyperlink{class_ruche_a8b4ee3752d984c5acee93b990db7939a}{Ruche\+::\+Ruche()}.
+
+
+\begin{DoxyCode}
+00144 \{
+00145     this->infosTemperature = \hyperlink{class_alertes_ad02b203545812ad6408befecc94ee0ec}{infosTemperature};
+00146 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_alertes_a91e58b69d29922e8e984efb767ae5268}\label{class_alertes_a91e58b69d29922e8e984efb767ae5268}} 
+\index{Alertes@{Alertes}!bdd@{bdd}}
+\index{bdd@{bdd}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Alertes\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ad2e4e3907f97bdd06840dfeee0a87ddb}{Alertes()}, \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement()}, \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, et \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}\label{class_alertes_ae3f9d7aa34ab3c83a66c8484e2b89925}} 
+\index{Alertes@{Alertes}!id\+Ruche@{id\+Ruche}}
+\index{id\+Ruche@{id\+Ruche}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{id\+Ruche}{idRuche}}
+{\footnotesize\ttfamily Q\+String Alertes\+::id\+Ruche\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}{get\+Id\+Ruche()}.
+
+\mbox{\Hypertarget{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}\label{class_alertes_ad5c756a52ff4d6ae85cc0f03bd80582b}} 
+\index{Alertes@{Alertes}!infos\+Batterie@{infos\+Batterie}}
+\index{infos\+Batterie@{infos\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Batterie}{infosBatterie}}
+{\footnotesize\ttfamily \hyperlink{class_infos_batterie}{Infos\+Batterie}$\ast$ Alertes\+::infos\+Batterie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, et \hyperlink{class_alertes_a8bbe30ddc4893f943781749917b23463}{set\+Infos\+Batterie()}.
+
+\mbox{\Hypertarget{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}\label{class_alertes_abd9b6ff4e9f1df3c360374cceb8d0601}} 
+\index{Alertes@{Alertes}!infos\+Ensoleillement@{infos\+Ensoleillement}}
+\index{infos\+Ensoleillement@{infos\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Ensoleillement}{infosEnsoleillement}}
+{\footnotesize\ttfamily \hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement}$\ast$ Alertes\+::infos\+Ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement()}, et \hyperlink{class_alertes_a5379fc65522a77dc2cc110e489e1469d}{set\+Infos\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}\label{class_alertes_a7b6d798ca0629b474120cd55eb8b510c}} 
+\index{Alertes@{Alertes}!infos\+Humidite@{infos\+Humidite}}
+\index{infos\+Humidite@{infos\+Humidite}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Humidite}{infosHumidite}}
+{\footnotesize\ttfamily \hyperlink{class_infos_humidite}{Infos\+Humidite}$\ast$ Alertes\+::infos\+Humidite\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, et \hyperlink{class_alertes_a05734ac9e97a9001de4ce9ef96235c87}{set\+Infos\+Humidite()}.
+
+\mbox{\Hypertarget{class_alertes_add699ea1cebadb371f86b4c47ebe381d}\label{class_alertes_add699ea1cebadb371f86b4c47ebe381d}} 
+\index{Alertes@{Alertes}!infos\+Poids@{infos\+Poids}}
+\index{infos\+Poids@{infos\+Poids}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Poids}{infosPoids}}
+{\footnotesize\ttfamily \hyperlink{class_infos_poids}{Infos\+Poids}$\ast$ Alertes\+::infos\+Poids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, et \hyperlink{class_alertes_a100bad47769994abc976419a355c4a26}{set\+Infos\+Poids()}.
+
+\mbox{\Hypertarget{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}\label{class_alertes_af4bfb245d72bc2eb080df844aa50ac86}} 
+\index{Alertes@{Alertes}!infos\+Pression\+Atmospherique@{infos\+Pression\+Atmospherique}}
+\index{infos\+Pression\+Atmospherique@{infos\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Pression\+Atmospherique}{infosPressionAtmospherique}}
+{\footnotesize\ttfamily \hyperlink{class_infos_pression_atmospherique}{Infos\+Pression\+Atmospherique}$\ast$ Alertes\+::infos\+Pression\+Atmospherique\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, et \hyperlink{class_alertes_a771133f26d4ab8c90d1bdf50e1d23d87}{set\+Infos\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_alertes_ad02b203545812ad6408befecc94ee0ec}\label{class_alertes_ad02b203545812ad6408befecc94ee0ec}} 
+\index{Alertes@{Alertes}!infos\+Temperature@{infos\+Temperature}}
+\index{infos\+Temperature@{infos\+Temperature}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{infos\+Temperature}{infosTemperature}}
+{\footnotesize\ttfamily \hyperlink{class_infos_temperature}{Infos\+Temperature}$\ast$ Alertes\+::infos\+Temperature\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}, et \hyperlink{class_alertes_a091a0fabca5b06302bc19de31aecafff}{set\+Infos\+Temperature()}.
+
+\mbox{\Hypertarget{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}\label{class_alertes_a212f2a7185bcc7b11f3e54200272bdcf}} 
+\index{Alertes@{Alertes}!nom\+Ruche@{nom\+Ruche}}
+\index{nom\+Ruche@{nom\+Ruche}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{nom\+Ruche}{nomRuche}}
+{\footnotesize\ttfamily Q\+String Alertes\+::nom\+Ruche\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, et \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}.
+
+\mbox{\Hypertarget{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}\label{class_alertes_a3ac4e5d2b1a8fdd9cf4633861948110f}} 
+\index{Alertes@{Alertes}!seuil\+Batterie@{seuil\+Batterie}}
+\index{seuil\+Batterie@{seuil\+Batterie}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Batterie}{seuilBatterie}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Batterie\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ad708a4b800d56c1439b65d12a3c6b027}{alertes\+Batterie()}, \hyperlink{class_alertes_adcf9f9fb707944ae17f2355819eb58d1}{get\+Seuil\+Batterie()}, et \hyperlink{class_alertes_a61e1f4a105bd64ac829959726ae6ebb8}{recevoir\+Seuil\+Batterie()}.
+
+\mbox{\Hypertarget{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}\label{class_alertes_a7f512b6d3b5bc0851757ab4d18279ccf}} 
+\index{Alertes@{Alertes}!seuil\+Ensoleillement@{seuil\+Ensoleillement}}
+\index{seuil\+Ensoleillement@{seuil\+Ensoleillement}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Ensoleillement}{seuilEnsoleillement}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{alertes\+Ensoleillement()}, \hyperlink{class_alertes_a54900058557979664d25137399ae2512}{get\+Seuil\+Ensoleillement()}, et \hyperlink{class_alertes_abf6b9934820f50024c50dc9691f4ddee}{recevoir\+Seuil\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_alertes_afa54793d1f47a97894faf91e76fb2a04}\label{class_alertes_afa54793d1f47a97894faf91e76fb2a04}} 
+\index{Alertes@{Alertes}!seuil\+Humidite\+Exterieur\+Max@{seuil\+Humidite\+Exterieur\+Max}}
+\index{seuil\+Humidite\+Exterieur\+Max@{seuil\+Humidite\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Humidite\+Exterieur\+Max}{seuilHumiditeExterieurMax}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Humidite\+Exterieur\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}{get\+Seuil\+Humidite\+Exterieur\+Max()}, et \hyperlink{class_alertes_a8c8500d99314034be3c01a871f209fb8}{recevoir\+Seuil\+Humidite\+Exterieur\+Max()}.
+
+\mbox{\Hypertarget{class_alertes_a18afbc02513a6e4fa8baa665092719c9}\label{class_alertes_a18afbc02513a6e4fa8baa665092719c9}} 
+\index{Alertes@{Alertes}!seuil\+Humidite\+Exterieur\+Min@{seuil\+Humidite\+Exterieur\+Min}}
+\index{seuil\+Humidite\+Exterieur\+Min@{seuil\+Humidite\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Humidite\+Exterieur\+Min}{seuilHumiditeExterieurMin}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Humidite\+Exterieur\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{alertes\+Humidite\+Exterieur()}, \hyperlink{class_alertes_a68e467e042b615f56347a0953d6e64f1}{get\+Seuil\+Humidite\+Exterieur\+Min()}, et \hyperlink{class_alertes_a021d167be6c98d9b0718bb9c7209b47e}{recevoir\+Seuil\+Humidite\+Exterieur\+Min()}.
+
+\mbox{\Hypertarget{class_alertes_a795cd3721854335f6c91e6009b324c37}\label{class_alertes_a795cd3721854335f6c91e6009b324c37}} 
+\index{Alertes@{Alertes}!seuil\+Humidite\+Interieur\+Max@{seuil\+Humidite\+Interieur\+Max}}
+\index{seuil\+Humidite\+Interieur\+Max@{seuil\+Humidite\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Humidite\+Interieur\+Max}{seuilHumiditeInterieurMax}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Humidite\+Interieur\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}{get\+Seuil\+Humidite\+Interieur\+Max()}, et \hyperlink{class_alertes_a7554e8b6752b0e0a5cfefeecfbc3ba56}{recevoir\+Seuil\+Humidite\+Interieur\+Max()}.
+
+\mbox{\Hypertarget{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}\label{class_alertes_a501773587c8f2ccd032fe7db9af1f4e2}} 
+\index{Alertes@{Alertes}!seuil\+Humidite\+Interieur\+Min@{seuil\+Humidite\+Interieur\+Min}}
+\index{seuil\+Humidite\+Interieur\+Min@{seuil\+Humidite\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Humidite\+Interieur\+Min}{seuilHumiditeInterieurMin}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Humidite\+Interieur\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{alertes\+Humidite\+Interieur()}, \hyperlink{class_alertes_a40d47b65952035b78cac05b915ad57b8}{get\+Seuil\+Humidite\+Interieur\+Min()}, et \hyperlink{class_alertes_a4444f527a708f8e1963d2dc1c95bad96}{recevoir\+Seuil\+Humidite\+Interieur\+Min()}.
+
+\mbox{\Hypertarget{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}\label{class_alertes_a19b88c68325ccc6e5e8ad11a2537b25e}} 
+\index{Alertes@{Alertes}!seuil\+Poids\+Max@{seuil\+Poids\+Max}}
+\index{seuil\+Poids\+Max@{seuil\+Poids\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Poids\+Max}{seuilPoidsMax}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Poids\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}{get\+Seuil\+Poids\+Max()}, et \hyperlink{class_alertes_a77b71a5bc047ced8d09f59a521f58616}{recevoir\+Seuil\+Poids\+Max()}.
+
+\mbox{\Hypertarget{class_alertes_a3f23bee8122888916e33559f4d0bf34b}\label{class_alertes_a3f23bee8122888916e33559f4d0bf34b}} 
+\index{Alertes@{Alertes}!seuil\+Poids\+Min@{seuil\+Poids\+Min}}
+\index{seuil\+Poids\+Min@{seuil\+Poids\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Poids\+Min}{seuilPoidsMin}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Poids\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{alertes\+Poids()}, \hyperlink{class_alertes_a228829e2826ee20cc014b2eb54addf14}{get\+Seuil\+Poids\+Min()}, et \hyperlink{class_alertes_ab6a15b0c8387a2cdf47dacce92c60383}{recevoir\+Seuil\+Poids\+Min()}.
+
+\mbox{\Hypertarget{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}\label{class_alertes_a565094789ef5eb0ae2a2a562ee8a9704}} 
+\index{Alertes@{Alertes}!seuil\+Pression\+Atmospherique@{seuil\+Pression\+Atmospherique}}
+\index{seuil\+Pression\+Atmospherique@{seuil\+Pression\+Atmospherique}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Pression\+Atmospherique}{seuilPressionAtmospherique}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Pression\+Atmospherique\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_ab8a33e82cdd4d4e0560c9ba6e10ca8d5}{alertes\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a502fa36037246fb6eaad1db859bc1971}{get\+Seuil\+Pression\+Atmospherique()}, et \hyperlink{class_alertes_a4496c251e1cde3e8c6beee64bad53fe3}{recevoir\+Seuil\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{class_alertes_adedb6924af18a7f7a14b11ffa33db6ba}\label{class_alertes_adedb6924af18a7f7a14b11ffa33db6ba}} 
+\index{Alertes@{Alertes}!seuils\+Alertes@{seuils\+Alertes}}
+\index{seuils\+Alertes@{seuils\+Alertes}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuils\+Alertes}{seuilsAlertes}}
+{\footnotesize\ttfamily \hyperlink{parametres_8h_aaa6de8207c94675264c90b10b613368d}{Seuils\+Alertes} Alertes\+::seuils\+Alertes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_alertes_a207e0266c68ad378dae846382ba9f9dc}\label{class_alertes_a207e0266c68ad378dae846382ba9f9dc}} 
+\index{Alertes@{Alertes}!seuil\+Temperature\+Exterieur\+Max@{seuil\+Temperature\+Exterieur\+Max}}
+\index{seuil\+Temperature\+Exterieur\+Max@{seuil\+Temperature\+Exterieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Temperature\+Exterieur\+Max}{seuilTemperatureExterieurMax}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Temperature\+Exterieur\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, \hyperlink{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}{get\+Seuil\+Temperature\+Exterieur\+Max()}, et \hyperlink{class_alertes_af896e03da2f2ec319d410fb8dcc89e0e}{recevoir\+Seuil\+Temperature\+Exterieur\+Max()}.
+
+\mbox{\Hypertarget{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}\label{class_alertes_a0898c501edf5f07ac503b31b8a3d2454}} 
+\index{Alertes@{Alertes}!seuil\+Temperature\+Exterieur\+Min@{seuil\+Temperature\+Exterieur\+Min}}
+\index{seuil\+Temperature\+Exterieur\+Min@{seuil\+Temperature\+Exterieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Temperature\+Exterieur\+Min}{seuilTemperatureExterieurMin}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Temperature\+Exterieur\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a91fb2665fa8b6c32c74bfe4d1b89a2d8}{alertes\+Temperature\+Exterieur()}, \hyperlink{class_alertes_a4451c6b077256d838e584a073444d83d}{get\+Seuil\+Temperature\+Exterieur\+Min()}, et \hyperlink{class_alertes_ad88c760d06e1d438a57027857d50a77f}{recevoir\+Seuil\+Temperature\+Exterieur\+Min()}.
+
+\mbox{\Hypertarget{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}\label{class_alertes_abeda87298576a3b3eefcca9a96b8a0a9}} 
+\index{Alertes@{Alertes}!seuil\+Temperature\+Interieur\+Max@{seuil\+Temperature\+Interieur\+Max}}
+\index{seuil\+Temperature\+Interieur\+Max@{seuil\+Temperature\+Interieur\+Max}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Temperature\+Interieur\+Max}{seuilTemperatureInterieurMax}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Temperature\+Interieur\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}, \hyperlink{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}{get\+Seuil\+Temperature\+Interieur\+Max()}, et \hyperlink{class_alertes_a06b136f1e86ca97978187305a11be0ff}{recevoir\+Seuil\+Temperature\+Interieur\+Max()}.
+
+\mbox{\Hypertarget{class_alertes_a1c970252300a177bef641ca5399d3783}\label{class_alertes_a1c970252300a177bef641ca5399d3783}} 
+\index{Alertes@{Alertes}!seuil\+Temperature\+Interieur\+Min@{seuil\+Temperature\+Interieur\+Min}}
+\index{seuil\+Temperature\+Interieur\+Min@{seuil\+Temperature\+Interieur\+Min}!Alertes@{Alertes}}
+\paragraph{\texorpdfstring{seuil\+Temperature\+Interieur\+Min}{seuilTemperatureInterieurMin}}
+{\footnotesize\ttfamily double Alertes\+::seuil\+Temperature\+Interieur\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_alertes_a8bc56cf9eb525624b2c1f5b20f86724b}{alertes\+Temperature\+Interieur()}, \hyperlink{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}{get\+Seuil\+Temperature\+Interieur\+Min()}, et \hyperlink{class_alertes_a0e5e5177eed435d74bcbdc2a36911e52}{recevoir\+Seuil\+Temperature\+Interieur\+Min()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{alertes_8h}{alertes.\+h}\item 
+\hyperlink{alertes_8cpp}{alertes.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,471 @@
+\hypertarget{class_reglages_alertes_ihm}{}\subsection{Référence de la classe Reglages\+Alertes\+Ihm}
+\label{class_reglages_alertes_ihm}\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+
+
+Déclaration de la classe \hyperlink{class_reglages_alertes_ihm}{Reglages\+Alertes\+Ihm}.  
+
+
+
+
+{\ttfamily \#include $<$reglages\+Alertes\+Ihm.\+h$>$}
+
+
+
+Graphe de collaboration de Reglages\+Alertes\+Ihm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_reglages_alertes_ihm__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes} ()
+\begin{DoxyCompactList}\small\item\em recoit les paramétres de l\textquotesingle{}ihm \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}{envoi\+Seuil\+Temperature\+Interieur\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}{envoi\+Seuil\+Temperature\+Interieur\+Max} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}{envoi\+Seuil\+Humidite\+Interieur\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}{envoi\+Seuil\+Humidite\+Interieur\+Max} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}{envoi\+Seuil\+Temperature\+Exterieur\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}{envoi\+Seuil\+Temperature\+Exterieur\+Max} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}{envoi\+Seuil\+Humidite\+Exterieur\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}{envoi\+Seuil\+Humidite\+Exterieur\+Max} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}{envoi\+Seuil\+Ensoleillement\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}{envoi\+Seuil\+Pression\+Atmospherique\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}{envoi\+Seuil\+Poids\+Min} (Q\+String seuil)
+\item 
+void \hyperlink{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}{envoi\+Seuil\+Poids\+Max} (Q\+String seuil)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}{Reglages\+Alertes\+Ihm} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+\hyperlink{class_reglages_alertes_ihm_aa9bfc09b4162f536de84d218daa36982}{$\sim$\+Reglages\+Alertes\+Ihm} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+void \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes} (\hyperlink{class_alertes}{Alertes} $\ast$\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}objet alertes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{show\+Event} (Q\+Show\+Event $\ast$ev)
+\begin{DoxyCompactList}\small\item\em affiche les seuils à chaque fois que la fenêtre sera affichée \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Reglages\+Alertes\+Ihm $\ast$ \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}
+\item 
+\hyperlink{class_alertes}{Alertes} $\ast$ \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}\label{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{Reglages\+Alertes\+Ihm()}{ReglagesAlertesIhm()}}
+{\footnotesize\ttfamily Reglages\+Alertes\+Ihm\+::\+Reglages\+Alertes\+Ihm (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent (0 = fenêtre principale) \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}, \hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{B\+D\+D\+\_\+\+N\+O\+M\+B\+A\+SE}, \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{B\+D\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{B\+D\+D\+\_\+\+S\+E\+R\+V\+E\+UR}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{B\+D\+D\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}.
+
+
+\begin{DoxyCode}
+00025                                                       :
+00026     \hyperlink{class_q_dialog}{QDialog}(parent),
+00027     \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}(\textcolor{keyword}{new} Ui::ReglagesAlertesIhm), \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}(0)
+00028 \{
+00029     \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->setupUi(\textcolor{keyword}{this});
+00030 
+00031     \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00032     \textcolor{keywordflow}{if}(!\hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00033         \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}(\hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{BDD\_NOMBASE}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{BDD\_USERNAME}, 
+      \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{BDD\_PASSWORD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{BDD\_SERVEUR});
+00034 
+00035     connect(\hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->pushButtonOk,SIGNAL(clicked(\textcolor{keywordtype}{bool})),\textcolor{keyword}{this},SLOT(accept()));
+00036     connect(\hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->pushButtonOk,SIGNAL(clicked(\textcolor{keywordtype}{bool})),\textcolor{keyword}{this} ,SLOT(
+      \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoirReglagesAlertes}()));
+00037 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_aa9bfc09b4162f536de84d218daa36982}\label{class_reglages_alertes_ihm_aa9bfc09b4162f536de84d218daa36982}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!````~Reglages\+Alertes\+Ihm@{$\sim$\+Reglages\+Alertes\+Ihm}}
+\index{````~Reglages\+Alertes\+Ihm@{$\sim$\+Reglages\+Alertes\+Ihm}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{$\sim$\+Reglages\+Alertes\+Ihm()}{~ReglagesAlertesIhm()}}
+{\footnotesize\ttfamily Reglages\+Alertes\+Ihm\+::$\sim$\+Reglages\+Alertes\+Ihm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}.
+
+
+\begin{DoxyCode}
+00046 \{
+00047     \textcolor{keyword}{delete} \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui};
+00048     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00049 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}\label{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Ensoleillement\+Min@{envoi\+Seuil\+Ensoleillement\+Min}}
+\index{envoi\+Seuil\+Ensoleillement\+Min@{envoi\+Seuil\+Ensoleillement\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Ensoleillement\+Min}{envoiSeuilEnsoleillementMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Ensoleillement\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}\label{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Humidite\+Exterieur\+Max@{envoi\+Seuil\+Humidite\+Exterieur\+Max}}
+\index{envoi\+Seuil\+Humidite\+Exterieur\+Max@{envoi\+Seuil\+Humidite\+Exterieur\+Max}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Humidite\+Exterieur\+Max}{envoiSeuilHumiditeExterieurMax}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Humidite\+Exterieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}\label{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Humidite\+Exterieur\+Min@{envoi\+Seuil\+Humidite\+Exterieur\+Min}}
+\index{envoi\+Seuil\+Humidite\+Exterieur\+Min@{envoi\+Seuil\+Humidite\+Exterieur\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Humidite\+Exterieur\+Min}{envoiSeuilHumiditeExterieurMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Humidite\+Exterieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}\label{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Humidite\+Interieur\+Max@{envoi\+Seuil\+Humidite\+Interieur\+Max}}
+\index{envoi\+Seuil\+Humidite\+Interieur\+Max@{envoi\+Seuil\+Humidite\+Interieur\+Max}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Humidite\+Interieur\+Max}{envoiSeuilHumiditeInterieurMax}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Humidite\+Interieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}\label{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Humidite\+Interieur\+Min@{envoi\+Seuil\+Humidite\+Interieur\+Min}}
+\index{envoi\+Seuil\+Humidite\+Interieur\+Min@{envoi\+Seuil\+Humidite\+Interieur\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Humidite\+Interieur\+Min}{envoiSeuilHumiditeInterieurMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Humidite\+Interieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}\label{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Poids\+Max@{envoi\+Seuil\+Poids\+Max}}
+\index{envoi\+Seuil\+Poids\+Max@{envoi\+Seuil\+Poids\+Max}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Poids\+Max}{envoiSeuilPoidsMax}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Poids\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}\label{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Poids\+Min@{envoi\+Seuil\+Poids\+Min}}
+\index{envoi\+Seuil\+Poids\+Min@{envoi\+Seuil\+Poids\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Poids\+Min}{envoiSeuilPoidsMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Poids\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}\label{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Pression\+Atmospherique\+Min@{envoi\+Seuil\+Pression\+Atmospherique\+Min}}
+\index{envoi\+Seuil\+Pression\+Atmospherique\+Min@{envoi\+Seuil\+Pression\+Atmospherique\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Pression\+Atmospherique\+Min}{envoiSeuilPressionAtmospheriqueMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Pression\+Atmospherique\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}\label{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Temperature\+Exterieur\+Max@{envoi\+Seuil\+Temperature\+Exterieur\+Max}}
+\index{envoi\+Seuil\+Temperature\+Exterieur\+Max@{envoi\+Seuil\+Temperature\+Exterieur\+Max}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Temperature\+Exterieur\+Max}{envoiSeuilTemperatureExterieurMax}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Temperature\+Exterieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}\label{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Temperature\+Exterieur\+Min@{envoi\+Seuil\+Temperature\+Exterieur\+Min}}
+\index{envoi\+Seuil\+Temperature\+Exterieur\+Min@{envoi\+Seuil\+Temperature\+Exterieur\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Temperature\+Exterieur\+Min}{envoiSeuilTemperatureExterieurMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Temperature\+Exterieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}\label{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Temperature\+Interieur\+Max@{envoi\+Seuil\+Temperature\+Interieur\+Max}}
+\index{envoi\+Seuil\+Temperature\+Interieur\+Max@{envoi\+Seuil\+Temperature\+Interieur\+Max}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Temperature\+Interieur\+Max}{envoiSeuilTemperatureInterieurMax}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Temperature\+Interieur\+Max (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}\label{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!envoi\+Seuil\+Temperature\+Interieur\+Min@{envoi\+Seuil\+Temperature\+Interieur\+Min}}
+\index{envoi\+Seuil\+Temperature\+Interieur\+Min@{envoi\+Seuil\+Temperature\+Interieur\+Min}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{envoi\+Seuil\+Temperature\+Interieur\+Min}{envoiSeuilTemperatureInterieurMin}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::envoi\+Seuil\+Temperature\+Interieur\+Min (\begin{DoxyParamCaption}\item[{Q\+String}]{seuil }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}\label{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!recevoir\+Reglages\+Alertes@{recevoir\+Reglages\+Alertes}}
+\index{recevoir\+Reglages\+Alertes@{recevoir\+Reglages\+Alertes}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{recevoir\+Reglages\+Alertes}{recevoirReglagesAlertes}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::recevoir\+Reglages\+Alertes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}, \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}, \hyperlink{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}{envoi\+Seuil\+Ensoleillement\+Min()}, \hyperlink{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}{envoi\+Seuil\+Humidite\+Exterieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}{envoi\+Seuil\+Humidite\+Exterieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}{envoi\+Seuil\+Humidite\+Interieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}{envoi\+Seuil\+Humidite\+Interieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}{envoi\+Seuil\+Poids\+Max()}, \hyperlink{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}{envoi\+Seuil\+Poids\+Min()}, \hyperlink{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}{envoi\+Seuil\+Pression\+Atmospherique\+Min()}, \hyperlink{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}{envoi\+Seuil\+Temperature\+Exterieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}{envoi\+Seuil\+Temperature\+Exterieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}{envoi\+Seuil\+Temperature\+Interieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}{envoi\+Seuil\+Temperature\+Interieur\+Min()}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}{Alertes\+::get\+Id\+Ruche()}, \hyperlink{parametres_8h_a2d439ba3af9708601a7ae0edf3584d98}{P\+R\+E\+S\+S\+I\+O\+N\+\_\+\+A\+T\+M\+O\+S\+P\+H\+E\+R\+I\+Q\+U\+E\+\_\+\+S\+E\+U\+I\+L\+\_\+\+M\+AX}, et \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}.
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}{Reglages\+Alertes\+Ihm()}.
+
+
+\begin{DoxyCode}
+00107 \{
+00108     QString temperatureInterieurMin;
+00109     QString temperatureInterieurMax;
+00110     QString humiditeInterieurMin;
+00111     QString humiditeInterieurMax;
+00112     QString temperatureExterieurMin;
+00113     QString temperatureExterieurMax;
+00114     QString humiditeExterieurMin;
+00115     QString humiditeExterieurMax;
+00116     QString poidsMin;
+00117     QString poidsMax;
+00118     QString pressionAtmospheriqueMin;
+00119     QString ensoleillementMin;
+00120 
+00121     temperatureInterieurMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureInterieurMin->text();
+00122     temperatureInterieurMax= \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureInterieurMax->text();
+00123     humiditeInterieurMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeInterieurMin->text();
+00124     humiditeInterieurMax = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeInterieurMax->text();
+00125     temperatureExterieurMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureExterieurMin->text();
+00126     temperatureExterieurMax = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureExterieurMax->text();
+00127     humiditeExterieurMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeExterieurMin->text();
+00128     humiditeExterieurMax = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeExterieurMax->text();
+00129     poidsMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPoidsMin->text();
+00130     poidsMax = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPoidsMax->text();
+00131     pressionAtmospheriqueMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPressionAtmospherique->text();
+00132     ensoleillementMin = \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilEnsoleillement->text();
+00133 
+00134     QString requete = \textcolor{stringliteral}{"UPDATE Seuils SET TemperatureIntMin='"} + temperatureInterieurMin + \textcolor{stringliteral}{"',
+       TemperatureIntMax='"} + temperatureInterieurMax + \textcolor{stringliteral}{"', HumiditeIntMin='"} + humiditeInterieurMin + \textcolor{stringliteral}{"', HumiditeIntMax='"} + 
+      humiditeInterieurMax + \textcolor{stringliteral}{"', TemperatureExtMin='"} + temperatureExterieurMin + \textcolor{stringliteral}{"', TemperatureExtMax='"} + 
+      temperatureExterieurMax + \textcolor{stringliteral}{"', HumiditeExtMin='"} + humiditeExterieurMin + \textcolor{stringliteral}{"', HumiditeExtMax='"} + 
+      humiditeExterieurMax +  \textcolor{stringliteral}{"', PressionMin='"} + pressionAtmospheriqueMin + \textcolor{stringliteral}{"', PressionMax='"} + QString::number(
+      \hyperlink{parametres_8h_a2d439ba3af9708601a7ae0edf3584d98}{PRESSION\_ATMOSPHERIQUE\_SEUIL\_MAX}) + \textcolor{stringliteral}{"', PoidsMin='"} + poidsMin + \textcolor{stringliteral}{"',
+       PoidsMax='"} + poidsMax + \textcolor{stringliteral}{"' WHERE idRuche='"} + this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a2374f9e3e5dc95eacaa4eaa5d98540a7}{getIdRuche}() + \textcolor{stringliteral}{"'"};
+00135     qDebug()<< Q\_FUNC\_INFO << requete;
+00136     \textcolor{keywordtype}{bool} retour = \hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00137     \textcolor{keywordflow}{if}(retour)
+00138     \{
+00139         qDebug() << Q\_FUNC\_INFO << temperatureInterieurMin;
+00140         emit \hyperlink{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}{envoiSeuilTemperatureInterieurMin}(temperatureInterieurMin);
+00141         emit \hyperlink{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}{envoiSeuilTemperatureInterieurMax}(temperatureInterieurMax);
+00142         emit \hyperlink{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}{envoiSeuilHumiditeInterieurMin}(humiditeInterieurMin);
+00143         emit \hyperlink{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}{envoiSeuilHumiditeInterieurMax}(humiditeInterieurMax);
+00144         emit \hyperlink{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}{envoiSeuilTemperatureExterieurMin}(temperatureExterieurMin);
+00145         emit \hyperlink{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}{envoiSeuilTemperatureExterieurMax}(temperatureExterieurMax);
+00146         emit \hyperlink{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}{envoiSeuilHumiditeExterieurMin}(humiditeExterieurMin);
+00147         emit \hyperlink{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}{envoiSeuilHumiditeExterieurMax}(humiditeExterieurMax);
+00148         emit \hyperlink{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}{envoiSeuilPoidsMin}(poidsMin);
+00149         emit \hyperlink{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}{envoiSeuilPoidsMax}(poidsMax);
+00150         emit \hyperlink{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}{envoiSeuilPressionAtmospheriqueMin}(pressionAtmospheriqueMin)
+      ;
+00151         emit \hyperlink{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}{envoiSeuilEnsoleillementMin}(ensoleillementMin);
+00152     \}
+00153 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}\label{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!set\+Alertes@{set\+Alertes}}
+\index{set\+Alertes@{set\+Alertes}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{set\+Alertes()}{setAlertes()}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::set\+Alertes (\begin{DoxyParamCaption}\item[{\hyperlink{class_alertes}{Alertes} $\ast$}]{alertes }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em $\ast$alertes} & correspond à l\textquotesingle{}objet de la classe \hyperlink{class_ruche_ihm}{Ruche\+Ihm} \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}, \hyperlink{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}{envoi\+Seuil\+Ensoleillement\+Min()}, \hyperlink{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}{envoi\+Seuil\+Humidite\+Exterieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}{envoi\+Seuil\+Humidite\+Exterieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}{envoi\+Seuil\+Humidite\+Interieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}{envoi\+Seuil\+Humidite\+Interieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}{envoi\+Seuil\+Poids\+Max()}, \hyperlink{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}{envoi\+Seuil\+Poids\+Min()}, \hyperlink{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}{envoi\+Seuil\+Pression\+Atmospherique\+Min()}, \hyperlink{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}{envoi\+Seuil\+Temperature\+Exterieur\+Max()}, \hyperlink{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}{envoi\+Seuil\+Temperature\+Exterieur\+Min()}, \hyperlink{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}{envoi\+Seuil\+Temperature\+Interieur\+Max()}, et \hyperlink{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}{envoi\+Seuil\+Temperature\+Interieur\+Min()}.
+
+
+
+Référencé par \hyperlink{class_ruche_ihm_a7324ae6ea574ccdad47783f466933157}{Ruche\+Ihm\+::selectionner\+Ruche()}.
+
+
+\begin{DoxyCode}
+00057 \{
+00058     \textcolor{keywordflow}{if}(this->alertes == 0)
+00059     \{
+00060         qDebug() << Q\_FUNC\_INFO << this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes};
+00061         this->alertes = \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes};
+00062         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a44b51f5bfba7a28ee82b5e08d042c153}{envoiSeuilTemperatureInterieurMin}(QString)), 
+      this->alertes, SLOT(recevoirSeuilTemperatureInterieurMin(QString)));
+00063         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_aa2695b931056a81e6e33ae5e9867b872}{envoiSeuilTemperatureInterieurMax}(QString)), 
+      this->alertes, SLOT(recevoirSeuilTemperatureInterieurMax(QString)));
+00064         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a0d913b26dd22ce48aaebed82a0d3df62}{envoiSeuilHumiditeInterieurMin}(QString)), this->
+      alertes, SLOT(recevoirSeuilHumiditeInterieurMin(QString)));
+00065         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_ae5e409ea2353cc8e43f312e252b365f9}{envoiSeuilHumiditeInterieurMax}(QString)), this->
+      alertes, SLOT(recevoirSeuilHumiditeInterieurMax(QString)));
+00066         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a5c4cadb3f7a76cecc0bafaa297b2898a}{envoiSeuilTemperatureExterieurMin}(QString)), 
+      this->alertes, SLOT(recevoirSeuilTemperatureExterieurMin(QString)));
+00067         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a626e1067d882bb5c0b86c8e0fb063dcc}{envoiSeuilTemperatureExterieurMax}(QString)), 
+      this->alertes, SLOT(recevoirSeuilTemperatureExterieurMax(QString)));
+00068         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a78cef50cbaaaa46c837230024129c092}{envoiSeuilHumiditeExterieurMin}(QString)), this->
+      alertes, SLOT(recevoirSeuilHumiditeExterieurMin(QString)));
+00069         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a1455ae71d0e6c33b7857a23d116f3248}{envoiSeuilHumiditeExterieurMax}(QString)), this->
+      alertes, SLOT(recevoirSeuilHumiditeExterieurMax(QString)));
+00070         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a6d4642c0f64bad9f070ce7988549f8df}{envoiSeuilPoidsMin}(QString)), this->alertes, SLOT(
+      recevoirSeuilPoidsMin(QString)));
+00071         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a60d8e26bf08448029f4592b10297bdd1}{envoiSeuilPoidsMax}(QString)), this->alertes, SLOT(
+      recevoirSeuilPoidsMax(QString)));
+00072         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a78ea60b683ff8bde49d8bd332eb71c57}{envoiSeuilPressionAtmospheriqueMin}(QString))
+      , this->alertes, SLOT(recevoirSeuilPressionAtmospherique(QString)));
+00073         connect(\textcolor{keyword}{this}, SIGNAL(\hyperlink{class_reglages_alertes_ihm_a1ff9b472f2eed0efece54da863497324}{envoiSeuilEnsoleillementMin}(QString)), this->
+      alertes, SLOT(recevoirSeuilEnsoleillement(QString)));
+00074     \}
+00075 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}\label{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{show\+Event()}{showEvent()}}
+{\footnotesize\ttfamily void Reglages\+Alertes\+Ihm\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{ev }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ev} & Q\+Show\+Event$\ast$ l\textquotesingle{}évènement \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}, \hyperlink{class_alertes_a54900058557979664d25137399ae2512}{Alertes\+::get\+Seuil\+Ensoleillement()}, \hyperlink{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}{Alertes\+::get\+Seuil\+Humidite\+Exterieur\+Max()}, \hyperlink{class_alertes_a68e467e042b615f56347a0953d6e64f1}{Alertes\+::get\+Seuil\+Humidite\+Exterieur\+Min()}, \hyperlink{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}{Alertes\+::get\+Seuil\+Humidite\+Interieur\+Max()}, \hyperlink{class_alertes_a40d47b65952035b78cac05b915ad57b8}{Alertes\+::get\+Seuil\+Humidite\+Interieur\+Min()}, \hyperlink{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}{Alertes\+::get\+Seuil\+Poids\+Max()}, \hyperlink{class_alertes_a228829e2826ee20cc014b2eb54addf14}{Alertes\+::get\+Seuil\+Poids\+Min()}, \hyperlink{class_alertes_a502fa36037246fb6eaad1db859bc1971}{Alertes\+::get\+Seuil\+Pression\+Atmospherique()}, \hyperlink{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}{Alertes\+::get\+Seuil\+Temperature\+Exterieur\+Max()}, \hyperlink{class_alertes_a4451c6b077256d838e584a073444d83d}{Alertes\+::get\+Seuil\+Temperature\+Exterieur\+Min()}, \hyperlink{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}{Alertes\+::get\+Seuil\+Temperature\+Interieur\+Max()}, \hyperlink{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}{Alertes\+::get\+Seuil\+Temperature\+Interieur\+Min()}, et \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}.
+
+
+\begin{DoxyCode}
+00083 \{
+00084     Q\_UNUSED(ev)
+00085     \textcolor{keywordflow}{if}(this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes} != 0)
+00086     \{
+00087         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureInterieurMin->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_af61b11556d97f923cf7dd25ac4f5dd05}{getSeuilTemperatureInterieurMin}()));
+00088         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureInterieurMax->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_ac514ebef5e7e65aa7bee0ebe3cd7e883}{getSeuilTemperatureInterieurMax}()));
+00089         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeInterieurMin->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a40d47b65952035b78cac05b915ad57b8}{getSeuilHumiditeInterieurMin}()));
+00090         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeInterieurMax->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a86e0bb83ac1fa5e704e3b7b3fc7147cd}{getSeuilHumiditeInterieurMax}()));
+00091         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureExterieurMin->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a4451c6b077256d838e584a073444d83d}{getSeuilTemperatureExterieurMin}()));
+00092         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilTemperatureExterieurMax->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a00d834877e1fc34d7e0659ef6963ac4f}{getSeuilTemperatureExterieurMax}()));
+00093         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeExterieurMin->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a68e467e042b615f56347a0953d6e64f1}{getSeuilHumiditeExterieurMin}()));
+00094         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilHumiditeExterieurMax->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_ad2c8daf5668f5d122efb9b84f7ea86de}{getSeuilHumiditeExterieurMax}()));
+00095         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPoidsMin->setText(QString::number(this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->
+      \hyperlink{class_alertes_a228829e2826ee20cc014b2eb54addf14}{getSeuilPoidsMin}()));
+00096         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPoidsMax->setText(QString::number(this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->
+      \hyperlink{class_alertes_a2c19b460f7f7cc7a867b5ed634371878}{getSeuilPoidsMax}()));
+00097         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilPressionAtmospherique->setText(QString::number(this->
+      \hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->\hyperlink{class_alertes_a502fa36037246fb6eaad1db859bc1971}{getSeuilPressionAtmospherique}()));
+00098         \hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui}->lineEditSeuilEnsoleillement->setText(QString::number(this->\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes}->
+      \hyperlink{class_alertes_a54900058557979664d25137399ae2512}{getSeuilEnsoleillement}()));
+00099     \}
+00100 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}\label{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!alertes@{alertes}}
+\index{alertes@{alertes}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{alertes}{alertes}}
+{\footnotesize\ttfamily \hyperlink{class_alertes}{Alertes}$\ast$ Reglages\+Alertes\+Ihm\+::alertes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, \hyperlink{class_reglages_alertes_ihm_aeb0331a6103f944cb15cdd62985ca231}{set\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{show\+Event()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}\label{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!bdd@{bdd}}
+\index{bdd@{bdd}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Reglages\+Alertes\+Ihm\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, et \hyperlink{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}{Reglages\+Alertes\+Ihm()}.
+
+\mbox{\Hypertarget{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}\label{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}} 
+\index{Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}!ui@{ui}}
+\index{ui@{ui}!Reglages\+Alertes\+Ihm@{Reglages\+Alertes\+Ihm}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Reglages\+Alertes\+Ihm$\ast$ Reglages\+Alertes\+Ihm\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_reglages_alertes_ihm_a5c40f718b28b948a90574ef0c2d3e587}{recevoir\+Reglages\+Alertes()}, \hyperlink{class_reglages_alertes_ihm_ae6337f2d05a3184e48bf5022a91f06c7}{Reglages\+Alertes\+Ihm()}, \hyperlink{class_reglages_alertes_ihm_af47504b34ab0213fce9269c08b9e5544}{show\+Event()}, et \hyperlink{class_reglages_alertes_ihm_aa9bfc09b4162f536de84d218daa36982}{$\sim$\+Reglages\+Alertes\+Ihm()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{reglages_alertes_ihm_8h}{reglages\+Alertes\+Ihm.\+h}\item 
+\hyperlink{reglages_alertes_ihm_8cpp}{reglages\+Alertes\+Ihm.\+cpp}\end{DoxyCompactItemize}

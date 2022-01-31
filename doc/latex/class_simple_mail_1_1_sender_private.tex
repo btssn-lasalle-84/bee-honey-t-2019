@@ -1,0 +1,749 @@
+\hypertarget{class_simple_mail_1_1_sender_private}{}\subsection{Référence de la classe Simple\+Mail\+:\+:Sender\+Private}
+\label{class_simple_mail_1_1_sender_private}\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+
+
+{\ttfamily \#include $<$sender\+\_\+p.\+h$>$}
+
+
+
+Graphe de collaboration de Simple\+Mail\+:\+:Sender\+Private\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_simple_mail_1_1_sender_private__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{State} \{ \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{Error}, 
+\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{Disconnected}, 
+\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{Connected}, 
+\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{Ready}
+ \}
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_sender_private_a97a8f31b0268f9cab7ee4552e251a2c8}{Sender\+Private} (\hyperlink{class_simple_mail_1_1_sender}{Sender} $\ast$parent)
+\item 
+bool \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{send\+Mail} (\hyperlink{class_simple_mail_1_1_mime_message}{Mime\+Message} \&email)
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message} (const Q\+Byte\+Array \&data)
+\item 
+bool \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host} ()
+\item 
+bool \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login} ()
+\item 
+bool \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response} (int expected\+Code)
+\item 
+bool \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State} ()
+\item 
+void \hyperlink{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}{set\+Peer\+Verification\+Type} (const \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type} \&type)
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{State} \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = State\+::\+Disconnected
+\item 
+\hyperlink{class_simple_mail_1_1_sender}{Sender} $\ast$ \hyperlink{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}{q\+\_\+ptr}
+\item 
+Q\+Tcp\+Socket $\ast$ \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket} = nullptr
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{last\+Error}
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host} = Q\+Latin1\+String(\char`\"{}localhost\char`\"{})
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{port} = 25
+\item 
+\hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Sender\+::\+Connection\+Type} \hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connection\+Type}
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name} = Q\+Host\+Info\+::local\+Host\+Name()
+\item 
+\hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type} \hyperlink{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}{peer\+Verification\+Type} = \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Sender\+::\+Verify\+Peer}
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user}
+\item 
+Q\+String \hyperlink{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}{password}
+\item 
+\hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Sender\+::\+Auth\+Method} \hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{auth\+Method} = \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Sender\+::\+Auth\+None}
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{connection\+Timeout} = 5000
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}{response\+Timeout} = 5000
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}{send\+Message\+Timeout} = 60000
+\item 
+Q\+Byte\+Array \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{response\+Text}
+\item 
+int \hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{response\+Code}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}\label{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!State@{State}}
+\index{State@{State}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{Simple\+Mail\+::\+Sender\+Private\+::\+State}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!Error@{Error}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}\label{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Disconnected@{Disconnected}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!Disconnected@{Disconnected}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}\label{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}} 
+Disconnected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Connected@{Connected}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!Connected@{Connected}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}\label{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}} 
+Connected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ready@{Ready}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!Ready@{Ready}}}\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}\label{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}} 
+Ready&\\
+\hline
+
+\end{DoxyEnumFields}
+
+\begin{DoxyCode}
+00033                \{
+00034         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{Error},
+00035         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{Disconnected},
+00036         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{Connected},
+00037         \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{Ready}
+00038     \};
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a97a8f31b0268f9cab7ee4552e251a2c8}\label{class_simple_mail_1_1_sender_private_a97a8f31b0268f9cab7ee4552e251a2c8}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!Sender\+Private@{Sender\+Private}}
+\index{Sender\+Private@{Sender\+Private}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{Sender\+Private()}{SenderPrivate()}}
+{\footnotesize\ttfamily Sender\+Private\+::\+Sender\+Private (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_sender}{Sender} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00262                                            :
+00263     \hyperlink{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}{q\_ptr}(parent)
+00264 \{
+00265 
+00266 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}\label{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!connect\+To\+Host@{connect\+To\+Host}}
+\index{connect\+To\+Host@{connect\+To\+Host}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{connect\+To\+Host()}{connectToHost()}}
+{\footnotesize\ttfamily bool Sender\+Private\+::connect\+To\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{Connected}, \hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{connection\+Timeout}, \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{Simple\+Mail\+::\+Sender\+::\+Connection\+Timeout\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connection\+Type}, \hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host}, \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{last\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name}, \hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{port}, \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message()}, \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Simple\+Mail\+::\+Sender\+::\+Server\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Simple\+Mail\+::\+Sender\+::\+Ssl\+Connection}, \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{Simple\+Mail\+::\+Sender\+::\+Tcp\+Connection}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Simple\+Mail\+::\+Sender\+::\+Tls\+Connection}, et \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State()}.
+
+
+\begin{DoxyCode}
+00349 \{
+00350     Q\_Q(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00351 
+00352     QSslSocket *sslSock = \textcolor{keyword}{nullptr};
+00353     \textcolor{keywordflow}{switch} (\hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connectionType}) \{
+00354     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Sender::TlsConnection}:
+00355     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa7de3defa96cacca9817fbea9b9aecf56}{Sender::TcpConnection}:
+00356         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Connecting to host"} << \hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host} << \hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{port};
+00357         \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->connectToHost(\hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host}, port);
+00358         \textcolor{keywordflow}{break};
+00359     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Sender::SslConnection}:
+00360     \{
+00361         sslSock = qobject\_cast<QSslSocket*>(\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket});
+00362         \textcolor{keywordflow}{if} (sslSock) \{
+00363             qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Connecting to host encrypted"} << \hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host} << 
+      \hyperlink{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}{port};
+00364             sslSock->connectToHostEncrypted(\hyperlink{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}{host}, port);
+00365         \} \textcolor{keywordflow}{else} \{
+00366             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00367         \}
+00368     \}
+00369         \textcolor{keywordflow}{break};
+00370     \}
+00371 
+00372     \textcolor{comment}{// Tries to connect to server}
+00373     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->waitForConnected(\hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{connectionTimeout})) \{
+00374         \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} = \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->errorString();
+00375         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Connection failed"} << \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->errorString();
+00376         Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{Sender::ConnectionTimeoutError});
+00377         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00378     \}
+00379 
+00380     \textcolor{comment}{// If the response code is not 220 (Service ready)}
+00381     \textcolor{comment}{// means that is something wrong with the server}
+00382     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(220)) \{
+00383         Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Sender::ServerError});
+00384         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00385     \}
+00386 
+00387     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending EHLO"} << \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name};
+00388     \textcolor{comment}{// Send a EHLO/HELO message to the server}
+00389     \textcolor{comment}{// The client's first command must be EHLO/HELO}
+00390     \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{stringliteral}{"EHLO "} + \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name}.toLatin1());
+00391 
+00392     \textcolor{comment}{// The response code needs to be 250.}
+00393     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00394         Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Sender::ServerError});
+00395         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00396     \}
+00397     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sent hello"};
+00398 
+00399     \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connectionType} == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Sender::TlsConnection}) \{
+00400         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending STARTTLS"};
+00401 
+00402         \textcolor{comment}{// send a request to start TLS handshake}
+00403         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"STARTTLS"}));
+00404 
+00405         \textcolor{comment}{// The response code needs to be 220.}
+00406         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(220)) \{
+00407             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Sender::ServerError});
+00408             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00409         \};
+00410 
+00411         sslSock = qobject\_cast<QSslSocket *>(\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket});
+00412         \textcolor{keywordflow}{if} (sslSock) \{
+00413             qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Starting client encryption"};
+00414             sslSock->startClientEncryption();
+00415 
+00416             \textcolor{keywordflow}{if} (!sslSock->waitForEncrypted(\hyperlink{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}{connectionTimeout})) \{
+00417                 qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Failed to encrypt connection"} << sslSock->errorString();
+00418                 Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a103e98eb7c1b1d901137406cba3af5a3}{Sender::ConnectionTimeoutError});
+00419                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00420             \}
+00421         \} \textcolor{keywordflow}{else} \{
+00422             qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Failed to start TLS negotiation"};
+00423             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00424         \}
+00425 
+00426         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending second EHLO"} << \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name};
+00427         \textcolor{comment}{// Send ELHO one more time}
+00428         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"EHLO "}) + \hyperlink{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}{name}.toLatin1());
+00429 
+00430         \textcolor{comment}{// The response code needs to be 250.}
+00431         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00432             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Sender::ServerError});
+00433             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00434         \}
+00435     \}
+00436 
+00437     \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{SenderPrivate::Connected};
+00438 
+00439     \textcolor{comment}{// If no errors occured the function returns true.}
+00440     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00441 
+00442 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}\label{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!login@{login}}
+\index{login@{login}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily bool Sender\+Private\+::login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Simple\+Mail\+::\+Sender\+::\+Authentication\+Failed\+Error}, \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}{Simple\+Mail\+::\+Sender\+::\+Auth\+Login}, \hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{auth\+Method}, \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Simple\+Mail\+::\+Sender\+::\+Auth\+Plain}, \hyperlink{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}{password}, \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{Ready}, \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message()}, \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state}, \hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user}, et \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State()}.
+
+
+\begin{DoxyCode}
+00445 \{
+00446     Q\_Q(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00447 
+00448     \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{authMethod} == \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba28927645560285ef540f6f2471be4584}{Sender::AuthPlain}) \{
+00449         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending authentication plain"};
+00450 
+00451         \textcolor{comment}{// Sending command: AUTH PLAIN base64('\(\backslash\)0' + username + '\(\backslash\)0' + password)}
+00452         QString userpass = QLatin1Char(\textcolor{charliteral}{'\(\backslash\)0'}) + \hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user} + QLatin1Char(\textcolor{charliteral}{'\(\backslash\)0'}) + 
+      \hyperlink{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}{password};
+00453         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"AUTH PLAIN "}) + userpass.toLatin1().toBase64());
+00454 
+00455         \textcolor{comment}{// If the response is not 235 then the authentication was faild}
+00456         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(235)) \{
+00457             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Sender::AuthenticationFailedError});
+00458             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00459         \}
+00460     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}{authMethod} == \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba7e64ad152ea68f105718f3680f8f054b}{Sender::AuthLogin}) \{
+00461         \textcolor{comment}{// Sending command: AUTH LOGIN}
+00462         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending authentication login"};
+00463         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"AUTH LOGIN"}));
+00464 
+00465         \textcolor{comment}{// Wait for 334 response code}
+00466         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(334)) \{
+00467             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Sender::AuthenticationFailedError});
+00468             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00469         \}
+00470 
+00471         \textcolor{comment}{// Send the username in base64}
+00472         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending authentication user"} << \hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user};
+00473         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\hyperlink{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}{user}.toLatin1().toBase64());
+00474 
+00475         \textcolor{comment}{// Wait for 334}
+00476         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(334)) \{
+00477             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Sender::AuthenticationFailedError});
+00478             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00479         \}
+00480 
+00481         \textcolor{comment}{// Send the password in base64}
+00482         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending authentication password"};
+00483         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(password.toUtf8().toBase64());
+00484 
+00485         \textcolor{comment}{// If the response is not 235 then the authentication was faild}
+00486         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(235)) \{
+00487             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a2d402af356c1513cf08749bf7a204703}{Sender::AuthenticationFailedError});
+00488             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00489         \}
+00490     \}
+00491 
+00492     \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{SenderPrivate::Ready};
+00493 
+00494     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00495 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}\label{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!process\+State@{process\+State}}
+\index{process\+State@{process\+State}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{process\+State()}{processState()}}
+{\footnotesize\ttfamily bool Sender\+Private\+::process\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{Connected}, \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{Disconnected}, \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{Error}, \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}, \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{Ready}, \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}, et \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{send\+Mail()}.
+
+
+\begin{DoxyCode}
+00542 \{
+00543     \textcolor{keywordflow}{switch} (\hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state}) \{
+00544     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{SenderPrivate::Ready}:
+00545     \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{SenderPrivate::Error}:
+00546         \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->state() != QAbstractSocket::ConnectedState) \{
+00547             \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{SenderPrivate::Disconnected};
+00548             \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->state() != QAbstractSocket::UnconnectedState) \{
+00549                 \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->disconnectFromHost();
+00550                 \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->waitForDisconnected();
+00551             \}
+00552         \}
+00553         \textcolor{keywordflow}{break};
+00554     \textcolor{keywordflow}{default}:
+00555         \textcolor{keywordflow}{break};
+00556     \}
+00557 
+00558     \textcolor{keywordflow}{while} (\hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} != \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{SenderPrivate::Ready}) \{
+00559         qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Processing state"} << \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state};
+00560         \textcolor{keywordflow}{switch} (\hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state}) \{
+00561         \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa53bd8486efb3caf4d88b5e4962182b5a}{SenderPrivate::Disconnected}:
+00562             \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connectToHost}()) \{
+00563                 \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{SenderPrivate::Error};
+00564                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00565             \}
+00566             \textcolor{keywordflow}{break};
+00567         \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa81776327acf2e160bb969693bdc4bc3b}{SenderPrivate::Connected}:
+00568             \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login}()) \{
+00569                 \hyperlink{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}{state} = \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{SenderPrivate::Error};
+00570                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00571             \}
+00572             \textcolor{keywordflow}{break};
+00573         \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aa86a2d9c3162cdacedf7c8948d2d99fe4}{SenderPrivate::Error}:
+00574             \textcolor{comment}{// try again}
+00575             \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->disconnectFromHost();
+00576             \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->waitForDisconnected();
+00577             \textcolor{keywordflow}{break};
+00578         \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0aac1f1f30c7c54375f9bed9a95bd082416}{SenderPrivate::Ready}:
+00579             \textcolor{keywordflow}{break};
+00580         \}
+00581     \}
+00582     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00583 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}\label{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!send\+Mail@{send\+Mail}}
+\index{send\+Mail@{send\+Mail}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{send\+Mail()}{sendMail()}}
+{\footnotesize\ttfamily bool Sender\+Private\+::send\+Mail (\begin{DoxyParamCaption}\item[{\hyperlink{class_simple_mail_1_1_mime_message}{Mime\+Message} \&}]{email }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{Simple\+Mail\+::\+Email\+Address\+::address()}, \hyperlink{class_simple_mail_1_1_mime_message_a160a1f92f2dd26e2154514fa51303db5}{Simple\+Mail\+::\+Mime\+Message\+::bcc\+Recipients()}, \hyperlink{class_simple_mail_1_1_mime_message_a69cf7d797c2405f31f50c6959c00a12f}{Simple\+Mail\+::\+Mime\+Message\+::cc\+Recipients()}, \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State()}, \hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{Simple\+Mail\+::\+Mime\+Message\+::sender()}, \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message()}, \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}, \hyperlink{class_simple_mail_1_1_mime_message_a1e3c4cf44d48b95f8436d251d19ffcb2}{Simple\+Mail\+::\+Mime\+Message\+::to\+Recipients()}, \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}, et \hyperlink{class_simple_mail_1_1_mime_message_ae7fff977d1c558ddc6711416fe0ff723}{Simple\+Mail\+::\+Mime\+Message\+::write()}.
+
+
+\begin{DoxyCode}
+00269 \{
+00270     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending MAIL"} << \textcolor{keyword}{this};
+00271 
+00272     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{processState}()) \{
+00273         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00274     \}
+00275 
+00276     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending MAIL command"};
+00277     \textcolor{comment}{// Send the MAIL command with the sender}
+00278     \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{stringliteral}{"MAIL FROM: <"} + email.\hyperlink{class_simple_mail_1_1_mime_message_a626953414e4eed9e57ea793eb60a2d6b}{sender}().\hyperlink{class_simple_mail_1_1_email_address_a426faf41f9f1c56014a97eec4d37ba4a}{address}().toLatin1() + \textcolor{charliteral}{'>'});
+00279     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00280         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00281     \}
+00282 
+00283     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending RCPT TO command"};
+00284     \textcolor{comment}{// Send RCPT command for each recipient}
+00285     \textcolor{comment}{// To (primary recipients)}
+00286     \textcolor{keyword}{const} \textcolor{keyword}{auto} toRecipients = email.\hyperlink{class_simple_mail_1_1_mime_message_a1e3c4cf44d48b95f8436d251d19ffcb2}{toRecipients}();
+00287     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt : toRecipients) \{
+00288         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{stringliteral}{"RCPT TO: <"} + rcpt.address().toLatin1() + \textcolor{charliteral}{'>'});
+00289 
+00290         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00291             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00292         \}
+00293     \}
+00294 
+00295     \textcolor{comment}{// Cc (carbon copy)}
+00296     \textcolor{keyword}{const} \textcolor{keyword}{auto} ccRecipients = email.\hyperlink{class_simple_mail_1_1_mime_message_a69cf7d797c2405f31f50c6959c00a12f}{ccRecipients}();
+00297     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt : ccRecipients) \{
+00298         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{stringliteral}{"RCPT TO: <"} + rcpt.address().toLatin1() + \textcolor{charliteral}{'>'});
+00299 
+00300         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00301             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00302         \}
+00303     \}
+00304 
+00305     \textcolor{comment}{// Bcc (blind carbon copy)}
+00306     \textcolor{keyword}{const} \textcolor{keyword}{auto} bccRecipients = email.\hyperlink{class_simple_mail_1_1_mime_message_a160a1f92f2dd26e2154514fa51303db5}{bccRecipients}();
+00307     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt : bccRecipients) \{
+00308         \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(\textcolor{stringliteral}{"RCPT TO: <"} + rcpt.address().toLatin1() + \textcolor{charliteral}{'>'});
+00309 
+00310         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00311             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00312         \}
+00313     \}
+00314 
+00315     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending DATA command"};
+00316     \textcolor{comment}{// Send DATA command}
+00317     \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"DATA"}));
+00318 
+00319     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(354)) \{
+00320         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00321     \}
+00322 
+00323     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Sending email"};
+00324     \textcolor{keywordflow}{if} (!email.\hyperlink{class_simple_mail_1_1_mime_message_ae7fff977d1c558ddc6711416fe0ff723}{write}(\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket})) \{
+00325         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00326     \}
+00327 
+00328     \textcolor{comment}{// Send \(\backslash\)r\(\backslash\)n.\(\backslash\)r\(\backslash\)n to end the mail data}
+00329     \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{sendMessage}(QByteArrayLiteral(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n."}));
+00330     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{waitForResponse}(250)) \{
+00331         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00332     \}
+00333     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Mail sent"};
+00334 
+00335     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00336 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}\label{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!send\+Message@{send\+Message}}
+\index{send\+Message@{send\+Message}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{send\+Message()}{sendMessage()}}
+{\footnotesize\ttfamily void Sender\+Private\+::send\+Message (\begin{DoxyParamCaption}\item[{const Q\+Byte\+Array \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{Simple\+Mail\+::\+Sender\+::\+Send\+Data\+Timeout\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}{send\+Message\+Timeout}, et \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}, et \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{send\+Mail()}.
+
+
+\begin{DoxyCode}
+00339 \{
+00340     Q\_Q(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00341     \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->write(data);
+00342     \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->write(\textcolor{stringliteral}{"\(\backslash\)r\(\backslash\)n"}, 2);
+00343     \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->waitForBytesWritten(\hyperlink{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}{sendMessageTimeout})) \{
+00344         Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49a6ba07629b5f05025424b0bf377705caf}{Sender::SendDataTimeoutError});
+00345     \}
+00346 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}\label{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!set\+Peer\+Verification\+Type@{set\+Peer\+Verification\+Type}}
+\index{set\+Peer\+Verification\+Type@{set\+Peer\+Verification\+Type}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{set\+Peer\+Verification\+Type()}{setPeerVerificationType()}}
+{\footnotesize\ttfamily void Sender\+Private\+::set\+Peer\+Verification\+Type (\begin{DoxyParamCaption}\item[{const \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type} \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connection\+Type}, \hyperlink{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}{peer\+Verification\+Type}, \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Simple\+Mail\+::\+Sender\+::\+Ssl\+Connection}, \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Simple\+Mail\+::\+Sender\+::\+Tls\+Connection}, \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{Simple\+Mail\+::\+Sender\+::\+Verify\+None}, et \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Simple\+Mail\+::\+Sender\+::\+Verify\+Peer}.
+
+
+\begin{DoxyCode}
+00586 \{
+00587     \hyperlink{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}{peerVerificationType} = type;
+00588     \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket} != Q\_NULLPTR)
+00589     \{
+00590         \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connectionType} == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aadd47ac04a99ebb279aaa4cf5cdfa78f5}{Sender::SslConnection} || 
+      \hyperlink{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}{connectionType} == \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1aa3461f2931e043fc3ea86a0015c735159}{Sender :: TlsConnection})
+00591         \{
+00592             \textcolor{keywordflow}{switch} (type) \{
+00593                 \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804a22f77592aa7f05238f2d1f25a13169c1}{Sender::VerifyNone}:
+00594                     \textcolor{keyword}{static\_cast<}QSslSocket*\textcolor{keyword}{>}(\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket})->setPeerVerifyMode(QSslSocket::VerifyNone);
+00595                     \textcolor{keywordflow}{break};
+00596                 \textcolor{keywordflow}{case} \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Sender::VerifyPeer}:
+00597                 \textcolor{keywordflow}{default}:
+00598                     \textcolor{keyword}{static\_cast<}QSslSocket*\textcolor{keyword}{>}(\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket})->setPeerVerifyMode(QSslSocket::VerifyPeer);
+00599                     \textcolor{keywordflow}{break};
+00600             \}
+00601         \}
+00602     \}
+00603 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}\label{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!wait\+For\+Response@{wait\+For\+Response}}
+\index{wait\+For\+Response@{wait\+For\+Response}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{wait\+For\+Response()}{waitForResponse()}}
+{\footnotesize\ttfamily bool Sender\+Private\+::wait\+For\+Response (\begin{DoxyParamCaption}\item[{int}]{expected\+Code }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}{Simple\+Mail\+::\+Sender\+::\+Client\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{last\+Error}, \hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{response\+Code}, \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{response\+Text}, \hyperlink{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}{response\+Timeout}, \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{Simple\+Mail\+::\+Sender\+::\+Response\+Timeout\+Error}, \hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Simple\+Mail\+::\+Sender\+::\+Server\+Error}, et \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}.
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}, et \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{send\+Mail()}.
+
+
+\begin{DoxyCode}
+00498 \{
+00499     Q\_Q(\hyperlink{class_simple_mail_1_1_sender}{Sender});
+00500 
+00501     \textcolor{keywordflow}{do} \{
+00502         \textcolor{keywordflow}{if} (!\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->waitForReadyRead(\hyperlink{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}{responseTimeout})) \{
+00503             \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} = QObject::tr(\textcolor{stringliteral}{"Response timed out"});
+00504             qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Response timed out"};
+00505             Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49ab7330dcb7ea2b4435124d62245cbe052}{Sender::ResponseTimeoutError});
+00506             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00507         \}
+00508 
+00509         \textcolor{keywordflow}{while} (\hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->canReadLine()) \{
+00510             \textcolor{comment}{// Save the server's response}
+00511             \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText} = \hyperlink{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}{socket}->readLine().trimmed();
+00512             qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Got response"} << \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText};
+00513 
+00514             \textcolor{comment}{// Extract the respose code from the server's responce (first 3 digits)}
+00515             \hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{responseCode} = \hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText}.left(3).toInt();
+00516 
+00517             \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{responseCode} / 100 == 4) \{
+00518                 \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} = QString::fromLatin1(\hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText});
+00519                 Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49aa5d58da2b004bb7275a92029fe432089}{Sender::ServerError});
+00520             \}
+00521 
+00522             \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{responseCode} / 100 == 5) \{
+00523                 \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} = QString::fromLatin1(\hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText});
+00524                 Q\_EMIT q->smtpError(\hyperlink{class_simple_mail_1_1_sender_a276560e9e955ab6be451338c3776bf49af0e582ca123f321e33c607f9548b913a}{Sender::ClientError});
+00525             \}
+00526 
+00527             \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText}[3] == \textcolor{charliteral}{' '}) \{
+00528                 \textcolor{keywordflow}{if} (\hyperlink{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}{responseCode} != expectedCode) \{
+00529                     \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} = QString::fromLatin1(\hyperlink{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}{responseText});
+00530                     qCDebug(SIMPLEMAIL\_SENDER) << \textcolor{stringliteral}{"Unexpected server response"} << 
+      \hyperlink{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}{lastError} << expectedCode;
+00531                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00532                 \}
+00533                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00534             \}
+00535         \}
+00536     \} \textcolor{keywordflow}{while} (\textcolor{keyword}{true});
+00537 
+00538     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00539 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}\label{class_simple_mail_1_1_sender_private_afd60fe3edc740b9624746316ad798647}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!auth\+Method@{auth\+Method}}
+\index{auth\+Method@{auth\+Method}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{auth\+Method}{authMethod}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bb}{Sender\+::\+Auth\+Method} Simple\+Mail\+::\+Sender\+Private\+::auth\+Method = \hyperlink{class_simple_mail_1_1_sender_af50defb714bc3e95f47c71a9ba6ee6bba1dd1824451d663ee54b5a528cd8ced74}{Sender\+::\+Auth\+None}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}\label{class_simple_mail_1_1_sender_private_a9328b6f8c9df4ce6e8517ec713f42421}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!connection\+Timeout@{connection\+Timeout}}
+\index{connection\+Timeout@{connection\+Timeout}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{connection\+Timeout}{connectionTimeout}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Sender\+Private\+::connection\+Timeout = 5000}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}\label{class_simple_mail_1_1_sender_private_a2d09eb5d137213e97f10228f8ed68134}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!connection\+Type@{connection\+Type}}
+\index{connection\+Type@{connection\+Type}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{connection\+Type}{connectionType}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_a89e6a9572b306441237f6b6635729d1a}{Sender\+::\+Connection\+Type} Simple\+Mail\+::\+Sender\+Private\+::connection\+Type}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, et \hyperlink{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}{set\+Peer\+Verification\+Type()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}\label{class_simple_mail_1_1_sender_private_a90e5dacf8918960f7f1ac89d476c00a2}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!host@{host}}
+\index{host@{host}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily Q\+String Simple\+Mail\+::\+Sender\+Private\+::host = Q\+Latin1\+String(\char`\"{}localhost\char`\"{})}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}\label{class_simple_mail_1_1_sender_private_a90ae4ff740007836307ede01aad3a277}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!last\+Error@{last\+Error}}
+\index{last\+Error@{last\+Error}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{last\+Error}{lastError}}
+{\footnotesize\ttfamily Q\+String Simple\+Mail\+::\+Sender\+Private\+::last\+Error}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, et \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}\label{class_simple_mail_1_1_sender_private_a9daecd69dd0c84595a9c3288f98094b4}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!name@{name}}
+\index{name@{name}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily Q\+String Simple\+Mail\+::\+Sender\+Private\+::name = Q\+Host\+Info\+::local\+Host\+Name()}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}\label{class_simple_mail_1_1_sender_private_aac5b192258bcf97c2249fc944c17ee32}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!password@{password}}
+\index{password@{password}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{password}{password}}
+{\footnotesize\ttfamily Q\+String Simple\+Mail\+::\+Sender\+Private\+::password}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}\label{class_simple_mail_1_1_sender_private_ab6854bd0a124acdc3e21aef40e59c41a}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!peer\+Verification\+Type@{peer\+Verification\+Type}}
+\index{peer\+Verification\+Type@{peer\+Verification\+Type}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{peer\+Verification\+Type}{peerVerificationType}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804}{Sender\+::\+Peer\+Verification\+Type} Simple\+Mail\+::\+Sender\+Private\+::peer\+Verification\+Type = \hyperlink{class_simple_mail_1_1_sender_acfbcf388ab7c26cd41c5c77601fe8804ac24a70d89382bb95b91501222056c389}{Sender\+::\+Verify\+Peer}}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}{set\+Peer\+Verification\+Type()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}\label{class_simple_mail_1_1_sender_private_a6de1c85bd163d9916a4f24ef91926d4c}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!port@{port}}
+\index{port@{port}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Sender\+Private\+::port = 25}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}\label{class_simple_mail_1_1_sender_private_a3cb37d3d22dc1a6a9ddff25708ed1172}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!q\+\_\+ptr@{q\+\_\+ptr}}
+\index{q\+\_\+ptr@{q\+\_\+ptr}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{q\+\_\+ptr}{q\_ptr}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender}{Sender}$\ast$ Simple\+Mail\+::\+Sender\+Private\+::q\+\_\+ptr}
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}\label{class_simple_mail_1_1_sender_private_ac612465360ce40cfa71310f5f7353b3d}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!response\+Code@{response\+Code}}
+\index{response\+Code@{response\+Code}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{response\+Code}{responseCode}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Sender\+Private\+::response\+Code}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}\label{class_simple_mail_1_1_sender_private_ad355d66dfce2628cb0e7e83a5f65d27e}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!response\+Text@{response\+Text}}
+\index{response\+Text@{response\+Text}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{response\+Text}{responseText}}
+{\footnotesize\ttfamily Q\+Byte\+Array Simple\+Mail\+::\+Sender\+Private\+::response\+Text}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}\label{class_simple_mail_1_1_sender_private_a970745d144eb65e5fa2dae5677b98438}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!response\+Timeout@{response\+Timeout}}
+\index{response\+Timeout@{response\+Timeout}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{response\+Timeout}{responseTimeout}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Sender\+Private\+::response\+Timeout = 5000}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}\label{class_simple_mail_1_1_sender_private_ac78cceae200dd8794a4a1ac4e79e8762}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!send\+Message\+Timeout@{send\+Message\+Timeout}}
+\index{send\+Message\+Timeout@{send\+Message\+Timeout}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{send\+Message\+Timeout}{sendMessageTimeout}}
+{\footnotesize\ttfamily int Simple\+Mail\+::\+Sender\+Private\+::send\+Message\+Timeout = 60000}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}\label{class_simple_mail_1_1_sender_private_a223cab47555a39f45f30569328fa20bc}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!socket@{socket}}
+\index{socket@{socket}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Tcp\+Socket$\ast$ Simple\+Mail\+::\+Sender\+Private\+::socket = nullptr}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State()}, \hyperlink{class_simple_mail_1_1_sender_private_a2ede5284746e77ee37b8fe96f4bbb100}{send\+Mail()}, \hyperlink{class_simple_mail_1_1_sender_private_a01805bb24291bf6cad3a656a16d0bb25}{send\+Message()}, \hyperlink{class_simple_mail_1_1_sender_private_aea040b22ce411e03111080e7546f91c0}{set\+Peer\+Verification\+Type()}, et \hyperlink{class_simple_mail_1_1_sender_private_af8ba23dc3e1201d303ad1d923235c71c}{wait\+For\+Response()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}\label{class_simple_mail_1_1_sender_private_af73e80fdae8024d12714f6f3a1cc1e23}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!state@{state}}
+\index{state@{state}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \hyperlink{class_simple_mail_1_1_sender_private_ae09befddf0fae8e8f2ea153ead2b8b0a}{State} Simple\+Mail\+::\+Sender\+Private\+::state = State\+::\+Disconnected}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_aa2f9a37cfe58c3e39afa75e79070cee1}{connect\+To\+Host()}, \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}, et \hyperlink{class_simple_mail_1_1_sender_private_ab3a7663dd6945ce2ba074d37cfc4e4ec}{process\+State()}.
+
+\mbox{\Hypertarget{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}\label{class_simple_mail_1_1_sender_private_ac3efab988a41e60a0a56c29a1d5b04ed}} 
+\index{Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}!user@{user}}
+\index{user@{user}!Simple\+Mail\+::\+Sender\+Private@{Simple\+Mail\+::\+Sender\+Private}}
+\paragraph{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily Q\+String Simple\+Mail\+::\+Sender\+Private\+::user}
+
+
+
+Référencé par \hyperlink{class_simple_mail_1_1_sender_private_a927e5c262ee89fb335410ebec020091d}{login()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{sender__p_8h}{sender\+\_\+p.\+h}\item 
+\hyperlink{sender_8cpp}{sender.\+cpp}\end{DoxyCompactItemize}

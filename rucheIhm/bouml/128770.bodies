@@ -1,0 +1,9 @@
+class InfosPressionAtmospherique
+!!!133378.cpp!!!	getPressionAtmospherique() : double
+    return pressionAtmospherique;
+!!!133506.cpp!!!	setPressionAtmospherique(in pressionAtmospherique : double) : void
+    this->pressionAtmospherique = pressionAtmospherique;
+!!!133634.cpp!!!	getHorodatagePressionAtmospherique() : QString
+    return horodatagePressionAtmospherique;
+!!!133762.cpp!!!	setHorodatagePressionAtmospherique(in horodatagePressionAtmospherique : QString) : void
+    this->horodatagePressionAtmospherique = horodatagePressionAtmospherique;

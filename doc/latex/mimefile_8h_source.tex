@@ -1,0 +1,43 @@
+\hypertarget{mimefile_8h_source}{}\subsection{mimefile.\+h}
+\label{mimefile_8h_source}\index{mimefile.\+h@{mimefile.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{  Copyright (c) 2011-2012 - Tőkés Attila}
+00003 \textcolor{comment}{  Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00004 \textcolor{comment}{}
+00005 \textcolor{comment}{  This library is free software; you can redistribute it and/or}
+00006 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}
+00007 \textcolor{comment}{  License as published by the Free Software Foundation; either}
+00008 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}
+00009 \textcolor{comment}{}
+00010 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}
+00011 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00012 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}
+00013 \textcolor{comment}{  Lesser General Public License for more details.}
+00014 \textcolor{comment}{}
+00015 \textcolor{comment}{  See the LICENSE file for more details.}
+00016 \textcolor{comment}{*/}
+00017 
+00018 \textcolor{preprocessor}{#ifndef MIMEFILE\_H}
+00019 \textcolor{preprocessor}{#define MIMEFILE\_H}
+00020 
+00021 \textcolor{preprocessor}{#include "\hyperlink{mimepart_8h}{mimepart.h}"}
+00022 \textcolor{preprocessor}{#include <QFile>}
+00023 
+00024 \textcolor{preprocessor}{#include "\hyperlink{smtpexports_8h}{smtpexports.h}"}
+00025 
+00026 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00027 
+\Hypertarget{mimefile_8h_source_l00028}\hyperlink{class_simple_mail_1_1_mime_file}{00028} \textcolor{keyword}{class }\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{SMTP\_EXPORT} \hyperlink{class_simple_mail_1_1_mime_file}{MimeFile} : \textcolor{keyword}{public} \hyperlink{class_simple_mail_1_1_mime_part}{MimePart}
+00029 \{
+00030 \textcolor{keyword}{public}:
+00031     \hyperlink{class_simple_mail_1_1_mime_file}{MimeFile}(\textcolor{keyword}{const} QByteArray &stream, \textcolor{keyword}{const} QString &fileName);
+00032     \hyperlink{class_simple_mail_1_1_mime_file}{MimeFile}(QFile *f);
+00033     ~\hyperlink{class_simple_mail_1_1_mime_file}{MimeFile}();
+00034 \};
+00035 
+00036 \}
+00037 
+00038 \textcolor{preprocessor}{#endif // MIMEFILE\_H}
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BeeHoney-t</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_tableau_de_bord">TableauDeBord</string>
+    <string name="title_activity_carte">Map</string>
+</resources>

@@ -1,0 +1,8 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_object.html" title="QObject" alt="" coords="5,107,76,133"/>
+<area shape="rect" id="node2" href="$class_base_de_donnees.html" title="BaseDeDonnees" alt="" coords="125,5,247,32"/>
+<area shape="rect" id="node3" href="$class_communication.html" title="La classe Communication. " alt="" coords="129,56,243,83"/>
+<area shape="rect" id="node4" href="$class_infos_humidite.html" title="La classe InfosHumidite. " alt="" coords="135,107,237,133"/>
+<area shape="rect" id="node5" href="$class_infos_temperature.html" title="La classe InfosTemperature. " alt="" coords="124,157,248,184"/>
+<area shape="rect" id="node6" href="$class_ruche.html" title="La classe Ruche. " alt="" coords="156,208,216,235"/>
+</map>

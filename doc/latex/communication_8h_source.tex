@@ -1,0 +1,46 @@
+\hypertarget{communication_8h_source}{}\subsection{communication.\+h}
+\label{communication_8h_source}\index{communication.\+h@{communication.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef COMMUNICATION\_H}
+00002 \textcolor{preprocessor}{#define COMMUNICATION\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QtMqtt/QtMqtt>}
+00017 \textcolor{preprocessor}{#include <QtMqtt/QMqttClient>}
+00018 \textcolor{preprocessor}{#include "\hyperlink{parametres_8h}{parametres.h}"}
+00019 
+\Hypertarget{communication_8h_source_l00032}\hyperlink{class_communication}{00032} \textcolor{keyword}{class }\hyperlink{class_communication}{Communication} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00033 \{
+00034     Q\_OBJECT
+00035 
+00036     \textcolor{keyword}{public}:
+00037         \hyperlink{class_communication_a7376830f5598b7e3c0eb4434a8a8766e}{Communication}(QStringList \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN}, 
+      \hyperlink{class_q_object}{QObject} *parent = 0);
+00038         \hyperlink{class_communication_a75ba08ce908d45251e28e4c1db94e6f4}{~Communication}();
+00039 
+00040         \textcolor{keywordtype}{void} \hyperlink{class_communication_aadec726c44e719fa587bd385533eb559}{connecterTTN}();
+00041         \textcolor{keywordtype}{void} \hyperlink{class_communication_a8d0cc5c992a2b218a64f57429eea001b}{deconnecterTTN}();
+00042 
+00043     \textcolor{keyword}{private}:
+\Hypertarget{communication_8h_source_l00044}\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{00044}         QMqttClient *\hyperlink{class_communication_a59ae01a54d6c3fde6242c46d802b954b}{client};
+\Hypertarget{communication_8h_source_l00045}\hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{00045}         QMqttSubscription *\hyperlink{class_communication_af29011664fbb15b9fb41ce37b70a694f}{abonnement};        
+\Hypertarget{communication_8h_source_l00046}\hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{00046}         QStringList \hyperlink{class_communication_a5b7ff98c422c16085e7dc422f2ae51c5}{donneesRucheTTN};
+\Hypertarget{communication_8h_source_l00047}\hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{00047}         QString \hyperlink{class_communication_a7d536b64ee7a5373047c292477d391d5}{nomTopic};
+\Hypertarget{communication_8h_source_l00048}\hyperlink{class_communication_aba7a5df723bc632b957b4358bef8605e}{00048}         \hyperlink{parametres_8h_a0fe68caa1e9147addc96657cc822b937}{PortsTTN} \hyperlink{class_communication_aba7a5df723bc632b957b4358bef8605e}{portsTTn};
+00049 
+00050     \textcolor{keyword}{public} slots:
+00051         \textcolor{keywordtype}{void} \hyperlink{class_communication_af71587fb1ee9b7460345b7c12372a1eb}{connecteTTN}();
+00052         \textcolor{keywordtype}{void} \hyperlink{class_communication_ab0f5a47c2fc7dbca198bfab2c0ac65bb}{deconnecteTTN}();
+00053         \textcolor{keywordtype}{void} \hyperlink{class_communication_a9a0c0ce96c86cbb3e59529b2334819f3}{receptionner}(\textcolor{keyword}{const} QByteArray &message, \textcolor{keyword}{const} QMqttTopicName &topic);
+00054         \textcolor{keywordtype}{void} \hyperlink{class_communication_a2921a3a80cdcb10f7f63c3bd779d7129}{reponsePingTTN}();
+00055         \textcolor{keywordtype}{void} \hyperlink{class_communication_af249c498d61b4288b9e7d388baf81fc2}{changementEtatTTN}();
+00056         \textcolor{keywordtype}{void} \hyperlink{class_communication_ae1a84ffd9317d0e4e27a6633cef43b64}{erreurClientTTN}();
+00057 
+00058     signals:
+00059         \textcolor{keywordtype}{void} \hyperlink{class_communication_aa6100d6b2addece57f3e74c1140a3179}{etatClientConnexion}(\textcolor{keywordtype}{bool} connexion);
+00060         \textcolor{keywordtype}{void} \hyperlink{class_communication_a83865ed4092e263f42669dff0582b7e1}{messageRecu}(\textcolor{keyword}{const} QByteArray &message, \textcolor{keyword}{const} QMqttTopicName &topic);
+00061 \};
+00062 
+00063 \textcolor{preprocessor}{#endif // COMMUNICATION\_H}
+00064 
+\end{DoxyCode}

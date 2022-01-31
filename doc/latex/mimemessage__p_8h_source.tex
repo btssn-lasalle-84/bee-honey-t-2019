@@ -1,0 +1,55 @@
+\hypertarget{mimemessage__p_8h_source}{}\subsection{mimemessage\+\_\+p.\+h}
+\label{mimemessage__p_8h_source}\index{mimemessage\+\_\+p.\+h@{mimemessage\+\_\+p.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{ * Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00003 \textcolor{comment}{ *}
+00004 \textcolor{comment}{ * This library is free software; you can redistribute it and/or}
+00005 \textcolor{comment}{ * modify it under the terms of the GNU Library General Public}
+00006 \textcolor{comment}{ * License as published by the Free Software Foundation; either}
+00007 \textcolor{comment}{ * version 2 of the License, or (at your option) any later version.}
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * This library is distributed in the hope that it will be useful,}
+00010 \textcolor{comment}{ * but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00011 \textcolor{comment}{ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU}
+00012 \textcolor{comment}{ * Library General Public License for more details.}
+00013 \textcolor{comment}{ *}
+00014 \textcolor{comment}{ * You should have received a copy of the GNU Library General Public License}
+00015 \textcolor{comment}{ * along with this library; see the file COPYING.LIB. If not, write to}
+00016 \textcolor{comment}{ * the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,}
+00017 \textcolor{comment}{ * Boston, MA 02110-1301, USA.}
+00018 \textcolor{comment}{ */}
+00019 
+00020 \textcolor{preprocessor}{#include "\hyperlink{mimemessage_8h}{mimemessage.h}"}
+00021 
+00022 \textcolor{preprocessor}{#ifndef MIMEMESSAGE\_P\_H}
+00023 \textcolor{preprocessor}{#define MIMEMESSAGE\_P\_H}
+00024 
+00025 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00026 
+\Hypertarget{mimemessage__p_8h_source_l00027}\hyperlink{class_simple_mail_1_1_mime_message_private}{00027} \textcolor{keyword}{class }\hyperlink{class_simple_mail_1_1_mime_message_private}{MimeMessagePrivate}
+00028 \{
+00029 \textcolor{keyword}{public}:
+00030     \hyperlink{class_simple_mail_1_1_mime_message_private_a93ed259a5e3be9645688f2887f5559ed}{~MimeMessagePrivate}();
+00031 
+00032     \textcolor{keyword}{inline} \textcolor{keyword}{static} QByteArray \hyperlink{class_simple_mail_1_1_mime_message_private_a44bd454950e1fd6b48a29d2a7b11ca33}{encode}(\textcolor{keyword}{const} QByteArray &addressKind, \textcolor{keyword}{const} QList<EmailAddress> &emails,
+       \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{MimePart::Encoding} codec);
+00033     \textcolor{keyword}{inline} \textcolor{keyword}{static} QByteArray \hyperlink{class_simple_mail_1_1_mime_message_private_ae036b2417205ef25181091bebd15c0f6}{encodeData}(\hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{MimePart::Encoding} codec, \textcolor{keyword}{const} QString
+       &data, \textcolor{keywordtype}{bool} autoencoding);
+00034 
+\Hypertarget{mimemessage__p_8h_source_l00035}\hyperlink{class_simple_mail_1_1_mime_message_private_a5bfd71b52877cc613eec44eefb12c3a1}{00035}     QList<EmailAddress> \hyperlink{class_simple_mail_1_1_mime_message_private_a5bfd71b52877cc613eec44eefb12c3a1}{recipientsTo};
+\Hypertarget{mimemessage__p_8h_source_l00036}\hyperlink{class_simple_mail_1_1_mime_message_private_a5aa4769d23ba5936729d048198c0d506}{00036}     QList<EmailAddress> \hyperlink{class_simple_mail_1_1_mime_message_private_a5aa4769d23ba5936729d048198c0d506}{recipientsCc};
+\Hypertarget{mimemessage__p_8h_source_l00037}\hyperlink{class_simple_mail_1_1_mime_message_private_a902b57c4d792727c2b549f7650e18cce}{00037}     QList<EmailAddress> \hyperlink{class_simple_mail_1_1_mime_message_private_a902b57c4d792727c2b549f7650e18cce}{recipientsBcc};
+\Hypertarget{mimemessage__p_8h_source_l00038}\hyperlink{class_simple_mail_1_1_mime_message_private_a75a861cd7e4544d55fa7e452b65f30a2}{00038}     QString \hyperlink{class_simple_mail_1_1_mime_message_private_a75a861cd7e4544d55fa7e452b65f30a2}{subject};
+\Hypertarget{mimemessage__p_8h_source_l00039}\hyperlink{class_simple_mail_1_1_mime_message_private_a88f1454bf5198c4ae9a30b2ae8284138}{00039}     \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} \hyperlink{class_simple_mail_1_1_mime_message_private_a88f1454bf5198c4ae9a30b2ae8284138}{sender};
+\Hypertarget{mimemessage__p_8h_source_l00040}\hyperlink{class_simple_mail_1_1_mime_message_private_a31f25b224455b2e8dafbdc1d6cfed3de}{00040}     \hyperlink{class_simple_mail_1_1_mime_part}{MimePart} *\hyperlink{class_simple_mail_1_1_mime_message_private_a31f25b224455b2e8dafbdc1d6cfed3de}{content} = \textcolor{keyword}{nullptr};
+\Hypertarget{mimemessage__p_8h_source_l00041}\hyperlink{class_simple_mail_1_1_mime_message_private_a5b1a44483253f33a7e042431ce3ad105}{00041}     \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{MimePart::Encoding} \hyperlink{class_simple_mail_1_1_mime_message_private_a5b1a44483253f33a7e042431ce3ad105}{encoding} = \hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f}{MimePart::\_8Bit};
+\Hypertarget{mimemessage__p_8h_source_l00042}\hyperlink{class_simple_mail_1_1_mime_message_private_ac1fc811c2963e2b2027396a86a7257e6}{00042}     \textcolor{keywordtype}{bool} \hyperlink{class_simple_mail_1_1_mime_message_private_ac1fc811c2963e2b2027396a86a7257e6}{autoMimeContentCreated};
+00043 \};
+00044 
+00045 \}
+00046 
+00047 \textcolor{preprocessor}{#endif // MIMEMESSAGE\_P\_H}
+00048 
+\end{DoxyCode}

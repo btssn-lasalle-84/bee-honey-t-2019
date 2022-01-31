@@ -1,0 +1,55 @@
+\hypertarget{reglages_alertes_ihm_8h_source}{}\subsection{reglages\+Alertes\+Ihm.\+h}
+\label{reglages_alertes_ihm_8h_source}\index{reglages\+Alertes\+Ihm.\+h@{reglages\+Alertes\+Ihm.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef REGLAGESALERTESIHM\_H}
+00002 \textcolor{preprocessor}{#define REGLAGESALERTESIHM\_H}
+00003 
+00004 \textcolor{preprocessor}{#include <QDialog>}
+00005 \textcolor{preprocessor}{#include "\hyperlink{alertes_8h}{alertes.h}"}
+00006 
+00019 \textcolor{keyword}{class }\hyperlink{class_base_de_donnees}{BaseDeDonnees};
+00020 
+00021 \textcolor{keyword}{namespace }\hyperlink{namespace_ui}{Ui} \{
+00022 \textcolor{keyword}{class }\hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm};
+00023 \textcolor{keyword}{class }\hyperlink{class_alertes}{Alertes};
+00024 \}
+00025 
+\Hypertarget{reglages_alertes_ihm_8h_source_l00037}\hyperlink{class_reglages_alertes_ihm}{00037} \textcolor{keyword}{class }\hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm} : \textcolor{keyword}{public} \hyperlink{class_q_dialog}{QDialog}
+00038 \{
+00039     Q\_OBJECT
+00040 
+00041 \textcolor{keyword}{public}:
+00042     \textcolor{keyword}{explicit} \hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm}(\hyperlink{class_q_widget}{QWidget} *parent = 0);
+00043     ~\hyperlink{class_reglages_alertes_ihm}{ReglagesAlertesIhm}();
+00044 
+00045     \textcolor{keywordtype}{void} setAlertes(\hyperlink{class_alertes}{Alertes} *alertes);
+00046 
+00047 \textcolor{keyword}{protected}:
+00048       \textcolor{keywordtype}{void} showEvent(QShowEvent *ev);
+00049 
+00050 \textcolor{keyword}{private}:
+\Hypertarget{reglages_alertes_ihm_8h_source_l00051}\hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{00051}     Ui::ReglagesAlertesIhm *\hyperlink{class_reglages_alertes_ihm_af3a1fcc84fb1c76248b330372947b245}{ui};
+\Hypertarget{reglages_alertes_ihm_8h_source_l00052}\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{00052}     \hyperlink{class_alertes}{Alertes} *\hyperlink{class_reglages_alertes_ihm_a9afa97e737d3c6a9a28a23fc4bc4beeb}{alertes};
+\Hypertarget{reglages_alertes_ihm_8h_source_l00053}\hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{00053}     \hyperlink{class_base_de_donnees}{BaseDeDonnees} *\hyperlink{class_reglages_alertes_ihm_a91b511776c98009cf8f951ec9f3e564e}{bdd}; 
+00054 
+00055 \textcolor{keyword}{public} slots :
+00056     \textcolor{keywordtype}{void} recevoirReglagesAlertes();
+00057 
+00058 signals :
+00059     \textcolor{keywordtype}{void} envoiSeuilTemperatureInterieurMin(QString seuil);
+00060     \textcolor{keywordtype}{void} envoiSeuilTemperatureInterieurMax(QString seuil);
+00061     \textcolor{keywordtype}{void} envoiSeuilHumiditeInterieurMin(QString seuil);
+00062     \textcolor{keywordtype}{void} envoiSeuilHumiditeInterieurMax(QString seuil);
+00063     \textcolor{keywordtype}{void} envoiSeuilTemperatureExterieurMin(QString seuil);
+00064     \textcolor{keywordtype}{void} envoiSeuilTemperatureExterieurMax(QString seuil);
+00065     \textcolor{keywordtype}{void} envoiSeuilHumiditeExterieurMin(QString seuil);
+00066     \textcolor{keywordtype}{void} envoiSeuilHumiditeExterieurMax(QString seuil);
+00067     \textcolor{keywordtype}{void} envoiSeuilEnsoleillementMin(QString seuil);
+00068     \textcolor{keywordtype}{void} envoiSeuilPressionAtmospheriqueMin(QString seuil);
+00069     \textcolor{keywordtype}{void} envoiSeuilPoidsMin(QString seuil);
+00070     \textcolor{keywordtype}{void} envoiSeuilPoidsMax(QString seuil);
+00071 \};
+00072 
+00073 \textcolor{preprocessor}{#endif // REGLAGESALERTESIHM\_H}
+\end{DoxyCode}

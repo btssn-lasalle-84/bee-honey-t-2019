@@ -1,0 +1,196 @@
+\hypertarget{struct_mesure_horaire_environement}{}\subsection{Référence de la structure Mesure\+Horaire\+Environement}
+\label{struct_mesure_horaire_environement}\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+
+
+structure de données pour les mesures horaires  
+
+
+
+
+{\ttfamily \#include $<$ruche.\+h$>$}
+
+
+
+Graphe de collaboration de Mesure\+Horaire\+Environement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{struct_mesure_horaire_environement__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_mesure_horaire_environement_a83295c95940d9edae2d082a94f49e1c9}{heure}
+\item 
+bool \hyperlink{struct_mesure_horaire_environement_a3444440b836c4893e8d61c3eb5c3e42d}{temperatures\+Recues} = false
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a40be086e9b2454c0e70066a523a1b066}{temperature\+Exterieur\+Moyenne}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_ae9737a62128ecf2614901ebe0b118548}{temperature\+Exterieur\+Minimum}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_aaf73ec5bb5a7c8235c56dc4ea3c4d89c}{temperature\+Exterieur\+Maximum}
+\item 
+bool \hyperlink{struct_mesure_horaire_environement_a4348771984d70b9ea7867dba511db336}{humidites\+Recues} = false
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a25909e0885ee3588c637b738ced303d7}{humidite\+Exterieur\+Moyenne}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a1621bd692dc352708d1931a48df9a596}{humidite\+Exterieur\+Minimum}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_abb2c00c4262837d9e1122573283d86ec}{humidite\+Exterieur\+Maximum}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a6ae12cb9b6ac6a46f7c08e60049c7b72}{pression\+Atmospherique\+Moyenne}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a3d42b48772717461f7395cdae5ff925f}{pression\+Atmospherique\+Minimum}
+\item 
+double \hyperlink{struct_mesure_horaire_environement_a9b82da49ea52c6f118f25433a16e22d4}{pression\+Atmospherique\+Maximum}
+\item 
+bool \hyperlink{struct_mesure_horaire_environement_a5db5e56af7d297b500912489126f7305}{pression\+Atmospherique\+Recues} = false
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a83295c95940d9edae2d082a94f49e1c9}\label{struct_mesure_horaire_environement_a83295c95940d9edae2d082a94f49e1c9}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!heure@{heure}}
+\index{heure@{heure}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{heure}{heure}}
+{\footnotesize\ttfamily int Mesure\+Horaire\+Environement\+::heure}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, \hyperlink{class_ruche_a59e89246b484d7b63851c0ebd20af6c5}{Ruche\+::recevoir\+Traitement\+Humidite\+Exterieur()}, \hyperlink{class_ruche_aa42daeffa023c83fde40072601e1fa39}{Ruche\+::recevoir\+Traitement\+Pression\+Atmospherique()}, et \hyperlink{class_ruche_a8482dda95a8a7888d5a60ea6f7d8729e}{Ruche\+::recevoir\+Traitement\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_abb2c00c4262837d9e1122573283d86ec}\label{struct_mesure_horaire_environement_abb2c00c4262837d9e1122573283d86ec}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!humidite\+Exterieur\+Maximum@{humidite\+Exterieur\+Maximum}}
+\index{humidite\+Exterieur\+Maximum@{humidite\+Exterieur\+Maximum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{humidite\+Exterieur\+Maximum}{humiditeExterieurMaximum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::humidite\+Exterieur\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a59e89246b484d7b63851c0ebd20af6c5}{Ruche\+::recevoir\+Traitement\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a1621bd692dc352708d1931a48df9a596}\label{struct_mesure_horaire_environement_a1621bd692dc352708d1931a48df9a596}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!humidite\+Exterieur\+Minimum@{humidite\+Exterieur\+Minimum}}
+\index{humidite\+Exterieur\+Minimum@{humidite\+Exterieur\+Minimum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{humidite\+Exterieur\+Minimum}{humiditeExterieurMinimum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::humidite\+Exterieur\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a59e89246b484d7b63851c0ebd20af6c5}{Ruche\+::recevoir\+Traitement\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a25909e0885ee3588c637b738ced303d7}\label{struct_mesure_horaire_environement_a25909e0885ee3588c637b738ced303d7}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!humidite\+Exterieur\+Moyenne@{humidite\+Exterieur\+Moyenne}}
+\index{humidite\+Exterieur\+Moyenne@{humidite\+Exterieur\+Moyenne}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{humidite\+Exterieur\+Moyenne}{humiditeExterieurMoyenne}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::humidite\+Exterieur\+Moyenne}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a59e89246b484d7b63851c0ebd20af6c5}{Ruche\+::recevoir\+Traitement\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a4348771984d70b9ea7867dba511db336}\label{struct_mesure_horaire_environement_a4348771984d70b9ea7867dba511db336}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!humidites\+Recues@{humidites\+Recues}}
+\index{humidites\+Recues@{humidites\+Recues}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{humidites\+Recues}{humiditesRecues}}
+{\footnotesize\ttfamily bool Mesure\+Horaire\+Environement\+::humidites\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a59e89246b484d7b63851c0ebd20af6c5}{Ruche\+::recevoir\+Traitement\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a9b82da49ea52c6f118f25433a16e22d4}\label{struct_mesure_horaire_environement_a9b82da49ea52c6f118f25433a16e22d4}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!pression\+Atmospherique\+Maximum@{pression\+Atmospherique\+Maximum}}
+\index{pression\+Atmospherique\+Maximum@{pression\+Atmospherique\+Maximum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{pression\+Atmospherique\+Maximum}{pressionAtmospheriqueMaximum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::pression\+Atmospherique\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_aa42daeffa023c83fde40072601e1fa39}{Ruche\+::recevoir\+Traitement\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a3d42b48772717461f7395cdae5ff925f}\label{struct_mesure_horaire_environement_a3d42b48772717461f7395cdae5ff925f}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!pression\+Atmospherique\+Minimum@{pression\+Atmospherique\+Minimum}}
+\index{pression\+Atmospherique\+Minimum@{pression\+Atmospherique\+Minimum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{pression\+Atmospherique\+Minimum}{pressionAtmospheriqueMinimum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::pression\+Atmospherique\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_aa42daeffa023c83fde40072601e1fa39}{Ruche\+::recevoir\+Traitement\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a6ae12cb9b6ac6a46f7c08e60049c7b72}\label{struct_mesure_horaire_environement_a6ae12cb9b6ac6a46f7c08e60049c7b72}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!pression\+Atmospherique\+Moyenne@{pression\+Atmospherique\+Moyenne}}
+\index{pression\+Atmospherique\+Moyenne@{pression\+Atmospherique\+Moyenne}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{pression\+Atmospherique\+Moyenne}{pressionAtmospheriqueMoyenne}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::pression\+Atmospherique\+Moyenne}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_aa42daeffa023c83fde40072601e1fa39}{Ruche\+::recevoir\+Traitement\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a5db5e56af7d297b500912489126f7305}\label{struct_mesure_horaire_environement_a5db5e56af7d297b500912489126f7305}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!pression\+Atmospherique\+Recues@{pression\+Atmospherique\+Recues}}
+\index{pression\+Atmospherique\+Recues@{pression\+Atmospherique\+Recues}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{pression\+Atmospherique\+Recues}{pressionAtmospheriqueRecues}}
+{\footnotesize\ttfamily bool Mesure\+Horaire\+Environement\+::pression\+Atmospherique\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_aa42daeffa023c83fde40072601e1fa39}{Ruche\+::recevoir\+Traitement\+Pression\+Atmospherique()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_aaf73ec5bb5a7c8235c56dc4ea3c4d89c}\label{struct_mesure_horaire_environement_aaf73ec5bb5a7c8235c56dc4ea3c4d89c}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!temperature\+Exterieur\+Maximum@{temperature\+Exterieur\+Maximum}}
+\index{temperature\+Exterieur\+Maximum@{temperature\+Exterieur\+Maximum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{temperature\+Exterieur\+Maximum}{temperatureExterieurMaximum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::temperature\+Exterieur\+Maximum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a8482dda95a8a7888d5a60ea6f7d8729e}{Ruche\+::recevoir\+Traitement\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_ae9737a62128ecf2614901ebe0b118548}\label{struct_mesure_horaire_environement_ae9737a62128ecf2614901ebe0b118548}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!temperature\+Exterieur\+Minimum@{temperature\+Exterieur\+Minimum}}
+\index{temperature\+Exterieur\+Minimum@{temperature\+Exterieur\+Minimum}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{temperature\+Exterieur\+Minimum}{temperatureExterieurMinimum}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::temperature\+Exterieur\+Minimum}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a8482dda95a8a7888d5a60ea6f7d8729e}{Ruche\+::recevoir\+Traitement\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a40be086e9b2454c0e70066a523a1b066}\label{struct_mesure_horaire_environement_a40be086e9b2454c0e70066a523a1b066}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!temperature\+Exterieur\+Moyenne@{temperature\+Exterieur\+Moyenne}}
+\index{temperature\+Exterieur\+Moyenne@{temperature\+Exterieur\+Moyenne}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{temperature\+Exterieur\+Moyenne}{temperatureExterieurMoyenne}}
+{\footnotesize\ttfamily double Mesure\+Horaire\+Environement\+::temperature\+Exterieur\+Moyenne}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a8482dda95a8a7888d5a60ea6f7d8729e}{Ruche\+::recevoir\+Traitement\+Temperature\+Exterieur()}.
+
+\mbox{\Hypertarget{struct_mesure_horaire_environement_a3444440b836c4893e8d61c3eb5c3e42d}\label{struct_mesure_horaire_environement_a3444440b836c4893e8d61c3eb5c3e42d}} 
+\index{Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}!temperatures\+Recues@{temperatures\+Recues}}
+\index{temperatures\+Recues@{temperatures\+Recues}!Mesure\+Horaire\+Environement@{Mesure\+Horaire\+Environement}}
+\paragraph{\texorpdfstring{temperatures\+Recues}{temperaturesRecues}}
+{\footnotesize\ttfamily bool Mesure\+Horaire\+Environement\+::temperatures\+Recues = false}
+
+
+
+Référencé par \hyperlink{class_ruche_ac52e79446c5629645e02e27d2a01e56c}{Ruche\+::inserer\+Mesure\+Horaire\+Environnement()}, et \hyperlink{class_ruche_a8482dda95a8a7888d5a60ea6f7d8729e}{Ruche\+::recevoir\+Traitement\+Temperature\+Exterieur()}.
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ruche_8h}{ruche.\+h}\end{DoxyCompactItemize}

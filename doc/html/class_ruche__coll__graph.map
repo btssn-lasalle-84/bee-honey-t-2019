@@ -1,0 +1,17 @@
+<map id="Ruche" name="Ruche">
+<area shape="rect" id="node2" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="1261,5,1331,83"/>
+<area shape="rect" id="node3" href="$class_infos_ensoleillement.html" title="La classe InfosEnsoleillement. " alt="" coords="1269,301,1531,510"/>
+<area shape="rect" id="node4" href="$class_communication.html" title="La classe Communication. " alt="" coords="145,703,308,971"/>
+<area shape="rect" id="node7" href="$class_infos_poids.html" title="Déclaration de la classe InfosPoids. " alt="" coords="817,315,977,495"/>
+<area shape="rect" id="node8" href="$class_infos_humidite.html" title="La classe InfosHumidite. " alt="" coords="562,213,793,598"/>
+<area shape="rect" id="node9" href="$class_infos_temperature.html" title="La classe InfosTemperature. " alt="" coords="1001,132,1244,679"/>
+<area shape="rect" id="node12" href="$class_infos_batterie.html" title="Déclaration de la classe InfosBatterie. " alt="" coords="1607,271,1822,539"/>
+<area shape="rect" id="node13" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="1846,257,1991,554"/>
+<area shape="rect" id="node14" href="$class_infos_pression_atmospherique.html" title="La classe InfosPressionAtmospherique. " alt="" coords="2145,286,2410,525"/>
+<area shape="rect" id="node15" href="$class_alertes.html" title="La classe des alertes. " alt="" coords="1651,995,1906,1615"/>
+<area shape="rect" id="node5" href="$struct_donnees_ruche.html" title="structure de données pour les mesures horodatées " alt="" coords="314,1171,550,1439"/>
+<area shape="rect" id="node6" href="$struct_donnees_batterie.html" title="structure de données pour les mesures de la batterie " alt="" coords="361,330,503,481"/>
+<area shape="rect" id="node10" href="$struct_mesures_horaire_ensoleillement.html" title="structure de données pour les mesures horaires " alt="" coords="1177,1237,1375,1373"/>
+<area shape="rect" id="node11" href="$struct_mesure_horaire_environement.html" title="structure de données pour les mesures horaires " alt="" coords="1400,1178,1627,1431"/>
+<area shape="rect" id="node16" href="$struct_mesure_horaire_ruche.html" title="structure de données pour les mesures horaires " alt="" coords="2507,1207,2714,1402"/>
+</map>

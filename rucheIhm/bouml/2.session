@@ -1,0 +1,15 @@
+window_sizes 1920 1025 450 1464 852 120
+cleanlooks_style
+diagrams
+  classdiagram_ref 128002 // diagramme de classes
+    1464 852 100 A3 0 0
+  active  sequencediagram_ref 134530 // sd-recevoir-donnees
+    1464 852 100 A3 0 0
+end
+show_stereotypes
+selected class_ref 136962 // Alertes
+open
+  classview_ref 128002 // rucheIhm
+  usecaseview_ref 134530 // view-uc
+end
+end

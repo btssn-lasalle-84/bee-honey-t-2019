@@ -1,0 +1,277 @@
+\hypertarget{class_nouvelle_ruche_ihm}{}\subsection{Référence de la classe Nouvelle\+Ruche\+Ihm}
+\label{class_nouvelle_ruche_ihm}\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+
+
+Déclaration de la classe \hyperlink{class_nouvelle_ruche_ihm}{Nouvelle\+Ruche\+Ihm}.  
+
+
+
+
+{\ttfamily \#include $<$nouvelle\+Ruche\+Ihm.\+h$>$}
+
+
+
+Graphe de collaboration de Nouvelle\+Ruche\+Ihm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_nouvelle_ruche_ihm__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm} (\hyperlink{class_q_widget}{Q\+Widget} $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em Constructeur de la fenêtre principale. \end{DoxyCompactList}\item 
+\hyperlink{class_nouvelle_ruche_ihm_a17e5dfd1146574134eaa3ab8eae4f6d4}{$\sim$\+Nouvelle\+Ruche\+Ihm} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de la fenêtre principale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Connecteurs privés}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche} ()
+\begin{DoxyCompactList}\small\item\em slot permetant l\textquotesingle{}emission des données rentrées par l\textquotesingle{}utilisateur \end{DoxyCompactList}\item 
+void \hyperlink{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}{annuler\+Donnees\+Nouvelle\+Ruche} ()
+\begin{DoxyCompactList}\small\item\em slot permetant grâce a la methode nettoyer\+Zone\+De\+Texte d\textquotesingle{}anuler la saisi des lors que l\textquotesingle{}on appui sur le bouton annuler \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyer\+Zone\+De\+Texte} ()
+\begin{DoxyCompactList}\small\item\em methode qui clear les zones de textes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Nouvelle\+Ruche\+Ihm $\ast$ \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}
+\item 
+\hyperlink{class_base_de_donnees}{Base\+De\+Donnees} $\ast$ \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}
+\begin{DoxyCompactList}\small\item\em agrégation de l\textquotesingle{}objet \hyperlink{class_base_de_donnees}{Base\+De\+Donnees} \end{DoxyCompactList}\item 
+Q\+Vector$<$ Q\+String\+List $>$ \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listes\+T\+TN}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}\label{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{Nouvelle\+Ruche\+Ihm()}{NouvelleRucheIhm()}}
+{\footnotesize\ttfamily Nouvelle\+Ruche\+Ihm\+::\+Nouvelle\+Ruche\+Ihm (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_widget}{Q\+Widget} $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em parent} & \hyperlink{class_q_object}{Q\+Object} Adresse de l\textquotesingle{}objet Qt parent (0 = fenêtre principale) \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}{annuler\+Donnees\+Nouvelle\+Ruche()}, \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}, \hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{B\+D\+D\+\_\+\+N\+O\+M\+B\+A\+SE}, \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{B\+D\+D\+\_\+\+P\+A\+S\+S\+W\+O\+RD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{B\+D\+D\+\_\+\+S\+E\+R\+V\+E\+UR}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{B\+D\+D\+\_\+\+U\+S\+E\+R\+N\+A\+ME}, \hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{Base\+De\+Donnees\+::connecter()}, \hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{Base\+De\+Donnees\+::est\+Connecte()}, \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{Base\+De\+Donnees\+::get\+Instance()}, \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listes\+T\+TN}, \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}.
+
+
+\begin{DoxyCode}
+00025                                                   :
+00026     \hyperlink{class_q_dialog}{QDialog}(parent),
+00027     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}(\textcolor{keyword}{new} Ui::NouvelleRucheIhm)
+00028 \{
+00029     qDebug()<< Q\_FUNC\_INFO;
+00030     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->setupUi(\textcolor{keyword}{this});
+00031     setWindowTitle(\textcolor{stringliteral}{"Ruche 2019 - Création d'une ruche"});
+00032 
+00033     \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd} = \hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{BaseDeDonnees::getInstance}();
+00034     \textcolor{keywordflow}{if}(!\hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00035         \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_ac20da193923a9bfea5e38ee5a54820cd}{connecter}(\hyperlink{parametres_8h_a45f8f15b8f9a7ab4c2b219038ff64f6b}{BDD\_NOMBASE}, \hyperlink{parametres_8h_a88b5f5b81fa534553c68802384beff2c}{BDD\_USERNAME}, 
+      \hyperlink{parametres_8h_ae2ded9166ed2553182545e97514c04f7}{BDD\_PASSWORD}, \hyperlink{parametres_8h_a423559dc987673b8aacaa9f369839bb0}{BDD\_SERVEUR});
+00036 
+00037     \textcolor{keywordflow}{if}(\hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_a00388973f3ec42e5c8e76e7af7e124b2}{estConnecte}())
+00038     \{
+00039         \textcolor{comment}{// Une ruche correspond à un DeviceId attaché à un ApplicationID dans le réseau TTN}
+00040         \textcolor{comment}{// récupération des ApplicationID disponibles}
+00041         QString requeteRecuperationIdTTN = \textcolor{stringliteral}{"SELECT idTTN, ApplicationID FROM TTN"};
+00042         \textcolor{keywordtype}{bool} retourRequeteRecuperationIdTTN = \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requeteRecuperationIdTTN, 
+      \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN});
+00043         \textcolor{keywordflow}{if}(retourRequeteRecuperationIdTTN)
+00044         \{
+00045             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN}.size();i++)
+00046             \{
+00047                 \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->comboBoxListeAppID->addItem(\hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN}.at(i).at(1));
+00048             \}
+00049         \}
+00050         \textcolor{keywordflow}{else}
+00051             \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->comboBoxListeAppID->addItem(\textcolor{stringliteral}{""});
+00052     \}
+00053 
+00054     QDate aujourdhui = QDate::currentDate();
+00055     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->dateEditMiseEnService->setDate(aujourdhui);
+00056 
+00057     connect(\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->boutonOk,SIGNAL(clicked(\textcolor{keywordtype}{bool})),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoirDonneeAjoutRuche}()));
+00058     connect(\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->boutonAnnuler,SIGNAL(clicked(\textcolor{keywordtype}{bool})),\textcolor{keyword}{this},SLOT(
+      \hyperlink{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}{annulerDonneesNouvelleRuche}()));
+00059 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a17e5dfd1146574134eaa3ab8eae4f6d4}\label{class_nouvelle_ruche_ihm_a17e5dfd1146574134eaa3ab8eae4f6d4}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!````~Nouvelle\+Ruche\+Ihm@{$\sim$\+Nouvelle\+Ruche\+Ihm}}
+\index{````~Nouvelle\+Ruche\+Ihm@{$\sim$\+Nouvelle\+Ruche\+Ihm}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{$\sim$\+Nouvelle\+Ruche\+Ihm()}{~NouvelleRucheIhm()}}
+{\footnotesize\ttfamily Nouvelle\+Ruche\+Ihm\+::$\sim$\+Nouvelle\+Ruche\+Ihm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{Base\+De\+Donnees\+::detruire\+Instance()}, et \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}.
+
+
+\begin{DoxyCode}
+00068 \{
+00069     \textcolor{keyword}{delete} \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui};
+00070     \hyperlink{class_base_de_donnees_a457401c0816b888c77ce915997545f4e}{BaseDeDonnees::detruireInstance}();
+00071 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}\label{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!annuler\+Donnees\+Nouvelle\+Ruche@{annuler\+Donnees\+Nouvelle\+Ruche}}
+\index{annuler\+Donnees\+Nouvelle\+Ruche@{annuler\+Donnees\+Nouvelle\+Ruche}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{annuler\+Donnees\+Nouvelle\+Ruche}{annulerDonneesNouvelleRuche}}
+{\footnotesize\ttfamily void Nouvelle\+Ruche\+Ihm\+::annuler\+Donnees\+Nouvelle\+Ruche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyer\+Zone\+De\+Texte()}.
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm()}.
+
+
+\begin{DoxyCode}
+00113 \{
+00114     \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyerZoneDeTexte}();
+00115     reject();
+00116 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}\label{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!nettoyer\+Zone\+De\+Texte@{nettoyer\+Zone\+De\+Texte}}
+\index{nettoyer\+Zone\+De\+Texte@{nettoyer\+Zone\+De\+Texte}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{nettoyer\+Zone\+De\+Texte()}{nettoyerZoneDeTexte()}}
+{\footnotesize\ttfamily void Nouvelle\+Ruche\+Ihm\+::nettoyer\+Zone\+De\+Texte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}.
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a8967974b5606b7096960f3b607b5b58a}{annuler\+Donnees\+Nouvelle\+Ruche()}, et \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche()}.
+
+
+\begin{DoxyCode}
+00124 \{
+00125     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteNom->clear();
+00126     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteDescription->clear();
+00127     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteAdresse->clear();
+00128     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteLongitude->clear();
+00129     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteLatitude->clear();
+00130     \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteDeviceID->clear();
+00131 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}\label{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!recevoir\+Donnee\+Ajout\+Ruche@{recevoir\+Donnee\+Ajout\+Ruche}}
+\index{recevoir\+Donnee\+Ajout\+Ruche@{recevoir\+Donnee\+Ajout\+Ruche}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{recevoir\+Donnee\+Ajout\+Ruche}{recevoirDonneeAjoutRuche}}
+{\footnotesize\ttfamily void Nouvelle\+Ruche\+Ihm\+::recevoir\+Donnee\+Ajout\+Ruche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Références \hyperlink{parametres_8h_ace364d1ce44aa9f79bcff6e3752c4a5f}{A\+P\+P\+\_\+\+T\+I\+T\+RE}, \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}, \hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{Base\+De\+Donnees\+::executer()}, \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listes\+T\+TN}, \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyer\+Zone\+De\+Texte()}, \hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{Base\+De\+Donnees\+::recuperer()}, et \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}.
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm()}.
+
+
+\begin{DoxyCode}
+00079 \{
+00080     \textcolor{keywordflow}{if}(\hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN}.size() == 0)
+00081     \{
+00082         QMessageBox::critical(0, QString::fromUtf8(\hyperlink{parametres_8h_ace364d1ce44aa9f79bcff6e3752c4a5f}{APP\_TITRE}), QString::fromUtf8(\textcolor{stringliteral}{"Impossible
+       d'ajouter la nouvelle ruche : TTN manquant !"}));
+00083         \textcolor{keywordflow}{return};
+00084     \}
+00085 
+00086     QDate date = QDate::fromString(\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->dateEditMiseEnService->text(), \textcolor{stringliteral}{"dd/MM/yyyy"});
+00087     QString requete = \textcolor{stringliteral}{"INSERT INTO Ruche (idTTN, Nom, Description, DateMiseEnService, Adresse, Longitude,
+       Latitude, DeviceID) VALUES ('"} + \hyperlink{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}{listesTTN}.at(\hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->comboBoxListeAppID->currentIndex()).at(0) + \textcolor{stringliteral}{"' ,
+       '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteNom->text() + \textcolor{stringliteral}{"', '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteDescription->text() + \textcolor{stringliteral}{"', '"} + date.toString(\textcolor{stringliteral}{
+      "yyyy-MM-dd"}) + \textcolor{stringliteral}{"', '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteAdresse->text() + \textcolor{stringliteral}{"', '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteLongitude->text() + \textcolor{stringliteral}{"
+      ', '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteLatitude->text() + \textcolor{stringliteral}{"', '"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteDeviceID->text() + \textcolor{stringliteral}{"')"};
+00088     qDebug()<< Q\_FUNC\_INFO << requete;
+00089     \textcolor{keywordtype}{bool} retour = \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00090     \textcolor{keywordflow}{if}(retour)
+00091     \{
+00092         QString idRuche;
+00093         requete = \textcolor{stringliteral}{"SELECT idRuche FROM Ruche WHERE DeviceID='"} + \hyperlink{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}{ui}->zoneDeTexteDeviceID->text() + \textcolor{stringliteral}{"'"};
+00094         retour = \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_a77539baad389f5acf754cd2cd452403e}{recuperer}(requete, idRuche);
+00095         \textcolor{keywordflow}{if}(retour)
+00096         \{
+00097             requete = \textcolor{stringliteral}{"INSERT INTO Seuils (idRuche, TemperatureIntMin, TemperatureIntMax, HumiditeIntMin,
+       HumiditeIntMax, TemperatureExtMin, TemperatureExtMax, HumiditeExtMin, HumiditeExtMax, PressionMin,
+       PressionMax, PoidsMin, PoidsMax, EnsoleillementMin, EnsoleillementMax, Charge) VALUES ('"} + idRuche + \textcolor{stringliteral}{"' , '"} + \textcolor{stringliteral}{"25."} 
+      + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"35.0"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"20"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"30"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"5"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"35"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"20"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{
+      "35"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"1000"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"1200"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"10"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"100"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"10"} + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"1000"} 
+      + \textcolor{stringliteral}{"', '"} + \textcolor{stringliteral}{"25"} + \textcolor{stringliteral}{"')"};
+00098             retour = \hyperlink{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}{bdd}->\hyperlink{class_base_de_donnees_aa8de5f8f8bb17edc43f5c0ee33712081}{executer}(requete);
+00099         \}
+00100         \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyerZoneDeTexte}();
+00101         accept();
+00102     \}
+00103     \textcolor{keywordflow}{else}
+00104         QMessageBox::critical(0, QString::fromUtf8(\hyperlink{parametres_8h_ace364d1ce44aa9f79bcff6e3752c4a5f}{APP\_TITRE}), QString::fromUtf8(\textcolor{stringliteral}{"Impossible
+       d'ajouter la nouvelle ruche !"}));
+00105 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}\label{class_nouvelle_ruche_ihm_af552d9e6944c266060860d911878cff7}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!bdd@{bdd}}
+\index{bdd@{bdd}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{class_base_de_donnees}{Base\+De\+Donnees}$\ast$ Nouvelle\+Ruche\+Ihm\+::bdd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm()}, et \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche()}.
+
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}\label{class_nouvelle_ruche_ihm_a0c97db3419bafe928aabed3aa01d46fb}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!listes\+T\+TN@{listes\+T\+TN}}
+\index{listes\+T\+TN@{listes\+T\+TN}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{listes\+T\+TN}{listesTTN}}
+{\footnotesize\ttfamily Q\+Vector$<$Q\+String\+List$>$ Nouvelle\+Ruche\+Ihm\+::listes\+T\+TN\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm()}, et \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche()}.
+
+\mbox{\Hypertarget{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}\label{class_nouvelle_ruche_ihm_a46c1f0446fc75c67847d152d89d75960}} 
+\index{Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}!ui@{ui}}
+\index{ui@{ui}!Nouvelle\+Ruche\+Ihm@{Nouvelle\+Ruche\+Ihm}}
+\paragraph{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Nouvelle\+Ruche\+Ihm$\ast$ Nouvelle\+Ruche\+Ihm\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_nouvelle_ruche_ihm_a09ddd61a2bd2b6779865e7d3b93ec2eb}{nettoyer\+Zone\+De\+Texte()}, \hyperlink{class_nouvelle_ruche_ihm_a338b9af0b96ed0839a8d5008c8c89cc4}{Nouvelle\+Ruche\+Ihm()}, \hyperlink{class_nouvelle_ruche_ihm_a268e781b033f2531ca5eab19cc828fdc}{recevoir\+Donnee\+Ajout\+Ruche()}, et \hyperlink{class_nouvelle_ruche_ihm_a17e5dfd1146574134eaa3ab8eae4f6d4}{$\sim$\+Nouvelle\+Ruche\+Ihm()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nouvelle_ruche_ihm_8h}{nouvelle\+Ruche\+Ihm.\+h}\item 
+\hyperlink{nouvelle_ruche_ihm_8cpp}{nouvelle\+Ruche\+Ihm.\+cpp}\end{DoxyCompactItemize}

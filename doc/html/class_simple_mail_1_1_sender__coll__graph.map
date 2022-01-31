@@ -1,0 +1,4 @@
+<map id="SimpleMail::Sender" name="SimpleMail::Sender">
+<area shape="rect" id="node3" href="$class_simple_mail_1_1_sender_private.html" title="{SimpleMail::SenderPrivate\n|+ state\l+ socket\l+ lastError\l+ host\l+ port\l+ connectionType\l+ name\l+ peerVerificationType\l+ user\l+ password\let 6 de plus...\l|+ SenderPrivate()\l+ sendMail()\l+ sendMessage()\l+ connectToHost()\l+ login()\l+ waitForResponse()\l+ processState()\l+ setPeerVerificationType()\l}" alt="" coords="5,463,187,789"/>
+<area shape="rect" id="node2" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="61,5,131,83"/>
+</map>

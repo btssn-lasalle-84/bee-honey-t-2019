@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t: Base de données MySQL</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">0.2</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Base de données MySQL </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>CREATE DATABASE IF NOT EXISTS <code>ruche</code>;</p>
+<p>USE <code>ruche</code>;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>Apiculteur</code> ( <code>idApiculteur</code> int(11) NOT NULL AUTO_INCREMENT, <code>Nom</code> varchar(64) NOT NULL, <code>Prenom</code> varchar(64) NOT NULL, <code>Identifiant</code> varchar(255) DEFAULT NULL, <code>MotDePasse</code> varchar(255) DEFAULT NULL, <code>Email</code> varchar(64) NOT NULL, PRIMARY KEY (<code>idApiculteur</code>) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code><a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a></code> ( <code>idRuche</code> int(11) NOT NULL AUTO_INCREMENT, <code>Nom</code> varchar(255) NOT NULL, <code>Description</code> varchar(255) DEFAULT NULL, <code>DateMiseEnService</code> date NOT NULL, <code>Adresse</code> varchar(17) DEFAULT NULL, <code>Longitude</code> varchar(15) DEFAULT NULL, <code>Latitude</code> varchar(15) DEFAULT NULL,</p>
+<p>PRIMARY KEY (<code>idRuche</code>) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>Seuils</code> ( <code>idSeuils</code> int(11) NOT NULL AUTO_INCREMENT, <code>idRuche</code> int(11) NOT NULL, <code>TemperatureMin</code> int(11) NOT NULL, <code>TemperatureMax</code> int(11) NOT NULL, <code>HumiditeMin</code> int(11) NOT NULL, <code>HumiditeMax</code> int(11) NOT NULL, <code>PoidsMin</code> int(11) NOT NULL, <code>PoidsMax</code> int(11) NOT NULL, PRIMARY KEY (<code>idSeuils</code>), CONSTRAINT Seuils_fk_1 FOREIGN KEY (<code>idRuche</code>) REFERENCES <a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a>(<code>idRuche</code>) ON DELETE CASCADE ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>MesuresEnvironnement</code> ( <code>idMesuresEnvironnement</code> int(11) NOT NULL AUTO_INCREMENT, <code>idRuche</code> int(11) NOT NULL, <code>Ensoleillement</code> int(11) NOT NULL, <code>Temperature</code> int(11) NOT NULL, <code>Humidite</code> int(11) NOT NULL, <code>Pression</code> int(11) NOT NULL, <code>Horodatage</code> datetime NOT NULL, PRIMARY KEY (<code>idMesuresEnvironnement</code>), CONSTRAINT MesuresEnvironnement_fk_1 FOREIGN KEY (<code>idRuche</code>) REFERENCES <a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a>(<code>idRuche</code>) ON DELETE CASCADE ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>MesuresRuche</code> ( <code>idMesuresRuche</code> int(11) NOT NULL AUTO_INCREMENT, <code>idRuche</code> int(11) NOT NULL, <code>Temperature</code> int(11) NOT NULL, <code>Humidite</code> int(11) NOT NULL, <code>Poids</code> int(11) NOT NULL, <code>Horodatage</code> datetime NOT NULL, PRIMARY KEY (<code>idMesuresRuche</code>), CONSTRAINT MesuresRuche_fk_1 FOREIGN KEY (<code>idRuche</code>) REFERENCES <a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a>(<code>idRuche</code>) ON DELETE CASCADE ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>MesuresEnergie</code> ( <code>idMesuresEnergie</code> int(11) NOT NULL AUTO_INCREMENT, <code>idRuche</code> int(11) NOT NULL, <code>Charge</code> int(11) NOT NULL, <code>Tension</code> int(11) NOT NULL, <code>Courant</code> int(11) NOT NULL, <code>Horodatage</code> datetime NOT NULL, PRIMARY KEY (<code>idMesuresEnergie</code>), CONSTRAINT MesuresEnergie_fk_1 FOREIGN KEY (<code>idRuche</code>) REFERENCES <a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a>(<code>idRuche</code>) ON DELETE CASCADE ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code>TypeAlerte</code> ( <code>idType</code> int(11) NOT NULL AUTO_INCREMENT, <code>Nom</code> varchar(64) NOT NULL, PRIMARY KEY (<code>idType</code>) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;</p>
+<p>CREATE TABLE IF NOT EXISTS <code><a class="el" href="class_alertes.html" title="La classe des alertes. ">Alertes</a></code> ( <code>idAlerte</code> int(11) NOT NULL AUTO_INCREMENT, <code>idRuche</code> int(11) NOT NULL, <code>idType</code> int(11) NOT NULL, <code>Description</code> text CHARACTER SET utf8 NOT NULL, <code>Horodatage</code> datetime NOT NULL, PRIMARY KEY (<code>idAlerte</code>), CONSTRAINT Alertes_fk_1 FOREIGN KEY (<code>idRuche</code>) REFERENCES <a class="el" href="class_ruche.html" title="La classe Ruche. ">Ruche</a>(<code>idRuche</code>) ON DELETE CASCADE, CONSTRAINT Alertes_fk_2 FOREIGN KEY (<code>idType</code>) REFERENCES TypeAlerte(<code>idType</code>) ON DELETE CASCADE ) ENGINE=InnoDB DEFAULT CHARSET=utf8; </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 9 Mai 2019 20:35:36 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

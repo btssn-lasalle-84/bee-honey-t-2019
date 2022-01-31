@@ -1,0 +1,88 @@
+class Alertes
+!!!145922.cpp!!!	Alertes(inout parent : QObject = 0)
+    temperature = new InfosTemperature(this);
+    humidite = new InfosHumidite(this);
+    pressionAtmospherique = new InfosPressionAtmospherique(this);
+!!!146050.cpp!!!	alertesTemperatureInterieur() : void
+    qDebug() << Q_FUNC_INFO;
+
+    double mesureTemperatureInterieur = temperature->getTemperatureInterieur();
+
+    if(mesureTemperatureInterieur > TEMPERATUREINTERIEURSEUILMAX)
+    {
+        emit envoiAlertesTemperatureInterieur(tropHaut);
+    }
+    else if (mesureTemperatureInterieur < TEMPERATUREINTERIEURSEUILMIN)
+    {
+        emit envoiAlertesTemperatureInterieur(tropBas);
+    }
+    else emit envoiAlertesTemperatureInterieur(bon);
+!!!146178.cpp!!!	alertesTemperatureExterieur() : void
+    double mesureTemperatureExterieur = temperature->getTemperatureExterieur();
+
+    if(mesureTemperatureExterieur > TEMPERATUREEXTERIEURSEUILMAX)
+    {
+        emit envoiAlertesTemperatureExterieur(tropHaut);
+    }
+    else if (mesureTemperatureExterieur < TEMPERATUREEXTERIEURSEUILMIN)
+    {
+        qDebug() << Q_FUNC_INFO;
+        emit envoiAlertesTemperatureExterieur(tropBas);
+    }
+    else emit envoiAlertesTemperatureExterieur(bon);
+!!!146306.cpp!!!	alertesHumiditeInterieur() : void
+    double mesureHumiditeInterieur = humidite->getHumiditeInterieur();
+
+    if(mesureHumiditeInterieur > HUMIDITEINTERIEURSEUILMAX)
+    {
+        emit envoiAlertesHumiditeInterieur(tropHaut);
+    }
+    else if (mesureHumiditeInterieur < HUMIDITEINTERIEURSEUILMIN)
+    {
+        qDebug() << Q_FUNC_INFO;
+        emit envoiAlertesHumiditeInterieur(tropBas);
+    }
+    else emit envoiAlertesHumiditeInterieur(bon);
+!!!146434.cpp!!!	alertesHumiditeExterieur() : void
+    double mesureHumiditeExterieur = humidite->getHumiditeExterieur();
+
+    if(mesureHumiditeExterieur > HUMIDITEEXTERIEURSEUILMAX)
+    {
+        emit envoiAlertesHumiditeInterieur(tropHaut);
+    }
+    else if (mesureHumiditeExterieur < HUMIDITEEXTERIEURSEUILMIN)
+    {
+        qDebug() << Q_FUNC_INFO;
+        emit envoiAlertesHumiditeExterieur(tropBas);
+    }
+    else emit envoiAlertesHumiditeExterieur(bon);
+!!!146562.cpp!!!	alertesPressionAtmospherique() : void
+    /** @todo definir les niveaux d'alertes pour la pression atmospherique **/
+!!!146690.cpp!!!	appelerLesAlertes(in typeAlertes : TypeAlertes) : void
+    qDebug() << Q_FUNC_INFO;
+
+    switch(typeAlertes)
+    {
+        case alerteTemperatureInterieur :
+            alertesTemperatureInterieur();
+        break;
+        case alerteTemperatureExterieur :
+            alertesTemperatureExterieur();
+        break;
+        case  alerteHumiditeInterieur :
+            alertesHumiditeInterieur();
+        break;
+        case  alerteHumiditeExterieur :
+            alertesHumiditeExterieur();
+        break;
+        case  alertePressionAtmospherique :
+            alertesPressionAtmospherique();
+        break;
+        case  toutesLesAlertes:
+            alertesHumiditeExterieur();
+            alertesHumiditeInterieur();
+            alertesPressionAtmospherique();
+            alertesTemperatureExterieur();
+            alertesTemperatureInterieur();
+        break;
+    }

@@ -1,0 +1,344 @@
+\hypertarget{class_infos_ensoleillement}{}\subsection{Référence de la classe Infos\+Ensoleillement}
+\label{class_infos_ensoleillement}\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+
+
+La classe \hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Ensoleillement.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Ensoleillement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_infos_ensoleillement__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement} (Q\+String ensoleillement\+String, Q\+String \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement})
+\begin{DoxyCompactList}\small\item\em slot qui traite l\textquotesingle{}ensoleillement \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}{ensoleillement\+Envoye} (double \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}, Q\+String horodatage)
+\item 
+void \hyperlink{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}{traitement\+Ensoleillement\+Envoye} (double ensoleillement\+Moyen, double ensoleillement\+Minimum, double ensoleillement\+Maximum, int heure)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_ensoleillement_a5037621d40a4e62f01182f6742388fcd}{Infos\+Ensoleillement} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_infos_ensoleillement}{Infos\+Ensoleillement}. \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}{get\+Ensoleillement} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut ensoleillement \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_ensoleillement_a27c6d3d6e063e2f09fbe23a04cd89dfc}{set\+Ensoleillement} (double \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut ensoleillement \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_ensoleillement_a0bd39540c8b4a242ea378c91bbc58b89}{get\+Horodatage\+Ensoleillement} () const
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attibut horodatage\+Ensoleillement \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_ensoleillement_a35cd0359b8bcf5bd572cbef2195fa8d1}{set\+Horodatage\+Ensoleillement} (const Q\+String \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut horodatage\+Ensoleillement \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculer\+Moyenne\+Horaire\+Ensoleillement} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}
+\begin{DoxyCompactList}\small\item\em valeur courante de l\textquotesingle{}ensoleillement en w/m² \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement}
+\begin{DoxyCompactList}\small\item\em horodatage de la l\textquotesingle{}ensoleillement \end{DoxyCompactList}\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}
+\item 
+int \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heure\+Courante\+Ensoleillement}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_ensoleillement_a5037621d40a4e62f01182f6742388fcd}\label{class_infos_ensoleillement_a5037621d40a4e62f01182f6742388fcd}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{Infos\+Ensoleillement()}{InfosEnsoleillement()}}
+{\footnotesize\ttfamily Infos\+Ensoleillement\+::\+Infos\+Ensoleillement (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+Définition des attributs ensoleillement à 0 et l\textquotesingle{}attribut horodatage\+Ensoleillement à \char`\"{}\char`\"{} 
+\begin{DoxyCode}
+00026                                                         :\hyperlink{class_q_object}{QObject}(parent), 
+      \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}(0.), \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement}(\textcolor{stringliteral}{""}), 
+      \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement}(-1)
+00027 \{
+00028 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}\label{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!calculer\+Moyenne\+Horaire\+Ensoleillement@{calculer\+Moyenne\+Horaire\+Ensoleillement}}
+\index{calculer\+Moyenne\+Horaire\+Ensoleillement@{calculer\+Moyenne\+Horaire\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Ensoleillement()}{calculerMoyenneHoraireEnsoleillement()}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::calculer\+Moyenne\+Horaire\+Ensoleillement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}, \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heure\+Courante\+Ensoleillement}, et \hyperlink{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}{traitement\+Ensoleillement\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+
+\begin{DoxyCode}
+00106 \{
+00107     \textcolor{keywordtype}{double} sommeEnsoleillement= 0;
+00108     \textcolor{keywordtype}{double} ensoleillementMoyen = 0;
+00109     \textcolor{keywordtype}{double} ensoleillementMinimum = 999;
+00110     \textcolor{keywordtype}{double} ensoleillementMaximum = -999;
+00111 
+00112     \textcolor{comment}{// au moins 2 mesures}
+00113     \textcolor{keywordflow}{if}(\hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}.size() >= 2)
+00114     \{
+00115         ensoleillementMinimum = \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[0];
+00116         ensoleillementMaximum = \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[0];
+00117         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}.size(); i++)
+00118         \{
+00119             sommeEnsoleillement += \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[i];
+00120 
+00121             \textcolor{keywordflow}{if}(ensoleillementMinimum > \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[i])
+00122             \{
+00123                 ensoleillementMinimum = \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[i];
+00124             \}
+00125 
+00126             \textcolor{keywordflow}{if}(ensoleillementMaximum < \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[i])
+00127             \{
+00128                 ensoleillementMaximum = \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}[i];
+00129             \}
+00130         \}
+00131     \}
+00132     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements};
+00133     ensoleillementMoyen = sommeEnsoleillement/ double(ensoleillements.size());
+00134     emit \hyperlink{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}{traitementEnsoleillementEnvoye}(ensoleillementMoyen, 
+      ensoleillementMinimum ,ensoleillementMaximum, \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement});
+00135     ensoleillements.clear();
+00136 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}\label{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!ensoleillement\+Envoye@{ensoleillement\+Envoye}}
+\index{ensoleillement\+Envoye@{ensoleillement\+Envoye}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillement\+Envoye}{ensoleillementEnvoye}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::ensoleillement\+Envoye (\begin{DoxyParamCaption}\item[{double}]{ensoleillement,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}\label{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!get\+Ensoleillement@{get\+Ensoleillement}}
+\index{get\+Ensoleillement@{get\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{get\+Ensoleillement()}{getEnsoleillement()}}
+{\footnotesize\ttfamily double Infos\+Ensoleillement\+::get\+Ensoleillement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+un {\itshape double} correspondant à la valeur de l\textquotesingle{}attibut ensoleillement 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}.
+
+
+
+Référencé par \hyperlink{class_alertes_ae7ad960c530a6a7e82df3ed55d159a68}{Alertes\+::alertes\+Ensoleillement()}.
+
+
+\begin{DoxyCode}
+00037 \{
+00038     \textcolor{keywordflow}{return} \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement};
+00039 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_ensoleillement_a0bd39540c8b4a242ea378c91bbc58b89}\label{class_infos_ensoleillement_a0bd39540c8b4a242ea378c91bbc58b89}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!get\+Horodatage\+Ensoleillement@{get\+Horodatage\+Ensoleillement}}
+\index{get\+Horodatage\+Ensoleillement@{get\+Horodatage\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Ensoleillement()}{getHorodatageEnsoleillement()}}
+{\footnotesize\ttfamily Q\+String Infos\+Ensoleillement\+::get\+Horodatage\+Ensoleillement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+un Q\+String correspondant a la valeur de l\textquotesingle{}attribut horodatage\+Ensoleillement 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement}.
+
+
+
+Référencé par \hyperlink{class_ruche_ad21de5f7d48195be0658f52c55f34183}{Ruche\+::inserer\+Donnees\+Port\+Ensoleillement()}.
+
+
+\begin{DoxyCode}
+00059 \{
+00060     \textcolor{keywordflow}{return} \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement};
+00061 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_ensoleillement_a27c6d3d6e063e2f09fbe23a04cd89dfc}\label{class_infos_ensoleillement_a27c6d3d6e063e2f09fbe23a04cd89dfc}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!set\+Ensoleillement@{set\+Ensoleillement}}
+\index{set\+Ensoleillement@{set\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{set\+Ensoleillement()}{setEnsoleillement()}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::set\+Ensoleillement (\begin{DoxyParamCaption}\item[{double}]{ensoleillement }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ensoleillement} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}.
+
+
+\begin{DoxyCode}
+00048 \{
+00049     this->\hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement} = \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement};
+00050 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_ensoleillement_a35cd0359b8bcf5bd572cbef2195fa8d1}\label{class_infos_ensoleillement_a35cd0359b8bcf5bd572cbef2195fa8d1}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!set\+Horodatage\+Ensoleillement@{set\+Horodatage\+Ensoleillement}}
+\index{set\+Horodatage\+Ensoleillement@{set\+Horodatage\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Ensoleillement()}{setHorodatageEnsoleillement()}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::set\+Horodatage\+Ensoleillement (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Ensoleillement }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Ensoleillement} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement}.
+
+
+\begin{DoxyCode}
+00070 \{
+00071     this->\hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement} = 
+      \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement};
+00072 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}\label{class_infos_ensoleillement_a8c0f6c50648ffc4f47f049727e05e8d0}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!traitement\+Ensoleillement\+Envoye@{traitement\+Ensoleillement\+Envoye}}
+\index{traitement\+Ensoleillement\+Envoye@{traitement\+Ensoleillement\+Envoye}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{traitement\+Ensoleillement\+Envoye}{traitementEnsoleillementEnvoye}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::traitement\+Ensoleillement\+Envoye (\begin{DoxyParamCaption}\item[{double}]{ensoleillement\+Moyen,  }\item[{double}]{ensoleillement\+Minimum,  }\item[{double}]{ensoleillement\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculer\+Moyenne\+Horaire\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}\label{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!traiter\+Nouvelle\+Ensoleillement@{traiter\+Nouvelle\+Ensoleillement}}
+\index{traiter\+Nouvelle\+Ensoleillement@{traiter\+Nouvelle\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Ensoleillement}{traiterNouvelleEnsoleillement}}
+{\footnotesize\ttfamily void Infos\+Ensoleillement\+::traiter\+Nouvelle\+Ensoleillement (\begin{DoxyParamCaption}\item[{Q\+String}]{ensoleillement\+String,  }\item[{Q\+String}]{horodatage\+Ensoleillement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ensoleillement\+String} & qui corespond a l\textquotesingle{}ensoleillement envoyé par la \hyperlink{class_ruche}{Ruche} \\
+\hline
+{\em horodatage\+Ensoleillement} & correspond a l\textquotesingle{}horodatage de la mesure de l\textquotesingle{}ensoleillement \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculer\+Moyenne\+Horaire\+Ensoleillement()}, \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement}, \hyperlink{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}{ensoleillement\+Envoye()}, \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}, \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heure\+Courante\+Ensoleillement}, et \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatage\+Ensoleillement}.
+
+
+\begin{DoxyCode}
+00082 \{
+00083     \hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement} = ensoleillementString.toDouble();
+00084     this->\hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement} = 
+      \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement};
+00085     emit \hyperlink{class_infos_ensoleillement_ac89935ebb118ba2d28504d7341f67a7f}{ensoleillementEnvoye}(\hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement},
+      \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement});
+00086 
+00087     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}{horodatageEnsoleillement}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00088     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCouranteEnsoleillement"} << 
+      \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement} << dateTimeHorodatage.time().hour();
+00089     \textcolor{keywordflow}{if}(\hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement} == -1)
+00090     \{
+00091         \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement} = dateTimeHorodatage.time().hour();
+00092     \}
+00093     \textcolor{keywordflow}{if}(\hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement} == dateTimeHorodatage.time().hour())
+00094     \{
+00095         \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}.append(\hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement});
+00096     \}
+00097     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement}+1)%24 == dateTimeHorodatage.time().hour
+      ())
+00098     \{
+00099         \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculerMoyenneHoraireEnsoleillement}();
+00100         \hyperlink{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}{heureCouranteEnsoleillement} = dateTimeHorodatage.time().hour();
+00101         \hyperlink{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}{ensoleillements}.append(\hyperlink{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}{ensoleillement});
+00102     \}
+00103 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}\label{class_infos_ensoleillement_a5f3ad64743e3beeb4e64c4555ec6155c}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!ensoleillement@{ensoleillement}}
+\index{ensoleillement@{ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillement}{ensoleillement}}
+{\footnotesize\ttfamily double Infos\+Ensoleillement\+::ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_a388dd7b2ae97839a779ca1384ca8e6e2}{get\+Ensoleillement()}, \hyperlink{class_infos_ensoleillement_a27c6d3d6e063e2f09fbe23a04cd89dfc}{set\+Ensoleillement()}, et \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}\label{class_infos_ensoleillement_a6c3640ed7f3169e6263dc04b0191f478}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!ensoleillements@{ensoleillements}}
+\index{ensoleillements@{ensoleillements}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{ensoleillements}{ensoleillements}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Ensoleillement\+::ensoleillements\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculer\+Moyenne\+Horaire\+Ensoleillement()}, et \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}\label{class_infos_ensoleillement_adbf40d147f8a7dbcf5f71b1ac4e0933d}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!heure\+Courante\+Ensoleillement@{heure\+Courante\+Ensoleillement}}
+\index{heure\+Courante\+Ensoleillement@{heure\+Courante\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{heure\+Courante\+Ensoleillement}{heureCouranteEnsoleillement}}
+{\footnotesize\ttfamily int Infos\+Ensoleillement\+::heure\+Courante\+Ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_a43d0967a59887bf70071296fef0660d3}{calculer\+Moyenne\+Horaire\+Ensoleillement()}, et \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+\mbox{\Hypertarget{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}\label{class_infos_ensoleillement_aa2014f9d13e69e9807543737240dbfd3}} 
+\index{Infos\+Ensoleillement@{Infos\+Ensoleillement}!horodatage\+Ensoleillement@{horodatage\+Ensoleillement}}
+\index{horodatage\+Ensoleillement@{horodatage\+Ensoleillement}!Infos\+Ensoleillement@{Infos\+Ensoleillement}}
+\paragraph{\texorpdfstring{horodatage\+Ensoleillement}{horodatageEnsoleillement}}
+{\footnotesize\ttfamily Q\+String Infos\+Ensoleillement\+::horodatage\+Ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_ensoleillement_a0bd39540c8b4a242ea378c91bbc58b89}{get\+Horodatage\+Ensoleillement()}, \hyperlink{class_infos_ensoleillement_a35cd0359b8bcf5bd572cbef2195fa8d1}{set\+Horodatage\+Ensoleillement()}, et \hyperlink{class_infos_ensoleillement_abe5426845614e3383e915dc9b3cacc3e}{traiter\+Nouvelle\+Ensoleillement()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_ensoleillement_8h}{infos\+Ensoleillement.\+h}\item 
+\hyperlink{infos_ensoleillement_8cpp}{infos\+Ensoleillement.\+cpp}\end{DoxyCompactItemize}

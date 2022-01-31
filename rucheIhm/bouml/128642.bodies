@@ -1,0 +1,22 @@
+class InfosHumidite
+!!!131714.cpp!!!	getHumiditeInterieur() : double
+    return humiditeInterieur;
+!!!131842.cpp!!!	setHumiditeInterieur(in humiditeInterieur : double) : void
+    this->humiditeInterieur = humiditeInterieur;
+!!!131970.cpp!!!	getHorodatageHumiditeInterieur() : QString
+    return horodatageHumiditeInterieur;
+!!!132098.cpp!!!	setHorodatageHumiditeInterieur(in horodatageHumiditeInterieur : QString) : void
+    this->horodatageHumiditeInterieur = horodatageHumiditeInterieur;
+!!!132226.cpp!!!	getHumiditeExterieur() : double
+    return humiditeExterieur;
+!!!132354.cpp!!!	setHumiditeExterieur(in humiditeExterieur : double) : void
+    this->humiditeExterieur = humiditeExterieur;
+!!!132482.cpp!!!	getHorodatageHumiditeExterieur() : QString
+    return horodatageHumiditeExterieur;
+!!!132610.cpp!!!	setHorodatageHumiditeExterieur(in horodatageHumiditeExterieur : QString) : void
+    this->horodatageHumiditeExterieur = horodatageHumiditeExterieur;
+!!!132738.cpp!!!	traiterNouvelleHumiditeInterieur(in HumiditeInterieurstring : QString) : void
+    humiditeInterieur = HumiditeInterieurstring.toDouble();
+    emit humiditeInterieurEnvoye(humiditeInterieur);
+!!!132866.cpp!!!	traiterNouvelleHumiditeExterieur(in HumiditeExterieurstring : QString) : void
+    humiditeExterieur = HumiditeExterieurstring.toDouble();

@@ -1,0 +1,77 @@
+\hypertarget{mimemessage_8h_source}{}\subsection{mimemessage.\+h}
+\label{mimemessage_8h_source}\index{mimemessage.\+h@{mimemessage.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{  Copyright (c) 2011-2012 - Tőkés Attila}
+00003 \textcolor{comment}{  Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00004 \textcolor{comment}{}
+00005 \textcolor{comment}{  This library is free software; you can redistribute it and/or}
+00006 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}
+00007 \textcolor{comment}{  License as published by the Free Software Foundation; either}
+00008 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}
+00009 \textcolor{comment}{}
+00010 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}
+00011 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00012 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}
+00013 \textcolor{comment}{  Lesser General Public License for more details.}
+00014 \textcolor{comment}{}
+00015 \textcolor{comment}{  See the LICENSE file for more details.}
+00016 \textcolor{comment}{*/}
+00017 
+00018 \textcolor{preprocessor}{#ifndef MIMEMESSAGE\_H}
+00019 \textcolor{preprocessor}{#define MIMEMESSAGE\_H}
+00020 
+00021 \textcolor{preprocessor}{#include "\hyperlink{mimepart_8h}{mimepart.h}"}
+00022 \textcolor{preprocessor}{#include "\hyperlink{mimemultipart_8h}{mimemultipart.h}"}
+00023 \textcolor{preprocessor}{#include "\hyperlink{emailaddress_8h}{emailaddress.h}"}
+00024 
+00025 \textcolor{preprocessor}{#include "\hyperlink{smtpexports_8h}{smtpexports.h}"}
+00026 
+00027 \textcolor{keyword}{class }QIODevice;
+00028 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00029 
+00030 \textcolor{keyword}{class }MimeMessagePrivate;
+\Hypertarget{mimemessage_8h_source_l00031}\hyperlink{class_simple_mail_1_1_mime_message}{00031} \textcolor{keyword}{class }\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{SMTP\_EXPORT} \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage}
+00032 \{
+00033     Q\_DECLARE\_PRIVATE(\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage})
+00034 \textcolor{keyword}{public}:
+00035     \hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage}(\textcolor{keywordtype}{bool} createAutoMimeConent = \textcolor{keyword}{true});
+00036     \textcolor{keyword}{virtual} ~\hyperlink{class_simple_mail_1_1_mime_message}{MimeMessage}();
+00037 
+00038     \textcolor{keywordtype}{void} setSender(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &sender);
+00039     \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} sender() \textcolor{keyword}{const};
+00040 
+00041     \textcolor{keywordtype}{void} setToRecipients(\textcolor{keyword}{const} QList<EmailAddress> &toList);
+00042     QList<EmailAddress> toRecipients() \textcolor{keyword}{const};
+00043     \textcolor{keywordtype}{void} addTo(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt);
+00044 
+00045     \textcolor{keywordtype}{void} setCcRecipients(\textcolor{keyword}{const} QList<EmailAddress> &ccList);
+00046     QList<EmailAddress> ccRecipients() \textcolor{keyword}{const};
+00047     \textcolor{keywordtype}{void} addCc(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt);
+00048 
+00049     \textcolor{keywordtype}{void} setBccRecipients(\textcolor{keyword}{const} QList<EmailAddress> &bccList);
+00050     QList<EmailAddress> bccRecipients() \textcolor{keyword}{const};
+00051     \textcolor{keywordtype}{void} addBcc(\textcolor{keyword}{const} \hyperlink{class_simple_mail_1_1_email_address}{EmailAddress} &rcpt);
+00052 
+00053     \textcolor{keywordtype}{void} setSubject(\textcolor{keyword}{const} QString &subject);
+00054     \textcolor{keywordtype}{void} addPart(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart}* part);
+00055 
+00056     \textcolor{keywordtype}{void} setHeaderEncoding(\hyperlink{class_simple_mail_1_1_mime_part_ae67a2f5406958b95b18bf31a7bbeb5c9}{MimePart::Encoding});
+00057 
+00058     QString subject() \textcolor{keyword}{const};
+00059     QList<MimePart *> parts() \textcolor{keyword}{const};
+00060 
+00061     \hyperlink{class_simple_mail_1_1_mime_part}{MimePart}& getContent();
+00062     \textcolor{keywordtype}{void} setContent(\hyperlink{class_simple_mail_1_1_mime_part}{MimePart} *content);
+00063 
+00064     \textcolor{keywordtype}{bool} write(QIODevice *device);
+00065 
+00066 \textcolor{keyword}{protected}:
+\Hypertarget{mimemessage_8h_source_l00067}\hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{00067}     \hyperlink{class_simple_mail_1_1_mime_message_private}{MimeMessagePrivate} *\hyperlink{class_simple_mail_1_1_mime_message_abb70ca7430a820f75203dd6bd66cc47f}{d\_ptr};
+00068 \};
+00069 
+00070 \}
+00071 
+00072 \textcolor{preprocessor}{#endif // MIMEMESSAGE\_H}
+\end{DoxyCode}

@@ -1,0 +1,82 @@
+class RucheIhm
+!!!138626.cpp!!!	RucheIhm(inout parent : QWidget = 0)
+    qDebug()<< Q_FUNC_INFO;
+    // Initialisation de l'IHM
+    ui->setupUi(this);
+
+    // Instanciation de l'objet principal Ruche
+    maRuche = new Ruche(this);
+
+    // Initialisation des thermomètres
+    initialiserThermometre();
+
+    // Affichage plein écran
+    const int width = qApp->desktop()->availableGeometry(this).width(); // ou : qApp->desktop()->width()
+    const int height = qApp->desktop()->availableGeometry(this).height(); // ou : qApp->desktop()->height()
+    resize(width, height);
+
+    // Ajout de l'action Quitter
+    QAction *actionQuitter = new QAction("&Quitter", this);
+    actionQuitter->setShortcut(QKeySequence(QKeySequence::Quit)); // Ctrl+Q
+    addAction(actionQuitter);
+
+    // Connexion signaux/slots
+    connect(actionQuitter, SIGNAL(triggered()), this, SLOT(quitter()));
+    connect(ui->pushButtonNouvelleRuche, SIGNAL(clicked()),this, SLOT(creerNouvelleRuche()));
+    connect(ui->pushButtonReglages, SIGNAL(clicked()),this, SLOT(ouvrirReglages()));
+
+    /**********************************************SLOT AFFICHAGE MESURE**********************************************************************/
+    connect(maRuche,SIGNAL(nouvelleMesureTemperatureInterieurTraite(double,QString)),this,SLOT(afficherTemperatureInterieur(double,QString)));
+    connect(maRuche,SIGNAL(nouvelleMesureHumiditeInterieurTraite(double,QString)),this,SLOT(afficherHumiditeInterieur(double,QString)));
+    connect(maRuche,SIGNAL(nouvelleMesureTemperatureExterieurTraite(double,QString)),this,SLOT(afficherTemperatureExterieur(double,QString)));
+    connect(maRuche,SIGNAL(nouvelleMesureHumiditeExterieurTraite(double,QString)),this,SLOT(afficherHumiditeExterieur(double,QString)));
+    connect(maRuche,SIGNAL(nouvellePressionAtmospheriqueTraite(double,QString)),this,SLOT(afficherPressionAtmospherique(double,QString)));
+    connect(maRuche,SIGNAL(nouvelleMesureEnsoleillementTraite(double,QString)),this,SLOT(afficherEnsoleillement(double,QString)));
+
+    /**********************************************SLOT AFFICHAGE Alertes*********************************************************************/
+    connect(maRuche,SIGNAL(envoiAlertesTemperatureInterieur(SeuilsAlertes)),this,SLOT(afficherAlertesTemperatureInterieur(SeuilsAlertes)));
+    connect(maRuche,SIGNAL(envoiAlertesTemperatureExterieur(SeuilsAlertes)),this,SLOT(afficherAlertesTemperatureExterieur(SeuilsAlertes)));
+    connect(maRuche,SIGNAL(envoiAlertesHumiditeInterieur(SeuilsAlertes)),this,SLOT(afficherAlertesHumiditeInterieur(SeuilsAlertes)));
+    connect(maRuche,SIGNAL(envoiAlertesHumiditeExterieur(SeuilsAlertes)),this,SLOT(afficherAlertesHumiditeExterieur(SeuilsAlertes)));
+    connect(maRuche,SIGNAL(envoiAlertesPressionAtmospherique(SeuilsAlertes)),this,SLOT(afficherAlertesPressionAtmospherique(SeuilsAlertes)));
+
+    /**
+     * @todo etablir la connexion à la base de données
+     */
+!!!138754.cpp!!!	~RucheIhm()
+    delete ui;
+    delete nouvelleRuche;
+    //delete reglagesIhm;
+    qDebug()<< Q_FUNC_INFO;
+!!!138882.cpp!!!	initialiserThermometre() : void
+    ui->thermoTemperatureInterieur->setUpperBound(50);
+    ui->thermoTemperatureInterieur->setLowerBound(-10);
+    ui->thermoTemperatureInterieur->setScaleStepSize(5);
+    ui->thermoTemperatureInterieur->setPipeWidth(30);
+    ui->thermoTemperatureInterieur->alarmEnabled();
+
+    ui->thermoTemperatureExterieur->setUpperBound(50);
+    ui->thermoTemperatureExterieur->setLowerBound(-10);
+    ui->thermoTemperatureExterieur->setScaleStepSize(5);
+    ui->thermoTemperatureExterieur->setPipeWidth(30);
+    ui->thermoTemperatureExterieur->alarmEnabled();
+
+    // Initialisations Couleurs
+    QPalette paletteCouleur = ui->thermoTemperatureInterieur->palette();
+    paletteCouleur.setColor(QPalette::ButtonText, QColor(0,128,0));
+    ui->thermoTemperatureInterieur->setPalette(paletteCouleur);
+    ui->thermoTemperatureExterieur->setPalette(paletteCouleur);
+!!!139010.cpp!!!	afficherTemperatureInterieur(in temperatureInterieur : double) : void
+    qDebug() << Q_FUNC_INFO << "temperatureInterieur=" << temperatureInterieur;
+    ui->lcdNumberTemperatureInterieur->display(temperatureInterieur);
+    ui->thermoTemperatureInterieur->setValue(temperatureInterieur);
+    /**
+     * @todo afficher l'horodatage de cette mesure
+     */
+!!!139138.cpp!!!	afficherHumiditeInterieur(in humiditeInterieur : double) : void
+    ui->lcdNumberHumiditeInterieur->display(humiditeInterieur);
+!!!139266.cpp!!!	quitter() : void
+    // Fermeture de la fenêtre
+    close();
+!!!139394.cpp!!!	creerNouvelleRuche() : void
+    nouvelleRuche->show();

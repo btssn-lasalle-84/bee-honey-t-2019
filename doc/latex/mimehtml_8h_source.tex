@@ -1,0 +1,44 @@
+\hypertarget{mimehtml_8h_source}{}\subsection{mimehtml.\+h}
+\label{mimehtml_8h_source}\index{mimehtml.\+h@{mimehtml.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/*}
+00002 \textcolor{comment}{  Copyright (c) 2011-2012 - Tőkés Attila}
+00003 \textcolor{comment}{  Copyright (C) 2015 Daniel Nicoletti <dantti12@gmail.com>}
+00004 \textcolor{comment}{}
+00005 \textcolor{comment}{  This library is free software; you can redistribute it and/or}
+00006 \textcolor{comment}{  modify it under the terms of the GNU Lesser General Public}
+00007 \textcolor{comment}{  License as published by the Free Software Foundation; either}
+00008 \textcolor{comment}{  version 2.1 of the License, or (at your option) any later version.}
+00009 \textcolor{comment}{}
+00010 \textcolor{comment}{  This library is distributed in the hope that it will be useful,}
+00011 \textcolor{comment}{  but WITHOUT ANY WARRANTY; without even the implied warranty of}
+00012 \textcolor{comment}{  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU}
+00013 \textcolor{comment}{  Lesser General Public License for more details.}
+00014 \textcolor{comment}{}
+00015 \textcolor{comment}{  See the LICENSE file for more details.}
+00016 \textcolor{comment}{*/}
+00017 
+00018 \textcolor{preprocessor}{#ifndef MIMEHTML\_H}
+00019 \textcolor{preprocessor}{#define MIMEHTML\_H}
+00020 
+00021 \textcolor{preprocessor}{#include "\hyperlink{mimetext_8h}{mimetext.h}"}
+00022 
+00023 \textcolor{preprocessor}{#include "\hyperlink{smtpexports_8h}{smtpexports.h}"}
+00024 
+00025 \textcolor{keyword}{namespace }\hyperlink{namespace_simple_mail}{SimpleMail} \{
+00026 
+\Hypertarget{mimehtml_8h_source_l00027}\hyperlink{class_simple_mail_1_1_mime_html}{00027} \textcolor{keyword}{class }\hyperlink{smtpexports_8h_ac580c9660cb24a34b13807f4eb0e1bd0}{SMTP\_EXPORT} \hyperlink{class_simple_mail_1_1_mime_html}{MimeHtml} : \textcolor{keyword}{public} \hyperlink{class_simple_mail_1_1_mime_text}{MimeText}
+00028 \{
+00029 \textcolor{keyword}{public}:
+00030     \hyperlink{class_simple_mail_1_1_mime_html}{MimeHtml}(\textcolor{keyword}{const} QString &html = QString());
+00031     ~\hyperlink{class_simple_mail_1_1_mime_html}{MimeHtml}();
+00032 
+00033     \textcolor{keywordtype}{void} setHtml(\textcolor{keyword}{const} QString &html);
+00034     QString html() \textcolor{keyword}{const};
+00035 \};
+00036 
+00037 \}
+00038 
+00039 \textcolor{preprocessor}{#endif // MIMEHTML\_H}
+\end{DoxyCode}

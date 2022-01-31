@@ -1,0 +1,3913 @@
+format 221
+"rucheIhm" // rucheIhm
+  revision 2
+  modified_by 2 "tv"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/home/tv/Documents/svn/projets-2019/bee-honey-t/trunk/rucheIhm/"
+  cpp_src_dir "/home/tv/Documents/svn/projets-2019/bee-honey-t/trunk/rucheIhm/"
+  classview 128002 "rucheIhm"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128002 "BaseDeDonnees"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "#define DEBUG_BASEDEDONNEES"
+      classrelation 128002 // <generalisation>
+	relation 128002 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128002 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 128002 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 128002 "getInstance"
+	class_operation preserve_cpp_body_indent public return_type class_ref 128002 // BaseDeDonnees
+	nparams 1
+	  param in name "type" explicit_type "QString"
+	    defaultvalue "\"QMYSQL\""
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} * ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128130 "detruireInstance"
+	class_operation preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128258 "estConnecte"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128386 "connecter"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 4
+	  param in name "nomBase" explicit_type "QString"
+	    defaultvalue "BDD_NOMBASE"
+	  param in name "username" explicit_type "QString"
+	    defaultvalue "BDD_USERNAME"
+	  param in name "password" explicit_type "QString"
+	    defaultvalue "BDD_PASSWORD"
+	  param in name "serveur" explicit_type "QString"
+	    defaultvalue "BDD_SERVEUR"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128514 "estOuvert"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128642 "ouvrir"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "fichierBase" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 128770 "executer"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 1
+	  param in name "requete" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// pour : UPDATE, INSERT et DELETE 
+
+// pour : UPDATE, INSERT et DELETE 
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " uniquement pour : UPDATE, INSERT et DELETE "
+      end
+
+      operation 128898 "recuperer"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "requete" explicit_type "QString"
+	  param inout name "donnees" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// uniquement pour récupérer (SELECT) UN champ d'UN seul enregistrement
+//Remarque : le champ est stocké dans un QString
+//
+
+// uniquement pour récupérer (SELECT) UN champ d'UN seul enregistrement
+//Remarque : le champ est stocké dans un QString
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " uniquement pour : SELECT "
+      end
+
+      operation 129026 "recuperer"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "requete" explicit_type "QString"
+	  param inout name "donnees" explicit_type "QStringList"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// uniquement pour récupérer (SELECT) plusieurs champs d'UN seul enregistrement
+//Remarque : les différents champs sont stockés dans un QStringList
+//
+
+// uniquement pour récupérer (SELECT) plusieurs champs d'UN seul enregistrement
+//Remarque : les différents champs sont stockés dans un QStringList
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " 1 -> 1"
+      end
+
+      operation 129154 "recuperer"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "requete" explicit_type "QString"
+	  param inout name "donnees" explicit_type "QVector<QString>"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// uniquement pour récupérer (SELECT) un seul champ de plusieurs enregistrements
+//Remarque : le champ des différents enregistrements est stocké dans un QVector de QString
+//
+
+// uniquement pour récupérer (SELECT) un seul champ de plusieurs enregistrements
+//Remarque : le champ des différents enregistrements est stocké dans un QVector de QString
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " 1 -> 1..*"
+      end
+
+      operation 129282 "recuperer"
+	preserve_cpp_body_indent public explicit_return_type "bool"
+	nparams 2
+	  param in name "requete" explicit_type "QString"
+	  param inout name "donnees" explicit_type "QVector<QStringList>"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "// uniquement pour récupérer (SELECT) plusieurs champs de plusieurs enregistrements
+//Remarque : les différents champs des différents enregistrements sont stockés dans un QVector de QStringList
+//
+
+// uniquement pour récupérer (SELECT) plusieurs champs de plusieurs enregistrements
+//Remarque : les différents champs des différents enregistrements sont stockés dans un QVector de QStringList
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment " 1..* -> 1"
+      end
+
+      operation 129410 "BaseDeDonnees"
+	preserve_cpp_body_indent private explicit_return_type ""
+	nparams 1
+	  param in name "type" explicit_type "QString"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+	comment " 1..* -> 1..*"
+      end
+
+      operation 129538 "~BaseDeDonnees"
+	preserve_cpp_body_indent private explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 128130 // baseDeDonnees (<unidirectional association>)
+	relation 128130 --->
+	  a role_name "baseDeDonnees" init_value "= NULL" class_relation private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 128130 // baseDeDonnees (<unidirectional association>)
+	  b parent class_ref 128002 // BaseDeDonnees
+      end
+
+      attribute 128002 "typeBase"
+	class_attribute private explicit_type "QString"
+	init_value "= \"QMYSQL\""
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128130 "nbAcces"
+	class_attribute private explicit_type "int"
+	init_value "= 0"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128258 "db"
+	private explicit_type "QSqlDatabase"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128386 "mutex"
+	private explicit_type "QMutex"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 128130 "typedef1"
+      visibility package stereotype "typedef" explicit_base_type "QObject"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128258 "PortsTTN"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 128514 "portInconnu"
+	public type class_ref 128258 // PortsTTN
+	init_value " 0"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128642 "portMesureEnergie"
+	public type class_ref 128258 // PortsTTN
+	init_value " 1"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128770 "portMesurePoids"
+	public type class_ref 128258 // PortsTTN
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128898 "portMesureRuche"
+	public type class_ref 128258 // PortsTTN
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129026 "portMesureEnvironement"
+	public type class_ref 128258 // PortsTTN
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129154 "portMesureEnsoleillement"
+	public type class_ref 128258 // PortsTTN
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129282 "nbPortsTTN"
+	public type class_ref 128258 // PortsTTN
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 128386 "Communication"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class Communication
+
+\\brief La classe Communication
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+"
+      classrelation 128258 // <generalisation>
+	relation 128258 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128258 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 128130 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 129666 "Communication"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QObject"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//@todo gérer plusieurs ruches (cf. Device ID et TTN_TOPIC)
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} : QObject(parent), client(0), abonnement(0), nomTopic(TTN_TOPIC)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129794 "~Communication"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief destructeur de la classse Communication
+//\\fn Communication::~Communication
+//
+
+${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 128386 // portsTTn (<directional composition>)
+	relation 128386 *-->
+	  a role_name "portsTTn" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128386 // portsTTn (<directional composition>)
+	  b parent class_ref 128258 // PortsTTN
+      end
+
+      attribute 129410 "client"
+	private explicit_type "QMqttClient"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129538 "abonnement"
+	private explicit_type "QMqttSubscription"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 129666 "nomTopic"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      extra_member 128258 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 129922 "connecteTTN"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief slot permetant la connection au serveur ttn
+//\\fn Communication::connecteTTN
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130050 "deconnecteTTN"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief slot permetant la deconnection au serveur ttn
+//\\fn Communication::deconnecteTTN
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130178 "receptionner"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "message" explicit_type "QByteArray"
+	  param in name "topic" explicit_type "QMqttTopicName"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130306 "reponsePingTTN"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief slot permetant d'effectuer un ping vers le serveur ttn
+//\\fn Communication::reponsePingTTN
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130434 "changementEtatTTN"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief slot permetant de recevoir l'etat du serveur ttn
+//\\fn Communication::changementEtatTTN
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130562 "erreurClientTTN"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief slot permetant de recevoir les erreur rencontré lors de la connection au serveur ttn
+//\\fn Communication::erreurClientTTN
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 128386 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 130690 "etatClientConnexion"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "connexion" explicit_type "bool"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 130818 "messageRecu"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "message" explicit_type "QByteArray"
+	  param in name "topic" explicit_type "QMqttTopicName"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128514 "InfosEnsoleillement"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class InfosEnsoleillement
+
+\\brief La classe InfosEnsoleillement
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+"
+      attribute 129794 "ensoleillement"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< valeur courante de l'ensoleillement en w/m²"
+      end
+
+      attribute 129922 "horodatageEnsoleillement"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "@todo mettre à jour l'horodatage
+
+!< horodatage de la l'ensoleillement"
+      end
+
+      operation 130946 "InfosEnsoleillement"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file infosEnsoleillement.cpp
+//
+//\\brief Définition de la classe InfosEnsoleillement
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+
+${inline}${class}::${name}${(}${)} : ensoleillement(0.), horodatageEnsoleillement(\"\")
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "@todo créer un conteneur pour les mesures effectuées sur une heure
+
+
+@todo calculer et enregistrer toutes les heures les mesures (moyennes, min, max)
+"
+      end
+
+      operation 131074 "getEnsoleillement"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut ensoleillement
+//\\fn InfosEnsoleillement::getEnsoleillement
+//@return un \\e double correspondant à la valeur de l'attibut ensoleillement
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131202 "setEnsoleillement"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "ensoleillement" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131330 "getHorodatageEnsoleillement"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attibut horodatageEnsoleillement
+//\\fn InfosEnsoleillement::getHorodatageEnsoleillement
+//@return un QString correspondant a la valeur de l'attribut horodatageEnsoleillement
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131458 "setHorodatageEnsoleillement"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatageEnsoleillement" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128642 "InfosHumidite"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class InfosHumidite
+
+\\brief La classe InfosHumidite
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+"
+      classrelation 128514 // <generalisation>
+	relation 128514 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128514 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 128514 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      attribute 130050 "humiditeInterieur"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< humidité interieur en pourcentage"
+      end
+
+      attribute 130178 "humiditeExterieur"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< humidité exterieur en pourcentage"
+      end
+
+      attribute 130306 "horodatageHumiditeInterieur"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "@todo mettre à jour les horodatages
+
+!< horodatage de l'humidité interieur"
+      end
+
+      attribute 130434 "horodatageHumiditeExterieur"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< horodatage de l'humidité exterieur"
+      end
+
+      operation 131586 "InfosHumidite"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QObject"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file infosHumidite.cpp
+//
+//\\brief Définition de la classe InfosHumidite
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la classe InfosHumidite
+//
+//\\fn InfosHumidite::InfosHumidite
+//
+//\\details Définition des attributs pressionAtmospherique à 0 et l'attribut horodatagePressionAtmospherique à \"\"
+//
+//
+
+//
+//\\file infosHumidite.cpp
+//
+//\\brief Définition de la classe InfosHumidite
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} :QObject(parent),humiditeInterieur(0),humiditeExterieur(0),horodatageHumiditeInterieur(\"\"),horodatageHumiditeExterieur(\"\")
+ :QObject(parent),humiditeInterieur(0),humiditeExterieur(0),horodatageHumiditeInterieur(\"\"),horodatageHumiditeExterieur(\"\")
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "@todo créer un conteneur pour les mesures effectuées sur une heure
+
+
+@todo calculer et enregistrer toutes les heures les mesures (moyennes, min, max)
+"
+      end
+
+      operation 131714 "getHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut humiditeInterieur
+//\\fn    InfosHumidite::getHumiditeInterieur
+//@return \\e double corespondant a la valeur de l'attribut humiditeInterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131842 "setHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131970 "getHorodatageHumiditeInterieur"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut horodatageHumiditeInterieur
+//\\fn InfosHumidite::getHorodatageHumiditeInterieur
+//@return \\e QString  horodatageHumiditeInterieur corespondant a l'attribut horodatageHumiditeInterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132098 "setHorodatageHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatageHumiditeInterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132226 "getHumiditeExterieur"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut humiditeExterieur
+//\\fn InfosHumidite::getHumiditeExterieur
+//@return \\e double la valeur de l'humiditeExterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132354 "setHumiditeExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeExterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132482 "getHorodatageHumiditeExterieur"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut horodatageHumiditeExterieur
+//\\fn    InfosHumidite::getHorodatageHumiditeExterieur
+//@return un \\e QString correspondant a la valeur de l'attribut horodatageHumiditeExterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132610 "setHorodatageHumiditeExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatageHumiditeExterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 128642 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 132738 "traiterNouvelleHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "HumiditeInterieurstring" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 132866 "traiterNouvelleHumiditeExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "HumiditeExterieurstring" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 128770 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 132994 "humiditeInterieurEnvoye"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "HumiditeInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128770 "InfosPressionAtmospherique"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class InfosPressionAtmospherique
+
+\\brief La classe InfosPressionAtmospherique
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+"
+      attribute 130562 "pressionAtmospherique"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< la pression atmospherique (unité ?)"
+      end
+
+      attribute 130690 "horodatagePressionAtmospherique"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "@todo mettre à jour l'horodatage
+
+!< horodatage de la pression atmospherique"
+      end
+
+      operation 133122 "InfosPressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file infosPressionAtmospherique.cpp
+//
+//\\brief Définition de la classe InfosPressionAtmospherique
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+
+${inline}${class}::${name}${(}${)} : pressionAtmospherique(0), horodatagePressionAtmospherique(\"\")
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "@todo créer un conteneur pour les mesures effectuées sur une heure
+
+
+@todo calculer et enregistrer toutes les heures les mesures (moyennes, min, max)
+"
+      end
+
+      operation 133250 "~InfosPressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief destructeur de la classe InfosPressionAtmospherique
+//\\fn InfosPressionAtmospherique::~InfosPressionAtmospherique
+//
+
+${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133378 "getPressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut pressionAtmospherique
+//\\fn    InfosPressionAtmospherique::getPressionAtmospherique
+//@return \\e double pressionAtmospherique
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133506 "setPressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "pressionAtmospherique" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133634 "getHorodatagePressionAtmospherique"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief getter de l'attribut horodatagePressionAtmospherique
+//\\fn InfosPressionAtmospherique::getHorodatagePressionAtmospherique
+//@return \\e QString horodatagePressionAtmospherique
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 133762 "setHorodatagePressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatagePressionAtmospherique" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128898 "InfosTemperature"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class InfosTemperature
+
+\\brief La classe InfosTemperature
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+"
+      classrelation 128642 // <generalisation>
+	relation 128642 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128642 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 128898 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      attribute 130818 "temperatureInterieur"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< temperature interieur en degrée Celsius"
+      end
+
+      attribute 130946 "temperatureExterieur"
+	private explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< temperature exterieuren degrée Celsius"
+      end
+
+      attribute 131074 "horodatageTemperatureInterieur"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "@todo mettre à jour les horodatages
+
+!< horodatage de la temperature interieur"
+      end
+
+      attribute 131202 "horodatageTemperatureExterieur"
+	private explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< horodatage de la temperature exterieur"
+      end
+
+      operation 133890 "InfosTemperature"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QObject"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file infosTemperature.cpp
+//
+//\\brief Définition de la classe InfosTemperature
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la classe InfosTemperature
+//
+//\\fn InfosTemperature::InfosTemperature
+//
+//\\details Définition des attributs temperatureInterieur, temperatureExterieur à 0 et les attributs temperatureExterieur horodatageTemperatureExterieur à \"\"
+//
+//\\param parent QObject Adresse de l'objet Qt parent
+//
+//
+
+//
+//\\file infosTemperature.cpp
+//
+//\\brief Définition de la classe InfosTemperature
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la classe InfosTemperature
+//
+//\\fn InfosTemperature::InfosTemperature
+//
+//\\details Définition des attributs temperatureInterieur, temperatureExterieur à 0 et les attributs temperatureExterieur horodatageTemperatureExterieur à \"\"
+//
+//\\param parent QObject Adresse de l'objet Qt parent
+//
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)}:QObject(parent),temperatureInterieur(0),temperatureExterieur(0),horodatageTemperatureInterieur(\"\"),horodatageTemperatureExterieur(\"\")
+:QObject(parent),temperatureInterieur(0),temperatureExterieur(0),horodatageTemperatureInterieur(\"\"),horodatageTemperatureExterieur(\"\")
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+	comment "@todo créer un conteneur pour les mesures effectuées sur une heure
+
+
+@todo calculer et enregistrer toutes les heures les mesures (moyennes, min, max)
+"
+      end
+
+      operation 134018 "~InfosTemperature"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134146 "getTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    getter  de l'attribut temperatureInterieur
+//\\fn       InfosTemperature::getTemperatureInterieur
+//\\return   Un \\e double correspondant a la temperature intérieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134274 "setTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134402 "getHorodatageTemperatureInterieur"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    getter  de l'attribut horodatagetemperatureInterieur
+//\\fn       InfosTemperature::getHorodatageTemperatureInterieur
+//\\return   Un \\e QString correspondant a l'horodatage temperature intérieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134530 "setHorodatageTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatageTemperatureInterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134658 "getTemperatureExterieur"
+	preserve_cpp_body_indent public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    getter  de l'attribut temperatureExterieur
+//\\fn       InfosTemperature::getTemperatureExterieur
+//\\return   Un \\e double correspondant a la  temperature exterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134786 "setTemperatureExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureExterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 134914 "getHorodatageTemperatureExterieur"
+	preserve_cpp_body_indent const public explicit_return_type "QString"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    getter  de l'attribut horodatagetemperatureExterieur
+//\\fn       InfosTemperature::getHorodatageTemperatureeExterieur
+//\\return   Un \\e QString correspondant a l'horodatage temperature exterieur
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135042 "setHorodatageTemperatureExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "horodatageTemperatureExterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 129026 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 135170 "traiterNouvelleTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieurString" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135298 "traiterNouvelleTemperatureExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureExterieurString" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 129154 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 135426 "temperatureInterieurEnvoye"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 129026 "NouvelleRucheIhm"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "@todo créer une nouvelle ruche
+"
+      classrelation 128770 // <generalisation>
+	relation 128770 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128770 // <generalisation>
+	  b parent class_ref 129154 // typedef2
+      end
+
+      extra_member 129282 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 135554 "NouvelleRucheIhm"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QWidget"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}explicit ${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file rucheIhm.cpp
+//
+//\\brief Définition de la classe NouvelleRucheIhm
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la fenêtre principale
+//
+//\\fn NouvelleRucheIhm::NouvelleRucheIhm
+//
+//\\param parent QObject Adresse de l'objet Qt parent (0 = fenêtre principale)
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} :
+    QDialog(parent),
+    ui(new Ui::NouvelleRucheIhm)
+ :
+    QDialog(parent),
+    ui(new Ui::NouvelleRucheIhm)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135682 "~NouvelleRucheIhm"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief Destructeur de la fenêtre principale
+//
+//\\fn NouvelleRucheIhm::~NouvelleRucheIhm
+//
+//
+
+${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 131330 "ui"
+	private explicit_type "Ui::NouvelleRucheIhm"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 129154 "typedef2"
+      visibility package stereotype "typedef" explicit_base_type "QDialog"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 129282 "DonneesBatterie"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " Les structures de données pour les mesures"
+      attribute 131458 "tension"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131586 "courant"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131714 "charge"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 129410 "DonneesRuche"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128898 // donneesBatterie (<directional composition>)
+	relation 128898 *-->
+	  a role_name "donneesBatterie" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128898 // donneesBatterie (<directional composition>)
+	  b parent class_ref 129282 // DonneesBatterie
+      end
+
+      attribute 131842 "poids"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 131970 "temperatureInterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132098 "humiditeInterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132226 "temperatureExterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132354 "humiditeExterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132482 "pressionAtmospherique"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132610 "ensoleillement"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 129538 "HorodatageDonneesBatterie"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " Les structures de données pour les horodatages des mesures"
+      attribute 132738 "tension"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132866 "courant"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 132994 "charge"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 129666 "HorodatageDonneesRuche"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 129026 // horodatageDonneesBatteriedonneesBatterie (<directional composition>)
+	relation 129026 *-->
+	  a role_name "horodatageDonneesBatteriedonneesBatterie" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129026 // horodatageDonneesBatteriedonneesBatterie (<directional composition>)
+	  b parent class_ref 129538 // HorodatageDonneesBatterie
+      end
+
+      attribute 133122 "poids"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133250 "temperatureInterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133378 "humiditeInterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133506 "temperatureExterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133634 "humiditeExterieur"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133762 "pressionAtmospherique"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 133890 "ensoleillement"
+	public explicit_type "QString"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 129794 "DonneesRucheHorodatees"
+      visibility package stereotype "struct"
+      cpp_decl "${comment}${template}struct ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment " La structure de données pour les mesures horodatées"
+      classrelation 129154 // donneesRuche (<directional composition>)
+	relation 129154 *-->
+	  a role_name "donneesRuche" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129154 // donneesRuche (<directional composition>)
+	  b parent class_ref 129410 // DonneesRuche
+      end
+
+      classrelation 129282 // horodatageDonneesRuche (<directional composition>)
+	relation 129282 *-->
+	  a role_name "horodatageDonneesRuche" public
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129282 // horodatageDonneesRuche (<directional composition>)
+	  b parent class_ref 129666 // HorodatageDonneesRuche
+      end
+    end
+
+    class 129922 "Ruche"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class Ruche
+
+\\brief La classe Ruche
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+
+
+@todo identifier la ruche si plusieurs ruches
+
+
+@todo paramétrer la ruche (seuils ...)
+"
+      classrelation 129410 // <generalisation>
+	relation 129410 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 129410 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 129410 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 135810 "Ruche"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QObject"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file ruche.cpp
+//
+//\\brief Définition de la classe Ruche
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la classe Ruche
+//
+//\\fn Ruche::Ruche
+//
+//\\details Définition des pointeurs ensoleillementRuche, humiditeRuche, pressionAtmospheriqueRuche, temperatureRuche, communicationRuche à 0 (0 = NULL soit aucune addresse)
+//
+//\\param parent QObject Adresse de l'objet Qt parent
+//
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} : QObject(parent), ensoleillementRuche(0), humiditeRuche(0), pressionAtmospheriqueRuche(0), temperatureRuche(0), communicationRuche(0)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 135938 "~Ruche"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief Destructeur de la classe Ruche
+//
+//\\fn Ruche::~Ruche
+//
+//
+
+//\\brief Destructeur de la classe Ruche
+//
+//\\fn Ruche::~Ruche
+//
+//
+
+${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      classrelation 129538 // ensoleillementRuche (<unidirectional association>)
+	relation 129538 --->
+	  a role_name "ensoleillementRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 129538 // ensoleillementRuche (<unidirectional association>)
+	  b parent class_ref 128514 // InfosEnsoleillement
+      end
+
+      classrelation 129666 // humiditeRuche (<unidirectional association>)
+	relation 129666 --->
+	  a role_name "humiditeRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 129666 // humiditeRuche (<unidirectional association>)
+	  b parent class_ref 128642 // InfosHumidite
+      end
+
+      classrelation 129794 // pressionAtmospheriqueRuche (<unidirectional association>)
+	relation 129794 --->
+	  a role_name "pressionAtmospheriqueRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 129794 // pressionAtmospheriqueRuche (<unidirectional association>)
+	  b parent class_ref 128770 // InfosPressionAtmospherique
+      end
+
+      classrelation 129922 // temperatureRuche (<unidirectional association>)
+	relation 129922 --->
+	  a role_name "temperatureRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 129922 // temperatureRuche (<unidirectional association>)
+	  b parent class_ref 128898 // InfosTemperature
+      end
+
+      classrelation 130050 // communicationRuche (<unidirectional association>)
+	relation 130050 --->
+	  a role_name "communicationRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 130050 // communicationRuche (<unidirectional association>)
+	  b parent class_ref 128386 // Communication
+      end
+
+      classrelation 130178 // bdd (<unidirectional association>)
+	relation 130178 --->
+	  a role_name "bdd" private
+	    comment "!< agrégation de l'objet BaseDeDonnees"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 130178 // bdd (<unidirectional association>)
+	  b parent class_ref 128002 // BaseDeDonnees
+      end
+
+      operation 136066 "connecterGestionMessageTraite"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\fn       connecterGestionMessageTraite
+//\\brief    methode regroupant les conection des messages taité cenant des classe
+//\\details  methode permetant les conection des messages traité des classe infos vers la classe ruche
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136194 "connecterGestionMessageBrut"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\fn       Ruche::connecterGestionMessageBrut
+//\\brief    methode regroupant les conection des messages brut
+//\\details  methode permetant les conection des messages brut vers les classe infos pour traitement
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136322 "extraireDonneesBrutes"
+	private explicit_return_type "QString"
+	nparams 1
+	  param in name "message" explicit_type "QByteArray"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 136450 "recupererNumeroDePort"
+	private return_type class_ref 128258 // PortsTTN
+	nparams 1
+	  param in name "message" explicit_type "QByteArray"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 136578 "extraireDonnees"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 2
+	  param in name "port" type class_ref 128258 // PortsTTN
+	  param in name "message" explicit_type "QByteArray"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    extait les données
+//\\fn       Ruche::extraireDonnees
+//\\details  extait les données avec le numéro de port spécifié par la méthode recupérerNomDePort
+//\\param    port       correspond au numéro de port
+//\\param    message    message reçu émis par le serveur ttn grace au potocole mqtt
+//
+
+//\\brief    extait les données
+//\\details  extait les données avec le numéro de port spécifié par la méthode recupérerNomDePort
+//\\param    port       correspond au numéro de port
+//\\param    message    message reçu émis par le serveur ttn grace au potocole mqtt
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136706 "recupererDonnees"
+	preserve_cpp_body_indent private explicit_return_type "QString"
+	nparams 3
+	  param in name "message" explicit_type "QByteArray"
+	  param in name "objetJson" explicit_type "QString"
+	  param in name "sousObjetJson" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    recuperer les données
+//\\fn       Ruche::recupererDonnees
+//\\details  Méthode permetant de recuperer les données en extrayant celle ci dans un sous objet Json
+//\\param    message        message reçu message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    objetJson      nom de l'objet Json
+//\\param    sousObjetJson  nom du sous objet Json
+//\\return   Un \\e QString correspondant a la donnée
+//
+
+//\\brief    recuperer les données
+//\\details  Méthode permetant de recuperer les données en extrayant celle ci dans un sous objet Json
+//\\param    message        message reçu message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    objetJson      nom de l'objet Json
+//\\param    sousObjetJson  nom du sous objet Json
+//\\return   Un \\e QString correspondant a la donnée
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 136834 "recupererHorodatage"
+	preserve_cpp_body_indent private explicit_return_type "QString"
+	nparams 3
+	  param in name "message" explicit_type "QByteArray"
+	  param in name "objetJson" explicit_type "QString"
+	  param in name "sousObjetJson" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    recuperer l'horodatage
+//\\fn       Ruche::recupererHorodatage
+//\\details  Méthode permetant de recuperer l'horodatage en extrayant celle ci dans un sous objet Json
+//\\param    message        message reçu message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    objetJson      nom de l'objet Json
+//\\param    sousObjetJson  nom du sous objet Json
+//\\return   Un \\e QString correspondant a l'horodatage
+//
+
+//\\brief    recuperer l'horodatage
+//\\details  Méthode permetant de recuperer l'horodatage en extrayant celle ci dans un sous objet Json
+//\\param    message        message reçu message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    objetJson      nom de l'objet Json
+//\\param    sousObjetJson  nom du sous objet Json
+//\\return   Un \\e QString correspondant a l'horodatage
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 129538 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 136962 "recevoirMessage"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "message" explicit_type "QByteArray"
+	  param in name "topic" explicit_type "QMqttTopicName"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    slot recevant les données
+//\\fn       Ruche::recevoirMessage
+//\\details  slot permetant la reception des données et du nom de topic
+//\\param    message    message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    topic      nom du topic emettant la données
+//
+
+//\\brief    slot recevant les données
+//\\details  slot permetant la reception des données et du nom de topic
+//\\param    message    message reçu émis par le serveur ttn grace au potocole mqtt
+//\\param    topic      nom du topic emettant la données
+//
+
+${inline}${type} ${class}::${name}${(}const ${t0} & ${p0}, const ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137090 "recevoirTemperatureInterieurTraite"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    slot recevant la temperature interieur traite
+//\\details  cette fonction emet la valeur traitée a l'ihm
+//\\param    temperatureInterieur    correspond aux mesures temperature traitée
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 137218 "recevoirMesureHumiditeInterieurTraite"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeInterieurTraite" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief    slot recevant la humidite interieur traite
+//\\details  cette fonction émet la valeur traitée a l'ihm
+//\\param    humiditeInterieurTraite    correspond aux mesures d'humidite traitée
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 129666 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 137346 "nouvelleMesureBatterie"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "donneesBatterie" type class_ref 129282 // DonneesBatterie
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "SIGNAUX VERS CLASSE INFOS***************************
+ @todo a definir 
+void nouvelleDonneesBrutes(QByteArray donnees);
+ @todo a definir 
+void nouvelleDonneesRuche(DonneesRuche donneesRuche);"
+      end
+
+      operation 137474 "nouvelleMesurePoids"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "poids" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosBatterie"
+      end
+
+      operation 137602 "nouvelleTemperatureInterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosPoids"
+      end
+
+      operation 137730 "nouvelleHumiditeInterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeInterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosTemperature"
+      end
+
+      operation 137858 "nouvelleTemperatureExterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureExterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosHumidite"
+      end
+
+      operation 137986 "nouvelleHumiditeExterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeExterieur" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosTemperature"
+      end
+
+      operation 138114 "nouvellePressionAtmospherique"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "pressionAtmospherique" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosHumidite"
+      end
+
+      operation 138242 "nouvelleMesureEnsoleillement"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "ensoleillement" explicit_type "QString"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosPressionAtmospherique"
+      end
+
+      operation 138370 "nouvelleMesureTemperatureInterieurTraite"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieurTraite" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe InfosEnsoleillement
+ SIGNAUX VERS IHM *********************************"
+      end
+
+      operation 138498 "nouvelleMesureHumiditeInterieurTraite"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeInterieurTraite" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+	comment "!< signal vers la classe RucheIhm"
+      end
+    end
+
+    class 130050 "RucheIhm"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class RucheIhm
+
+\\brief La classe IHM
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.1
+
+
+
+@todo afficher les mesures sous forme de graphiques
+
+
+@todo afficher les alertes
+"
+      classrelation 130306 // <generalisation>
+	relation 130306 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 130306 // <generalisation>
+	  b parent class_ref 130178 // typedef3
+      end
+
+      extra_member 129794 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 138626 "RucheIhm"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QWidget"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}explicit ${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file nouvelleRucheIhm.cpp
+//
+//\\brief Définition de la classe RucheIhm
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la fenêtre principale
+//
+//\\fn RucheIhm::RucheIhm
+//
+//\\param parent QObject Adresse de l'objet Qt parent (0 = fenêtre principale)
+//
+
+//
+//\\file rucheIhm.cpp
+//
+//\\brief Définition de la classe RucheIhm
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//
+//
+//\\brief Constructeur de la fenêtre principale
+//
+//\\fn RucheIhm::RucheIhm
+//
+//\\param parent QObject Adresse de l'objet Qt parent (0 = fenêtre principale)
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} : QWidget(parent), ui(new Ui::RucheIhm), maRuche(0), bdd(0), nouvelleRuche(new NouvelleRucheIhm)//, reglagesIhm(new ReglagesIhm)
+ : QWidget(parent), ui(new Ui::RucheIhm), maRuche(0), bdd(0), nouvelleRuche(new NouvelleRucheIhm)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 138754 "~RucheIhm"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief Destructeur de la fenêtre principale
+//
+//\\fn RucheIhm::~RucheIhm
+//
+//
+
+//\\brief Destructeur de la fenêtre principale
+//
+//\\fn RucheIhm::~RucheIhm
+//
+//
+
+${inline}${class}::${name}${(}${)}${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      attribute 134018 "ui"
+	private explicit_type "Ui::RucheIhm"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "!< agrégation de la partie graphique de l'IHM"
+      end
+
+      classrelation 130434 // maRuche (<unidirectional association>)
+	relation 130434 --->
+	  a role_name "maRuche" private
+	    comment "!< association de l'objet Ruche"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 130434 // maRuche (<unidirectional association>)
+	  b parent class_ref 129922 // Ruche
+      end
+
+      classrelation 130562 // bdd (<unidirectional association>)
+	relation 130562 --->
+	  a role_name "bdd" private
+	    comment "!< agrégation de l'objet BaseDeDonnees"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 130562 // bdd (<unidirectional association>)
+	  b parent class_ref 128002 // BaseDeDonnees
+      end
+
+      classrelation 130690 // nouvelleRuche (<unidirectional association>)
+	relation 130690 --->
+	  a role_name "nouvelleRuche" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 130690 // nouvelleRuche (<unidirectional association>)
+	  b parent class_ref 129026 // NouvelleRucheIhm
+      end
+
+      operation 138882 "initialiserThermometre"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief initialise les thermometres
+//
+//\\fn RucheIhm::initialiserThermometre
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 129922 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 139010 "afficherTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "temperatureInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief
+//
+//\\fn RucheIhm::afficherTemperatureInterieur
+//
+//\\param temperatureInterieur double la température dans la ruche
+//
+
+${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139138 "afficherHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "humiditeInterieur" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 139266 "quitter"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief
+//
+//\\fn RucheIhm::quitter
+//
+//
+
+//\\brief
+//
+//\\fn RucheIhm::quitter
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 130050 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      extra_member 130178 "slots"
+	
+	cpp "  private slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 139394 "creerNouvelleRuche"
+	preserve_cpp_body_indent private explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//\\brief creer une nouvelle ruche
+//
+//\\fn RucheIhm::creerNouvelleRuche
+//
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 130178 "typedef3"
+      visibility package stereotype "typedef" explicit_base_type "QWidget"
+      cpp_decl "${comment}typedef ${type} ${name};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    classdiagram 128002 "diagramme de classes"
+      classdiagramsettings hide_operations yes show_members_full_definition yes show_members_visibility yes member_max_width 0 shadow no end
+      size A3
+    end
+
+    class 136706 "SeuilsAlertes"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "
+\\class Alertes
+
+\\brief La classe des alertes
+
+\\author Florentin Mellah, Enzo Rossi
+
+\\version 0.2
+
+"
+      attribute 140546 "tropHaut"
+	public type class_ref 136706 // SeuilsAlertes
+	init_value " 0"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140674 "tropBas"
+	public type class_ref 136706 // SeuilsAlertes
+	init_value " 1"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 140802 "bon"
+	public type class_ref 136706 // SeuilsAlertes
+	init_value " 2"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 136834 "TypeAlertes"
+      visibility package stereotype "enum"
+      cpp_decl "${comment}enum ${name} {
+${items}};
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 140930 "alerteTemperatureInterieur"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 0"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141058 "alerteTemperatureExterieur"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 1"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141186 "alerteHumiditeInterieur"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 2"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141314 "alerteHumiditeExterieur"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 3"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141442 "alertePressionAtmospherique"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 4"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 141570 "toutesLesAlertes"
+	public type class_ref 136834 // TypeAlertes
+	init_value " 5"
+	cpp_decl "  ${name}${value},${comment}"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 136962 "Alertes"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 137218 // <generalisation>
+	relation 137218 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 137218 // <generalisation>
+	  b parent class_ref 128130 // typedef1
+      end
+
+      extra_member 136706 "Q_OBJECT"
+	
+	cpp "  Q_OBJECT" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      classrelation 137346 // temperature (<unidirectional association>)
+	relation 137346 --->
+	  a role_name "temperature" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 137346 // temperature (<unidirectional association>)
+	  b parent class_ref 128898 // InfosTemperature
+      end
+
+      classrelation 137474 // humidite (<unidirectional association>)
+	relation 137474 --->
+	  a role_name "humidite" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 137474 // humidite (<unidirectional association>)
+	  b parent class_ref 128642 // InfosHumidite
+      end
+
+      classrelation 137602 // pressionAtmospherique (<unidirectional association>)
+	relation 137602 --->
+	  a role_name "pressionAtmospherique" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} * ${name}${value};
+"
+	    classrelation_ref 137602 // pressionAtmospherique (<unidirectional association>)
+	  b parent class_ref 128770 // InfosPressionAtmospherique
+      end
+
+      classrelation 137730 // seuilsAlertes (<directional composition>)
+	relation 137730 *-->
+	  a role_name "seuilsAlertes" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 137730 // seuilsAlertes (<directional composition>)
+	  b parent class_ref 136706 // SeuilsAlertes
+      end
+
+      operation 145922 "Alertes"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 1
+	  param inout name "parent" explicit_type "QObject"
+	    defaultvalue "0"
+	cpp_decl "    ${comment}${inline}explicit ${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "//
+//\\file alertes.cpp
+//
+//\\brief Définition de la classe Alertes
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.2
+//
+//
+//
+//\\brief Constructeur de la classe Alertes
+//
+//\\fn Alertes::Alertes
+//
+//\\details Définition des attributs de la classe Alertes
+//
+//
+
+${inline}${class}::${name}${(}${t0} * ${p0}${)} : QObject(parent), temperature(0), humidite(0), pressionAtmospherique(0)
+${throw}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146050 "alertesTemperatureInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief defini les seuils d'alertes de la temperature interieur
+//\\fn    Alertes::alertesTemperatureInterieur()
+//@return \\e tropHaut est definit dans le type enum SeuilsAlertes et retourne 0
+//@return \\e tropBas est definit dans le type enum SeuilsAlertes et retourne 1
+//@return \\e bon est definit dans le type enum SeuilsAlertes et retourne 2
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146178 "alertesTemperatureExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief defini les seuils d'alertes de la temperature exterieur
+//\\fn    Alertes::alertesTemperatureExterieur()
+//@return \\e tropHaut est definit dans le type enum SeuilsAlertes et retourne 0
+//@return \\e tropBas est definit dans le type enum SeuilsAlertes et retourne 1
+//@return \\e bon est definit dans le type enum SeuilsAlertes et retourne 2
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146306 "alertesHumiditeInterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief defini les seuils d'alertes de l'humidite interieur
+//\\fn    Alertes::alertesHumiditeInterieur()
+//@return \\e tropHaut est definit dans le type enum SeuilsAlertes et retourne 0
+//@return \\e tropBas est definit dans le type enum SeuilsAlertes et retourne 1
+//@return \\e bon est definit dans le type enum SeuilsAlertes et retourne 2
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146434 "alertesHumiditeExterieur"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "//@brief defini les seuils d'alertes de l'humidite exterieur
+//\\fn    Alertes::alertesHumiditeExterieur()
+//@return \\e tropHaut est definit dans le type enum SeuilsAlertes et retourne 0
+//@return \\e tropBas est definit dans le type enum SeuilsAlertes et retourne 1
+//@return \\e bon est definit dans le type enum SeuilsAlertes et retourne 2
+//
+
+${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146562 "alertesPressionAtmospherique"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 146690 "appelerLesAlertes"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 1
+	  param in name "typeAlertes" type class_ref 136834 // TypeAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      extra_member 136834 "signals"
+	
+	cpp "  signals:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+
+      operation 146818 "envoiAlertesTemperatureInterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 136706 // SeuilsAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 146946 "envoiAlertesTemperatureExterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 136706 // SeuilsAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 147074 "envoiAlertesHumiditeInterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 136706 // SeuilsAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 147202 "envoiAlertesHumiditeExterieur"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 136706 // SeuilsAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 147330 "envoiAlertesPressionAtmospherique"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "" type class_ref 136706 // SeuilsAlertes
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      extra_member 136962 "slots"
+	
+	cpp "  public slots:" ""
+	java ""
+	php ""
+	python ""
+	idl ""
+	mysql ""
+      end
+    end
+
+    sequencediagram 134530 "sd-recevoir-donnees"
+      sequencediagramsettings end
+      overlapping_bars size A3
+    end
+  end
+
+  deploymentview 128002 "rucheIhm"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128002 "baseDeDonnees"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128130 // typedef1
+	class_ref 128002 // BaseDeDonnees
+      end
+    end
+
+    artifact 128130 "communication"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128258 // PortsTTN
+	class_ref 128386 // Communication
+      end
+    end
+
+    artifact 128258 "infosEnsoleillement"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128514 // InfosEnsoleillement
+      end
+    end
+
+    artifact 128386 "infosHumidite"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128642 // InfosHumidite
+      end
+    end
+
+    artifact 128514 "infosPressionAtmospherique"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128770 // InfosPressionAtmospherique
+      end
+    end
+
+    artifact 128642 "infosTemperature"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128898 // InfosTemperature
+      end
+    end
+
+    artifact 128770 "nouvelleRucheIhm"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129154 // typedef2
+	class_ref 129026 // NouvelleRucheIhm
+      end
+    end
+
+    artifact 128898 "ruche"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 129282 // DonneesBatterie
+	class_ref 129410 // DonneesRuche
+	class_ref 129538 // HorodatageDonneesBatterie
+	class_ref 129666 // HorodatageDonneesRuche
+	class_ref 129794 // DonneesRucheHorodatees
+	class_ref 129922 // Ruche
+      end
+    end
+
+    artifact 129026 "rucheIhm"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 130178 // typedef3
+	class_ref 130050 // RucheIhm
+      end
+    end
+
+    artifact 129154 "main"
+      stereotype "source"
+      cpp_src "//
+//\\file main.cpp
+//
+//\\brief Programme principal
+//
+//\\details Crée et affiche la fenêtre principale de l'application
+//
+//\\author Florentin Mellah, Enzo Rossi
+//
+//\\version 0.1
+//
+//\\fn main(int argc, char *argv[])
+//\\param argc
+//\\param argv[]
+//\\return int
+//
+//
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+
+    RucheIhm w;
+    w.show();
+
+    return a.exec();
+}
+"
+      associated_elems
+      end
+    end
+
+    artifact 135682 "alertes"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 136706 // SeuilsAlertes
+	class_ref 136834 // TypeAlertes
+	class_ref 136962 // Alertes
+      end
+    end
+  end
+
+  usecaseview 134530 "view-uc"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    class 137090 "Ruche"
+      visibility package stereotype "actor"
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+  end
+end

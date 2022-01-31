@@ -1,0 +1,69 @@
+\hypertarget{infos_temperature_8h_source}{}\subsection{infos\+Temperature.\+h}
+\label{infos_temperature_8h_source}\index{infos\+Temperature.\+h@{infos\+Temperature.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef INFOSTEMPERATURE\_H}
+00002 \textcolor{preprocessor}{#define INFOSTEMPERATURE\_H}
+00003 
+00016 \textcolor{preprocessor}{#include <QString>}
+00017 \textcolor{preprocessor}{#include <QtCore/QObject>}
+00018 \textcolor{preprocessor}{#include <QVector>}
+00019 
+\Hypertarget{infos_temperature_8h_source_l00032}\hyperlink{class_infos_temperature}{00032} \textcolor{keyword}{class }\hyperlink{class_infos_temperature}{InfosTemperature} : \textcolor{keyword}{public} \hyperlink{class_q_object}{QObject}
+00033 \{
+00034     Q\_OBJECT
+00035 
+00036   \textcolor{keyword}{private}:
+\Hypertarget{infos_temperature_8h_source_l00037}\hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{00037}     \textcolor{keywordtype}{double} \hyperlink{class_infos_temperature_a976ab7ead7ac82b5b8572807d778689e}{temperatureInterieur}; 
+\Hypertarget{infos_temperature_8h_source_l00038}\hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{00038}     \textcolor{keywordtype}{double} \hyperlink{class_infos_temperature_af80286a5b0e05d0379f53c0ebbc7d483}{temperatureExterieur}; 
+\Hypertarget{infos_temperature_8h_source_l00039}\hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{00039}     QString \hyperlink{class_infos_temperature_ad4c62d479b8897102a59025a56d7b4c6}{horodatageTemperatureInterieur}; 
+\Hypertarget{infos_temperature_8h_source_l00040}\hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{00040}     QString \hyperlink{class_infos_temperature_a5c3cd364746dc1cae5f9faee55c7555e}{horodatageTemperatureExterieur}; 
+\Hypertarget{infos_temperature_8h_source_l00041}\hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{00041}     QVector <double> \hyperlink{class_infos_temperature_a39a976c10811a7589e4aba42586813c5}{temperaturesInterieurs};
+\Hypertarget{infos_temperature_8h_source_l00042}\hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{00042}     QVector <double> \hyperlink{class_infos_temperature_a32b2a36e737ab4bf61fc8274990c2943}{temperaturesExterieurs};
+\Hypertarget{infos_temperature_8h_source_l00043}\hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{00043}     \textcolor{keywordtype}{int} \hyperlink{class_infos_temperature_a708b70383d309fa0ba355dcc3921cc23}{heureCouranteTemperatureInterieur};
+\Hypertarget{infos_temperature_8h_source_l00044}\hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{00044}     \textcolor{keywordtype}{int} \hyperlink{class_infos_temperature_a44edcf244175896e28798f252900f774}{heureCouranteTemperatureExterieur};
+00045     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a8cb8b9bef07506019ea6c9d91809af87}{calculerMoyenneHoraireTemperatureInterieur}();
+00046     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a437325028225d765780b884614c47077}{calculerMoyenneHoraireTemperatureExterieur}();
+00047 
+00048     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a0311c8ce5730388f3baef752920d5abf}{traiterMoyenneHoraireTemperatureInterieur}(QString 
+      horodatageTemperatureInterieur);
+00049 
+00050 \textcolor{keyword}{public}:
+00051     \hyperlink{class_infos_temperature_ac628607fe2ff9ca9e2d6bad741ae231a}{InfosTemperature}(\hyperlink{class_q_object}{QObject} *parent);
+00052     \hyperlink{class_infos_temperature_a86503a69e48f1919edbb02a434d2b124}{~InfosTemperature}();
+00053 
+00054     \textcolor{keywordtype}{double} \hyperlink{class_infos_temperature_aaf4cb4fd8a7c46d14955d3175498f91c}{getTemperatureInterieur}();
+00055     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_ac11ec6b1860f43dc989a02a7967497e7}{setTemperatureInterieur}(\textcolor{keywordtype}{double} temperatureInterieur);
+00056     QString \hyperlink{class_infos_temperature_aca40f109786cf22d78402f8b7f3fe408}{getHorodatageTemperatureInterieur}();
+00057     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a4d846391dfd204515e68c3f005b7be3c}{setHorodatageTemperatureInterieur}(\textcolor{keyword}{const} QString 
+      horodatageTemperatureInterieur);
+00058 
+00059     \textcolor{keywordtype}{double} \hyperlink{class_infos_temperature_aebb00308151b8b6319732b62bd7b4b55}{getTemperatureExterieur}();
+00060     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a40f22fbc27ed768e8269cdbf3df708c6}{setTemperatureExterieur}(\textcolor{keywordtype}{double} temperatureExterieur);
+00061     QString \hyperlink{class_infos_temperature_a76b07dc0790718e134e306fe760e6cbf}{getHorodatageTemperatureExterieur}();
+00062     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a85118414b65a715d07a92df3059c6fea}{setHorodatageTemperatureExterieur}(\textcolor{keyword}{const} QString 
+      horodatageTemperatureExterieur);
+00063 
+00064   \textcolor{keyword}{public} slots:
+00065     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a547da18a7c04603d2f30eece061d9634}{traiterNouvelleTemperatureInterieur}(QString 
+      temperatureInterieur,QString horodatageTemperatureInterieur);
+00066     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_ab8d95f48c31ca17c8690849562268420}{traiterNouvelleTemperatureExterieur}(QString 
+      temperatureExterieurString, QString horodatageTemperatureExterieur);
+00067 
+00068   signals:
+00069     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_acaff5cc6bedc53a8bf2c914957d2ab47}{temperatureInterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieur,QString 
+      horodatage); 
+00070     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a6fbc9ab43714a5ba6649648c15989dee}{temperatureExterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieur,QString 
+      horodatage); 
+00071     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_a2d7c580a215f918a79aac46a15ff24b9}{traitementTemperatureInterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureInterieurMoyenne, \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMinimum, \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureInterieurMaximum, \textcolor{keywordtype}{int} 
+      heure);
+00072     \textcolor{keywordtype}{void} \hyperlink{class_infos_temperature_aaebee9d6151257fa1f182665d0fecf2c}{traitementTemperatureExterieurEnvoye}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} 
+      temperatureExterieurMoyenne, \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMinimum, \textcolor{keyword}{const} \textcolor{keywordtype}{double} temperatureExterieurMaximum, \textcolor{keywordtype}{int} 
+      heure);
+00073 
+00074 \};
+00075 
+00076 \textcolor{preprocessor}{#endif // INFOSTEMPERATURE\_H}
+00077 
+\end{DoxyCode}

@@ -1,0 +1,754 @@
+\hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity}{}\subsection{Référence de la classe fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity}
+\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity}\index{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity@{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity}}
+
+
+Graphe de collaboration de fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+Spinner \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}{choix\+Ruche}
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8a6794a48e1b328dfc58d9d1c9237d79}{on\+Create} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2ab46c5580913347e2dd18976be5900a}{recuperer\+Elements\+Vue} ()
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{afficher\+Liste\+Ruches} ()
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{afficher\+Informations\+Ruche} ()
+\begin{DoxyCompactList}\small\item\em Affichage des informations d\textquotesingle{}une ruche dans la vue. \end{DoxyCompactList}\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}{communiquer\+T\+TN} (String device\+ID)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{traiter\+Message} (Mqtt\+Message mqtt\+Message)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}{afficher\+Mesures\+Int} (double temperature\+Interieure, double humidite\+Interieure, String Horodatage)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4cc45d2f5c203313baaac3310d91e4be}{afficher\+Mesures\+Int} (double temperature\+Interieure, double humidite\+Interieure, double poids)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}{afficher\+Mesures\+Ext} (double temperature\+Exterieure, double humidite\+Exterieure, double pression, double ensoleillement)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aaa61ed43c60c82f934647f15a38792cd}{afficher\+Infos\+Generale} (String description, String longitude, String latitude)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}{afficher\+Charge} (int charge)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8e57cfad2c497ab377ee6b7133ca6f18}{afficher\+Charge} (int charge, String horodatage)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}{afficher\+Poids} (int Poids, String Horodatage)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0aef24c78a074282c20938eb2a665c8b}{afficher\+Mesures\+Ext} (double Humidite, double Temperature, double Pression, String Horodatage)
+\item 
+void \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ae77451bd85101ed42644c2421cd2234f}{supprimer\+Ruche} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac091db6a886cd65c54b8596c95b87d37}{bdd} = null
+\begin{DoxyCompactList}\small\item\em l\textquotesingle{}objet permettant un accès à la base de données My\+S\+QL \end{DoxyCompactList}\item 
+\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t}{Client\+M\+Q\+TT} \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{client\+M\+Q\+TT} = null
+\item 
+Card\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2a213710fbe974be3a40fd6afecbd315}{card\+View\+\_\+\+Ruche}
+\begin{DoxyCompactList}\small\item\em la vue contenant les informations générales de la ruche \end{DoxyCompactList}\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}{txt\+Temperature\+Int}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}{txt\+Poids}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}{txt\+Humidite\+Int}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}{txt\+Temperature\+Ext}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}{txt\+Humidite\+Ext}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}{txt\+Pression}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}{txt\+Ensoleillement}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a25b7b3ebb01b0a78ed4935f7881c89ab}{txt\+Description}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0742bf6c7661b82f22ed90db43203029}{txt\+G\+PS}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}{txt\+Charge}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abd1bc0732518150012172aaeee6e059b}{txt\+Alertes}
+\item 
+Image\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{img\+Charge}
+\item 
+Image\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a99952672b3fddf694d15b817a1f933ab}{carte}
+\item 
+Button \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4170811fcbd865749a176f2c5c6ba617}{graphique}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}{donnees\+T\+TN}
+\item 
+Text\+View \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txt\+Horodatage}
+\item 
+Floating\+Action\+Button \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_adeac9187a698545c246d039630bacd13}{bouton\+Supprimer\+Ruche}
+\item 
+Array\+List$<$ String $>$ \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{mes\+Ruches}
+\item 
+final Handler \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}{handler}
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{T\+AG} = \char`\"{}Dashboard\+Activity\char`\"{}
+\begin{DoxyCompactList}\small\item\em le T\+AG de la classe pour les logs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Charge@{afficher\+Charge}}
+\index{afficher\+Charge@{afficher\+Charge}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Charge()}{afficherCharge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Charge (\begin{DoxyParamCaption}\item[{int}]{charge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00296     \{
+00297         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}{txtCharge}.setText(valueOf(charge) + \textcolor{stringliteral}{" %"});
+00298         \textcolor{keywordflow}{if} (charge > 85)
+00299             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery1);
+00300         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (charge <= 85 && charge > 60)
+00301             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery);
+00302         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (charge <= 60 && charge > 35)
+00303             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery3);
+00304         \textcolor{keywordflow}{else}
+00305             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery2);
+00306     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8e57cfad2c497ab377ee6b7133ca6f18}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8e57cfad2c497ab377ee6b7133ca6f18}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Charge@{afficher\+Charge}}
+\index{afficher\+Charge@{afficher\+Charge}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Charge()}{afficherCharge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Charge (\begin{DoxyParamCaption}\item[{int}]{charge,  }\item[{String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00309     \{
+00310         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}{txtCharge}.setText(valueOf(charge) + \textcolor{stringliteral}{" %"});
+00311         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txtHorodatage}.setText(valueOf(horodatage));
+00312         \textcolor{keywordflow}{if} (charge > 85)
+00313             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery1);
+00314         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (charge <= 85 && charge > 60)
+00315             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery);
+00316         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (charge <= 60 && charge > 35)
+00317             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery3);
+00318         \textcolor{keywordflow}{else}
+00319             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge}.setImageResource(R.drawable.battery2);
+00320     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Informations\+Ruche@{afficher\+Informations\+Ruche}}
+\index{afficher\+Informations\+Ruche@{afficher\+Informations\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Informations\+Ruche()}{afficherInformationsRuche()}}
+{\footnotesize\ttfamily fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aaa61ed43c60c82f934647f15a38792cd}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Infos\+Generale()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Ext()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Int()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+communiquer\+T\+T\+N()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a28fe3a64c8aaf28cf15a96a8aa37e23b}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ade21eb84d2a34d71cc2e89134b79cfd2}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Description()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0cbf5aacc51f6a0fc5bd9def0f1a32c7}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Device\+I\+D()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a18a40461d368f06fd0532bfa1b63b868}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Ensoleillement()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a8e3b05a40fa1a699b7ffc1d15a7f6e31}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Humidite\+Ext()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ab4f2b99dbdcb4cfcb81827f294ffeb4a}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Humidite\+Int()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a3f03f6958a9251f72e60e45a6b8eb65c}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Latitude()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a45b3656e287e168f17fdd1b9ec5fbca1}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Longitude()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0db4200faed3952a50f63fa7634be39b}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Nom()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1dce2bd8e8de34d082abd36eab6693d3}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Poids()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a9d94748ece29463c420e93e0e7aa7acd}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Pression()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ac42e5846fb470d9ac9112c20c8679980}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Temperature\+Ext()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aca5e489525d7f0cba7741a0d1803c5e5}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Temperature\+Int()}.
+
+
+\begin{DoxyCode}
+00159     \{
+00160         \textcolor{keywordflow}{if}(ruche != null)
+00161         \{
+00162             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Ruche : "} + ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0db4200faed3952a50f63fa7634be39b}{getNom}());
+00163             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}{afficherCharge}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a28fe3a64c8aaf28cf15a96a8aa37e23b}{getCharge}());
+00164             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aaa61ed43c60c82f934647f15a38792cd}{afficherInfosGenerale}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ade21eb84d2a34d71cc2e89134b79cfd2}{getDescription}(), ruche.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a45b3656e287e168f17fdd1b9ec5fbca1}{getLongitude}(), ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a3f03f6958a9251f72e60e45a6b8eb65c}{getLatitude}());
+00165             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}{afficherMesuresInt}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aca5e489525d7f0cba7741a0d1803c5e5}{getTemperatureInt}(), ruche.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ab4f2b99dbdcb4cfcb81827f294ffeb4a}{getHumiditeInt}(), ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1dce2bd8e8de34d082abd36eab6693d3}{getPoids}());
+00166             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Affichage des données intérieures"});
+00167             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}{afficherMesuresExt}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ac42e5846fb470d9ac9112c20c8679980}{getTemperatureExt}(), ruche.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a8e3b05a40fa1a699b7ffc1d15a7f6e31}{getHumiditeExt}(), ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a9d94748ece29463c420e93e0e7aa7acd}{getPression}(), ruche.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a18a40461d368f06fd0532bfa1b63b868}{getEnsoleillement}());
+00168             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Affichage des données extérieures"});
+00169             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}{donneesTTN}.setText(\textcolor{stringliteral}{"En attente des données du serveur TTN ..."});
+00170             String topic = \textcolor{stringliteral}{"mes\_ruches/devices/"} + ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0cbf5aacc51f6a0fc5bd9def0f1a32c7}{getDeviceID}() + \textcolor{stringliteral}{"/up"};
+00171             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT} = \textcolor{keyword}{new} ClientMQTT(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0cbf5aacc51f6a0fc5bd9def0f1a32c7}{getDeviceID}(), topic, 
+      getApplicationContext());
+00172             \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}{communiquerTTN}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0cbf5aacc51f6a0fc5bd9def0f1a32c7}{getDeviceID}());
+00173         \}
+00174     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aaa61ed43c60c82f934647f15a38792cd}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aaa61ed43c60c82f934647f15a38792cd}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Infos\+Generale@{afficher\+Infos\+Generale}}
+\index{afficher\+Infos\+Generale@{afficher\+Infos\+Generale}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Infos\+Generale()}{afficherInfosGenerale()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Infos\+Generale (\begin{DoxyParamCaption}\item[{String}]{description,  }\item[{String}]{longitude,  }\item[{String}]{latitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche()}.
+
+
+\begin{DoxyCode}
+00290     \{
+00291         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a25b7b3ebb01b0a78ed4935f7881c89ab}{txtDescription}.setText(description);
+00292         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0742bf6c7661b82f22ed90db43203029}{txtGPS}.setText(longitude + \textcolor{stringliteral}{", "} + latitude);
+00293     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Liste\+Ruches@{afficher\+Liste\+Ruches}}
+\index{afficher\+Liste\+Ruches@{afficher\+Liste\+Ruches}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Liste\+Ruches()}{afficherListeRuches()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Liste\+Ruches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+deconnecter()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+est\+Connecte()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7108fb412c0628d3966aa8c76fd9e2b7}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Liste\+Ruches()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+handler}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+mes\+Ruches}.
+
+
+\begin{DoxyCode}
+00120                                        \{
+00121         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{mesRuches} = ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7108fb412c0628d3966aa8c76fd9e2b7}{getListeRuches}();
+00122         ArrayAdapter<String> adapter = \textcolor{keyword}{new} ArrayAdapter<String>(\textcolor{keyword}{this}, R.layout.item\_spinner ,
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{mesRuches});
+00123         adapter.setDropDownViewResource(android.R.layout.simple\_spinner\_dropdown\_item);
+00124         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}{choixRuche}.setAdapter(adapter);
+00125         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}{choixRuche}.setSelection(0);
+00126         \textcolor{comment}{//adapter.setNotifyOnChange(true);}
+00127 
+00128         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}{choixRuche}.setOnItemSelectedListener(\textcolor{keyword}{new} AdapterView.OnItemSelectedListener()
+00129         \{
+00130             @Override
+00131             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onItemSelected(AdapterView<?> arg0, View arg1, \textcolor{keywordtype}{int} position, \textcolor{keywordtype}{long} \textcolor{keywordtype}{id})
+00132             \{
+00133                 Toast.makeText(getBaseContext(), \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{mesRuches}.get(position), Toast.LENGTH\_SHORT).show
+      ();
+00134                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"position : "} + position);
+00135                 \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT} != null)
+00136                 \{
+00137                     \textcolor{keywordflow}{if}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a06c30a7291f526d0bd9a47fccb3ac1ad}{estConnecte}())
+00138                         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_af067ec55e00ec18a14e248279872242f}{deconnecter}();
+00139 
+00140                 \}
+00141                 \textcolor{comment}{// Instancie une ruche}
+00142                 ruche = \textcolor{keyword}{new} \hyperlink{class_ruche}{Ruche}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}{mesRuches}.get(position), \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}{handler});
+00143             \}
+00144 
+00145             @Override
+00146             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onNothingSelected(AdapterView<?> arg0)
+00147             \{
+00148                 \textcolor{comment}{// TODO Auto-generated method stub}
+00149             \}
+00150         \});
+00151     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Mesures\+Ext@{afficher\+Mesures\+Ext}}
+\index{afficher\+Mesures\+Ext@{afficher\+Mesures\+Ext}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Mesures\+Ext()}{afficherMesuresExt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Ext (\begin{DoxyParamCaption}\item[{double}]{temperature\+Exterieure,  }\item[{double}]{humidite\+Exterieure,  }\item[{double}]{pression,  }\item[{double}]{ensoleillement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00282     \{
+00283         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}{txtTemperatureExt}.setText(valueOf(temperatureExterieure) + \textcolor{stringliteral}{" °C"});
+00284         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}{txtHumiditeExt}.setText(valueOf(humiditeExterieure) + \textcolor{stringliteral}{" %"});
+00285         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}{txtPression}.setText(valueOf(pression) + \textcolor{stringliteral}{" hPa"});
+00286         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}{txtEnsoleillement}.setText(valueOf(ensoleillement) + \textcolor{stringliteral}{" Watt/m²"});
+00287     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0aef24c78a074282c20938eb2a665c8b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0aef24c78a074282c20938eb2a665c8b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Mesures\+Ext@{afficher\+Mesures\+Ext}}
+\index{afficher\+Mesures\+Ext@{afficher\+Mesures\+Ext}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Mesures\+Ext()}{afficherMesuresExt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Ext (\begin{DoxyParamCaption}\item[{double}]{Humidite,  }\item[{double}]{Temperature,  }\item[{double}]{Pression,  }\item[{String}]{Horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00330     \{
+00331         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}{txtHumiditeExt}.setText(valueOf(Humidite) + \textcolor{stringliteral}{" %"});
+00332         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}{txtTemperatureExt}.setText(valueOf(Temperature) + \textcolor{stringliteral}{" °C"});
+00333         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}{txtPression}.setText(valueOf(Pression) + \textcolor{stringliteral}{" hPa"});
+00334         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txtHorodatage}.setText(Horodatage);
+00335     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Mesures\+Int@{afficher\+Mesures\+Int}}
+\index{afficher\+Mesures\+Int@{afficher\+Mesures\+Int}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Mesures\+Int()}{afficherMesuresInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Int (\begin{DoxyParamCaption}\item[{double}]{temperature\+Interieure,  }\item[{double}]{humidite\+Interieure,  }\item[{String}]{Horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00268     \{
+00269         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}{txtTemperatureInt}.setText(valueOf(temperatureInterieure) + \textcolor{stringliteral}{" °C"});
+00270         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}{txtHumiditeInt}.setText(valueOf(humiditeInterieure) + \textcolor{stringliteral}{" %"});
+00271         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txtHorodatage}.setText(Horodatage);
+00272     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4cc45d2f5c203313baaac3310d91e4be}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4cc45d2f5c203313baaac3310d91e4be}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Mesures\+Int@{afficher\+Mesures\+Int}}
+\index{afficher\+Mesures\+Int@{afficher\+Mesures\+Int}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Mesures\+Int()}{afficherMesuresInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Int (\begin{DoxyParamCaption}\item[{double}]{temperature\+Interieure,  }\item[{double}]{humidite\+Interieure,  }\item[{double}]{poids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyCode}
+00275     \{
+00276         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}{txtTemperatureInt}.setText(valueOf(temperatureInterieure) + \textcolor{stringliteral}{" °C"});
+00277         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}{txtHumiditeInt}.setText(valueOf(humiditeInterieure) + \textcolor{stringliteral}{" %"});
+00278         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}{txtPoids}.setText(valueOf(poids) + \textcolor{stringliteral}{" Kg"});
+00279     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!afficher\+Poids@{afficher\+Poids}}
+\index{afficher\+Poids@{afficher\+Poids}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{afficher\+Poids()}{afficherPoids()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Poids (\begin{DoxyParamCaption}\item[{int}]{Poids,  }\item[{String}]{Horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a00ce9a2b07615c9337e452b5a51fedbe}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+arrondir()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+\begin{DoxyCode}
+00323     \{
+00324         \textcolor{keywordtype}{double} poidsKg = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a00ce9a2b07615c9337e452b5a51fedbe}{arrondir}(((\textcolor{keywordtype}{double})Poids / 1000.), 1);
+00325         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}{txtPoids}.setText(valueOf(poidsKg) + \textcolor{stringliteral}{" Kg"});
+00326         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txtHorodatage}.setText(Horodatage);
+00327     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!communiquer\+T\+TN@{communiquer\+T\+TN}}
+\index{communiquer\+T\+TN@{communiquer\+T\+TN}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{communiquer\+T\+T\+N()}{communiquerTTN()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+communiquer\+T\+TN (\begin{DoxyParamCaption}\item[{String}]{device\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace2e0a1f888cb34e2a5a5c241eb6b94a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+set\+Callback()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Informations\+Ruche()}.
+
+
+\begin{DoxyCode}
+00179     \{
+00180         Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"deviceID : "} + deviceID);
+00181         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace2e0a1f888cb34e2a5a5c241eb6b94a}{setCallback}(\textcolor{keyword}{new} MqttCallbackExtended() \{
+00182             @Override
+00183             \textcolor{keyword}{public} \textcolor{keywordtype}{void} connectComplete(\textcolor{keywordtype}{boolean} b, String s) \{
+00184 
+00185             \}
+00186 
+00187             @Override
+00188             \textcolor{keyword}{public} \textcolor{keywordtype}{void} connectionLost(Throwable throwable) \{
+00189 
+00190             \}
+00191 
+00192             @Override
+00193             \textcolor{keyword}{public} \textcolor{keywordtype}{void} messageArrived(String topic, MqttMessage mqttMessage) \textcolor{keywordflow}{throws} Exception \{
+00194                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Topic : "} + topic);
+00195                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Message : "} + mqttMessage.toString());
+00196 
+00197                 \textcolor{comment}{// débogage IHM}
+00198                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}{donneesTTN}.setText(mqttMessage.toString());
+00199                 \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}{traiterMessage}(mqttMessage);
+00200             \}
+00201 
+00202             @Override
+00203             \textcolor{keyword}{public} \textcolor{keywordtype}{void} deliveryComplete(IMqttDeliveryToken iMqttDeliveryToken) \{
+00204 
+00205             \}
+00206         \});
+00207     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8a6794a48e1b328dfc58d9d1c9237d79}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8a6794a48e1b328dfc58d9d1c9237d79}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+handler}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2ab46c5580913347e2dd18976be5900a}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+recuperer\+Elements\+Vue()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aba0591cda391b907da41a0afeba4d59d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+recuperer\+Liste\+Ruches()}.
+
+
+\begin{DoxyCode}
+00066     \{
+00067         super.onCreate(savedInstanceState);
+00068         setContentView(R.layout.activity\_dash\_board);
+00069 
+00070         \textcolor{comment}{// Récupère les éléments de la vue d'une Ruche dans l'IHM}
+00071         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2ab46c5580913347e2dd18976be5900a}{recupererElementsVue}();
+00072 
+00073         \textcolor{comment}{// Instancie une ruche}
+00074         ruche = \textcolor{keyword}{new} \hyperlink{class_ruche}{Ruche}(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}{handler});
+00075         ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_aba0591cda391b907da41a0afeba4d59d}{recupererListeRuches}();
+00076     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2ab46c5580913347e2dd18976be5900a}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2ab46c5580913347e2dd18976be5900a}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!recuperer\+Elements\+Vue@{recuperer\+Elements\+Vue}}
+\index{recuperer\+Elements\+Vue@{recuperer\+Elements\+Vue}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{recuperer\+Elements\+Vue()}{recupererElementsVue()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+recuperer\+Elements\+Vue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a3f03f6958a9251f72e60e45a6b8eb65c}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Latitude()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a45b3656e287e168f17fdd1b9ec5fbca1}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Longitude()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8a6794a48e1b328dfc58d9d1c9237d79}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+on\+Create()}.
+
+
+\begin{DoxyCode}
+00078                                         \{
+00079         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2a213710fbe974be3a40fd6afecbd315}{cardView\_Ruche} = findViewById(R.id.CardView\_Ruche);
+00080         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}{txtTemperatureInt} = (TextView) this.findViewById(R.id.txt\_temp\_int);
+00081         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}{txtPoids} = (TextView) this.findViewById(R.id.txtPoids);
+00082         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}{txtHumiditeInt} = (TextView) this.findViewById(R.id.txt\_humidite\_int);
+00083         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}{txtTemperatureExt} = (TextView) this.findViewById(R.id.txt\_temp\_ext);
+00084         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}{txtHumiditeExt} = (TextView) this.findViewById(R.id.txt\_humidite\_ext);
+00085         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}{txtPression} = (TextView) this.findViewById(R.id.txt\_pression);
+00086         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}{txtEnsoleillement} = (TextView) findViewById(R.id.txt\_ensoleillement);
+00087         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a25b7b3ebb01b0a78ed4935f7881c89ab}{txtDescription} = (TextView) findViewById(R.id.tv\_description);
+00088         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0742bf6c7661b82f22ed90db43203029}{txtGPS} = (TextView) findViewById(R.id.tv\_GPS);
+00089         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}{donneesTTN} = (TextView) this.findViewById(R.id.DonneesTTN);
+00090         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}{txtHorodatage} = (TextView) this.findViewById(R.id.txt\_horodatage);
+00091         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}{txtCharge} = (TextView) this.findViewById(R.id.charge);
+00092         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}{choixRuche} = (Spinner) findViewById(R.id.choixRuche);
+00093         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}{imgCharge} = (ImageView) findViewById(R.id.image\_charge);
+00094         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_adeac9187a698545c246d039630bacd13}{boutonSupprimerRuche} = (FloatingActionButton) findViewById(R.id.fb\_btnSupprimer
+      );
+00095         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a99952672b3fddf694d15b817a1f933ab}{carte} = (ImageView) findViewById(R.id.btn\_carte);
+00096 
+00097 
+00098         \textcolor{keyword}{final} Intent actualsation = \textcolor{keyword}{new} Intent(DashboardActivity.this, DashboardActivity.class);
+00099         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_adeac9187a698545c246d039630bacd13}{boutonSupprimerRuche}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00100             @Override
+00101             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v) \{
+00102                 \textcolor{comment}{//supprimerRuche();}
+00103                 startActivity(actualsation);
+00104             \}
+00105         \});
+00106 
+00107         \textcolor{keyword}{final} Intent map = \textcolor{keyword}{new} Intent(DashboardActivity.this, CarteActivity.class);
+00108         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a99952672b3fddf694d15b817a1f933ab}{carte}.setOnClickListener(\textcolor{keyword}{new} View.OnClickListener() \{
+00109             @Override
+00110             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v) \{
+00111                 map.putExtra(\textcolor{stringliteral}{"longitude"}, ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a45b3656e287e168f17fdd1b9ec5fbca1}{getLongitude}());
+00112                 map.putExtra(\textcolor{stringliteral}{"latitude"}, ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a3f03f6958a9251f72e60e45a6b8eb65c}{getLatitude}());
+00113                 Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Longitude : "} + ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a45b3656e287e168f17fdd1b9ec5fbca1}{getLongitude}() + \textcolor{stringliteral}{"  /   Longitude :"} + \textcolor{stringliteral}{" "}
+       + ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a3f03f6958a9251f72e60e45a6b8eb65c}{getLatitude}());
+00114                 startActivity(map);
+00115             \}
+00116         \});
+00117 
+00118     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ae77451bd85101ed42644c2421cd2234f}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ae77451bd85101ed42644c2421cd2234f}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!supprimer\+Ruche@{supprimer\+Ruche}}
+\index{supprimer\+Ruche@{supprimer\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{supprimer\+Ruche()}{supprimerRuche()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+supprimer\+Ruche (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ace3993bb5f36dc8c63f18bcc3ac75adf}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+get\+Id\+Ruche()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a9c2484cfb87f90e46cf878eb7803abb2}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+get\+Instance()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}{fr.\+campus.\+laurainc.\+honeybee.\+Base\+De\+Donnees.\+supprimer\+Ruche()}.
+
+
+\begin{DoxyCode}
+00338     \{
+00339         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac091db6a886cd65c54b8596c95b87d37}{bdd} = \hyperlink{class_base_de_donnees}{BaseDeDonnees}.\hyperlink{class_base_de_donnees_a80028aa2b6b4fbf30fb2e36357b7d3d3}{getInstance}();
+00340         \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac091db6a886cd65c54b8596c95b87d37}{bdd}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees_a7b0977566d74684fab184f7a5efce3c8}{supprimerRuche}(ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ace3993bb5f36dc8c63f18bcc3ac75adf}{getIdRuche}());
+00341     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a50d4c14e993ff1779ae5dce8cee11216}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!traiter\+Message@{traiter\+Message}}
+\index{traiter\+Message@{traiter\+Message}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{traiter\+Message()}{traiterMessage()}}
+{\footnotesize\ttfamily void fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+traiter\+Message (\begin{DoxyParamCaption}\item[{Mqtt\+Message}]{mqtt\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Ext()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Mesures\+Int()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Poids()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Ensoleillement()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Horodatage()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Exterieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Humidite\+Interieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Poids()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Pression()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Exterieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+extraire\+Temperature\+Interieure()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a423539a05c306ae52e5b6dc6fa6addc8}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+E\+R\+G\+IE}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a49b4a61b3c65f6b3a1786ef6eeeb15e2}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+S\+O\+L\+E\+I\+L\+L\+E\+M\+E\+NT}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a85b9107442e2f5ef6fd6bef732336d8e}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+E\+N\+V\+I\+R\+O\+N\+E\+M\+E\+NT}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3630b0b9b902fee6796995399bee1a6a}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+P\+O\+I\+DS}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a3f264a8d2f3c294241bbe5557aa66770}{fr.\+campus.\+laurainc.\+honeybee.\+Client\+M\+Q\+T\+T.\+P\+O\+R\+T\+\_\+\+M\+E\+S\+U\+R\+E\+\_\+\+R\+U\+C\+HE}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a02299f4e79c0396df8e2fe000628b5cc}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Charge()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a19b9dae9928c6d8267c7c7c7ca3375aa}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Ensoleillement()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ae6a0d7783c6d429a28f1513201928909}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Horodatage()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7d9bd771e570edc523ae02fe574676f3}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Humidite\+Ext()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1a5bbd259b54c895833c9e3710d2eead}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Humidite\+Int()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0d85ef1bc9f53591e6cf0cc8667fbe2d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Poids()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a149083353b1430ef67fef5de226f8947}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Pression()}, \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a5f3aa639b62e7bebcec6532be378964d}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Temperature\+Ext()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a4bed1041019b54d79beb46d36aae0adb}{fr.\+campus.\+laurainc.\+honeybee.\+Ruche.\+set\+Temperature\+Int()}.
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abfefd572745e1034a025bc836812ae4f}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+communiquer\+T\+T\+N()}.
+
+
+\begin{DoxyCode}
+00210     \{
+00211         \textcolor{keyword}{final} String message = mqttMessage.toString();
+00212 
+00213         \textcolor{keywordflow}{try}
+00214         \{
+00215             JSONObject jsonObjet = \textcolor{keyword}{new} JSONObject(message);
+00216             \textcolor{keywordtype}{int} port = jsonObjet.getInt(\textcolor{stringliteral}{"port"});
+00217             String Horodatage = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ace17d633909a5be8035518b9a6b528c2}{extraireHorodatage}(mqttMessage);
+00218             Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"Port : "} + port);
+00219             \textcolor{keywordflow}{switch}(port)
+00220             \{
+00221                 \textcolor{keywordflow}{case} ClientMQTT.PORT\_MESURE\_POIDS:
+00222                     \textcolor{keywordtype}{int} poids = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a390da1e77f256fd9d90093bfec544b55}{extrairePoids}(mqttMessage); \textcolor{comment}{// poids en
+       grammes}
+00223                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13786896440cb102e03bd5ac4f54c3d8}{afficherPoids}(poids, Horodatage);
+00224                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a0d85ef1bc9f53591e6cf0cc8667fbe2d}{setPoids}(poids);
+00225 
+00226                     \textcolor{keywordflow}{break};
+00227                 \textcolor{keywordflow}{case} ClientMQTT.PORT\_MESURE\_RUCHE:
+00228                     \textcolor{keywordtype}{double} temperatureInterieure = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a92cd25872cdb04978a55ae166f858e0d}{extraireTemperatureInterieure}(mqttMessage);
+00229                     \textcolor{keywordtype}{double} humiditeInterieure = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_ad7fd3fa1a51a608646b146765cfc4546}{extraireHumiditeInterieure}(mqttMessage);
+00230                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aa177b8212619dec95e0a8eae4dbc867d}{afficherMesuresInt}(temperatureInterieure, humiditeInterieure, 
+      Horodatage);
+00231                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a4bed1041019b54d79beb46d36aae0adb}{setTemperatureInt}(temperatureInterieure);
+00232                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a1a5bbd259b54c895833c9e3710d2eead}{setHumiditeInt}(temperatureInterieure);
+00233                     \textcolor{keywordflow}{break};
+00234 
+00235                 \textcolor{keywordflow}{case} ClientMQTT.PORT\_MESURE\_ENERGIE:
+00236                     \textcolor{keywordtype}{int} charge = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a93572795db92f79f417982f4785b71e0}{extraireCharge}(mqttMessage);
+00237                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13e1d8016723e33b6245e9e3063c8a4f}{afficherCharge}(charge, Horodatage);
+00238                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a02299f4e79c0396df8e2fe000628b5cc}{setCharge}(charge);
+00239                     \textcolor{keywordflow}{break};
+00240 
+00241                 \textcolor{keywordflow}{case} ClientMQTT.PORT\_MESURE\_ENVIRONEMENT:
+00242                     \textcolor{keywordtype}{double} temperatureExterieure = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a5f9be292aa0e594c2f555f29abbb4fc9}{extraireTemperatureExterieure}(mqttMessage);
+00243                     \textcolor{keywordtype}{double} humiditeExterieure = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a0a3be0588498643af9098ab70a7a837a}{extraireHumiditeExterieure}(mqttMessage);
+00244                     \textcolor{keywordtype}{double} pression = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a630a29e060e4a0c2891cd79fad8d3585}{extrairePression}(mqttMessage);
+00245                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afffb9de4776b6c6cea676a08251a58ba}{afficherMesuresExt}(humiditeExterieure, temperatureExterieure, 
+      pression, Horodatage);
+00246                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a5f3aa639b62e7bebcec6532be378964d}{setTemperatureExt}(temperatureExterieure);
+00247                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a7d9bd771e570edc523ae02fe574676f3}{setHumiditeExt}(humiditeExterieure);
+00248                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a149083353b1430ef67fef5de226f8947}{setPression}(pression);
+00249                     \textcolor{keywordflow}{break};
+00250 
+00251                 \textcolor{keywordflow}{case} ClientMQTT.PORT\_MESURE\_ENSOLEILLEMENT:
+00252                     \textcolor{keywordtype}{double} ensoleillement = \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}{clientMQTT}.
+      \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t_a38a76fc07a1793ba1a94898bdcd5ecbd}{extraireEnsoleillement}(mqttMessage);
+00253                     \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}{txtEnsoleillement}.setText(valueOf(ensoleillement) + \textcolor{stringliteral}{" Watt/m²"});
+00254                     ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_a19b9dae9928c6d8267c7c7c7ca3375aa}{setEnsoleillement}(ensoleillement);
+00255 
+00256                 \textcolor{keywordflow}{default}:
+00257                     \textcolor{keywordflow}{break};
+00258             \}
+00259             ruche.\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_ruche_ae6a0d7783c6d429a28f1513201928909}{setHorodatage}(Horodatage);
+00260         \}
+00261         \textcolor{keywordflow}{catch} (JSONException e)
+00262         \{
+00263             e.printStackTrace();
+00264         \}
+00265     \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac091db6a886cd65c54b8596c95b87d37}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac091db6a886cd65c54b8596c95b87d37}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!bdd@{bdd}}
+\index{bdd@{bdd}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{bdd}{bdd}}
+{\footnotesize\ttfamily \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_base_de_donnees}{Base\+De\+Donnees} fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+bdd = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_adeac9187a698545c246d039630bacd13}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_adeac9187a698545c246d039630bacd13}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!bouton\+Supprimer\+Ruche@{bouton\+Supprimer\+Ruche}}
+\index{bouton\+Supprimer\+Ruche@{bouton\+Supprimer\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{bouton\+Supprimer\+Ruche}{boutonSupprimerRuche}}
+{\footnotesize\ttfamily Floating\+Action\+Button fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+bouton\+Supprimer\+Ruche\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2a213710fbe974be3a40fd6afecbd315}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2a213710fbe974be3a40fd6afecbd315}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!card\+View\+\_\+\+Ruche@{card\+View\+\_\+\+Ruche}}
+\index{card\+View\+\_\+\+Ruche@{card\+View\+\_\+\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{card\+View\+\_\+\+Ruche}{cardView\_Ruche}}
+{\footnotesize\ttfamily Card\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+card\+View\+\_\+\+Ruche\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a99952672b3fddf694d15b817a1f933ab}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a99952672b3fddf694d15b817a1f933ab}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!carte@{carte}}
+\index{carte@{carte}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{carte}{carte}}
+{\footnotesize\ttfamily Image\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+carte\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ad3a78115526cf2cf371e6af8eb1b6b72}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!choix\+Ruche@{choix\+Ruche}}
+\index{choix\+Ruche@{choix\+Ruche}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{choix\+Ruche}{choixRuche}}
+{\footnotesize\ttfamily Spinner fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+choix\+Ruche}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_ac72bac3feefe69341b1785a0133e1de8}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!client\+M\+Q\+TT@{client\+M\+Q\+TT}}
+\index{client\+M\+Q\+TT@{client\+M\+Q\+TT}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{client\+M\+Q\+TT}{clientMQTT}}
+{\footnotesize\ttfamily \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_client_m_q_t_t}{Client\+M\+Q\+TT} fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+client\+M\+Q\+TT = null\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a13c39ae74cce0c7f40b1d67e71d145cb}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!donnees\+T\+TN@{donnees\+T\+TN}}
+\index{donnees\+T\+TN@{donnees\+T\+TN}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{donnees\+T\+TN}{donneesTTN}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+donnees\+T\+TN\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4170811fcbd865749a176f2c5c6ba617}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4170811fcbd865749a176f2c5c6ba617}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!graphique@{graphique}}
+\index{graphique@{graphique}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{graphique}{graphique}}
+{\footnotesize\ttfamily Button fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+graphique\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a7dd06030cd3afe35ace9a5e2f9e789dd}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!handler@{handler}}
+\index{handler@{handler}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily final Handler fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+handler\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{new} Handler()
+    \{
+        
+        \textcolor{keyword}{public} \textcolor{keywordtype}{void} handleMessage(Message msg)
+        \{
+        super.handleMessage(msg);
+        \textcolor{keywordflow}{switch} (msg.what)
+        \{
+            \textcolor{keywordflow}{case} HoneyBee.REQUETE\_SQL\_ERREUR:
+                Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"handleMessage -> REQUETE SQL ERREUR"});
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{case} HoneyBee.REQUETE\_SQL\_OK:
+                Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"handleMessage -> REQUETE SQL OK"});
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{case} HoneyBee.REQUETE\_SQL\_LISTE\_RUCHES:
+                Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"handleMessage -> REQUETE SQL LISTE RUCHES"});
+                \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{afficherListeRuches}();
+                \textcolor{keywordflow}{break};
+            \textcolor{keywordflow}{case} HoneyBee.REQUETE\_SQL\_RUCHE:
+                Log.d(\hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}{TAG}, \textcolor{stringliteral}{"handleMessage -> REQUETE SQL RUCHE"});
+                \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a88f00531bee33bd6c47b33f5ac4df9ed}{afficherInformationsRuche}();
+                \textcolor{keywordflow}{break};
+        \}
+        \}
+    \}
+\end{DoxyCode}
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Liste\+Ruches()}, et \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a8a6794a48e1b328dfc58d9d1c9237d79}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+on\+Create()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a2f9d67ea169a7cd9969d0fbe30e77fbc}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!img\+Charge@{img\+Charge}}
+\index{img\+Charge@{img\+Charge}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{img\+Charge}{imgCharge}}
+{\footnotesize\ttfamily Image\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+img\+Charge\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a85c92d113540b2ae3c20077050f1a90b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!mes\+Ruches@{mes\+Ruches}}
+\index{mes\+Ruches@{mes\+Ruches}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{mes\+Ruches}{mesRuches}}
+{\footnotesize\ttfamily Array\+List$<$String$>$ fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+mes\+Ruches\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aeb7cdaf69c379e2b070e290130199543}{fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+afficher\+Liste\+Ruches()}.
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a716b8b0ff7279634ec5d3079ddf5d840}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!T\+AG@{T\+AG}}
+\index{T\+AG@{T\+AG}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{T\+AG}{TAG}}
+{\footnotesize\ttfamily final String fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+T\+AG = \char`\"{}Dashboard\+Activity\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abd1bc0732518150012172aaeee6e059b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_abd1bc0732518150012172aaeee6e059b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Alertes@{txt\+Alertes}}
+\index{txt\+Alertes@{txt\+Alertes}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Alertes}{txtAlertes}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Alertes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a00185be7c66330a5a55881125fe5e400}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Charge@{txt\+Charge}}
+\index{txt\+Charge@{txt\+Charge}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Charge}{txtCharge}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Charge\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a25b7b3ebb01b0a78ed4935f7881c89ab}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a25b7b3ebb01b0a78ed4935f7881c89ab}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Description@{txt\+Description}}
+\index{txt\+Description@{txt\+Description}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Description}{txtDescription}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Description\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_aab4b50b607051748d695f8062e21e56e}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Ensoleillement@{txt\+Ensoleillement}}
+\index{txt\+Ensoleillement@{txt\+Ensoleillement}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Ensoleillement}{txtEnsoleillement}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Ensoleillement\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0742bf6c7661b82f22ed90db43203029}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0742bf6c7661b82f22ed90db43203029}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+G\+PS@{txt\+G\+PS}}
+\index{txt\+G\+PS@{txt\+G\+PS}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+G\+PS}{txtGPS}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+G\+PS\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a441403e9cd9a95a230d48b86090c4903}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Horodatage@{txt\+Horodatage}}
+\index{txt\+Horodatage@{txt\+Horodatage}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Horodatage}{txtHorodatage}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Horodatage\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a172fbb18fee80670357fe9ff8e2be62d}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Humidite\+Ext@{txt\+Humidite\+Ext}}
+\index{txt\+Humidite\+Ext@{txt\+Humidite\+Ext}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Humidite\+Ext}{txtHumiditeExt}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Humidite\+Ext\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_afb520230eefb68b38b2c12a2e57fb437}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Humidite\+Int@{txt\+Humidite\+Int}}
+\index{txt\+Humidite\+Int@{txt\+Humidite\+Int}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Humidite\+Int}{txtHumiditeInt}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Humidite\+Int\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a1254223ab3507ce611d3244a43e8e14b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Poids@{txt\+Poids}}
+\index{txt\+Poids@{txt\+Poids}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Poids}{txtPoids}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Poids\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a0fc400e7bdb6580221af34a9d677e15b}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Pression@{txt\+Pression}}
+\index{txt\+Pression@{txt\+Pression}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Pression}{txtPression}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Pression\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a4a5b8ca6b359020d60e43c349c2538c3}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Temperature\+Ext@{txt\+Temperature\+Ext}}
+\index{txt\+Temperature\+Ext@{txt\+Temperature\+Ext}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Temperature\+Ext}{txtTemperatureExt}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Temperature\+Ext\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}\label{classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity_a336bd6552e6dc70bb2f9a92afd2fbdbe}} 
+\index{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}!txt\+Temperature\+Int@{txt\+Temperature\+Int}}
+\index{txt\+Temperature\+Int@{txt\+Temperature\+Int}!fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity@{fr\+::campus\+::laurainc\+::honeybee\+::\+Dashboard\+Activity}}
+\paragraph{\texorpdfstring{txt\+Temperature\+Int}{txtTemperatureInt}}
+{\footnotesize\ttfamily Text\+View fr.\+campus.\+laurainc.\+honeybee.\+Dashboard\+Activity.\+txt\+Temperature\+Int\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_dashboard_activity_8java}{Dashboard\+Activity.\+java}\end{DoxyCompactItemize}

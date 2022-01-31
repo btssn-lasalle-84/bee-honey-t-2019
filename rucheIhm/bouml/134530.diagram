@@ -1,0 +1,238 @@
+format 221
+
+classinstance 128002 class_ref 128386 // Communication
+  name ""   xyz 748 4 2000 life_line_z 2000
+classinstance 128130 class_ref 137090 // Ruche
+  name ""   xyz 1022 4 2000 life_line_z 2000
+classinstance 128898 class_ref 129922 // Ruche
+  name ""   xyz 618 4 2000 life_line_z 2000
+fragment 130050 "alt"
+  xyzwh 4 306 2000 1100 684
+  separator 9166
+end
+textcanvas 130178 "[port = portMesureRuche]"
+  xyzwh 61 308 2000 167 22
+classinstance 131074 class_ref 128898 // InfosTemperature
+  name ""   xyz 302 4 2000 life_line_z 2000
+classinstance 131202 class_ref 128642 // InfosHumidite
+  name ""   xyz 187 4 2000 life_line_z 2000
+classinstance 132354 class_ref 130050 // RucheIhm
+  name ""   xyz 12 4 2000 life_line_z 2000
+classinstance 132738 class_ref 136962 // Alertes
+  name ""   xyz 111 4 2000 life_line_z 2000
+textcanvas 135170 "..."
+  xyzwh 59 935 2005 28 23
+durationcanvas 128258 classinstance_ref 128130 // :Ruche
+  xyzwh 1041 77 2010 11 40
+end
+durationcanvas 128386 classinstance_ref 128002 // :Communication
+  xyzwh 801 77 2010 11 78
+  overlappingdurationcanvas 128642
+    xyzwh 807 120 2020 11 29
+  end
+end
+durationcanvas 129026 classinstance_ref 128898 // :Ruche
+  xyzwh 641 138 2010 11 745
+  overlappingdurationcanvas 129282
+    xyzwh 647 185 2020 11 692
+    overlappingdurationcanvas 129538
+      xyzwh 653 228 2030 11 25
+    end
+    overlappingdurationcanvas 129794
+      xyzwh 653 274 2030 11 597
+      overlappingdurationcanvas 130306
+	xyzwh 659 358 2040 11 25
+      end
+      overlappingdurationcanvas 130562
+	xyzwh 659 396 2040 11 25
+      end
+      overlappingdurationcanvas 130818
+	xyzwh 659 433 2040 11 25
+      end
+      overlappingdurationcanvas 131842
+	xyzwh 659 553 2040 11 99
+	overlappingdurationcanvas 132098
+	  xyzwh 665 571 2050 11 76
+	end
+      end
+      overlappingdurationcanvas 133890
+	xyzwh 659 747 2040 11 118
+	overlappingdurationcanvas 134146
+	  xyzwh 665 770 2050 11 89
+	end
+      end
+    end
+  end
+end
+durationcanvas 131330 classinstance_ref 131074 // :InfosTemperature
+  xyzwh 362 476 2010 11 111
+  overlappingdurationcanvas 131586
+    xyzwh 368 511 2020 11 70
+  end
+end
+durationcanvas 132482 classinstance_ref 132354 // :RucheIhm
+  xyzwh 48 636 2010 11 67
+  overlappingdurationcanvas 133122
+    xyzwh 54 672 2020 11 25
+  end
+end
+durationcanvas 132866 classinstance_ref 132738 // :Alertes
+  xyzwh 136 605 2010 11 25
+end
+durationcanvas 133378 classinstance_ref 131202 // :InfosHumidite
+  xyzwh 234 698 2010 11 73
+  overlappingdurationcanvas 133634
+    xyzwh 240 730 2020 11 35
+  end
+end
+durationcanvas 134402 classinstance_ref 132738 // :Alertes
+  xyzwh 136 808 2010 11 25
+end
+durationcanvas 134658 classinstance_ref 132354 // :RucheIhm
+  xyzwh 48 845 2010 11 64
+  overlappingdurationcanvas 134914
+    xyzwh 54 878 2020 11 25
+  end
+end
+msg 128514 asynchronous
+  from durationcanvas_ref 128258
+  to durationcanvas_ref 128386
+  yz 77 2015 explicitmsg "messageReceived()"
+  stereotype "<<signal>>" xyz 885 80 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 861 55
+reflexivemsg 128770 synchronous
+  to durationcanvas_ref 128642
+  yz 120 2025 msg operation_ref 130178 // "receptionner(in message : QByteArray, in topic : QMqttTopicName) : void"
+  stereotype "<<slot>>" xyz 838 119 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 817 101
+msg 129154 asynchronous
+  from durationcanvas_ref 128642
+  to durationcanvas_ref 129026
+  yz 138 2030 explicitmsg "messageRecu()"
+  stereotype "<<signal>>" xyz 687 142 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 677 116
+reflexivemsg 129410 synchronous
+  to durationcanvas_ref 129282
+  yz 185 3005 msg operation_ref 136962 // "recevoirMessage(in message : QByteArray, in topic : QMqttTopicName) : void"
+  stereotype "<<slot>>" xyz 680 182 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 658 165
+reflexivemsg 129666 synchronous
+  to durationcanvas_ref 129538
+  yz 228 2035 explicitmsg "recupererNumeroDePort(message)"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 664 207
+reflexivemsg 129922 synchronous
+  to durationcanvas_ref 129794
+  yz 274 2035 explicitmsg "extraireDonnees(port, message)"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 665 254
+reflexivemsg 130434 synchronous
+  to durationcanvas_ref 130306
+  yz 358 2045 explicitmsg "recupererDonnees(message, \"payload_fields\", \"temperature\")"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 671 337
+reflexivemsg 130690 synchronous
+  to durationcanvas_ref 130562
+  yz 396 2045 explicitmsg "recupererDonnees(message, \"payload_fields\", \"humidite\")"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 671 374
+reflexivemsg 130946 synchronous
+  to durationcanvas_ref 130818
+  yz 433 2045 explicitmsg "recupererHorodatage(message , \"metadata\", \"time\")"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 671 411
+msg 131458 asynchronous
+  from durationcanvas_ref 129794
+  to durationcanvas_ref 131330
+  yz 476 2035 explicitmsg "nouvelleTemperatureInterieur()"
+  stereotype "<<signal>>" xyz 474 476 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 412 454
+reflexivemsg 131714 synchronous
+  to durationcanvas_ref 131586
+  yz 511 2040 msg operation_ref 135170 // "traiterNouvelleTemperatureInterieur(in temperatureInterieurString : QString) : void"
+  stereotype "<<slot>>" xyz 379 515 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 381 493
+msg 131970 asynchronous
+  from durationcanvas_ref 131586
+  to durationcanvas_ref 131842
+  yz 553 2045 explicitmsg "temperatureInterieurEnvoye()"
+  stereotype "<<signal>>" xyz 477 558 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 423 531
+reflexivemsg 132226 synchronous
+  to durationcanvas_ref 132098
+  yz 571 2055 msg operation_ref 137090 // "recevoirTemperatureInterieurTraite(in temperatureInterieur : double) : void"
+  stereotype "<<slot>>" xyz 697 567 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 676 550
+msg 132610 asynchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 132482
+  yz 636 2055 explicitmsg "nouvelleMesureTemperatureInterieurTraite()"
+  stereotype "<<signal>>" xyz 477 641 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 348 618
+msg 132994 synchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 132866
+  yz 611 3005 msg operation_ref 146690 // "appelerLesAlertes(in typeAlertes : TypeAlertes) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 441 591
+reflexivemsg 133250 synchronous
+  to durationcanvas_ref 133122
+  yz 672 2025 msg operation_ref 139010 // "afficherTemperatureInterieur(in temperatureInterieur : double) : void"
+  stereotype "<<slot>>" xyz 87 665 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 64 650
+msg 133506 asynchronous
+  from durationcanvas_ref 129794
+  to durationcanvas_ref 133378
+  yz 698 2035 explicitmsg "nouvelleHumiditeInterieur()"
+  stereotype "<<signal>>" xyz 476 702 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 414 678
+reflexivemsg 133762 synchronous
+  to durationcanvas_ref 133634
+  yz 730 2040 msg operation_ref 132738 // "traiterNouvelleHumiditeInterieur(in HumiditeInterieurstring : QString) : void"
+  stereotype "<<slot>>" xyz 272 725 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 251 708
+msg 134018 asynchronous
+  from durationcanvas_ref 133634
+  to durationcanvas_ref 133890
+  yz 754 3005 explicitmsg "humiditeInterieurEnvoye()"
+  stereotype "<<signal>>" xyz 478 759 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 425 736
+reflexivemsg 134274 synchronous
+  to durationcanvas_ref 134146
+  yz 770 2055 msg operation_ref 137218 // "recevoirMesureHumiditeInterieurTraite(in humiditeInterieurTraite : double) : void"
+  stereotype "<<slot>>" xyz 697 765 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 676 750
+msg 134530 synchronous
+  from durationcanvas_ref 134146
+  to durationcanvas_ref 134402
+  yz 808 2055 msg operation_ref 146690 // "appelerLesAlertes(in typeAlertes : TypeAlertes) : void"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 436 790
+msg 134786 asynchronous
+  from durationcanvas_ref 134146
+  to durationcanvas_ref 134658
+  yz 845 2055 explicitmsg "nouvelleMesureHumiditeInterieurTraite()"
+  stereotype "<<signal>>" xyz 477 851 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 375 825
+reflexivemsg 135042 synchronous
+  to durationcanvas_ref 134914
+  yz 878 2060 msg operation_ref 139138 // "afficherHumiditeInterieur(in humiditeInterieur : double) : void"
+  stereotype "<<slot>>" xyz 89 874 3000
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 65 856
+end

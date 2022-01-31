@@ -1,0 +1,611 @@
+\hypertarget{class_infos_humidite}{}\subsection{Référence de la classe Infos\+Humidite}
+\label{class_infos_humidite}\index{Infos\+Humidite@{Infos\+Humidite}}
+
+
+La classe \hyperlink{class_infos_humidite}{Infos\+Humidite}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Humidite.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Humidite\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_infos_humidite__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur} (Q\+String humidite\+Interieurstring, Q\+String \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatage\+Humidite\+Interieur})
+\begin{DoxyCompactList}\small\item\em slot qui traite l\textquotesingle{}humidite Interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur} (Q\+String humidite\+Exterieurstring, Q\+String \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatage\+Humidite\+Exterieur})
+\begin{DoxyCompactList}\small\item\em slot qui traite l\textquotesingle{}humidite Exterieur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}{humidite\+Interieur\+Envoye} (const double \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur}, Q\+String horodatage)
+\begin{DoxyCompactList}\small\item\em signal vers la classe \hyperlink{class_ruche}{Ruche} \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}{humidite\+Exterieur\+Envoye} (const double \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur}, Q\+String horodatage)
+\item 
+void \hyperlink{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}{traitement\+Humidite\+Interieur\+Envoye} (const double temperature\+Interieur\+Moyenne, const double temperature\+Interieur\+Minimum, const double temperature\+Interieur\+Maximum, int heure)
+\item 
+void \hyperlink{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}{traitement\+Humidite\+Exterieur\+Envoye} (const double temperature\+Exterieur\+Moyenne, const double temperature\+Exterieur\+Minimum, const double temperature\+Exterieur\+Maximum, int heure)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_humidite_a3c87ffa0e896fd5af90b1d9f15a47a57}{Infos\+Humidite} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \hyperlink{class_infos_humidite}{Infos\+Humidite}. \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}{get\+Humidite\+Interieur} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut humidite\+Interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_a238c8b3bd6b09c4f770058a05468baa8}{set\+Humidite\+Interieur} (double \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut humidite\+Interieur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_humidite_a841d2583f206a9097fa3871adc8be568}{get\+Horodatage\+Humidite\+Interieur} () const
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut horodatage\+Humidite\+Interieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_a8054d13ab8f57504392756351c376534}{set\+Horodatage\+Humidite\+Interieur} (const Q\+String \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatage\+Humidite\+Interieur})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_infos_humidite_a8054d13ab8f57504392756351c376534}{Infos\+Humidite\+::set\+Horodatage\+Humidite\+Interieur}. \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}{get\+Humidite\+Exterieur} ()
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut humidite\+Exterieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_a8228ff1f1d0466df228ed3f2e2d269ac}{set\+Humidite\+Exterieur} (double \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut humidite\+Exterieur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_humidite_a04abb2841492704e125874464052bb4f}{get\+Horodatage\+Humidite\+Exterieur} () const
+\begin{DoxyCompactList}\small\item\em getter de l\textquotesingle{}attribut horodatage\+Humidite\+Exterieur \end{DoxyCompactList}\item 
+void \hyperlink{class_infos_humidite_acc6231789bd923840dadf4f17310ce69}{set\+Horodatage\+Humidite\+Exterieur} (const Q\+String \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatage\+Humidite\+Exterieur})
+\begin{DoxyCompactList}\small\item\em setter de l\textquotesingle{}attribut horodatage\+Humidite\+Exterieur \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculer\+Moyenne\+Horaire\+Humidite\+Interieur} ()
+\item 
+void \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur}
+\begin{DoxyCompactList}\small\item\em humidité interieur en pourcentage \end{DoxyCompactList}\item 
+double \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur}
+\begin{DoxyCompactList}\small\item\em humidité exterieur en pourcentage \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatage\+Humidite\+Interieur}
+\begin{DoxyCompactList}\small\item\em horodatage de l\textquotesingle{}humidité interieur \end{DoxyCompactList}\item 
+Q\+String \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatage\+Humidite\+Exterieur}
+\begin{DoxyCompactList}\small\item\em horodatage de l\textquotesingle{}humidité exterieur \end{DoxyCompactList}\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humidite\+Interieurs}
+\item 
+Q\+Vector$<$ double $>$ \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humidite\+Exterieurs}
+\item 
+int \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heure\+Courante\+Humidite\+Interieur}
+\item 
+int \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heure\+Courante\+Humidite\+Exterieur}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_humidite_a3c87ffa0e896fd5af90b1d9f15a47a57}\label{class_infos_humidite_a3c87ffa0e896fd5af90b1d9f15a47a57}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!Infos\+Humidite@{Infos\+Humidite}}
+\index{Infos\+Humidite@{Infos\+Humidite}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{Infos\+Humidite()}{InfosHumidite()}}
+{\footnotesize\ttfamily Infos\+Humidite\+::\+Infos\+Humidite (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+Définition des attributs pression\+Atmospherique à 0 et l\textquotesingle{}attribut horodatage\+Pression\+Atmospherique à \char`\"{}\char`\"{} 
+\begin{DoxyCode}
+00026                                             :\hyperlink{class_q_object}{QObject}(parent),
+      \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur}(0),\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur}(0),
+      \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur}(\textcolor{stringliteral}{""}),
+      \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur}(\textcolor{stringliteral}{""}), 
+      \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur}(-1), 
+      \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur}(-1)
+00027 \{
+00028 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}\label{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!calculer\+Moyenne\+Horaire\+Humidite\+Exterieur@{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur}}
+\index{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur@{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur()}{calculerMoyenneHoraireHumiditeExterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::calculer\+Moyenne\+Horaire\+Humidite\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heure\+Courante\+Humidite\+Exterieur}, \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humidite\+Exterieurs}, et \hyperlink{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}{traitement\+Humidite\+Exterieur\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur()}.
+
+
+\begin{DoxyCode}
+00215 \{
+00216     \textcolor{keywordtype}{double} sommeHumiditeExterieur = 0;
+00217     \textcolor{keywordtype}{double} humiditeExterieurMoyenne = 0;
+00218     \textcolor{keywordtype}{double} humiditeExterieurMinimum = 999;
+00219     \textcolor{keywordtype}{double} humiditeExterieurMaximum = -999;
+00220 
+00221     \textcolor{comment}{// au moins 2 mesures}
+00222     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}.size() >= 2)
+00223     \{
+00224         humiditeExterieurMinimum = \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[0];
+00225         humiditeExterieurMaximum = \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[0];
+00226         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}.size(); i++)
+00227         \{
+00228             sommeHumiditeExterieur += \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[i];
+00229 
+00230             \textcolor{keywordflow}{if}(humiditeExterieurMinimum > \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[i])
+00231             \{
+00232                 humiditeExterieurMinimum = \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[i];
+00233             \}
+00234 
+00235             \textcolor{keywordflow}{if}(humiditeExterieurMaximum < \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[i])
+00236             \{
+00237                 humiditeExterieurMaximum = \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}[i];
+00238             \}
+00239         \}
+00240     \}
+00241     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs};
+00242     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"humiditeExterieurMoyenne="} << humiditeExterieurMoyenne << \textcolor{stringliteral}{"
+      humiditeExterieurMinimum="} << humiditeExterieurMinimum << \textcolor{stringliteral}{"humiditeExterieurMaximum="} << humiditeExterieurMaximum;
+00243     humiditeExterieurMoyenne = sommeHumiditeExterieur / double(humiditeExterieurs.size());
+00244     emit \hyperlink{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}{traitementHumiditeExterieurEnvoye}(humiditeExterieurMoyenne, 
+      humiditeExterieurMinimum, humiditeExterieurMaximum, \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur})
+      ;
+00245     humiditeExterieurs.clear();
+00246 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}\label{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!calculer\+Moyenne\+Horaire\+Humidite\+Interieur@{calculer\+Moyenne\+Horaire\+Humidite\+Interieur}}
+\index{calculer\+Moyenne\+Horaire\+Humidite\+Interieur@{calculer\+Moyenne\+Horaire\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{calculer\+Moyenne\+Horaire\+Humidite\+Interieur()}{calculerMoyenneHoraireHumiditeInterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::calculer\+Moyenne\+Horaire\+Humidite\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Références \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heure\+Courante\+Humidite\+Interieur}, \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humidite\+Interieurs}, et \hyperlink{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}{traitement\+Humidite\+Interieur\+Envoye()}.
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur()}.
+
+
+\begin{DoxyCode}
+00176 \{
+00177     \textcolor{keywordtype}{double} sommeHumiditeInterieur = 0;
+00178     \textcolor{keywordtype}{double} humiditeInterieurMoyenne = 0;
+00179     \textcolor{keywordtype}{double} humiditeInterieurMinimum = 999;
+00180     \textcolor{keywordtype}{double} humiditeInterieurMaximum = -999;
+00181 
+00182     \textcolor{comment}{// au moins 2 mesures}
+00183     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}.size() >= 2)
+00184     \{
+00185         humiditeInterieurMinimum = \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[0];
+00186         humiditeInterieurMaximum = \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[0];
+00187         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}.size(); i++)
+00188         \{
+00189             sommeHumiditeInterieur += \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[i];
+00190 
+00191             \textcolor{keywordflow}{if}(humiditeInterieurMinimum > \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[i])
+00192             \{
+00193                 humiditeInterieurMinimum = \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[i];
+00194             \}
+00195 
+00196             \textcolor{keywordflow}{if}(humiditeInterieurMaximum < \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[i])
+00197             \{
+00198                 humiditeInterieurMaximum = \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}[i];
+00199             \}
+00200         \}
+00201     \}
+00202     qDebug() << Q\_FUNC\_INFO << \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs};
+00203     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"humiditeInterieurMoyenne="} << humiditeInterieurMoyenne << \textcolor{stringliteral}{"
+      humiditeInterieurMinimum="} << humiditeInterieurMinimum << \textcolor{stringliteral}{"humiditeInterieurMaximum="} << humiditeInterieurMaximum;
+00204     humiditeInterieurMoyenne = sommeHumiditeInterieur / double(humiditeInterieurs.size());
+00205     emit \hyperlink{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}{traitementHumiditeInterieurEnvoye}(humiditeInterieurMoyenne, 
+      humiditeInterieurMinimum, humiditeInterieurMaximum, \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur})
+      ;
+00206     humiditeInterieurs.clear();
+00207 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a04abb2841492704e125874464052bb4f}\label{class_infos_humidite_a04abb2841492704e125874464052bb4f}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!get\+Horodatage\+Humidite\+Exterieur@{get\+Horodatage\+Humidite\+Exterieur}}
+\index{get\+Horodatage\+Humidite\+Exterieur@{get\+Horodatage\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Humidite\+Exterieur()}{getHorodatageHumiditeExterieur()}}
+{\footnotesize\ttfamily Q\+String Infos\+Humidite\+::get\+Horodatage\+Humidite\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+un {\itshape Q\+String} correspondant a la valeur de l\textquotesingle{}attribut horodatage\+Humidite\+Exterieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatage\+Humidite\+Exterieur}.
+
+
+\begin{DoxyCode}
+00098 \{
+00099     \textcolor{keywordflow}{return} \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur};
+00100 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a841d2583f206a9097fa3871adc8be568}\label{class_infos_humidite_a841d2583f206a9097fa3871adc8be568}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!get\+Horodatage\+Humidite\+Interieur@{get\+Horodatage\+Humidite\+Interieur}}
+\index{get\+Horodatage\+Humidite\+Interieur@{get\+Horodatage\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Humidite\+Interieur()}{getHorodatageHumiditeInterieur()}}
+{\footnotesize\ttfamily Q\+String Infos\+Humidite\+::get\+Horodatage\+Humidite\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape Q\+String} horodatage\+Humidite\+Interieur corespondant a l\textquotesingle{}attribut horodatage\+Humidite\+Interieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatage\+Humidite\+Interieur}.
+
+
+\begin{DoxyCode}
+00057 \{
+00058     \textcolor{keywordflow}{return} \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur};
+00059 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}\label{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!get\+Humidite\+Exterieur@{get\+Humidite\+Exterieur}}
+\index{get\+Humidite\+Exterieur@{get\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{get\+Humidite\+Exterieur()}{getHumiditeExterieur()}}
+{\footnotesize\ttfamily double Infos\+Humidite\+::get\+Humidite\+Exterieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape double} la valeur de l\textquotesingle{}humidite\+Exterieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur}.
+
+
+
+Référencé par \hyperlink{class_alertes_a8606946eaa04dfd29bb7951b2b850a04}{Alertes\+::alertes\+Humidite\+Exterieur()}.
+
+
+\begin{DoxyCode}
+00077 \{
+00078     \textcolor{keywordflow}{return} \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur};
+00079 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}\label{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!get\+Humidite\+Interieur@{get\+Humidite\+Interieur}}
+\index{get\+Humidite\+Interieur@{get\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{get\+Humidite\+Interieur()}{getHumiditeInterieur()}}
+{\footnotesize\ttfamily double Infos\+Humidite\+::get\+Humidite\+Interieur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Renvoie}
+{\itshape double} corespondant a la valeur de l\textquotesingle{}attribut humidite\+Interieur 
+\end{DoxyReturn}
+
+
+Références \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur}.
+
+
+
+Référencé par \hyperlink{class_alertes_a7558cb097dc392547ceb12ab4d6cbd4c}{Alertes\+::alertes\+Humidite\+Interieur()}, et \hyperlink{class_ruche_aa61f6dd8b15e5242ef3a3bdd87cca4a3}{Ruche\+::inserer\+Donnees\+Port\+Mesure\+Ruche()}.
+
+
+\begin{DoxyCode}
+00037 \{
+00038     \textcolor{keywordflow}{return} \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur};
+00039 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}\label{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Exterieur\+Envoye@{humidite\+Exterieur\+Envoye}}
+\index{humidite\+Exterieur\+Envoye@{humidite\+Exterieur\+Envoye}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Exterieur\+Envoye}{humiditeExterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::humidite\+Exterieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{humidite\+Exterieur,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}\label{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Interieur\+Envoye@{humidite\+Interieur\+Envoye}}
+\index{humidite\+Interieur\+Envoye@{humidite\+Interieur\+Envoye}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Interieur\+Envoye}{humiditeInterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::humidite\+Interieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{humidite\+Interieur,  }\item[{Q\+String}]{horodatage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_acc6231789bd923840dadf4f17310ce69}\label{class_infos_humidite_acc6231789bd923840dadf4f17310ce69}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!set\+Horodatage\+Humidite\+Exterieur@{set\+Horodatage\+Humidite\+Exterieur}}
+\index{set\+Horodatage\+Humidite\+Exterieur@{set\+Horodatage\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Humidite\+Exterieur()}{setHorodatageHumiditeExterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::set\+Horodatage\+Humidite\+Exterieur (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Humidite\+Exterieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Humidite\+Exterieur} & \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatage\+Humidite\+Exterieur}.
+
+
+\begin{DoxyCode}
+00109 \{
+00110     this->\hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur} = 
+      \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur};
+00111 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a8054d13ab8f57504392756351c376534}\label{class_infos_humidite_a8054d13ab8f57504392756351c376534}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!set\+Horodatage\+Humidite\+Interieur@{set\+Horodatage\+Humidite\+Interieur}}
+\index{set\+Horodatage\+Humidite\+Interieur@{set\+Horodatage\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Humidite\+Interieur()}{setHorodatageHumiditeInterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::set\+Horodatage\+Humidite\+Interieur (\begin{DoxyParamCaption}\item[{const Q\+String}]{horodatage\+Humidite\+Interieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em horodatage\+Humidite\+Interieur} & corespondant a l\textquotesingle{}horodatage humiddite interieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatage\+Humidite\+Interieur}.
+
+
+\begin{DoxyCode}
+00067 \{
+00068     this->\hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur} = 
+      \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur};
+00069 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a8228ff1f1d0466df228ed3f2e2d269ac}\label{class_infos_humidite_a8228ff1f1d0466df228ed3f2e2d269ac}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!set\+Humidite\+Exterieur@{set\+Humidite\+Exterieur}}
+\index{set\+Humidite\+Exterieur@{set\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{set\+Humidite\+Exterieur()}{setHumiditeExterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::set\+Humidite\+Exterieur (\begin{DoxyParamCaption}\item[{double}]{humidite\+Exterieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em humidite\+Exterieur} & corespondant a l\textquotesingle{}humidité l\textquotesingle{}exterieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur}.
+
+
+\begin{DoxyCode}
+00087 \{
+00088     this->\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur} = \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur};
+00089 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a238c8b3bd6b09c4f770058a05468baa8}\label{class_infos_humidite_a238c8b3bd6b09c4f770058a05468baa8}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!set\+Humidite\+Interieur@{set\+Humidite\+Interieur}}
+\index{set\+Humidite\+Interieur@{set\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{set\+Humidite\+Interieur()}{setHumiditeInterieur()}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::set\+Humidite\+Interieur (\begin{DoxyParamCaption}\item[{double}]{humidite\+Interieur }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em humidite\+Interieur} & corespondant a l\textquotesingle{}humidite interieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur}.
+
+
+\begin{DoxyCode}
+00047 \{
+00048     this->\hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur} = \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur};
+00049 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}\label{class_infos_humidite_abd0535dee74a4588232d282d0fe64829}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!traitement\+Humidite\+Exterieur\+Envoye@{traitement\+Humidite\+Exterieur\+Envoye}}
+\index{traitement\+Humidite\+Exterieur\+Envoye@{traitement\+Humidite\+Exterieur\+Envoye}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{traitement\+Humidite\+Exterieur\+Envoye}{traitementHumiditeExterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::traitement\+Humidite\+Exterieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Exterieur\+Moyenne,  }\item[{const double}]{temperature\+Exterieur\+Minimum,  }\item[{const double}]{temperature\+Exterieur\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}\label{class_infos_humidite_a3643afa07ff3ac73a4190d77ce230d3b}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!traitement\+Humidite\+Interieur\+Envoye@{traitement\+Humidite\+Interieur\+Envoye}}
+\index{traitement\+Humidite\+Interieur\+Envoye@{traitement\+Humidite\+Interieur\+Envoye}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{traitement\+Humidite\+Interieur\+Envoye}{traitementHumiditeInterieurEnvoye}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::traitement\+Humidite\+Interieur\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{temperature\+Interieur\+Moyenne,  }\item[{const double}]{temperature\+Interieur\+Minimum,  }\item[{const double}]{temperature\+Interieur\+Maximum,  }\item[{int}]{heure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculer\+Moyenne\+Horaire\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}\label{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!traiter\+Nouvelle\+Humidite\+Exterieur@{traiter\+Nouvelle\+Humidite\+Exterieur}}
+\index{traiter\+Nouvelle\+Humidite\+Exterieur@{traiter\+Nouvelle\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Humidite\+Exterieur}{traiterNouvelleHumiditeExterieur}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::traiter\+Nouvelle\+Humidite\+Exterieur (\begin{DoxyParamCaption}\item[{Q\+String}]{humidite\+Exterieurstring,  }\item[{Q\+String}]{horodatage\+Humidite\+Exterieur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em humidite\+Exterieurstring} & qui corespond a l\textquotesingle{}humidite exterieur envoyé par la \hyperlink{class_ruche}{Ruche} \\
+\hline
+{\em horodatage\+Humidite\+Exterieur} & qui correspond a l\textquotesingle{}horodatage de la mesure de l\textquotesingle{}humidité exterieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur()}, \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heure\+Courante\+Humidite\+Exterieur}, \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humidite\+Exterieur}, \hyperlink{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}{humidite\+Exterieur\+Envoye()}, et \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humidite\+Exterieurs}.
+
+
+\begin{DoxyCode}
+00152 \{
+00153     \hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur} = humiditeExterieurstring.toDouble();
+00154     emit \hyperlink{class_infos_humidite_a666d4bd12639460ea0fd2a3f483c2842}{humiditeExterieurEnvoye}(\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur},
+      \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur});
+00155 
+00156 
+00157     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}{horodatageHumiditeExterieur}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00158     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCouranteHumiditeExterieur"} << 
+      \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur} << dateTimeHorodatage.time().hour();
+00159     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur} == -1)
+00160     \{
+00161         \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur} = dateTimeHorodatage.time().hour();
+00162     \}
+00163     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur} == dateTimeHorodatage.time().hour())
+00164     \{
+00165         \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}.append(\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur});
+00166     \}
+00167     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur}+1)%24 == dateTimeHorodatage.time(
+      ).hour())
+00168     \{
+00169         \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculerMoyenneHoraireHumiditeExterieur}();
+00170         \hyperlink{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}{heureCouranteHumiditeExterieur} = dateTimeHorodatage.time().hour();
+00171         \hyperlink{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}{humiditeExterieurs}.append(\hyperlink{class_infos_humidite_a503a9c849508928d3046292f17f37230}{humiditeExterieur});
+00172     \}
+00173 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}\label{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!traiter\+Nouvelle\+Humidite\+Interieur@{traiter\+Nouvelle\+Humidite\+Interieur}}
+\index{traiter\+Nouvelle\+Humidite\+Interieur@{traiter\+Nouvelle\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{traiter\+Nouvelle\+Humidite\+Interieur}{traiterNouvelleHumiditeInterieur}}
+{\footnotesize\ttfamily void Infos\+Humidite\+::traiter\+Nouvelle\+Humidite\+Interieur (\begin{DoxyParamCaption}\item[{Q\+String}]{humidite\+Interieurstring,  }\item[{Q\+String}]{horodatage\+Humidite\+Interieur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Paramètres}
+{\em humidite\+Interieurstring} & qui corespond a l\textquotesingle{}humidite interieur envoyé par la \hyperlink{class_ruche}{Ruche} \\
+\hline
+{\em horodatage\+Humidite\+Interieur} & correspond a l\textquotesingle{}horodatage de la mesure de l\textquotesingle{}humidité interieur \\
+\hline
+\end{DoxyParams}
+
+
+Références \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculer\+Moyenne\+Horaire\+Humidite\+Interieur()}, \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heure\+Courante\+Humidite\+Interieur}, \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humidite\+Interieur}, \hyperlink{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}{humidite\+Interieur\+Envoye()}, et \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humidite\+Interieurs}.
+
+
+\begin{DoxyCode}
+00121 \{
+00122     \hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur} = humiditeInterieurstring.toDouble();
+00123     emit \hyperlink{class_infos_humidite_aa0eb7d8a609b837e1b450b7d79e1ff81}{humiditeInterieurEnvoye}(\hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur},
+      \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur});
+00124 
+00125     QDateTime dateTimeHorodatage = QDateTime::fromString(
+      \hyperlink{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}{horodatageHumiditeInterieur}, \textcolor{stringliteral}{"dd/MM/yyyy HH:mm:ss"});
+00126     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"heureCouranteHumiditeInterieur"} << 
+      \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur} << dateTimeHorodatage.time().hour();
+00127     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur} == -1)
+00128     \{
+00129         \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur} = dateTimeHorodatage.time().hour();
+00130     \}
+00131     \textcolor{keywordflow}{if}(\hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur} == dateTimeHorodatage.time().hour())
+00132     \{
+00133         \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}.append(\hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur});
+00134     \}
+00135     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}((\hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur}+1)%24 == dateTimeHorodatage.time(
+      ).hour())
+00136     \{
+00137         \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculerMoyenneHoraireHumiditeInterieur}();
+00138         \hyperlink{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}{heureCouranteHumiditeInterieur} = dateTimeHorodatage.time().hour();
+00139         \hyperlink{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}{humiditeInterieurs}.append(\hyperlink{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}{humiditeInterieur});
+00140     \}
+00141 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}\label{class_infos_humidite_ad7b450373a47ec831872872e0e5674ad}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!heure\+Courante\+Humidite\+Exterieur@{heure\+Courante\+Humidite\+Exterieur}}
+\index{heure\+Courante\+Humidite\+Exterieur@{heure\+Courante\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{heure\+Courante\+Humidite\+Exterieur}{heureCouranteHumiditeExterieur}}
+{\footnotesize\ttfamily int Infos\+Humidite\+::heure\+Courante\+Humidite\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur()}, et \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}\label{class_infos_humidite_a5a8597751ba0fe10a14a12e155421485}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!heure\+Courante\+Humidite\+Interieur@{heure\+Courante\+Humidite\+Interieur}}
+\index{heure\+Courante\+Humidite\+Interieur@{heure\+Courante\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{heure\+Courante\+Humidite\+Interieur}{heureCouranteHumiditeInterieur}}
+{\footnotesize\ttfamily int Infos\+Humidite\+::heure\+Courante\+Humidite\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculer\+Moyenne\+Horaire\+Humidite\+Interieur()}, et \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}\label{class_infos_humidite_aa08b4f342e83f8ad437a8272698bb512}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!horodatage\+Humidite\+Exterieur@{horodatage\+Humidite\+Exterieur}}
+\index{horodatage\+Humidite\+Exterieur@{horodatage\+Humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{horodatage\+Humidite\+Exterieur}{horodatageHumiditeExterieur}}
+{\footnotesize\ttfamily Q\+String Infos\+Humidite\+::horodatage\+Humidite\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a04abb2841492704e125874464052bb4f}{get\+Horodatage\+Humidite\+Exterieur()}, et \hyperlink{class_infos_humidite_acc6231789bd923840dadf4f17310ce69}{set\+Horodatage\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}\label{class_infos_humidite_a38712bac5a2d4d106a016647ad39fedf}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!horodatage\+Humidite\+Interieur@{horodatage\+Humidite\+Interieur}}
+\index{horodatage\+Humidite\+Interieur@{horodatage\+Humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{horodatage\+Humidite\+Interieur}{horodatageHumiditeInterieur}}
+{\footnotesize\ttfamily Q\+String Infos\+Humidite\+::horodatage\+Humidite\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a841d2583f206a9097fa3871adc8be568}{get\+Horodatage\+Humidite\+Interieur()}, et \hyperlink{class_infos_humidite_a8054d13ab8f57504392756351c376534}{set\+Horodatage\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a503a9c849508928d3046292f17f37230}\label{class_infos_humidite_a503a9c849508928d3046292f17f37230}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Exterieur@{humidite\+Exterieur}}
+\index{humidite\+Exterieur@{humidite\+Exterieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Exterieur}{humiditeExterieur}}
+{\footnotesize\ttfamily double Infos\+Humidite\+::humidite\+Exterieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a23e537fdfa33336a3970838f445387ce}{get\+Humidite\+Exterieur()}, \hyperlink{class_infos_humidite_a8228ff1f1d0466df228ed3f2e2d269ac}{set\+Humidite\+Exterieur()}, et \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}\label{class_infos_humidite_a62d1331116ee1cf00cb8fa369a214c62}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Exterieurs@{humidite\+Exterieurs}}
+\index{humidite\+Exterieurs@{humidite\+Exterieurs}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Exterieurs}{humiditeExterieurs}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Humidite\+::humidite\+Exterieurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_afc4f6ba3cd4664118ef40f4c12b76506}{calculer\+Moyenne\+Horaire\+Humidite\+Exterieur()}, et \hyperlink{class_infos_humidite_a8d17fa3c7d15b1ff8130ae5d22702e5f}{traiter\+Nouvelle\+Humidite\+Exterieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}\label{class_infos_humidite_ad2847e671ad0b90f8dc0940dee107c38}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Interieur@{humidite\+Interieur}}
+\index{humidite\+Interieur@{humidite\+Interieur}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Interieur}{humiditeInterieur}}
+{\footnotesize\ttfamily double Infos\+Humidite\+::humidite\+Interieur\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_a652f7ca3e4b97352034fed62c6d865b7}{get\+Humidite\+Interieur()}, \hyperlink{class_infos_humidite_a238c8b3bd6b09c4f770058a05468baa8}{set\+Humidite\+Interieur()}, et \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur()}.
+
+\mbox{\Hypertarget{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}\label{class_infos_humidite_a2bcd5b3629a007078d4e15d110dae457}} 
+\index{Infos\+Humidite@{Infos\+Humidite}!humidite\+Interieurs@{humidite\+Interieurs}}
+\index{humidite\+Interieurs@{humidite\+Interieurs}!Infos\+Humidite@{Infos\+Humidite}}
+\paragraph{\texorpdfstring{humidite\+Interieurs}{humiditeInterieurs}}
+{\footnotesize\ttfamily Q\+Vector$<$double$>$ Infos\+Humidite\+::humidite\+Interieurs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_humidite_acd903311f6c949f8f010b330f517e4f3}{calculer\+Moyenne\+Horaire\+Humidite\+Interieur()}, et \hyperlink{class_infos_humidite_a0995d68a036f73df3b5a86e5538104bd}{traiter\+Nouvelle\+Humidite\+Interieur()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_humidite_8h}{infos\+Humidite.\+h}\item 
+\hyperlink{infos_humidite_8cpp}{infos\+Humidite.\+cpp}\end{DoxyCompactItemize}

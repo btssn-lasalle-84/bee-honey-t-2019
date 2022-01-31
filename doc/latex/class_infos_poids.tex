@@ -1,0 +1,221 @@
+\hypertarget{class_infos_poids}{}\subsection{Référence de la classe Infos\+Poids}
+\label{class_infos_poids}\index{Infos\+Poids@{Infos\+Poids}}
+
+
+Déclaration de la classe \hyperlink{class_infos_poids}{Infos\+Poids}.  
+
+
+
+
+{\ttfamily \#include $<$infos\+Poids.\+h$>$}
+
+
+
+Graphe de collaboration de Infos\+Poids\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_infos_poids__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Connecteurs publics}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}{traiter\+Nouveau\+Poids} (Q\+String nouveau\+Poids, Q\+String \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids})
+\end{DoxyCompactItemize}
+\subsubsection*{Signaux}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}{poids\+Envoye} (const double \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}, Q\+String)
+\end{DoxyCompactItemize}
+\subsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_infos_poids_a25a9086e75ce6c7e8391c3908c9324c0}{Infos\+Poids} (\hyperlink{class_q_object}{Q\+Object} $\ast$parent)
+\item 
+\hyperlink{class_infos_poids_a14038b5639c79ff6558c91aec12013d1}{$\sim$\+Infos\+Poids} ()
+\item 
+double \hyperlink{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}{get\+Poids} ()
+\item 
+void \hyperlink{class_infos_poids_a23bb9c5939d0ee5cab0ecf821cdc6779}{set\+Poids} (double \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids})
+\item 
+Q\+String \hyperlink{class_infos_poids_a9bd9ffa1a5fcd75a8d75bd7330727620}{get\+Horodatage\+Poids} ()
+\item 
+void \hyperlink{class_infos_poids_add0957f341ade104a4521ead7562dff8}{set\+Horodatage\+Poids} (Q\+String \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids})
+\end{DoxyCompactItemize}
+\subsubsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}
+\item 
+Q\+String \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Florentin Mellah, Enzo Rossi
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+
+
+\subsubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_infos_poids_a25a9086e75ce6c7e8391c3908c9324c0}\label{class_infos_poids_a25a9086e75ce6c7e8391c3908c9324c0}} 
+\index{Infos\+Poids@{Infos\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\index{Infos\+Poids@{Infos\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{Infos\+Poids()}{InfosPoids()}}
+{\footnotesize\ttfamily Infos\+Poids\+::\+Infos\+Poids (\begin{DoxyParamCaption}\item[{\hyperlink{class_q_object}{Q\+Object} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00016                                       : \hyperlink{class_q_object}{QObject}(parent), \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}(0) , 
+      \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids}(\textcolor{stringliteral}{""})
+00017 \{
+00018 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_poids_a14038b5639c79ff6558c91aec12013d1}\label{class_infos_poids_a14038b5639c79ff6558c91aec12013d1}} 
+\index{Infos\+Poids@{Infos\+Poids}!````~Infos\+Poids@{$\sim$\+Infos\+Poids}}
+\index{````~Infos\+Poids@{$\sim$\+Infos\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{$\sim$\+Infos\+Poids()}{~InfosPoids()}}
+{\footnotesize\ttfamily Infos\+Poids\+::$\sim$\+Infos\+Poids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}
+00021 \{
+00022 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_infos_poids_a9bd9ffa1a5fcd75a8d75bd7330727620}\label{class_infos_poids_a9bd9ffa1a5fcd75a8d75bd7330727620}} 
+\index{Infos\+Poids@{Infos\+Poids}!get\+Horodatage\+Poids@{get\+Horodatage\+Poids}}
+\index{get\+Horodatage\+Poids@{get\+Horodatage\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{get\+Horodatage\+Poids()}{getHorodatagePoids()}}
+{\footnotesize\ttfamily Q\+String Infos\+Poids\+::get\+Horodatage\+Poids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids}.
+
+
+
+Référencé par \hyperlink{class_ruche_a923f42fc4878a01f6102966a748e8f37}{Ruche\+::inserer\+Donnees\+Port\+Poids()}.
+
+
+\begin{DoxyCode}
+00043 \{
+00044     \textcolor{keywordflow}{return} \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids};
+00045 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}\label{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}} 
+\index{Infos\+Poids@{Infos\+Poids}!get\+Poids@{get\+Poids}}
+\index{get\+Poids@{get\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{get\+Poids()}{getPoids()}}
+{\footnotesize\ttfamily double Infos\+Poids\+::get\+Poids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}.
+
+
+
+Référencé par \hyperlink{class_alertes_ac4b8925cc6c262cf7254b1576ba07d33}{Alertes\+::alertes\+Poids()}.
+
+
+\begin{DoxyCode}
+00025 \{
+00026     \textcolor{keywordflow}{return} \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids};
+00027 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}\label{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}} 
+\index{Infos\+Poids@{Infos\+Poids}!poids\+Envoye@{poids\+Envoye}}
+\index{poids\+Envoye@{poids\+Envoye}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{poids\+Envoye}{poidsEnvoye}}
+{\footnotesize\ttfamily void Infos\+Poids\+::poids\+Envoye (\begin{DoxyParamCaption}\item[{const double}]{poids,  }\item[{Q\+String}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Référencé par \hyperlink{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}{traiter\+Nouveau\+Poids()}.
+
+\mbox{\Hypertarget{class_infos_poids_add0957f341ade104a4521ead7562dff8}\label{class_infos_poids_add0957f341ade104a4521ead7562dff8}} 
+\index{Infos\+Poids@{Infos\+Poids}!set\+Horodatage\+Poids@{set\+Horodatage\+Poids}}
+\index{set\+Horodatage\+Poids@{set\+Horodatage\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{set\+Horodatage\+Poids()}{setHorodatagePoids()}}
+{\footnotesize\ttfamily void Infos\+Poids\+::set\+Horodatage\+Poids (\begin{DoxyParamCaption}\item[{Q\+String}]{horodatage\+Poids }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids}.
+
+
+\begin{DoxyCode}
+00047 \{
+00048     this->\hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids} = \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids};
+00049 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_poids_a23bb9c5939d0ee5cab0ecf821cdc6779}\label{class_infos_poids_a23bb9c5939d0ee5cab0ecf821cdc6779}} 
+\index{Infos\+Poids@{Infos\+Poids}!set\+Poids@{set\+Poids}}
+\index{set\+Poids@{set\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{set\+Poids()}{setPoids()}}
+{\footnotesize\ttfamily void Infos\+Poids\+::set\+Poids (\begin{DoxyParamCaption}\item[{double}]{poids }\end{DoxyParamCaption})}
+
+
+
+Références \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}.
+
+
+\begin{DoxyCode}
+00030 \{
+00031     this->\hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids} = \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids};
+00032 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}\label{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}} 
+\index{Infos\+Poids@{Infos\+Poids}!traiter\+Nouveau\+Poids@{traiter\+Nouveau\+Poids}}
+\index{traiter\+Nouveau\+Poids@{traiter\+Nouveau\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{traiter\+Nouveau\+Poids}{traiterNouveauPoids}}
+{\footnotesize\ttfamily void Infos\+Poids\+::traiter\+Nouveau\+Poids (\begin{DoxyParamCaption}\item[{Q\+String}]{nouveau\+Poids,  }\item[{Q\+String}]{horodatage\+Poids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Références \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatage\+Poids}, \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids}, et \hyperlink{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}{poids\+Envoye()}.
+
+
+\begin{DoxyCode}
+00035 \{
+00036     this->\hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids} = \hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids};
+00037     \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids} = nouveauPoids.toDouble() / 1000;
+00038     emit \hyperlink{class_infos_poids_a3c4ca9068911e45d0207de051ef5b402}{poidsEnvoye}(\hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids},\hyperlink{class_infos_poids_a6cff463552adfdde9430073a87878494}{horodatagePoids});
+00039     qDebug() << Q\_FUNC\_INFO << \textcolor{stringliteral}{"poids = "} << \hyperlink{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}{poids};
+00040 \}
+\end{DoxyCode}
+
+
+\subsubsection{Documentation des données membres}
+\mbox{\Hypertarget{class_infos_poids_a6cff463552adfdde9430073a87878494}\label{class_infos_poids_a6cff463552adfdde9430073a87878494}} 
+\index{Infos\+Poids@{Infos\+Poids}!horodatage\+Poids@{horodatage\+Poids}}
+\index{horodatage\+Poids@{horodatage\+Poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{horodatage\+Poids}{horodatagePoids}}
+{\footnotesize\ttfamily Q\+String Infos\+Poids\+::horodatage\+Poids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_poids_a9bd9ffa1a5fcd75a8d75bd7330727620}{get\+Horodatage\+Poids()}, \hyperlink{class_infos_poids_add0957f341ade104a4521ead7562dff8}{set\+Horodatage\+Poids()}, et \hyperlink{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}{traiter\+Nouveau\+Poids()}.
+
+\mbox{\Hypertarget{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}\label{class_infos_poids_ac5faebb99bd0f87f96b442f10349cbd8}} 
+\index{Infos\+Poids@{Infos\+Poids}!poids@{poids}}
+\index{poids@{poids}!Infos\+Poids@{Infos\+Poids}}
+\paragraph{\texorpdfstring{poids}{poids}}
+{\footnotesize\ttfamily double Infos\+Poids\+::poids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Référencé par \hyperlink{class_infos_poids_a902fb0222d3b2fa396987daed57377d2}{get\+Poids()}, \hyperlink{class_infos_poids_a23bb9c5939d0ee5cab0ecf821cdc6779}{set\+Poids()}, et \hyperlink{class_infos_poids_aa5284d38d33adba31ba033b8af61cc96}{traiter\+Nouveau\+Poids()}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{infos_poids_8h}{infos\+Poids.\+h}\item 
+\hyperlink{infos_poids_8cpp}{infos\+Poids.\+cpp}\end{DoxyCompactItemize}
