@@ -1,0 +1,10 @@
+<map id="Alertes" name="Alertes">
+<area shape="rect" id="node2" href="$class_q_object.html" title="{QObject\n||}" alt="" coords="752,5,823,83"/>
+<area shape="rect" id="node3" href="$class_infos_ensoleillement.html" title="La classe InfosEnsoleillement. " alt="" coords="127,301,389,510"/>
+<area shape="rect" id="node4" href="$class_infos_poids.html" title="Déclaration de la classe InfosPoids. " alt="" coords="414,315,574,495"/>
+<area shape="rect" id="node5" href="$class_infos_humidite.html" title="La classe InfosHumidite. " alt="" coords="599,213,829,598"/>
+<area shape="rect" id="node6" href="$class_infos_temperature.html" title="La classe InfosTemperature. " alt="" coords="854,132,1097,679"/>
+<area shape="rect" id="node7" href="$class_infos_batterie.html" title="Déclaration de la classe InfosBatterie. " alt="" coords="1121,271,1336,539"/>
+<area shape="rect" id="node8" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="1360,257,1505,554"/>
+<area shape="rect" id="node9" href="$class_infos_pression_atmospherique.html" title="La classe InfosPressionAtmospherique. " alt="" coords="1659,286,1924,525"/>
+</map>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t:  Fichier source de infosPressionAtmospherique.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a9685624822155ff41e8b6d3add21d1a.html">rucheIhm</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">infosPressionAtmospherique.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="infos_pression_atmospherique_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INFOSPRESSIONATMOSPHERIQUE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INFOSPRESSIONATMOSPHERIQUE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QtCore/QObject&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_infos_pression_atmospherique.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_infos_pression_atmospherique.html">InfosPressionAtmospherique</a>: <span class="keyword">public</span> <a class="code" href="class_q_object.html">QObject</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_infos_pression_atmospherique.html#a69f31dc0d0ef59f8ced23e4663ee1ab8">   37</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_infos_pression_atmospherique.html#a69f31dc0d0ef59f8ced23e4663ee1ab8">pressionAtmospherique</a>; </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_infos_pression_atmospherique.html#aba207458a51a9290e4f2e0795983a44e">   38</a></span>&#160;        QString <a class="code" href="class_infos_pression_atmospherique.html#aba207458a51a9290e4f2e0795983a44e">horodatagePressionAtmospherique</a>; </div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_infos_pression_atmospherique.html#a38218b11dc9fb22aca7525f93155a26c">   39</a></span>&#160;        QVector &lt;double&gt; <a class="code" href="class_infos_pression_atmospherique.html#a38218b11dc9fb22aca7525f93155a26c">pressionAtmospheriques</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_infos_pression_atmospherique.html#ab3fa5c89841cf03f371ef7848b8bc958">   40</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_infos_pression_atmospherique.html#ab3fa5c89841cf03f371ef7848b8bc958">heureCourantePressionAtmospherique</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#a287f1f24726218868c8531365c1a22ec">calculerMoyenneHorairePressionAtmospherique</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_infos_pression_atmospherique.html#aade2e8de08264974305962bea890bf68">InfosPressionAtmospherique</a>(<a class="code" href="class_q_object.html">QObject</a> *parent);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_infos_pression_atmospherique.html#a3f4d667523391ceb3c2342c70a3ee41f">~InfosPressionAtmospherique</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="class_infos_pression_atmospherique.html#ace9906ecdd245d4d443554fcc77c76a5">getPressionAtmospherique</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#ab598771e222fbca604ac6dba5d2aacb9">setPressionAtmospherique</a>(<span class="keywordtype">double</span> pressionAtmospherique);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        QString <a class="code" href="class_infos_pression_atmospherique.html#a6836dfc16f1be4287354ea26a080b436">getHorodatagePressionAtmospherique</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#a5d8ba94db66bb7bcdf5a70dd6f21de23">setHorodatagePressionAtmospherique</a>(<span class="keyword">const</span> QString horodatagePressionAtmospherique);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span> slots:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#ab280f47f2a1376222a45fde8638489d2">traiterNouvellePressionAtmospherique</a>(QString pressionAtmospheriqueString , QString horodatagePressionAtmospherique);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    signals:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#ad5342b25c87fd5e41a89ad74b5f69c86">pressionAtmospheriqueEnvoye</a>(<span class="keywordtype">double</span> pressionAtmospherique,QString horodatage);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_infos_pression_atmospherique.html#af759842c05a1e59b56d433e823bee341">traitementPressionAtmospheriqueEnvoye</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> pressionAtmospheriqueMoyenne, <span class="keyword">const</span> <span class="keywordtype">double</span> pressionAtmospheriqueMinimum, <span class="keyword">const</span> <span class="keywordtype">double</span> pressionAtmospheriqueMaximum, <span class="keywordtype">int</span> heure);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // INFOSPRESSIONATMOSPHERIQUE_H</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="ttc" id="class_infos_pression_atmospherique_html_ab280f47f2a1376222a45fde8638489d2"><div class="ttname"><a href="class_infos_pression_atmospherique.html#ab280f47f2a1376222a45fde8638489d2">InfosPressionAtmospherique::traiterNouvellePressionAtmospherique</a></div><div class="ttdeci">void traiterNouvellePressionAtmospherique(QString pressionAtmospheriqueString, QString horodatagePressionAtmospherique)</div><div class="ttdoc">slot qui traite la pression atmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:81</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_ab598771e222fbca604ac6dba5d2aacb9"><div class="ttname"><a href="class_infos_pression_atmospherique.html#ab598771e222fbca604ac6dba5d2aacb9">InfosPressionAtmospherique::setPressionAtmospherique</a></div><div class="ttdeci">void setPressionAtmospherique(double pressionAtmospherique)</div><div class="ttdoc">setter de l&amp;#39;attribut pressionAtmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:52</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a3f4d667523391ceb3c2342c70a3ee41f"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a3f4d667523391ceb3c2342c70a3ee41f">InfosPressionAtmospherique::~InfosPressionAtmospherique</a></div><div class="ttdeci">~InfosPressionAtmospherique()</div><div class="ttdoc">destructeur de la classe InfosPressionAtmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:33</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a6836dfc16f1be4287354ea26a080b436"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a6836dfc16f1be4287354ea26a080b436">InfosPressionAtmospherique::getHorodatagePressionAtmospherique</a></div><div class="ttdeci">QString getHorodatagePressionAtmospherique() const</div><div class="ttdoc">getter de l&amp;#39;attribut horodatagePressionAtmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:70</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a5d8ba94db66bb7bcdf5a70dd6f21de23"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a5d8ba94db66bb7bcdf5a70dd6f21de23">InfosPressionAtmospherique::setHorodatagePressionAtmospherique</a></div><div class="ttdeci">void setHorodatagePressionAtmospherique(const QString horodatagePressionAtmospherique)</div><div class="ttdoc">setter de l&amp;#39;attribut horodatagePressionAtmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:61</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_ab3fa5c89841cf03f371ef7848b8bc958"><div class="ttname"><a href="class_infos_pression_atmospherique.html#ab3fa5c89841cf03f371ef7848b8bc958">InfosPressionAtmospherique::heureCourantePressionAtmospherique</a></div><div class="ttdeci">int heureCourantePressionAtmospherique</div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.h:40</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a69f31dc0d0ef59f8ced23e4663ee1ab8"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a69f31dc0d0ef59f8ced23e4663ee1ab8">InfosPressionAtmospherique::pressionAtmospherique</a></div><div class="ttdeci">double pressionAtmospherique</div><div class="ttdoc">la pression atmospherique (unité ?) </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.h:37</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a38218b11dc9fb22aca7525f93155a26c"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a38218b11dc9fb22aca7525f93155a26c">InfosPressionAtmospherique::pressionAtmospheriques</a></div><div class="ttdeci">QVector&lt; double &gt; pressionAtmospheriques</div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.h:39</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_aade2e8de08264974305962bea890bf68"><div class="ttname"><a href="class_infos_pression_atmospherique.html#aade2e8de08264974305962bea890bf68">InfosPressionAtmospherique::InfosPressionAtmospherique</a></div><div class="ttdeci">InfosPressionAtmospherique(QObject *parent)</div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:26</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_ace9906ecdd245d4d443554fcc77c76a5"><div class="ttname"><a href="class_infos_pression_atmospherique.html#ace9906ecdd245d4d443554fcc77c76a5">InfosPressionAtmospherique::getPressionAtmospherique</a></div><div class="ttdeci">double getPressionAtmospherique()</div><div class="ttdoc">getter de l&amp;#39;attribut pressionAtmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:42</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_aba207458a51a9290e4f2e0795983a44e"><div class="ttname"><a href="class_infos_pression_atmospherique.html#aba207458a51a9290e4f2e0795983a44e">InfosPressionAtmospherique::horodatagePressionAtmospherique</a></div><div class="ttdeci">QString horodatagePressionAtmospherique</div><div class="ttdoc">horodatage de la pression atmospherique </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.h:38</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_ad5342b25c87fd5e41a89ad74b5f69c86"><div class="ttname"><a href="class_infos_pression_atmospherique.html#ad5342b25c87fd5e41a89ad74b5f69c86">InfosPressionAtmospherique::pressionAtmospheriqueEnvoye</a></div><div class="ttdeci">void pressionAtmospheriqueEnvoye(double pressionAtmospherique, QString horodatage)</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html"><div class="ttname"><a href="class_infos_pression_atmospherique.html">InfosPressionAtmospherique</a></div><div class="ttdoc">La classe InfosPressionAtmospherique. </div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.h:32</div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_a287f1f24726218868c8531365c1a22ec"><div class="ttname"><a href="class_infos_pression_atmospherique.html#a287f1f24726218868c8531365c1a22ec">InfosPressionAtmospherique::calculerMoyenneHorairePressionAtmospherique</a></div><div class="ttdeci">void calculerMoyenneHorairePressionAtmospherique()</div><div class="ttdef"><b>Definition:</b> infosPressionAtmospherique.cpp:104</div></div>
+<div class="ttc" id="class_infos_pression_atmospherique_html_af759842c05a1e59b56d433e823bee341"><div class="ttname"><a href="class_infos_pression_atmospherique.html#af759842c05a1e59b56d433e823bee341">InfosPressionAtmospherique::traitementPressionAtmospheriqueEnvoye</a></div><div class="ttdeci">void traitementPressionAtmospheriqueEnvoye(const double pressionAtmospheriqueMoyenne, const double pressionAtmospheriqueMinimum, const double pressionAtmospheriqueMaximum, int heure)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 18:56:59 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

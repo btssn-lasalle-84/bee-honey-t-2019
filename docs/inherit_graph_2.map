@@ -1,0 +1,10 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node2" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1alertes_activity.html" title="fr.campus.laurainc.honeybee.alertes\lActivity" alt="" coords="188,5,420,47"/>
+<area shape="rect" id="node3" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_dashboard_activity.html" title="fr.campus.laurainc.honeybee.\lDashboardActivity" alt="" coords="207,71,401,112"/>
+<area shape="rect" id="node4" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_details_ruche_activity.html" title="fr.campus.laurainc.honeybee.\lDetailsRucheActivity" alt="" coords="207,136,401,177"/>
+<area shape="rect" id="node5" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_graph_activity.html" title="fr.campus.laurainc.honeybee.\lGraphActivity" alt="" coords="207,201,401,243"/>
+<area shape="rect" id="node6" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1home_activity.html" title="fr.campus.laurainc.honeybee.home\lActivity" alt="" coords="191,267,417,308"/>
+<area shape="rect" id="node7" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_main_activity.html" title="Activité principale de l&#39;application (Thread UI) " alt="" coords="207,332,401,373"/>
+<area shape="rect" id="node8" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_nouvelle_ruche_activity.html" title="fr.campus.laurainc.honeybee.\lNouvelleRucheActivity" alt="" coords="207,397,401,439"/>
+<area shape="rect" id="node9" href="$classfr_1_1campus_1_1laurainc_1_1honeybee_1_1_parametres_honey_bee_activity.html" title="Activité de paramétrage de l&#39;application. " alt="" coords="207,463,401,504"/>
+</map>

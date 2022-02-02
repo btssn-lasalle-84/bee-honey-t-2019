@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t:  Fichier source de infosPoids.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a9685624822155ff41e8b6d3add21d1a.html">rucheIhm</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">infosPoids.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="infos_poids_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INFOSPOIDS_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INFOSPOIDS_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QtCore/QObject&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_infos_poids.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_infos_poids.html">InfosPoids</a> : <span class="keyword">public</span> <a class="code" href="class_q_object.html">QObject</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;private :</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_infos_poids.html#ac5faebb99bd0f87f96b442f10349cbd8">   36</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_infos_poids.html#ac5faebb99bd0f87f96b442f10349cbd8">poids</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_infos_poids.html#a6cff463552adfdde9430073a87878494">   37</a></span>&#160;    QString <a class="code" href="class_infos_poids.html#a6cff463552adfdde9430073a87878494">horodatagePoids</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;     <a class="code" href="class_infos_poids.html#a25a9086e75ce6c7e8391c3908c9324c0">InfosPoids</a>(<a class="code" href="class_q_object.html">QObject</a> *parent);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;     <a class="code" href="class_infos_poids.html#a14038b5639c79ff6558c91aec12013d1">~InfosPoids</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keywordtype">double</span> <a class="code" href="class_infos_poids.html#a902fb0222d3b2fa396987daed57377d2">getPoids</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_infos_poids.html#a23bb9c5939d0ee5cab0ecf821cdc6779">setPoids</a>(<span class="keywordtype">double</span> poids);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;     QString <a class="code" href="class_infos_poids.html#a9bd9ffa1a5fcd75a8d75bd7330727620">getHorodatagePoids</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_infos_poids.html#add0957f341ade104a4521ead7562dff8">setHorodatagePoids</a>(QString horodatagePoids);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;signals:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_infos_poids.html#a3c4ca9068911e45d0207de051ef5b402">poidsEnvoye</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> poids,QString);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_infos_poids.html#aa5284d38d33adba31ba033b8af61cc96">traiterNouveauPoids</a>(QString nouveauPoids, QString horodatagePoids);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // INFOSPOIDS_H</span></div><div class="ttc" id="class_infos_poids_html_a25a9086e75ce6c7e8391c3908c9324c0"><div class="ttname"><a href="class_infos_poids.html#a25a9086e75ce6c7e8391c3908c9324c0">InfosPoids::InfosPoids</a></div><div class="ttdeci">InfosPoids(QObject *parent)</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:16</div></div>
+<div class="ttc" id="class_infos_poids_html_ac5faebb99bd0f87f96b442f10349cbd8"><div class="ttname"><a href="class_infos_poids.html#ac5faebb99bd0f87f96b442f10349cbd8">InfosPoids::poids</a></div><div class="ttdeci">double poids</div><div class="ttdef"><b>Definition:</b> infosPoids.h:36</div></div>
+<div class="ttc" id="class_infos_poids_html_a14038b5639c79ff6558c91aec12013d1"><div class="ttname"><a href="class_infos_poids.html#a14038b5639c79ff6558c91aec12013d1">InfosPoids::~InfosPoids</a></div><div class="ttdeci">~InfosPoids()</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:20</div></div>
+<div class="ttc" id="class_infos_poids_html"><div class="ttname"><a href="class_infos_poids.html">InfosPoids</a></div><div class="ttdoc">Déclaration de la classe InfosPoids. </div><div class="ttdef"><b>Definition:</b> infosPoids.h:31</div></div>
+<div class="ttc" id="class_infos_poids_html_a3c4ca9068911e45d0207de051ef5b402"><div class="ttname"><a href="class_infos_poids.html#a3c4ca9068911e45d0207de051ef5b402">InfosPoids::poidsEnvoye</a></div><div class="ttdeci">void poidsEnvoye(const double poids, QString)</div></div>
+<div class="ttc" id="class_infos_poids_html_a902fb0222d3b2fa396987daed57377d2"><div class="ttname"><a href="class_infos_poids.html#a902fb0222d3b2fa396987daed57377d2">InfosPoids::getPoids</a></div><div class="ttdeci">double getPoids()</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:24</div></div>
+<div class="ttc" id="class_infos_poids_html_a6cff463552adfdde9430073a87878494"><div class="ttname"><a href="class_infos_poids.html#a6cff463552adfdde9430073a87878494">InfosPoids::horodatagePoids</a></div><div class="ttdeci">QString horodatagePoids</div><div class="ttdef"><b>Definition:</b> infosPoids.h:37</div></div>
+<div class="ttc" id="class_infos_poids_html_aa5284d38d33adba31ba033b8af61cc96"><div class="ttname"><a href="class_infos_poids.html#aa5284d38d33adba31ba033b8af61cc96">InfosPoids::traiterNouveauPoids</a></div><div class="ttdeci">void traiterNouveauPoids(QString nouveauPoids, QString horodatagePoids)</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:34</div></div>
+<div class="ttc" id="class_infos_poids_html_a23bb9c5939d0ee5cab0ecf821cdc6779"><div class="ttname"><a href="class_infos_poids.html#a23bb9c5939d0ee5cab0ecf821cdc6779">InfosPoids::setPoids</a></div><div class="ttdeci">void setPoids(double poids)</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:29</div></div>
+<div class="ttc" id="class_infos_poids_html_add0957f341ade104a4521ead7562dff8"><div class="ttname"><a href="class_infos_poids.html#add0957f341ade104a4521ead7562dff8">InfosPoids::setHorodatagePoids</a></div><div class="ttdeci">void setHorodatagePoids(QString horodatagePoids)</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:46</div></div>
+<div class="ttc" id="class_q_object_html"><div class="ttname"><a href="class_q_object.html">QObject</a></div></div>
+<div class="ttc" id="class_infos_poids_html_a9bd9ffa1a5fcd75a8d75bd7330727620"><div class="ttname"><a href="class_infos_poids.html#a9bd9ffa1a5fcd75a8d75bd7330727620">InfosPoids::getHorodatagePoids</a></div><div class="ttdeci">QString getHorodatagePoids()</div><div class="ttdef"><b>Definition:</b> infosPoids.cpp:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 18:56:59 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

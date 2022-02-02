@@ -1,0 +1,7 @@
+<map id="QObject" name="QObject">
+<area shape="rect" id="node2" href="$class_base_de_donnees.html" title="{BaseDeDonnees\n|&#45; db\l&#45; mutex\l&#45; baseDeDonnees\l&#45; typeBase\l&#45; nbAcces\l|+ estConnecte()\l+ connecter()\l+ estOuvert()\l+ ouvrir()\l+ executer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ recuperer()\l+ getInstance()\l+ detruireInstance()\l&#45; BaseDeDonnees()\l&#45; ~BaseDeDonnees()\l}" alt="" coords="5,160,151,472"/>
+<area shape="rect" id="node3" href="$class_communication.html" title="La classe Communication. " alt="" coords="175,204,338,428"/>
+<area shape="rect" id="node4" href="$class_infos_humidite.html" title="La classe InfosHumidite. " alt="" coords="363,182,593,450"/>
+<area shape="rect" id="node5" href="$class_infos_temperature.html" title="La classe InfosTemperature. " alt="" coords="618,131,837,501"/>
+<area shape="rect" id="node6" href="$class_ruche.html" title="La classe Ruche. " alt="" coords="861,160,1087,472"/>
+</map>

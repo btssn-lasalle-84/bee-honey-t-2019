@@ -1,0 +1,9 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_simple_mail_1_1_mime_part.html" title="SimpleMail::MimePart" alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node2" href="$class_simple_mail_1_1_mime_file.html" title="SimpleMail::MimeFile" alt="" coords="220,31,367,57"/>
+<area shape="rect" id="node5" href="$class_simple_mail_1_1_mime_multi_part.html" title="SimpleMail::MimeMultiPart" alt="" coords="204,81,383,108"/>
+<area shape="rect" id="node6" href="$class_simple_mail_1_1_mime_text.html" title="SimpleMail::MimeText" alt="" coords="217,132,369,159"/>
+<area shape="rect" id="node3" href="$class_simple_mail_1_1_mime_attachment.html" title="SimpleMail::MimeAttachment" alt="" coords="431,5,624,32"/>
+<area shape="rect" id="node4" href="$class_simple_mail_1_1_mime_inline_file.html" title="SimpleMail::MimeInlineFile" alt="" coords="438,56,617,83"/>
+<area shape="rect" id="node7" href="$class_simple_mail_1_1_mime_html.html" title="SimpleMail::MimeHtml" alt="" coords="450,132,605,159"/>
+</map>

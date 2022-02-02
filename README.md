@@ -26,6 +26,8 @@ Système autonome permettant de connaître à distance certains paramètres d'un
 - [presentation-mellah-2019.pdf](presentation-mellah-2019.pdf)
 - [presentation-rossi-2019.pdf](presentation-rossi-2019.pdf)
 
+Documentation du code : https://btssn-lasalle-84.github.io/bee-honey-t-2019/
+
 ## Vidéos
 
 - https://www.youtube.com/watch?v=kFLROLy1jgk

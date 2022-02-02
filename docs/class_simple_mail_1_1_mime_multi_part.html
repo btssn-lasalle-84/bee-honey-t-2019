@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projet Bee-Honey&#39;t: Référence de la classe SimpleMail::MimeMultiPart</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="icone-ruche.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projet Bee-Honey&#39;t
+   &#160;<span id="projectnumber">1.1</span>
+   </div>
+   <div id="projectbrief">BTS SN 2019</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_simple_mail.html">SimpleMail</a></li><li class="navelem"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html">MimeMultiPart</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
+<a href="class_simple_mail_1_1_mime_multi_part-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe SimpleMail::MimeMultiPart</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mimemultipart_8h_source.html">mimemultipart.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de SimpleMail::MimeMultiPart:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_simple_mail_1_1_mime_multi_part__coll__graph.png" border="0" usemap="#_simple_mail_1_1_mime_multi_part_coll__map" alt="Collaboration graph"/></div>
+<map name="_simple_mail_1_1_mime_multi_part_coll__map" id="_simple_mail_1_1_mime_multi_part_coll__map">
+<area shape="rect" id="node2" href="class_simple_mail_1_1_mime_part.html" title="{SimpleMail::MimePart\n|# d_ptr\l|+ MimePart()\l+ MimePart()\l+ ~MimePart()\l+ operator=()\l+ header()\l+ content()\l+ setContent()\l+ setHeader()\l+ addHeaderLine()\l+ setContentId()\let 13 de plus...\l# MimePart()\l# writeData()\l# d_func()\l# d_func()\l}" alt="" coords="19,5,170,288"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a6bef6836f893f87c64c4ff0cb9a93e53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a> { <br />
+&#160;&#160;<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed">Mixed</a> = 0, 
+<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010">Digest</a> = 1, 
+<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888">Alternative</a> = 2, 
+<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921">Related</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938">Report</a> = 4, 
+<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a">Signed</a> = 5, 
+<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc">Encrypted</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:a6bef6836f893f87c64c4ff0cb9a93e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_simple_mail_1_1_mime_part"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_simple_mail_1_1_mime_part')"><img src="closed.png" alt="-"/>&#160;Types publics hérités de <a class="el" href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></td></tr>
+<tr class="memitem:ae67a2f5406958b95b18bf31a7bbeb5c9 inherit pub_types_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9">Encoding</a> { <a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a93d518d86036ce6f149ffa646b52235a">_7Bit</a>, 
+<a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f">_8Bit</a>, 
+<a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9ae644dc14ba856889814d2da9c995b91a">Base64</a>, 
+<a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a29b5533d69a04cfef2c3ff6538c44db0">QuotedPrintable</a>
+ }</td></tr>
+<tr class="separator:ae67a2f5406958b95b18bf31a7bbeb5c9 inherit pub_types_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:ab739aa2f5357ecacb56b0ef3fa0aa2eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#ab739aa2f5357ecacb56b0ef3fa0aa2eb">MimeMultiPart</a> (const <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a> type=<a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921">Related</a>)</td></tr>
+<tr class="separator:ab739aa2f5357ecacb56b0ef3fa0aa2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460bb28faff5859d22cacd49defb3284"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a460bb28faff5859d22cacd49defb3284">~MimeMultiPart</a> ()</td></tr>
+<tr class="separator:a460bb28faff5859d22cacd49defb3284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4828f209e87597da86778a98f4466744"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a4828f209e87597da86778a98f4466744">setMimeType</a> (const <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a> type)</td></tr>
+<tr class="separator:a4828f209e87597da86778a98f4466744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4893232a5d10553a8c7200da60132c9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a4893232a5d10553a8c7200da60132c9e">mimeType</a> () const</td></tr>
+<tr class="separator:a4893232a5d10553a8c7200da60132c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfbaaa95c2cd5aa38c0078f1e6e6a38"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a> () const</td></tr>
+<tr class="separator:afdfbaaa95c2cd5aa38c0078f1e6e6a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b7d5bc0ac8610d113f781fb6f8b52b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a11b7d5bc0ac8610d113f781fb6f8b52b">addPart</a> (<a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *part)</td></tr>
+<tr class="separator:a11b7d5bc0ac8610d113f781fb6f8b52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_simple_mail_1_1_mime_part"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_simple_mail_1_1_mime_part')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></td></tr>
+<tr class="memitem:a32106b6567131dd5f4e8d26359a85249 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a32106b6567131dd5f4e8d26359a85249">MimePart</a> ()</td></tr>
+<tr class="separator:a32106b6567131dd5f4e8d26359a85249 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b25ea7c1bb06d1b73f4c43103bfa1e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a22b25ea7c1bb06d1b73f4c43103bfa1e">MimePart</a> (const <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> &amp;other)</td></tr>
+<tr class="separator:a22b25ea7c1bb06d1b73f4c43103bfa1e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd3bd58465ffea728a0e057039d42bb inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#adfd3bd58465ffea728a0e057039d42bb">~MimePart</a> ()</td></tr>
+<tr class="separator:adfd3bd58465ffea728a0e057039d42bb inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34320574f8cba9dbe03cca99e3fca942 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a34320574f8cba9dbe03cca99e3fca942">operator=</a> (const <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> &amp;other)</td></tr>
+<tr class="separator:a34320574f8cba9dbe03cca99e3fca942 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f3646cf7e63664d3d92d087afd76ae inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a87f3646cf7e63664d3d92d087afd76ae">header</a> () const</td></tr>
+<tr class="separator:a87f3646cf7e63664d3d92d087afd76ae inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22fd1bc02bce6c9655d879fd71620bf5 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a22fd1bc02bce6c9655d879fd71620bf5">content</a> () const</td></tr>
+<tr class="separator:a22fd1bc02bce6c9655d879fd71620bf5 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16791412c7235c04bf16a57120a45b84 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a16791412c7235c04bf16a57120a45b84">setContent</a> (const QByteArray &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#a22fd1bc02bce6c9655d879fd71620bf5">content</a>)</td></tr>
+<tr class="separator:a16791412c7235c04bf16a57120a45b84 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad008e68412ccd0cd4b5b69b29ce77efb inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#ad008e68412ccd0cd4b5b69b29ce77efb">setHeader</a> (const QByteArray &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#a87f3646cf7e63664d3d92d087afd76ae">header</a>)</td></tr>
+<tr class="separator:ad008e68412ccd0cd4b5b69b29ce77efb inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5736ee4f652fe80f90c5ff4e61a316cc inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a5736ee4f652fe80f90c5ff4e61a316cc">addHeaderLine</a> (const QByteArray &amp;line)</td></tr>
+<tr class="separator:a5736ee4f652fe80f90c5ff4e61a316cc inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a710551ded129f4a9c7ea0f74d8d90bb9 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a710551ded129f4a9c7ea0f74d8d90bb9">setContentId</a> (const QByteArray &amp;cId)</td></tr>
+<tr class="separator:a710551ded129f4a9c7ea0f74d8d90bb9 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fbca14bef123a2b65227f4d26622a5 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a95fbca14bef123a2b65227f4d26622a5">contentId</a> () const</td></tr>
+<tr class="separator:a95fbca14bef123a2b65227f4d26622a5 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f6e6e295967d11923b64ed0bda437f inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a83f6e6e295967d11923b64ed0bda437f">setContentName</a> (const QByteArray &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#ad16adf3afc9873b4b0636cd3264e2f3e">contentName</a>)</td></tr>
+<tr class="separator:a83f6e6e295967d11923b64ed0bda437f inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16adf3afc9873b4b0636cd3264e2f3e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#ad16adf3afc9873b4b0636cd3264e2f3e">contentName</a> () const</td></tr>
+<tr class="separator:ad16adf3afc9873b4b0636cd3264e2f3e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acb0f9b764b723c4cfb1058490d2d8d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a5acb0f9b764b723c4cfb1058490d2d8d">setContentType</a> (const QByteArray &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#a3952c9506cc3baf478ecf3a8c204297a">contentType</a>)</td></tr>
+<tr class="separator:a5acb0f9b764b723c4cfb1058490d2d8d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3952c9506cc3baf478ecf3a8c204297a inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a3952c9506cc3baf478ecf3a8c204297a">contentType</a> () const</td></tr>
+<tr class="separator:a3952c9506cc3baf478ecf3a8c204297a inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec15032385ee5687112e2e808d6170f inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a3ec15032385ee5687112e2e808d6170f">setCharset</a> (const QByteArray &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#a419b2efe442eb59002ae14c8ab18f94e">charset</a>)</td></tr>
+<tr class="separator:a3ec15032385ee5687112e2e808d6170f inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419b2efe442eb59002ae14c8ab18f94e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a419b2efe442eb59002ae14c8ab18f94e">charset</a> () const</td></tr>
+<tr class="separator:a419b2efe442eb59002ae14c8ab18f94e inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006db8e82f557f4fe92313e9f2a4c87d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a006db8e82f557f4fe92313e9f2a4c87d">setEncoding</a> (<a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9">Encoding</a> enc)</td></tr>
+<tr class="separator:a006db8e82f557f4fe92313e9f2a4c87d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7b2d8b6f32175fbc9d62e5b23ca720 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9">Encoding</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a7e7b2d8b6f32175fbc9d62e5b23ca720">encoding</a> () const</td></tr>
+<tr class="separator:a7e7b2d8b6f32175fbc9d62e5b23ca720 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa179fea0ab0a77771cbec0944e6b7967 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#aa179fea0ab0a77771cbec0944e6b7967">setData</a> (const QString &amp;<a class="el" href="class_simple_mail_1_1_mime_part.html#ab6260fc481df5162673f1ac93ec92dac">data</a>)</td></tr>
+<tr class="separator:aa179fea0ab0a77771cbec0944e6b7967 inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6260fc481df5162673f1ac93ec92dac inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#ab6260fc481df5162673f1ac93ec92dac">data</a> () const</td></tr>
+<tr class="separator:ab6260fc481df5162673f1ac93ec92dac inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe3a57832537bf93b12b1cd9924024a inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_content_formatter.html">MimeContentFormatter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#abbe3a57832537bf93b12b1cd9924024a">contentFormatter</a> ()</td></tr>
+<tr class="separator:abbe3a57832537bf93b12b1cd9924024a inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de9e52dca51bdc87cf526970606910d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a4de9e52dca51bdc87cf526970606910d">write</a> (QIODevice *device)</td></tr>
+<tr class="separator:a4de9e52dca51bdc87cf526970606910d inherit pub_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:acbd14f495f45d946eaf779d680bd7ce1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#acbd14f495f45d946eaf779d680bd7ce1">writeData</a> (QIODevice *device) Q_DECL_FINAL</td></tr>
+<tr class="separator:acbd14f495f45d946eaf779d680bd7ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_simple_mail_1_1_mime_part"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_simple_mail_1_1_mime_part')"><img src="closed.png" alt="-"/>&#160;Fonctions membres protégées hérités de <a class="el" href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></td></tr>
+<tr class="memitem:a7b947f679571a86c16fa7015971c1524 inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a7b947f679571a86c16fa7015971c1524">MimePart</a> (<a class="el" href="class_simple_mail_1_1_mime_part_private.html">MimePartPrivate</a> *d)</td></tr>
+<tr class="separator:a7b947f679571a86c16fa7015971c1524 inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9030aebac36f316718eeea6afc5971 inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_simple_mail_1_1_mime_part_private.html">MimePartPrivate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#aae9030aebac36f316718eeea6afc5971">d_func</a> ()</td></tr>
+<tr class="separator:aae9030aebac36f316718eeea6afc5971 inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae5c144f7a80afd6b5ef36512baf67a inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_simple_mail_1_1_mime_part_private.html">MimePartPrivate</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a5ae5c144f7a80afd6b5ef36512baf67a">d_func</a> () const</td></tr>
+<tr class="separator:a5ae5c144f7a80afd6b5ef36512baf67a inherit pro_methods_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Membres hérités additionnels</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_simple_mail_1_1_mime_part"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_simple_mail_1_1_mime_part')"><img src="closed.png" alt="-"/>&#160;Attributs protégés hérités de <a class="el" href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></td></tr>
+<tr class="memitem:a6adc00256ce96a9282f2ec0224625b0b inherit pro_attribs_class_simple_mail_1_1_mime_part"><td class="memItemLeft" align="right" valign="top">QSharedDataPointer&lt; <a class="el" href="class_simple_mail_1_1_mime_part_private.html">MimePartPrivate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_simple_mail_1_1_mime_part.html#a6adc00256ce96a9282f2ec0224625b0b">d_ptr</a></td></tr>
+<tr class="separator:a6adc00256ce96a9282f2ec0224625b0b inherit pro_attribs_class_simple_mail_1_1_mime_part"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des énumérations membres</h2>
+<a id="a6bef6836f893f87c64c4ff0cb9a93e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bef6836f893f87c64c4ff0cb9a93e53">&#9670;&nbsp;</a></span>MultiPartType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">SimpleMail::MimeMultiPart::MultiPartType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed"></a>Mixed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010"></a>Digest&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888"></a>Alternative&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921"></a>Related&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938"></a>Report&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a"></a>Signed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc"></a>Encrypted&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed">Mixed</a>           = 0,            <span class="comment">// RFC 2046, section 5.1.3</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010">Digest</a>          = 1,            <span class="comment">// RFC 2046, section 5.1.5</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888">Alternative</a>     = 2,            <span class="comment">// RFC 2046, section 5.1.4</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921">Related</a>         = 3,            <span class="comment">// RFC 2387</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938">Report</a>          = 4,            <span class="comment">// RFC 6522</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a">Signed</a>          = 5,            <span class="comment">// RFC 1847, section 2.1</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc">Encrypted</a>       = 6             <span class="comment">// RFC 1847, section 2.2</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div><div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53aec0d8426d60b6adf0e4dc74499d03888">SimpleMail::MimeMultiPart::Alternative</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:35</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a462320423a5a00b2524a7505676a2938">SimpleMail::MimeMultiPart::Report</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:37</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53ab222359e53f39cf379544a498098c9ed">SimpleMail::MimeMultiPart::Mixed</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:33</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921">SimpleMail::MimeMultiPart::Related</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:36</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a6153be31709ab87dca074cc4b3b1addc">SimpleMail::MimeMultiPart::Encrypted</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:39</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a1298ebd7effc2b17014c05ae098f3c7a">SimpleMail::MimeMultiPart::Signed</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:38</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a29a123559a0337abff6df81426bd7010">SimpleMail::MimeMultiPart::Digest</a></div><div class="ttdef"><b>Definition:</b> mimemultipart.h:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="ab739aa2f5357ecacb56b0ef3fa0aa2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab739aa2f5357ecacb56b0ef3fa0aa2eb">&#9670;&nbsp;</a></span>MimeMultiPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MimeMultiPart::MimeMultiPart </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53a853ea48b60c6dbcee4197ca06e66d921">Related</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f">SimpleMail::MimePart::_8Bit</a>, <a class="el" href="class_simple_mail_1_1_mime_part_private.html#afa20c6a7b4de31598affbc3e8fae207a">SimpleMail::MimePartPrivate::contentType</a>, et <a class="el" href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                               : <a class="code" href="class_simple_mail_1_1_mime_part.html#a32106b6567131dd5f4e8d26359a85249">MimePart</a>(<span class="keyword">new</span> <a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>)</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;type = type;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    d-&gt;<a class="code" href="class_simple_mail_1_1_mime_part_private.html#afa20c6a7b4de31598affbc3e8fae207a">contentType</a> = <a class="code" href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a>[type];</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    d-&gt;contentEncoding = <a class="code" href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f">_8Bit</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    d-&gt;contentBoundary = QUuid::createUuid().toRfc4122().toHex();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html_ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html#ae67a2f5406958b95b18bf31a7bbeb5c9a27c1574a6fe2fa936ae6cfe9654bb37f">SimpleMail::MimePart::_8Bit</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:37</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+<div class="ttc" id="mimemultipart_8cpp_html_aa142910ed0cce7101d8d240227ae592d"><div class="ttname"><a href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a></div><div class="ttdeci">const QByteArray MULTI_PART_NAMES[]</div><div class="ttdef"><b>Definition:</b> mimemultipart.cpp:25</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_part_html_a32106b6567131dd5f4e8d26359a85249"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html#a32106b6567131dd5f4e8d26359a85249">SimpleMail::MimePart::MimePart</a></div><div class="ttdeci">MimePart()</div><div class="ttdef"><b>Definition:</b> mimepart.cpp:27</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_part_private_html_afa20c6a7b4de31598affbc3e8fae207a"><div class="ttname"><a href="class_simple_mail_1_1_mime_part_private.html#afa20c6a7b4de31598affbc3e8fae207a">SimpleMail::MimePartPrivate::contentType</a></div><div class="ttdeci">QByteArray contentType</div><div class="ttdef"><b>Definition:</b> mimepart_p.h:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a460bb28faff5859d22cacd49defb3284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460bb28faff5859d22cacd49defb3284">&#9670;&nbsp;</a></span>~MimeMultiPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MimeMultiPart::~MimeMultiPart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a11b7d5bc0ac8610d113f781fb6f8b52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b7d5bc0ac8610d113f781fb6f8b52b">&#9670;&nbsp;</a></span>addPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMultiPart::addPart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *&#160;</td>
+          <td class="paramname"><em>part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;<a class="code" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a>.append(part);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_afdfbaaa95c2cd5aa38c0078f1e6e6a38"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">SimpleMail::MimeMultiPart::parts</a></div><div class="ttdeci">QList&lt; MimePart * &gt; parts() const</div><div class="ttdef"><b>Definition:</b> mimemultipart.cpp:56</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4893232a5d10553a8c7200da60132c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4893232a5d10553a8c7200da60132c9e">&#9670;&nbsp;</a></span>mimeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MimeMultiPart::MultiPartType</a> MimeMultiPart::mimeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;type;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afdfbaaa95c2cd5aa38c0078f1e6e6a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdfbaaa95c2cd5aa38c0078f1e6e6a38">&#9670;&nbsp;</a></span>parts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; <a class="el" href="class_simple_mail_1_1_mime_part.html">MimePart</a> * &gt; MimeMultiPart::parts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Référencé par <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a11b7d5bc0ac8610d113f781fb6f8b52b">addPart()</a>, et <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#acbd14f495f45d946eaf779d680bd7ce1">writeData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    Q_D(<span class="keyword">const</span> <a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;<a class="code" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_afdfbaaa95c2cd5aa38c0078f1e6e6a38"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">SimpleMail::MimeMultiPart::parts</a></div><div class="ttdeci">QList&lt; MimePart * &gt; parts() const</div><div class="ttdef"><b>Definition:</b> mimemultipart.cpp:56</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4828f209e87597da86778a98f4466744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4828f209e87597da86778a98f4466744">&#9670;&nbsp;</a></span>setMimeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MimeMultiPart::setMimeType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#a6bef6836f893f87c64c4ff0cb9a93e53">MultiPartType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Références <a class="el" href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    d-&gt;contentType = <a class="code" href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a>[type];</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static_cast&lt;</span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;type = type;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+<div class="ttc" id="mimemultipart_8cpp_html_aa142910ed0cce7101d8d240227ae592d"><div class="ttname"><a href="mimemultipart_8cpp.html#aa142910ed0cce7101d8d240227ae592d">MULTI_PART_NAMES</a></div><div class="ttdeci">const QByteArray MULTI_PART_NAMES[]</div><div class="ttdef"><b>Definition:</b> mimemultipart.cpp:25</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbd14f495f45d946eaf779d680bd7ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd14f495f45d946eaf779d680bd7ce1">&#9670;&nbsp;</a></span>writeData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MimeMultiPart::writeData </td>
+          <td>(</td>
+          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Réimplémentée à partir de <a class="el" href="class_simple_mail_1_1_mime_part.html#ab8b85a3cf47e6bd8d2051dfa5c56c36a">SimpleMail::MimePart</a>.</p>
+
+<p class="reference">Références <a class="el" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Q_D(<a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a> = <span class="keyword">static_cast&lt;</span><a class="code" href="class_simple_mail_1_1_mime_multi_part_private.html">MimeMultiPartPrivate</a>*<span class="keyword">&gt;</span>(d)-&gt;<a class="code" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="class_simple_mail_1_1_mime_part.html">MimePart</a> *part : <a class="code" href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">parts</a>) {</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        device-&gt;write(<span class="stringliteral">&quot;--&quot;</span> + d-&gt;contentBoundary + <span class="stringliteral">&quot;\r\n&quot;</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (!part-&gt;write(device)) {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    device-&gt;write(<span class="stringliteral">&quot;--&quot;</span> + d-&gt;contentBoundary + <span class="stringliteral">&quot;--\r\n&quot;</span>);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div><div class="ttc" id="class_simple_mail_1_1_mime_part_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_part.html">SimpleMail::MimePart</a></div><div class="ttdef"><b>Definition:</b> mimepart.h:32</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_private_html"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part_private.html">SimpleMail::MimeMultiPartPrivate</a></div><div class="ttdef"><b>Definition:</b> mimemultipart_p.h:28</div></div>
+<div class="ttc" id="class_simple_mail_1_1_mime_multi_part_html_afdfbaaa95c2cd5aa38c0078f1e6e6a38"><div class="ttname"><a href="class_simple_mail_1_1_mime_multi_part.html#afdfbaaa95c2cd5aa38c0078f1e6e6a38">SimpleMail::MimeMultiPart::parts</a></div><div class="ttdeci">QList&lt; MimePart * &gt; parts() const</div><div class="ttdef"><b>Definition:</b> mimemultipart.cpp:56</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li><a class="el" href="mimemultipart_8h_source.html">mimemultipart.h</a></li>
+<li><a class="el" href="mimemultipart_8cpp.html">mimemultipart.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Jeudi 13 Juin 2019 06:43:03 pour Projet Bee-Honey&#39;t par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

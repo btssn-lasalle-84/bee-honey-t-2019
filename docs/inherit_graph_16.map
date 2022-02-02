@@ -1,0 +1,13 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_q_object.html" title="QObject" alt="" coords="5,233,76,260"/>
+<area shape="rect" id="node2" href="$class_alertes.html" title="La classe des alertes. " alt="" coords="187,5,250,32"/>
+<area shape="rect" id="node3" href="$class_base_de_donnees.html" title="BaseDeDonnees" alt="" coords="158,56,279,83"/>
+<area shape="rect" id="node4" href="$class_communication.html" title="La classe Communication. " alt="" coords="162,107,275,133"/>
+<area shape="rect" id="node5" href="$class_infos_batterie.html" title="Déclaration de la classe InfosBatterie. " alt="" coords="171,157,267,184"/>
+<area shape="rect" id="node6" href="$class_infos_ensoleillement.html" title="La classe InfosEnsoleillement. " alt="" coords="151,208,287,235"/>
+<area shape="rect" id="node7" href="$class_infos_humidite.html" title="La classe InfosHumidite. " alt="" coords="167,259,270,285"/>
+<area shape="rect" id="node8" href="$class_infos_poids.html" title="Déclaration de la classe InfosPoids. " alt="" coords="177,309,261,336"/>
+<area shape="rect" id="node9" href="$class_infos_pression_atmospherique.html" title="La classe InfosPressionAtmospherique. " alt="" coords="124,360,313,387"/>
+<area shape="rect" id="node10" href="$class_infos_temperature.html" title="La classe InfosTemperature. " alt="" coords="157,411,281,437"/>
+<area shape="rect" id="node11" href="$class_ruche.html" title="La classe Ruche. " alt="" coords="189,461,249,488"/>
+</map>
